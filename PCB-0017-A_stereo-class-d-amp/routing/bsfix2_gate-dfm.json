@@ -3,7 +3,7 @@
   "gate": "dfm",
   "phase": "P9",
   "tool": "dfm",
-  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
   "input_digest": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
   "status": "pass",
   "criteria": {

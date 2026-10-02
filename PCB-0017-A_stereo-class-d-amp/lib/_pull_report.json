@@ -2,11 +2,11 @@
  "script": "lib_pull",
  "status": "pass",
  "lib_name": "aiee",
- "parts_file": "PCB-0017-A_astra-amp/parts/parts.json",
+ "parts_file": "PCB-0017-A_stereo-class-d-amp/parts/parts.json",
  "paced_s": 15.0,
  "retried": 0,
- "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
- "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+ "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+ "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
  "results": [
   {
    "lcsc": "C46497",
@@ -14,12 +14,12 @@
    "symbol": "TPA3118D2DAPR",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
      "copper_pads": 42,
      "courtyard": true,
      "silk": true
@@ -33,12 +33,12 @@
    "symbol": "SLO0630H100MTT",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "IND-SMD_L7.3-W6.6_MHCI06030",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/IND-SMD_L7.3-W6.6_MHCI06030.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/IND-SMD_L7.3-W6.6_MHCI06030.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -52,12 +52,12 @@
    "symbol": "MA25V100M6X6",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -71,12 +71,12 @@
    "symbol": "RVT100UF35V167RV0082",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "CAP-SMD_BD6.3-L6.6-W6.6-FD",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-FD.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-FD.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -90,12 +90,12 @@
    "symbol": "CGA0805X7R225M500MT",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0805",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0805.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -109,12 +109,12 @@
    "symbol": "CC0603KRX7R8BB105",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0603",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0603.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -128,12 +128,12 @@
    "symbol": "CC0603KRX7R9BB104",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0603",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0603.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -147,12 +147,12 @@
    "symbol": "CC0603JRNPO9BN102",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0603",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0603.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -166,12 +166,12 @@
    "symbol": "CL21A106KAYNNNE",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0805",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0805.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -185,12 +185,12 @@
    "symbol": "CL21B224KBFNNNE",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0805",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0805.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -204,12 +204,12 @@
    "symbol": "CC0805KKX7R9BB684",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0805",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0805.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -223,12 +223,12 @@
    "symbol": "CL05B103KB5NNNC",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "C0402",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0402.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0402.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -242,12 +242,12 @@
    "symbol": "0603WAF5601T5E",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "R0603",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/R0603.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -261,12 +261,12 @@
    "symbol": "0603WAF1003T5E",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "R0603",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/R0603.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -280,12 +280,12 @@
    "symbol": "RC0603FR-073R3L",
    "symbol_verified": true,
    "footprint_verified": true,
-   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
-   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "symbol_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty",
    "footprints": [
     {
      "name": "R0603",
-     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+     "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/R0603.kicad_mod",
      "copper_pads": 2,
      "courtyard": true,
      "silk": true
@@ -310,7 +310,7 @@
   "results": [
    {
     "footprint": "C0402",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0402.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0402.kicad_mod",
     "changed": true,
     "actions": [
      {
@@ -385,7 +385,7 @@
    },
    {
     "footprint": "C0603",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0603.kicad_mod",
     "changed": true,
     "actions": [
      {
@@ -484,7 +484,7 @@
    },
    {
     "footprint": "C0805",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/C0805.kicad_mod",
     "changed": true,
     "actions": [
      {
@@ -511,7 +511,7 @@
    },
    {
     "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-FD",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-FD.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-FD.kicad_mod",
     "changed": true,
     "actions": [
      {
@@ -571,7 +571,7 @@
    },
    {
     "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD.kicad_mod",
     "changed": true,
     "actions": [
      {
@@ -631,7 +631,7 @@
    },
    {
     "footprint": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
     "changed": true,
     "actions": [
      {
@@ -668,7 +668,7 @@
    },
    {
     "footprint": "IND-SMD_L7.3-W6.6_MHCI06030",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/IND-SMD_L7.3-W6.6_MHCI06030.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/IND-SMD_L7.3-W6.6_MHCI06030.kicad_mod",
     "changed": true,
     "actions": [
      {
@@ -728,7 +728,7 @@
    },
    {
     "footprint": "R0603",
-    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+    "file": "PCB-0017-A_stereo-class-d-amp/lib/aiee.pretty/R0603.kicad_mod",
     "changed": true,
     "actions": [
      {

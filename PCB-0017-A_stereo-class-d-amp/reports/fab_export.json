@@ -1,8 +1,8 @@
 {
  "script": "fab_export",
  "status": "pass",
- "board": "PCB-0017-A_astra-amp.kicad_pcb",
- "name": "PCB-0017-A_astra-amp",
+ "board": "PCB-0017-A_stereo-class-d-amp.kicad_pcb",
+ "name": "PCB-0017-A_stereo-class-d-amp",
  "layer_count": 2,
  "copper_layers": [
   "F.Cu",
@@ -19,66 +19,66 @@
   "B.Paste",
   "Edge.Cuts"
  ],
- "out_dir": "PCB-0017-A_astra-amp/fab",
- "gerber_dir": "PCB-0017-A_astra-amp/fab/gerbers",
- "pos_file": "PCB-0017-A_astra-amp/fab/PCB-0017-A_astra-amp-pos.csv",
+ "out_dir": "PCB-0017-A_stereo-class-d-amp/fab",
+ "gerber_dir": "PCB-0017-A_stereo-class-d-amp/fab/gerbers",
+ "pos_file": "PCB-0017-A_stereo-class-d-amp/fab/PCB-0017-A_stereo-class-d-amp-pos.csv",
  "files": [
   {
-   "name": "PCB-0017-A_astra-amp-B_Cu.gbl",
+   "name": "PCB-0017-A_stereo-class-d-amp-B_Cu.gbl",
    "sha256": "0007fc66579b77d00f12d9b99ceec69a1020ab4070cb588a65a135686cdbb7a2",
    "bytes": 6975
   },
   {
-   "name": "PCB-0017-A_astra-amp-B_Mask.gbs",
+   "name": "PCB-0017-A_stereo-class-d-amp-B_Mask.gbs",
    "sha256": "a04d0cc0679132105db9347db75fb57753ad63ab2aaefe3e7b2adee17e217428",
    "bytes": 512
   },
   {
-   "name": "PCB-0017-A_astra-amp-B_Paste.gbp",
+   "name": "PCB-0017-A_stereo-class-d-amp-B_Paste.gbp",
    "sha256": "808fc654433cc0276614c1544aeddd4e4568f484d4e2f2305cafecec85e78f17",
    "bytes": 507
   },
   {
-   "name": "PCB-0017-A_astra-amp-B_Silkscreen.gbo",
+   "name": "PCB-0017-A_stereo-class-d-amp-B_Silkscreen.gbo",
    "sha256": "7a1f02f93a1847624ede02b11ff34b27b3104971e8ce376653715c7503c6d258",
    "bytes": 508
   },
   {
-   "name": "PCB-0017-A_astra-amp-Edge_Cuts.gm1",
+   "name": "PCB-0017-A_stereo-class-d-amp-Edge_Cuts.gm1",
    "sha256": "fe80418452f4f134e9ad2e4535ee3425bcfa14da7f68071e5a8c8734746b1432",
    "bytes": 651
   },
   {
-   "name": "PCB-0017-A_astra-amp-F_Cu.gtl",
+   "name": "PCB-0017-A_stereo-class-d-amp-F_Cu.gtl",
    "sha256": "62a86e6f3c0674e7568e5dbfd195b1f681de02994d327137ec1976df853435f0",
    "bytes": 92858
   },
   {
-   "name": "PCB-0017-A_astra-amp-F_Mask.gts",
+   "name": "PCB-0017-A_stereo-class-d-amp-F_Mask.gts",
    "sha256": "fead534638dacde8f2249067527fbf23ce737674457ef71a5239bb58f5328bc4",
    "bytes": 4791
   },
   {
-   "name": "PCB-0017-A_astra-amp-F_Paste.gtp",
+   "name": "PCB-0017-A_stereo-class-d-amp-F_Paste.gtp",
    "sha256": "0e7bc51b9939e1f2de7c964bec290dd9bccce590f3de7f763f9d00bf8654d0e9",
    "bytes": 4786
   },
   {
-   "name": "PCB-0017-A_astra-amp-F_Silkscreen.gto",
+   "name": "PCB-0017-A_stereo-class-d-amp-F_Silkscreen.gto",
    "sha256": "448894d463b1027c39d7251044f67a5d213a62cb59b9d32cf95a394c4e7af8c7",
    "bytes": 70099
   },
   {
-   "name": "PCB-0017-A_astra-amp-job.gbrjob",
+   "name": "PCB-0017-A_stereo-class-d-amp-job.gbrjob",
    "sha256": "2605189b4a81bacb7401a046304b9b655f654b91f4e5500a701c82b54670c73a",
    "bytes": 2718
   },
   {
-   "name": "PCB-0017-A_astra-amp.drl",
+   "name": "PCB-0017-A_stereo-class-d-amp.drl",
    "sha256": "074edaa8848a6043da0b1553535df3a1d92e90e48ab24165ff13ae9809cb4b1d",
    "bytes": 997
   }
  ],
- "gerber_zip": "PCB-0017-A_astra-amp/fab/PCB-0017-A_astra-amp_gerbers.zip",
+ "gerber_zip": "PCB-0017-A_stereo-class-d-amp/fab/PCB-0017-A_stereo-class-d-amp_gerbers.zip",
  "gerber_zip_sha256": "3ad6c1fea441c53564a252d499126876a5bb4b03817861b392b45df7a1049770"
 }

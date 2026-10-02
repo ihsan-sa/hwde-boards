@@ -1,7 +1,7 @@
 {
   "script": "kc",
   "tool": "drc",
-  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
   "units": "mm",
   "kicad_version": "10.0.6",
   "options": {

@@ -1,6 +1,6 @@
 {
  "script": "verify_all",
- "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "board": "PCB-0017-A_stereo-class-d-amp.kicad_pcb",
  "status": "violations",
  "counts": {
   "total": 31,
@@ -1080,7 +1080,7 @@
    "msg": "architecture/constraints.json diverges from constraints.json in kicad/; checks ran against the latter - reconcile or delete the stale twin",
    "source": "verify_all",
    "kind": "constraints_drift",
-   "twin": "PCB-0017-A_astra-amp/architecture/constraints.json",
+   "twin": "PCB-0017-A_stereo-class-d-amp/architecture/constraints.json",
    "items": [
     {
      "msg": "constraints twin drift",
@@ -1092,6 +1092,6 @@
  "report_schema": 1,
  "checker_version": 1,
  "generated_at": "2026-09-27T11:54:43+00:00",
- "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
  "input_digest": "sexpr_no_uuid:8942e2da832c9da7abab9ca781b7e3c63079aaad3372bddf22264bebd6baea3b"
 }

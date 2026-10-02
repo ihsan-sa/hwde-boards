@@ -1,5 +1,5 @@
-(session "PCB-0017-A_astra-amp"
-  (base_design "PCB-0017-A_astra-amp")
+(session "PCB-0017-A_stereo-class-d-amp"
+  (base_design "PCB-0017-A_stereo-class-d-amp")
   (placement
     (resolution um 10)
     (component aiee:C0805

@@ -33,7 +33,7 @@ pump VBUS on regen and is explicitly wrong here):
     they absorb the load-dump/regen energy the TVS clamps, downstream of
     Q101 so a raw-input surge never has to cross the FET first.
   * TP101/TP102 are bare copper pads (board features, no LCSC), same
-    exclude-from-BOM pattern as astra-amp's J1-J4/TP1.
+    exclude-from-BOM pattern as stereo-class-d-amp's J1-J4/TP1.
 """
 from __future__ import annotations
 

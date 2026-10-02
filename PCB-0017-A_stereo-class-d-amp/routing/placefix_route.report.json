@@ -1,7 +1,7 @@
 {
  "script": "route_edit",
  "status": "pass",
- "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "board": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
  "applied": 12,
  "verified": true,
  "by_status": {

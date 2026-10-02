@@ -38,7 +38,7 @@ sys.path.insert(0, str(REPO / ".claude" / "skills" / "hwde" / "scripts"))
 # KiCad 10 stock libraries (power:*, Device:*): kicad-sch-api discovers
 # KICAD_SYMBOL_DIR / KICAD9_SYMBOL_DIR only, not the KICAD10_SYMBOL_DIR the
 # hwde env exports - alias it before the cache is first built (see
-# PCB-0017-A_astra-amp/kicad/gen/root.py).
+# PCB-0017-A_stereo-class-d-amp/kicad/gen/root.py).
 if not os.environ.get("KICAD_SYMBOL_DIR"):
     for _cand in (os.environ.get("KICAD10_SYMBOL_DIR"),
                   str(Path.home() / ".local/kicad10/usr/share/kicad/symbols")):

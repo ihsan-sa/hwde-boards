@@ -11,7 +11,7 @@
   "outcome": null,
   "opened": "2026-09-27T01:37:11",
   "closed": null,
-  "coverage_report": "PCB-0017-A_astra-amp/log/coverage-P2.json",
+  "coverage_report": "PCB-0017-A_stereo-class-d-amp/log/coverage-P2.json",
   "gap": {
    "slot": "block:B1",
    "kind": "block",
@@ -908,9 +908,9 @@
    "task": "research/tasks/block-dc-input-1.json"
   },
   "commands": {
-   "fetch": "scripts/research.py fetch --workspace PCB-0017-A_astra-amp --task block-dc-input-1 --url <https://vendor/...pdf> --tier <vendor-layout|vendor-appnote|cross-vendor|forum> [--about <mpn>] [--expect pdf|html]",
-   "validate": "scripts/research.py validate --workspace PCB-0017-A_astra-amp --task block-dc-input-1",
-   "status": "scripts/research.py status --workspace PCB-0017-A_astra-amp --task block-dc-input-1"
+   "fetch": "scripts/research.py fetch --workspace PCB-0017-A_stereo-class-d-amp --task block-dc-input-1 --url <https://vendor/...pdf> --tier <vendor-layout|vendor-appnote|cross-vendor|forum> [--about <mpn>] [--expect pdf|html]",
+   "validate": "scripts/research.py validate --workspace PCB-0017-A_stereo-class-d-amp --task block-dc-input-1",
+   "status": "scripts/research.py status --workspace PCB-0017-A_stereo-class-d-amp --task block-dc-input-1"
   }
  }
 }

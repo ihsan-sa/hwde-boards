@@ -8,7 +8,7 @@ old=re.findall(r'\t\(pad "33" thru_hole circle[^\n]*\n',s); assert len(old)==9
 new=''.join(f'\t(pad "33" thru_hole circle (at {x:.2f} {y:.2f}) (size 0.61 0.61) (drill 0.30) (layers *.Cu))\n' for y in coords for x in coords)
 first=s.find(old[0]); last=s.find(old[-1])+len(old[-1]); assert s[first:last]==''.join(old)
 open(p,'w').write(s[:first]+new+s[last:])
-p='kicad/PCB-0017-A_astra-amp.kicad_pcb'
+p='kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb'
 s=open(p).read()
 blocks=list(re.finditer(r'\t\t\(pad "33" thru_hole circle\n\t\t\t\(at ([-\d.]+) ([-\d.]+) 270\)\n\t\t\t\(size 0.61 0.61\)\n\t\t\t\(drill 0.3\)\n\t\t\t\(layers "\*\.Cu"\)\n\t\t\t\(remove_unused_layers no\)\n\t\t\t\(net "GND"\)\n\t\t\t\(uuid "[^"]+"\)\n\t\t\)\n',s)); assert len(blocks)==9
 blk=lambda x,y:'\t\t(pad "33" thru_hole circle\n\t\t\t(at %g %g 270)\n\t\t\t(size 0.61 0.61)\n\t\t\t(drill 0.3)\n\t\t\t(layers "*.Cu")\n\t\t\t(remove_unused_layers no)\n\t\t\t(net "GND")\n\t\t\t(uuid "%s")\n\t\t)\n'%(x,y,uuid.uuid4())

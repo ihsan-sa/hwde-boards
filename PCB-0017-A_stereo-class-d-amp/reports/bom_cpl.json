@@ -1,13 +1,13 @@
 {
  "script": "bom_cpl",
  "status": "pass",
- "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "board": "PCB-0017-A_stereo-class-d-amp.kicad_pcb",
  "n_parts": 39,
  "n_placed": 39,
- "bom": "PCB-0017-A_astra-amp/fab/BOM.csv",
- "bom_full": "PCB-0017-A_astra-amp/fab/BOM-full.csv",
- "cpl": "PCB-0017-A_astra-amp/fab/CPL.csv",
- "prebuy": "PCB-0017-A_astra-amp/fab/prebuy.csv",
+ "bom": "PCB-0017-A_stereo-class-d-amp/fab/BOM.csv",
+ "bom_full": "PCB-0017-A_stereo-class-d-amp/fab/BOM-full.csv",
+ "cpl": "PCB-0017-A_stereo-class-d-amp/fab/CPL.csv",
+ "prebuy": "PCB-0017-A_stereo-class-d-amp/fab/prebuy.csv",
  "build_qty": 5,
  "bom_rows": [
   {

@@ -1,7 +1,7 @@
 {
  "script": "route_auto",
  "status": "violations",
- "board": "PCB-0017-A_astra-amp/kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "board": "PCB-0017-A_stereo-class-d-amp/kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
  "counts": {
   "total": 16,
   "by_severity": {
@@ -489,7 +489,7 @@
   "power_layers": [],
   "krt_finish": null,
   "ses_echo_dups_removed": 0,
-  "work_dir": "PCB-0017-A_astra-amp/route",
+  "work_dir": "PCB-0017-A_stereo-class-d-amp/route",
   "placement_adjust_request": {
    "request": "placement_adjust",
    "nets": [

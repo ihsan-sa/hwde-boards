@@ -1,5 +1,5 @@
 {
-  "_comment": "PCB-0017-A astra-amp P2 merged constraint set (architect). Sources: research/power.json (power + thermal, wins on currents: 4 A in / 3 A out over requirements Q6's provisional 3 A), research/refdesign-amp.json (tie table, decoupling tiers, filter values), component-scout fragments (footprint sizes), state.json decisions (override research: TPA3118D2DAPR pad-down, 2 oz, no snubber, 10 uF in 0805, no protection). Prose in architecture/*.md. Canonical net names per architecture/sheets.md: bare +12V and GND; every other net is a root-sheet local label with a leading '/'.",
+  "_comment": "PCB-0017-A stereo-class-d-amp P2 merged constraint set (architect). Sources: research/power.json (power + thermal, wins on currents: 4 A in / 3 A out over requirements Q6's provisional 3 A), research/refdesign-amp.json (tie table, decoupling tiers, filter values), component-scout fragments (footprint sizes), state.json decisions (override research: TPA3118D2DAPR pad-down, 2 oz, no snubber, 10 uF in 0805, no protection). Prose in architecture/*.md. Canonical net names per architecture/sheets.md: bare +12V and GND; every other net is a root-sheet local label with a leading '/'.",
 
   "power": [
     {

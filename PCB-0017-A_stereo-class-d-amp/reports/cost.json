@@ -1,7 +1,7 @@
 {
  "script": "gen_cost",
- "board": "astra-amp",
- "workspace": "PCB-0017-A_astra-amp",
+ "board": "stereo-class-d-amp",
+ "workspace": "PCB-0017-A_stereo-class-d-amp",
  "currency": "USD",
  "prices": {
   "source": "fitted to Claude Code cost-state session totals, 2026-09-24",

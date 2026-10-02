@@ -1,7 +1,7 @@
 {
   "script": "schematic-reviewer",
-  "board": "PCB-0017-A_astra-amp",
-  "input": "kicad/PCB-0017-A_astra-amp.kicad_sch",
+  "board": "PCB-0017-A_stereo-class-d-amp",
+  "input": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_sch",
   "input_digest": "sexpr_no_uuid:456dd1bf9b766ba8ddb0d3ca0fb4b4fa82df5619d224e44cf46c319e2cf9ce7c",
   "generated_at": "2026-09-27",
   "counts": {"error": 0, "warning": 5},

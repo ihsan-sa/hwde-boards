@@ -1,7 +1,7 @@
 {
   "script": "board_init",
   "status": "pass",
-  "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "board": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
   "stackup": "JLC2313_1.6_2oz",
   "layers": 2,
   "fab_profile": "2layer_2oz",

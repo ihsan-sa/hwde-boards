@@ -3,7 +3,7 @@
   "gate": "place",
   "phase": "P6",
   "tool": "place",
-  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
   "input_digest": "sexpr_no_uuid:311736d958a4a93dc229125fe1e11d2a81174235ad0af2057acc69234c3cb94e",
   "status": "fail",
   "criteria": {

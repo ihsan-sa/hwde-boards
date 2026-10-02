@@ -3,7 +3,7 @@
   "gate": "erc",
   "phase": "P4",
   "tool": "erc",
-  "input": "kicad/PCB-0017-A_astra-amp.kicad_sch",
+  "input": "kicad/PCB-0017-A_stereo-class-d-amp.kicad_sch",
   "input_digest": "sexpr_no_uuid:1a4435ad751dcf43ed543c79b2f52ed5616f30af71a336dd8242dd3163900aaf",
   "status": "pass",
   "criteria": {

@@ -756,8 +756,8 @@
    "ts": "2026-09-27T14:32:51"
   },
   {
-   "what": "Board renamed astra-motor -> bldc-motor-driver; spec is designed from a general brief; research found nothing about the reference board beyond the frame (research/reference-video.md)",
-   "why": "Owner addenda 1790532180 / 1790532487: no Astra naming; research first, fall back to the frame-derived spec if nothing usable",
+   "what": "Board renamed bldc-motor-driver -> bldc-motor-driver; spec is designed from a general brief; research found nothing about the reference board beyond the frame (research/reference-video.md)",
+   "why": "Owner addenda: no Astra naming; research first, fall back to the frame-derived spec if nothing usable",
    "phase": "P0",
    "ts": "2026-09-27T14:32:51"
   },
@@ -936,7 +936,7 @@
   {
    "ts": "2026-09-27T14:32:51",
    "event": "decision",
-   "what": "Board renamed astra-motor -> bldc-motor-driver; spec is designed from a general brief; research found nothing about the reference board beyond the frame (research/reference-video.md)"
+   "what": "Board renamed bldc-motor-driver -> bldc-motor-driver; spec is designed from a general brief; research found nothing about the reference board beyond the frame (research/reference-video.md)"
   },
   {
    "ts": "2026-09-27T14:55:27",

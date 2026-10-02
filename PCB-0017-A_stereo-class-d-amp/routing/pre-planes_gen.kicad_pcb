@@ -692,7 +692,7 @@
 		(layer "F.Cu")
 		(uuid "1c83cecc-44e8-4a02-ad62-9fbcbab070fa")
 		(at 58.5 16 90)
-		(descr "Board-local: 2x bare SMD wire pads, 3.0x6.0mm each, 1.6mm edge gap (4.6mm pitch), for 18-20 AWG leads soldered by hand; no orderable part (PCB-0017-A astra-amp J1/J3/J4)")
+		(descr "Board-local: 2x bare SMD wire pads, 3.0x6.0mm each, 1.6mm edge gap (4.6mm pitch), for 18-20 AWG leads soldered by hand; no orderable part (PCB-0017-A stereo-class-d-amp J1/J3/J4)")
 		(tags "wire pad bare copper hand-solder board-local no-lcsc")
 		(property "Reference" "J4"
 			(at -4.725 -0.5 0)
@@ -3375,7 +3375,7 @@
 		(layer "F.Cu")
 		(uuid "9a5be7c6-88b4-4b75-8bcc-c4b35e1a40ac")
 		(at 16.5 42.8)
-		(descr "Board-local: 1x bare SMD round probe pad, 1.5mm diameter; no orderable part (PCB-0017-A astra-amp TP1, GND probe)")
+		(descr "Board-local: 1x bare SMD round probe pad, 1.5mm diameter; no orderable part (PCB-0017-A stereo-class-d-amp TP1, GND probe)")
 		(tags "test point probe pad bare copper hand-solder board-local no-lcsc")
 		(property "Reference" "TP1"
 			(at 0 -1.775 0)
@@ -3738,7 +3738,7 @@
 		(layer "F.Cu")
 		(uuid "a8827f09-0953-4b5d-bee9-dc2e7279a28e")
 		(at 58.5 40.2 90)
-		(descr "Board-local: 2x bare SMD wire pads, 3.0x6.0mm each, 1.6mm edge gap (4.6mm pitch), for 18-20 AWG leads soldered by hand; no orderable part (PCB-0017-A astra-amp J1/J3/J4)")
+		(descr "Board-local: 2x bare SMD wire pads, 3.0x6.0mm each, 1.6mm edge gap (4.6mm pitch), for 18-20 AWG leads soldered by hand; no orderable part (PCB-0017-A stereo-class-d-amp J1/J3/J4)")
 		(tags "wire pad bare copper hand-solder board-local no-lcsc")
 		(property "Reference" "J3"
 			(at -1.5 -4.275 90)
@@ -6203,7 +6203,7 @@
 		(layer "F.Cu")
 		(uuid "efa3dbca-ec14-4de4-82a3-cb2d8b267466")
 		(at 47.5 12.5)
-		(descr "Board-local: 2x bare SMD wire pads, 3.0x6.0mm each, 1.6mm edge gap (4.6mm pitch), for 18-20 AWG leads soldered by hand; no orderable part (PCB-0017-A astra-amp J1/J3/J4)")
+		(descr "Board-local: 2x bare SMD wire pads, 3.0x6.0mm each, 1.6mm edge gap (4.6mm pitch), for 18-20 AWG leads soldered by hand; no orderable part (PCB-0017-A stereo-class-d-amp J1/J3/J4)")
 		(tags "wire pad bare copper hand-solder board-local no-lcsc")
 		(property "Reference" "J1"
 			(at 4.725 0 90)
@@ -7091,7 +7091,7 @@
 		(layer "F.Cu")
 		(uuid "fe4a6b25-21b4-4ad3-936f-edce574ff8f6")
 		(at 12 26 -90)
-		(descr "Board-local: 3x bare SMD wire pads, 1.5x3.0mm each, 1.2mm edge gap (2.7mm pitch), for signal-level (line-in) leads soldered by hand; no orderable part (PCB-0017-A astra-amp J2, R/GND/L)")
+		(descr "Board-local: 3x bare SMD wire pads, 1.5x3.0mm each, 1.2mm edge gap (2.7mm pitch), for signal-level (line-in) leads soldered by hand; no orderable part (PCB-0017-A stereo-class-d-amp J2, R/GND/L)")
 		(tags "wire pad bare copper hand-solder board-local no-lcsc")
 		(property "Reference" "J2"
 			(at -4.375 1 0)

@@ -13,7 +13,7 @@
     41.6875
    ],
    "reason": "place_metrics grows each pad 0.25 mm; C301 pad 1 (BSTA, bottom y 41.575) sits 0.225 mm from U301 pad 19 (GHA, top y 41.8). KiCad courtyard DRC is clean and the copper gap is legal under the owner's scoped U301 gate-driver rule hv_scope_u301_courtyard (0.13 mm, IPC-2221B A6); GHA swings inside the BSTA domain (<= ~12 V apart). Moving C301 up 0.3 mm would put its BSTA pad 0.22 mm from the ENC_A via (0.5 mm HV57 needed).",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -28,7 +28,7 @@
     45.115
    ],
    "reason": "place_metrics grows each pad 0.25 mm; C302 pad 2 (PHASE_B) and C303 pad 2 (PHASE_C) are 0.42 mm apart, above the 0.4 mm HV clearance of those classes, KiCad courtyard DRC clean. Moving C303 down 0.12 mm to clear the margin cuts the PHASE_C F.Cu strip from U301 pin 12 (DRC unconnected), so it stays.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -42,7 +42,7 @@
     40.9
    ],
    "reason": "'sig_branch_PHASE_B' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so C301 touching it (0.84 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -56,7 +56,7 @@
     42.7975
    ],
    "reason": "'sig_branch_PHASE_B' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so C302 touching it (2.87 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -70,7 +70,7 @@
     45.9911
    ],
    "reason": "'sig_branch_PHASE_C' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so C303 touching it (1.56 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -84,7 +84,7 @@
     39.6237
    ],
    "reason": "'sig_branch_PHASE_A' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so C431 touching it (0.74 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -98,7 +98,7 @@
     52.874
    ],
    "reason": "'sig_branch_LS_SRC_A' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so C432 touching it (0.74 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -112,7 +112,7 @@
     75.3838
    ],
    "reason": "'sig_branch_PHASE_B' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so C433 touching it (0.65 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -126,7 +126,7 @@
     47.5372
    ],
    "reason": "'sig_branch_PHASE_C' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so C435 touching it (0.66 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -140,7 +140,7 @@
     64.5625
    ],
    "reason": "'sig_branch_LS_SRC_A' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so R422 touching it (0.88 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -154,7 +154,7 @@
     62.6288
    ],
    "reason": "'sig_branch_LS_SRC_C' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so R426 touching it (0.71 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -168,7 +168,7 @@
     79.4145
    ],
    "reason": "'sig_branch_PHASE_A' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so R432 touching it (0.72 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -182,7 +182,7 @@
     79.3797
    ],
    "reason": "'sig_branch_PHASE_B' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so R433 touching it (1.05 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   },
   {
    "check": "place",
@@ -196,7 +196,7 @@
     37.416
    ],
    "reason": "'sig_branch_PHASE_B' is not a keepout: it is a track-width scope rule area (keepout flags: tracks/vias/pads/copperpour/footprints all 'allowed'; .kicad_dru sig_branch_* lowers the min width to 0.2 mm for that net's 0.25 mm branch tracks, see routing/rules-added.md). place_metrics treats every copper rule area as forbidden regardless of its flags, so R434 touching it (1.65 mm2) is not a placement fault.",
-   "approved": "coordinator brief 2026-09-28 (track astra-motor): place hits accepted in earlier iterations, recorded as a documented waiver"
+   "approved": "coordinator brief 2026-09-28 (track bldc-motor-driver): place hits accepted in earlier iterations, recorded as a documented waiver"
   }
  ]
 }

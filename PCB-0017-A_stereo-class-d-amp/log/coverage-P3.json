@@ -2,8 +2,8 @@
  "script": "knowledge",
  "status": "gaps",
  "schema_version": 2,
- "workspace": "PCB-0017-A_astra-amp",
- "board": "astra-amp",
+ "workspace": "PCB-0017-A_stereo-class-d-amp",
+ "board": "stereo-class-d-amp",
  "phase": "P3",
  "maturity_floor": "approved",
  "keys": {
@@ -60,13 +60,13 @@
    "TPA3118D2DAPR"
   ],
   "sources": {
-   "constraints": "PCB-0017-A_astra-amp/architecture/constraints.json",
-   "parts": "PCB-0017-A_astra-amp/parts/parts.json"
+   "constraints": "PCB-0017-A_stereo-class-d-amp/architecture/constraints.json",
+   "parts": "PCB-0017-A_stereo-class-d-amp/parts/parts.json"
   }
  },
  "sources": {
-  "constraints": "PCB-0017-A_astra-amp/architecture/constraints.json",
-  "parts": "PCB-0017-A_astra-amp/parts/parts.json"
+  "constraints": "PCB-0017-A_stereo-class-d-amp/architecture/constraints.json",
+  "parts": "PCB-0017-A_stereo-class-d-amp/parts/parts.json"
  },
  "summary": {
   "slots": 5,
@@ -720,7 +720,7 @@
    "ref_prefix_hint": "U",
    "operating_point": {},
    "extraction": {
-    "file": "PCB-0017-A_astra-amp/parts/C46497.json",
+    "file": "PCB-0017-A_stereo-class-d-amp/parts/C46497.json",
     "layout_notes": 14,
     "layout_chars": 2702,
     "error": null

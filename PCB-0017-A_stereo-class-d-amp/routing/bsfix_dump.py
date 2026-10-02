@@ -1,5 +1,5 @@
 import pcbnew,sys
-b=pcbnew.LoadBoard("kicad/PCB-0017-A_astra-amp.kicad_pcb")
+b=pcbnew.LoadBoard("kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb")
 def mm(v): return round(pcbnew.ToMM(v),3)
 for fp in b.GetFootprints():
     r=fp.GetReference()

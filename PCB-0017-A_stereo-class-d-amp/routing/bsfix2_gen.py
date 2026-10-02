@@ -1,5 +1,5 @@
 import pcbnew,json
-b=pcbnew.LoadBoard("kicad/PCB-0017-A_astra-amp.kicad_pcb")
+b=pcbnew.LoadBoard("kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb")
 mm=lambda v: round(pcbnew.ToMM(v),3)
 rip=[]
 def seg(t): return (mm(t.GetStart().x),mm(t.GetStart().y),mm(t.GetEnd().x),mm(t.GetEnd().y))

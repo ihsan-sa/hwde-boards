@@ -1,7 +1,7 @@
 {
  "script": "plane_repair",
  "status": "pass",
- "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "board": "PCB-0017-A_stereo-class-d-amp.kicad_pcb",
  "counts": {
   "total": 0,
   "by_severity": {},
@@ -59,6 +59,6 @@
  "report_schema": 1,
  "checker_version": 1,
  "generated_at": "2026-09-27T09:18:40+00:00",
- "input": "PCB-0017-A_astra-amp/kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input": "PCB-0017-A_stereo-class-d-amp/kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
  "input_digest": "sexpr_no_uuid:25b536a668ae8391812dee2607241d8434545162d18d811c53c8733a80bcef0b"
 }
