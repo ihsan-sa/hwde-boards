@@ -1,0 +1,144 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "BMP280",
+ "total": 4,
+ "count": 2,
+ "results": [
+  {
+   "lcsc": "C83291",
+   "mpn": "BMP280",
+   "brand": "Bosch Sensortec",
+   "description": "-40\u2103~+85\u2103 0.12hpa 1.5pa/K 1.71V~3.6V 1hpa 300nA 30Kpa~1.1bar I2C\u3001SPI LGA-8(2x2.5) Pressure Sensors ROHS",
+   "package": "LGA-8(2x2.5)",
+   "category": "Pressure Sensors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 12.8606,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 12.8606
+    },
+    {
+     "qty": 10,
+     "price": 12.238
+    },
+    {
+     "qty": 30,
+     "price": 11.921
+    },
+    {
+     "qty": 100,
+     "price": 10.7846
+    },
+    {
+     "qty": 500,
+     "price": 10.6318
+    },
+    {
+     "qty": 1000,
+     "price": 10.5668
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2007021612_Bosch-Sensortec-BMP280_C83291.pdf",
+   "url": "https://www.lcsc.com/product-detail/pressure-sensors_bosch-sensortec-bmp280_C83291.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Temperature Coefficient of Offset(TCO)",
+     "value": "1.5pa/K"
+    },
+    {
+     "name": "Standby Current",
+     "value": "300nA"
+    },
+    {
+     "name": "Relative Accuracy",
+     "value": "0.12hpa"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Features",
+     "value": "Integrated ADC and digital interface\u3001On-chip calibration and non-volatile storage\u3001Standby mode\u3001On-chip temperature output"
+    },
+    {
+     "name": "Pressure range",
+     "value": "30Kpa~1.1bar"
+    },
+    {
+     "name": "Absolute Accuracy",
+     "value": "1hpa"
+    },
+    {
+     "name": "Interface",
+     "value": "I2C\u3001SPI"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C17380092",
+   "mpn": "BMP280-SHUTL",
+   "brand": "Bosch Sensortec",
+   "description": "I2C\u3001SPI Pressure Sensor - Sensor Modules ROHS",
+   "package": "-",
+   "category": "Sensor Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 70.9842,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 70.9842
+    },
+    {
+     "qty": 10,
+     "price": 70.9842
+    },
+    {
+     "qty": 30,
+     "price": 70.9842
+    },
+    {
+     "qty": 200,
+     "price": 28.3238
+    },
+    {
+     "qty": 500,
+     "price": 27.3777
+    },
+    {
+     "qty": 1000,
+     "price": 26.9095
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "https://www.lcsc.com/product-detail/sensor-modules_bosch-sensortec-bmp280-shutl_C17380092.html",
+   "attributes": [
+    {
+     "name": "Sensor Type",
+     "value": "Pressure sensor"
+    },
+    {
+     "name": "Interface",
+     "value": "I2C\u3001SPI"
+    }
+   ],
+   "rank": 1
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 2
+}

@@ -1,0 +1,22 @@
+id: gate-driver-bootstrap
+kind: coverage-checklist
+applies:
+  topologies: [gate-driver-bootstrap]
+requires:
+  - {class: selection, min_level: topology, note: "bootstrap cap sizing (Qtot/dV, >=10x Cg, driver CBOOT max), MLCC voltage rating"}
+  - {class: decoupling, min_level: principle, note: "GVDD/VDD bypass >= 10x Cboot, HF + bulk pair at the pins"}
+  - {class: power-loop, min_level: principle, note: "bootstrap charge loop Cvdd -> diode -> Cboot -> SW -> LS FET -> GND kept minimal; Cboot at BSTx-SHx pins"}
+  - {class: emi, min_level: topology, note: "gate/source return routing (GHx/SHx/GLx) short, few vias, driver near FETs; SHx negative-transient and slew limits"}
+maturity: draft
+sources:
+  - {file: research/sources/slua887a.pdf, page: 7, note: "Section 4 + Fig 4-1: bootstrap high-current path = Cboot, boot diode, VDD bypass, LS switch; place Cboot and Cvdd as close as possible to driver supply pins"}
+  - {file: research/sources/drv8300.pdf, page: 22, note: "Section 11.1 layout guidelines bullet list + 11.2 layout example (BSTx cap, GVDD cap, DT resistor at device)"}
+prose: >
+  A bootstrap high-side gate drive has four things a designer must hold before
+  drawing it: how big the bootstrap cap must be (and the driver's own max CBOOT
+  when the diode is integrated), how big the gate-supply bypass must be relative
+  to it, where the bootstrap charge loop closes and how small it must be, and
+  how the gate and source-return traces are routed between driver and FETs.
+  Seeded from TI SLUA887A (bootstrap selection + layout) and the DRV8300
+  datasheet (application + layout sections).
+origin: research:block-gate-driver-bootstrap-1

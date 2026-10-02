@@ -1,0 +1,7 @@
+{"block": "mcu", "candidates": [
+{"mpn": "STM32G431CBT6", "lcsc": "C529355", "package": "LQFP-48(7x7)", "basic": false, "stock": 2043, "price": 5.3818, "datasheet": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectron", "rank": 1, "fit": "Exact spec match: G4 FOC-class MCU (HRTIM, 3x ADC), LQFP-48, 128KB flash, good stock."},
+{"mpn": "STM32G474RBT3", "lcsc": "C1235414", "package": "LQFP-64(10x10)", "basic": false, "stock": 2082, "price": 4.0242, "datasheet": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectron", "rank": 2, "fit": "Same family, more peripherals/pins (LQFP-64), cheaper and better stocked than the G431CB -- good headroom alternate."},
+{"mpn": "STM32G474CBT6", "lcsc": "C730123", "package": "LQFP-48_7x7", "basic": false, "stock": 730, "price": 4.2824, "datasheet": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectron", "rank": 3, "fit": "G474 features in the same LQFP-48 footprint as the G431CB (pin-compatible family), lower stock, cheaper."},
+{"mpn": "STM32G431C8T6", "lcsc": "C730096", "package": "LQFP-48(7x7)", "basic": false, "stock": 1176, "price": 7.4604, "datasheet": "", "rank": 4, "fit": "Half the flash (64KB) of the CB variant at a higher price -- dominated, no reason to pick over CBT6."},
+{"mpn": "STM32G431KBU6", "lcsc": "C529358", "package": "UFQFPN-32(5x5)", "basic": false, "stock": 3643, "price": 8.956, "datasheet": "", "rank": 5, "fit": "Smaller QFN package, more stock, but pricier and below the requested LQFP-48/64 package class."}
+]}

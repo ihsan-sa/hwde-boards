@@ -1,0 +1,202 @@
+{
+  "script": "gate",
+  "gate": "place",
+  "phase": "P6",
+  "tool": "place",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:311736d958a4a93dc229125fe1e11d2a81174235ad0af2057acc69234c3cb94e",
+  "status": "fail",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 5,
+    "by_severity": {
+      "error": 5
+    },
+    "by_source": {
+      "check.place": 5
+    }
+  },
+  "failing_count": 5,
+  "failing": [
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        35.9275,
+        36.4
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C11",
+        "L1"
+      ],
+      "msg": "courtyard overlap C11/L1 (0.10 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C11/L1 (0.10 mm2)",
+          "pos": [
+            35.9275,
+            36.4
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.1017
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        36.2275,
+        19.2625
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C12",
+        "L3"
+      ],
+      "msg": "courtyard overlap C12/L3 (0.21 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C12/L3 (0.21 mm2)",
+          "pos": [
+            36.2275,
+            19.2625
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.2129
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        36.05,
+        38.7
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C14",
+        "L1"
+      ],
+      "msg": "courtyard overlap C14/L1 (0.60 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C14/L1 (0.60 mm2)",
+          "pos": [
+            36.05,
+            38.7
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.6
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        30.9,
+        22.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C8"
+      ],
+      "msg": "C8 intersects rule area 'U1_neck' (0.08 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "C8 intersects rule area 'U1_neck' (0.08 mm2)",
+          "pos": [
+            30.9,
+            22.0
+          ]
+        }
+      ],
+      "kind": "keepout_violation",
+      "overlap_mm2": 0.08
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        29.7144,
+        27.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "U1"
+      ],
+      "msg": "U1 intersects rule area 'U1_neck' (23.79 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "U1 intersects rule area 'U1_neck' (23.79 mm2)",
+          "pos": [
+            29.7144,
+            27.0
+          ]
+        }
+      ],
+      "kind": "keepout_violation",
+      "overlap_mm2": 23.7917
+    }
+  ],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "ran": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "passed": [
+      "outline",
+      "edges",
+      "decoupler_distance"
+    ],
+    "failed": [
+      "courtyard",
+      "keepouts"
+    ],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": ".",
+    "gate": "place",
+    "status": "fail",
+    "attempts": 11,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:311736d958a4a93dc229125fe1e11d2a81174235ad0af2057acc69234c3cb94e",
+      "constraints": "json_canonical:1790e58937177c11ea0813769eede5c1404b6edf33b584744d3c6099c16b2e04",
+      "decoupling": "json_canonical:aca94291a3791b958b2be40d518c04b5903398300f1e8824edf99426099dcada"
+    }
+  }
+}

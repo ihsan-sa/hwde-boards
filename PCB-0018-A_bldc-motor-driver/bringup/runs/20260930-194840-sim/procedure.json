@@ -1,0 +1,1535 @@
+{
+ "schema": "npie-procedure/1",
+ "board": "PCB-0018-A_bldc-motor-driver",
+ "generated": "2026-09-30T19:48:24Z",
+ "inputs": {
+  "netlist": {
+   "path": "kicad/PCB-0018-A_bldc-motor-driver.net",
+   "sha256": "31d0f8db9afdf43fd3d7fb257b848f2352fb8ab753055de13cf5ccaa2cdd9446"
+  },
+  "constraints": {
+   "path": "kicad/constraints.json",
+   "sha256": "0780106a0c9dc221e24366fed344e95213826d2456ace5fe8a1bc1abfbcc53cb"
+  },
+  "bom": {
+   "path": "fab/BOM.csv",
+   "sha256": "f914bf2c56105f4fe4ae64a103629105d8996ee8f63b1c3957e2d48e307880be"
+  },
+  "requirements": {
+   "path": "requirements.md",
+   "sha256": "acc5ff8498c624471e5d3209e3fc69c203fb3b2dfaa73c14a8ed790044972cc2"
+  },
+  "manifest": {
+   "path": "firmware/fwe-manifest.json",
+   "sha256": "197c37c8064d88b90b91a7ccf7cdc56a1b69865100039876d73b49e0ba571604"
+  }
+ },
+ "design": {
+  "input": "/power_in/VM_IN",
+  "gnd": "GND",
+  "rails": [
+   "VM",
+   "+12V",
+   "+5V",
+   "+3V3",
+   "/VDDA"
+  ],
+  "half_bridges": [
+   {
+    "phase": "/PHASE_A",
+    "hs": "Q401",
+    "ls": "Q402",
+    "bus": "VM",
+    "ls_src": "/power_stage/LS_SRC_A"
+   },
+   {
+    "phase": "/PHASE_B",
+    "hs": "Q403",
+    "ls": "Q404",
+    "bus": "VM",
+    "ls_src": "/power_stage/LS_SRC_B"
+   },
+   {
+    "phase": "/PHASE_C",
+    "hs": "Q405",
+    "ls": "Q406",
+    "bus": "VM",
+    "ls_src": "/power_stage/LS_SRC_C"
+   }
+  ],
+  "vin_range": [
+   10.0,
+   28.0
+  ]
+ },
+ "roles": [
+  "console",
+  "dmm",
+  "logic",
+  "probe",
+  "psu",
+  "scope"
+ ],
+ "skipped": [
+  {
+   "stage": "full-function",
+   "reason": "firmware has no spin command yet (manifest stage sixstep)"
+  },
+  {
+   "stage": "limits:ov",
+   "reason": "over-voltage trip at 30 V is above the rated input max 28 V; not applied"
+  }
+ ],
+ "overrides": [],
+ "stages": [
+  {
+   "id": "visual",
+   "title": "Visual inspection (unpowered)",
+   "steps": [
+    {
+     "id": "visual.01",
+     "type": "human",
+     "text": "Check the board for damage, solder bridges on fine-pitch ICs (U101, U201, U202, U203, U301, U501, U502, U503, U601) and missing parts against fab/BOM.csv."
+    },
+    {
+     "id": "visual.02",
+     "type": "human",
+     "text": "Check orientation of polarised parts: D101 SMCJ28A, D201 MBR0520L, D601 LED green (power), D602 LED yellow (status), D603 LED red (fault), D701 PESD5V0S1BA-ES, D702 PESD5V0S1BA-ES, D703 PESD5V0S1BA-ES, D704 PESD5V0S1BA-ES, D705 PESD5V0S1BA-ES, D709 PESD5V0S1BA-ES, D710 PESD5V0S1BA-ES, D711 PESD5V0S1BA-ES, U101 LM74500-Q1, U201 LM5164, U202 TPS61040, U203 TLV75733, U301 DRV8300DRGER, U501 INA240A1, U502 INA240A1, U503 INA240A1, U601 STM32G431CBT6, Q101 NTMFS5C628NL, Q401 NTMFS5C628NL, Q402 NTMFS5C628NL, Q403 NTMFS5C628NL, Q404 NTMFS5C628NL, Q405 NTMFS5C628NL, Q406 NTMFS5C628NL, C101 470uF 63V, C104 470uF 63V."
+    }
+   ]
+  },
+  {
+   "id": "unpowered",
+   "title": "Unpowered resistance and diode checks",
+   "steps": [
+    {
+     "id": "unpowered.01",
+     "type": "human",
+     "text": "Board unpowered, every cable off. Discharge the input capacitors."
+    },
+    {
+     "id": "unpowered.02",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on TP101 (VM_IN), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.03",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "TP101",
+       "pin": "1",
+       "net": "/power_in/VM_IN",
+       "label": "TP101 (VM_IN)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 1000.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check VM_IN-GND: floor power net 1000 ohm",
+     "text": "VM_IN to GND is not a short"
+    },
+    {
+     "id": "unpowered.04",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on C101 pin 1 (VM), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.05",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "C101",
+       "pin": "1",
+       "net": "VM",
+       "label": "C101 pin 1 (VM)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 1000.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check VM-GND: floor power net 1000 ohm",
+     "text": "VM to GND is not a short"
+    },
+    {
+     "id": "unpowered.06",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on C206 pin 1 (+12V), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.07",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "C206",
+       "pin": "1",
+       "net": "+12V",
+       "label": "C206 pin 1 (+12V)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 100.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check +12V-GND: floor logic rail 100 ohm",
+     "text": "+12V to GND is not a short"
+    },
+    {
+     "id": "unpowered.08",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on C202 pin 1 (+5V), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.09",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "C202",
+       "pin": "1",
+       "net": "+5V",
+       "label": "C202 pin 1 (+5V)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 100.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check +5V-GND: floor logic rail 100 ohm",
+     "text": "+5V to GND is not a short"
+    },
+    {
+     "id": "unpowered.10",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on C208 pin 1 (+3V3), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.11",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "C208",
+       "pin": "1",
+       "net": "+3V3",
+       "label": "C208 pin 1 (+3V3)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 100.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check +3V3-GND: floor logic rail 100 ohm",
+     "text": "+3V3 to GND is not a short"
+    },
+    {
+     "id": "unpowered.12",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on C209 pin 1 (VDDA), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.13",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "C209",
+       "pin": "1",
+       "net": "/VDDA",
+       "label": "C209 pin 1 (VDDA)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 100.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check VDDA-GND: floor logic rail 100 ohm",
+     "text": "VDDA to GND is not a short"
+    },
+    {
+     "id": "unpowered.14",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on TP401 (PHASE_A), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.15",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "TP401",
+       "pin": "1",
+       "net": "/PHASE_A",
+       "label": "TP401 (PHASE_A)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 1000.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check PHASE_A-GND: floor power net 1000 ohm",
+     "text": "PHASE_A to GND is not a short"
+    },
+    {
+     "id": "unpowered.16",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on TP402 (PHASE_B), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.17",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "TP402",
+       "pin": "1",
+       "net": "/PHASE_B",
+       "label": "TP402 (PHASE_B)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 1000.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check PHASE_B-GND: floor power net 1000 ohm",
+     "text": "PHASE_B to GND is not a short"
+    },
+    {
+     "id": "unpowered.18",
+     "type": "human",
+     "text": "DMM on resistance: red (+) on TP403 (PHASE_C), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "unpowered.19",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "resistance",
+     "points": {
+      "plus": {
+       "ref": "TP403",
+       "pin": "1",
+       "net": "/PHASE_C",
+       "label": "TP403 (PHASE_C)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": null,
+      "min": 1000.0,
+      "max": null,
+      "unit": "ohm"
+     },
+     "derived_from": "short check PHASE_C-GND: floor power net 1000 ohm",
+     "text": "PHASE_C to GND is not a short"
+    },
+    {
+     "id": "unpowered.20",
+     "type": "human",
+     "text": "DMM on diode: red (+) on TP401 (PHASE_A), black (-) on C101 pin 1 (VM)."
+    },
+    {
+     "id": "unpowered.21",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "diode",
+     "points": {
+      "plus": {
+       "ref": "TP401",
+       "pin": "1",
+       "net": "/PHASE_A",
+       "label": "TP401 (PHASE_A)"
+      },
+      "minus": {
+       "ref": "C101",
+       "pin": "1",
+       "net": "VM",
+       "label": "C101 pin 1 (VM)"
+      }
+     },
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.3,
+      "max": 0.8,
+      "unit": "V"
+     },
+     "derived_from": "Q401 body diode (netlist S=PHASE_A, D=VM)",
+     "text": "Q401 body diode conducts one way"
+    },
+    {
+     "id": "unpowered.22",
+     "type": "human",
+     "text": "DMM on diode: red (+) on C432 pin 2 (LS_SRC_A), black (-) on TP401 (PHASE_A)."
+    },
+    {
+     "id": "unpowered.23",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "diode",
+     "points": {
+      "plus": {
+       "ref": "C432",
+       "pin": "2",
+       "net": "/power_stage/LS_SRC_A",
+       "label": "C432 pin 2 (LS_SRC_A)"
+      },
+      "minus": {
+       "ref": "TP401",
+       "pin": "1",
+       "net": "/PHASE_A",
+       "label": "TP401 (PHASE_A)"
+      }
+     },
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.3,
+      "max": 0.8,
+      "unit": "V"
+     },
+     "derived_from": "Q402 body diode (netlist S=LS_SRC_A, D=PHASE_A)",
+     "text": "Q402 body diode conducts one way"
+    },
+    {
+     "id": "unpowered.24",
+     "type": "human",
+     "text": "DMM on diode: red (+) on TP402 (PHASE_B), black (-) on C101 pin 1 (VM)."
+    },
+    {
+     "id": "unpowered.25",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "diode",
+     "points": {
+      "plus": {
+       "ref": "TP402",
+       "pin": "1",
+       "net": "/PHASE_B",
+       "label": "TP402 (PHASE_B)"
+      },
+      "minus": {
+       "ref": "C101",
+       "pin": "1",
+       "net": "VM",
+       "label": "C101 pin 1 (VM)"
+      }
+     },
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.3,
+      "max": 0.8,
+      "unit": "V"
+     },
+     "derived_from": "Q403 body diode (netlist S=PHASE_B, D=VM)",
+     "text": "Q403 body diode conducts one way"
+    },
+    {
+     "id": "unpowered.26",
+     "type": "human",
+     "text": "DMM on diode: red (+) on C434 pin 2 (LS_SRC_B), black (-) on TP402 (PHASE_B)."
+    },
+    {
+     "id": "unpowered.27",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "diode",
+     "points": {
+      "plus": {
+       "ref": "C434",
+       "pin": "2",
+       "net": "/power_stage/LS_SRC_B",
+       "label": "C434 pin 2 (LS_SRC_B)"
+      },
+      "minus": {
+       "ref": "TP402",
+       "pin": "1",
+       "net": "/PHASE_B",
+       "label": "TP402 (PHASE_B)"
+      }
+     },
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.3,
+      "max": 0.8,
+      "unit": "V"
+     },
+     "derived_from": "Q404 body diode (netlist S=LS_SRC_B, D=PHASE_B)",
+     "text": "Q404 body diode conducts one way"
+    },
+    {
+     "id": "unpowered.28",
+     "type": "human",
+     "text": "DMM on diode: red (+) on TP403 (PHASE_C), black (-) on C101 pin 1 (VM)."
+    },
+    {
+     "id": "unpowered.29",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "diode",
+     "points": {
+      "plus": {
+       "ref": "TP403",
+       "pin": "1",
+       "net": "/PHASE_C",
+       "label": "TP403 (PHASE_C)"
+      },
+      "minus": {
+       "ref": "C101",
+       "pin": "1",
+       "net": "VM",
+       "label": "C101 pin 1 (VM)"
+      }
+     },
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.3,
+      "max": 0.8,
+      "unit": "V"
+     },
+     "derived_from": "Q405 body diode (netlist S=PHASE_C, D=VM)",
+     "text": "Q405 body diode conducts one way"
+    },
+    {
+     "id": "unpowered.30",
+     "type": "human",
+     "text": "DMM on diode: red (+) on C436 pin 2 (LS_SRC_C), black (-) on TP403 (PHASE_C)."
+    },
+    {
+     "id": "unpowered.31",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "diode",
+     "points": {
+      "plus": {
+       "ref": "C436",
+       "pin": "2",
+       "net": "/power_stage/LS_SRC_C",
+       "label": "C436 pin 2 (LS_SRC_C)"
+      },
+      "minus": {
+       "ref": "TP403",
+       "pin": "1",
+       "net": "/PHASE_C",
+       "label": "TP403 (PHASE_C)"
+      }
+     },
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.3,
+      "max": 0.8,
+      "unit": "V"
+     },
+     "derived_from": "Q406 body diode (netlist S=LS_SRC_C, D=PHASE_C)",
+     "text": "Q406 body diode conducts one way"
+    }
+   ]
+  },
+  {
+   "id": "power-up",
+   "title": "Current-limited power-up",
+   "steps": [
+    {
+     "id": "power-up.01",
+     "type": "supply",
+     "role": "psu",
+     "set": {
+      "v": 12.0,
+      "i_limit": 0.2,
+      "output": false
+     },
+     "derived_from": "requirements VIN 10-28 V: min + 2 V; limit min(0.2 A, 2x full load 0.339 A)"
+    },
+    {
+     "id": "power-up.02",
+     "type": "human",
+     "text": "Connect the supply: + to TP101 (VM_IN), - to TP102 (GND). Supply set to 12 V / 0.2 A, output still off."
+    },
+    {
+     "id": "power-up.03",
+     "type": "human",
+     "text": "About to switch the supply on at 12 V with a 0.2 A limit. Hands clear; watch for smoke or a hot part."
+    },
+    {
+     "id": "power-up.04",
+     "type": "supply",
+     "role": "psu",
+     "set": {
+      "v": 12.0,
+      "i_limit": 0.2,
+      "output": true
+     }
+    },
+    {
+     "id": "power-up.05",
+     "type": "wait",
+     "seconds": 1.0
+    },
+    {
+     "id": "power-up.06",
+     "type": "measure",
+     "role": "psu",
+     "quantity": "current",
+     "expect": {
+      "nominal": null,
+      "min": 0.002,
+      "max": 0.18,
+      "unit": "A"
+     },
+     "derived_from": "alive floor; below 90 % of the limit (not in CC)",
+     "text": "idle input current"
+    },
+    {
+     "id": "power-up.07",
+     "type": "human",
+     "text": "Touch-test: no part is hot a few seconds after power-up."
+    }
+   ]
+  },
+  {
+   "id": "rails",
+   "title": "Rail voltages and ripple",
+   "steps": [
+    {
+     "id": "rails.01",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on C101 pin 1 (VM), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "rails.02",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "C101",
+       "pin": "1",
+       "net": "VM",
+       "label": "C101 pin 1 (VM)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 12.0,
+      "min": 11.4,
+      "max": 12.12,
+      "unit": "V"
+     },
+     "derived_from": "follows the input (rated like VM_IN): setpoint -5 %/+1 %",
+     "text": "VM voltage"
+    },
+    {
+     "id": "rails.03",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on C206 pin 1 (+12V), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "rails.04",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "C206",
+       "pin": "1",
+       "net": "+12V",
+       "label": "C206 pin 1 (+12V)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 12.0,
+      "min": 11.04,
+      "max": 12.96,
+      "unit": "V"
+     },
+     "derived_from": "constraints voltages[+12V]=12 V, +/-8 % (catch-diode converter)",
+     "text": "+12V voltage"
+    },
+    {
+     "id": "rails.05",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on C202 pin 1 (+5V), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "rails.06",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "C202",
+       "pin": "1",
+       "net": "+5V",
+       "label": "C202 pin 1 (+5V)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 5.0,
+      "min": 4.75,
+      "max": 5.25,
+      "unit": "V"
+     },
+     "derived_from": "constraints voltages[+5V]=5 V, +/-5 %",
+     "text": "+5V voltage"
+    },
+    {
+     "id": "rails.07",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on C208 pin 1 (+3V3), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "rails.08",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "C208",
+       "pin": "1",
+       "net": "+3V3",
+       "label": "C208 pin 1 (+3V3)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 3.3,
+      "min": 3.135,
+      "max": 3.465,
+      "unit": "V"
+     },
+     "derived_from": "constraints voltages[+3V3]=3.3 V, +/-5 %",
+     "text": "+3V3 voltage"
+    },
+    {
+     "id": "rails.09",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on C209 pin 1 (VDDA), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "rails.10",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "C209",
+       "pin": "1",
+       "net": "/VDDA",
+       "label": "C209 pin 1 (VDDA)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 3.3,
+      "min": 3.135,
+      "max": 3.465,
+      "unit": "V"
+     },
+     "derived_from": "constraints voltages[VDDA]=3.3 V, +/-5 %",
+     "text": "VDDA voltage"
+    },
+    {
+     "id": "rails.11",
+     "type": "human",
+     "text": "Scope channel 1 on C206 pin 1 (+12V), ground spring to the nearest GND pad, AC coupled, 20 MHz bandwidth limit."
+    },
+    {
+     "id": "rails.12",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "vpp",
+     "points": {
+      "plus": {
+       "ref": "C206",
+       "pin": "1",
+       "net": "+12V",
+       "label": "C206 pin 1 (+12V)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "screenshot": true,
+     "expect": {
+      "nominal": null,
+      "min": null,
+      "max": 0.24,
+      "unit": "V"
+     },
+     "derived_from": "switched rail ripple <= 2 % of 12 V",
+     "text": "+12V ripple"
+    },
+    {
+     "id": "rails.13",
+     "type": "human",
+     "text": "Scope channel 1 on C202 pin 1 (+5V), ground spring to the nearest GND pad, AC coupled, 20 MHz bandwidth limit."
+    },
+    {
+     "id": "rails.14",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "vpp",
+     "points": {
+      "plus": {
+       "ref": "C202",
+       "pin": "1",
+       "net": "+5V",
+       "label": "C202 pin 1 (+5V)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "screenshot": true,
+     "expect": {
+      "nominal": null,
+      "min": null,
+      "max": 0.1,
+      "unit": "V"
+     },
+     "derived_from": "switched rail ripple <= 2 % of 5 V",
+     "text": "+5V ripple"
+    }
+   ]
+  },
+  {
+   "id": "programming",
+   "title": "Programming and first boot",
+   "steps": [
+    {
+     "id": "programming.01",
+     "type": "human",
+     "text": "Connect the SWD probe to J601; the board stays powered from the supply."
+    },
+    {
+     "id": "programming.02",
+     "type": "flash",
+     "role": "probe",
+     "artifact": "elf",
+     "derived_from": "manifest flash.commands, firmware 0.1.0+g6a564231"
+    },
+    {
+     "id": "programming.03",
+     "type": "human",
+     "text": "Connect the USB-UART (3V3, 115200 8N1) to J701: adapter RX to pin 3 (board TX), adapter TX to pin 4 (board RX), GND to GND. Then press reset."
+    },
+    {
+     "id": "programming.04",
+     "type": "console",
+     "role": "console",
+     "send": null,
+     "expect_re": "^fwe PCB-0018-A ",
+     "timeout_s": 5,
+     "derived_from": "manifest uart.banner_regex",
+     "text": "boot banner"
+    },
+    {
+     "id": "programming.05",
+     "type": "console",
+     "role": "console",
+     "send": "version",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "derived_from": "manifest commands[version]",
+     "text": "firmware answers"
+    }
+   ]
+  },
+  {
+   "id": "blocks",
+   "title": "Per-block tests",
+   "steps": [
+    {
+     "id": "blocks.01",
+     "type": "console",
+     "role": "console",
+     "send": "version",
+     "expect_re": "^OK \\{\"board\":\"PCB-0018-A\"",
+     "timeout_s": 5,
+     "derived_from": "manifest test_hooks[version]",
+     "text": "firmware test hook version"
+    },
+    {
+     "id": "blocks.02",
+     "type": "console",
+     "role": "console",
+     "send": "status",
+     "expect_re": "^OK ",
+     "timeout_s": 5,
+     "derived_from": "manifest test_hooks[status]",
+     "text": "firmware test hook status"
+    },
+    {
+     "id": "blocks.03",
+     "type": "console",
+     "role": "console",
+     "send": "selftest",
+     "expect_re": "^OK ",
+     "timeout_s": 5,
+     "derived_from": "manifest test_hooks[selftest]",
+     "text": "firmware test hook selftest"
+    },
+    {
+     "id": "blocks.04",
+     "type": "console",
+     "role": "console",
+     "send": "adc",
+     "expect_re": "^OK ",
+     "timeout_s": 5,
+     "derived_from": "manifest test_hooks[adc]",
+     "text": "firmware test hook adc"
+    },
+    {
+     "id": "blocks.05",
+     "type": "console",
+     "role": "console",
+     "send": "status",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "fields": {
+      "vbus_v": {
+       "nominal": 12.0,
+       "min": 11.4,
+       "max": 12.6,
+       "unit": "V"
+      }
+     },
+     "derived_from": "manifest commands[status].reply_fields vbus_v vs the supply setting +/-5%",
+     "text": "firmware reads the input voltage"
+    },
+    {
+     "id": "blocks.06",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on R501 pin 1 (CSA_A_OUT), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "blocks.07",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "R501",
+       "pin": "1",
+       "net": "/sensing/CSA_A_OUT",
+       "label": "R501 pin 1 (CSA_A_OUT)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 1.65,
+      "min": 1.6,
+      "max": 1.7,
+      "unit": "V"
+     },
+     "derived_from": "U501 INA240A1 REF1=+3V3, REF2=GND: zero-current output at their mean +/-3 %",
+     "text": "U501 sense-amp offset"
+    },
+    {
+     "id": "blocks.08",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on R502 pin 1 (CSA_B_OUT), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "blocks.09",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "R502",
+       "pin": "1",
+       "net": "/sensing/CSA_B_OUT",
+       "label": "R502 pin 1 (CSA_B_OUT)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 1.65,
+      "min": 1.6,
+      "max": 1.7,
+      "unit": "V"
+     },
+     "derived_from": "U502 INA240A1 REF1=+3V3, REF2=GND: zero-current output at their mean +/-3 %",
+     "text": "U502 sense-amp offset"
+    },
+    {
+     "id": "blocks.10",
+     "type": "human",
+     "text": "DMM on DC volts: red (+) on R503 pin 1 (CSA_C_OUT), black (-) on TP102 (GND)."
+    },
+    {
+     "id": "blocks.11",
+     "type": "measure",
+     "role": "dmm",
+     "quantity": "voltage",
+     "points": {
+      "plus": {
+       "ref": "R503",
+       "pin": "1",
+       "net": "/sensing/CSA_C_OUT",
+       "label": "R503 pin 1 (CSA_C_OUT)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 1.65,
+      "min": 1.6,
+      "max": 1.7,
+      "unit": "V"
+     },
+     "derived_from": "U503 INA240A1 REF1=+3V3, REF2=GND: zero-current output at their mean +/-3 %",
+     "text": "U503 sense-amp offset"
+    },
+    {
+     "id": "blocks.12",
+     "type": "human",
+     "text": "Note which LEDs are lit: D601 LED green (power), D602 LED yellow (status), D603 LED red (fault).",
+     "value": {
+      "unit": "text"
+     }
+    },
+    {
+     "id": "blocks.13",
+     "type": "human",
+     "text": "Press and release SW601 (Reset switch SMD)."
+    },
+    {
+     "id": "blocks.14",
+     "type": "console",
+     "role": "console",
+     "send": null,
+     "expect_re": "^fwe PCB-0018-A ",
+     "timeout_s": 5,
+     "derived_from": "netlist SW601 on NRST",
+     "text": "SW601 seen by firmware"
+    },
+    {
+     "id": "blocks.15",
+     "type": "human",
+     "text": "Press and release SW602 (User switch SMD)."
+    },
+    {
+     "id": "blocks.16",
+     "type": "console",
+     "role": "console",
+     "send": null,
+     "expect_re": "^EVT ",
+     "timeout_s": 5,
+     "derived_from": "netlist SW602 on USER_SW",
+     "text": "SW602 seen by firmware"
+    },
+    {
+     "id": "blocks.17",
+     "type": "human",
+     "text": "Connect the logic analyser to the Hall inputs (HALL_A, HALL_B, HALL_C) at J702 pins 3, 4, 5; plug in the Hall sensor and turn the motor slowly by hand during the capture."
+    },
+    {
+     "id": "blocks.18",
+     "type": "logic",
+     "role": "logic",
+     "channels": [
+      "HALL_A",
+      "HALL_B",
+      "HALL_C"
+     ],
+     "samplerate": 1000000,
+     "duration_s": 3.0,
+     "expect": {
+      "edges_min": 2
+     },
+     "derived_from": "netlist HALL_* nets",
+     "text": "Hall inputs toggle"
+    },
+    {
+     "id": "blocks.19",
+     "type": "human",
+     "text": "Motor DISCONNECTED. The next steps switch the bridge with no load at 12 V. Confirm the phase outputs are free."
+    },
+    {
+     "id": "blocks.20",
+     "type": "console",
+     "role": "console",
+     "send": "arm",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "derived_from": "manifest commands[arm] safe:false"
+    },
+    {
+     "id": "blocks.21",
+     "type": "console",
+     "role": "console",
+     "send": "duty 0.5 0 0",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "derived_from": "manifest commands[duty]"
+    },
+    {
+     "id": "blocks.22",
+     "type": "human",
+     "text": "Scope channel 1 on TP401 (PHASE_A), DC coupled, 10x probe."
+    },
+    {
+     "id": "blocks.23",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "duty",
+     "points": {
+      "plus": {
+       "ref": "TP401",
+       "pin": "1",
+       "net": "/PHASE_A",
+       "label": "TP401 (PHASE_A)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "screenshot": true,
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.45,
+      "max": 0.55,
+      "unit": ""
+     },
+     "derived_from": "commanded duty 0.5 +/-0.05",
+     "text": "PHASE_A switches (Q401/Q402)"
+    },
+    {
+     "id": "blocks.24",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "freq",
+     "points": {
+      "plus": {
+       "ref": "TP401",
+       "pin": "1",
+       "net": "/PHASE_A",
+       "label": "TP401 (PHASE_A)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 20000.0,
+      "min": 19600.0,
+      "max": 20400.0,
+      "unit": "Hz"
+     },
+     "derived_from": "manifest safety.pwm_hz +/-2%",
+     "text": "PHASE_A PWM frequency"
+    },
+    {
+     "id": "blocks.25",
+     "type": "console",
+     "role": "console",
+     "send": "duty 0 0.5 0",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "derived_from": "manifest commands[duty]"
+    },
+    {
+     "id": "blocks.26",
+     "type": "human",
+     "text": "Scope channel 1 on TP402 (PHASE_B), DC coupled, 10x probe."
+    },
+    {
+     "id": "blocks.27",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "duty",
+     "points": {
+      "plus": {
+       "ref": "TP402",
+       "pin": "1",
+       "net": "/PHASE_B",
+       "label": "TP402 (PHASE_B)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "screenshot": true,
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.45,
+      "max": 0.55,
+      "unit": ""
+     },
+     "derived_from": "commanded duty 0.5 +/-0.05",
+     "text": "PHASE_B switches (Q403/Q404)"
+    },
+    {
+     "id": "blocks.28",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "freq",
+     "points": {
+      "plus": {
+       "ref": "TP402",
+       "pin": "1",
+       "net": "/PHASE_B",
+       "label": "TP402 (PHASE_B)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 20000.0,
+      "min": 19600.0,
+      "max": 20400.0,
+      "unit": "Hz"
+     },
+     "derived_from": "manifest safety.pwm_hz +/-2%",
+     "text": "PHASE_B PWM frequency"
+    },
+    {
+     "id": "blocks.29",
+     "type": "console",
+     "role": "console",
+     "send": "duty 0 0 0.5",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "derived_from": "manifest commands[duty]"
+    },
+    {
+     "id": "blocks.30",
+     "type": "human",
+     "text": "Scope channel 1 on TP403 (PHASE_C), DC coupled, 10x probe."
+    },
+    {
+     "id": "blocks.31",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "duty",
+     "points": {
+      "plus": {
+       "ref": "TP403",
+       "pin": "1",
+       "net": "/PHASE_C",
+       "label": "TP403 (PHASE_C)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "screenshot": true,
+     "expect": {
+      "nominal": 0.5,
+      "min": 0.45,
+      "max": 0.55,
+      "unit": ""
+     },
+     "derived_from": "commanded duty 0.5 +/-0.05",
+     "text": "PHASE_C switches (Q405/Q406)"
+    },
+    {
+     "id": "blocks.32",
+     "type": "scope",
+     "role": "scope",
+     "channel": 1,
+     "quantity": "freq",
+     "points": {
+      "plus": {
+       "ref": "TP403",
+       "pin": "1",
+       "net": "/PHASE_C",
+       "label": "TP403 (PHASE_C)"
+      },
+      "minus": {
+       "ref": "TP102",
+       "pin": "1",
+       "net": "GND",
+       "label": "TP102 (GND)"
+      }
+     },
+     "expect": {
+      "nominal": 20000.0,
+      "min": 19600.0,
+      "max": 20400.0,
+      "unit": "Hz"
+     },
+     "derived_from": "manifest safety.pwm_hz +/-2%",
+     "text": "PHASE_C PWM frequency"
+    },
+    {
+     "id": "blocks.33",
+     "type": "console",
+     "role": "console",
+     "send": "disarm",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "derived_from": "manifest commands[disarm]"
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "title": "Operating range and protection",
+   "steps": [
+    {
+     "id": "limits.01",
+     "type": "supply",
+     "role": "psu",
+     "set": {
+      "v": 10.0,
+      "i_limit": 0.2,
+      "output": true
+     },
+     "derived_from": "requirements VIN min 10 V"
+    },
+    {
+     "id": "limits.02",
+     "type": "wait",
+     "seconds": 1.0
+    },
+    {
+     "id": "limits.03",
+     "type": "measure",
+     "role": "psu",
+     "quantity": "current",
+     "expect": {
+      "nominal": null,
+      "min": 0.002,
+      "max": 0.18,
+      "unit": "A"
+     },
+     "derived_from": "idle current holds across the input range",
+     "text": "idle current at 10 V"
+    },
+    {
+     "id": "limits.04",
+     "type": "supply",
+     "role": "psu",
+     "set": {
+      "v": 28.0,
+      "i_limit": 0.2,
+      "output": true
+     },
+     "derived_from": "requirements VIN max 28 V"
+    },
+    {
+     "id": "limits.05",
+     "type": "wait",
+     "seconds": 1.0
+    },
+    {
+     "id": "limits.06",
+     "type": "measure",
+     "role": "psu",
+     "quantity": "current",
+     "expect": {
+      "nominal": null,
+      "min": 0.002,
+      "max": 0.18,
+      "unit": "A"
+     },
+     "derived_from": "idle current holds across the input range",
+     "text": "idle current at 28 V"
+    },
+    {
+     "id": "limits.07",
+     "type": "supply",
+     "role": "psu",
+     "set": {
+      "v": 8.5,
+      "i_limit": 0.2,
+      "output": true
+     },
+     "derived_from": "manifest safety.vbus_uv_v 9 V - 0.5 V"
+    },
+    {
+     "id": "limits.08",
+     "type": "console",
+     "role": "console",
+     "send": null,
+     "expect_re": "^EVT .*uv",
+     "timeout_s": 5,
+     "derived_from": "under-voltage trip reported",
+     "text": "UV trip below 9 V"
+    },
+    {
+     "id": "limits.09",
+     "type": "supply",
+     "role": "psu",
+     "set": {
+      "v": 12.0,
+      "i_limit": 0.2,
+      "output": true
+     }
+    },
+    {
+     "id": "limits.10",
+     "type": "console",
+     "role": "console",
+     "send": "clear",
+     "expect_re": "^OK ",
+     "timeout_s": 2,
+     "derived_from": "manifest safety.fault_clear"
+    },
+    {
+     "id": "limits.11",
+     "type": "supply",
+     "role": "psu",
+     "set": {
+      "v": 12.0,
+      "i_limit": 0.2,
+      "output": false
+     },
+     "text": "end of run: supply off"
+    }
+   ]
+  }
+ ]
+}

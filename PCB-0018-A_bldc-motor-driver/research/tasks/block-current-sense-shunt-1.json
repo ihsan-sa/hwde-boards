@@ -1,0 +1,145 @@
+{
+ "id": "block-current-sense-shunt-1",
+ "slot": "block:sensing",
+ "kind": "block",
+ "token": "current-sense-shunt",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified",
+ "opened": "2026-09-27T14:31:39",
+ "closed": "2026-09-27T14:55:30",
+ "coverage_report": "log/coverage-P2.json",
+ "gap": {
+  "slot": "block:sensing",
+  "kind": "block",
+  "topology": "current-sense-shunt",
+  "operating_point": {
+   "iout_a": 10,
+   "ipeak_a": 20,
+   "rshunt_mohm": 3,
+   "gain_vv": 20,
+   "bw_khz": 400,
+   "board_layers": 4
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'current-sense-shunt' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'current-sense-shunt': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/ds/symlink/ina240.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/ina240.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "INA240",
+   "file": "research/sources/ina240.pdf",
+   "sha256": "c9d26e72ebdb52a169cbaca8f47d3811833c0afb765335a14f53f05c1a8b1854",
+   "bytes": 1935924,
+   "content_type": "application/pdf",
+   "pages": 39,
+   "fetched": "2026-09-27T14:33:45",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/an/slva959b/slva959b.pdf",
+   "final_url": "https://www.ti.com/lit/an/slva959b/slva959b.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "cross-vendor",
+   "declared_tier": "cross-vendor",
+   "about": null,
+   "file": "research/sources/slva959b.pdf",
+   "sha256": "89adbce11092779a4c024ea5832c3b3f62ff9c2a153646530dc8847f89c45eb9",
+   "bytes": 2866380,
+   "content_type": "application/pdf",
+   "pages": 36,
+   "fetched": "2026-09-27T14:33:49",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "current-sense-shunt-constraints-emission": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p33-34 SLVA959B sec 7.7/7.8/7.9 match: net ties, diff-pair, filter-near-CSA, do's; text confirmed as cited",
+   "ts": "2026-09-27T14:53:26"
+  },
+  "current-sense-shunt-csa-bypass": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p23-25 INA240 sec 10.1 + Fig 11-1/11-2 match 0.1uF bypass placement beside VS/GND and GND(2)/VS(6) exactly",
+   "ts": "2026-09-27T14:53:26"
+  },
+  "current-sense-shunt-diff-pair-routing": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p32-33 SLVA959B sec 7.6/7.7 + Fig 7-5/7-6 match diff pair routing and net-tie at 5mOhm R7 shunt",
+   "ts": "2026-09-27T14:53:27"
+  },
+  "current-sense-shunt-filter-series-r": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p18-19 INA240 sec 9.1.1 states <=10 ohm directly (not derived), Table 9-1 matches 5/10/100->0.17/0.33/3.23%; p34 SLVA959B Fig7-7 R13/R14=0.01ohm matches 10 mOhm claim",
+   "ts": "2026-09-27T14:53:27"
+  },
+  "current-sense-shunt-kelvin-taps": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p23-24 INA240 Fig 9-7 DO/DONT Kelvin taps and sec 11.1.1 match; p34 SLVA959B do's list Kelvin connections",
+   "ts": "2026-09-27T14:53:27"
+  },
+  "current-sense-shunt-lowside-placement": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p31-32 SLVA959B sec 7.2/7.5 text matches placement claim verbatim; p13 Fig3-3 via arrays near R10/R8/R6 plausible match, though exact 30A ipeak bound has no explicit page support (see OPEN)",
+   "ts": "2026-09-27T14:53:27"
+  },
+  "current-sense-shunt-selection-ladder": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p32 SLVA959B 20A x 1mOhm=400mW/20mV matches exactly; p1 INA240 CMR -4..80V, CMRR, offset, 10mV full-scale claim all confirmed on page",
+   "ts": "2026-09-27T14:53:28"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-current-sense-shunt-1",
+ "updated": "2026-09-27T14:55:30",
+ "accepted_drafts": null,
+ "summary": {
+  "verified": 7,
+  "refuted": 0,
+  "checklists": 1,
+  "sources": 2
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "script": "silk_place",
+ "status": "pass",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "targets": 5,
+ "moved": 4,
+ "residual": [],
+ "skipped": [],
+ "min_silk_clearance": 0.0,
+ "median_beyond_extent_mm_before": 0.7648,
+ "median_beyond_extent_mm": 0.7648,
+ "ops_out": "PCB-0021-A_lipo-boost/kicad/silk_ops2.json",
+ "results": [
+  {
+   "ref": "J4",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "Q1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "R12",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "D1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.7648
+  },
+  {
+   "ref": "D2",
+   "moved": false,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.7648
+  }
+ ],
+ "applied": true,
+ "drc_silk_total": 0,
+ "drc_total": 0,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-02T05:45:16+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:acf64bc9ccd0defff80ccf78b15e4f23b2c05e008e8958595f58ae675b6b1a60"
+}

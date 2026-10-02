@@ -1,0 +1,4317 @@
+(export
+	(version "E")
+	(design
+		(source "PCB-0017-A_stereo-class-d-amp/kicad/PCB-0017-A_stereo-class-d-amp.kicad_sch")
+		(date "2026-09-27T14:45:44")
+		(tool "Eeschema 10.0.6-10.0.6~ubuntu26.04.1")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "PCB-0017-A stereo-class-d-amp: TPA3118D2 stereo class-D amp, 12 V, BD mode 400 kHz, 20 dB")
+				(company "hwde")
+				(rev "1")
+				(date "2026-09-27")
+				(source "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "1uF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C28323")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B105KBFNNNE")
+				(description "1uF (105) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C28323")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "12da06c1-3659-42fa-8c66-4d2c8c14224b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "1uF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C28323")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B105KBFNNNE")
+				(description "1uF (105) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C28323")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "74486d24-b5a1-492e-ade6-39aa391e6751")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "1uF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C28323")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B105KBFNNNE")
+				(description "1uF (105) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C28323")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a6d1c57d-77ed-4f9f-a982-97f17490a47b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "1uF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C28323")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B105KBFNNNE")
+				(description "1uF (105) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C28323")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cf435aa1-b087-4b1b-a234-38b7c744d662")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "1uF 25V X7R")
+			(footprint "aiee:C0603")
+			(fields
+				(field
+					(name "LCSC") "C106858")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0603KRX7R8BB105")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C106858")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9db7b85f-6ca8-404e-a2a6-d2e345c0cec9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "100nF 50V X7R")
+			(footprint "aiee:C0603")
+			(fields
+				(field
+					(name "LCSC") "C14663")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0603KRX7R9BB104")
+				(description "100nF (104) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C14663")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f1c1700e-8b37-4630-af3a-9e5ea13d7791")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "1nF 50V NP0")
+			(footprint "aiee:C0603")
+			(fields
+				(field
+					(name "LCSC") "C106246")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0603JRNPO9BN102")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C106246")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3e05697d-edfb-4390-96e1-16a02f982fd5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "1nF 50V NP0")
+			(footprint "aiee:C0603")
+			(fields
+				(field
+					(name "LCSC") "C106246")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0603JRNPO9BN102")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C106246")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "42ea2ec8-d452-4d1a-9cba-1a8d39c91cfb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C9")
+			(value "100nF 50V X7R")
+			(footprint "aiee:C0603")
+			(fields
+				(field
+					(name "LCSC") "C14663")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0603KRX7R9BB104")
+				(description "100nF (104) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C14663")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "68f75673-2d06-4a43-904c-c208ad66cfdd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C10")
+			(value "100nF 50V X7R")
+			(footprint "aiee:C0603")
+			(fields
+				(field
+					(name "LCSC") "C14663")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0603KRX7R9BB104")
+				(description "100nF (104) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C14663")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "871fc74e-48d8-4927-999b-fcaf7244fcce")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C11")
+			(value "10uF 25V X5R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C15850")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21A106KAYNNNE")
+				(description "10uF (106) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15850")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c4f2fd05-50ef-445d-8dcb-838abf414774")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C12")
+			(value "10uF 25V X5R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C15850")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21A106KAYNNNE")
+				(description "10uF (106) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15850")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6ebe0103-b6d8-4e7b-b9c8-cb3fc9adf882")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "100uF 35V polymer")
+			(footprint "aiee:CAP-SMD_BD6.3-L6.6-W6.6-RD")
+			(fields
+				(field
+					(name "LCSC") "C46550467")
+				(field
+					(name "Footprint") "aiee:CAP-SMD_BD6.3-L6.6-W6.6-RD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "MA35V100M6X8")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C46550467")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0a0502bd-8b00-4674-8b51-741c2463e29d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
+			(value "100uF 35V elec")
+			(footprint "aiee:CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+			(fields
+				(field
+					(name "LCSC") "C2992596")
+				(field
+					(name "Footprint") "aiee:CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "FZ100UF35V90RV0064")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C2992596")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f4d768c2-5246-47a6-96a3-313e8a8928b9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "220nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C5378")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B224KBFNNNE")
+				(description "220nF (224) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C5378")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4264bff1-4fc7-49d5-9a1c-ba5277065aee")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C16")
+			(value "220nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C5378")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B224KBFNNNE")
+				(description "220nF (224) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C5378")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "77b33f48-e004-4bd6-9928-0bf62af45f6f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C17")
+			(value "220nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C5378")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B224KBFNNNE")
+				(description "220nF (224) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C5378")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "366be8de-c578-48ea-85f8-3af54ccd5303")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C18")
+			(value "220nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C5378")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL21B224KBFNNNE")
+				(description "220nF (224) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C5378")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0e68a87b-be8e-4640-9050-d6ae7acc65d1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C19")
+			(value "680nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C107133")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0805KKX7R9BB684")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C107133")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cb60c67f-c1ff-4042-9764-ad63e9a294a5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C20")
+			(value "680nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C107133")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0805KKX7R9BB684")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C107133")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7913448c-8d5b-4559-8c74-b01c10c0cc8a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
+			(value "680nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C107133")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0805KKX7R9BB684")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C107133")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9864509e-d6c1-4341-994b-fdb6f821d1ff")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C22")
+			(value "680nF 50V X7R")
+			(footprint "aiee:C0805")
+			(fields
+				(field
+					(name "LCSC") "C107133")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CC0805KKX7R9BB684")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C107133")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8043d44a-e82e-4d0f-8b86-c614b83ea0f0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "10nF 50V X7R")
+			(footprint "aiee:C0402")
+			(fields
+				(field
+					(name "LCSC") "C15195")
+				(field
+					(name "Footprint") "aiee:C0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL05B103KB5NNNC")
+				(description "10nF (103) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15195")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4dcc68f6-6f0b-45fa-add8-1b3f66654f12")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C24")
+			(value "10nF 50V X7R")
+			(footprint "aiee:C0402")
+			(fields
+				(field
+					(name "LCSC") "C15195")
+				(field
+					(name "Footprint") "aiee:C0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL05B103KB5NNNC")
+				(description "10nF (103) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15195")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "10766878-c5f8-4814-a6ba-0ef4c50e1ddb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C25")
+			(value "10nF 50V X7R")
+			(footprint "aiee:C0402")
+			(fields
+				(field
+					(name "LCSC") "C15195")
+				(field
+					(name "Footprint") "aiee:C0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL05B103KB5NNNC")
+				(description "10nF (103) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15195")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a582c8ab-6f96-4eea-938c-880cc81dc178")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C26")
+			(value "10nF 50V X7R")
+			(footprint "aiee:C0402")
+			(fields
+				(field
+					(name "LCSC") "C15195")
+				(field
+					(name "Footprint") "aiee:C0402")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "CL05B103KB5NNNC")
+				(description "10nF (103) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15195")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Multilayer Ceramic Capacitors MLCC - SMD/SMT")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "883c70bb-4d9b-46b2-8c76-0175c150b92a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "SMBJ15A")
+			(footprint "aiee:SMB_L4.6-W3.6-LS5.3-RD")
+			(fields
+				(field
+					(name "LCSC") "C113988")
+				(field
+					(name "Footprint") "aiee:SMB_L4.6-W3.6-LS5.3-RD")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "SMBJ15A_C113988")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C113988")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "TVS")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d4affd06-71ba-4406-ac42-43209d0dd6d7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "12V IN +/GND")
+			(footprint "aiee:WirePad_2P_3.0x6.0mm_P4.6mm")
+			(fields
+				(field
+					(name "Footprint") "aiee:WirePad_2P_3.0x6.0mm_P4.6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x02")
+				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3d308d9d-99fa-4f2e-9b4f-8a53c5d40614")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "LINE IN R/GND/L")
+			(footprint "aiee:WirePad_3P_1.5x3.0mm_P2.7mm")
+			(fields
+				(field
+					(name "Footprint") "aiee:WirePad_3P_1.5x3.0mm_P2.7mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x03")
+				(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "91415a71-29f4-49b4-8910-b218b8601a34")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "SPK L +/-")
+			(footprint "aiee:WirePad_2P_3.0x6.0mm_P4.6mm")
+			(fields
+				(field
+					(name "Footprint") "aiee:WirePad_2P_3.0x6.0mm_P4.6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x02")
+				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b6bb15e5-2379-4e33-b717-ec064d491587")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "SPK R +/-")
+			(footprint "aiee:WirePad_2P_3.0x6.0mm_P4.6mm")
+			(fields
+				(field
+					(name "Footprint") "aiee:WirePad_2P_3.0x6.0mm_P4.6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x02")
+				(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fd61697b-0bea-4956-8f42-abbb8a7b8a36")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L1")
+			(value "10uH 5.5A")
+			(footprint "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+			(fields
+				(field
+					(name "LCSC") "C207842")
+				(field
+					(name "Footprint") "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "SLO0630H100MTT")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C207842")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Power Inductors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8396eecd-eb41-451a-b68b-fbbbed7c4c30")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L2")
+			(value "10uH 5.5A")
+			(footprint "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+			(fields
+				(field
+					(name "LCSC") "C207842")
+				(field
+					(name "Footprint") "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "SLO0630H100MTT")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C207842")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Power Inductors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1068bc35-5d54-412d-90b6-03200aae9ea9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L3")
+			(value "10uH 5.5A")
+			(footprint "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+			(fields
+				(field
+					(name "LCSC") "C207842")
+				(field
+					(name "Footprint") "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "SLO0630H100MTT")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C207842")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Power Inductors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c45696fa-bc95-4444-bbbc-f5f628f5bf24")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L4")
+			(value "10uH 5.5A")
+			(footprint "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+			(fields
+				(field
+					(name "LCSC") "C207842")
+				(field
+					(name "Footprint") "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "SLO0630H100MTT")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C207842")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Power Inductors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b8c416bb-d1ea-4840-aa97-2333bc5f019d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "5.6k 1%")
+			(footprint "aiee:R0603")
+			(fields
+				(field
+					(name "LCSC") "C23189")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "0603WAF5601T5E")
+				(description "5.6KΩ (5601) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C23189")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8b5fd4e9-b806-46c9-9d28-6eb12bbc821e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "100k 1%")
+			(footprint "aiee:R0603")
+			(fields
+				(field
+					(name "LCSC") "C25803")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "0603WAF1003T5E")
+				(description "100KΩ (1003) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25803")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "389699dd-e966-4533-86ff-5c6e1053c89b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "100k 1%")
+			(footprint "aiee:R0603")
+			(fields
+				(field
+					(name "LCSC") "C25803")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "0603WAF1003T5E")
+				(description "100KΩ (1003) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25803")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "dd631ea2-07e5-4c7a-ae89-bd2c42684682")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "3.3R 1%")
+			(footprint "aiee:R0603")
+			(fields
+				(field
+					(name "LCSC") "C137725")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "RC0603FR-073R3L")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C137725")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4a6a24d7-50d9-4efe-978f-aa9177d5b0f9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "3.3R 1%")
+			(footprint "aiee:R0603")
+			(fields
+				(field
+					(name "LCSC") "C137725")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "RC0603FR-073R3L")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C137725")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7cbe994f-20a4-4b48-b77d-5fb03745fb12")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "3.3R 1%")
+			(footprint "aiee:R0603")
+			(fields
+				(field
+					(name "LCSC") "C137725")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "RC0603FR-073R3L")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C137725")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "75d1c4ee-80dd-43d7-8656-bb3f8f2a0e8a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "3.3R 1%")
+			(footprint "aiee:R0603")
+			(fields
+				(field
+					(name "LCSC") "C137725")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "RC0603FR-073R3L")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C137725")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Resistors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8577915d-dd9a-4954-99ec-56a787ce58b3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "GND")
+			(footprint "aiee:TestPoint_SMD_1.5mm_Round")
+			(fields
+				(field
+					(name "Footprint") "aiee:TestPoint_SMD_1.5mm_Round")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4036ab43-d5d8-47a2-8ca3-c85a76d6c042")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "TPA3118D2DAPR")
+			(footprint "aiee:HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP")
+			(fields
+				(field
+					(name "LCSC") "C46497")
+				(field
+					(name "Footprint") "aiee:HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "aiee")
+				(part "TPA3118D2DAPR")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C46497")
+			)
+			(property
+				(name "Sheetname")
+				(value "PCB-0017-A_stereo-class-d-amp")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB-0017-A_stereo-class-d-amp.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Audio Power OpAmps")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "75dee684-da5b-448f-b02e-498e9e296c89")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "33")
+						)
+						(pin
+							(num "32")
+						)
+						(pin
+							(num "31")
+						)
+						(pin
+							(num "30")
+						)
+						(pin
+							(num "29")
+						)
+						(pin
+							(num "28")
+						)
+						(pin
+							(num "27")
+						)
+						(pin
+							(num "26")
+						)
+						(pin
+							(num "25")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "17")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector")
+			(part "TestPoint")
+			(description "test point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x02")
+			(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x02")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x03")
+			(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x03")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "0603WAF1003T5E")
+			(description "100KΩ (1003) ±1%")
+			(docs "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_100KR-1003-1_C25803.html")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "0603WAF1003T5E")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_100KR-1003-1_C25803.html")
+				(field
+					(name "Description") "100KΩ (1003) ±1%")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "MPN") "0603WAF1003T5E")
+				(field
+					(name "LCSC Part") "C25803")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "0603WAF5601T5E")
+			(description "5.6KΩ (5601) ±1%")
+			(docs "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_5-6KR-5601-1_C23189.html")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "0603WAF5601T5E")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_5-6KR-5601-1_C23189.html")
+				(field
+					(name "Description") "5.6KΩ (5601) ±1%")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "MPN") "0603WAF5601T5E")
+				(field
+					(name "LCSC Part") "C23189")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CC0603JRNPO9BN102")
+			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_1nF-102-5-50V_C106246.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CC0603JRNPO9BN102")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_1nF-102-5-50V_C106246.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "YAGEO(国巨)")
+				(field
+					(name "MPN") "CC0603JRNPO9BN102")
+				(field
+					(name "LCSC Part") "C106246")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CC0603KRX7R8BB105")
+			(docs "https://lcsc.com/product-detail/Others_YAGEO-CC0603KRX7R8BB105_C106858.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CC0603KRX7R8BB105")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Others_YAGEO-CC0603KRX7R8BB105_C106858.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "YAGEO(国巨)")
+				(field
+					(name "MPN") "CC0603KRX7R8BB105")
+				(field
+					(name "LCSC Part") "C106858")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CC0603KRX7R9BB104")
+			(description "100nF (104) ±10% 50V")
+			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C14663.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CC0603KRX7R9BB104")
+				(field
+					(name "Footprint") "aiee:C0603")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C14663.html")
+				(field
+					(name "Description") "100nF (104) ±10% 50V")
+				(field
+					(name "Manufacturer") "YAGEO(国巨)")
+				(field
+					(name "MPN") "CC0603KRX7R9BB104")
+				(field
+					(name "LCSC Part") "C14663")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CC0805KKX7R9BB684")
+			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_680nF-684-10-50V_C107133.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CC0805KKX7R9BB684")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_680nF-684-10-50V_C107133.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "YAGEO(国巨)")
+				(field
+					(name "MPN") "CC0805KKX7R9BB684")
+				(field
+					(name "LCSC Part") "C107133")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CL05B103KB5NNNC")
+			(description "10nF (103) ±10% 50V")
+			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL05B103KB5NNNC_10nF-103-10-50V_C15195.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CL05B103KB5NNNC")
+				(field
+					(name "Footprint") "aiee:C0402")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL05B103KB5NNNC_10nF-103-10-50V_C15195.html")
+				(field
+					(name "Description") "10nF (103) ±10% 50V")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "MPN") "CL05B103KB5NNNC")
+				(field
+					(name "LCSC Part") "C15195")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CL21A106KAYNNNE")
+			(description "10uF (106) ±10% 25V")
+			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A106KAYNNNE_10uF-106-10-25V_C15850.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CL21A106KAYNNNE")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A106KAYNNNE_10uF-106-10-25V_C15850.html")
+				(field
+					(name "Description") "10uF (106) ±10% 25V")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "MPN") "CL21A106KAYNNNE")
+				(field
+					(name "LCSC Part") "C15850")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CL21B105KBFNNNE")
+			(description "1uF (105) ±10% 50V")
+			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KBFNNNE_1uF-105-10-50V_C28323.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CL21B105KBFNNNE")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KBFNNNE_1uF-105-10-50V_C28323.html")
+				(field
+					(name "Description") "1uF (105) ±10% 50V")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "MPN") "CL21B105KBFNNNE")
+				(field
+					(name "LCSC Part") "C28323")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "CL21B224KBFNNNE")
+			(description "220nF (224) ±10% 50V")
+			(docs "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B224KBFNNNE_220nF-224-10-50V_C5378.html")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CL21B224KBFNNNE")
+				(field
+					(name "Footprint") "aiee:C0805")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B224KBFNNNE_220nF-224-10-50V_C5378.html")
+				(field
+					(name "Description") "220nF (224) ±10% 50V")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "MPN") "CL21B224KBFNNNE")
+				(field
+					(name "LCSC Part") "C5378")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "FZ100UF35V90RV0064")
+			(docs "https://www.lcsc.com/datasheet/C2992596.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "FZ100UF35V90RV0064")
+				(field
+					(name "Footprint") "aiee:CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/C2992596.pdf")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "KNSCHA(科尼盛)")
+				(field
+					(name "MPN") "FZ100UF35V90RV0064")
+				(field
+					(name "LCSC Part") "C2992596")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "MA35V100M6X8")
+			(docs "https://www.lcsc.com/datasheet/C46550467.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "MA35V100M6X8")
+				(field
+					(name "Footprint") "aiee:CAP-SMD_BD6.3-L6.6-W6.6-RD")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/C46550467.pdf")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "JIERR(捷而瑞)")
+				(field
+					(name "MPN") "MA35V100M6X8")
+				(field
+					(name "LCSC Part") "C46550467")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "RC0603FR-073R3L")
+			(docs "https://lcsc.com/product-detail/_RC0603FR-073R3L_C137725.html")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "RC0603FR-073R3L")
+				(field
+					(name "Footprint") "aiee:R0603")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/_RC0603FR-073R3L_C137725.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "YAGEO(国巨)")
+				(field
+					(name "MPN") "RC0603FR-073R3L")
+				(field
+					(name "LCSC Part") "C137725")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "SLO0630H100MTT")
+			(docs "https://lcsc.com/product-detail/Power-Inductors_10uH-20-4A_C207842.html")
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "SLO0630H100MTT")
+				(field
+					(name "Footprint") "aiee:IND-SMD_L7.3-W6.6_MHCI06030")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Power-Inductors_10uH-20-4A_C207842.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "Sunltech(顺磁)")
+				(field
+					(name "MPN") "SLO0630H100MTT")
+				(field
+					(name "LCSC Part") "C207842")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "SMBJ15A_C113988")
+			(docs "https://lcsc.com/product-detail/TVS_SMBJ15A_C113988.html")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "SMBJ15A_C113988")
+				(field
+					(name "Footprint") "aiee:SMB_L4.6-W3.6-LS5.3-RD")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/TVS_SMBJ15A_C113988.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "MDD(辰达半导体)")
+				(field
+					(name "MPN") "SMBJ15A")
+				(field
+					(name "LCSC Part") "C113988")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "aiee")
+			(part "TPA3118D2DAPR")
+			(docs "https://lcsc.com/product-detail/Audio-Power-OpAmps_Texas-Instruments_TPA3118D2DAPR_Texas-Instruments-TI-TPA3118D2DAPR_C46497.html")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TPA3118D2DAPR")
+				(field
+					(name "Footprint") "aiee:HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Audio-Power-OpAmps_Texas-Instruments_TPA3118D2DAPR_Texas-Instruments-TI-TPA3118D2DAPR_C46497.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "TI(德州仪器)")
+				(field
+					(name "MPN") "TPA3118D2DAPR")
+				(field
+					(name "LCSC Part") "C46497")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "MODSEL")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "SDZ")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "FAULTZ")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "RINP")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "RINN")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "PLIMIT")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "GVDD")
+					(type "power_out")
+				)
+				(pin
+					(num "8")
+					(name "GAIN/SLV")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "10")
+					(name "LINP")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "LINN")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "MUTE")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "AM2")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "AM1")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "AM0")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "SYNC")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "AVCC")
+					(type "power_in")
+				)
+				(pin
+					(num "18")
+					(name "PVCC")
+					(type "power_in")
+				)
+				(pin
+					(num "19")
+					(name "PVCC")
+					(type "power_in")
+				)
+				(pin
+					(num "20")
+					(name "BSNL")
+					(type "passive")
+				)
+				(pin
+					(num "21")
+					(name "OUTNL")
+					(type "passive")
+				)
+				(pin
+					(num "22")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "23")
+					(name "OUTPL")
+					(type "passive")
+				)
+				(pin
+					(num "24")
+					(name "BSPL")
+					(type "passive")
+				)
+				(pin
+					(num "25")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "26")
+					(name "BSNR")
+					(type "passive")
+				)
+				(pin
+					(num "27")
+					(name "OUTNR")
+					(type "passive")
+				)
+				(pin
+					(num "28")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "29")
+					(name "OUTPR")
+					(type "passive")
+				)
+				(pin
+					(num "30")
+					(name "BSPR")
+					(type "passive")
+				)
+				(pin
+					(num "31")
+					(name "PVCC")
+					(type "power_in")
+				)
+				(pin
+					(num "32")
+					(name "PVCC")
+					(type "power_in")
+				)
+				(pin
+					(num "33")
+					(name "EP")
+					(type "power_in")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "aiee")
+			(uri "${KIPRJMOD}/../lib/aiee.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "+12V")
+			(class "Pwr_0p882mm")
+			(node
+				(ref "C10")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "17")
+				(pinfunction "AVCC_17")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "PVCC_18")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "PVCC_19")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "31")
+				(pinfunction "PVCC_31")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "32")
+				(pinfunction "PVCC_32")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "2")
+			(name "/BSNL")
+			(class "Default")
+			(node
+				(ref "C15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "BSNL_20")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/BSNR")
+			(class "Default")
+			(node
+				(ref "C17")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "26")
+				(pinfunction "BSNR_26")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/BSPL")
+			(class "Default")
+			(node
+				(ref "C16")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "BSPL_24")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/BSPR")
+			(class "Default")
+			(node
+				(ref "C18")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "30")
+				(pinfunction "BSPR_30")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/GAIN")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "GAIN/SLV_8")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/GVDD")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "PLIMIT_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "GVDD_7")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "8")
+			(name "/IN_L")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/IN_R")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "/LINN")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "LINN_11")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/LINP")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "LINP_10")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/MUTE")
+			(class "Default")
+			(node
+				(ref "R3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "MUTE_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/OUTNL")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C15")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "21")
+				(pinfunction "OUTNL_21")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "/OUTNR")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C17")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "27")
+				(pinfunction "OUTNR_27")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "/OUTPL")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C16")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "23")
+				(pinfunction "OUTPL_23")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "/OUTPR")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C18")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "29")
+				(pinfunction "OUTPR_29")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "/RINN")
+			(class "Default")
+			(node
+				(ref "C4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "RINN_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "/RINP")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "RINP_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "/SDZ")
+			(class "Default")
+			(node
+				(ref "R2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "SDZ_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "FAULTZ_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "/SPK_L_N")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C20")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "/SPK_L_P")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C19")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "22")
+			(name "/SPK_R_N")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C22")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "/SPK_R_P")
+			(class "Pwr_0p624mm")
+			(node
+				(ref "C21")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "/ZL_N")
+			(class "Default")
+			(node
+				(ref "C24")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "25")
+			(name "/ZL_P")
+			(class "Default")
+			(node
+				(ref "C23")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "26")
+			(name "/ZR_N")
+			(class "Default")
+			(node
+				(ref "C26")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "27")
+			(name "/ZR_P")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "28")
+			(name "GND")
+			(class "Pwr_0p882mm")
+			(node
+				(ref "C10")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C19")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "C20")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C21")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C23")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C24")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "C5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "MODSEL_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "AM2_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "AM1_14")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "15")
+				(pinfunction "AM0_15")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "22")
+				(pinfunction "GND_22")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "25")
+				(pinfunction "GND_25")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "28")
+				(pinfunction "GND_28")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "33")
+				(pinfunction "EP_33")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "GND_9")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "29")
+			(name "unconnected-(U1-SYNC-Pad16)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "SYNC_16")
+				(pintype "passive+no_connect")
+			)
+		)
+	)
+)

@@ -1,0 +1,385 @@
+{
+ "script": "stitch_vias",
+ "status": "pass",
+ "board": "PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "requested": 25,
+ "placed": 26,
+ "skipped": [],
+ "via_size": 0.6,
+ "via_drill": 0.3,
+ "clearance_mm": 0.1016,
+ "dry_run": false,
+ "applied": true,
+ "refilled": true,
+ "apply_by_status": {
+  "added": 31
+ },
+ "ops": [
+  {
+   "op": "add_via",
+   "at": [
+    21.15,
+    27.55
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    21.15,
+    28.2
+   ],
+   "end": [
+    21.15,
+    27.55
+   ],
+   "width": 0.3,
+   "layer": "F.Cu",
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    16.41,
+    22.29
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    38.2,
+    53.57
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    38.2,
+    58.77
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    47.8,
+    53.57
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    43.0,
+    49.37
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    54.2,
+    53.57
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    54.2,
+    58.77
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    63.8,
+    53.57
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    59.0,
+    49.37
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    70.2,
+    53.57
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    70.2,
+    58.77
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    79.8,
+    53.57
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    75.0,
+    49.37
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    26.66,
+    75.0
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    21.0,
+    72.54
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    21.0,
+    73.19
+   ],
+   "end": [
+    21.0,
+    72.54
+   ],
+   "width": 0.152,
+   "layer": "F.Cu",
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    43.0,
+    51.54
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.0,
+    52.19
+   ],
+   "end": [
+    43.0,
+    51.54
+   ],
+   "width": 0.152,
+   "layer": "F.Cu",
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    59.0,
+    51.54
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    59.0,
+    52.19
+   ],
+   "end": [
+    59.0,
+    51.54
+   ],
+   "width": 0.152,
+   "layer": "F.Cu",
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    75.0,
+    51.54
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    75.0,
+    52.19
+   ],
+   "end": [
+    75.0,
+    51.54
+   ],
+   "width": 0.152,
+   "layer": "F.Cu",
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    48.1,
+    33.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    65.65,
+    79.5
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.555,
+    39.345
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    78.35,
+    79.5
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    20.236,
+    26.636
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    21.775,
+    26.636
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    28.772,
+    75.883
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "VM"
+  }
+ ],
+ "mode": "stitch",
+ "pitch_mm": 4.283,
+ "t_rise_ns": 1.0,
+ "nets": {
+  "VM": {
+   "plane_layers": [
+    "In2.Cu"
+   ],
+   "pads": {
+    "requested": 25,
+    "placed": 25,
+    "skipped": 0
+   },
+   "area": {
+    "candidates": 304,
+    "placed": 1,
+    "rejected": {
+     "single_layer_contact": 280,
+     "near_same_net_via": 17,
+     "fill_edge": 6
+    },
+    "capped": false
+   }
+  }
+ },
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-28T00:46:12+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:7b525c85ac2b71abbbdc1004e9d3817bdfcbda66fdf5843d2d4bc60226bff044"
+}

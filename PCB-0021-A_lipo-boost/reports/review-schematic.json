@@ -1,0 +1,59 @@
+{
+ "violations": [
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "VBUS",
+   "refs": [
+    "J1",
+    "U1"
+   ],
+   "msg": "No input fuse/PTC or TVS on VBUS: a hot-plug spike or short is only limited by U1 (OVP 10.2 V); provisional decision records no protection.",
+   "source": "review.schematic",
+   "kind": "no-input-protection"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "VBAT",
+   "refs": [
+    "J2"
+   ],
+   "msg": "No reverse-battery protection on J2: a reversed pack damages U1/U3; silk polarity warning only (provisional decision).",
+   "source": "review.schematic",
+   "kind": "no-reverse-batt"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "+5V",
+   "refs": [
+    "J4",
+    "U2"
+   ],
+   "msg": "No current limit/PTC on the 5 V output: a short at J4 relies on U2 internal limit.",
+   "source": "review.schematic",
+   "kind": "no-5v-limit"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "TMR",
+   "refs": [
+    "U1",
+    "R4"
+   ],
+   "msg": "Fast-charge timer 51k = 6.8 h nominal (36-60 s/kohm spread: 5.1-8.5 h); fine for 1 A into typical cells, risk only with cells >4 Ah.",
+   "source": "review.schematic",
+   "kind": "timer-spread"
+  }
+ ]
+}

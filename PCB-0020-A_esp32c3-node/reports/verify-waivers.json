@@ -1,0 +1,28 @@
+{
+  "waivers": [
+    {
+      "check": "check_return_path",
+      "kind": "corridor_void",
+      "net": "/USB_DP",
+      "reason": "USB is full-speed 12 Mb/s over ~25 mm: edge rates of several ns vs ~0.15 ns flight time, so return-path voids, coupling, impedance and skew are electrically irrelevant. Track decision 2026-10-01, listed for the owner in the PR: keep the current USB route. GND vias added beside the layer-change vias.",
+      "approved": "track decision 2026-10-01, pending owner review in the PR",
+      "owner-visible": true
+    },
+    {
+      "check": "check_return_path",
+      "kind": "corridor_void",
+      "net": "/USB_DM",
+      "reason": "USB is full-speed 12 Mb/s over ~25 mm: edge rates of several ns vs ~0.15 ns flight time, so return-path voids, coupling, impedance and skew are electrically irrelevant. Track decision 2026-10-01, listed for the owner in the PR: keep the current USB route. GND vias added beside the layer-change vias.",
+      "approved": "track decision 2026-10-01, pending owner review in the PR",
+      "owner-visible": true
+    },
+    {
+      "check": "check_current",
+      "kind": "pour_neckdown",
+      "net": "GND",
+      "reason": "Both reports are separate GND pour islands on one layer that each hold a via to the opposite-layer GND plane; the return current flows through the plane via those vias. Checker treats the layer fill as one trunk and reports neck 0. 0.7 A is a conservative return-current model; real GND current here is well under 0.5 A.",
+      "approved": "delegate 2026-10-01, owner autonomy grant",
+      "owner-visible": true
+    }
+  ]
+}

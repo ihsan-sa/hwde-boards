@@ -1,0 +1,43 @@
+id: gate-driver-bootstrap-gate-routing
+classes: [emi, power-loop]
+applies:
+  topologies: [gate-driver-bootstrap]
+  packages: []
+  interfaces: []
+  parts: [DRV8300D]
+rule:
+  enforced_by: null
+  gate_trace_width_mil: "min 10, typ 15"
+  gate_routing: "GHx/SHx/GLx short, fewest vias; driver as close to FETs as possible"
+  shx_neg_transient: "minimise HS-source to LS-source inductance; SHx >= -22 V for 2 us (ROC)"
+  shx_slew_v_per_ns_max: 2
+prose: >
+  DRV8300 datasheet p22 Section 11.1: minimise parasitic inductance of the GHx,
+  SHx and GLx connections (short, fewest vias, min 10 mil / typ 15 mil width);
+  place the driver as close to the MOSFETs as possible so the gate charge and
+  discharge current loops occupy a minimal area; minimise the inductance between
+  the high-side source and the low-side source to limit negative SHx transients;
+  put a low-ESR electrolytic plus a ceramic between high-side drain and ground to
+  stop drain transients. p6 Recommended Operating Conditions bound the switch
+  node the driver tolerates: SHx -2..85 V (-22 V for 2 us transients) and SHx
+  slew <= 2 V/ns for the integrated-diode D/DI variants (50 V/ns for N/NI). At
+  28 V and ~50 ns edges the node slews ~0.6 V/ns, inside the D limit; a smaller
+  Rg that pushed edges below ~14 ns at 28 V would break it. p20 Fig 9-2/9-3 show
+  GHA/SHA/GLA edges with 15 ohm gate resistors on CSD19532Q5B.
+sources:
+  - {file: research/sources/drv8300.pdf, page: 22, note: "Section 11.1 bullets 2-6: HS drain bulk+ceramic, HS-source/LS-source inductance, GHx/SHx/GLx min 10 mil typ 15 mil, driver close to FETs"}
+  - {file: research/sources/drv8300.pdf, page: 6, note: "Table 7.3: VSHx -2..85 V, -22 V 2 us transient; SHx slew max 2 V/ns (D/DI), 50 V/ns (N/NI)"}
+  - {file: research/sources/drv8300.pdf, page: 20, note: "Fig 9-2/9-3 scope shots: GHA/SHA/GLA rising and falling with 15 ohm gate resistor, CSD19532Q5B"}
+status: active
+origin: research:block-gate-driver-bootstrap-1
+level: family
+envelope:
+  vin_v: {min: 5, max: 85}
+  edge_ns: {min: 14, max: 1000}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with switch-node dv/dt = vin/edge: the DRV8300D tolerates 2 V/ns on
+  SHx, so at a 28 V bus edges must stay >= ~14 ns; vin max 85 V is the SHx
+  recommended limit. Trace-width and placement wording is DRV8300-family advice.
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p22 DRV8300 sec11.1 bullets 2-6 match trace width/placement wording; p6 table VSHx -2..85V, -22V transient, slew 2/50 V/ns match exactly; p20 Fig9-2/9-3 15ohm Rg CSD19532Q5B match"}

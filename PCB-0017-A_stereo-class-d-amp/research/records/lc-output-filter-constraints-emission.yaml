@@ -1,0 +1,44 @@
+id: lc-output-filter-constraints-emission
+classes: [constraints-emission]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  emit_proximity: "each output inductor and its filter cap to their OUTxx pin group (loop rule)"
+  emit_proximity_snubber: "switch-node RC to its OUTxx pin and the nearest IC GND pin"
+  emit_net_class: "OUTxx / speaker nets as a power class sized for the peak output current"
+  emit_return: "filter-cap GND pads stitched to the bottom GND pour; no signal trace between them and the IC GND"
+prose: >
+  What the block must write into constraints.json so P6 can enforce the
+  layout rules the sources state in prose. From the datasheet's layout
+  guidelines (p28) and example (p29-30): a proximity entry per output
+  inductor and per filter cap to its OUTxx pin group (the loop rule), a
+  proximity entry for each switch-node RC snubber to its pin and the
+  nearest GND pin (7.3.14, p21: "tight and returns directly to the GND pins
+  on the IC"), a net class for the OUTxx and speaker nets wide enough for
+  the peak output current ("direct low impedance traces ... output traces",
+  Fig 40), and a return-path entry that the filter caps' GND pads stitch to
+  the bottom GND pour with no trace cutting between them and the IC GND.
+  The EVM's placement (p6) is the shape the proximity entries should
+  reproduce: inductors in a block at the pins, caps at the inductor
+  outputs, post-filter RC at the connector end. No keepout is sourced for
+  the inductor itself; if the board carries a high-impedance analog input
+  near the filter, the separation is the amp block's to emit, not this
+  block's. This
+  is an emission contract, so it is a principle: it bounds no operating
+  point.
+sources:
+  - {file: research/sources/tpa3116d2.pdf, page: 28, note: "10.1 layout guidelines: smallest output->filter->GND loop, LC close to the outputs, filter caps grounded, star ground at IC GND"}
+  - {file: research/sources/tpa3116d2.pdf, page: 29, note: "Fig 40 callouts that become entries: output filters close to the output pins; direct low-impedance output traces; top GND fill; many vias"}
+  - {file: research/sources/tpa3116d2.pdf, page: 21, note: "7.3.14: snubber layout tight, returned directly to the IC GND pins - the snubber proximity entry"}
+  - {file: research/sources/slou336b.pdf, page: 6, note: "Fig 3 EVM top: inductor block at the pins, caps at inductor outputs, post-filter RC at the posts - the placement the entries reproduce"}
+status: active
+origin: research:block-lc-output-filter-1
+level: principle
+envelope: null
+maturity: verified
+generalizes: []
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: the unsupported parenthetical about shielded EVM inductors beside signal parts is removed; 'No keepout is sourced for the inductor' now stands alone. Remaining citations (tpa3116 p21/p28/p29, slou336b p6) unchanged and confirmed on pass 1."}

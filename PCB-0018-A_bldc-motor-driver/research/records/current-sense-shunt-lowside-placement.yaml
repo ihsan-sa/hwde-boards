@@ -1,0 +1,52 @@
+id: current-sense-shunt-lowside-placement
+classes:
+- power-loop
+- return-path
+applies:
+  topologies:
+  - current-sense-shunt
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  position: between low-side FET source and the star-point ground, one per phase
+  placement: in line with the power stage, close to the CSA
+  gnd_connection: multiple vias
+prose: 'Low-side shunts sit between the source of each phase''s low-side MOSFET and the star-point ground
+  connection (one shunt per phase for two/three-phase sensing), placed in line with the power-stage parts
+  to keep power-trace impedance low, and close to the CSA to limit coupling onto other traces. The ground
+  end is stitched with many vias: SLVA959B Fig 3-3 shows three 2512-class shunts (R10/R8/R6) whose GND
+  ends each carry a 3x3-ish via array into the ground plane, adjacent to the low-side gate pins. Low-side
+  sensing needs little common-mode range but is more susceptible to ground noise and cannot see a short
+  to ground (sec 7.2, 7.3) - which is why the ground end and the star point matter.'
+sources:
+- file: research/sources/slva959b.pdf
+  page: 32
+  note: 'sec 7.5 placement text: in line with power stage, close to CSA; low-side shunt between LS source
+    and star-point ground, per phase'
+- file: research/sources/slva959b.pdf
+  page: 13
+  note: 'Fig 3-3 layout+3D: three current-sense shunts R10/R8/R6 each with a multi-via array on the GND
+    end'
+- file: research/sources/slva959b.pdf
+  page: 31
+  note: 'sec 7.2 / Fig 7-3: low-side shunt current path; tradeoff: ground-noise susceptibility, cannot
+    detect ground shorts; Fig 7-4 three-phase CSA arrangement'
+status: active
+origin: research:block-current-sense-shunt-1
+level: topology
+envelope:
+  ipeak_a:
+    min: 0
+    max: 30
+  board_layers:
+    min: 2
+    max: 6
+envelope_note: 'Scales with phase current (via count and copper for the GND end) and needs a ground plane
+  to stitch into. Bounded at 30 A peak because the cited three-shunt example is a DRV-class motor EVM
+  in that current range; above it, via count and shunt package need re-derivation. 2-6 layers: the rule
+  assumes an inner ground plane or solid bottom pour.'
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p31-32 SLVA959B sec 7.2/7.5 text matches placement claim verbatim; p13 Fig3-3 via arrays near R10/R8/R6 plausible match, though exact 30A ipeak bound has no explicit page support (see OPEN)"}

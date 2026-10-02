@@ -1,0 +1,10 @@
+{"block": "charger-loadshare",
+ "decisions": [
+  {"what": "MCP73831-2 (4.20 V) with RPROG 5.1 k -> ~196 mA", "why": "IREG = 1000 V / RPROG (PROG 10 k gives 90-110 mA in the EC table); 0.5C of the provisional 400 mAh cell", "source": "MCP73831/2 datasheet DS20001984, Electrical Characteristics (IREG at PROG = 10 k), parts/U2_MCP73831T-2ACI-OT_C424093.pdf"},
+  {"what": "4.7 uF ceramic at VDD and at VBAT", "why": "typical application circuit; stability with no battery", "source": "MCP73831/2 datasheet, typical application (p1)"},
+  {"what": "load sharing: Schottky VBUS->VSYS, P-MOSFET drain=VBAT source=VSYS gate=VBUS with 100 k to GND", "why": "with USB present the load runs off VBUS and the cell is isolated so the charger terminates on cell current only; without USB the PMOS connects the cell", "source": "OPINION (Microchip AN1149 'Designing A Li-Ion Battery Charger and Load Sharing System With Microchip's Stand-Alone Li-Ion Battery Charge Management Controller' - not fetched this run)"},
+  {"what": "STAT drives a charge LED to 3V3? NO - to VBUS via LED+R", "why": "STAT is tri-state: low = charging, high-Z = shutdown/no battery, high = done; LED from VBUS (anode) to STAT lights only while charging and is dark on battery", "source": "MCP73831/2 datasheet s 'Status Indicator - STAT'"},
+  {"what": "no NTC (MCP73831 has no thermistor input)", "why": "P0 provisional: protected cell, thermal regulation of the charger die", "source": "MCP73831/2 datasheet features (Thermal Regulation)"}
+ ],
+ "layout_notes": ["charger near the USB connector (short VBUS), VBAT trace to JST-PH sized for 0.5 A", "PMOS and Schottky between charger and LDO", "thermal: 196 mA x (5.0-3.7 V) = 0.25 W worst in the charger at precondition end; thermal regulation folds back"],
+ "errata": ["with no cell the charger output hunts around VREG: VBAT reads ~4.2 V with no battery - firmware must not treat it as a full cell", "PMOS body diode conducts VBAT->VSYS if the gate is driven wrong - keep the gate pull-down"]}

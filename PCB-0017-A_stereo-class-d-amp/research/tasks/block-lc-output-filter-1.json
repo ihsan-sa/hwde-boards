@@ -1,0 +1,214 @@
+{
+ "id": "block-lc-output-filter-1",
+ "slot": "block:B4",
+ "kind": "block",
+ "token": "lc-output-filter",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified",
+ "opened": "2026-09-27T01:37:11",
+ "closed": "2026-09-27T02:26:24",
+ "coverage_report": "PCB-0017-A_stereo-class-d-amp/log/coverage-P2.json",
+ "gap": {
+  "slot": "block:B4",
+  "kind": "block",
+  "topology": "lc-output-filter",
+  "operating_point": {
+   "l_uh": 10,
+   "c_nf": 680,
+   "f0_khz": 61,
+   "fsw_khz": 400,
+   "rload_ohm_min": 4,
+   "rload_ohm_typ": 8,
+   "iout_a": 3.0,
+   "il_pk_a": 3.5,
+   "isat_min_a": 4.0,
+   "ioc_trip_a": 7.5,
+   "l_min_at_trip_uh": 1.0,
+   "dcr_mohm": 66,
+   "damping_r_ohm": 3.3,
+   "damping_c_nf": 10,
+   "inductor_body_mm": 7.3,
+   "board_layers": 2,
+   "copper_oz": 2,
+   "filter_kind": "lc-second-order",
+   "damping_kind": "zobel-rc",
+   "inductor_kind": "shielded-power",
+   "output_kind": "btl"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'lc-output-filter' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'lc-output-filter': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/an/sloa119b/sloa119b.pdf",
+   "final_url": "https://www.ti.com/lit/an/slaa701b/slaa701b.pdf?ts=1790483335106",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": null,
+   "file": "research/sources/slaa701b.pdf",
+   "sha256": "c0b700ff064306630ae5d8995f7371880df06970bedd4cf43d8c825e8de5e040",
+   "bytes": 1629223,
+   "content_type": "application/pdf",
+   "pages": 45,
+   "fetched": "2026-09-27T01:42:04",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "TPA3118D2DAPR",
+   "file": "research/sources/tpa3116d2.pdf",
+   "sha256": "4339471f438d786c444b4776925e75cf3a4ceafb8d6fad5de709d080670271a0",
+   "bytes": 2662209,
+   "content_type": "application/pdf",
+   "pages": 49,
+   "fetched": "2026-09-27T01:42:30",
+   "via": "http",
+   "note": null,
+   "deduplicated": true
+  },
+  {
+   "n": 3,
+   "url": "https://www.ti.com/lit/ug/slou336b/slou336b.pdf",
+   "final_url": "https://www.ti.com/lit/ug/slou336b/slou336b.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "TPA3116D2EVM",
+   "file": "research/sources/slou336b.pdf",
+   "sha256": "7c23a786f2f3fecc6905f0852fd83eb8279b814ba27487bbfb960564a2c529d0",
+   "bytes": 4862966,
+   "content_type": "application/pdf",
+   "pages": 15,
+   "fetched": "2026-09-27T01:43:17",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 4,
+   "url": "https://www.coilcraft.com/getmedia/4dde0ed8-535d-4960-bf95-2b450f1fe702/doc1404_classd.pdf",
+   "final_url": "https://www.coilcraft.com/getmedia/4dde0ed8-535d-4960-bf95-2b450f1fe702/doc1404_classd.pdf",
+   "host": "www.coilcraft.com",
+   "domain": "coilcraft.com",
+   "domain_kind": "vendor",
+   "tier": "cross-vendor",
+   "declared_tier": "cross-vendor",
+   "about": null,
+   "file": "research/sources/doc1404_classd.pdf",
+   "sha256": "951968970d5117f47c6155f85c5942836abf1f6bb30a6c0852f2fe2c8fa13711",
+   "bytes": 631416,
+   "content_type": "application/pdf",
+   "pages": 2,
+   "fetched": "2026-09-27T01:53:26",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "lc-output-filter-butterworth-pairing": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: envelope_note now says the p18 tables cover 4/6/8 ohm only and attributes the 2-8 ohm span to Fig 1-11 (p12) and Fig 1-18 (p17), both now cited and matching the pages re-read on pass 1. Other citations unchanged and confirmed on pass 1.",
+   "ts": "2026-09-27T02:24:18"
+  },
+  "lc-output-filter-cap-voltage-dc-bias": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: Fig 1-41 p40 now reads 25 V part ~-12 % near 23 V and 50 V ~-15 % at 50 V, with no dielectric named - matches the page; the p39 film-cap claim is removed. Residual, non-blocking: 'written for TI's high-voltage PurePath HD stages' (p32) is still the author's inference, not on the page; the 50 V choice stands on EVM BOM item 9 (slou336b p9) regardless.",
+   "ts": "2026-09-27T02:24:22"
+  },
+  "lc-output-filter-constraints-emission": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: the unsupported parenthetical about shielded EVM inductors beside signal parts is removed; 'No keepout is sourced for the inductor' now stands alone. Remaining citations (tpa3116 p21/p28/p29, slou336b p6) unchanged and confirmed on pass 1.",
+   "ts": "2026-09-27T02:24:25"
+  },
+  "lc-output-filter-dcr-dissipation": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: Fig 1-27 p24 (2x BTL, 4 ohm, 200 W total) now read as 100 W/ch = 5 A rms, 7 A peak - correct; envelope narrowed to iout_a 1-5 A, matching Table 1-7's 1 A (p23-24) and Fig 1-27's 5 A rms, with the note stating nothing outside is measured. Other claims confirmed on pass 1.",
+   "ts": "2026-09-27T02:24:26"
+  },
+  "lc-output-filter-ground-return-2layer": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: wide bottom copper is now identified as the PVCC feed (tpa3116 p30 Fig 41; slou336b p7 Fig 4 red bottom route to both PVCC pin groups, routes only, no pour drawn); output path OUTxx->L1-L4->posts on top (slou336b p6 Fig 3); PVCC post and bulk C7/C18 on the output side of U1 - all match the pages. The opposite-sides claim is gone. Fig 41 carries no PVCC label; the identification rests on matching the EVM layout, which holds.",
+   "ts": "2026-09-27T02:24:30"
+  },
+  "lc-output-filter-inductor-isat-and-min-l": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: new citation slaa701b p20 (Fig 1-21 THD+N vs power, Fig 1-22 THD+N vs frequency at 20 W/4 ohm, four Table 1-6 inductors, linear parts lower esp. 1-6 kHz) matches the page; envelope narrowed to ioc_trip_a 4.5-7.5 A = tpa3116 p7 trip points with the p5 1 uH floor. Rest unchanged from pass 1.",
+   "ts": "2026-09-27T02:24:32"
+  },
+  "lc-output-filter-placement-and-loop": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: the Fig 4 (slou336b p7) sentence and source note now say the bottom carries no output copper, its one wide route is the PVCC feed, and no pour is drawn - matches the page (legend: green = top routes, red = bottom routes). Other citations unchanged and confirmed on pass 1.",
+   "ts": "2026-09-27T02:24:35"
+  },
+  "lc-output-filter-q-tracks-load": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: Fig 1-11 p12 8 ohm peak now ~+4 dB near 40 kHz (Q 1.47) - matches the plot; the Type-2 8 ohm case now states the second-order maximum ~+1.5 dB near 45 kHz for Q 1.04 - correct. Residual, non-blocking: 'which is why TI lists the pair for 4-8 ohm' is still inference; tpa3116 p23 Fig 35 shows only the 4-8 ohm label.",
+   "ts": "2026-09-27T02:24:38"
+  },
+  "lc-output-filter-snubber-networks": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: new citation tpa3116 p7 6.6 fOSC (376-424 ... 1128-1278 kHz by AM2..0) matches the page and now sources the fsw 376-1278 kHz envelope. Rest unchanged from pass 1.",
+   "ts": "2026-09-27T02:24:43"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-lc-output-filter-1",
+ "updated": "2026-09-27T02:26:24",
+ "accepted_drafts": null,
+ "summary": {
+  "verified": 9,
+  "refuted": 0,
+  "checklists": 1,
+  "sources": 4
+ }
+}

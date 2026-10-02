@@ -1,0 +1,113 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "remove",
+   "uuid": "23943b9e-c320-447f-b489-efc214f42f0f"
+  },
+  {
+   "op": "remove",
+   "uuid": "8f27377d-03c3-4598-abd8-de0941ddfb01"
+  },
+  {
+   "op": "remove",
+   "uuid": "95f96445-7bbb-499f-b2b1-057159cef632"
+  },
+  {
+   "op": "remove",
+   "uuid": "b26d696d-e12e-478e-8a5d-979045495356"
+  },
+  {
+   "op": "remove",
+   "uuid": "cf3238ec-96e2-4fc3-8be2-52de61caefd4"
+  },
+  {
+   "op": "remove",
+   "uuid": "f77b05ac-2037-4804-bd9a-77bd3eecb349"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    32.629,
+    38.089
+   ],
+   "end": [
+    34.6,
+    38.089
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    34.6,
+    38.089
+   ],
+   "end": [
+    34.6,
+    37.2
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    35.05,
+    15.118
+   ],
+   "end": [
+    33.3,
+    16.868
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    33.3,
+    16.868
+   ],
+   "end": [
+    33.3,
+    17.834
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    33.3,
+    17.834
+   ],
+   "end": [
+    32.026,
+    19.108
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    33.3,
+    18.2
+   ],
+   "end": [
+    34.65,
+    18.2
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  }
+ ]
+}

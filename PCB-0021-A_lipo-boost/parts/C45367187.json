@@ -1,0 +1,55 @@
+{
+ "mpn": "MSXC61CN3302MR",
+ "lcsc": "C45367187",
+ "package": "SOT-23-3",
+ "description": "MSKSEMI MSXC61C NMOS open-drain voltage detector, 3.3 V +/-2%, hysteresis 5%",
+ "pinout": [
+  {
+   "pin": "1",
+   "name": "VOUT",
+   "type": "open_collector"
+  },
+  {
+   "pin": "2",
+   "name": "VSS",
+   "type": "ground"
+  },
+  {
+   "pin": "3",
+   "name": "VIN",
+   "type": "power_in"
+  }
+ ],
+ "decoupling": [],
+ "land_pattern": {
+  "package": "SOT-23-3",
+  "pad_count": 3,
+  "pitch_mm": 1.9,
+  "pin1": "1"
+ },
+ "exposed_pad": {
+  "present": false
+ },
+ "layout_notes": [
+  "NMOS open drain output needs an external pull-up or LED load to a rail up to 9 V",
+  "Datasheet pin order SOT-23-3: 1 VOUT, 2 VSS, 3 VIN",
+  "VOUT low when VIN < detect voltage; VIN operating 0.7-7 V; no decoupling cap specified"
+ ],
+ "abs_max": [
+  {
+   "param": "VIN",
+   "value": 10,
+   "unit": "V"
+  },
+  {
+   "param": "VOUT (NMOS open drain)",
+   "value": 9,
+   "unit": "V"
+  },
+  {
+   "param": "IOUT",
+   "value": 50,
+   "unit": "mA"
+  }
+ ]
+}

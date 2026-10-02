@@ -1,0 +1,5 @@
+LDLP=~/.local/kicad10/usr/lib/x86_64-linux-gnu
+Sun Sep 27 08:46:07 AM UTC 2026
+{"script": "route_auto", "status": "error", "error": "CheckError: no Freerouting rung produced an importable session and the KRT fallback is unavailable; see PCB-0017-A_astra-amp/route logs (board untouched)"}
+EXIT=2
+Sun Sep 27 08:51:23 AM UTC 2026

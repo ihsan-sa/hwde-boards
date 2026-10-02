@@ -1,0 +1,33 @@
+id: current-sense-shunt-constraints-emission
+classes:
+- constraints-emission
+applies:
+  topologies:
+  - current-sense-shunt
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  emit: net ties at each shunt sense pair; SNSx_P/N as a diff-pair net class; placement group {LS FET,
+    shunt, GND vias}; CSA+filter+bypass group near the shunt
+prose: 'What the block must hand to constraints: (1) a net tie per sense net at each shunt so the router
+  cannot take the sense nets from the pour (SLVA959B sec 7.7, Fig 7-6); (2) the SNSx_P/SNSx_N pairs as
+  a differential-pair class, since TI recommends differential-pair routing tools for them; (3) a placement
+  group per phase anchoring the shunt between the low-side FET source and the ground stitching (sec 7.5),
+  and (4) a group holding the CSA with its filter and bypass close to it (sec 7.8). SLVA959B''s point
+  is that the route restriction must be placed during placement, not discovered during routing.'
+sources:
+- file: research/sources/slva959b.pdf
+  page: 33
+  note: 'sec 7.7: net ties so the restriction is set at placement; Fig 7-6 net-tie example; recommendation
+    to use differential-pair routing'
+- file: research/sources/slva959b.pdf
+  page: 34
+  note: sec 7.8 filters close to the CSA; 7.9 do's incl. net ties and differential routing tools
+status: active
+origin: research:block-current-sense-shunt-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p33-34 SLVA959B sec 7.7/7.8/7.9 match: net ties, diff-pair, filter-near-CSA, do's; text confirmed as cited"}

@@ -1,0 +1,39 @@
+id: gate-driver-bootstrap-charge-loop
+classes: [power-loop, decoupling]
+applies:
+  topologies: [gate-driver-bootstrap]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  cboot_at: "BSTx and SHx pins, as close as possible"
+  cvdd_at: "GVDD/VDD and GND pins"
+  loop: "Cvdd -> boot diode (-> Rboot) -> Cboot -> SW -> LS FET -> GND -> Cvdd, minimal"
+  separate: "high-voltage power traces from low-voltage signal traces"
+prose: >
+  The bootstrap charge path is a pulsed high-current loop: SLUA887A p2 Fig 2-1
+  traces it from the VDD bypass cap through Rboot and Dboot into Cboot, out HS to
+  the switch node and down through the low-side FET to ground; Fig 2-2 shows the
+  discharge path Cboot -> HO -> high-side gate. p7 Section 4: this loop (Cboot,
+  boot diode, ground-referenced VDD bypass, LS switch) must be as small as
+  possible, Cboot and Cvdd as close as possible to the driver supply pins, and HV
+  power traces kept apart from LV signal traces; Fig 4-1 (UCC27710) shows RBOOT
+  and DBOOT directly above the IC, CBOOT beside HB/HS and CVDD on the bottom side
+  under VDD/COM. DRV8300 p22 Section 11.1: low-ESR/ESL caps close to the device
+  between GVDD-GND and BSTx-SHx for the turn-on peak current; the Layout Example
+  figure shows the BSTA/SHA cap pads right at the pins and the GVDD cap beside the
+  GVDD pin with ground vias. SLUA887A p5 Fig 3-3 shows HB-HS ringing appearing
+  with switch-node disturbances. At P6 treat driver + 3x Cboot + Cgvdd as a
+  locked placement group.
+sources:
+  - {file: research/sources/slua887a.pdf, page: 2, note: "Fig 2-1 bootstrap charging path (VDD cap-Rboot-Dboot-Cboot-HS-LS FET-GND) and Fig 2-2 discharge path to HS FET"}
+  - {file: research/sources/slua887a.pdf, page: 5, note: "Fig 3-3: HB_HS ringing effects on switch node (scope capture)"}
+  - {file: research/sources/slua887a.pdf, page: 7, note: "Section 4 text + Fig 4-1 UCC27710 layout: RBOOT/DBOOT/CBOOT next to IC, CVDD bottom side under VDD/COM; loop minimal; HV/LV separation"}
+  - {file: research/sources/drv8300.pdf, page: 22, note: "Section 11.1 bullet 1 + 11.2 Layout Example figure: BSTx cap and GVDD cap close to device, DT resistor close"}
+status: active
+origin: research:block-gate-driver-bootstrap-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p2,5,7 SLUA887A Fig2-1/2-2/3-3/4-1 match; p22 DRV8300 bullet1+layout fig match BSTx/GVDD/DT close to device"}

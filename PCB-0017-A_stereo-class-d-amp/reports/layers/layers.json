@@ -1,0 +1,35 @@
+{
+  "script": "layer_views",
+  "status": "pass",
+  "input": "PCB-0017-A_stereo-class-d-amp/kicad/PCB-0017-A_stereo-class-d-amp.kicad_pcb",
+  "layers": [
+    {
+      "layer": "F.Cu",
+      "path": "PCB-0017-A_stereo-class-d-amp/reports/layers/PCB-0017-A_stereo-class-d-amp_F_Cu.pdf",
+      "labels": 177
+    },
+    {
+      "layer": "B.Cu",
+      "path": "PCB-0017-A_stereo-class-d-amp/reports/layers/PCB-0017-A_stereo-class-d-amp_B_Cu.pdf",
+      "labels": 20
+    }
+  ],
+  "views": [
+    {
+      "view": "top",
+      "path": "PCB-0017-A_stereo-class-d-amp/reports/layers/PCB-0017-A_stereo-class-d-amp_top.png",
+      "status": "pass"
+    },
+    {
+      "view": "bottom",
+      "path": "PCB-0017-A_stereo-class-d-amp/reports/layers/PCB-0017-A_stereo-class-d-amp_bottom.png",
+      "status": "pass"
+    },
+    {
+      "view": "iso",
+      "path": "PCB-0017-A_stereo-class-d-amp/reports/layers/PCB-0017-A_stereo-class-d-amp_iso.png",
+      "status": "pass"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,81 @@
+{
+ "script": "check_pdn",
+ "status": "pass",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "checked": [
+  {
+   "rail": "VBUS",
+   "current_a": 1.5,
+   "on_board": true,
+   "caps": [
+    "C1",
+    "C4"
+   ],
+   "cap_count": 2,
+   "bulk_count": 1,
+   "ceramic_count": 1,
+   "total_uf": 4.8
+  },
+  {
+   "rail": "+SYS",
+   "current_a": 2.2,
+   "on_board": true,
+   "caps": [
+    "C10",
+    "C14",
+    "C2"
+   ],
+   "cap_count": 3,
+   "bulk_count": 2,
+   "ceramic_count": 1,
+   "total_uf": 20.1
+  },
+  {
+   "rail": "VBAT",
+   "current_a": 2.0,
+   "on_board": true,
+   "caps": [
+    "C3"
+   ],
+   "cap_count": 1,
+   "bulk_count": 1,
+   "ceramic_count": 0,
+   "total_uf": 10.0
+  },
+  {
+   "rail": "/SW",
+   "current_a": 3.0,
+   "skipped": "pdn:false (width-only power entry)"
+  },
+  {
+   "rail": "+5V",
+   "current_a": 1.3,
+   "on_board": true,
+   "caps": [
+    "C11",
+    "C12",
+    "C13"
+   ],
+   "cap_count": 3,
+   "bulk_count": 2,
+   "ceramic_count": 1,
+   "total_uf": 44.1
+  },
+  {
+   "rail": "GND",
+   "current_a": 2.2,
+   "skipped": "pdn:false (width-only power entry)"
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T13:31:32+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f"
+}

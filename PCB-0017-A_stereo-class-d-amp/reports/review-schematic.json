@@ -1,0 +1,78 @@
+{
+  "script": "schematic-reviewer",
+  "board": "PCB-0017-A_astra-amp",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_sch",
+  "input_digest": "sexpr_no_uuid:456dd1bf9b766ba8ddb0d3ca0fb4b4fa82df5619d224e44cf46c319e2cf9ce7c",
+  "generated_at": "2026-09-27",
+  "counts": {"error": 0, "warning": 5},
+  "violations": [
+    {
+      "check": "schematic-review",
+      "severity": "warning",
+      "pos": null,
+      "layer": null,
+      "net": "+12V",
+      "refs": ["C13", "C14", "J1"],
+      "msg": "The design's own recorded hot-plug ring ceiling (26 V) exceeds C13's 25 V polymer rating, and C14's ESR cannot damp it because a high-ESR branch in parallel with a 30 mOhm polymer leaves the bank at ~45-50 mOhm effective against the 0.14 ohm SLUAAL8 needs for a 1 uH lead / 200 uF; a live plug-in on a stiff supply can put one peak over C13's rating each time. Fix: C13 -> 35 V (low-ESR electrolytic or polymer-hybrid, same D6.3 footprint), or an SMBJ13A-class avalanche TVS across J1 clamping under 25 V, or record the acceptance at H1 with the 26 V vs 25 V number; in every case correct blocks.md/power_tree.md's claim that C14 damps the ring.",
+      "source": "review.schematic",
+      "kind": "hotplug-ring-cap-rating"
+    },
+    {
+      "check": "schematic-review",
+      "severity": "warning",
+      "pos": null,
+      "layer": null,
+      "net": "+12V",
+      "refs": ["C14"],
+      "msg": "C14 RVT100UF35V167RV0082 is a general-purpose electrolytic per live LCSC attributes (150 mA ripple at 120 Hz, no ESR or 100 kHz rating), not the low-ESR part sheets.md and parts.json describe, so its recorded role (ring damping, low-ESR reservoir) is unsupported; functionally minor because C13 carries the ripple, but the record is wrong and the ripple margin is thin if the +12V trunk is long. Fix: source a 35 V D6.3 part with a stated 100 kHz ripple >= 0.5 A and ESR <= 0.3 ohm (ideally the same 35 V MPN as a re-rated C13), or keep it and rewrite its role as a plain second reservoir.",
+      "source": "review.schematic",
+      "kind": "bulk-cap-esr-unverified"
+    },
+    {
+      "check": "schematic-review",
+      "severity": "warning",
+      "pos": null,
+      "layer": null,
+      "net": "/LINP",
+      "refs": ["C1", "C2", "C3", "C4", "U1"],
+      "msg": "With 2.2 uF into Zi 60 kOhm (tau 132 ms) a power-up with no source connected leaves INP at the 3 V bias while INN ramps, rail-clipping the output for 2.45*tau = 323 ms nominal (77 % of the 420 ms DC-detect window, SLOS708 7.3.9 / Table 5) and 465 ms at the +20 % cap / +20 % Zi corner, so DC-detect trips and the FAULTZ-SDZ tie cycles the part until the caps charge; with a source connected the tau mismatch gives a ~2 V, ~150 ms thump. Self-recovering, so bring-up proceeds, but it will be reported as a fault. Fix: C1-C4 -> 1.5 uF (Table 2) or 1 uF (Fig 37), K tolerance, recorded as a deviation from Astra; or keep 2.2 uF and document the unplugged-input fault cycle in the bring-up notes.",
+      "source": "review.schematic",
+      "kind": "input-rc-startup-pop"
+    },
+    {
+      "check": "schematic-review",
+      "severity": "warning",
+      "pos": null,
+      "layer": null,
+      "net": "+12V",
+      "refs": ["J1", "U1", "C13", "C14"],
+      "msg": "A reversed 12 V at the unkeyed J1 wire pads forward-biases U1's body diodes and reverse-biases two polarised capacitors with only the adapter's current limit in the path - destructive and unprotected (Q7 accepted, power_tree.md 5); flagged because the connector checklist requires a destructive reverse-plug to be recorded at review. Fix: a +12V/GND legend at J1 that survives assembly, the note in COMPARISON.md, and optionally a DNP SMB footprint across J1 (TVS or Schottky) that costs nothing in the fitted-part comparison.",
+      "source": "review.schematic",
+      "kind": "reverse-polarity-unprotected"
+    },
+    {
+      "check": "schematic-review",
+      "severity": "warning",
+      "pos": null,
+      "layer": null,
+      "net": "+12V",
+      "refs": ["C11", "C12"],
+      "msg": "C11/C12 CL21A106KAYNNNE are 10 uF 25 V X5R while sheets.md's value table records X7R; at 12 V bias the 0805 X5R is down ~50-60 % (about 4-5 uF) and drifts further with temperature - functionally acceptable for the mid tier, but the record contradicts the named part. Fix: record the X5R choice as the decision (Basic part, no size hit) or swap to a 10 uF 25 V X7R (1206 common, 0805 Extended).",
+      "source": "review.schematic",
+      "kind": "dielectric-drift"
+    }
+  ],
+  "info": [
+    {"kind": "pin-types-flattened", "refs": ["U1"], "msg": "lib_pin_types.py typed all U1 signal pins passive (GVDD power_out and GND/EP/PVCC/AVCC power_in are correct); nothing is wrong for this netlist, but ERC 0/0 is a connectivity pass only - OUTxx as output, FAULTZ as open_collector and the logic pins as input would give ERC teeth."},
+    {"kind": "decoupling-roles-ok", "refs": ["C7", "C8", "C9", "C10", "C11", "C12", "C13", "C14"], "msg": "reg_input only demands one <= 1 uF ceramic within 7.5 mm of each tagged PVCC pin and does not tighten the bulk caps' own limits; that is SLOS708 10.1's requirement, so the eight tags are right, not too strict."},
+    {"kind": "ti-pvcc-rc-not-a-hotplug-damper", "refs": [], "msg": "Fig 37's 3.3R + 100 nF across PVCC is an HF lead snubber (100 nF is ~145 ohm at the 11 kHz ring); its absence is not a finding."},
+    {"kind": "zobel-is-emi-snubber", "refs": ["R4", "R5", "R6", "R7", "C23", "C24", "C25", "C26"], "msg": "3.3R + 10 nF is Fig 37's EMI C-RC snubber (4.8 MHz corner), not filter damping; Q is 0.52 at 4 ohm / 1.04 at 8 ohm from the L/C pair itself; Fig 37's extra 1 nF per leg is omitted (EMI not a requirement)."},
+    {"kind": "btl-silk-note", "refs": ["J3", "J4"], "msg": "BTL outputs, neither terminal is ground; silkscreen must say so and carry PCB-0017 REV A - layout deliverable."}
+  ],
+  "open": [
+    "Vendor outline drawings for C13 (no datasheet) and C14 not checked; pad 1 = anode matches KiCad's CP_Elec convention and the library's own + mark.",
+    "C13 surge-voltage rating unknown (no datasheet).",
+    "L1-L4 inductance at the 7.5 A OC trip (>= 1 uH required) not read from the Sunltech curve.",
+    "+12V trunk length between PVCC pairs (layout) sets C14's real ripple share."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "SOT-563_L1.6-W1.2-P0.50-LS1.6-BR.kicad_mod",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "footprint": "SOT-563_L1.6-W1.2-P0.50-LS1.6-BR",
+ "footprint_file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-563_L1.6-W1.2-P0.50-LS1.6-BR.kicad_mod",
+ "copper_pads": 6,
+ "total_pads": 6,
+ "measured_pitch_mm": 0.5,
+ "measured_pad_size_mm": [
+  0.3,
+  0.6
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "DRL0006A",
+  "pad_count": 6,
+  "pitch_mm": 0.5,
+  "pad_size_mm": [
+   0.67,
+   0.3
+  ],
+  "pin1": "1"
+ },
+ "svg": "PCB-0021-A_lipo-boost/reports/C919459-fp.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:14:20+00:00",
+ "input": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-563_L1.6-W1.2-P0.50-LS1.6-BR.kicad_mod",
+ "input_digest": "sexpr_no_uuid:f70f16c8c093d049776c914ba7936b35b1ac3f43ca2a57998dd792011dd05f50"
+}

@@ -1,0 +1,45 @@
+id: lc-output-filter-cap-voltage-dc-bias
+classes: [selection]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  cap_voltage_seen: "DC = PVDD/2 plus the full audio swing plus edge overshoot"
+  ceramic_derating_guideline: "C_derated = C_rated x (1 - V_applied / V_rated), then check the vendor DC-bias curve"
+  dielectric: "X7R or better (+/-15 % over temperature); low ESR (< 1 ohm)"
+prose: >
+  The filter cap of a single-supply class-D stage sits at PVDD/2 DC with the
+  audio swing on top, and on the switching edges sees the pulse plus its
+  overshoot (Fig on p32: DC, DC+AC, AC and pulse+overshoot panels); the
+  rated voltage must cover all of it. Ceramics lose capacitance with DC
+  bias: TI's guideline is C_derated = C_rated x (1 - V_applied/V_rated),
+  i.e. "50 V on a 100 V part loses about 50 %", and the vendor's curve is
+  the exact number (p32; Fig 1-41 p40, a generic ceramic curve naming no
+  dielectric: the 50 V-rated part is down ~15 % at 50 V, the 25 V part
+  ~12 % near 23 V). A capacitance drop moves f0 up and Q
+  down, so the derated value is what goes into the pairing equation. X7R
+  gives +/-15 % over -55..125 C (p40); ESR under 1 ohm keeps ripple-current
+  loss low (p32). DISAGREEMENT on the voltage class: the app note says
+  "> 150 V is mandatory, 250 V recommended" (p32) - written for TI's
+  high-voltage PurePath HD stages - while the TPA31xxD2 family (PVDD max
+  26 V) is shipped by TI with 0.68 uF 50 V X7R 1206 filter caps (EVM BOM
+  item 9, p9) and 100 V X7R 10 nF snubber caps (item 10). The family
+  evidence is the higher tier for this block: 50 V at PVDD <= 26 V is TI's
+  own practice; size the rating from the PVDD actually used, not from the
+  app note's high-voltage rule.
+sources:
+  - {file: research/sources/slaa701b.pdf, page: 32, note: "ceramic derating guideline C x (1 - V/Vrated); '> 150 V mandatory, 250 V recommended'; ESR < 1 ohm; 1.5.2.1 rated voltage covers DC + AC + overshoot with four waveform panels"}
+  - {file: research/sources/slaa701b.pdf, page: 39, note: "Table 1-15 ceramic cap parameters: size, DC bias, temperature coefficient (X7R +/-15 %), self-heating, reliability"}
+  - {file: research/sources/slaa701b.pdf, page: 40, note: "Fig 1-41 % capacitance change vs DC volts for 25/50/100 V rated ceramics (no dielectric named): 25 V curve ~-12 % near 23 V, 50 V ~-15 % at 50 V; 1.5.3.3.3 X7R code meaning -55..125 C, +/-15 %"}
+  - {file: research/sources/slou336b.pdf, page: 9, note: "Table 2 BOM item 9: C21-C24 Kemet C1206C684K5RACTU 0.68 uF 50 V X7R 1206; item 10: C25-C28 0.01 uF 100 V X7R 0805"}
+  - {file: research/sources/tpa3116d2.pdf, page: 5, note: "6.3 recommended operating conditions: VCC 4.5-26 V, the PVDD range the family's 50 V filter caps serve"}
+status: active
+origin: research:block-lc-output-filter-1
+level: principle
+envelope: null
+maturity: verified
+generalizes: []
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: Fig 1-41 p40 now reads 25 V part ~-12 % near 23 V and 50 V ~-15 % at 50 V, with no dielectric named - matches the page; the p39 film-cap claim is removed. Residual, non-blocking: 'written for TI's high-voltage PurePath HD stages' (p32) is still the author's inference, not on the page; the 50 V choice stands on EVM BOM item 9 (slou336b p9) regardless."}

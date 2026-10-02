@@ -1,0 +1,56 @@
+id: class-d-amp-family-pad-orientation-selection
+classes:
+- selection
+- thermal
+applies:
+  topologies:
+  - class-d-amp
+  packages:
+  - HTSSOP-32-DAP
+  - HTSSOP-32-DAD
+  interfaces: []
+  parts:
+  - TPA3116D2
+  - TPA3118D2
+  - TPA3130D2
+rule: null
+prose: 'Selecting inside a class-D family: the PowerPAD orientation decides the cooling path before the
+  wattage does. SLOS708 p1: three parts share one footprint - TPA3130D2 (2 x 15 W/8 ohm at 15 V), TPA3118D2
+  (2 x 30 W/8 ohm at 24 V) and TPA3116D2 (2 x 50 W/4 ohm at 21 V); DAD = 32-pin HTSSOP PowerPAD UP, DAP
+  = PowerPAD DOWN. p3: the TPA3116D2 exists ONLY in DAD (pad up, ''TPA3116D2 only''); TPA3118D2/TPA3130D2
+  are DAP (pad down). A pad-up part sheds heat only through a clip-on sink (p6 footnote 4: its 14 C/W
+  is with a 14x25x50 mm sink; p1: ''small heat-sink attached to its top side PowerPAD''), so a design
+  that cools through the PCB must pick the pad-down sibling even if that lowers the headline power - at
+  a rail well below the sibling''s maximum the output is rail-limited anyway (p27: PVCC design range 4.5-26
+  V, output power set by PVCC and load). p6 gives the numbers to compare: DAP 22 C/W (3118) and 36 C/W
+  (3130) no sink, vs DAD 14 C/W with sink. Rule: (1) state the cooling path (copper vs clip sink) first;
+  (2) take the highest-power pad-down part whose min load matches the speaker (p4 pin table is shared,
+  so the schematic does not change); (3) only go pad-up when a sink is mechanically in the product.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 1
+  note: 'Features/Description: family powers, DAD = pad up, DAP = pad down, same footprint; 3116 needs
+    top sink, 3118 no sink on dual layer'
+- file: research/sources/tpa3116d2.pdf
+  page: 3
+  note: 'Pin configuration: DAD package ''TPA3116D2 only'' pad up; DAP package pad down; identical pinout'
+- file: research/sources/tpa3116d2.pdf
+  page: 6
+  note: 'Table 6.4: RthJA per part/package; footnote 4 - DAD value measured with the EVM heat sink'
+- file: research/sources/tpa3116d2.pdf
+  page: 27
+  note: '8.2.1 design requirements: PVCC 4.5-26 V, PWM 400 kHz-1.2 MHz; 8.2.2.2 output power set by rail
+    and load'
+status: active
+origin: research:block-class-d-amp-1
+level: family
+maturity: verified
+generalizes: []
+envelope:
+  vin_v:
+    min: 4.5
+    max: 26
+envelope_note: 'Scales with the supply rail: the family''s PVCC range is 4.5-26 V; inside it the parts
+  differ only by rating and pad orientation, which is what the selection turns on. Outside it a different
+  family is needed and the ladder no longer applies.'
+verification: {by: "second-reader", date: "2026-09-27", note: "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p6 Table 6.4 (3130 DAP 36, 3118 DAP 22, 3116 DAD 14 with sink per fn4) and p4 shared pin table; p1, p3, p27 as pass 1."}

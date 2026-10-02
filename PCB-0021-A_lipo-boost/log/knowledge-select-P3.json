@@ -1,0 +1,310 @@
+{
+ "script": "knowledge",
+ "status": "pass",
+ "keys": {
+  "topologies": [
+   "boost",
+   "linear-charger-power-path"
+  ],
+  "packages": [],
+  "interfaces": [],
+  "parts": [],
+  "sources": {
+   "constraints": "PCB-0021-A_lipo-boost/architecture/constraints.json"
+  }
+ },
+ "count": 6,
+ "records": [
+  {
+   "id": "boost-hot-loop-vout-cap-to-gnd",
+   "classes": [
+    "power-loop"
+   ],
+   "applies": {
+    "topologies": [
+     "boost"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "cout_to_vout_pin": "adjacent",
+    "cout_to_gnd_pin": "adjacent",
+    "loop": "SW FET -> rectifier FET -> Cout -> GND pin"
+   },
+   "prose": "Boost hot loop is the OUTPUT side: low-side FET, then rectifier FET, then Cout, back to the GND pin of the switch. It carries ns edges and must be shortest on the board, so each Cout sits next to BOTH the VOUT and the GND pin (reduces SW and VOUT overshoot). Cin must be close to VIN and also to GND, to cut input ripple. TI Fig 10-1 shows the 6-pin SOT563 with the two Cout caps stacked to the right of the VOUT/GND pins, a VOUT pour and a GND pour with a 2x8 via field right of Cout, the inductor below the IC with VIN pour on its left, a single Cin to the left of VIN/EN and the FB divider above, away from SW. Contrast with a buck: here the input cap loop is NOT the pulsed one.",
+   "sources": [
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 18,
+     "note": "10.1 text: critical path is switch FET -> rectifier FET -> output caps -> GND; Cout close to VOUT and GND pins; Cin close to VIN and GND. Fig 10-1 layout example described in prose."
+    }
+   ],
+   "origin": "research:block-boost-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "vout_v": {
+     "min": 2.2,
+     "max": 5.5
+    },
+    "integration_kind": {
+     "in": [
+      "integrated-fet"
+     ]
+    }
+   },
+   "_path": "research/records/boost-hot-loop-vout-cap-to-gnd.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "boost-inductor-and-peak-current",
+   "classes": [
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "boost"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "l_min_uh": 0.37,
+    "l_max_uh": 2.9,
+    "ripple_pct_of_idc_max": 40,
+    "isat_gt": "peak I_L = Idc + dI/2 at min Vin, max Iout, -30% L, eta 90% or lower"
+   },
+   "prose": "Stay inside the part inductance window (TPS61023 0.37-2.9 uH, 1 uH nominal) and set Isat above the peak: IL(DC)=Vout*Iout/(Vin*eta), dI(pp)=Vin*D/(L*fsw), IL(P)=IL(DC)+dI/2, evaluated at minimum Vin, maximum Iout, L at -30% tolerance and low efficiency. Keep ripple below 40% of average inductor current for max output current. Generic TI note SLVA372D agrees: take L from the data sheet range, Isat above Isw(max)=dI/2+Iout/(1-D), ripple 20-40% of Iout*Vout/Vin; higher L raises usable Iout. Check Imaxout=(ILIM(min)-dI/2)*(1-D) against the load; the TPS61023 valley limit is 2.7 A min (3.7 typ) at 3.6 V in, 5 V out, so a 1 A / 3.0 V case needs this check. TI Table 8-2 lists 1 uH parts 4x4 mm, Isat 7-9.6 A, DCR 9.8-13.5 mohm.",
+   "sources": [
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 13,
+     "note": "8.2.2.2 Eq 5-7: IL(DC), ripple, peak; worst-case and -30% tolerance advice; 90% eta"
+    },
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 14,
+     "note": "Table 8-2 recommended 1 uH inductors, <40% ripple advice"
+    },
+    {
+     "file": "research/sources/slva372d.pdf",
+     "page": 3,
+     "note": "Eq 3-4 max Iout vs ILIM(min) and Isw(max)"
+    },
+    {
+     "file": "research/sources/slva372d.pdf",
+     "page": 4,
+     "note": "Sec 3 inductor selection Eq 5-6, 20-40% ripple; viewed page image"
+    }
+   ],
+   "origin": "research:block-boost-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "vout_v": {
+     "min": 2.2,
+     "max": 5.5
+    },
+    "integration_kind": {
+     "in": [
+      "integrated-fet"
+     ]
+    }
+   },
+   "_path": "research/records/boost-inductor-and-peak-current.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "boost-input-output-caps",
+   "classes": [
+    "decoupling"
+   ],
+   "applies": {
+    "topologies": [
+     "boost"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "cin_eff_min_uf": 1.0,
+    "cin_typ_uf": 10,
+    "cout_eff_min_uf": 4,
+    "cout_eff_max_uf": 1000,
+    "dielectric": "X5R or X7R"
+   },
+   "prose": "Cin: X5R/X7R ceramic, as close to the device as possible; 10 uF is sufficient for most applications and the effective range starts at 1 uF. If the source arrives through long leads, add bulk (tantalum or electrolytic) between the ceramic and the source, otherwise a load step can ring the VIN pin and be mistaken for instability or damage the part. Cout: X5R/X7R, 4-1000 uF EFFECTIVE; below that the loop can go unstable. Ceramics lose more than 50% of capacitance at rated voltage, so derate: use a voltage rating well above the 5 V output and size on effective C at bias. COUT >= Iout*Dmax/(fsw*Vripple) for ripple. SLVA372D agrees (X5R or better, low ESR, keep the data-sheet L x C pairing on internally compensated parts). A battery/charger SYS rail is a short, low-impedance source, but a LiPo on a JST lead is a long-lead source: consider bulk.",
+   "sources": [
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 15,
+     "note": "8.2.2.5 input cap: close to device, 10 uF, bulk if long wires, ringing warning"
+    },
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 14,
+     "note": "8.2.2.3 Eq 8-9, 4-1000 uF effective, >50% derating at rated V"
+    },
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 4,
+     "note": "6.3 recommended operating: CIN 1.0 eff min, COUT range"
+    },
+    {
+     "file": "research/sources/slva372d.pdf",
+     "page": 6,
+     "note": "Sec 6-7 input/output capacitor selection, X5R or better"
+    }
+   ],
+   "origin": "research:block-boost-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "vout_v": {
+     "min": 2.2,
+     "max": 5.5
+    },
+    "integration_kind": {
+     "in": [
+      "integrated-fet"
+     ]
+    }
+   },
+   "_path": "research/records/boost-input-output-caps.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "boost-passthrough-enable-sequencing",
+   "classes": [
+    "sequencing"
+   ],
+   "applies": {
+    "topologies": [
+     "boost"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": null,
+   "prose": "A boost does not isolate input from output. When Vin exceeds the set Vout the TPS61023 turns the high-side FET fully on at 101% of target and passes Vin to Vout (resumes switching below 97%): the load sees Vin minus inductor DCR and FET drop, so cap the input below the load's maximum. EN below 0.4 V is true shutdown (output disconnected from input, 0.1 uA); EN above 1.2 V with VIN above UVLO 1.8 V starts soft-start. Output short to ground is current-limited (about 350 mA below 0.4 V) and restarts by soft-start; OVP at about 5.7 V is the protection if the FB divider is mis-populated. On a charger-fed SYS rail, check the rail maximum is below the set Vout so the part stays in boost and never in pass-through.",
+   "sources": [
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 10,
+     "note": "7.3.5 pass-through 101%/97%, 7.3.6 OVP 5.7 V, 7.3.7 short-circuit 350 mA"
+    },
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 8,
+     "note": "7.3.1-7.3.2 UVLO 1.8 V, EN 1.2 V/0.4 V thresholds, shutdown disconnect (text read, not visual)"
+    }
+   ],
+   "origin": "research:block-boost-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/boost-passthrough-enable-sequencing.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "boost-sw-node-containment",
+   "classes": [
+    "emi"
+   ],
+   "applies": {
+    "topologies": [
+     "boost"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "sw_copper": "minimal",
+    "gnd_plane_under_ic": true
+   },
+   "prose": "Keep the length and area of every trace on the SW pin minimal and keep an unbroken ground plane under the regulator to limit interplane coupling; fast switch edges are the radiation source. TI Fig 10-1 routes SW as a short stub straight from the SW pin to the inductor pad with no pour on it, in contrast to the large VIN, VOUT and GND pours. On a 2-layer board this means the plane under the IC and inductor is the bottom-layer GND, and signals (FB, EN) are not routed under the inductor or SW stub.",
+   "sources": [
+    {
+     "file": "research/sources/tps61023.pdf",
+     "page": 18,
+     "note": "10.1: minimize length/area of all SW traces, always a ground plane under the regulator; Fig 10-1 shows SW as a short trace to the inductor with big pours only on VIN/VOUT/GND."
+    }
+   ],
+   "origin": "research:block-boost-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "vout_v": {
+     "min": 2.2,
+     "max": 5.5
+    },
+    "integration_kind": {
+     "in": [
+      "integrated-fet"
+     ]
+    }
+   },
+   "_path": "research/records/boost-sw-node-containment.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "linear-charger-input-dpm-and-startup-behaviour",
+   "classes": [
+    "sequencing"
+   ],
+   "applies": {
+    "topologies": [
+     "linear-charger-power-path"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": null,
+   "prose": "Power-path states to design around: valid input needs UVLO < VIN < VOVP and VIN > VBAT + VIN(DT); OUT then regulates (4.4 V for BQ24074) with system priority. VIN-DPM (4.5 V typ, 4.35-4.63) reduces input current in USB100/USB500 modes when a weak source sags; DPPM reduces charge current when load + charge exceed the limit; below VBSUP1 the battery supplements the load with the FET fully on, and a short on OUT in supplement mode turns OUT off after a deglitch and retries on a recovery timer. Startup begins at 100 mA before the programmed limit applies; a shorted ILIM/ISET or OUT is detected at startup. Fast-charge termination is disabled in DPPM and supplement modes, so a heavy load can stretch charge time to the safety timer.",
+   "sources": [
+    {
+     "file": "research/sources/bq24074.pdf",
+     "page": 22,
+     "note": "9.3.4.1 VIN-DPM, DPPM, battery supplement and short protection text"
+    },
+    {
+     "file": "research/sources/bq24074.pdf",
+     "page": 20,
+     "note": "startup flow chart: PGOOD, ILIM/ISET short check, 100 mA start (text read of the chart nodes)"
+    }
+   ],
+   "origin": "research:block-linear-charger-power-path-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/linear-charger-input-dpm-and-startup-behaviour.yaml",
+   "_workspace": true
+  }
+ ],
+ "workspace_records": [
+  "boost-fb-divider-and-feedforward",
+  "boost-hot-loop-vout-cap-to-gnd",
+  "boost-inductor-and-peak-current",
+  "boost-input-output-caps",
+  "boost-passthrough-enable-sequencing",
+  "boost-sw-node-containment",
+  "boost-thermal-copper-and-vias",
+  "linear-charger-ilim-iset-programming",
+  "linear-charger-input-dpm-and-startup-behaviour",
+  "linear-charger-pin-caps-ts-and-leds",
+  "linear-charger-single-point-ground-and-current-paths",
+  "linear-charger-thermal-dissipation-and-pad"
+ ],
+ "prompt_block": "KNOWLEDGE RECORDS (deterministic retrieval; keys: {\"topologies\": [\"boost\", \"linear-charger-power-path\"]}). Treat rules as constraints; cite the record id when you apply or overrule one; the tag is level/maturity (draft = unreviewed):\n- boost-hot-loop-vout-cap-to-gnd [power-loop] (topology/verified, workspace)\n  Boost hot loop is the OUTPUT side: low-side FET, then rectifier FET, then Cout, back to the GND pin of the switch. It carries ns edges and must be shortest on the board, so each Cout sits next to BOTH the VOUT and the GND pin (reduces SW and VOUT overshoot). Cin must be close to VIN and also to GND, to cut input ripple. TI Fig 10-1 shows the 6-pin SOT563 with the two Cout caps stacked to the right of the VOUT/GND pins, a VOUT pour and a GND pour with a 2x8 via field right of Cout, the inductor below the IC with VIN pour on its left, a single Cin to the left of VIN/EN and the FB divider above, away from SW. Contrast with a buck: here the input cap loop is NOT the pulsed one.\n  rule: cout_to_gnd_pin=adjacent cout_to_vout_pin=adjacent loop=SW FET -> rectifier FET -> Cout -> GND pin\n  source: research/sources/tps61023.pdf p.18\n- boost-inductor-and-peak-current [selection] (topology/verified, workspace)\n  Stay inside the part inductance window (TPS61023 0.37-2.9 uH, 1 uH nominal) and set Isat above the peak: IL(DC)=Vout*Iout/(Vin*eta), dI(pp)=Vin*D/(L*fsw), IL(P)=IL(DC)+dI/2, evaluated at minimum Vin, maximum Iout, L at -30% tolerance and low efficiency. Keep ripple below 40% of average inductor current for max output current. Generic TI note SLVA372D agrees: take L from the data sheet range, Isat above Isw(max)=dI/2+Iout/(1-D), ripple 20-40% of Iout*Vout/Vin; higher L raises usable Iout. Check Imaxout=(ILIM(min)-dI/2)*(1-D) against the load; the TPS61023 valley limit is 2.7 A min (3.7 typ) at 3.6 V in, 5 V out, so a 1 A / 3.0 V case needs this check. TI Table 8-2 lists 1 uH parts 4x4 mm, Isat 7-9.6 A, DCR 9.8-13.5 mohm.\n  rule: isat_gt=peak I_L = Idc + dI/2 at min Vin, max Iout, -30% L, eta 90% or lower l_max_uh=2.9 l_min_uh=0.37 ripple_pct_of_idc_max=40\n  source: research/sources/tps61023.pdf p.13; research/sources/tps61023.pdf p.14; research/sources/slva372d.pdf p.3; research/sources/slva372d.pdf p.4\n- boost-input-output-caps [decoupling] (topology/verified, workspace)\n  Cin: X5R/X7R ceramic, as close to the device as possible; 10 uF is sufficient for most applications and the effective range starts at 1 uF. If the source arrives through long leads, add bulk (tantalum or electrolytic) between the ceramic and the source, otherwise a load step can ring the VIN pin and be mistaken for instability or damage the part. Cout: X5R/X7R, 4-1000 uF EFFECTIVE; below that the loop can go unstable. Ceramics lose more than 50% of capacitance at rated voltage, so derate: use a voltage rating well above the 5 V output and size on effective C at bias. COUT >= Iout*Dmax/(fsw*Vripple) for ripple. SLVA372D agrees (X5R or better, low ESR, keep the data-sheet L x C pairing on internally compensated parts). A battery/charger SYS rail is a short, low-impedance source, but a LiPo on a JST lead is a long-lead source: consider bulk.\n  rule: cin_eff_min_uf=1.0 cin_typ_uf=10 cout_eff_max_uf=1000 cout_eff_min_uf=4 dielectric=X5R or X7R\n  source: research/sources/tps61023.pdf p.15; research/sources/tps61023.pdf p.14; research/sources/tps61023.pdf p.4; research/sources/slva372d.pdf p.6\n- boost-passthrough-enable-sequencing [sequencing] (principle/verified, workspace)\n  A boost does not isolate input from output. When Vin exceeds the set Vout the TPS61023 turns the high-side FET fully on at 101% of target and passes Vin to Vout (resumes switching below 97%): the load sees Vin minus inductor DCR and FET drop, so cap the input below the load's maximum. EN below 0.4 V is true shutdown (output disconnected from input, 0.1 uA); EN above 1.2 V with VIN above UVLO 1.8 V starts soft-start. Output short to ground is current-limited (about 350 mA below 0.4 V) and restarts by soft-start; OVP at about 5.7 V is the protection if the FB divider is mis-populated. On a charger-fed SYS rail, check the rail maximum is below the set Vout so the part stays in boost and never in pass-through.\n  source: research/sources/tps61023.pdf p.10; research/sources/tps61023.pdf p.8\n- boost-sw-node-containment [emi] (topology/verified, workspace)\n  Keep the length and area of every trace on the SW pin minimal and keep an unbroken ground plane under the regulator to limit interplane coupling; fast switch edges are the radiation source. TI Fig 10-1 routes SW as a short stub straight from the SW pin to the inductor pad with no pour on it, in contrast to the large VIN, VOUT and GND pours. On a 2-layer board this means the plane under the IC and inductor is the bottom-layer GND, and signals (FB, EN) are not routed under the inductor or SW stub.\n  rule: gnd_plane_under_ic=True sw_copper=minimal\n  source: research/sources/tps61023.pdf p.18\n- linear-charger-input-dpm-and-startup-behaviour [sequencing] (principle/verified, workspace)\n  Power-path states to design around: valid input needs UVLO < VIN < VOVP and VIN > VBAT + VIN(DT); OUT then regulates (4.4 V for BQ24074) with system priority. VIN-DPM (4.5 V typ, 4.35-4.63) reduces input current in USB100/USB500 modes when a weak source sags; DPPM reduces charge current when load + charge exceed the limit; below VBSUP1 the battery supplements the load with the FET fully on, and a short on OUT in supplement mode turns OUT off after a deglitch and retries on a recovery timer. Startup begins at 100 mA before the programmed limit applies; a shorted ILIM/ISET or OUT is detected at startup. Fast-charge termination is disabled in DPPM and supplement modes, so a heavy load can stretch charge time to the safety timer.\n  source: research/sources/bq24074.pdf p.22; research/sources/bq24074.pdf p.20"
+}

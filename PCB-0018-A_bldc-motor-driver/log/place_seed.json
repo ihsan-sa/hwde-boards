@@ -1,0 +1,694 @@
+{
+ "script": "place_seed",
+ "status": "violations",
+ "board": "PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "counts": {
+  "total": 9,
+  "by_severity": {
+   "error": 9
+  },
+  "by_source": {
+   "check.place": 9
+  }
+ },
+ "violations": [
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    33.2433,
+    52.2606
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C103",
+    "C202"
+   ],
+   "msg": "courtyard overlap C103/C202 (3.55 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C103/C202 (3.55 mm2)",
+     "pos": [
+      33.2433,
+      52.2606
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 3.5511
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    17.1918,
+    36.4531
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C205",
+    "R202"
+   ],
+   "msg": "courtyard overlap C205/R202 (2.33 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C205/R202 (2.33 mm2)",
+     "pos": [
+      17.1918,
+      36.4531
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 2.3261
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    58.9416,
+    37.7675
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C302",
+    "R510"
+   ],
+   "msg": "courtyard overlap C302/R510 (2.16 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C302/R510 (2.16 mm2)",
+     "pos": [
+      58.9416,
+      37.7675
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 2.1591
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    48.6456,
+    71.4425
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C511",
+    "R302"
+   ],
+   "msg": "courtyard overlap C511/R302 (1.50 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C511/R302 (1.50 mm2)",
+     "pos": [
+      48.6456,
+      71.4425
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 1.4966
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    50.3978,
+    57.217
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C521",
+    "R411"
+   ],
+   "msg": "courtyard overlap C521/R411 (1.77 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C521/R411 (1.77 mm2)",
+     "pos": [
+      50.3978,
+      57.217
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 1.7721
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    50.3565,
+    62.3623
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C522",
+    "R412"
+   ],
+   "msg": "courtyard overlap C522/R412 (0.31 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C522/R412 (0.31 mm2)",
+     "pos": [
+      50.3565,
+      62.3623
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 0.3108
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    50.6645,
+    64.0708
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C609",
+    "R412"
+   ],
+   "msg": "courtyard overlap C609/R412 (1.74 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C609/R412 (1.74 mm2)",
+     "pos": [
+      50.6645,
+      64.0708
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 1.7402
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    38.2803,
+    65.1473
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D709",
+    "R422"
+   ],
+   "msg": "courtyard overlap D709/R422 (0.36 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap D709/R422 (0.36 mm2)",
+     "pos": [
+      38.2803,
+      65.1473
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 0.3588
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    38.1208,
+    60.5109
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D711",
+    "R421"
+   ],
+   "msg": "courtyard overlap D711/R421 (2.07 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap D711/R421 (2.07 mm2)",
+     "pos": [
+      38.1208,
+      60.5109
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 2.0697
+  }
+ ],
+ "clusters": [
+  {
+   "anchor": "C201",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C202",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C206",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C208",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C209",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C210",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C211",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C212",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C431",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C432",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C433",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C434",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C435",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C436",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C501",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C502",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C503",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C521",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C522",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C523",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C524",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C609",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C610",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C701",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C702",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C703",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C704",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C705",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "C706",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D201",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D601",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D602",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D603",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D701",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D702",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D703",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D704",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D705",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D709",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D710",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "D711",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "F701",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "F702",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "FB201",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R201",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R202",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R203",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R204",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R205",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R206",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R301",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R302",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R431",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R432",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R433",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R434",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R435",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R436",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R501",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R502",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R503",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R510",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R511",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R512",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R513",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R514",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R515",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R516",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R517",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R601",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R602",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R603",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R604",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R701",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R702",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R703",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R704",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R705",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R706",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R707",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R708",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R709",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R710",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R711",
+   "satellites": [],
+   "edge": null
+  }
+ ],
+ "warnings": [
+  "group input: C102 already satellite of U101 - keeping first association"
+ ],
+ "hpwl_before_mm": 4498.7556,
+ "hpwl_seed_mm": 4653.7292,
+ "ops_out": "anneal/seed.ops.json",
+ "applied": true,
+ "hpwl_applied_mm": 4653.7292,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T21:33:08+00:00",
+ "input": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:99a4ec11c59d7af17fd4e7251abb0f37c56dcae2f8d091bae089350904b71592"
+}

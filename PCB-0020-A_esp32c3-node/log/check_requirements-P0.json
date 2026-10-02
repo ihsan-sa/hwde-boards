@@ -1,0 +1,29 @@
+{
+ "script": "check_requirements",
+ "status": "pass",
+ "board": null,
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "workspace": "PCB-0020-A_esp32c3-node",
+ "path": "requirements.md",
+ "sections_found": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "brief_token": null,
+ "mode": null,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T09:35:43+00:00"
+}

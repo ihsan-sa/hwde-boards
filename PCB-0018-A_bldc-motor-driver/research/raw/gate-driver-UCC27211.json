@@ -1,0 +1,420 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "UCC27211",
+ "total": 14,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C1848363",
+   "mpn": "UCC27211ADRMR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+140\u2103 1.3V~1.9V 1.9V~2.7V 16ns 2 20ns 4A 4A 5.5ns 7.2ns 85uA 8V~17V Half-Bridge MOSFET Under Voltage Protection VSON-8-EP(4x4) Gate Drivers ROHS",
+   "package": "VSON-8-EP(4x4)",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10359,
+   "price": 2.0251,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.0251
+    },
+    {
+     "qty": 10,
+     "price": 1.7442
+    },
+    {
+     "qty": 30,
+     "price": 1.5671
+    },
+    {
+     "qty": 100,
+     "price": 1.3317
+    },
+    {
+     "qty": 500,
+     "price": 1.2505
+    },
+    {
+     "qty": 1000,
+     "price": 1.2148
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303020130_Texas-Instruments-UCC27211ADRMR_C1848363.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_texas-instruments-ucc27211adrmr_C1848363.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+140\u2103"
+    },
+    {
+     "name": "Propagation Delay tpHL",
+     "value": "16ns"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "4A"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "1.3V~1.9V"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "85uA"
+    },
+    {
+     "name": "Fall Time",
+     "value": "5.5ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "7.2ns"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.9V~2.7V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "8V~17V"
+    },
+    {
+     "name": "Features",
+     "value": "Built-in bootstrap diode"
+    },
+    {
+     "name": "Propagation Delay tpLH",
+     "value": "20ns"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "4A"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2871979",
+   "mpn": "UCC27211DR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+140\u2103 1.3V~2.1V 1.9V~2.8V 17ns 18ns 2 4A 4A 5.5ns 7.2ns 85uA 8V~17V Half-Bridge MOSFET Under Voltage Protection SOIC-8 Gate Drivers ROHS",
+   "package": "SOIC-8",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2440,
+   "price": 2.0852,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.0852
+    },
+    {
+     "qty": 10,
+     "price": 1.8367
+    },
+    {
+     "qty": 30,
+     "price": 1.6613
+    },
+    {
+     "qty": 100,
+     "price": 1.5006
+    },
+    {
+     "qty": 500,
+     "price": 1.4275
+    },
+    {
+     "qty": 1000,
+     "price": 1.3966
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302212109_Texas-Instruments-UCC27211DR_C2871979.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_texas-instruments-ucc27211dr_C2871979.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+140\u2103"
+    },
+    {
+     "name": "Propagation Delay tpHL",
+     "value": "17ns"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "4A"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "1.3V~2.1V"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "85uA"
+    },
+    {
+     "name": "Fall Time",
+     "value": "5.5ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "7.2ns"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.9V~2.8V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "8V~17V"
+    },
+    {
+     "name": "Features",
+     "value": "Interleaved conduction protection\u3001Built-in bootstrap diode"
+    },
+    {
+     "name": "Propagation Delay tpLH",
+     "value": "18ns"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "4A"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C485921",
+   "mpn": "UCC27211AQDDARQ1",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+140\u2103 1.2V~1.9V 1.7V~2.55V 16ns 170uA 2 20ns 4A 4A 5.5ns 7.2ns 8V~17V Half-Bridge MOSFET Under Voltage Protection\u3001Built-in bootstrap diode SO-8 Gate Drivers ROHS",
+   "package": "SO-8",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1859,
+   "price": 4.2921,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.2921
+    },
+    {
+     "qty": 10,
+     "price": 3.8179
+    },
+    {
+     "qty": 30,
+     "price": 3.5224
+    },
+    {
+     "qty": 100,
+     "price": 3.2008
+    },
+    {
+     "qty": 500,
+     "price": 3.0644
+    },
+    {
+     "qty": 1000,
+     "price": 3.0043
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2001181534_Texas-Instruments-UCC27211AQDDARQ1_C485921.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_texas-instruments-ucc27211aqddarq1_C485921.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+140\u2103"
+    },
+    {
+     "name": "Propagation Delay tpHL",
+     "value": "16ns"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "4A"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "1.2V~1.9V"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "170uA"
+    },
+    {
+     "name": "Fall Time",
+     "value": "5.5ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "7.2ns"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.7V~2.55V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "8V~17V"
+    },
+    {
+     "name": "Features",
+     "value": "Built-in bootstrap diode"
+    },
+    {
+     "name": "Propagation Delay tpLH",
+     "value": "20ns"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "4A"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C141980",
+   "mpn": "UCC27211DDAR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+140\u2103 1.3V~1.9V 1.9V~2.7V 2 3.7A 4.5A 5.5ns 7.2ns 85uA 8V~17V Half-Bridge MOSFET Under Voltage Protection SOIC-8-EP Gate Drivers ROHS",
+   "package": "SOIC-8-EP",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 565,
+   "price": 2.4083,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.4083
+    },
+    {
+     "qty": 10,
+     "price": 2.0495
+    },
+    {
+     "qty": 30,
+     "price": 1.827
+    },
+    {
+     "qty": 100,
+     "price": 1.5964
+    },
+    {
+     "qty": 500,
+     "price": 1.4941
+    },
+    {
+     "qty": 1000,
+     "price": 1.4486
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1808280155_Texas-Instruments-UCC27211DDAR_C141980.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_texas-instruments-ucc27211ddar_C141980.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+140\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "3.7A"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "1.3V~1.9V"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "85uA"
+    },
+    {
+     "name": "Fall Time",
+     "value": "5.5ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "7.2ns"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.9V~2.7V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "8V~17V"
+    },
+    {
+     "name": "Features",
+     "value": "Built-in bootstrap diode"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "4.5A"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

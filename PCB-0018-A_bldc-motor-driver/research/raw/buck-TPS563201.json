@@ -1,0 +1,300 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "TPS563201",
+ "total": 4,
+ "count": 3,
+ "results": [
+  {
+   "lcsc": "C116592",
+   "mpn": "TPS563201DDCR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103@(TJ) 1 3A 4.5V~17V 580kHz 768mV~7V Adjustable Buck Buck Built-in Yes SOT-23-THIN-6 DC-DC Converters ROHS",
+   "package": "SOT-23-THIN-6",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 165036,
+   "price": 0.0679,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0679
+    },
+    {
+     "qty": 100,
+     "price": 0.0559
+    },
+    {
+     "qty": 300,
+     "price": 0.0496
+    },
+    {
+     "qty": 3000,
+     "price": 0.0445
+    },
+    {
+     "qty": 6000,
+     "price": 0.0428
+    },
+    {
+     "qty": 9000,
+     "price": 0.0415
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304241919_Texas-Instruments-TPS563201DDCR_C116592.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_texas-instruments-tps563201ddcr_C116592.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(TJ)"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "580kHz"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~17V"
+    },
+    {
+     "name": "Output Current",
+     "value": "3A"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "380uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Hiccup current limiting"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "768mV~7V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C49208507",
+   "mpn": "MSTPS563201DDCR",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+85\u2103 3A 4V~16V 600kHz 600uA 800mV~6V Adjustable Buck Buck Built-in Yes SOT-23-6 DC-DC Converters ROHS",
+   "package": "SOT-23-6",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5730,
+   "price": 0.11,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.11
+    },
+    {
+     "qty": 50,
+     "price": 0.0874
+    },
+    {
+     "qty": 150,
+     "price": 0.0761
+    },
+    {
+     "qty": 500,
+     "price": 0.0676
+    },
+    {
+     "qty": 3000,
+     "price": 0.0608
+    },
+    {
+     "qty": 6000,
+     "price": 0.0574
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "600kHz"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~16V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Output Current",
+     "value": "3A"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "600uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Hiccup current limiting"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "800mV~6V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C2070819",
+   "mpn": "TPS563201DDCT",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103@(TJ) 1 3A 4.5V~17V 520uA 580kHz 768mV~7V Adjustable Buck Buck Built-in Yes TSOT-23-6 DC-DC Converters ROHS",
+   "package": "TSOT-23-6",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1908,
+   "price": 0.1111,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1111
+    },
+    {
+     "qty": 50,
+     "price": 0.0903
+    },
+    {
+     "qty": 250,
+     "price": 0.0801
+    },
+    {
+     "qty": 500,
+     "price": 0.0723
+    },
+    {
+     "qty": 2500,
+     "price": 0.0609
+    },
+    {
+     "qty": 5000,
+     "price": 0.0579
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303012000_Texas-Instruments-TPS563201DDCT_C2070819.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_texas-instruments-tps563201ddct_C2070819.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(TJ)"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "580kHz"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~17V"
+    },
+    {
+     "name": "Output Current",
+     "value": "3A"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "520uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Hiccup current limiting"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "768mV~7V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 1
+}

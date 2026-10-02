@@ -1,0 +1,35 @@
+{
+  "script": "gate",
+  "gate": "erc",
+  "phase": "P4",
+  "tool": "erc",
+  "input": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_sch",
+  "input_digest": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error",
+      "warning"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0020-A_esp32c3-node",
+    "gate": "erc",
+    "status": "pass",
+    "attempts": 5,
+    "inputs": {
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00"
+    }
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "board": "PCB-0018-A",
+  "workspace": "PCB-0018-A_bldc-motor-driver",
+  "netlist": "kicad/PCB-0018-A_bldc-motor-driver.net",
+  "netlist_sha256": "31d0f8db9afdf43fd3d7fb257b848f2352fb8ab753055de13cf5ccaa2cdd9446",
+  "mcu": {
+    "ref": "U601",
+    "part": "STM32G431CBT6",
+    "table": "stm32g431",
+    "source": "ST datasheet DS12589 Rev 2 (LCSC C529355.pdf), tables 12 (pin definition) and 13 (alternate function); AF names with a slash (SPI3_NSS/I2S3_WS) are split into one entry each; PA13/PA14/PB3 debug names split at the dash"
+  },
+  "pins": [
+    {
+      "pin": "PC13",
+      "number": 2,
+      "net": "USER_SW",
+      "role": "button",
+      "tag": "USER"
+    },
+    {
+      "pin": "PC14",
+      "number": 3,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PC15",
+      "number": 4,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PF0",
+      "number": 5,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PF1",
+      "number": 6,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PG10",
+      "number": 7,
+      "net": "NRST",
+      "role": "reset"
+    },
+    {
+      "pin": "PA0",
+      "number": 8,
+      "net": "VBUS_SENSE",
+      "role": "v_bus",
+      "function": {
+        "name": "ADC12_IN1",
+        "adc": 1,
+        "channel": 1
+      },
+      "comparator": "COMP3_INP"
+    },
+    {
+      "pin": "PA1",
+      "number": 9,
+      "net": "ISENSE_A",
+      "role": "i_sense",
+      "tag": "A",
+      "function": {
+        "name": "ADC12_IN2",
+        "adc": 1,
+        "channel": 2
+      },
+      "comparator": "COMP1_INP"
+    },
+    {
+      "pin": "PA2",
+      "number": 10,
+      "net": "VSENSE_A",
+      "role": "v_phase",
+      "tag": "A",
+      "function": {
+        "name": "ADC1_IN3",
+        "adc": 1,
+        "channel": 3
+      }
+    },
+    {
+      "pin": "PA3",
+      "number": 11,
+      "net": "VSENSE_B",
+      "role": "v_phase",
+      "tag": "B",
+      "function": {
+        "name": "ADC1_IN4",
+        "adc": 1,
+        "channel": 4
+      },
+      "comparator": "COMP2_INP"
+    },
+    {
+      "pin": "PA4",
+      "number": 12,
+      "net": "VSENSE_C",
+      "role": "v_phase",
+      "tag": "C",
+      "function": {
+        "name": "ADC2_IN17",
+        "adc": 2,
+        "channel": 17
+      }
+    },
+    {
+      "pin": "PA5",
+      "number": 13,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PA6",
+      "number": 14,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PA7",
+      "number": 15,
+      "net": "ISENSE_B",
+      "role": "i_sense",
+      "tag": "B",
+      "function": {
+        "name": "ADC2_IN4",
+        "adc": 2,
+        "channel": 4
+      },
+      "comparator": "COMP2_INP"
+    },
+    {
+      "pin": "PB0",
+      "number": 16,
+      "net": "ISENSE_C",
+      "role": "i_sense",
+      "tag": "C",
+      "function": {
+        "name": "ADC1_IN15",
+        "adc": 1,
+        "channel": 15
+      },
+      "comparator": "COMP4_INP"
+    },
+    {
+      "pin": "PB1",
+      "number": 17,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PB2",
+      "number": 18,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PB10",
+      "number": 22,
+      "net": "HALL_C",
+      "role": "hall",
+      "tag": "C",
+      "function": {
+        "name": "TIM2_CH3",
+        "af": 1,
+        "peripheral": "TIM2"
+      }
+    },
+    {
+      "pin": "PB11",
+      "number": 25,
+      "net": "LED_STATUS",
+      "role": "led",
+      "tag": "STATUS"
+    },
+    {
+      "pin": "PB12",
+      "number": 26,
+      "net": "LED_FAULT",
+      "role": "led",
+      "tag": "FAULT"
+    },
+    {
+      "pin": "PB13",
+      "number": 27,
+      "net": "INLA",
+      "role": "gate_lo",
+      "tag": "A",
+      "function": {
+        "name": "TIM1_CH1N",
+        "af": 6,
+        "peripheral": "TIM1"
+      }
+    },
+    {
+      "pin": "PB14",
+      "number": 28,
+      "net": "INLB",
+      "role": "gate_lo",
+      "tag": "B",
+      "function": {
+        "name": "TIM1_CH2N",
+        "af": 6,
+        "peripheral": "TIM1"
+      }
+    },
+    {
+      "pin": "PB15",
+      "number": 29,
+      "net": "INLC",
+      "role": "gate_lo",
+      "tag": "C",
+      "function": {
+        "name": "TIM1_CH3N",
+        "af": 4,
+        "peripheral": "TIM1"
+      }
+    },
+    {
+      "pin": "PA8",
+      "number": 30,
+      "net": "INHA",
+      "role": "gate_hi",
+      "tag": "A",
+      "function": {
+        "name": "TIM1_CH1",
+        "af": 6,
+        "peripheral": "TIM1"
+      }
+    },
+    {
+      "pin": "PA9",
+      "number": 31,
+      "net": "INHB",
+      "role": "gate_hi",
+      "tag": "B",
+      "function": {
+        "name": "TIM1_CH2",
+        "af": 6,
+        "peripheral": "TIM1"
+      }
+    },
+    {
+      "pin": "PA10",
+      "number": 32,
+      "net": "INHC",
+      "role": "gate_hi",
+      "tag": "C",
+      "function": {
+        "name": "TIM1_CH3",
+        "af": 6,
+        "peripheral": "TIM1"
+      }
+    },
+    {
+      "pin": "PA11",
+      "number": 33,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PA12",
+      "number": 34,
+      "net": null,
+      "role": "unused"
+    },
+    {
+      "pin": "PA13",
+      "number": 37,
+      "net": "SWDIO",
+      "role": "swd"
+    },
+    {
+      "pin": "PA14",
+      "number": 38,
+      "net": "SWCLK",
+      "role": "swd"
+    },
+    {
+      "pin": "PA15",
+      "number": 39,
+      "net": "HALL_A",
+      "role": "hall",
+      "tag": "A",
+      "function": {
+        "name": "TIM2_CH1",
+        "af": 1,
+        "peripheral": "TIM2"
+      }
+    },
+    {
+      "pin": "PB3",
+      "number": 40,
+      "net": "HALL_B",
+      "role": "hall",
+      "tag": "B",
+      "function": {
+        "name": "TIM2_CH2",
+        "af": 1,
+        "peripheral": "TIM2"
+      }
+    },
+    {
+      "pin": "PB4",
+      "number": 41,
+      "net": "ENC_A",
+      "role": "encoder",
+      "tag": "A",
+      "function": {
+        "name": "TIM3_CH1",
+        "af": 2,
+        "peripheral": "TIM3"
+      }
+    },
+    {
+      "pin": "PB5",
+      "number": 42,
+      "net": "ENC_B",
+      "role": "encoder",
+      "tag": "B",
+      "function": {
+        "name": "TIM3_CH2",
+        "af": 2,
+        "peripheral": "TIM3"
+      }
+    },
+    {
+      "pin": "PB6",
+      "number": 43,
+      "net": "UART_TX",
+      "role": "uart_tx",
+      "tag": "TX",
+      "function": {
+        "name": "USART1_TX",
+        "af": 7,
+        "peripheral": "USART1"
+      }
+    },
+    {
+      "pin": "PB7",
+      "number": 44,
+      "net": "UART_RX",
+      "role": "uart_rx",
+      "tag": "RX",
+      "function": {
+        "name": "USART1_RX",
+        "af": 7,
+        "peripheral": "USART1"
+      }
+    },
+    {
+      "pin": "PB8",
+      "number": 45,
+      "net": "BOOT0",
+      "role": "boot"
+    },
+    {
+      "pin": "PB9",
+      "number": 46,
+      "net": "ENC_Z",
+      "role": "encoder_index",
+      "tag": "Z"
+    }
+  ],
+  "power_pins": {
+    "+3V3": [
+      "VBAT",
+      "VDD",
+      "VDD",
+      "VDD"
+    ],
+    "GND": [
+      "VSSA",
+      "VSS",
+      "VSS",
+      "VSS"
+    ],
+    "VDDA": [
+      "VREF+",
+      "VDDA"
+    ]
+  },
+  "rails": {
+    "+3V3": 3.3,
+    "GND": 0.0,
+    "VDDA": 3.3
+  },
+  "analog": {
+    "VBUS_SENSE": {
+      "kind": "divider",
+      "source": "VM",
+      "r_top": 150000.0,
+      "r_bot": 10000.0,
+      "ratio": 16.0,
+      "parts": [
+        "R516",
+        "R517"
+      ]
+    },
+    "ISENSE_A": {
+      "kind": "current",
+      "amp": "U501",
+      "amp_part": "INA240A1",
+      "gain_v_per_v": 20,
+      "ref_v": 1.65,
+      "shunt": "R401",
+      "shunt_ohm": 0.003,
+      "volts_per_amp": 0.06,
+      "series_r": "R501"
+    },
+    "VSENSE_A": {
+      "kind": "divider",
+      "source": "PHASE_A",
+      "r_top": 150000.0,
+      "r_bot": 10000.0,
+      "ratio": 16.0,
+      "parts": [
+        "R510",
+        "R511"
+      ]
+    },
+    "VSENSE_B": {
+      "kind": "divider",
+      "source": "PHASE_B",
+      "r_top": 150000.0,
+      "r_bot": 10000.0,
+      "ratio": 16.0,
+      "parts": [
+        "R512",
+        "R513"
+      ]
+    },
+    "VSENSE_C": {
+      "kind": "divider",
+      "source": "PHASE_C",
+      "r_top": 150000.0,
+      "r_bot": 10000.0,
+      "ratio": 16.0,
+      "parts": [
+        "R514",
+        "R515"
+      ]
+    },
+    "ISENSE_B": {
+      "kind": "current",
+      "amp": "U502",
+      "amp_part": "INA240A1",
+      "gain_v_per_v": 20,
+      "ref_v": 1.65,
+      "shunt": "R402",
+      "shunt_ohm": 0.003,
+      "volts_per_amp": 0.06,
+      "series_r": "R502"
+    },
+    "ISENSE_C": {
+      "kind": "current",
+      "amp": "U503",
+      "amp_part": "INA240A1",
+      "gain_v_per_v": 20,
+      "ref_v": 1.65,
+      "shunt": "R403",
+      "shunt_ohm": 0.003,
+      "volts_per_amp": 0.06,
+      "series_r": "R503"
+    }
+  },
+  "findings": []
+}

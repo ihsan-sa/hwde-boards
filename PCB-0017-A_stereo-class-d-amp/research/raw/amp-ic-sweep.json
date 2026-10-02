@@ -1,0 +1,451 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "TPA3116D2",
+ "total": 9,
+ "count": 6,
+ "results": [
+  {
+   "lcsc": "C50144",
+   "mpn": "TPA3116D2DADR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+85\u2103 -70dB 0.1% 102dB 2 Pairs Differential Inputs 2-Channel 20mA 4.5V~26V 50Wx2@4\u03a9 90% Class D Filterless architecture\u3001Overvoltage protection\u3001Integrated PLL HTSSOP-32-6.1mm Audio Amplifiers ROHS",
+   "package": "HTSSOP-32-6.1mm",
+   "category": "Audio Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 26775,
+   "price": 1.0442,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.0442
+    },
+    {
+     "qty": 10,
+     "price": 0.9273
+    },
+    {
+     "qty": 30,
+     "price": 0.8169
+    },
+    {
+     "qty": 100,
+     "price": 0.7341
+    },
+    {
+     "qty": 500,
+     "price": 0.7
+    },
+    {
+     "qty": 1000,
+     "price": 0.6837
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810182022_Texas-Instruments-TPA3116D2DADR_C50144.pdf",
+   "url": "https://www.lcsc.com/product-detail/audio-amplifiers_texas-instruments-tpa3116d2dadr_C50144.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "-70dB"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Total Harmonic Distortion + Noise (THD+N)",
+     "value": "0.1%"
+    },
+    {
+     "name": "Output Power",
+     "value": "50Wx2@4\u03a9"
+    },
+    {
+     "name": "Efficiency",
+     "value": "90%"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~26V"
+    },
+    {
+     "name": "Number of Inputs",
+     "value": "2 Pairs Differential Inputs"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "20mA"
+    },
+    {
+     "name": "Features",
+     "value": "Filterless architecture\u3001Overvoltage protection\u3001Integrated PLL"
+    },
+    {
+     "name": "Class",
+     "value": "Class D"
+    },
+    {
+     "name": "Speaker Channels",
+     "value": "2-Channel"
+    },
+    {
+     "name": "Signal-to-Noise Ratio",
+     "value": "102dB"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C47967307",
+   "mpn": "TPA3116D2-MNS",
+   "brand": "Minos",
+   "description": "-70dB 0.1% 102dB 2 Pairs Differential Inputs 2-Channel 20mA 5.5V~26V 50W\u00d72@4\u03a9 90% Class D Overvoltage protection\u3001Integrated PLL HTSSOP-32-6.1mm Audio Amplifiers ROHS",
+   "package": "HTSSOP-32-6.1mm",
+   "category": "Audio Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 652,
+   "price": 0.7779,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.7779
+    },
+    {
+     "qty": 10,
+     "price": 0.6935
+    },
+    {
+     "qty": 30,
+     "price": 0.6496
+    },
+    {
+     "qty": 100,
+     "price": 0.609
+    },
+    {
+     "qty": 500,
+     "price": 0.583
+    },
+    {
+     "qty": 1000,
+     "price": 0.5701
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2504151158_Minos-TPA3116D2-MNS_C47967307.pdf",
+   "url": "https://www.lcsc.com/product-detail/audio-amplifiers_minos-tpa3116d2-mns_C47967307.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "-70dB"
+    },
+    {
+     "name": "Output Power",
+     "value": "50W\u00d72@4\u03a9"
+    },
+    {
+     "name": "Total Harmonic Distortion + Noise (THD+N)",
+     "value": "0.1%"
+    },
+    {
+     "name": "Efficiency",
+     "value": "90%"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V~26V"
+    },
+    {
+     "name": "Number of Inputs",
+     "value": "2 Pairs Differential Inputs"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "20mA"
+    },
+    {
+     "name": "Features",
+     "value": "Overvoltage protection\u3001Integrated PLL"
+    },
+    {
+     "name": "Class",
+     "value": "Class D"
+    },
+    {
+     "name": "Speaker Channels",
+     "value": "2-Channel"
+    },
+    {
+     "name": "Signal-to-Noise Ratio",
+     "value": "102dB"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C2865736",
+   "mpn": "TPA3116D2DAD",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+85\u2103 -70dB 0.1% 102dB 2-Channel 35mA 4.5V~26V 50W\u00d72@4\u03a9 90% Class D Filterless architecture\u3001Overvoltage protection\u3001Integrated PLL HTSSOP-32-EP-6.1mm Audio Amplifiers ROHS",
+   "package": "HTSSOP-32-EP-6.1mm",
+   "category": "Audio Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 507,
+   "price": 1.3187,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.3187
+    },
+    {
+     "qty": 10,
+     "price": 1.1141
+    },
+    {
+     "qty": 30,
+     "price": 1.002
+    },
+    {
+     "qty": 100,
+     "price": 0.8396
+    },
+    {
+     "qty": 500,
+     "price": 0.7844
+    },
+    {
+     "qty": 1000,
+     "price": 0.7584
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220730_Texas-Instruments-TPA3116D2DAD_C2865736.pdf",
+   "url": "https://www.lcsc.com/product-detail/audio-amplifiers_texas-instruments-tpa3116d2dad_C2865736.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "-70dB"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Output Power",
+     "value": "50W\u00d72@4\u03a9"
+    },
+    {
+     "name": "Total Harmonic Distortion + Noise (THD+N)",
+     "value": "0.1%"
+    },
+    {
+     "name": "Efficiency",
+     "value": "90%"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~26V"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "35mA"
+    },
+    {
+     "name": "Features",
+     "value": "Filterless architecture\u3001Overvoltage protection\u3001Integrated PLL"
+    },
+    {
+     "name": "Class",
+     "value": "Class D"
+    },
+    {
+     "name": "Speaker Channels",
+     "value": "2-Channel"
+    },
+    {
+     "name": "Signal-to-Noise Ratio",
+     "value": "102dB"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2872892",
+   "mpn": "TPA3116D2QDADRQ1",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 -70dB 0.1% 102dB 2 Pairs Differential Inputs 2-Channel 35mA 4.5V~26V 50W\u00d72@4\u03a9 90% Class D ESD protection\u3001Overvoltage protection\u3001Integrated PLL HTSSOP-32-6.1mm Audio Amplifiers ROHS",
+   "package": "HTSSOP-32-6.1mm",
+   "category": "Audio Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 25,
+   "price": 3.5077,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.5077
+    },
+    {
+     "qty": 10,
+     "price": 3.0027
+    },
+    {
+     "qty": 30,
+     "price": 2.7023
+    },
+    {
+     "qty": 100,
+     "price": 2.3986
+    },
+    {
+     "qty": 500,
+     "price": 2.2573
+    },
+    {
+     "qty": 1000,
+     "price": 2.194
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220030_Texas-Instruments-TPA3116D2QDADRQ1_C2872892.pdf",
+   "url": "https://www.lcsc.com/product-detail/audio-amplifiers_texas-instruments-tpa3116d2qdadrq1_C2872892.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "-70dB"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Output Power",
+     "value": "50W\u00d72@4\u03a9"
+    },
+    {
+     "name": "Total Harmonic Distortion + Noise (THD+N)",
+     "value": "0.1%"
+    },
+    {
+     "name": "Efficiency",
+     "value": "90%"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~26V"
+    },
+    {
+     "name": "Number of Inputs",
+     "value": "2 Pairs Differential Inputs"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "35mA"
+    },
+    {
+     "name": "Features",
+     "value": "ESD protection\u3001Overvoltage protection\u3001Integrated PLL"
+    },
+    {
+     "name": "Class",
+     "value": "Class D"
+    },
+    {
+     "name": "Speaker Channels",
+     "value": "2-Channel"
+    },
+    {
+     "name": "Signal-to-Noise Ratio",
+     "value": "102dB"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C22463364",
+   "mpn": "TPA3116D2",
+   "brand": "Texas Instruments",
+   "description": "HTSSOP-32-EP-6.1mm New Arrivals ROHS",
+   "package": "HTSSOP-32-EP-6.1mm",
+   "category": "New Arrivals",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.0395,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0395
+    },
+    {
+     "qty": 100,
+     "price": 0.0203
+    }
+   ],
+   "min_qty": 445,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 4
+  },
+  {
+   "lcsc": "C111559",
+   "mpn": "TPA3116D2DADR",
+   "brand": "Texas Instruments",
+   "description": "50W x 2 @ 4\u03a9 Class D HTSSOP-32-6.1mm Audio Amplifiers ROHS",
+   "package": "HTSSOP-32-6.1mm",
+   "category": "Audio Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 4.7338,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.7338
+    },
+    {
+     "qty": 10,
+     "price": 4.094
+    },
+    {
+     "qty": 30,
+     "price": 3.9754
+    },
+    {
+     "qty": 100,
+     "price": 3.8585
+    },
+    {
+     "qty": 500,
+     "price": 3.8065
+    },
+    {
+     "qty": 1000,
+     "price": 3.7416
+    }
+   ],
+   "min_qty": 2,
+   "datasheet": "",
+   "url": "https://www.lcsc.com/product-detail/audio-amplifiers_texas-instruments-tpa3116d2dadr_C111559.html",
+   "attributes": [
+    {
+     "name": "Output Power",
+     "value": "50W x 2 @ 4\u03a9"
+    },
+    {
+     "name": "Class",
+     "value": "Class D"
+    }
+   ],
+   "rank": 5
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 3
+}

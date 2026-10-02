@@ -1,0 +1,56 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 11,
+ "verified": true,
+ "by_status": {
+  "removed": 11
+ },
+ "results": [
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  }
+ ]
+}

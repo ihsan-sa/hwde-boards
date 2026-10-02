@@ -1,0 +1,48 @@
+id: current-sense-shunt-selection-ladder
+classes:
+- selection
+applies:
+  topologies:
+  - current-sense-shunt
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  p_shunt: I_rms^2 x R
+  v_signal: I_peak x R, within CSA differential range at worst case
+  csa_for_pwm_node: wide negative CMR + enhanced PWM rejection
+prose: 'Shunt value is a trade between dissipation and signal: SLVA959B''s example, 20 A through 1 mOhm,
+  dissipates 400 mW yet gives the CSA only 20 mV; raising R improves SNR and raises loss. Size it so the
+  worst-case current keeps the input inside the CSA''s differential range and abs max. At this board''s
+  point (3 mOhm, 10 A RMS, 20 A peak) that is 0.3 W continuous and 60 mV peak, 1.2 V out at 20 V/V. Choose
+  a CSA whose input survives the switched node: INA240 spans -4 V to 80 V common mode (the negative end
+  covers the node dipping below ground), has 132 dB DC / 93 dB at 50 kHz CMRR and ''enhanced PWM rejection''
+  (its front-page plot shows the output barely moving under a 0-to-~65 V common-mode step at 2 us/div),
+  and offset <= 25 uV, so full-scale shunt drops as low as 10 mV stay accurate. Two/three-phase low-side
+  CSAs need little CMR but see ground noise (SLVA959B sec 7.3).'
+sources:
+- file: research/sources/slva959b.pdf
+  page: 32
+  note: 'sec 7.4 component selection: 20 A x 1 mOhm = 400 mW, 20 mV signal; stay inside CSA abs max and
+    differential range'
+- file: research/sources/ina240.pdf
+  page: 1
+  note: 'features: -4..80 V CMR, 132 dB DC / 93 dB AC CMRR at 50 kHz, 25 uV offset, gains 20/50/100/200;
+    Enhanced PWM Rejection figure (output steady through a common-mode step); 10 mV full-scale note'
+status: active
+origin: research:block-current-sense-shunt-1
+level: topology
+envelope:
+  rshunt_mohm:
+    min: 0.5
+    max: 10
+  ipeak_a:
+    min: 0
+    max: 50
+envelope_note: Scales with I^2R (loss) and I x R (signal). Bounded to milliohm shunts 0.5-10 mOhm and
+  up to 50 A peak - the regime the cited example (1 mOhm/20 A) and INA240's 10 mV-full-scale claim describe;
+  beyond, shunt package and thermal need their own record.
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p32 SLVA959B 20A x 1mOhm=400mW/20mV matches exactly; p1 INA240 CMR -4..80V, CMRR, offset, 10mV full-scale claim all confirmed on page"}

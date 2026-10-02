@@ -1,0 +1,37 @@
+id: boost
+kind: coverage-checklist
+applies:
+  topologies:
+  - boost
+requires:
+- class: selection
+  min_level: topology
+  note: inductor window, Isat from worst-case peak current
+- class: power-loop
+  min_level: topology
+  note: 'output-side hot loop: Cout at VOUT and GND pins'
+- class: emi
+  min_level: topology
+  note: SW node minimal copper, plane underneath
+- class: feedback
+  min_level: topology
+  note: FB divider value limits and placement, feedforward
+- class: decoupling
+  min_level: topology
+  note: Cin/Cout effective capacitance and DC-bias derating
+- class: thermal-via
+  min_level: topology
+  note: pin copper and vias for no-pad boost packages
+- class: sequencing
+  min_level: principle
+  note: pass-through, EN shutdown disconnect, short-circuit behaviour
+maturity: draft
+sources:
+- file: research/sources/tps61023.pdf
+  page: 18
+  note: layout section used to derive the class list
+prose: 'Before designing a battery-to-5 V integrated-FET boost, a designer must hold: the L window and
+  worst-case peak current, that the hot loop is on the OUTPUT side, SW node containment, FB divider limits,
+  effective capacitance after derating, the thermal copper strategy, and the pass-through/shutdown behaviour.
+  Return-path and constraints-emission classes are deliberately not demanded: the sources read cover neither.'
+origin: research:block-boost-1

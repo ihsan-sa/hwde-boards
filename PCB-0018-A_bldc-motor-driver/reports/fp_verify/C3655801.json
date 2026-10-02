@@ -1,0 +1,73 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.kicad_mod",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5"
+   ],
+   "msg": "pad size(s) [[2.45, 2.45]] mm != datasheet [0.25, 0.6] mm (tol 0.1; min/max of 2 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[2.45, 2.45]] mm != datasheet [0.25, 0.6] mm (tol 0.1; min/max of 2 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.25,
+    0.6
+   ],
+   "measured_mm": [
+    [
+     2.45,
+     2.45
+    ]
+   ]
+  }
+ ],
+ "footprint": "VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5",
+ "footprint_file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.kicad_mod",
+ "copper_pads": 25,
+ "total_pads": 25,
+ "measured_pitch_mm": 0.5,
+ "measured_pad_size_mm": [
+  0.25,
+  0.6
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "RGE0024B, VQFN 24-pin, 1mm max height, 4.0mm x 4.0mm body",
+  "pad_count": 25,
+  "pitch_mm": 0.5,
+  "pad_size_mm": [
+   0.25,
+   0.6
+  ],
+  "pin1": "1",
+  "notes": "Perimeter pads 24x(0.25 x 0.6mm) at 0.5mm pitch on a 3.8mm x 3.8mm span (IPC land pattern, non-solder-mask-defined preferred). Exposed thermal pad is pad 25, nominal 2.45mm square (package outline), with an optional 20x via array (0.5mm pitch) under the pad per TI's example board layout; TI recommends vias under paste be filled, plugged, or tented. pad_count counts the exposed pad (pad 25), as the footprint does."
+ },
+ "svg": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T19:25:01+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/VQFN-24_L4.0-W4.0-P0.50-TL-EP2.5.kicad_mod",
+ "input_digest": "sexpr_no_uuid:a62208f6a945eeea0036b82a4c0b7a66dc6753cb5dfe73dc00e53bc5cc43902b"
+}

@@ -1,0 +1,93 @@
+{
+ "script": "check_thermal",
+ "status": "violations",
+ "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "counts": {
+  "total": 2,
+  "by_severity": {
+   "error": 1,
+   "warning": 1
+  },
+  "by_source": {
+   "check_thermal": 2
+  }
+ },
+ "violations": [
+  {
+   "check": "check_thermal",
+   "severity": "error",
+   "pos": [
+    26.0,
+    27.0005
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 dissipates 1.50 W into 645 mm2 of GND copper: ~111 C rise (theta_JA ~74 C/W) > 85 C allowed; add thermal vias to an inner/back plane",
+   "source": "check_thermal",
+   "items": [
+    {
+     "msg": "U1 dissipates 1.50 W into 645 mm2 of GND copper: ~111 C rise (theta_JA ~74 C/W) > 85 C allowed; add thermal vias to an inner/back plane",
+     "pos": [
+      26.0,
+      27.0005
+     ]
+    }
+   ],
+   "kind": "thermal_area",
+   "power_w": 1.5,
+   "area_mm2": 645.0,
+   "theta_ja": 73.8454,
+   "rise_c": 110.768,
+   "dt_allowed_c": 85.0
+  },
+  {
+   "check": "check_thermal",
+   "severity": "warning",
+   "pos": [
+    26.0,
+    27.0005
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 (1.50 W) needs a thermal-via array to GND (copper alone tops out ~74 C/W); found 0 via(s), want >= 15",
+   "source": "check_thermal",
+   "items": [
+    {
+     "msg": "U1 (1.50 W) needs a thermal-via array to GND (copper alone tops out ~74 C/W); found 0 via(s), want >= 15",
+     "pos": [
+      26.0,
+      27.0005
+     ]
+    }
+   ],
+   "kind": "thermal_vias",
+   "vias": 0,
+   "required": 15,
+   "power_w": 1.5
+  }
+ ],
+ "checked": [
+  {
+   "ref": "U1",
+   "net": "GND",
+   "power_w": 1.5,
+   "area_mm2": 645.0,
+   "theta_ja": 73.8454,
+   "rise_c": 110.768,
+   "dt_allowed_c": 85.0,
+   "vias_near_part": 0,
+   "multilayer": false
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T09:18:40+00:00",
+ "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:25b536a668ae8391812dee2607241d8434545162d18d811c53c8733a80bcef0b"
+}

@@ -1,0 +1,388 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "AP62200",
+ "total": 4,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C2895288",
+   "mpn": "AP62200TWU-7",
+   "brand": "Diodes Incorporated",
+   "description": "-40\u2103~+125\u2103 1 135uA 2A 4.2V~18V 750kHz 800mV~7V Adjustable Buck Buck Built-in Yes TSOT-26 DC-DC Converters ROHS",
+   "package": "TSOT-26",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 31062,
+   "price": 0.2047,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2047
+    },
+    {
+     "qty": 50,
+     "price": 0.1623
+    },
+    {
+     "qty": 150,
+     "price": 0.1441
+    },
+    {
+     "qty": 500,
+     "price": 0.1214
+    },
+    {
+     "qty": 3000,
+     "price": 0.1113
+    },
+    {
+     "qty": 6000,
+     "price": 0.1053
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202132100_Diodes-Incorporated-AP62200TWU-7_C2895288.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_diodes-incorporated-ap62200twu-7_C2895288.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "750kHz"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~18V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Output Current",
+     "value": "2A"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "135uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Hiccup current limiting\u3001EMI optimization (spread spectrum)"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "800mV~7V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C1323282",
+   "mpn": "AP62200WU-7",
+   "brand": "Diodes Incorporated",
+   "description": "-40\u2103~+125\u2103 1 135uA 2A 4.2V~18V 750kHz 800mV~7V Adjustable Buck Buck Built-in Yes TSOT-26 DC-DC Converters ROHS",
+   "package": "TSOT-26",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 12893,
+   "price": 0.1697,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1697
+    },
+    {
+     "qty": 50,
+     "price": 0.1358
+    },
+    {
+     "qty": 150,
+     "price": 0.1212
+    },
+    {
+     "qty": 500,
+     "price": 0.103
+    },
+    {
+     "qty": 3000,
+     "price": 0.0949
+    },
+    {
+     "qty": 6000,
+     "price": 0.09
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2104231833_Diodes-Incorporated-AP62200WU-7_C1323282.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_diodes-incorporated-ap62200wu-7_C1323282.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "750kHz"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~18V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Output Current",
+     "value": "2A"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "135uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Hiccup current limiting\u3001EMI optimization (spread spectrum)"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "800mV~7V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C2158024",
+   "mpn": "AP62200Z6-7",
+   "brand": "Diodes Incorporated",
+   "description": "-40\u2103~+125\u2103 1 135uA 2A 4.2V~18V 750kHz 800mV~7V Adjustable Buck Buck Built-in Yes SOT-563 DC-DC Converters ROHS",
+   "package": "SOT-563",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 344,
+   "price": 0.177,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.177
+    },
+    {
+     "qty": 50,
+     "price": 0.1395
+    },
+    {
+     "qty": 150,
+     "price": 0.1236
+    },
+    {
+     "qty": 500,
+     "price": 0.1037
+    },
+    {
+     "qty": 3000,
+     "price": 0.0907
+    },
+    {
+     "qty": 6000,
+     "price": 0.0853
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210280930_Diodes-Incorporated-AP62200Z6-7_C2158024.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_diodes-incorporated-ap62200z6-7_C2158024.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "750kHz"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~18V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Output Current",
+     "value": "2A"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "135uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Hiccup current limiting\u3001EMI optimization (spread spectrum)"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "800mV~7V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C5587950",
+   "mpn": "AP62200WU-7-52",
+   "brand": "Diodes Incorporated",
+   "description": "-40\u2103~+85\u2103@(TA) 1 2A 4.2V~18V 740kHz 800mV~7V Adjustable Buck Buck Built-in Yes TSOT-26 DC-DC Converters ROHS",
+   "package": "TSOT-26",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.4885,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.4885
+    },
+    {
+     "qty": 10,
+     "price": 0.4885
+    },
+    {
+     "qty": 12,
+     "price": 0.4885
+    },
+    {
+     "qty": 200,
+     "price": 0.1949
+    },
+    {
+     "qty": 500,
+     "price": 0.1884
+    },
+    {
+     "qty": 1000,
+     "price": 0.1852
+    }
+   ],
+   "min_qty": 19,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311291250_Diodes-Incorporated-AP62200WU-7-52_C5587950.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_diodes-incorporated-ap62200wu-7-52_C5587950.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(TA)"
+    },
+    {
+     "name": "Function",
+     "value": "Buck"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "740kHz"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~18V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Output Current",
+     "value": "2A"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "800mV~7V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

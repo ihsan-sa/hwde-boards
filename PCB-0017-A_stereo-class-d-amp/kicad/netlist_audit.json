@@ -1,0 +1,123 @@
+{
+ "script": "netlist_audit",
+ "status": "pass",
+ "board": "PCB-0017-A_stereo-class-d-amp.net",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "mode": "audit",
+ "nets": 29,
+ "components": 44,
+ "unconnected_pins": 1,
+ "constraint_nets_checked": 10,
+ "constraint_refs_checked": 43,
+ "pins_expected": 119,
+ "pins_connected": 119,
+ "decoupling_associations": 10,
+ "power": [
+  {
+   "net": "+12V",
+   "nodes": 17,
+   "power_in": 5,
+   "power_out": 0
+  },
+  {
+   "net": "GND",
+   "nodes": 35,
+   "power_in": 5,
+   "power_out": 0
+  },
+  {
+   "net": "/OUTPL",
+   "nodes": 3,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C16",
+    "L1"
+   ]
+  },
+  {
+   "net": "/OUTNL",
+   "nodes": 3,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C15",
+    "L2"
+   ]
+  },
+  {
+   "net": "/OUTPR",
+   "nodes": 3,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C18",
+    "L3"
+   ]
+  },
+  {
+   "net": "/OUTNR",
+   "nodes": 3,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C17",
+    "L4"
+   ]
+  },
+  {
+   "net": "/SPK_L_P",
+   "nodes": 4,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "J3",
+    "L1",
+    "R4"
+   ]
+  },
+  {
+   "net": "/SPK_L_N",
+   "nodes": 4,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "J3",
+    "L2",
+    "R5"
+   ]
+  },
+  {
+   "net": "/SPK_R_P",
+   "nodes": 4,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "J4",
+    "L3",
+    "R6"
+   ]
+  },
+  {
+   "net": "/SPK_R_N",
+   "nodes": 4,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "J4",
+    "L4",
+    "R7"
+   ]
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T07:46:14+00:00",
+ "input": "kicad/PCB-0017-A_stereo-class-d-amp.net",
+ "input_digest": "netlist_canonical:a27e023fe473af38d083c5a03f86f4456d74c6813adbdcda2333462f7946b2da"
+}

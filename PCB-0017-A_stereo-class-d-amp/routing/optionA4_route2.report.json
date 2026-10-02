@@ -1,0 +1,22 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 2,
+ "verified": true,
+ "by_status": {
+  "added": 2
+ },
+ "results": [
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "a4325e9b-3ad9-4eff-b7b5-ab6429c8f3ad"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "22d33cf4-668d-4d37-8d2f-5e27df7dd000"
+  }
+ ]
+}

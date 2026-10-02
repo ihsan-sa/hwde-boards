@@ -1,0 +1,1364 @@
+{
+ "version": 2,
+ "board": "esp32c3-node",
+ "workspace": "PCB-0020-A_esp32c3-node",
+ "created": "2026-10-01T05:33:44",
+ "updated": "2026-10-01T09:02:55",
+ "phase": "P8",
+ "gates": {
+  "erc": {
+   "phase": "P4",
+   "status": "pass",
+   "attempts": 5,
+   "last": {
+    "ts": "2026-10-01T06:47:53",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+     "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T06:16:30",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:0d02c0ff69b99421d6a2614c2d584c42a99167c9f39beeb3d1aa5967af41febf"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:44:09",
+     "status": "fail",
+     "failing_count": 14,
+     "total": 14,
+     "inputs": {
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:46:35",
+     "status": "fail",
+     "failing_count": 14,
+     "total": 14,
+     "inputs": {
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:47:38",
+     "status": "fail",
+     "failing_count": 2,
+     "total": 2,
+     "inputs": {
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:47:53",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00"
+     }
+    }
+   ]
+  },
+  "place": {
+   "phase": "P6",
+   "status": "pass",
+   "attempts": 5,
+   "last": {
+    "ts": "2026-10-01T06:49:49",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:869efcf94a757672ff0c4ee4830a4d9a6ac13e423408a1cf4e37e382d4aa13d4",
+     "constraints": "json_canonical:556e8aee2334602bf8094bbe00ab5f7e4ecaab5f88a044b0c259d376d67f5c56",
+     "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T06:31:14",
+     "status": "fail",
+     "failing_count": 26,
+     "total": 26,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:b33bd053615bb341e17fd15942ddf803631b82e882fba2fb85b7b02c69a0ba4d",
+      "constraints": "json_canonical:16fc28dee0d92dd4a67ed6b3b97ebfb3f2bd3808aac8e1018fc1082cbac804c6",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:31:57",
+     "status": "fail",
+     "failing_count": 23,
+     "total": 23,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:dbf53e97497976085402e6b4e14138716f81c13f50d84afb03e761a284595da1",
+      "constraints": "json_canonical:16fc28dee0d92dd4a67ed6b3b97ebfb3f2bd3808aac8e1018fc1082cbac804c6",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:41:45",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:3cab05d70c4cf133219d7d79dc70a0325fd5d2cda133e8d8b245b73e35a24a27",
+      "constraints": "json_canonical:556e8aee2334602bf8094bbe00ab5f7e4ecaab5f88a044b0c259d376d67f5c56",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:44:07",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:3149dc92de9aec710c0b2a7ebdbdd4193fb076a3646aebec7b23527fe2919a3c",
+      "constraints": "json_canonical:556e8aee2334602bf8094bbe00ab5f7e4ecaab5f88a044b0c259d376d67f5c56",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:49:49",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:869efcf94a757672ff0c4ee4830a4d9a6ac13e423408a1cf4e37e382d4aa13d4",
+      "constraints": "json_canonical:556e8aee2334602bf8094bbe00ab5f7e4ecaab5f88a044b0c259d376d67f5c56",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a"
+     }
+    }
+   ]
+  },
+  "drc": {
+   "phase": "P6",
+   "status": "pass",
+   "attempts": 2,
+   "last": {
+    "ts": "2026-10-01T09:02:55",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695",
+     "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+     "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+     "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T06:42:19",
+     "status": "fail",
+     "failing_count": 142,
+     "total": 240,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:3149dc92de9aec710c0b2a7ebdbdd4193fb076a3646aebec7b23527fe2919a3c",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:02:55",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    }
+   ]
+  },
+  "drc_routed": {
+   "phase": "P7",
+   "status": "pass",
+   "attempts": 11,
+   "last": {
+    "ts": "2026-10-01T08:29:07",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:0026ab0ac78dedf08764418df02caa807e02b868c00ee19f684771f33f331b81",
+     "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+     "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+     "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T07:28:18",
+     "status": "fail",
+     "failing_count": 77,
+     "total": 77,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:9e50d19181be1f474f986c095ee2eec880a5adec2083db9cd7866eda17cbdd52",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:28:33",
+     "status": "fail",
+     "failing_count": 77,
+     "total": 77,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:9e50d19181be1f474f986c095ee2eec880a5adec2083db9cd7866eda17cbdd52",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:29:31",
+     "status": "fail",
+     "failing_count": 20,
+     "total": 20,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:0b04a9b12aa32ce6b73577686682d09e333561c1f17f262b8d560c76f272ff0b",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:30:41",
+     "status": "fail",
+     "failing_count": 35,
+     "total": 35,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:04734bb21a8f5246bf5e26e69b259147a703bacef9fbc357bdd0e9724c12aec8",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:31:39",
+     "status": "fail",
+     "failing_count": 30,
+     "total": 30,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:4a5912d2bbd03dd4e2c9db3969801b080f0aa98f8edb558175fa74b5f980451b",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:32:32",
+     "status": "fail",
+     "failing_count": 27,
+     "total": 27,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:acc957fabf5e3fa3b6c03ed3dfcb2ff9985919a882591c49fefb6242ef5666c2",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:33:56",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:acc957fabf5e3fa3b6c03ed3dfcb2ff9985919a882591c49fefb6242ef5666c2",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:38:32",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:f927792cc1a88c2ed150e41bd0011ecc79511522a74669a8dfb243f9bf03a940",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:38:48",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:f927792cc1a88c2ed150e41bd0011ecc79511522a74669a8dfb243f9bf03a940",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:27:22",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:e5da277bb443cd7e41566c542fd2f9581b27dc04228cdec457524e77e6c2902f",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:29:07",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:0026ab0ac78dedf08764418df02caa807e02b868c00ee19f684771f33f331b81",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+      "dru": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1"
+     }
+    }
+   ]
+  },
+  "verify": {
+   "phase": "P8",
+   "status": "pass",
+   "attempts": 7,
+   "last": {
+    "ts": "2026-10-01T08:33:57",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 116,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695",
+     "constraints": "json_canonical:e35e16e721de2f55b8d604feba6127bce6e0cb82db6d07d6d8db0e8c72cd6706",
+     "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+     "waivers": "json_canonical:e3363f666ecff788a3099486acc391e012992ce348e88035d1edceca628466d8"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T07:38:40",
+     "status": "fail",
+     "failing_count": 72,
+     "total": 123,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:f927792cc1a88c2ed150e41bd0011ecc79511522a74669a8dfb243f9bf03a940",
+      "constraints": "json_canonical:554126015a91533baf36f3a09b565d699324e19f277574387123fb392cf210c4",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-10-01T07:38:55",
+     "status": "fail",
+     "failing_count": 72,
+     "total": 123,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:f927792cc1a88c2ed150e41bd0011ecc79511522a74669a8dfb243f9bf03a940",
+      "constraints": "json_canonical:554126015a91533baf36f3a09b565d699324e19f277574387123fb392cf210c4",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-10-01T08:27:33",
+     "status": "fail",
+     "failing_count": 22,
+     "total": 120,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:e5da277bb443cd7e41566c542fd2f9581b27dc04228cdec457524e77e6c2902f",
+      "constraints": "json_canonical:e35e16e721de2f55b8d604feba6127bce6e0cb82db6d07d6d8db0e8c72cd6706",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-10-01T08:29:25",
+     "status": "fail",
+     "failing_count": 22,
+     "total": 117,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:0026ab0ac78dedf08764418df02caa807e02b868c00ee19f684771f33f331b81",
+      "constraints": "json_canonical:e35e16e721de2f55b8d604feba6127bce6e0cb82db6d07d6d8db0e8c72cd6706",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-10-01T08:33:24",
+     "status": "fail",
+     "failing_count": 20,
+     "total": 116,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695",
+      "constraints": "json_canonical:e35e16e721de2f55b8d604feba6127bce6e0cb82db6d07d6d8db0e8c72cd6706",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-10-01T08:33:44",
+     "status": "fail",
+     "failing_count": 20,
+     "total": 116,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695",
+      "constraints": "json_canonical:e35e16e721de2f55b8d604feba6127bce6e0cb82db6d07d6d8db0e8c72cd6706",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+      "waivers": "json_canonical:e3363f666ecff788a3099486acc391e012992ce348e88035d1edceca628466d8"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:33:57",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 116,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695",
+      "constraints": "json_canonical:e35e16e721de2f55b8d604feba6127bce6e0cb82db6d07d6d8db0e8c72cd6706",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+      "waivers": "json_canonical:e3363f666ecff788a3099486acc391e012992ce348e88035d1edceca628466d8"
+     }
+    }
+   ]
+  },
+  "dfm": {
+   "phase": "P9",
+   "status": "pass",
+   "attempts": 2,
+   "last": {
+    "ts": "2026-10-01T08:29:13",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 1,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:0026ab0ac78dedf08764418df02caa807e02b868c00ee19f684771f33f331b81",
+     "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+     "parts": null
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T07:39:27",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:f927792cc1a88c2ed150e41bd0011ecc79511522a74669a8dfb243f9bf03a940",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-10-01T08:29:13",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:0026ab0ac78dedf08764418df02caa807e02b868c00ee19f684771f33f331b81",
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "parts": null
+     }
+    }
+   ]
+  }
+ },
+ "human": {
+  "1": {
+   "status": "approved",
+   "ts": "2026-10-01T05:50:16",
+   "note": "H1 APPROVED BY DELEGATE (owner said 'decide for yourself'). Provisional: 1S LiPo 4.20 V, ~400 mAh class, charge <=196 mA, no NTC (protected cell), no reverse-battery FET (silk polarity), indoor 0-40 C, Qwiic 100 mA, qty 5, XIAO size soft (expect ~22-26 x 32-36 mm), PTH edge pads, 1.6 mm. Accepted deviation: VBUS attach ~65 uC > 50 uC. Coverage P2: 1 provisional (B1), 5 gap (B2 charger, B3 ldo decoupling/thermal, B4 mcu selection/sequencing, B5 bme280, interface usb), designed under gap, no research loops (spend cap). Riskiest: antenna keep-out on a small outline; LDO Tj ~114 C worst. Parts ~15-18 USD/board."
+  },
+  "2": {
+   "status": "approved",
+   "ts": "2026-10-01T06:20:54",
+   "note": "H2 APPROVED BY DELEGATE (owner said 'decide for yourself'). ERC 0/0 on 3 sheets, netlist_audit pass, schematic review 0 err/6 warn all accepted and listed as owner-visible waivers in the PR: USB draw ~650 mA peak vs 500 mA port; USBLC6 clamp up to 9.2 V vs MCP73831 7 V abs max; U1 footprint hand-edited antenna keep-out; J1-J3 footprints hand-checked only; reviewer ran on sonnet."
+  },
+  "3": {
+   "status": "approved",
+   "ts": "2026-10-01T06:49:41",
+   "note": "H3 APPROVED BY DELEGATE (owner said 'decide for yourself'). Placement render reports/place/PCB-0020-A_esp32c3-node_top.png reviewed: J1 USB-C/J2/J3 mate off bottom/right edges, J4/J5 edge rows, U1 antenna overhangs top ~5.4 mm with keep-out fully off-board. Gate place PASS (0 viol). ERC re-check PASS after adding stock power/Connector_Generic libs to sym-lib-table. Owner-visible P5 waivers carried: USB pair uncontrolled ~140 ohm (FS, <30 mm); J1 lib footprint pad stroke removed (0.6 mm datasheet); hand DRU rule aiee_samefp_J1_usbc; antenna overhang (JLC may query); edges J2 bottom/J3 right; board 26x38 mm > 32-36 mm estimate. 8 crowded refdes moved to bottom silk."
+  },
+  "4": {
+   "status": "approved",
+   "ts": "2026-10-01T08:38:25",
+   "note": "H4 APPROVED BY DELEGATE (owner said keep current USB route). Gates: drc_routed pass 0, dfm pass (0 err/1 warn), verify pass with 20 waived errors (18 USB corridor_void FS 12 Mb/s ~25 mm; 2 GND pour_neckdown island artefact; all owner-visible in reports/verify-waivers.json). 6 GND vias added beside USB transitions, GND plane_fed. verify-reviewer subagent not run (spend cap)."
+  }
+ },
+ "artifacts": {
+  "sch": {
+   "path": "kicad/PCB-0020-A_esp32c3-node.kicad_sch",
+   "kind": "sch",
+   "sha256": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+   "hashed": "2026-10-01T09:02:55"
+  },
+  "pro": {
+   "path": "kicad/PCB-0020-A_esp32c3-node.kicad_pro",
+   "kind": "pro",
+   "sha256": "json_canonical:d7cb03be0143831fcb4c01e693798128eaa046f69dd3541a104108ab5bb39d97",
+   "hashed": "2026-10-01T09:02:55"
+  },
+  "pcb": {
+   "path": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+   "kind": "pcb",
+   "sha256": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695",
+   "hashed": "2026-10-01T09:02:55"
+  },
+  "constraints": {
+   "path": "kicad/constraints.json",
+   "kind": "constraints",
+   "sha256": "json_canonical:e35e16e721de2f55b8d604feba6127bce6e0cb82db6d07d6d8db0e8c72cd6706",
+   "hashed": "2026-10-01T08:33:57"
+  },
+  "decoupling": {
+   "path": "kicad/decoupling.json",
+   "kind": "decoupling",
+   "sha256": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a",
+   "hashed": "2026-10-01T08:33:57"
+  },
+  "gerbers": {
+   "path": "fab/PCB-0020-A_esp32c3-node_gerbers.zip",
+   "kind": "gerbers",
+   "sha256": null,
+   "hashed": "2026-10-01T06:31:33",
+   "stale": [
+    {
+     "ts": "2026-10-01T06:31:33",
+     "edit_class": "outline_change",
+     "refs": [],
+     "human_hold": 2
+    }
+   ]
+  },
+  "dru": {
+   "path": "kicad/PCB-0020-A_esp32c3-node.kicad_dru",
+   "kind": "dru",
+   "sha256": "text_eol:59999fc7128a83c72159afee55a9e22108c1faed86add8376c4263deb8c82de1",
+   "hashed": "2026-10-01T09:02:55"
+  },
+  "waivers": {
+   "path": "reports/verify-waivers.json",
+   "kind": "waivers",
+   "sha256": "json_canonical:e3363f666ecff788a3099486acc391e012992ce348e88035d1edceca628466d8",
+   "hashed": "2026-10-01T08:33:57"
+  },
+  "parts": {
+   "path": "kicad/parts.json",
+   "kind": "parts",
+   "sha256": null,
+   "hashed": "2026-10-01T08:29:13"
+  }
+ },
+ "open_issues": [],
+ "next_issue_id": 1,
+ "budgets": {
+  "fix_loops": {
+   "erc": 3,
+   "place": 3,
+   "drc_routed": 3,
+   "verify": 3,
+   "dfm": 3
+  },
+  "freerouting_retries": 2,
+  "place_edit_iterations": 8,
+  "research": {
+   "per_run": 6,
+   "depth_per_gap": 4
+  },
+  "cross_stage_spawns": {
+   "P4": 2,
+   "P5": 2,
+   "P6": 2,
+   "P7": 2,
+   "P8": 2,
+   "P9": 2
+  }
+ },
+ "decisions": [
+  {
+   "what": "one agent played P0-P3 roles (requirements-analyst, research-*, architect, part-sourcer, datasheet-extractor, librarian), spend cap",
+   "why": "unattended track run with a shared spend cap; orchestrator brief directs it; reviewers are not due before P4",
+   "phase": "P0",
+   "ts": "2026-10-01T05:36:00"
+  },
+  {
+   "what": "Q1a battery = 1S LiPo/Li-ion, 4.20 V termination; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)",
+   "why": "brief says single-cell LiPo; 4.20 V is the standard full-charge voltage and the charger family default",
+   "phase": "P0",
+   "ts": "2026-10-01T05:36:00"
+  },
+  {
+   "what": "Q1b cell class ~400 mAh (300-1000 mAh acceptable); PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)",
+   "why": "XIAO-sized node class; sizing the charge current to the smallest plausible cell is the conservative choice",
+   "phase": "P0",
+   "ts": "2026-10-01T05:36:01"
+  },
+  {
+   "what": "Q1c charge current <= 200 mA (0.5C of 400 mAh); PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)",
+   "why": "conservative per orchestrator brief; also leaves USB default-power headroom for the system load through the power path",
+   "phase": "P0",
+   "ts": "2026-10-01T05:36:01"
+  },
+  {
+   "what": "Q1d no battery NTC fitted; protected cell required; charger die-temperature regulation relied on; TS pin (if any) tied per datasheet to disable; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)",
+   "why": "most hobby 1S cells with JST-PH have no thermistor lead; a 2-pin connector cannot carry one; indoor 0-40 C use",
+   "phase": "P0",
+   "ts": "2026-10-01T05:36:01"
+  },
+  {
+   "what": "Q1e no active reverse-battery element; JST-PH pin1=+ (Adafruit/SparkFun convention) marked on silk; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)",
+   "why": "a series PMOS costs dropout and parts on a tiny board; the cell protection PCB does not cover reversal so this is a stated residual risk shown at H1",
+   "phase": "P0",
+   "ts": "2026-10-01T05:36:01"
+  },
+  {
+   "what": "Q2 indoor 0-40 C bare board; Q3 Qwiic budget 100 mA; Q4 qty 5 assembled; Q5 size soft (no HARD cap); Q6 edge pads = plain plated 0.1 in THT, no castellation; Q7 1.6 mm FR-4; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)",
+   "why": "defaults from requirements.md section 9; none is safety-relevant",
+   "phase": "P0",
+   "ts": "2026-10-01T05:36:02"
+  },
+  {
+   "what": "charger = MCP73831-2 + AO3401A/B5819W load sharing (power path), not an integrated power-path IC",
+   "why": "integrated options are QFN and 2-3 USD (MCP73871, BQ24074 thin stock 415) or of unverified documentation (ETA6003); 200 mA charge needs no DPPM; two Basic discretes give the power-path function",
+   "phase": "P1",
+   "ts": "2026-10-01T05:44:19"
+  },
+  {
+   "what": "USB D+/D- 90 ohm target dropped; no series resistors",
+   "why": "2-layer 1.6 mm cannot hold 90 ohm differential at sane widths; FS pair < 15 mm (canonical usb-fs note, AN11392 3.2); internal PHY",
+   "phase": "P1",
+   "ts": "2026-10-01T05:44:19"
+  },
+  {
+   "what": "stackup JLC2313_1.6, 2 layers",
+   "why": "no impedance control needed for USB-FS over <30 mm; density not layer count binds",
+   "phase": "P2",
+   "ts": "2026-10-01T05:48:19"
+  },
+  {
+   "what": "lead parts: ESP32-C3-MINI-1-N4, MCP73831-2 + AO3401A/B5819W load sharing, RT9080-33, USBLC6-2SC6, SMF5.0A, BME280",
+   "why": "architecture/decisions.md; pre-certified module, stocked charger with Basic power-path parts, 600 mA low-Iq LDO",
+   "phase": "P2",
+   "ts": "2026-10-01T05:48:20"
+  },
+  {
+   "what": "rejected: bare ESP32-C3 chip, BQ24074 power-path IC, AP2112K/ME6211 LDO, 90 ohm USB impedance",
+   "why": "RF/crystal risk on 2L; cost/stock; current headroom; not needed for USB-FS",
+   "phase": "P2",
+   "ts": "2026-10-01T05:48:21"
+  },
+  {
+   "what": "accepted deviation: VBUS attach charge ~65 uC > USB2.0 50 uC guideline",
+   "why": "LDO current limit bounds surge; shown at H1",
+   "phase": "P2",
+   "ts": "2026-10-01T05:48:22"
+  },
+  {
+   "what": "outline is an output: stated XIAO 21 x 17.8 mm is soft, expected earned ~22-26 x 32-36 mm",
+   "why": "module 13.2x16.6 + antenna edge + USB-C opposite edge + JST-PH + edge pads; P6 earns and records the final size",
+   "phase": "P2",
+   "ts": "2026-10-01T05:48:22"
+  },
+  {
+   "what": "designing under coverage gap: B2 li-charger has no checklist/records (MCP73831 + AN1149 load-sharing taken from datasheet + research/refdesign-charger-loadshare.md)",
+   "why": "spend cap: no open-web research loops (orchestrator brief); PCB-0015 verified records reused where they apply",
+   "phase": "P2",
+   "ts": "2026-10-01T05:49:37"
+  },
+  {
+   "what": "designing under coverage gap: B3 ldo decoupling + thermal (RT9080 SOT-23-5; datasheet caps 1 uF in/out, thermal via constraints.json U3 entry)",
+   "why": "spend cap: no open-web research loops (orchestrator brief); PCB-0015 verified records reused where they apply",
+   "phase": "P2",
+   "ts": "2026-10-01T05:49:37"
+  },
+  {
+   "what": "designing under coverage gap: B4 mcu selection + sequencing (ESP32-C3 module EN RC 10k/1uF and strap pull-ups from the module datasheet)",
+   "why": "spend cap: no open-web research loops (orchestrator brief); PCB-0015 verified records reused where they apply",
+   "phase": "P2",
+   "ts": "2026-10-01T05:49:37"
+  },
+  {
+   "what": "designing under coverage gap: B5 bme280 has no checklist (isolation >= 10 mm, no pour under U5, per Bosch handling guide)",
+   "why": "spend cap: no open-web research loops (orchestrator brief); PCB-0015 verified records reused where they apply",
+   "phase": "P2",
+   "ts": "2026-10-01T05:49:38"
+  },
+  {
+   "what": "designing under coverage gap: interface:usb diff-pair/return-path/emi/esd/decoupling/constraints-emission (usb-fs checklist rows have no library records; research/interface-usb-fs.md applied)",
+   "why": "spend cap: no open-web research loops (orchestrator brief); PCB-0015 verified records reused where they apply",
+   "phase": "P2",
+   "ts": "2026-10-01T05:49:38"
+  },
+  {
+   "what": "U1 antenna placement: the 13.2 x 5.4 mm antenna area (module DS v2.2 p38 Fig 11-1) overhangs the board edge; the outline stops at the antenna-area boundary and the U1 footprint carries a keep-out rule area (no tracks, vias, pads, zones, footprints, all copper) over the antenna area plus 1 mm",
+   "why": "DS p10 Fig 3-1 puts the antenna at the edge but gives no numeric base-board keep-out (defers to the HW design guidelines, not fetched under the spend cap); overhang removes the need for one",
+   "phase": "P3",
+   "ts": "2026-10-01T05:55:01"
+  },
+  {
+   "what": "U1 footprint (lib/aiee.pretty/WIFIM-SMD_ESP32-C3-MINI-1) hand-edited: added rule area U1_antenna_keepout, all copper layers, no tracks/vias/pads/pours, rect x -7.6..7.6 y -12.0..-5.6 mm (footprint coords)",
+   "why": "DS p38: antenna area 13.2 x 5.4 mm (fp y -11..-5.6, matches silk divider) must be copper-free; +1 mm outward on three sides, flush with the module body side to stay clear of pad 1 (y -4.2). A re-run of lib_pull would drop this edit.",
+   "phase": "P3",
+   "ts": "2026-10-01T06:09:18"
+  },
+  {
+   "what": "fp_verify U1 (C2838502) exit 1 'pad count 61 != 53' accepted as a checker artifact, not a footprint defect",
+   "why": "Footprint has exactly 53 pad numbers; pad 49 (GND EPAD) is a 3x3 array of 1.45 mm squares (one custom pad chamfered for pin-1 orientation, reported as 0.005 mm), total 5.4 mm square as DS Fig 11-1. Edge pads 0.4x0.8 at 0.8 pitch, corners 0.7x0.7, all match. ICs U2/U3/U4/U5 fp_verify pass. Reports log/fp_verify/.",
+   "phase": "P3",
+   "ts": "2026-10-01T06:11:01"
+  },
+  {
+   "what": "J1 C165948, J2 C160404, J3 C295747 footprints accepted from the JLC/EasyEDA pull without a datasheet extraction",
+   "why": "No prior board has extractions for them; spend-bounded run. Pad geometry checked by hand: J2 1.0 pitch 0.6x1.55 + 1.2x1.8 mounts; J3 2.0 pitch 1.0x3.8 + 1.5x3.4 mounts; J1 16-pin USB-C 0.3x1.3 at 0.5 pitch + 4 shell THT. Re-check against the vendor drawings before order.",
+   "phase": "P3",
+   "ts": "2026-10-01T06:11:01"
+  }
+ ],
+ "edits": [
+  {
+   "ts": "2026-10-01T06:31:33",
+   "class": "outline_change",
+   "refs": [],
+   "note": "outline -> 26.0x38.0 mm (fixed)",
+   "human_hold": 2,
+   "gates": [
+    "place",
+    "drc",
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "gates_marked": [
+    "place"
+   ],
+   "stale_artifacts": [
+    "gerbers"
+   ]
+  }
+ ],
+ "spawns": [
+  {
+   "ts": "2026-10-01T05:36:00",
+   "role": "requirements-analyst",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P0",
+   "note": "played inline by the single P0-P3 agent (spend cap); tier fable/high substituted"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "role": "research-component-scout",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): module"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "role": "research-component-scout",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): charger"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "role": "research-component-scout",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): ldo"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "role": "research-component-scout",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): sensor-io"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "role": "research-power-architect",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): power"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "role": "research-interface-spec",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): usb-fs"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "role": "research-reference-design",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): esp32c3-module"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "role": "research-reference-design",
+   "model": "opus",
+   "effort": "high",
+   "phase": "P1",
+   "note": "played inline by the single P0-P3 agent (spend cap): charger-loadshare"
+  },
+  {
+   "ts": "2026-10-01T06:17:26",
+   "role": "schematic-reviewer",
+   "model": "sonnet",
+   "phase": "P4"
+  }
+ ],
+ "history": [
+  {
+   "ts": "2026-10-01T05:33:44",
+   "event": "init",
+   "board": "esp32c3-node",
+   "phase": "P0"
+  },
+  {
+   "ts": "2026-10-01T05:36:00",
+   "event": "decision",
+   "what": "one agent played P0-P3 roles (requirements-analyst, research-*, architect, part-sourcer, datasheet-extractor, librarian), spend cap"
+  },
+  {
+   "ts": "2026-10-01T05:36:00",
+   "event": "spawn",
+   "role": "requirements-analyst",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:36:00",
+   "event": "decision",
+   "what": "Q1a battery = 1S LiPo/Li-ion, 4.20 V termination; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)"
+  },
+  {
+   "ts": "2026-10-01T05:36:01",
+   "event": "decision",
+   "what": "Q1b cell class ~400 mAh (300-1000 mAh acceptable); PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)"
+  },
+  {
+   "ts": "2026-10-01T05:36:01",
+   "event": "decision",
+   "what": "Q1c charge current <= 200 mA (0.5C of 400 mAh); PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)"
+  },
+  {
+   "ts": "2026-10-01T05:36:01",
+   "event": "decision",
+   "what": "Q1d no battery NTC fitted; protected cell required; charger die-temperature regulation relied on; TS pin (if any) tied per datasheet to disable; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)"
+  },
+  {
+   "ts": "2026-10-01T05:36:01",
+   "event": "decision",
+   "what": "Q1e no active reverse-battery element; JST-PH pin1=+ (Adafruit/SparkFun convention) marked on silk; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)"
+  },
+  {
+   "ts": "2026-10-01T05:36:02",
+   "event": "decision",
+   "what": "Q2 indoor 0-40 C bare board; Q3 Qwiic budget 100 mA; Q4 qty 5 assembled; Q5 size soft (no HARD cap); Q6 edge pads = plain plated 0.1 in THT, no castellation; Q7 1.6 mm FR-4; PROVISIONAL (delegate, owner said decide for yourself; re-confirm at H1)"
+  },
+  {
+   "ts": "2026-10-01T05:36:10",
+   "event": "phase",
+   "phase": "P1",
+   "prev": "P0"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "event": "spawn",
+   "role": "research-component-scout",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "event": "spawn",
+   "role": "research-component-scout",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "event": "spawn",
+   "role": "research-component-scout",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:17",
+   "event": "spawn",
+   "role": "research-component-scout",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "event": "spawn",
+   "role": "research-power-architect",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "event": "spawn",
+   "role": "research-interface-spec",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "event": "spawn",
+   "role": "research-reference-design",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:18",
+   "event": "spawn",
+   "role": "research-reference-design",
+   "model": "opus"
+  },
+  {
+   "ts": "2026-10-01T05:44:19",
+   "event": "decision",
+   "what": "charger = MCP73831-2 + AO3401A/B5819W load sharing (power path), not an integrated power-path IC"
+  },
+  {
+   "ts": "2026-10-01T05:44:19",
+   "event": "decision",
+   "what": "USB D+/D- 90 ohm target dropped; no series resistors"
+  },
+  {
+   "ts": "2026-10-01T05:44:19",
+   "event": "phase",
+   "phase": "P2",
+   "prev": "P1"
+  },
+  {
+   "ts": "2026-10-01T05:48:19",
+   "event": "decision",
+   "what": "stackup JLC2313_1.6, 2 layers"
+  },
+  {
+   "ts": "2026-10-01T05:48:20",
+   "event": "decision",
+   "what": "lead parts: ESP32-C3-MINI-1-N4, MCP73831-2 + AO3401A/B5819W load sharing, RT9080-33, USBLC6-2SC6, SMF5.0A, BME280"
+  },
+  {
+   "ts": "2026-10-01T05:48:21",
+   "event": "decision",
+   "what": "rejected: bare ESP32-C3 chip, BQ24074 power-path IC, AP2112K/ME6211 LDO, 90 ohm USB impedance"
+  },
+  {
+   "ts": "2026-10-01T05:48:22",
+   "event": "decision",
+   "what": "accepted deviation: VBUS attach charge ~65 uC > USB2.0 50 uC guideline"
+  },
+  {
+   "ts": "2026-10-01T05:48:22",
+   "event": "decision",
+   "what": "outline is an output: stated XIAO 21 x 17.8 mm is soft, expected earned ~22-26 x 32-36 mm"
+  },
+  {
+   "ts": "2026-10-01T05:49:37",
+   "event": "decision",
+   "what": "designing under coverage gap: B2 li-charger has no checklist/records (MCP73831 + AN1149 load-sharing taken from datasheet + research/refdesign-charger-loadshare.md)"
+  },
+  {
+   "ts": "2026-10-01T05:49:37",
+   "event": "decision",
+   "what": "designing under coverage gap: B3 ldo decoupling + thermal (RT9080 SOT-23-5; datasheet caps 1 uF in/out, thermal via constraints.json U3 entry)"
+  },
+  {
+   "ts": "2026-10-01T05:49:37",
+   "event": "decision",
+   "what": "designing under coverage gap: B4 mcu selection + sequencing (ESP32-C3 module EN RC 10k/1uF and strap pull-ups from the module datasheet)"
+  },
+  {
+   "ts": "2026-10-01T05:49:38",
+   "event": "decision",
+   "what": "designing under coverage gap: B5 bme280 has no checklist (isolation >= 10 mm, no pour under U5, per Bosch handling guide)"
+  },
+  {
+   "ts": "2026-10-01T05:49:38",
+   "event": "decision",
+   "what": "designing under coverage gap: interface:usb diff-pair/return-path/emi/esd/decoupling/constraints-emission (usb-fs checklist rows have no library records; research/interface-usb-fs.md applied)"
+  },
+  {
+   "ts": "2026-10-01T05:50:04",
+   "event": "phase",
+   "phase": "P3",
+   "prev": "P2"
+  },
+  {
+   "ts": "2026-10-01T05:50:16",
+   "event": "human",
+   "checkpoint": "1",
+   "status": "approved"
+  },
+  {
+   "ts": "2026-10-01T05:55:01",
+   "event": "decision",
+   "what": "U1 antenna placement: the 13.2 x 5.4 mm antenna area (module DS v2.2 p38 Fig 11-1) overhangs the board edge; the outline stops at the antenna-area boundary and the U1 footprint carries a keep-out rule area (no tracks, vias, pads, zones, footprints, all copper) over the antenna area plus 1 mm"
+  },
+  {
+   "ts": "2026-10-01T06:09:18",
+   "event": "decision",
+   "what": "U1 footprint (lib/aiee.pretty/WIFIM-SMD_ESP32-C3-MINI-1) hand-edited: added rule area U1_antenna_keepout, all copper layers, no tracks/vias/pads/pours, rect x -7.6..7.6 y -12.0..-5.6 mm (footprint coords)"
+  },
+  {
+   "ts": "2026-10-01T06:11:01",
+   "event": "decision",
+   "what": "fp_verify U1 (C2838502) exit 1 'pad count 61 != 53' accepted as a checker artifact, not a footprint defect"
+  },
+  {
+   "ts": "2026-10-01T06:11:01",
+   "event": "decision",
+   "what": "J1 C165948, J2 C160404, J3 C295747 footprints accepted from the JLC/EasyEDA pull without a datasheet extraction"
+  },
+  {
+   "ts": "2026-10-01T06:11:50",
+   "event": "phase",
+   "phase": "P4",
+   "prev": "P3"
+  },
+  {
+   "ts": "2026-10-01T06:16:30",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:17:26",
+   "event": "spawn",
+   "role": "schematic-reviewer",
+   "model": "sonnet"
+  },
+  {
+   "ts": "2026-10-01T06:20:07",
+   "event": "phase",
+   "phase": "P5",
+   "prev": "P4"
+  },
+  {
+   "ts": "2026-10-01T06:20:54",
+   "event": "human",
+   "checkpoint": "2",
+   "status": "approved"
+  },
+  {
+   "ts": "2026-10-01T06:24:49",
+   "event": "phase",
+   "phase": "P6",
+   "prev": "P5"
+  },
+  {
+   "ts": "2026-10-01T06:24:59",
+   "event": "phase",
+   "phase": "P6",
+   "prev": "P6"
+  },
+  {
+   "ts": "2026-10-01T06:31:14",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 26
+  },
+  {
+   "ts": "2026-10-01T06:31:33",
+   "event": "edit",
+   "edit_class": "outline_change",
+   "refs": [],
+   "human_hold": 2
+  },
+  {
+   "ts": "2026-10-01T06:31:57",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 2,
+   "failing_count": 23
+  },
+  {
+   "ts": "2026-10-01T06:41:45",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:42:19",
+   "event": "gate",
+   "gate": "drc",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 142
+  },
+  {
+   "ts": "2026-10-01T06:44:07",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 4,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:44:09",
+   "event": "gate",
+   "gate": "erc",
+   "status": "fail",
+   "attempt": 2,
+   "failing_count": 14
+  },
+  {
+   "ts": "2026-10-01T06:46:35",
+   "event": "gate",
+   "gate": "erc",
+   "status": "fail",
+   "attempt": 3,
+   "failing_count": 14
+  },
+  {
+   "ts": "2026-10-01T06:47:38",
+   "event": "gate",
+   "gate": "erc",
+   "status": "fail",
+   "attempt": 4,
+   "failing_count": 2
+  },
+  {
+   "ts": "2026-10-01T06:47:53",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:49:41",
+   "event": "human",
+   "checkpoint": "3",
+   "status": "approved"
+  },
+  {
+   "ts": "2026-10-01T06:49:49",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:49:49",
+   "event": "phase",
+   "phase": "P7",
+   "prev": "P6"
+  },
+  {
+   "ts": "2026-10-01T07:28:18",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 77
+  },
+  {
+   "ts": "2026-10-01T07:28:33",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 2,
+   "failing_count": 77
+  },
+  {
+   "ts": "2026-10-01T07:29:31",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 3,
+   "failing_count": 20
+  },
+  {
+   "ts": "2026-10-01T07:30:41",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 4,
+   "failing_count": 35
+  },
+  {
+   "ts": "2026-10-01T07:31:39",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 5,
+   "failing_count": 30
+  },
+  {
+   "ts": "2026-10-01T07:32:32",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 6,
+   "failing_count": 27
+  },
+  {
+   "ts": "2026-10-01T07:33:57",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 7,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T07:34:16",
+   "event": "phase",
+   "phase": "P8",
+   "prev": "P7"
+  },
+  {
+   "ts": "2026-10-01T07:38:32",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 8,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T07:38:40",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 72
+  },
+  {
+   "ts": "2026-10-01T07:38:48",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 9,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T07:38:55",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 2,
+   "failing_count": 72
+  },
+  {
+   "ts": "2026-10-01T07:39:27",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:27:22",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 10,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:27:33",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 3,
+   "failing_count": 22
+  },
+  {
+   "ts": "2026-10-01T08:29:07",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 11,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:29:13",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:29:25",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 4,
+   "failing_count": 22
+  },
+  {
+   "ts": "2026-10-01T08:33:24",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 5,
+   "failing_count": 20
+  },
+  {
+   "ts": "2026-10-01T08:33:44",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 6,
+   "failing_count": 20
+  },
+  {
+   "ts": "2026-10-01T08:33:57",
+   "event": "gate",
+   "gate": "verify",
+   "status": "pass",
+   "attempt": 7,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:38:25",
+   "event": "human",
+   "checkpoint": "4",
+   "status": "approved"
+  },
+  {
+   "ts": "2026-10-01T09:02:55",
+   "event": "gate",
+   "gate": "drc",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  }
+ ]
+}

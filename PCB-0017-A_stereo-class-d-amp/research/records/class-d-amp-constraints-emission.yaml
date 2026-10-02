@@ -1,0 +1,39 @@
+id: class-d-amp-constraints-emission
+classes:
+- constraints-emission
+applies:
+  topologies:
+  - class-d-amp
+  packages: []
+  interfaces: []
+  parts: []
+rule: null
+prose: 'What a class-D amp block must emit into constraints.json so P6/P7 and the checkers can act on
+  it: (1) a power entry for the PVCC rail sized to the clipping worst case at Vin max (SLOS708 p27: output
+  power is set by rail and load, so the input current is bounded by the rail, not by a consumer sum) and
+  one per speaker net; (2) a thermal entry for the IC whenever Pdiss exceeds ~0.5 W, carrying RthJA from
+  the datasheet thermal table for the CHOSEN package (p6: DAP no-sink values, DAD only with a sink) and
+  the pad-down copper plan; (3) layout_notes that become placement groups and route_critical facts, one
+  per bullet of the layout guidelines (p28 10.1): a PVCC decoupling group per pin pair anchored on the
+  IC, a bootstrap group per output, an output-filter group per channel with its loop flagged, and the
+  star-ground/no-slot rule for the pour; (4) a blocks entry {topology: class-d-amp} with the operating-point
+  dims the checklist names (vin_v, iout_a, pdiss_w, fsw_khz, board_layers, package_kind, fault_kind) so
+  knowledge retrieval keys on it. This is the pipeline''s contract, not physics: nothing in it varies
+  with the operating point, so it is a principle with no envelope.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 28
+  note: '10.1 layout guideline bullets are the layout_notes to emit: decoupling groups, output loop, star
+    ground, filter placement'
+- file: research/sources/tpa3116d2.pdf
+  page: 6
+  note: Table 6.4 per-package RthJA is the thermal-entry input; footnote 4 flags the DAD value as sink-assisted
+- file: research/sources/tpa3116d2.pdf
+  page: 27
+  note: '8.2.2 design procedure: rail, load, power, PWM frequency are the dims to declare'
+status: active
+origin: research:block-class-d-amp-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader", date: "2026-09-27", note: "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p28 10.1 bullets and p6 Table 6.4 per-package RthJA with fn4; p27 inputs as pass 1. Contract record, no envelope."}

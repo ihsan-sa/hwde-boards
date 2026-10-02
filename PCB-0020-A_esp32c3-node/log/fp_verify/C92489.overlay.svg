@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="159" viewBox="0 0 151 159">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10.0" y="16" font-family="monospace" font-size="12" fill="black">LGA-8_BME280_BL: 8 pads (datasheet 8), pitch/size from datasheet 0.65mm</text>
+<text x="10.0" y="32" font-family="monospace" font-size="11" fill="#b00">red = geometry mismatch</text>
+<polygon points="141.5,134.4 141.5,149.0 110.8,149.0 110.8,134.4" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="126.1" y="141.7" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="126.1" y="152.7" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+<polygon points="141.5,108.0 141.5,122.6 110.8,122.6 110.8,108.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="126.1" y="115.3" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="126.1" y="126.3" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+<polygon points="141.5,82.0 141.5,96.6 110.8,96.6 110.8,82.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="126.1" y="89.3" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="126.1" y="100.3" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+<polygon points="141.5,56.0 141.5,70.6 110.8,70.6 110.8,56.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="126.1" y="63.3" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="126.1" y="74.3" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+<polygon points="40.7,56.0 40.7,70.6 10.0,70.6 10.0,56.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="25.3" y="63.3" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="25.3" y="74.3" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+<polygon points="40.7,82.0 40.7,96.6 10.0,96.6 10.0,82.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="25.3" y="89.3" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="25.3" y="100.3" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+<polygon points="40.7,108.0 40.7,122.6 10.0,122.6 10.0,108.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="25.3" y="115.3" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="25.3" y="126.3" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+<polygon points="40.7,134.4 40.7,149.0 10.0,149.0 10.0,134.4" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="25.3" y="141.7" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="25.3" y="152.7" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.364x0.767</text>
+</svg>

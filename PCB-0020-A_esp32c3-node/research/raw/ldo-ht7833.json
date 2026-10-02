@@ -1,0 +1,764 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "HT7833",
+ "total": 9,
+ "count": 9,
+ "results": [
+  {
+   "lcsc": "C347195",
+   "mpn": "HT7833-A",
+   "brand": "UMW(Youtai Semiconductor Co., Ltd.)",
+   "description": "-25\u2103~+70\u2103@(Ta) 1 12V 2uA 3.3V 450mA 90mV@(40mA) Fixed Over Temperature Protection Positive SOT-89 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-89",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 39884,
+   "price": 0.0599,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0599
+    },
+    {
+     "qty": 100,
+     "price": 0.0465
+    },
+    {
+     "qty": 300,
+     "price": 0.0399
+    },
+    {
+     "qty": 1000,
+     "price": 0.035
+    },
+    {
+     "qty": 5000,
+     "price": 0.0309
+    },
+    {
+     "qty": 10000,
+     "price": 0.029
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403212000_UMW-Youtai-Semiconductor-Co---Ltd--HT7833-A_C347195.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_umw-youtai-semiconductor-co-ltd-ht7833-a_C347195.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+70\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "12V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "450mA"
+    },
+    {
+     "name": "Features",
+     "value": "Thermal shutdown"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "90mV@(40mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C3011187",
+   "mpn": "HT7833",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+125\u2103@(Tj) 1 2uA 3.3V 320mV@(500mA) 5.5V 500mA 80dB@(100Hz) Fixed Over Current Protection\u3001Over Temperature Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5209,
+   "price": 0.1264,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1264
+    },
+    {
+     "qty": 50,
+     "price": 0.1007
+    },
+    {
+     "qty": 150,
+     "price": 0.0878
+    },
+    {
+     "qty": 500,
+     "price": 0.0781
+    },
+    {
+     "qty": 3000,
+     "price": 0.0683
+    },
+    {
+     "qty": 6000,
+     "price": 0.0644
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2205111530_TECH-PUBLIC-HT7833_C3011187.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-ht7833_C3011187.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "80dB@(100Hz)"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(Tj)"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(500mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C50936",
+   "mpn": "HT7833",
+   "brand": "Holtek Semicon",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 3.3V 500mA 500mV@(500mA) 7uA 8V Fixed Over Current Protection\u3001Over Temperature Protection Positive SOT-89-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-89-3",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 4008,
+   "price": 0.3505,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3505
+    },
+    {
+     "qty": 50,
+     "price": 0.2867
+    },
+    {
+     "qty": 150,
+     "price": 0.2592
+    },
+    {
+     "qty": 1000,
+     "price": 0.2119
+    },
+    {
+     "qty": 2000,
+     "price": 0.1968
+    },
+    {
+     "qty": 5000,
+     "price": 0.1875
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031723_Holtek-Semicon-HT7833_C50936.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_holtek-semicon-ht7833_C50936.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "7uA"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "8V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "500mV@(500mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C711950",
+   "mpn": "HE2031A33MPR",
+   "brand": "HEERMICR",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 120mV@(80mA) 25V 2uA 3.3V 400mA 60dB@(1kHz) Fixed Over Current Protection Positive SOT-89 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-89",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3775,
+   "price": 0.1666,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1666
+    },
+    {
+     "qty": 50,
+     "price": 0.1369
+    },
+    {
+     "qty": 150,
+     "price": 0.1221
+    },
+    {
+     "qty": 1000,
+     "price": 0.0886
+    },
+    {
+     "qty": 2000,
+     "price": 0.0797
+    },
+    {
+     "qty": 5000,
+     "price": 0.0753
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_HEERMICR-HE2031A33MPR_C711950.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_heermicr-he2031a33mpr_C711950.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "60dB@(1kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "25V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "400mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "120mV@(80mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C164106",
+   "mpn": "HT7833",
+   "brand": "Holtek Semicon",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 3.3V 360mV@(500mA) 4uA 500mA 8V Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2652,
+   "price": 0.3397,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3397
+    },
+    {
+     "qty": 50,
+     "price": 0.2754
+    },
+    {
+     "qty": 150,
+     "price": 0.2478
+    },
+    {
+     "qty": 500,
+     "price": 0.2135
+    },
+    {
+     "qty": 3000,
+     "price": 0.175
+    },
+    {
+     "qty": 6000,
+     "price": 0.1658
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031722_Holtek-Semicon-HT7833_C164106.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_holtek-semicon-ht7833_C164106.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "4uA"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "8V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "360mV@(500mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C22462603",
+   "mpn": "HT7833-MS",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 12V 200mV@(100mA) 3.3V 3uA 450mA Fixed Over Current Protection\u3001Over Voltage Protection\u3001Enable Positive SOT-89-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-89-3",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 743,
+   "price": 0.0932,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0932
+    },
+    {
+     "qty": 50,
+     "price": 0.0737
+    },
+    {
+     "qty": 150,
+     "price": 0.0639
+    },
+    {
+     "qty": 1000,
+     "price": 0.0566
+    },
+    {
+     "qty": 2000,
+     "price": 0.0508
+    },
+    {
+     "qty": 5000,
+     "price": 0.0478
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406181516_MSKSEMI-HT7833-MS_C22462603.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_msksemi-ht7833-ms_C22462603.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "3uA"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "12V"
+    },
+    {
+     "name": "Output Current",
+     "value": "450mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Enable control\u3001Input overvoltage protection"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "200mV@(100mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C19626986",
+   "mpn": "HT7833",
+   "brand": "HXY MOSFET",
+   "description": "-25\u2103~+80\u2103 1 10V 195mV@(100mA) 2uA 3.3V 450mA 65dB@(1kHz) Fixed Over Current Protection\u3001Short Circuit Protection Positive SOT-89 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-89",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 649,
+   "price": 0.0726,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0726
+    },
+    {
+     "qty": 100,
+     "price": 0.0584
+    },
+    {
+     "qty": 300,
+     "price": 0.0514
+    },
+    {
+     "qty": 1000,
+     "price": 0.0462
+    },
+    {
+     "qty": 5000,
+     "price": 0.042
+    },
+    {
+     "qty": 10000,
+     "price": 0.0399
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404051210_HXY-MOSFET-HT7833_C19626986.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_hxy-mosfet-ht7833_C19626986.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "65dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+80\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "10V"
+    },
+    {
+     "name": "Output Current",
+     "value": "450mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "195mV@(100mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C28642164",
+   "mpn": "HT7833-A-EV",
+   "brand": "EVVO",
+   "description": "12V 3.3V 450mA Fixed SOT-89-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-89-3",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.0628,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0628
+    },
+    {
+     "qty": 100,
+     "price": 0.0509
+    },
+    {
+     "qty": 300,
+     "price": 0.0451
+    },
+    {
+     "qty": 1000,
+     "price": 0.0407
+    },
+    {
+     "qty": 5000,
+     "price": 0.0371
+    },
+    {
+     "qty": 10000,
+     "price": 0.0353
+    }
+   ],
+   "min_qty": 178,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407121203_EVVO-HT7833-A-EV_C28642164.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_evvo-ht7833-a-ev_C28642164.html",
+   "attributes": [
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "12V"
+    },
+    {
+     "name": "Output Current",
+     "value": "450mA"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C53064183",
+   "mpn": "HT7833-TD",
+   "brand": "TDSEMIC",
+   "description": "SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.1343,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1343
+    },
+    {
+     "qty": 10,
+     "price": 0.1343
+    },
+    {
+     "qty": 12,
+     "price": 0.1343
+    },
+    {
+     "qty": 200,
+     "price": 0.0537
+    },
+    {
+     "qty": 500,
+     "price": 0.0519
+    },
+    {
+     "qty": 1000,
+     "price": 0.0509
+    }
+   ],
+   "min_qty": 68,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "65dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Noise",
+     "value": "25uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Current Limit\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "150mV@(300mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 8
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

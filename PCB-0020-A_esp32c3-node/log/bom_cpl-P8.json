@@ -1,0 +1,1231 @@
+{
+ "script": "bom_cpl",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "n_parts": 41,
+ "n_placed": 39,
+ "bom": "fab/BOM.csv",
+ "bom_full": "fab/BOM-full.csv",
+ "cpl": "fab/CPL.csv",
+ "prebuy": "fab/prebuy.csv",
+ "build_qty": 5,
+ "bom_rows": [
+  {
+   "Comment": "4.7uF 16V X5R",
+   "Designator": "C1,C2",
+   "Footprint": "C0603",
+   "LCSC": "C19666"
+  },
+  {
+   "Comment": "1uF 50V X7R",
+   "Designator": "C3,C4,C12",
+   "Footprint": "C0603",
+   "LCSC": "C15849"
+  },
+  {
+   "Comment": "100nF 50V X7R",
+   "Designator": "C5,C11,C13,C14",
+   "Footprint": "C0603",
+   "LCSC": "C14663"
+  },
+  {
+   "Comment": "10uF 25V X5R",
+   "Designator": "C10",
+   "Footprint": "C0805",
+   "LCSC": "C15850"
+  },
+  {
+   "Comment": "SMF5.0A",
+   "Designator": "D1",
+   "Footprint": "SOD-123_L2.8-W1.8-LS3.7-RD",
+   "LCSC": "C284108"
+  },
+  {
+   "Comment": "Red LED (charging)",
+   "Designator": "D2",
+   "Footprint": "LED-SMD_L1.6-W0.8-R-RD",
+   "LCSC": "C2286"
+  },
+  {
+   "Comment": "B5819W",
+   "Designator": "D3",
+   "Footprint": "SOD-123_L2.7-W1.6-LS3.7-RD-1",
+   "LCSC": "C8598"
+  },
+  {
+   "Comment": "Green LED (status)",
+   "Designator": "D10",
+   "Footprint": "LED0805-R-RD",
+   "LCSC": "C2297"
+  },
+  {
+   "Comment": "TYPE-C-31-M-12",
+   "Designator": "J1",
+   "Footprint": "USB-C_SMD-TYPE-C-31-M-12_1",
+   "LCSC": "C165948"
+  },
+  {
+   "Comment": "JST-PH 2P LiPo",
+   "Designator": "J2",
+   "Footprint": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+   "LCSC": "C295747"
+  },
+  {
+   "Comment": "Qwiic JST-SH 4P",
+   "Designator": "J3",
+   "Footprint": "CONN-SMD_4P-P1.00_SM04B-SRSS-TB-LF-SN",
+   "LCSC": "C160404"
+  },
+  {
+   "Comment": "AO3401A",
+   "Designator": "Q1",
+   "Footprint": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+   "LCSC": "C15127"
+  },
+  {
+   "Comment": "5.1k 1%",
+   "Designator": "R1,R2,R3",
+   "Footprint": "R0603",
+   "LCSC": "C23186"
+  },
+  {
+   "Comment": "1k",
+   "Designator": "R4,R16",
+   "Footprint": "R0603",
+   "LCSC": "C21190"
+  },
+  {
+   "Comment": "100k",
+   "Designator": "R5",
+   "Footprint": "R0603",
+   "LCSC": "C25803"
+  },
+  {
+   "Comment": "1M 1%",
+   "Designator": "R6,R7",
+   "Footprint": "R0603",
+   "LCSC": "C22935"
+  },
+  {
+   "Comment": "10k",
+   "Designator": "R10,R11,R12,R13",
+   "Footprint": "R0603",
+   "LCSC": "C25804"
+  },
+  {
+   "Comment": "4.7k",
+   "Designator": "R14,R15",
+   "Footprint": "R0603",
+   "LCSC": "C23162"
+  },
+  {
+   "Comment": "RESET",
+   "Designator": "SW1,SW2",
+   "Footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
+   "LCSC": "C318884"
+  },
+  {
+   "Comment": "ESP32-C3-MINI-1-N4",
+   "Designator": "U1",
+   "Footprint": "WIFIM-SMD_ESP32-C3-MINI-1",
+   "LCSC": "C2838502"
+  },
+  {
+   "Comment": "MCP73831T-2ACI/OT",
+   "Designator": "U2",
+   "Footprint": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL",
+   "LCSC": "C424093"
+  },
+  {
+   "Comment": "RT9080-33GJ5",
+   "Designator": "U3",
+   "Footprint": "TSOT-23-5_L2.9-W1.6-P0.95-LS2.8-BL",
+   "LCSC": "C841192"
+  },
+  {
+   "Comment": "USBLC6-2SC6",
+   "Designator": "U4",
+   "Footprint": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL",
+   "LCSC": "C7519"
+  },
+  {
+   "Comment": "BME280",
+   "Designator": "U5",
+   "Footprint": "LGA-8_BME280_BL",
+   "LCSC": "C92489"
+  }
+ ],
+ "prebuy_rows": [
+  {
+   "LCSC": "C284108",
+   "MPN": "SMF5.0A",
+   "Comment": "SMF5.0A",
+   "Designator": "D1",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C165948",
+   "MPN": "TYPE-C-31-M-12",
+   "Comment": "TYPE-C-31-M-12",
+   "Designator": "J1",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C295747",
+   "MPN": "S2B-PH-SM4-TB(LF)(SN)",
+   "Comment": "JST-PH 2P LiPo",
+   "Designator": "J2",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C160404",
+   "MPN": "SM04B-SRSS-TB(LF)(SN)",
+   "Comment": "Qwiic JST-SH 4P",
+   "Designator": "J3",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C2838502",
+   "MPN": "ESP32-C3-MINI-1-N4",
+   "Comment": "ESP32-C3-MINI-1-N4",
+   "Designator": "U1",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C424093",
+   "MPN": "MCP73831T-2ACI/OT",
+   "Comment": "MCP73831T-2ACI/OT",
+   "Designator": "U2",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C841192",
+   "MPN": "RT9080-33GJ5",
+   "Comment": "RT9080-33GJ5",
+   "Designator": "U3",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C7519",
+   "MPN": "USBLC6-2SC6",
+   "Comment": "USBLC6-2SC6",
+   "Designator": "U4",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C92489",
+   "MPN": "BME280",
+   "Comment": "BME280",
+   "Designator": "U5",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  }
+ ],
+ "bom_full_rows": [
+  {
+   "Comment": "4.7uF 16V X5R",
+   "Designator": "C1,C2",
+   "Qty Per Board": "2",
+   "Footprint": "C0603",
+   "MPN": "",
+   "LCSC": "C19666",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "1uF 50V X7R",
+   "Designator": "C3,C4,C12",
+   "Qty Per Board": "3",
+   "Footprint": "C0603",
+   "MPN": "",
+   "LCSC": "C15849",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "100nF 50V X7R",
+   "Designator": "C5,C11,C13,C14",
+   "Qty Per Board": "4",
+   "Footprint": "C0603",
+   "MPN": "",
+   "LCSC": "C14663",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "10uF 25V X5R",
+   "Designator": "C10",
+   "Qty Per Board": "1",
+   "Footprint": "C0805",
+   "MPN": "",
+   "LCSC": "C15850",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "SMF5.0A",
+   "Designator": "D1",
+   "Qty Per Board": "1",
+   "Footprint": "SOD-123_L2.8-W1.8-LS3.7-RD",
+   "MPN": "",
+   "LCSC": "C284108",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "Red LED (charging)",
+   "Designator": "D2",
+   "Qty Per Board": "1",
+   "Footprint": "LED-SMD_L1.6-W0.8-R-RD",
+   "MPN": "",
+   "LCSC": "C2286",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "B5819W",
+   "Designator": "D3",
+   "Qty Per Board": "1",
+   "Footprint": "SOD-123_L2.7-W1.6-LS3.7-RD-1",
+   "MPN": "",
+   "LCSC": "C8598",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "Green LED (status)",
+   "Designator": "D10",
+   "Qty Per Board": "1",
+   "Footprint": "LED0805-R-RD",
+   "MPN": "",
+   "LCSC": "C2297",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "TYPE-C-31-M-12",
+   "Designator": "J1",
+   "Qty Per Board": "1",
+   "Footprint": "USB-C_SMD-TYPE-C-31-M-12_1",
+   "MPN": "",
+   "LCSC": "C165948",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "JST-PH 2P LiPo",
+   "Designator": "J2",
+   "Qty Per Board": "1",
+   "Footprint": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+   "MPN": "",
+   "LCSC": "C295747",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "Qwiic JST-SH 4P",
+   "Designator": "J3",
+   "Qty Per Board": "1",
+   "Footprint": "CONN-SMD_4P-P1.00_SM04B-SRSS-TB-LF-SN",
+   "MPN": "",
+   "LCSC": "C160404",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "AO3401A",
+   "Designator": "Q1",
+   "Qty Per Board": "1",
+   "Footprint": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+   "MPN": "",
+   "LCSC": "C15127",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "5.1k 1%",
+   "Designator": "R1,R2",
+   "Qty Per Board": "2",
+   "Footprint": "R0603",
+   "MPN": "",
+   "LCSC": "C23186",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "5.1k 1% (RPROG)",
+   "Designator": "R3",
+   "Qty Per Board": "1",
+   "Footprint": "R0603",
+   "MPN": "",
+   "LCSC": "C23186",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "1k",
+   "Designator": "R4,R16",
+   "Qty Per Board": "2",
+   "Footprint": "R0603",
+   "MPN": "",
+   "LCSC": "C21190",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "100k",
+   "Designator": "R5",
+   "Qty Per Board": "1",
+   "Footprint": "R0603",
+   "MPN": "",
+   "LCSC": "C25803",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "1M 1%",
+   "Designator": "R6,R7",
+   "Qty Per Board": "2",
+   "Footprint": "R0603",
+   "MPN": "",
+   "LCSC": "C22935",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "10k",
+   "Designator": "R10,R11,R12,R13",
+   "Qty Per Board": "4",
+   "Footprint": "R0603",
+   "MPN": "",
+   "LCSC": "C25804",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "4.7k",
+   "Designator": "R14,R15",
+   "Qty Per Board": "2",
+   "Footprint": "R0603",
+   "MPN": "",
+   "LCSC": "C23162",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "RESET",
+   "Designator": "SW1",
+   "Qty Per Board": "1",
+   "Footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
+   "MPN": "",
+   "LCSC": "C318884",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "BOOT",
+   "Designator": "SW2",
+   "Qty Per Board": "1",
+   "Footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
+   "MPN": "",
+   "LCSC": "C318884",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "ESP32-C3-MINI-1-N4",
+   "Designator": "U1",
+   "Qty Per Board": "1",
+   "Footprint": "WIFIM-SMD_ESP32-C3-MINI-1",
+   "MPN": "",
+   "LCSC": "C2838502",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "MCP73831T-2ACI/OT",
+   "Designator": "U2",
+   "Qty Per Board": "1",
+   "Footprint": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL",
+   "MPN": "",
+   "LCSC": "C424093",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "RT9080-33GJ5",
+   "Designator": "U3",
+   "Qty Per Board": "1",
+   "Footprint": "TSOT-23-5_L2.9-W1.6-P0.95-LS2.8-BL",
+   "MPN": "",
+   "LCSC": "C841192",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "USBLC6-2SC6",
+   "Designator": "U4",
+   "Qty Per Board": "1",
+   "Footprint": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL",
+   "MPN": "",
+   "LCSC": "C7519",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "BME280",
+   "Designator": "U5",
+   "Qty Per Board": "1",
+   "Footprint": "LGA-8_BME280_BL",
+   "MPN": "",
+   "LCSC": "C92489",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "GPIO edge pads",
+   "Designator": "J4",
+   "Qty Per Board": "1",
+   "Footprint": "PinHeader_1x08_P2.54mm_Vertical",
+   "MPN": "",
+   "LCSC": "",
+   "Assembly Class": "dnp",
+   "Instructions": "DO NOT POPULATE - this land ships empty."
+  },
+  {
+   "Comment": "Power pads",
+   "Designator": "J5",
+   "Qty Per Board": "1",
+   "Footprint": "PinHeader_1x04_P2.54mm_Vertical",
+   "MPN": "",
+   "LCSC": "",
+   "Assembly Class": "dnp",
+   "Instructions": "DO NOT POPULATE - this land ships empty."
+  }
+ ],
+ "cpl_rows": [
+  {
+   "Designator": "C1",
+   "Mid X": "18.6000",
+   "Mid Y": "-26.6000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C2",
+   "Mid X": "20.3000",
+   "Mid Y": "-26.6000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C3",
+   "Mid X": "19.0000",
+   "Mid Y": "-22.4000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C4",
+   "Mid X": "17.4000",
+   "Mid Y": "-22.4000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C5",
+   "Mid X": "11.5000",
+   "Mid Y": "-15.2000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C10",
+   "Mid X": "12.9000",
+   "Mid Y": "-11.6000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C11",
+   "Mid X": "14.6000",
+   "Mid Y": "-11.8000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C12",
+   "Mid X": "13.0000",
+   "Mid Y": "-18.2000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C13",
+   "Mid X": "33.4000",
+   "Mid Y": "-36.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C14",
+   "Mid X": "30.0000",
+   "Mid Y": "-37.9000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "D1",
+   "Mid X": "15.2000",
+   "Mid Y": "-35.0000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "D2",
+   "Mid X": "20.2000",
+   "Mid Y": "-33.0000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "D3",
+   "Mid X": "18.2000",
+   "Mid Y": "-31.0000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "D10",
+   "Mid X": "10.3000",
+   "Mid Y": "-33.8000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "J1",
+   "Mid X": "23.4000",
+   "Mid Y": "-41.8600",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "J2",
+   "Mid X": "13.7500",
+   "Mid Y": "-41.9300",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "J3",
+   "Mid X": "31.6000",
+   "Mid Y": "-42.5000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "Q1",
+   "Mid X": "15.2000",
+   "Mid Y": "-30.5000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "R1",
+   "Mid X": "20.6000",
+   "Mid Y": "-36.9000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R2",
+   "Mid X": "26.4000",
+   "Mid Y": "-36.9000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R3",
+   "Mid X": "13.4000",
+   "Mid Y": "-26.6000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R4",
+   "Mid X": "20.2000",
+   "Mid Y": "-30.0000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R5",
+   "Mid X": "15.0000",
+   "Mid Y": "-33.0000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R6",
+   "Mid X": "13.0000",
+   "Mid Y": "-15.2000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R7",
+   "Mid X": "14.6000",
+   "Mid Y": "-15.2000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R10",
+   "Mid X": "14.6000",
+   "Mid Y": "-18.2000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R11",
+   "Mid X": "26.0000",
+   "Mid Y": "-21.6000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R12",
+   "Mid X": "29.9000",
+   "Mid Y": "-11.5000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R13",
+   "Mid X": "11.5000",
+   "Mid Y": "-18.2000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "R14",
+   "Mid X": "33.4000",
+   "Mid Y": "-32.9000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R15",
+   "Mid X": "33.4000",
+   "Mid Y": "-34.3000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R16",
+   "Mid X": "12.0000",
+   "Mid Y": "-33.0000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "SW1",
+   "Mid X": "25.6000",
+   "Mid Y": "-30.3000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "SW2",
+   "Mid X": "25.6000",
+   "Mid Y": "-25.0000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "U1",
+   "Mid X": "22.0000",
+   "Mid Y": "-14.6000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "U2",
+   "Mid X": "16.0000",
+   "Mid Y": "-26.6000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "U3",
+   "Mid X": "15.0000",
+   "Mid Y": "-22.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "U4",
+   "Mid X": "23.4000",
+   "Mid Y": "-36.4000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "U5",
+   "Mid X": "30.0000",
+   "Mid Y": "-35.5000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  }
+ ],
+ "assembly_classes": {
+  "C1": "smt_placed",
+  "C2": "smt_placed",
+  "C3": "smt_placed",
+  "C4": "smt_placed",
+  "C5": "smt_placed",
+  "C10": "smt_placed",
+  "C11": "smt_placed",
+  "C12": "smt_placed",
+  "C13": "smt_placed",
+  "C14": "smt_placed",
+  "D1": "smt_placed",
+  "D2": "smt_placed",
+  "D3": "smt_placed",
+  "D10": "smt_placed",
+  "J1": "smt_placed",
+  "J2": "smt_placed",
+  "J3": "smt_placed",
+  "J4": "dnp",
+  "J5": "dnp",
+  "Q1": "smt_placed",
+  "R1": "smt_placed",
+  "R2": "smt_placed",
+  "R3": "smt_placed",
+  "R4": "smt_placed",
+  "R5": "smt_placed",
+  "R6": "smt_placed",
+  "R7": "smt_placed",
+  "R10": "smt_placed",
+  "R11": "smt_placed",
+  "R12": "smt_placed",
+  "R13": "smt_placed",
+  "R14": "smt_placed",
+  "R15": "smt_placed",
+  "R16": "smt_placed",
+  "SW1": "smt_placed",
+  "SW2": "smt_placed",
+  "U1": "smt_placed",
+  "U2": "smt_placed",
+  "U3": "smt_placed",
+  "U4": "smt_placed",
+  "U5": "smt_placed"
+ },
+ "class_counts": {
+  "smt_placed": 39,
+  "dnp": 2
+ },
+ "not_placed": [
+  {
+   "ref": "J4",
+   "class": "dnp",
+   "source": "board_attr"
+  },
+  {
+   "ref": "J5",
+   "class": "dnp",
+   "source": "board_attr"
+  }
+ ],
+ "rotation_audit": [
+  {
+   "ref": "C1",
+   "package": "C0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C2",
+   "package": "C0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C3",
+   "package": "C0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C4",
+   "package": "C0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C5",
+   "package": "C0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C10",
+   "package": "C0805",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C11",
+   "package": "C0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C12",
+   "package": "C0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C13",
+   "package": "C0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C14",
+   "package": "C0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "D1",
+   "package": "SOD-123_L2.8-W1.8-LS3.7-RD",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "D2",
+   "package": "LED-SMD_L1.6-W0.8-R-RD",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "D3",
+   "package": "SOD-123_L2.7-W1.6-LS3.7-RD-1",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "D10",
+   "package": "LED0805-R-RD",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "J1",
+   "package": "USB-C_SMD-TYPE-C-31-M-12_1",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "J2",
+   "package": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "J3",
+   "package": "CONN-SMD_4P-P1.00_SM04B-SRSS-TB-LF-SN",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "Q1",
+   "package": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+   "base_rot": 0.0,
+   "correction": 180.0,
+   "final_rot": 180.0,
+   "matched": "^SOT-23",
+   "layer": "Top"
+  },
+  {
+   "ref": "R1",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R2",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R3",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R4",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R5",
+   "package": "R0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R6",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R7",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R10",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R11",
+   "package": "R0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R12",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R13",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R14",
+   "package": "R0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R15",
+   "package": "R0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R16",
+   "package": "R0603",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "SW1",
+   "package": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "SW2",
+   "package": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "U1",
+   "package": "WIFIM-SMD_ESP32-C3-MINI-1",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "U2",
+   "package": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL",
+   "base_rot": 0.0,
+   "correction": 180.0,
+   "final_rot": 180.0,
+   "matched": "^SOT-23",
+   "layer": "Top"
+  },
+  {
+   "ref": "U3",
+   "package": "TSOT-23-5_L2.9-W1.6-P0.95-LS2.8-BL",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "U4",
+   "package": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL",
+   "base_rot": 0.0,
+   "correction": 180.0,
+   "final_rot": 180.0,
+   "matched": "^SOT-23",
+   "layer": "Top"
+  },
+  {
+   "ref": "U5",
+   "package": "LGA-8_BME280_BL",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  }
+ ],
+ "n_rotation_corrections": 3,
+ "missing_lcsc": [],
+ "missing_lcsc_unplaced": [
+  "J4",
+  "J5"
+ ],
+ "unsourced": [],
+ "off_lcsc": [],
+ "unplaced_smt": [],
+ "qty_mismatch": [],
+ "violations": [],
+ "bom_complete": true
+}

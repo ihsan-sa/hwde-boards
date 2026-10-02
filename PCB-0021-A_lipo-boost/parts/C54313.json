@@ -1,0 +1,174 @@
+{
+ "mpn": "BQ24074RGTR",
+ "lcsc": "C54313",
+ "package": "VQFN-16 (RGT) 3x3 mm, 0.5 mm pitch, exposed pad",
+ "description": "TI bq24074 1.5 A USB-friendly Li-ion charger and power-path, OUT 4.4 V, OVP 10.5 V, ITERM variant (no TD/SYSOFF)",
+ "pinout": [
+  {
+   "pin": "1",
+   "name": "TS",
+   "type": "analog"
+  },
+  {
+   "pin": "2",
+   "name": "BAT",
+   "type": "bidirectional"
+  },
+  {
+   "pin": "3",
+   "name": "BAT",
+   "type": "bidirectional"
+  },
+  {
+   "pin": "4",
+   "name": "~{CE}",
+   "type": "input"
+  },
+  {
+   "pin": "5",
+   "name": "EN2",
+   "type": "input"
+  },
+  {
+   "pin": "6",
+   "name": "EN1",
+   "type": "input"
+  },
+  {
+   "pin": "7",
+   "name": "~{PGOOD}",
+   "type": "open_collector"
+  },
+  {
+   "pin": "8",
+   "name": "VSS",
+   "type": "ground"
+  },
+  {
+   "pin": "9",
+   "name": "~{CHG}",
+   "type": "open_collector"
+  },
+  {
+   "pin": "10",
+   "name": "OUT",
+   "type": "power_out"
+  },
+  {
+   "pin": "11",
+   "name": "OUT",
+   "type": "power_out"
+  },
+  {
+   "pin": "12",
+   "name": "ILIM",
+   "type": "analog"
+  },
+  {
+   "pin": "13",
+   "name": "IN",
+   "type": "power_in"
+  },
+  {
+   "pin": "14",
+   "name": "TMR",
+   "type": "analog"
+  },
+  {
+   "pin": "15",
+   "name": "ITERM",
+   "type": "analog"
+  },
+  {
+   "pin": "16",
+   "name": "ISET",
+   "type": "analog"
+  },
+  {
+   "pin": "17",
+   "name": "EP",
+   "type": "ground"
+  }
+ ],
+ "decoupling": [
+  {
+   "pins": [
+    "13"
+   ],
+   "value": "1-10 uF ceramic IN to VSS",
+   "placement": "close to IN",
+   "notes": "plus optional 100 nF HF"
+  },
+  {
+   "pins": [
+    "10",
+    "11"
+   ],
+   "value": "4.7-47 uF ceramic OUT to VSS"
+  },
+  {
+   "pins": [
+    "2",
+    "3"
+   ],
+   "value": "4.7-47 uF ceramic BAT to VSS"
+  }
+ ],
+ "land_pattern": {
+  "package": "RGT S-PVQFN-N16",
+  "pad_count": 17,
+  "pitch_mm": 0.5,
+  "pin1": "1"
+ },
+ "exposed_pad": {
+  "present": true,
+  "connect_to": "VSS",
+  "size_mm": [
+   1.66,
+   1.66
+  ],
+  "thermal_vias": 6
+ },
+ "layout_notes": [
+  "Thermal pad soldered to PCB copper, connected to same potential as VSS; do not use it as the primary ground, VSS pin must also go to ground",
+  "Connect pad to ground plane through a 2x3 via matrix",
+  "CE, EN1, EN2 have ~285k internal pulldowns but must not be left unconnected",
+  "TS: 10k fixed resistor TS to VSS when no NTC",
+  "ILIM unconnected disables charging; ISET unconnected disables charging",
+  "ITERM left open gives 10% termination default (bq24074 only)",
+  "EN2=1, EN1=0 sets input limit from ILIM resistor (1100 ohm to 8k)",
+  "ISET 590 ohm to 8.9k; TMR 18k-72k; place IN/OUT/BAT caps close to pins"
+ ],
+ "abs_max": [
+  {
+   "param": "IN",
+   "value": 28,
+   "unit": "V"
+  },
+  {
+   "param": "BAT",
+   "value": 5,
+   "unit": "V"
+  },
+  {
+   "param": "OUT",
+   "value": 7,
+   "unit": "V"
+  },
+  {
+   "param": "EN1, EN2, CE, TS, ISET, PGOOD, CHG, ILIM, TMR, ITERM",
+   "value": 7,
+   "unit": "V"
+  },
+  {
+   "param": "CHG, PGOOD sink current",
+   "value": 15,
+   "unit": "mA"
+  },
+  {
+   "param": "TJ",
+   "value": 150,
+   "unit": "C"
+  }
+ ]
+}

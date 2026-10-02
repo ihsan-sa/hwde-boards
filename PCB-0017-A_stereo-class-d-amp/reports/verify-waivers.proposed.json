@@ -1,0 +1,104 @@
+{
+ "_status": "PROPOSED, not in force. gate.py only reads reports/verify-waivers.json, and a waiver needs a person's name in 'approved'. Each entry is bound to one finding (pos) on the final routed board (artifact = its verify input_digest); rename after the owner approves.",
+ "waivers": [
+  {
+   "check": "check_current",
+   "kind": "undersized_track",
+   "net": "+12V",
+   "pos": [
+    29.72,
+    30.905
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "Two 0.343 x 0.65 mm pin-to-pin links on U1's PVCC pin row (x 29.72, y 30.58-31.23 and 22.12-22.77). Each is the only feed to one PVCC pin, so it carries that pin's share of the channel current, well under 1 A RMS. Its width is capped by the 0.65 mm pin pitch; the pad it lands on is the same width. IPC-2152's 0.882 mm is a steady-state figure for long conductors and does not describe a 0.65 mm link whose ends sit on 0.882 mm copper.",
+   "approved": ""
+  },
+  {
+   "check": "check_current",
+   "kind": "undersized_track",
+   "net": "+12V",
+   "pos": [
+    29.72,
+    22.445
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "Two 0.343 x 0.65 mm pin-to-pin links on U1's PVCC pin row (x 29.72, y 30.58-31.23 and 22.12-22.77). Each is the only feed to one PVCC pin, so it carries that pin's share of the channel current, well under 1 A RMS. Its width is capped by the 0.65 mm pin pitch; the pad it lands on is the same width. IPC-2152's 0.882 mm is a steady-state figure for long conductors and does not describe a 0.65 mm link whose ends sit on 0.882 mm copper.",
+   "approved": ""
+  },
+  {
+   "check": "check_current",
+   "kind": "pour_neckdown",
+   "net": "GND",
+   "pos": [
+    56.2389,
+    26.701
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "Reported at (56.24,26.70), C20's GND pad. The check erodes the whole F.Cu GND fill and expects every GND via in one connected piece. On this board the four OUT rows from U1 to the far filter column split F.Cu GND into 4 polygons, each stitched to the unbroken B.Cu GND pour by its own vias (DRC: 0 unconnected), so the eroded width reads 0 wherever the tool happens to look. Two extra GND vias at the reported point changed nothing. The return path is the B.Cu pour, which is one piece.",
+   "approved": ""
+  },
+  {
+   "check": "check_current",
+   "kind": "undersized_track",
+   "net": "/OUTPL",
+   "pos": [
+    30.31,
+    27.98
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "Four 0.300 mm pad-entry stubs, one per output net, from U1's OUT pins to x 30.31, each under 1 mm long before the trace widens. Their width is capped by the 0.65 mm pin pitch and matches the pin pad they leave; the rest of each OUT net is full width. As with the +12V links, IPC-2152's steady-state width describes long conductors, not a sub-millimetre neck between wide copper.",
+   "approved": ""
+  },
+  {
+   "check": "check_current",
+   "kind": "undersized_track",
+   "net": "/OUTNL",
+   "pos": [
+    30.31,
+    29.28
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "Four 0.300 mm pad-entry stubs, one per output net, from U1's OUT pins to x 30.31, each under 1 mm long before the trace widens. Their width is capped by the 0.65 mm pin pitch and matches the pin pad they leave; the rest of each OUT net is full width. As with the +12V links, IPC-2152's steady-state width describes long conductors, not a sub-millimetre neck between wide copper.",
+   "approved": ""
+  },
+  {
+   "check": "check_current",
+   "kind": "undersized_track",
+   "net": "/OUTPR",
+   "pos": [
+    30.31,
+    24.07
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "Four 0.300 mm pad-entry stubs, one per output net, from U1's OUT pins to x 30.31, each under 1 mm long before the trace widens. Their width is capped by the 0.65 mm pin pitch and matches the pin pad they leave; the rest of each OUT net is full width. As with the +12V links, IPC-2152's steady-state width describes long conductors, not a sub-millimetre neck between wide copper.",
+   "approved": ""
+  },
+  {
+   "check": "check_current",
+   "kind": "undersized_track",
+   "net": "/OUTNR",
+   "pos": [
+    30.31,
+    25.37
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "Four 0.300 mm pad-entry stubs, one per output net, from U1's OUT pins to x 30.31, each under 1 mm long before the trace widens. Their width is capped by the 0.65 mm pin pitch and matches the pin pad they leave; the rest of each OUT net is full width. As with the +12V links, IPC-2152's steady-state width describes long conductors, not a sub-millimetre neck between wide copper.",
+   "approved": ""
+  },
+  {
+   "check": "check_thermal",
+   "kind": "thermal_area",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    26.0,
+    27.0004
+   ],
+   "artifact": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+   "reason": "check_thermal's 2-layer copper model floors at 73.8 C/W whatever the pour, so 1.5 W can never fit the 85 C budget on 2 layers. The vendor numbers are the basis instead: TI measured RthJA 22 C/W on its 2-layer EVM copper with no heatsink (SLOS708G 6.4). On this board the EP carries a 4 x 4 array of 0.3 mm vias at 0.9 mm pitch into one unbroken B.Cu GND pour (connect_pads solid). The fresh-context review put the 3 x 3 array at 35-40 C/W with ~18 C/W of it in the via barrels; 16 barrels bring that term to ~10 C/W, so about 27-32 C/W (+/-30 %). At 30 C/W the 1.5 W design point is a ~45 C rise, so Tj is near 85 C at Ta 40 C, inside the 125 C limit. check_thermal also reports 0 thermal vias because it counts board vias, not the footprint's pad-33 through-holes. Sustained 4-ohm full-power sine is recorded as not a requirement (P1) and is left to the chip's thermal shutdown.",
+   "approved": ""
+  }
+ ]
+}

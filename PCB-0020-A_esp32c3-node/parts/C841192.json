@@ -1,0 +1,52 @@
+{
+  "mpn": "RT9080-33GJ5",
+  "lcsc": "C841192",
+  "package": "TSOT-23-5",
+  "description": "Richtek RT9080 (DS9080-05, June 2017): 2uA IQ, 600mA LDO with enable, 1.2-5.5V input. Ordering code RT9080-33GJ5 = 3.3V fixed, J5 = TSOT-23-5, G = green, no SNS pin variant (RT9080 not RT9080N), so pin 4 is NC.",
+  "pinout": [
+    {"pin": "1", "name": "VIN", "type": "power_in", "notes": "Supply input, 1.2V to 5.5V operating (Recommended Operating Conditions); abs max -0.3V to 6.5V."},
+    {"pin": "2", "name": "GND", "type": "ground"},
+    {"pin": "3", "name": "EN", "type": "input", "notes": "Enable control input, CMOS logic; VIH 0.9V min, VIL 0.4V max (VIN = 5V). Cannot be left floating; may be tied directly to VIN to keep the part on (Application Information > Enable). IEN 0.1uA max at 5.5V."},
+    {"pin": "4", "name": "NC", "type": "nc", "notes": "Pin table: pin 4 is SNS on the RT9080N (with SNS) and NC ('No internal connection') on the RT9080 (without SNS). RT9080-33GJ5 has no N suffix, so this is NC."},
+    {"pin": "5", "name": "VOUT", "type": "power_out", "notes": "Regulated output (3.3V fixed for -33). Output Voltage Range 0.8-3.3V per Electrical Characteristics; +/-2% accuracy at 1mA."}
+  ],
+  "decoupling": [
+    {"pins": ["1", "2"], "value": "1uF or larger", "placement": "input, VIN to GND, close to the IC's VIN and GND pins", "notes": "Application Information: 'Use a 1uF or larger input capacitor and place it close to the IC's VIN and GND pins.' Figures 1-2 show CIN = 1uF."},
+    {"pins": ["5", "2"], "value": "effective capacitance >= 1uF, ESR >= 1mOhm", "placement": "output, VOUT to GND, close to the IC's VOUT and GND pins", "notes": "Application Information: any output capacitor meeting the minimum 1mOhm ESR and effective capacitance larger than 1uF may be used (effective = after temperature and voltage coefficient derating). Stable with ceramic or tantalum. Increasing capacitance and decreasing ESR improves PSRR and line transient response. Operation section: minimum 1uF effective capacitance."}
+  ],
+  "land_pattern": {
+    "package": "TSOT-23-5 (outline dimension drawing, p.13)",
+    "pad_count": 5,
+    "pin1": "1",
+    "notes": "The datasheet has NO recommended land pattern drawing; only the package outline (p.13): body B 1.397-1.803 mm, D (length) 2.692-3.099 mm, C (overall width over leads) 2.591-3.000 mm, lead width b 0.300-0.559 mm, lead pitch e 0.838-1.041 mm (min/max range only, no nominal), lead length L 0.300-0.610 mm, height A 0.700-1.000 mm. Pad size and pitch for the footprint are NOT given in the datasheet. Pins 1-3 on one side, 4-5 on the other (pin config, top view: pin 5 VOUT and pin 4 NC above, pin 1 VIN, 2 GND, 3 EN below)."
+  },
+  "layout_notes": [
+    "Place the input capacitor (1uF or larger) close to the IC's VIN and GND pins (Application Information).",
+    "Place the output capacitor close to the IC's VOUT and GND pins; effective capacitance after DC-bias and temperature derating must stay >= 1uF and ESR >= 1mOhm.",
+    "EN pin must not float: tie to VIN (always on) or drive from a defined logic level (VIH >= 0.9V, VIL <= 0.4V).",
+    "Pin 4 is NC on this part (no SNS function); no connection is required.",
+    "Thermal: theta-JA is 230.6 C/W for TSOT-23-5 on a JEDEC 51-7 four-layer test board and theta-JC 21.8 C/W; theta-JA is layout dependent (Thermal Considerations). Maximum power dissipation PD(MAX) = (125C - TA)/theta-JA = 0.43W at TA = 25C; derate with ambient temperature (Fig. 6). Power dissipated is (VIN - VOUT) x IOUT, so a lower VIN keeps the part cool.",
+    "Dropout (VIN - VOUT at VOUT = 98%, ILOAD = 600mA): 0.31V typ / 0.53V max for VOUT >= 3V, so 3.3V output needs VIN >= about 3.83V at full 600mA; 600mA output is specified for VIN >= 2.3V.",
+    "Over-temperature protection trips at 150C typ (output current above 80mA) with 20C hysteresis; current limit 1.1A typ, fold-back about 0.6A; output can be shorted to ground indefinitely.",
+    "Output discharge: 80 Ohm typ discharge resistance when EN = 0V, so the output is actively pulled down in shutdown.",
+    "The datasheet gives no layout section, copper-pour guidance, or recommended land pattern beyond the items above."
+  ],
+  "abs_max": [
+    {"param": "VIN, VOUT, SNS, EN to GND", "value": "-0.3 to 6.5", "unit": "V"},
+    {"param": "VOUT to VIN", "value": "-6.5 to 0.3", "unit": "V"},
+    {"param": "Power dissipation PD at TA = 25C, TSOT-23-5", "value": 0.43, "unit": "W"},
+    {"param": "Package thermal resistance theta-JA, TSOT-23-5", "value": 230.6, "unit": "C/W"},
+    {"param": "Package thermal resistance theta-JC, TSOT-23-5", "value": 21.8, "unit": "C/W"},
+    {"param": "Lead temperature (soldering, 10 s)", "value": 260, "unit": "C"},
+    {"param": "Junction temperature", "value": 150, "unit": "C"},
+    {"param": "Storage temperature", "value": "-65 to 150", "unit": "C"},
+    {"param": "ESD HBM", "value": 2, "unit": "kV"},
+    {"param": "ESD MM", "value": 150, "unit": "V"}
+  ],
+  "pin_ratings": [
+    {"pins": ["1"], "kind": "voltage", "level": "recommended", "min": 1.2, "max": 5.5, "ref": "2", "source": "Recommended Operating Conditions, p.4"},
+    {"pins": ["3"], "kind": "voltage", "level": "abs_max", "min": -0.3, "max": 6.5, "ref": "2", "source": "Absolute Maximum Ratings, p.4 (EN to GND)"}
+  ],
+  "exposed_pad": {"present": false},
+  "source_pdf": "boards/esp32c3-node/parts/U3_RT9080-33GJ5_C841192.pdf"
+}

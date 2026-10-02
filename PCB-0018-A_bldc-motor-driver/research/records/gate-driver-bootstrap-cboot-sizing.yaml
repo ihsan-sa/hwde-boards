@@ -1,0 +1,45 @@
+id: gate-driver-bootstrap-cboot-sizing
+classes: [selection]
+applies:
+  topologies: [gate-driver-bootstrap]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  cboot_min: "Qtot / dV_BST, Qtot = Qg + I_leak/fsw (+ I_HBS*Dmax/fsw)"
+  dv_bst_ripple_v: "0.5-1"
+  cboot_vs_cg: ">= 10x"
+  cboot_rating: ">= 2x bias voltage, low-ESR/ESL MLCC"
+  cboot_max_integrated_diode_uf: 1
+prose: >
+  Size the bootstrap cap from charge, not habit. SLUA887A p3 (Eq 1-3): Cboot >=
+  10x Cg (Cg = Qg/(VDD - Vdiode)) as a rule of thumb, or the detailed form
+  Cboot >= Qtotal/dV_HB, Qtotal = Qg + I_HBS*Dmax/fsw + I_HB/fsw, dV_HB = VDD -
+  Vdiode - V_HB_UVLO. Too small trips the high-side UVLO; too large raises
+  boot-diode peak current (Ipeak = Cboot*dv/dt, Eq 4) and lengthens first charge.
+  p4: use low-ESR/ESL MLCC rated >= 2x VDD. DRV8300 datasheet p19 worked example
+  (Eq 2-4): dV = 12 - 0.85 - 4.5 = 6.65 V allowed, but ripple of 0.5-1 V is
+  recommended; Qtot = 48 nC + 220 uA/20 kHz = 59 nC -> Cmin 59 nF at 1 V ->
+  choose 100 nF for skipped-pulse margin. The leakage term grows as fsw falls,
+  so low-fsw / high-duty operation needs more Cboot (or a trickle pump). For the
+  integrated-diode variants DRV8300D/DI, p6 Recommended Operating Conditions caps
+  CBOOT at 1 uF.
+sources:
+  - {file: research/sources/slua887a.pdf, page: 3, note: "Section 3.1, Eq 1-4: Cg=Qg/VQ1g, Cboot>=10xCg, Cboot>=Qtotal/dVHB with leakage/duty terms, Ipeak=Cboot*dv/dt; UVLO risk if undersized"}
+  - {file: research/sources/slua887a.pdf, page: 4, note: "top paragraph: low ESR/ESL MLCC, voltage rating 2xVDD"}
+  - {file: research/sources/drv8300.pdf, page: 19, note: "Section 9.2.2 Eq 2-5 worked example: dV 6.65 V, ripple 0.5-1 V recommended, Qtot 59 nC at 20 kHz, Cmin 59 nF, choose 100 nF, CGVDD >= 10x CBST"}
+  - {file: research/sources/drv8300.pdf, page: 6, note: "Table 7.3 Recommended Operating Conditions: CBOOT max 1 uF for DRV8300D/DI; fPWM max 200 kHz"}
+status: active
+origin: research:block-gate-driver-bootstrap-1
+level: topology
+envelope:
+  fsw_khz: {min: 5, max: 200}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with fsw: the I_leak/fsw term is 11 nC at 20 kHz (DRV8300 p19) and
+  grows as fsw falls until it dominates Qg (100% duty needs a trickle pump
+  instead); 5 kHz is where it reaches ~Qg for a 48 nC FET. 200 kHz is the
+  DRV8300 fPWM limit (p6).
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p3-4 SLUA887A Eq1-4 and 2xVDD rating match; p19,p6 DRV8300 worked example (6.65V, 59nC, 100nF) and CBOOT<=1uF cap for D/DI match exactly"}

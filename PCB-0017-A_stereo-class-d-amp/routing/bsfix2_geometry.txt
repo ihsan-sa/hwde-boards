@@ -1,0 +1,120 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+./kicad/pcbnew/pcb_track.cpp(387): assert ""false"" failed in GetWidth(): Warning: PCB_VIA::GetWidth called without a layer argument
+FP C15 32.8 30.4 90.0 crt 32.135 29.355 33.465 31.445
+  pad 1 /BSNL 32.8 31.4 box 32.125 30.695 33.475 32.105
+  pad 2 /OUTNL 32.8 29.4 box 32.125 28.695 33.475 30.105
+FP C11 34.15 37.3 90.0 crt 33.485 36.255 34.815 38.345
+  pad 1 +12V 34.15 38.3 box 33.475 37.595 34.825 39.005
+  pad 2 GND 34.15 36.3 box 33.475 35.595 34.825 37.005
+FP C9 32.2 34.6 0.0 crt 31.355 34.155 33.045 35.045
+  pad 1 +12V 31.5 34.6 box 31.1 34.15 31.9 35.05
+  pad 2 GND 32.9 34.6 box 32.5 34.15 33.3 35.05
+FP C17 38.4 27.7 90.0 crt 37.735 26.655 39.065 28.745
+  pad 1 /BSNR 38.4 28.7 box 37.725 27.995 39.075 29.405
+  pad 2 /OUTNR 38.4 26.7 box 37.725 25.995 39.075 27.405
+FP C14 29.8 41.0 0.0 crt 26.455 37.655 33.145 44.345
+  pad 1 +12V 27.13 41.0 box 25.38 40.4 28.88 41.6
+  pad 2 GND 32.47 41.0 box 30.72 40.4 34.22 41.6
+FP C6 30.6 36.2 0.0 crt 29.755 35.755 31.445 36.645
+  pad 1 +12V 29.9 36.2 box 29.5 35.75 30.3 36.65
+  pad 2 GND 31.3 36.2 box 30.9 35.75 31.7 36.65
+FP L1 40.5 37.4 0.0 crt 35.855 34.055 45.145 40.745
+  pad 1 /OUTPL 37.42 37.4 box 36.158 35.84 38.682 38.96
+  pad 2 /SPK_L_P 43.58 37.4 box 42.318 35.84 44.842 38.96
+FP C18 33.8 23.36 0.0 crt 32.755 22.695 34.845 24.025
+  pad 1 /BSPR 32.8 23.36 box 32.095 22.685 33.505 24.035
+  pad 2 /OUTPR 34.8 23.36 box 34.095 22.685 35.505 24.035
+FP C16 38.4 31.65 -90.0 crt 37.735 30.605 39.065 32.695
+  pad 1 /BSPL 38.4 30.65 box 37.725 29.945 39.075 31.355
+  pad 2 /OUTPL 38.4 32.65 box 37.725 31.945 39.075 33.355
+FP C7 32.2 33.1 0.0 crt 31.355 32.655 33.045 33.545
+  pad 1 +12V 31.5 33.1 box 31.1 32.65 31.9 33.55
+  pad 2 GND 32.9 33.1 box 32.5 32.65 33.3 33.55
+TRK +12V F.Cu 29.72 31.88 29.72 32.736 0.882 00c15e75-64de-4b8c-9250-5ea7a67e2164
+TRK +12V F.Cu 30.084 33.1 30.457 33.1 0.882 18f54de1-1579-43c4-991e-a5ba61c2a2a2
+TRK +12V F.Cu 29.72 32.736 30.084 33.1 0.882 2e285fa6-920a-4942-ac38-89c1e0650929
+TRK +12V F.Cu 31.5 33.1 31.5 34.6 0.882 2fd95af7-e299-4963-a109-62caea96483d
+TRK +12V F.Cu 30.498 34.6 29.99 35.109 0.882 304beca2-a430-47a1-8bb2-30894cb335d4
+TRK +12V F.Cu 29.9 36.2 29.9 37.759 0.882 522abf2e-61ba-4071-9be6-1c89a8714543
+TRK +12V F.Cu 29.72 32.736 12.811 32.736 0.882 5e5b42b9-0400-4154-88d7-baa25b108055
+TRK +12V F.Cu 31.5 33.1 30.457 33.1 0.882 653cd994-00cc-4574-97d5-7f22ce42bc9a
+TRK +12V F.Cu 30.23 38.089 32.629 38.089 0.882 7d4d2b4d-7f7a-4570-a866-6abc3901d677
+TRK +12V F.Cu 29.72 31.23 29.72 30.58 0.343 8525ff3e-5dc6-43e4-bd19-d65ca93eef80
+TRK +12V F.Cu 29.72 31.23 29.72 31.88 0.882 a2413522-24d7-48d4-a115-bf450228ae4a
+TRK +12V F.Cu 30.23 39.757 28.987 41.0 0.882 c10c2f1f-1e6d-46fe-80d4-e97904f07a06
+TRK +12V F.Cu 32.629 38.089 34.15 38.089 0.882 c4f7d0e3-7b66-4cb1-b0f8-5ca42a311d39
+TRK +12V F.Cu 29.9 36.2 29.9 35.109 0.882 de8cc77c-e473-4e7b-a5fd-3ac08117f2fb
+TRK +12V F.Cu 29.99 35.109 29.9 35.109 0.882 e3beba52-85c6-4c30-af3e-0b0e178dee3a
+TRK +12V F.Cu 31.5 34.6 30.498 34.6 0.882 ee353e33-b703-4eed-bf85-88b6720e6a34
+TRK +12V F.Cu 29.9 37.759 30.23 38.089 0.882 fb379a9c-c97c-400d-9a9e-9b980f5cb2c8
+TRK +12V F.Cu 30.23 39.757 30.23 38.089 0.882 fe4a6805-ab9f-4d35-8d87-b16dac22cdfd
+VIA GND  36.77 41.0 36.77 41.0 0.6 258fe638-46f2-4b17-81fb-426d20a1158c
+VIA GND  35.57 41.0 35.57 41.0 0.6 894a40cb-ad50-4f1c-b96b-01d2a06b01a2
+VIA GND  34.3 34.9 34.3 34.9 0.6 a4325e9b-3ad9-4eff-b7b5-ab6429c8f3ad
+VIA GND  34.37 41.0 34.37 41.0 0.6 c6f72513-61c2-451a-829a-4ae30774d800
+VIA GND  41.0 34.6 41.0 34.6 0.6 cee1db7c-4c50-423e-9650-c5ed529514e2
+TRK /BSNL F.Cu 32.37 31.4 32.8 31.4 0.2 040cd33b-d681-4383-bd2f-c25ce19f9048
+TRK /BSNL F.Cu 30.9 29.93 32.37 31.4 0.2 4395a87c-e6fd-4b82-a6a5-be7d81ca7252
+TRK /BSNL F.Cu 29.72 29.93 30.9 29.93 0.2 6d5279ed-244e-4fec-9e25-740b899e9db6
+TRK /OUTNL F.Cu 35.5 39.9 45.55 39.9 0.624 2937f463-739d-484a-9b26-eac256b90c0f
+TRK /OUTNL F.Cu 29.72 29.28 30.9 29.28 0.3 32ca5c60-0afa-4385-a939-3bdd96952005
+TRK /OUTNL F.Cu 35.5 29.25 35.5 39.9 0.624 4a81b57a-0ebb-439d-b1f2-8a2823e61480
+TRK /OUTNL F.Cu 30.93 29.25 35.5 29.25 0.624 72f58fdb-e449-4d80-9ee9-3d5f66147bac
+TRK /OUTNL F.Cu 30.9 29.28 30.93 29.25 0.624 96c04986-a755-49cd-85ca-2320ebd684a2
+TRK /SPK_L_P F.Cu 39.6 36.9 43.0 36.9 0.624 281dcd07-1f0c-45c5-aba5-b0a498eef27c
+TRK /SPK_L_P F.Cu 39.6 37.75 43.0 37.75 0.624 e7c3d0e9-6544-47cd-a543-c71a80a0a608
+VIA /SPK_L_P  39.6 36.9 39.6 36.9 0.6 7ba11036-f7aa-4423-856d-ba19b30fe224
+VIA /SPK_L_P  40.45 37.75 40.45 37.75 0.6 7c450e6f-10f9-4381-aad3-ed6c9695f32c
+VIA /SPK_L_P  39.6 37.75 39.6 37.75 0.6 e82c53cb-ef03-4af8-9768-2bebb23bd085
+VIA /SPK_L_P  40.45 36.9 40.45 36.9 0.6 fe443c01-0671-4d81-a505-332fd77ac4ab
+TRK /SPK_L_P B.Cu 39.6 36.9 41.3 36.9 0.624 6f25713d-c9be-4370-8356-6fff88cddb7a
+TRK /SPK_L_P B.Cu 39.6 37.75 41.3 37.75 0.624 a58c9680-79e2-4c33-903f-0a5e8965208f
+TRK /OUTPL F.Cu 29.72 27.98 30.9 27.98 0.3 2f747d84-89b0-4e0b-8834-f36141c9e630
+TRK /OUTPL F.Cu 30.9 27.98 33.6 27.98 0.624 52605944-4277-4235-b6d2-dba1b6227500
+TRK /OUTPL F.Cu 38.4 32.65 38.4 35.9 0.624 91755bf1-a114-436a-8c05-48c4b8bc3d70
+TRK /OUTPL F.Cu 34.02 28.4 36.33 28.4 0.624 bff75047-ec2f-446d-8b2b-3ad7b401a575
+TRK /OUTPL F.Cu 36.33 32.65 38.4 32.65 0.624 cc60e616-530e-4ca4-83a0-a08c21247a64
+TRK /OUTPL F.Cu 36.33 28.4 36.33 32.65 0.624 e5b1ee1e-8625-43f8-bbfe-fd2317d57456
+TRK /OUTPL F.Cu 33.6 27.98 34.02 28.4 0.624 fb549154-cea3-4d70-8021-6de0bc1b997c
+TRK /BSPL F.Cu 30.9 27.33 31.7 26.53 0.2 0898692e-2e69-4551-977e-3282f8bea46b
+TRK /BSPL F.Cu 37.0 30.65 38.4 30.65 0.2 26643384-28ac-4500-99cc-17eacbfb4039
+TRK /BSPL F.Cu 37.0 27.75 37.0 30.65 0.2 26e5cf05-d9d3-4a6d-8b0c-5e2e28374f50
+TRK /BSPL F.Cu 34.72 27.75 37.0 27.75 0.2 5434fa73-6764-49b4-bc3d-e45bdb3cb8fa
+TRK /BSPL F.Cu 29.72 27.33 30.9 27.33 0.2 5b86d908-6c20-4a12-be4a-7fde7bc2d5c4
+TRK /BSPL F.Cu 31.7 26.53 33.5 26.53 0.2 a571485e-7e13-4efc-9ad5-9fcabbb7f16c
+TRK /BSPL F.Cu 33.5 26.53 34.72 27.75 0.2 fa77d018-0482-4a88-82fb-a3a65f4421f1
+TRK /BSNR F.Cu 29.72 26.02 30.9 26.02 0.2 4924db66-7318-44cb-a072-2e2ea21ef01d
+TRK /BSNR F.Cu 37.42 28.7 38.4 28.7 0.2 6353d726-cf2d-46c8-bdae-966dd1b26575
+TRK /BSNR F.Cu 34.5 26.12 35.72 27.34 0.2 6d0c1d4c-653b-411f-9f88-2fb2e444bc8a
+TRK /BSNR F.Cu 31.0 26.12 34.5 26.12 0.2 7196cd96-6fc1-48b9-9471-4ed441317dbe
+TRK /BSNR F.Cu 30.9 26.02 31.0 26.12 0.2 7f9852b1-d280-4d63-9e43-7f0ffc608f51
+TRK /BSNR F.Cu 35.72 27.34 37.42 27.34 0.2 eb7a0337-aac3-4c29-97ab-88354e75b09a
+TRK /BSNR F.Cu 37.42 27.34 37.42 28.7 0.2 f4851f25-6367-430b-95cc-f7204ecdfbb8
+TRK /OUTNR F.Cu 29.72 25.37 30.9 25.37 0.3 2ed77fa3-a993-4316-88c7-64be4c976ee3
+TRK /OUTNR F.Cu 31.2 25.37 31.25 25.42 0.624 722f1417-659b-4371-97e3-de699a4572e5
+TRK /OUTNR F.Cu 31.25 25.42 35.0 25.42 0.624 b21216de-abef-49fe-9ecd-d72045ea2bef
+TRK /OUTNR F.Cu 30.9 25.37 31.2 25.37 0.624 d702969d-a2a7-4e41-81e0-42167ae736fc
+TRK /OUTNR F.Cu 35.0 25.42 36.28 26.7 0.624 f5f1bf48-3aa0-467a-af5d-4b28ffa235a4
+TRK /OUTNR F.Cu 38.4 26.7 44.6 26.7 0.624 fbf7b82d-2f51-49a2-9779-0043b8c361a4
+TRK /OUTNR F.Cu 36.28 26.7 38.4 26.7 0.624 fc66c467-2184-45a2-a96f-688d58124e23
+TRK /OUTPR F.Cu 34.8 23.36 37.42 23.36 0.624 4098b9b5-77d7-451e-a913-117073436063
+TRK /OUTPR F.Cu 30.9 24.07 31.3 24.07 0.624 6070bb7a-32f0-4d2e-ab63-9a279fb04701
+TRK /OUTPR F.Cu 29.72 24.07 30.9 24.07 0.3 60a4ce3c-50af-4e4e-943d-6008131887f2
+TRK /OUTPR F.Cu 31.82 24.59 34.1 24.59 0.624 627d5f59-0233-42da-89da-5b0bd0d47260
+TRK /OUTPR F.Cu 34.1 24.59 34.8 23.89 0.624 d67fb857-97fc-47b6-aa33-afc2a4afc804
+TRK /OUTPR F.Cu 34.8 23.89 34.8 23.36 0.624 e51cad3b-deb7-48b5-be71-4abb109b584b
+TRK /OUTPR F.Cu 31.3 24.07 31.82 24.59 0.624 fd6f7cd1-6ce5-4faa-9b98-f1f489833cf1
+TRK /BSPR F.Cu 30.9 23.42 31.1 23.22 0.2 594002b2-38d6-4eae-ba6a-e92edcd6d60b
+TRK /BSPR F.Cu 31.1 23.22 32.8 23.22 0.2 d12ec22f-19a4-436b-b948-ca729565ac6c
+TRK /BSPR F.Cu 29.72 23.42 30.9 23.42 0.2 f3ad3aab-0cf6-428b-801a-f44b21d79b57
+clearance default 0.152

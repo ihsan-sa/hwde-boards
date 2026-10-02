@@ -1,0 +1,58 @@
+{
+  "mpn": "BME280",
+  "lcsc": "C92489",
+  "package": "LGA-8 2.5 x 2.5 mm (metal lid with vent hole)",
+  "description": "Bosch Sensortec BME280 combined humidity, pressure and temperature sensor (BST-BME280-DS001-23 Rev 1.23). Separate VDD (1.71-3.6V) and VDDIO (1.2-3.6V) supplies; I2C and SPI (3/4-wire) interfaces; interface chosen automatically by CSB.",
+  "pinout": [
+    {"pin": "1", "name": "GND", "type": "ground", "notes": "Ground (Table 35). Pin 1 marker at the lower-right corner of the top view; numbering runs clockwise in top view."},
+    {"pin": "2", "name": "CSB", "type": "input", "notes": "Chip select; active low in SPI mode with internal pull-up (70-190 kOhm to VDDIO). Interface selection: CSB connected to VDDIO selects I2C, pulled low selects SPI (Sec 6.1). For I2C, 'a direct connection between CSB and VDDIO is required' (Fig. 17 note). Must already be at VDDIO level during power-on if driven by a programmable pin."},
+    {"pin": "3", "name": "SDI", "type": "bidirectional", "notes": "Serial data: SDA in I2C mode (bi-directional, open drain to GND, needs an external pull-up to VDDIO), SDI in 4-wire SPI, SDI/SDO in 3-wire SPI."},
+    {"pin": "4", "name": "SCK", "type": "input", "notes": "Serial clock: SCL in I2C mode (needs an external pull-up to VDDIO), SCK in SPI mode."},
+    {"pin": "5", "name": "SDO", "type": "bidirectional", "notes": "Serial data output in 4-wire SPI; in I2C mode it sets address bit 0: GND gives 7-bit address 0x76 (1110110), VDDIO gives 0x77 (1110111). The SDO pin cannot be left floating in I2C mode (address would be undefined). Do-not-connect in 3-wire SPI."},
+    {"pin": "6", "name": "VDDIO", "type": "power_in", "notes": "Digital / interface supply, 1.2V to 3.6V (typ 1.8V). Abs max -0.3 to 4.25V. Needs its own 100 nF decoupling capacitor to GND (Fig. 17 note: C1, C2 = 100 nF). No sequencing restriction between VDD and VDDIO. If VDDIO is supplied but VDD is not, the interface pins are high-Z."},
+    {"pin": "7", "name": "GND", "type": "ground", "notes": "Second ground pin; connect to GND."},
+    {"pin": "8", "name": "VDD", "type": "power_in", "notes": "Analog supply for internal domains, 1.71V to 3.6V (typ 1.8V), ripple max 50 mVpp. Abs max -0.3 to 4.25V. Needs 100 nF decoupling capacitor to GND."}
+  ],
+  "decoupling": [
+    {"pins": ["8", "7"], "value": "100 nF", "placement": "VDD to GND (C1/C2 in Fig. 17)", "notes": "Section 7.2 Fig. 17 notes: 'The recommended value for C1, C2 is 100 nF'. VDD supply ripple must be max 50 mVpp (Table 1). No bulk capacitor is specified."},
+    {"pins": ["6", "7"], "value": "100 nF", "placement": "VDDIO to GND (C1/C2 in Fig. 17)", "notes": "Same recommendation as for VDD. Fig. 17 connection: pull-ups R1, R2 on SDA/SCL to VDDIO, normally 4.7 kOhm, chosen from interface timing and bus load."}
+  ],
+  "land_pattern": {
+    "package": "LGA-8, 2.5 x 2.5 mm body; recommended landing pattern Fig. 21 (p.43)",
+    "pad_count": 8,
+    "pitch_mm": 0.65,
+    "pad_size_mm": [0.5, 0.35],
+    "row_spacing_mm": 2.05,
+    "pin1": "1",
+    "notes": "Fig. 21 (top view): two columns of 4 pads, pitch 0.65 mm, pad 0.5 mm (x) by 0.35 mm (y), inner pad edge 0.775 mm from the package centre line (so pad-centre column spacing 2.05 mm, derived), pad rows symmetric about the centre line (0.325 mm from centre line to first pad edge); overall 2.50 x 2.50 mm. Pin 1 at top right, pins 1-4 on the right column top to bottom, 5-8 on the left column bottom to top. SMD (solder-mask-defined): land defined by mask openings with larger underlying metal; NSMD: land defined by the metal, with larger mask openings. Courtyard and a paste-mask rule are not given. The datasheet does not state a copper keep-out under the body."
+  },
+  "layout_notes": [
+    "Vent hole: the lid has a vent hole (top view, upper-left side next to pin 8/5 corner); ambient air must reach it - 'for the device housing appropriate venting needs to be provided in case the ambient pressure shall be measured' (Sec 7.11).",
+    "Air flow towards the vent hole must allow sufficient air exchange inside to outside; about 1 m/s air-flow velocity is needed to observe the humidity response-time figures (Table 1 note 4).",
+    "Clearance above the metal lid shall be 0.1 mm minimum (Sec 7.11).",
+    "Liquids must not contact the device. The sensor chip is light sensitive (silicon photo-current), avoid exposure to strong light sources; the vent hole position minimises light exposure (Sec 7.11).",
+    "Soldering: reflow only, peak up to 260C, MSL 1; minimum solder height after reflow at least 50 um for mechanical decoupling between sensor and PCB. Vapor-phase soldering is not allowed (damages the sensor) (Sec 7.8, 7.11).",
+    "Exceeding the operating range, e.g. in soldering, temporarily degrades humidity performance and reconditioning is recommended (Sec 7.8-7.9).",
+    "Internal temperature reading depends on PCB temperature, sensor self-heating and ambient temperature and is typically above ambient (Sec 1.4 temperature table note 7), so keep the sensor away from heat sources to measure ambient accurately - the datasheet gives no explicit keep-away distance, copper keep-out or via rule.",
+    "I2C: place pull-up resistors (typ 4.7 kOhm) from SDA (pin 3) and SCL (pin 4) to VDDIO; tie CSB (pin 2) directly to VDDIO; tie SDO (pin 5) to GND (0x76) or VDDIO (0x77), never floating.",
+    "Place the 100 nF decoupling capacitors on VDD and VDDIO at the pins (Fig. 17); the datasheet states no placement distance.",
+    "Do not keep any interface pin (SDI, SDO, SCK, CSB) at logic high while VDDIO is low (power-up section, p.14)."
+  ],
+  "abs_max": [
+    {"param": "Voltage at VDD and VDDIO pins", "value": "-0.3 to 4.25", "unit": "V"},
+    {"param": "Voltage at any interface pin", "value": "-0.3 to VDDIO+0.3", "unit": "V"},
+    {"param": "Storage temperature (<= 65% RH)", "value": "-45 to 85", "unit": "C"},
+    {"param": "Pressure", "value": "0 to 20000", "unit": "hPa"},
+    {"param": "ESD HBM, any pin", "value": 2, "unit": "kV"},
+    {"param": "ESD CDM", "value": 500, "unit": "V"},
+    {"param": "ESD machine model", "value": 200, "unit": "V"}
+  ],
+  "pin_ratings": [
+    {"pins": ["8", "6"], "kind": "voltage", "level": "abs_max", "min": -0.3, "max": 4.25, "ref": "1", "source": "Table 5, p.10"},
+    {"pins": ["2", "3", "4", "5"], "kind": "voltage", "level": "abs_max", "min": -0.3, "max": "VDDIO+0.3", "ref": "1", "source": "Table 5, p.10"},
+    {"pins": ["8"], "kind": "voltage", "level": "recommended", "min": 1.71, "max": 3.6, "ref": "1", "source": "Table 1, p.7 (VDD)"},
+    {"pins": ["6"], "kind": "voltage", "level": "recommended", "min": 1.2, "max": 3.6, "ref": "1", "source": "Table 1, p.7 (VDDIO)"}
+  ],
+  "exposed_pad": {"present": false},
+  "source_pdf": "boards/esp32c3-node/parts/U5_BME280_C92489.pdf"
+}

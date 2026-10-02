@@ -1,0 +1,40 @@
+id: current-sense-shunt-csa-bypass
+classes:
+- decoupling
+applies:
+  topologies:
+  - current-sense-shunt
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  bypass_uf: 0.1
+  at: VS pin, returned to the CSA GND pin/via
+prose: Bypass the CSA supply with 0.1 uF placed as close as possible to its VS and GND pins; add more
+  capacitance for a noisy or high-impedance supply. INA240 Fig 11-1 (TSSOP) shows C_BYPASS directly beside
+  pins 4 (GND) and 5 (VS), with GND and REF pins dropping to vias into the ground plane; Fig 11-2 (SOIC)
+  puts C_BYPASS between GND pin 2 and VS pin 6 under the package body.
+sources:
+- file: research/sources/ina240.pdf
+  page: 23
+  note: 'sec 10.1: bypass as close as possible to supply and ground pins, 0.1 uF recommended, more for
+    noisy supplies'
+- file: research/sources/ina240.pdf
+  page: 24
+  note: 'Fig 11-1 TSSOP layout: C_BYPASS beside VS/GND, vias to ground plane on GND/REF/NC'
+- file: research/sources/ina240.pdf
+  page: 25
+  note: 'Fig 11-2 SOIC layout: C_BYPASS between GND(2) and VS(6), vias to ground/power'
+status: active
+origin: research:block-current-sense-shunt-1
+level: topology
+envelope:
+  bw_khz:
+    min: 0
+    max: 1000
+envelope_note: Scales with the CSA's bandwidth and supply noise; 0.1 uF at the pin is the vendor value
+  for a ~400 kHz-class amp. Holds to ~1 MHz amps; faster parts may want an additional smaller cap.
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p23-25 INA240 sec 10.1 + Fig 11-1/11-2 match 0.1uF bypass placement beside VS/GND and GND(2)/VS(6) exactly"}

@@ -1,0 +1,583 @@
+{
+ "script": "datasheet_extract",
+ "status": "extracted",
+ "source_pdf": "PCB-0020-A_esp32c3-node/parts/U5_BME280_C92489.pdf",
+ "lcsc": "",
+ "n_pages": 60,
+ "text_chars": 104953,
+ "pages_trimmed": 28,
+ "text_by_page": [
+  {
+   "page": 0,
+   "first_line": "BME280 \u2013 Data sheet",
+   "chars": 411
+  },
+  {
+   "page": 1,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 2 | 60",
+   "chars": 2055
+  },
+  {
+   "page": 2,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 3 | 60",
+   "chars": 2301
+  },
+  {
+   "page": 3,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 4 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \nIndex of Contents \n1. Specification ..................................................................................................................................... 8 \n1.1 General electrical specification ................................................................................................ 8 \n1.2 Humidity parameter specification ............................................................................................ 9 \n1.3 Pressure sensor specification ............................................................................................... 10 \n1.4 Temperature sensor specification .......................................................................................... 11 \n2. Absolute maximum ratings ........................................................................................................... 13 \n3. Functional description ................................................................................................................... 14 \n3.1 Block diagram ....................................................................................................................... 14 \n3.2 Power management .............................................................................................................. 14 \n3.3 Sensor modes ....................................................................................................................... 14 \n3.3.1 Sensor mode transitions ........................................................................................ 15 \n3.3.2 Sleep mode ........................................................................................................... 15 \n3.3.3 Forced mode ......................................................................................................... 15 \n3.3.4 Normal mode ......................................................................................................... 16 \n3.4 Measurement flow ................................................................................................................. 17 \n3.4.1 Humidity measurement .......................................................................................... 17 \n3.4.2 Pressure measurement ......................................................................................... 17 \n3.4.3 Temperature measurement .................................................................................... 17 \n3.4.4 IIR filter .................................................................................................................. 18 \n3.5 Recommended modes of operation ...................................................................................... 19 \n3.5.1 Weather monitoring ............................................................................................... 19 \n3.5.2 Humidity sensing ................................................................................................... 19 \n3.5.3 Indoor navigation ................................................................................................... 20 \n3.5.4 Gaming .................................................................................................................. 20 \n3.6 Noise ..................................................................................................................................... 21 \n4. Data readout.................................................................................................................................... 23 \n4.1 Data register shadowing ....................................................................................................... 23 "
+  },
+  {
+   "page": 4,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 5 | 60",
+   "chars": 4054
+  },
+  {
+   "page": 5,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 6 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7. Pin-out and connection diagram .................................................................................................. 38 \n7.1 Pin-out .................................................................................................................................. 38 \n7.2 Connection diagram I2C ........................................................................................................ 39 \n7.3 Connection diagram 4-wire SPI ............................................................................................. 40 \n7.4 Connection diagram 3-wire SPI ............................................................................................. 41 \n7.5 Package dimensions ............................................................................................................. 42 \n7.6 Landing pattern recommendation .......................................................................................... 43 \n7.7 Marking ................................................................................................................................. 44 \n7.7.1 Mass production devices ....................................................................................... 44 \n7.7.2 Engineering samples ............................................................................................. 44 \n7.8 Soldering guidelines and reconditioning recommendations ................................................... 45 \n7.9 Reconditioning Procedure ..................................................................................................... 46 \n7.10 Tape and reel specification .................................................................................................... 46 \n7.10.1 Dimensions ............................................................................................................ 46 \n7.10.2 Orientation within the reel ...................................................................................... 47 \n7.11 Mounting and assembly recommendations ........................................................................... 48 \n7.12 Environmental safety ............................................................................................................. 48 \n7.12.1 RoHS ..................................................................................................................... 48 \n7.12.2 Halogen content .................................................................................................... 48 \n7.12.3 Internal package structure ..................................................................................... 48 \n8. Appendix A: Alternative compensation formulas ....................................................................... 49 \n8.1 Compensation formulas in double precision floating point ..................................................... 49 \n8.2 Pressure compensation in 32 bit fixed point .......................................................................... 50 \n9. Appendix B: Measurement time and current calculation ........................................................... 51 \n9.1 Measurement time ................................................................................................................ 51 \n9.2 Measurement rate in forced mode......................................................................................... 51 \n9.3 Measurement rate in normal mode........................................................................................ 51 \n9.4 Response time using IIR filter ............................................................................................... 52 "
+  },
+  {
+   "page": 6,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 7 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n9.5 Current consumption ............................................................................................................. 52 \n10. Self test ............................................................................................................................................ 53 \n10.1 Self-test flow ......................................................................................................................... 53 \n10.2 Function return codes ........................................................................................................... 54 \n10.3 Usage ................................................................................................................................... 55 \n10.3.1 File and function pointer integration ....................................................................... 55 \n10.3.2 Function call .......................................................................................................... 55 \n10.3.3 Test time and interface requirements ..................................................................... 55 \n10.4 Function explanation ............................................................................................................. 56 \n10.4.1 Communication test ............................................................................................... 56 \n10.4.2 Bond wire test ........................................................................................................ 56 \n10.4.3 Measurement plausibility test ................................................................................ 56 \n10.5 Sample read, write and delay function .................................................................................. 57 \n11. Legal disclaimer ............................................................................................................................. 58 \n11.1 Engineering samples ............................................................................................................. 58 \n11.2 Product use ........................................................................................................................... 58 \n11.3 Application examples and hints ............................................................................................. 58 \n12. Document history and modification ............................................................................................. 59 \n "
+  },
+  {
+   "page": 7,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 8 | 60",
+   "chars": 1766
+  },
+  {
+   "page": 8,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 9 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n1.2 Humidity parameter specification \nTable 2: Humidity parameter specification \nParameter Symbol Condition Min Typ Max Unit \nOperating range1 RH For temperatures \n< 0 \u00b0C and > 60 \u00b0C \nsee Figure 1 \n-40 25 85 \u00b0C \n0  100 %RH \nSupply current IDD,H 1 Hz forced mode,  \nhumidity and \ntemperature \n 1.8 2.8 \u00b5A \nAbsolute accuracy \ntolerance \nAH 20\u202680 %RH, \n25 \u00b0C, including \nhysteresis \n \u00b13  %RH \nHysteresis2 HH 10\uf0e090\uf0e010 %RH, \n25 \u00b0C \n \u00b11  %RH \nNonlinearity3 NLH 10\uf0e090 %RH, 25 \u00b0C  1  %RH \nResponse time to \ncomplete 63% of step4 \n\ud835\udf0f\ud835\udf0f63% 90\uf0e00 or 0\uf0e090 %RH, \n25\u00b0C \n 1  s \nResolution RH   0.008  %RH \nNoise in humidity (RMS) NH Highest oversampling, \nsee chapter 3.6 \n 0.02  %RH \nLong term stability \u2206Hstab  10\u202690 %RH, 25 \u00b0C  0.5  %RH/\nyear \n                                                      \n1  When exceeding the operating range (e.g. for soldering), humidity sensing performance is temporarily degraded and \nreconditioning is recommended as described in section 7.8. Operating range only for non-condensing environment. \n2 For hysteresis measurement the sequence 10\uf0e030\uf0e050\uf0e070\uf0e090\uf0e070\uf0e050\uf0e030\uf0e010 %RH is used. The hysteresis is defined as \nthe difference between measurements of the humidity up / down branch and the averaged curve of both branches \n3 Non-linear contributions to the sensor data are corrected during the calculation of the relative humidity by the compensation \nformulas described in section 4.2.3. \n4 The air-flow in direction to the vent- hole of the device has to be dimensioned in a way that a sufficient air exchange inside to \noutside will be possible. To observe effects on the response time -scale of the device an air -flow velocity of approx. 1 m/s is \nneeded. "
+  },
+  {
+   "page": 9,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 10 | 60",
+   "chars": 656
+  },
+  {
+   "page": 10,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 11 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \nTemperature coefficient \nof offset5 \nTCOP 25\u202665 \u00b0C, 900 hPa  \u00b11.5  Pa/K \n \u00b112.6  cm/K \nAbsolute accuracy \npressure \nAPext 300. . 1100 hPa \n-20 . . . 0 \u00b0C \n \u00b11.7  hPa \nAP,full 300 . . .  1100 hPa \n0 . . . 65 \u00b0C \n \u00b11.0  hPa \nAP 1100 . . .  1250 hPa \n25 . . . 40 \u00b0C \n \u00b11.5  hPa \nRelative accuracy \npressure \nVDD = 3.3V \nArel 700 \u2026 900hPa \n25 . . . 40 \u00b0C \n \u00b10.12  hPa \nResolution of \npressure output data  \nRP Highest oversampling  0.18  Pa \nNoise in pressure NP,fullBW Full bandwidth, \nhighest oversampling \nSee chapter 3.6 \n 1.3  Pa \n 11  cm \nNP,filtered Reduced bandwidth, \nhighest oversampling \nSee chapter 3.6 \n 0.2  Pa \n 1.7  cm \nSolder drift  Minimum solder height \n50\u00b5m \n-0.5  +2.0 hPa \nLong term stability6 \u2206Pstab per year  \u00b11.0  hPa \nPossible sampling rate fsample_P Lowest oversampling, \nsee chapter 9.2 \n157 182  Hz \n \n1.4 Temperature sensor specification \nTable 4: Temperature parameter specification \nParameter Symbol Condition Min Typ Max Unit \nOperating range T Operational -40 25 85 \u00b0C \nFull accuracy 0  65 \u00b0C \nSupply current IDD,T 1 Hz forced mode, \ntemperature \nmeasurement only \n 1.0  \u00b5A \nAT,25 25 \u00b0C  \u00b10.5  \u00b0C \n                                                      \n5 When changing temperature by e.g. 10 \u00b0C at constant pressure / altitude, the measured pressure / altitude will change by (10 \u00d7 \nTCOP).  \n6 Long term stability is specified in the full accuracy operating pressure range 0 \u2026 65 \u00b0C "
+  },
+  {
+   "page": 11,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 12 | 60",
+   "chars": 735
+  },
+  {
+   "page": 12,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 13 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n2. Absolute maximum ratings \nThe absolute maximum ratings are determined over complete temperature range using corner lots. \nThe values are provided in Table 5.  \nTable 5: Absolute maximum ratings \nParameter Condition Min Max Unit \nVoltage at any supply pin VDD and VDDIO pin -0.3 4.25 V \nVoltage at any interface pin  -0.3 VDDIO + 0.3 V \nStorage temperature \u2264 65% RH -45 +85 \u00b0C \nPressure  0 20 000 hPa \nESD HBM, at any pin  \u00b12 kV \nCDM  \u00b1500 V \nMachine model  \u00b1200 V \nCondensation No power supplied Allowed  \n \n  "
+  },
+  {
+   "page": 13,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 14 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n3. Functional description \n3.1 Block diagram \nFigure 2 shows a simplified block diagram of the BME280: \nLogic\nPressure \nfront-end\nOSC NVM\nVoltage\nreference\nVoltage\nregulator \n(analog & \ndigital)\nVDDIO\nGND\nI\nn\nt\ne\nr\nf\na\nc\ne\nSDI\nSDO\nSCK\nCSB\nVDD\nPOR\nPressure \nsensing \nelement\nHumidity \nsensing \nelement\nHumidity \nfront-end\nTemperature \nfront-end\nTemperature \nsensing \nelement\nADC\n  \nFigure 2: Block diagram of BME280 \n3.2 Power management \nThe BME280 has two distinct power supply pins  \n\u2022 VDD is the main power supply for all internal analog and digital functional blocks \n\u2022 VDDIO is a separate power supply pin used for the supply of the digital interface \n \nA power-on reset (POR) generator is built in; it resets the logic part and the register values after both \nVDD and VDDIO reach their minimum levels. There are no limitations on slope and sequence of raising \nthe VDD and VDDIO levels. After powering up, the sensor settles in sleep mode (described in chapter \n3.3.2).  \n \nIt is prohibited to keep any interface pin (SDI, SDO, SCK or CSB) at a logical high level when V\nDDIO is \nswitched off. Such a configuration can permanently damage the device due an excessive current flow \nthrough the ESD protection diodes.  \n \nIf V\nDDIO is supplied, but VDD is not, the interface pins are kept at a high-Z level. The bus can therefore \nalready be used freely before the BME280 VDD supply is established.  \n \nResetting the sensor is possible by cycling V\nDD level or by writing a soft reset command. Cycling the \nVDDIO level will not cause a reset.  \n3.3 Sensor modes \nThe BME280 offers three sensor modes: sleep mode, forced mode and normal mode. These can be \nselected using the mode[1:0] setting (see chapter 5.4.5). The available modes are:  \n \n\u2022 Sleep mode: no operation, all registers accessible, lowest power, selected after startup \n\u2022 Forced mode: perform one measurement, store results and return to sleep mode \n\u2022 Normal mode: perpetual cycling of measurements and inactive periods.  \n "
+  },
+  {
+   "page": 14,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 15 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \nThe modes will be explained in detail in chapters 3.3.2 (sleep mode), 3.3.3 (forced mode) and 3.3.4 \n(normal mode).  \n3.3.1 Sensor mode transitions \nThe supported mode transitions are shown in Figure 3. If the device is currently performing a \nmeasurement, execution of mode switching commands is delayed until the end of the currently \nrunning measurement period. Further mode change commands or other write commands to the \nregister ctrl_hum are ignored until the mode change command has been executed. Mode transitions \nother than the ones shown below are tested for stability but do not represent recommended use of the \ndevice.  \n \nPower OFF\n(VDD or VDDIO = 0)\nVDD and VDDIO \nsupplied\nMode[1:0] = 00\nMode[1:0] = 01\nSleep\nNormal\n(cyclic standby and \nmeasurement periods)\nMode[1:0] = 11\nForced\n(one measurement \nperiod)\nMode[1:0] = 01\n \nFigure 3: Sensor mode transition diagram \n3.3.2 Sleep mode \nSleep mode is entered by default after power on reset. In sleep mode, no measurements are \nperformed and power consumption (I\nDDSM) is at a minimum. All registers are accessible; Chip-ID and \ncompensation coefficients can be read. There are no special restrictions on interface timings.  \n3.3.3 Forced mode \nIn forced mode, a single measurement is performed in accordance to the selected measurement and \nfilter options. When the measurement is finished, the sensor returns to sleep mode and the \nmeasurement results can be obtained from the data registers. For a next measurement, forced mode \nneeds to be selected again. This is similar to BMP180 operation. Using forced mode is recommended \nfor applications which require low sampling rate or host-based synchronization. The timing diagram is \nshown below. "
+  },
+  {
+   "page": 15,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 16 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n   \ntime\nPOR Data readout Write\nsettings Mode[1:0] = 01\n  Measurement H\ntime\ncurrent\nIDDSL\nIDDSB\nIDDP\nIDDH\nPOR\n  Measurement T\n  Measurement P\nWrite\nsettings\nIDDT\n  Measurement H\n  Measurement T\n  Measurement P\ntmeasure\nMode[1:0] = 01\ncycle time = rate of force mode\n \nFigure 4: Forced mode timing diagram \n3.3.4 Normal mode \nNormal mode comprises an automated perpetual cycling between an (active) measurement period \nand an (inactive) standby period.  \nThe measurements are performed in accordance to the selected measurement and filter options. The \nstandby time is determined by the setting t_sb[2:0] and can be set to between 0.5 and 1000 ms \naccording to Table 27.  \nThe total cycle time depends on the sum of the active time (see chapter 9) and standby time tstandby. \nThe current in the standby period (IDDSB) is slightly higher than in sleep mode. After setting the \nmeasurement and filter options and enabling normal mode, the last measurement results can always \nbe obtained at the data registers without the need of further write accesses.  \nUsing normal mode is recommended when using the IIR filter. This is useful for applications in which \nshort-term disturbances (e.g. blowing into the sensor) should be filtered. The timing diagram is shown \nbelow:  \n  \n  Measurement H\ntime\ncurrent\nIDDSL\nIDDSB\nIDDP\nIDDH\nPOR Mode[1:0] = 11\n  Measurement P\n  Measurement T\nData readout \nwhen needed\nWrite\nsettings\ntstandby\nIDDT\n  Measurement H\n  Measurement P\n  Measurement T\ntmeasure\ncycle time = tmeasure + tstandby\n \nFigure 5: Normal mode timing diagram \n \n "
+  },
+  {
+   "page": 16,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 17 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n3.4 Measurement flow \nThe BME280 measurement period consists of a temperature, pressure and humidity measurement \nwith selectable oversampling. After the measurement period, the pressure and temperature data can \nbe passed through an optional IIR filter, which removes short-term fluctuations in pressure (e.g. \ncaused by slamming a door). For humidity, such a filter is not needed and has not been implemented. \nThe flow is depicted in the diagram below.  \nMeasure temperature \n(oversampling set by osrs_t;\nskip if osrs_t = 0)\nStart\nmeasurement cycle\nMeasure pressure \n(oversampling set by osrs_p;\nskip if osrs_p = 0)\nIIR filter enabled?\nEnd \nmeasurement cycle\nIIR filter initialised?\nCopy ADC values\nto filter memory\n(initalises IIR filter)\nNo\nUpdate filter memory using \nfilter memory, ADC value \nand filter coefficient\nNo\nYes\nYes\nCopy filter memory \nto output registers\nMeasure humidity \n(oversampling set by osrs_h;\nskip if osrs_h = 0)\n \nFigure 6: BME280 measurement cycle \nThe individual blocks of the diagram above will be detailed in the following subchapters. \n3.4.1 Humidity measurement \nThe humidity measurement can be enabled or skipped. When enabled, several oversampling options \nexist. The humidity measurement is controlled by the osrs_h[2:0] setting, which is detailed in chapter \n5.4.3. For the humidity measurement, oversampling is possible to reduce the noise. The resolution of \nthe humidity measurement is fixed at 16 bit ADC output. \n3.4.2 Pressure measurement \nPressure measurement can be enabled or skipped. When enabled, several oversampling options \nexist. The pressure measurement is controlled by the osrs_p[2:0] setting which is detailed in chapter \n5.4.5. For the pressure measurement, oversampling is possible to reduce the noise. The resolution of \nthe pressure data depends on the IIR filter (see chapter 3.4.4) and the oversampling setting (see \nchapter 5.4.5):  \n\u2022 When the IIR filter is enabled, the pressure resolution is 20 bit.  \n\u2022 When the IIR filter is disabled, the pressure resolution is 16 + (osrs_p \u2013 1) bit, e.g. 18 bit when \nosrs_p is set to \u20183\u2019. \n3.4.3 Temperature measurement \nTemperature measurement can be enabled or skipped. Skipping the measurement could be useful to \nmeasure pressure extremely rapidly. When enabled, several oversampling options exist. The \ntemperature measurement is controlled by the osrs_t[2:0] setting which is detailed in chapter 5.4.5. \nFor the temperature measurement, oversampling is possible to reduce the noise.  \nThe resolution of the temperature data depends on the IIR filter (see chapter 3.4.4) and the \noversampling setting (see chapter 5.4.5):  \n\u2022 When the IIR filter is enabled, the temperature resolution is 20 bit.  "
+  },
+  {
+   "page": 17,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 18 | 60",
+   "chars": 2973
+  },
+  {
+   "page": 18,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 19 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \nThe step response (e.g. response to in sudden change in height) of the different filter settings is \ndisplayed in Figure 7.  \n \nFigure 7: Step response at different IIR filter settings \n3.5 Recommended modes of operation \nThe different oversampling options, filter settings and sensor modes result in a large number of \npossible settings. In this chapter, a number of settings recommended for various scenarios are \npresented.  \n3.5.1 Weather monitoring \nDescription: Only a very low data rate is needed. Power consumption is minimal. Noise of pressure \nvalues is of no concern. Humidity, pressure and temperature are monitored.  \nTable 7: Settings and performance for weather monitoring \nSuggested settings for weather monitoring \nSensor mode forced mode, 1 sample / minute \nOversampling settings pressure \u00d71, temperature \u00d71, humidity \u00d71 \nIIR filter settings filter off \nPerformance for suggested settings \nCurrent consumption 0.16 \u00b5A \nRMS Noise 3.3 Pa / 30 cm, 0.07 %RH \nData output rate 1/60 Hz \n \n3.5.2 Humidity sensing \nDescription: A low data rate is needed. Power consumption is minimal. Forced mode is used to \nminimize power consumption and to synchronize readout, but using normal mode would also be \npossible.  \n0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\nNumber of samples\nResponse to step [%]\np p      g\n \n \nfilter off\n2\n4\n8\n16"
+  },
+  {
+   "page": 19,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 20 | 60",
+   "chars": 1587
+  },
+  {
+   "page": 20,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 21 | 60",
+   "chars": 1538
+  },
+  {
+   "page": 21,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 22 | 60",
+   "chars": 973
+  },
+  {
+   "page": 22,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 23 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n4. Data readout \nTo read out data after a conversion, it is strongly recommended to use a burst read and not address \nevery register individually. This will prevent a possible mix-up of bytes belonging to different \nmeasurements and reduce interface traffic. Note that in I\u00b2C mode, even when pressure was not \nmeasured, reading the unused registers is faster than reading temperature and humidity data \nseparately.  \nData readout is done by starting a burst read from 0xF7 to 0xFC (temperature and pressure) or from \n0xF7 to 0xFE (temperature, pressure and humidity). The data are read out in an unsigned 20-bit \nformat both for pressure and for temperature and in an unsigned 16-bit format for humidity. It is \nstrongly recommended to use the BME280 API, available from Bosch Sensortec, for readout and \ncompensation. For details on memory map and interfaces, please consult chapters 5 and 6 \nrespectively.  \n \nAfter the uncompensated values for pressure, temperature and humidity \u2018ut\u2019, \u2018up\u2019 and \u2018uh\u2019 have been \nread, the actual humidity, pressure and temperature needs to be calculated using the compensation \nparameters stored in the device. The procedure is elaborated in chapter 4.2.  \n4.1 Data register shadowing \nIn normal mode, the timing of measurements is not necessarily synchronized to the readout by the \nuser. This means that new measurement results may become available while the user is reading the \nresults from the previous measurement. In this case, shadowing is performed in order to guarantee \ndata consistency. Shadowing will only work if all data registers are read in a single burst read. \nTherefore, the user must use burst reads if he does not synchronize data readout with the \nmeasurement cycle. Using several independent read commands may result in inconsistent data.  \nIf a new measurement is finished and the data registers are still being read, the new measurement \nresults are transferred into shadow data registers. The content of shadow registers is transferred into \ndata registers as soon as the user ends the burst read, even if not all data registers were read.  \nThe end of the burst read is marked by the rising edge of CSB pin in SPI case or by the recognition of \na stop condition in I\n2C case. After the end of the burst read, all user data registers are updated at \nonce.  \n4.2 Output compensation \nThe BME280 output consists of the ADC output values. However, each sensing element behaves \ndifferently. Therefore, the actual pressure and temperature must be calculated using a set of \ncalibration parameters. In this chapter, the method to read out the trimming values will be given. The \nrecommended calculation uses fixed point arithmetic and is given in chapter 4.2.3. \nIn high-level languages like Matlab\u2122 or LabVIEW\u2122, fixed-point code may not be well supported. In \nthis case the floating-point code in appendix 8.1 can be used as an alternative. \nFor 8-bit micro controllers, the variable size may be limited. In this case a simplified 32 bit integer code \nwith reduced accuracy is given in appendix 8.2.  \n4.2.1 Computational requirements \nIn the table below an overview is given for the number of clock cycles needed for compensation on a \n32 bit Cortex-M3 micro controller with GCC optimization level -O2. This controller does not feature a \nfloating point unit, thus all floating-point calculations are emulated. Floating point is only recommended \nfor PC application, where an FPU is present and these calculations are performed drastically faster.  "
+  },
+  {
+   "page": 23,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 24 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \nTable 15: Computational requirements for compensation formulas \nCompensation of Number of clocks (ARM Cortex-M3) \n32 bit integer 64 bit integer Double precision \nHumidity ~83 \u2013  ~2900 11 \nTemperature ~46 \u2013  ~2400 11 \nPressure ~112 12 ~1400 ~5400 11 \n \n4.2.2 Trimming parameter readout \nThe trimming parameters are programmed into the devices\u2019 non-volatile memory (NVM) during \nproduction and cannot be altered by the customer. Each compensation word is a 16-bit signed or \nunsigned integer value stored in two\u2019s complement. As the memory is organized into 8-bit words, two \nwords must always be combined in order to represent the compensation word. The 8-bit registers are \nnamed calib00\u2026calib41 and are stored at memory addresses 0x88\u20260xA1 and 0xE1\u20260xE7. The \ncorresponding compensation words are named dig_T# for temperature compensation related values, \ndig_P# for pressure related values and dig_H# for humidity related values. The mapping is seen in \nTable 16.  \nTable 16: Compensation parameter storage, naming and data type \nRegister Address Register content Data type \n0x88 / 0x89 dig_T1 [7:0] / [15:8] unsigned short \n0x8A / 0x8B  dig_T2 [7:0] / [15:8] signed short \n0x8C / 0x8D dig_T3 [7:0] / [15:8] signed short \n0x8E / 0x8F dig_P1 [7:0] / [15:8] unsigned short \n0x90 / 0x91 dig_P2 [7:0] / [15:8] signed short \n0x92 / 0x93 dig_P3 [7:0] / [15:8] signed short \n0x94 / 0x95 dig_P4 [7:0] / [15:8] signed short \n0x96 / 0x97 dig_P5 [7:0] / [15:8] signed short \n0x98 / 0x99 dig_P6 [7:0] / [15:8] signed short \n0x9A / 0x9B dig_P7 [7:0] / [15:8] signed short \n0x9C / 0x9D dig_P8 [7:0] / [15:8] signed short \n0x9E / 0x9F dig_P9 [7:0] / [15:8] signed short \n0xA1 dig_H1 [7:0] unsigned char \n0xE1 / 0xE2 dig_H2 [7:0] / [15:8] signed short \n0xE3 dig_H3 [7:0] unsigned char \n0xE4 / 0xE5[3:0] dig_H4 [11:4] / [3:0] signed short \n0xE5[7:4] / 0xE6 dig_H5 [3:0] / [11:4] signed short \n                                                      \n11 Use only recommended for high-level programming languages like Matlab\u2122 or LabVIEW\u2122 \n12 Use only recommended for 8-bit micro controllers "
+  },
+  {
+   "page": 24,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 25 | 60",
+   "chars": 3341
+  },
+  {
+   "page": 25,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 26 | 60",
+   "chars": 2149
+  },
+  {
+   "page": 26,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 27 | 60",
+   "chars": 1813
+  },
+  {
+   "page": 27,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 28 | 60",
+   "chars": 1392
+  },
+  {
+   "page": 28,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 29 | 60",
+   "chars": 1179
+  },
+  {
+   "page": 29,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 30 | 60",
+   "chars": 1311
+  },
+  {
+   "page": 30,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 31 | 60",
+   "chars": 1850
+  },
+  {
+   "page": 31,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 32 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n6. Digital interfaces \nThe BME280 supports the I\u00b2C and SPI digital interfaces; it acts as a slave for both protocols. The I\u00b2C \ninterface supports the Standard, Fast and High Speed modes. The SPI interface supports both SPI \nmode \u201800\u2019 (CPOL = CPHA = \u20180\u2019) and mode \u201811\u2019 (CPOL = CPHA = \u20181\u2019) in 4-wire and 3-wire configuration.  \n \nThe following transactions are supported:  \n\u2022 Single byte write \n\u2022 multiple byte write (using pairs of register addresses and register data) \n\u2022 single byte read \n\u2022 multiple byte read (using a single register address which is auto-incremented) \n6.1 Interface selection \nInterface selection is done automatically based on CSB (chip select) status. If CSB is connected to \nVDDIO, the I\u00b2C interface is active. If CSB is pulled down, the SPI interface is activated. After CSB has \nbeen pulled down once (regardless of whether any clock cycle occurred), the I\u00b2C interface is disabled \nuntil the next power-on-reset. This is done in order to avoid inadvertently decoding SPI traffic to \nanother slave as I\u00b2C data. Since the device startup is deferred until both VDD and VDDIO are \nestablished, there is no risk of incorrect protocol detection because of the power-up sequence used. \nHowever, if I\u00b2C is to be used and CSB is not directly connected to VDDIO but is instead connected to a \nprogrammable pin, it must be ensured that this pin already outputs the VDDIO level during power-on-\nreset of the device. If this is not the case, the device will be locked in SPI mode and not respond to I\u00b2C \ncommands.  \n6.2 I\u00b2C Interface \nThe I\u00b2C slave interface is compatible with Philips I\u00b2C Specification version 2.1. For detailed timings, \nplease review Table 33. All modes (standard, fast, high speed) are supported. SDA and SCL are not \npure open-drain. Both pads contain ESD protection diodes to VDDIO and GND. As the devices does \nnot perform clock stretching, the SCL structure is a high-Z input without drain capability. \n \n \nFigure 8: SDI/SCK ESD drawing \n \nThe 7-bit device address is 111011x. The 6 MSB bits are fixed. The last bit is changeable by SDO \nvalue and can be changed during operation. Connecting SDO to GND results in slave address \n1110110 (0x76); connection it to VDDIO results in slave address 1110111 (0x77), which is the same as \n"
+  },
+  {
+   "page": 32,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 33 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \nBMP280\u2019s I\u00b2C address. The SDO pin cannot be left floating; if left floating, the I\u00b2C address will be \nundefined.  \n \nThe I\u00b2C interface uses the following pins: \n\u2022 SCK: serial clock (SCL)  \n\u2022 SDI: data (SDA) \n\u2022 SDO: Slave address LSB (GND = \u20180\u2019, VDDIO = \u20181\u2019) \n \nCSB must be connected to VDDIO to select I\u00b2C interface. SDI is bi-directional with open drain to GND: it \nmust be externally connected to VDDIO via a pull up resistor. Refer to chapter 7 for connection \ninstructions.  \nThe following abbreviations will be used in the I\u00b2C protocol figures: \n\u2022 S  Start \n\u2022 P  Stop \n\u2022 ACKS  Acknowledge by slave \n\u2022 ACKM  Acknowledge by master \n\u2022 NACKM Not acknowledge by master \n \n6.2.1 I\u00b2C write \nWriting is done by sending the slave address in write mode (RW = \u20180\u2019), resulting in slave address \n111011X0 (\u2018X\u2019 is determined by state of SDO pin. Then the master sends pairs of register addresses \nand register data. The transaction is ended by a stop condition. This is depicted in Figure 9.  \n \nStart RW ACKS ACKS ACKS\n1 1 1 0 1 1 X 0 1 0 1 0 0 0 0 0 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0 \u2026\nACKS ACKS Stop\n\u2026 1 0 1 0 0 0 0 1 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0\nRegister data -  address A0hRegister address (A0h)\nRegister address (A1h)\nS\nSlave Address\nControl byte Data byte\nControl byte Data byte\nP\nRegister data -  address A1h\n \nFigure 9: I\u00b2C multiple byte write (not auto-incremented) \n6.2.2 I\u00b2C read \nTo be able to read registers, first the register address must be sent in write mode (slave address \n111011X0). Then either a stop or a repeated start condition must be generated. After this the slave is \naddressed in read mode (RW = \u20181\u2019) at address 111011X1, after which the slave sends out data from \nauto-incremented register addresses until a NOACKM and stop condition occurs. This is depicted in \nFigure 10, where register 0xF6 and 0xF7 are read.  \n \nStart RW ACKS ACKS\n1 1 1 0 1 1 X 0 1 1 1 1 0 1 1 0\nStart RW ACKS ACKM NOACKM Stop\n1 1 1 0 1 1 X 1 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0\nControl byte\nData byte Data byte\nRegister address (F6h)\nS\nSlave Address\nPS\nSlave Address Register data - address F7hRegister data - address F6h\n \nFigure 10: I\u00b2C multiple byte read "
+  },
+  {
+   "page": 33,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 34 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n6.3 SPI interface \nThe SPI interface is compatible with SPI mode \u201800\u2019 (CPOL = CPHA = \u20180\u2019) and mode \u201811\u2019 (CPOL = \nCPHA = \u20181\u2019). The automatic selection between mode \u201800\u2019 and \u201811\u2019 is determined by the value of SCK \nafter the CSB falling edge.  \nThe SPI interface has two modes: 4-wire and 3-wire. The protocol is the same for both. The 3-wire \nmode is selected by setting \u20181\u2019 to the register spi3w_en. The pad SDI is used as a data pad in 3-wire \nmode.  \n \nThe SPI interface uses the following pins: \n\u2022 CSB:  chip select, active low \n\u2022 SCK: serial clock \n\u2022 SDI: serial data input; data input/output in 3-wire mode \n\u2022 SDO: serial data output; hi-Z in 3-wire mode \nRefer to chapter 7 for connection instructions.  \n \nCSB is active low and has an integrated pull-up resistor. Data on SDI is latched by the device at SCK \nrising edge and SDO is changed at SCK falling edge. Communication starts when CSB goes to low \nand stops when CSB goes to high; during these transitions on CSB, SCK must be stable. The SPI \nprotocol is shown in Figure 11. For timing details, please review Table 34.   \nCSB \nSCK \nSDI \nRW AD6 AD5 AD4 AD3 AD2 AD1 AD0 DI5 DI4 DI3 DI2 DI1 DI0 DI7 DI6 \nSDO \nDO5 DO4 DO3 DO2 DO1 DO0 DO7 DO6 tri-state \n \nFigure 11: SPI protocol (shown for mode \u201811\u2019 in 4-wire configuration) \nIn SPI mode, only 7 bits of the register addresses are used; the MSB of register address is not used \nand replaced by a read/write bit (RW = \u20180\u2019 for write and RW = \u20181\u2019 for read).  \nExample: address 0xF7 is accessed by using SPI register address 0x77. For write access, the byte \n0x77 is transferred, for read access, the byte 0xF7 is transferred.  \n6.3.1 SPI write \nWriting is done by lowering CSB and sending pairs control bytes and register data. The control bytes \nconsist of the SPI register address (= full register address without bit 7) and the write command (bit7 = \nRW = \u20180\u2019). Several pairs can be written without raising CSB. The transaction is ended by a raising \nCSB. The SPI write protocol is depicted in Figure 12.  \nStart RW RW Stop\n0 1 1 1 0 1 0 0 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0 0 1 1 1 0 1 0 1 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0\nControl byte\nCSB\n=\n1\nData byte\nRegister address (F5h) Data register - adress F5hRegister address (F4h)\nCSB\n=\n0\nControl byte Data byte\nData register - address F4h\n \nFigure 12: SPI multiple byte write (not auto-incremented) \n  "
+  },
+  {
+   "page": 34,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 35 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n6.3.2 SPI read \nReading is done by  lowering CSB and first sending one control byte. The control bytes consist of the \nSPI register address (= full register address without bit 7) and the read command (bit 7 = RW = \u20181\u2019). \nAfter writing the control byte, data is sent out of the SDO pin (SDI in 3-wire mode); the register address \nis automatically incremented. The SPI read protocol is depicted in Figure 13.  \nStart RW Stop\n1 1 1 1 0 1 1 0 bit15 bit14 bit13 bit12 bit11 bit10 bit9 bit8 bit7 bit6 bit5 bit4 bit3 bit2 bit1 bit0\nCSB\n=\n1\nData byte\nData register - address F7hRegister address (F6h)\nCSB\n=\n0\nControl byte Data byte\nData register - address F6h\n \nFigure 13: SPI multiple byte read \n6.4 Interface parameter specification \n6.4.1 General interface parameters \nThe general interface parameters are given in Table 32 below.  \nTable 32: interface parameters \nParameter Symbol Condition Min Typ Max Unit \nInput low level Vil_si VDDIO=1.2 V to 3. 6V   20 %VDDI\nO \nInput high level Vih_si VDDIO=1.2 V to 3.6 V 80   %VDDI\nO \nOutput low level I2C Vol_SDI VDDIO=1.62 V, Iol=3 mA   20 %VDDI\nO \nOutput low level I2C Vol_SDI_1.2 VDDIO=1.20 V, Iol=3 mA   23 %VDDI\nO \nOutput low level SPI Vol_SDO VDDIO=1.62 V, Iol=1 mA   20 %VDDI\nO \nOutput low level SPI Vol_SDO_1.2 VDDIO=1.20 V, Iol=1 mA   23 %VDDI\nO \nOutput high level Voh VDDIO=1.62 V, Ioh=1 mA \n(SDO, SDI) \n80   %VDDI\nO \nOutput high level Voh_1.2 VDDIO=1.20 V, Ioh=1 mA \n(SDO, SDI) \n60   %VDDI\nO \nPull-up resistor Rpull Internal CSB pull-up \nresistance to VDDIO \n70 120 190 k\u2126 \nI2C bus load capacitor Cb On SDI and SCK   400 pF \n \n6.4.2 I\u00b2C timings \nFor I\u00b2C timings, the following abbreviations are used:  \n\u2022 \u201cS&F mode\u201d = standard and fast mode \n\u2022 \u201cHS mode\u201d = high speed mode \n\u2022 Cb = bus capacitance on SDA line \n \nAll other naming refers to I\u00b2C specification 2.1 (January 2000). \n \nThe I\u00b2C timing diagram is in Figure 14. The corresponding values are given in Table 33.  "
+  },
+  {
+   "page": 35,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 36 | 60",
+   "chars": 1275
+  },
+  {
+   "page": 36,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 37 | 60",
+   "chars": 780
+  },
+  {
+   "page": 37,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 38 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7. Pin-out and connection diagram  \n7.1 Pin-out \n \nTOP VIEW\n(pads not visible)\n8\nVDD\n7\nGND\n6\nVDDIO\n5\nSDO\nBOTTOM VIEW\n(pads visible)\n1\nGND\n2\nCSB\n3\nSDI\n4\nSCK\nPin 1 \nmarker\n1\nGND\n2\nCSB\n3\nSDI\n4\nSCK\n8\nVDD\n7\nGND\n6\nVDDIO\n5\nSDO\nVent hole\n \nFigure 16: Pin-out top and bottom view \nNote: The pin numbering of BME280 is performed in the untypical clockwise direction when seen in top \nview and counter-clockwise when seen in bottom view.  \nTable 35: Pin description \nPin Name I/O Type Description Connect to \nSPI 4W SPI 3W I\u00b2C \n1 GND Supply Ground GND \n2 CSB In Chip select CSB CSB VDDIO \n3 SDI In/Out Serial data input SDI SDI/SDO SDA \n4 SCK In Serial clock input SCK SCK SCL \n5 SDO In/Out Serial data output SDO DNC GND for \ndefault \naddress \n6 VDDIO Supply Digital / Interface \nsupply \nVDDIO \n7 GND Supply Ground GND \n8 VDD Supply Analog supply VDD \n "
+  },
+  {
+   "page": 38,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 39 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.2 Connection diagram I2C \n \nI2C address bit 0\nGND: '0'; VDDIO: '1'\nTOP VIEW\n(pads not visible)\n8\nVDD\n7\nGND\n6\nVDDIO\n5\nSDO\nC1\nVDDIOVDD\nC2\n1\nGND\n2\nCSB\n3\nSDI\n4\nSCK\nSDA\nSCL\nVent hole\nR2R1\n \nFigure 17: I\u00b2C connection diagram  \nNotes:  \n\u2022 The recommended value for C1, C2 is 100 nF \n\u2022 The value for the pull -up resistors R1, R2 should be based on the interface timing and the bus \nload; a normal value is 4.7 k\u2126 \n\u2022 A direct connection between CSB and VDDIO is required \n "
+  },
+  {
+   "page": 39,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 40 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.3 Connection diagram 4-wire SPI \nSDO\nTOP VIEW\n(pads not visible)\n8\nVDD\n7\nGND\n6\nVDDIO\n5\nSDO\nC1\nVDDIOVDD\nC2\n1\nGND\n2\nCSB\n3\nSDI\n4\nSCK\nSDI\nSCK\nCSB\nVent hole\n \nFigure 18: 4-wire SPI connection diagram \nNote: The recommended value for C1, C2 is 100 nF \n \n "
+  },
+  {
+   "page": 40,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 41 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.4 Connection diagram 3-wire SPI \nTOP VIEW\n(pads not visible)\n8\nVDD\n7\nGND\n6\nVDDIO\n5\nSDO\nC1\nVDDIOVDD\nC2\n1\nGND\n2\nCSB\n3\nSDI\n4\nSCK\nSDI/SDO\nSCK\nCSB\nVent hole\n \nFigure 19: 3-wire SPI connection diagram \nNote: The recommended value for C1, C2 is 100 nF \n \n "
+  },
+  {
+   "page": 41,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 42 | 60",
+   "chars": 265
+  },
+  {
+   "page": 42,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 43 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.6 Landing pattern recommendation \nFor the design of the landing pattern, the following dimensioning is recommended: \n \n  \nFigure 21: Recommended landing pattern (top view) \nNote: red areas demark exposed PCB metal pads.  \n\u2022 In case of a solder mask defined (SMD) PCB process, the land dimensions should be defined \nby solder mask openings. The underlying metal pads are larger than these openings.  \n\u2022 In case of a non solder mask defined (NSMD) PCB process, the land dimensions shoul d be \ndefined in the metal layer. The mask openings are larger than these metal pads.  \n \n"
+  },
+  {
+   "page": 43,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 44 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.7 Marking \n7.7.1 Mass production devices  \nTable 36: Marking of mass production parts \nMarking Symbol Description \nCCC\nTL\n5 6 7 8\n4 3 2 1\nVent\nhole\nPin 1\nmarker\n \nCCC \nLot counter: 3 alphanumeric digits, \nvariable to generate mass production \ntrace-code \nT \nProduct number: 1 alphanumeric digit, \nfixed to identify product type, T = \u201cU\u201d \n\u201cU\u201d is associated with the product \nBME280 (part number 0 273 141 185) \nL Sub-contractor ID: 1 alphanumeric digit, \nvariable to identify sub-contractor (L = \u201cP\u201d) \n \n \n \n \n7.7.2 Engineering samples  \nTable 37: Marking of engineering samples \nMarking Symbol Description \nXXN\nCC\n5 6 7 8\n4 3 2 1\nVent\nhole\nPin 1\nmarker\n \nXX Sample ID: 2 alphanumeric digits, \n variable to generate trace-code \nN \nEng. Sample ID: 1 alphanumeric digit, \nfixed to identify engineering sample, \n N = \u201c * \u201d or \u201ce\u201d or \u201cE\u201d \nCC Counter ID: 2 alphanumeric digits, \nvariable to generate trace-code \n "
+  },
+  {
+   "page": 44,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 45 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.8 Soldering guidelines and reconditioning recommendations \nThe moisture sensitivity level of the BME280 sensors corresponds to JEDEC Level 1, see also:  \n\u2022 IPC/JEDEC J-STD-020C \u201cJoint Industry Standard: Moisture/Reflow Sensitivity Classification for \nnon-hermetic Solid State Surface Mount Devices\u201d \n\u2022 IPC/JEDEC J-STD-033A \u201cJoint Industry Standard: Handling, Packing, Shipping and Use of \nMoisture/Reflow Sensitive Surface Mount Devices\u201d. \nThe sensor fulfils the lead-free soldering requirements of the above-mentioned IPC/JEDEC standard, \ni.e. reflow soldering with a peak temperature up to 260\u00b0C. The minimum height of the solder after \nreflow shall be at least 50\u00b5m. This is required for good mechanical decoupling between the sensor \ndevice and the printed circuit board (PCB). \n \n \nFigure 22: Soldering profile \n  \n"
+  },
+  {
+   "page": 45,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 46 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.9 Reconditioning Procedure \nAfter exposing the device to operating conditions, which exceed the limits specified in section 1.2, e.g. \nafter reflow, the humidity sensor may possess an additional offset. Therefore the following \nreconditioning procedure is mandatory to restore the calibration state: \n \n1. Dry-Baking:   120 \u00b0C at <5% rH for 2 h \n2. Re-Hydration:   70 \u00b0C at 75% rH for 6 h \n \nor alternatively  \n \n1. Dry-Baking:   120 \u00b0C at <5% rH for 2 h \n2. Re-Hydration:   25 \u00b0C at 75% rH for 24 h \n  \nor alternatively after solder reflow only \n \n1. Do not perform Dry-Baking \n2. Ambient Re-Hydration: ~25 \u00b0C at >40% rH for >5d \n \n \n7.10 Tape and reel specification \n7.10.1 Dimensions \n \n \nFigure 23: Tape and Reel dimensions \nQuantity per reel: 10 kpcs. \n  \n"
+  },
+  {
+   "page": 46,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 47 | 60",
+   "chars": 253
+  },
+  {
+   "page": 47,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 48 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n7.11 Mounting and assembly recommendations \nIn order to achieve the specified performance for you design, the following recommendations and the \n\u201cHandling, soldering & mounting instructions BME280\u201d should be taken into consideration when \nmounting a pressure sensor on a printed-circuit board (PCB):  \n\u2022 The clearance above the metal lid shall be 0.1mm at minimum. \n\u2022 For the device housing appropriate venting needs to be provided in case the ambient pressure \nshall be measured.  \n\u2022 Liquids shall not come into direct contact with the device.  \n\u2022 During operation the sensor chip is sensitive to light, which can influence the accuracy of the \nmeasurement (photo- current of silicon). The position of the vent hole minimizes the light \nexposure of the sensor chip. Nevertheless, Bosch Sensortec recommends avoiding the \nexposure of BME280 to strong light sources. \n\u2022 Soldering may not be done using vapor phase processes since the sensor will be damaged by \nthe liquids used in these processes.  \n7.12 Environmental safety \n7.12.1 RoHS \nThe BME280 sensor meets the requirements of the EC restriction of hazardous substances (RoHS) \ndirective, see also:  \nRoHS\u2013Directive 2011/65/EU and its amendments, including the amendment 2015/863/EU on \nthe restriction of the use of certain hazardous substances in electrical and electronic \nequipment. \n7.12.2 Halogen content \nThe BME280 is halogen-free. For more details on the analysis results please contact your Bosch \nSensortec representative. \n7.12.3 Internal package structure \nWithin the scope of Bosch Sensortec\u2019s ambition to improve its products and secure the mass product \nsupply, Bosch Sensortec qualifies additional sources (e.g. 2nd source) for the package of the BME280. \n \nWhile Bosch Sensortec took care that all of the technical packages parameters are described above \nare 100% identical for all sources, there can be differences in the chemical content and the internal \nstructural between the different package sources. \n \nHowever, as secured by the extensive product qualification process of Bosch Sensortec, this has no \nimpact to the usage or to the quality of the BME280 product. \n \n \n "
+  },
+  {
+   "page": 48,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 49 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n8. Appendix A: Alternative compensation formulas  \n8.1 Compensation formulas in double precision floating point \nPlease note that it is strongly advised to use the API available from Bosch Sensortec to perform \nreadout and compensation. If this is not wanted, the code below can be applied at the user\u2019s risk. Both \npressure and temperature values are expected to be received in 20 bit format, positive, stored in a 32 \nbit signed integer. Humidity is expected to be received in 16 bit format, positive, stored in a 32 bit \nsigned integer. \nThe variable t_fine (signed 32 bit) carries a fine resolution temperature value over to the pressure \ncompensation formula and could be implemented as a global variable.  \nThe data type \u201cBME280_S32_t\u201d should define a 32 bit signed integer variable type and could usually \nbe defined as \u201clong signed int\u201d. The revision of the code is rev. 1.1 (pressure and temperature) and \nrev. 1.0 (humidity). \nCompensating the measurement value with double precision gives the best possible accuracy but is \nonly recommended for PC applications.  \n \n// Returns temperature in DegC, double precision. Output value of \u201c51.23\u201d equals 51.23 DegC. \n// t_fine carries fine temperature as global value \nBME280_S32_t t_fine; \ndouble BME280_compensate_T_double(BME280_S32_t adc_T) \n{ \n double var1, var2, T; \n var1  = (((double)adc_T)/16384.0 \u2013 ((double)dig_T1)/1024.0) * ((double)dig_T2); \n var2  = ((((double)adc_T)/131072.0 \u2013 ((double)dig_T1)/8192.0) * \n  (((double)adc_T)/131072.0 \u2013 ((double) dig_T1)/8192.0)) * ((double)dig_T3); \n t_fine = (BME280_S32_t)(var1 + var2); \n T  = (var1 + var2) / 5120.0; \n return T; \n} \n// Returns pressure in Pa as double. Output value of \u201c96386.2\u201d equals 96386.2 Pa = 963.862 hPa \ndouble BME280_compensate_P_double(BME280_S32_t adc_P) \n{ \n double var1, var2, p; \n var1 = ((double)t_fine/2.0) \u2013 64000.0; \n var2 = var1 * var1 * ((double)dig_P6) / 32768.0; \n var2 = var2 + var1 * ((double)dig_P5) * 2.0; \n var2 = (var2/4.0)+(((double)dig_P4) * 65536.0); \n var1 = (((double)dig_P3) * var1 * var1 / 524288.0 + ((double)dig_P2) * var1) / 524288.0; \n var1 = (1.0 + var1 / 32768.0)*((double)dig_P1); \n if (var1 == 0.0) \n { \n  return 0; // avoid exception caused by division by zero \n } \n p = 1048576.0 \u2013 (double)adc_P; \n p = (p \u2013 (var2 / 4096.0)) * 6250.0 / var1; \n var1 = ((double)dig_P9) * p * p / 2147483648.0; \n var2 = p * ((double)dig_P8) / 32768.0; \n p = p + (var1 + var2 + ((double)dig_P7)) / 16.0; \n return p; \n} \n// Returns humidity in %rH as as double. Output value of \u201c46.332\u201d represents \n46.332 %rH \ndouble bme280_compensate_H_double(BME280_S32_t adc_H); \n{ \n double var_H; \n \n var_H = (((double)t_fine) \u2013 76800.0); \n var_H = (adc_H \u2013 (((double)dig_H4) * 64.0 + ((double)dig_H5) / 16384.0 * \nvar_H)) * (((double)dig_H2) / 65536.0 * (1.0 + ((double)dig_H6) / \n67108864.0 * var_H *  \n(1.0 + ((double)dig_H3) / 67108864.0 * var_H))); \n var_H = var_H * (1.0 \u2013 ((double)dig_H1) * var_H / 524288.0); \n  \n if (var_H > 100.0) \n  var_H = 100.0; \n else if (var_H < 0.0) \n  var_H = 0.0; \nreturn var_H; \n} "
+  },
+  {
+   "page": 49,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 50 | 60",
+   "chars": 2901
+  },
+  {
+   "page": 50,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 51 | 60",
+   "chars": 2303
+  },
+  {
+   "page": 51,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 52 | 60",
+   "chars": 1937
+  },
+  {
+   "page": 52,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 53 | 60",
+   "chars": 783
+  },
+  {
+   "page": 53,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 54 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n10.2 Function return codes \nA list of the possible function return codes can be found below.  \n \n 0 Sensor OK \n 10 Communication error or wrong device found \n 20 Trimming data out of bound \n 30 Temperature bond wire failure or MEMS defect \n 31 Pressure bond wire failure or MEMS defect \n 40 Implausible temperature (default limits: 0\u202640\u00b0C) \n 41 Implausible pressure (default limits: 900\u20261100 hPa) \n 42 Implausible humidity (default limits: 20...80 %rH) \n \nError testing is done in ascending error code sequence. This means that if e.g. a trimming data error is \ndetected (code 20), the temperature plausibility (code 40) is not checked anymore. Instead, error code \n20 is returned and no others tests are performed.  \n \n "
+  },
+  {
+   "page": 54,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 55 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n10.3 Usage \n10.3.1 File and function pointer integration \n\uf084 Include bme280.c in your programming environment and add the path to the compiler.  \n\uf084 Include bme280_selftest.c in your programming environment and add the path to the compiler.  \n\uf084 Modify the lines with read/write function pointer to match your system. Sample functions are given \nin chapter 10.5: \n \nbme280.bus_read   = BME280_I2C_bus_read;  // must be defined by customer \nbme280.bus_write  = BME280_I2C_bus_write; // must be defined by customer \nbme280.delay_msec = BME280_delay_msec;    // must be defined by customer \n \n\uf084 If necessary, adapt the measurement plausibility limits in  bme280_selftest.h. The default limits are \n0\u202640\u00b0C for temperature and 900\u20261100 hPa for pressure measurement.  \n\uf084 If you are using I\u00b2C communication with the address 0x77 (SDO pin high), then change the \nBME280.h line \n#define BME280_I2C_ADDRESS BME280_I2C_ADDRESS1 \ninto \n#define BME280_I2C_ADDRESS BME280_I2C_ADDRESS2 \n \n10.3.2 Function call \nCall the self test function using: \n \nunsigned char testresult;  \ntestresult = bme280_selftest(); \n \nA test result of 0 indicates no error. The other return codes are detailed in chapter 10.2.  \n \n10.3.3 Test time and interface requirements \nThe self test uses a total wait time of 9 milliseconds. Of this, 2 milliseconds are used as wait time for \nsoft reset and 7 milliseconds are used as wait time for conversion. The soft reset is performed in order \nto erase any possible old settings and could be omitted if the sensor is known to be in an untouched \nstate after power on.  \n \nIn the self test function, 4 write commands and 6 read commands are issued. In total, 4 bytes are \nwritten and 34 bytes are read. Assuming burst read is used, the following time duration can be \nexpected for communication including overhead: \n\uf084 6.0 ms for I\u00b2C at 100 kHz \n\uf084 1.5 ms for I\u00b2C at 400 kHz \n\uf084 0.5 ms for SPI at 1 MHz \n \nAssuming a 400 kHz I\u00b2C interface with burst reads, the total function run time therefore equals 10.5 \nmilliseconds.  \n \n \n "
+  },
+  {
+   "page": 55,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 56 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n10.4 Function explanation \n10.4.1 Communication test \nThis function attempts to read the Chip ID. If it is correct, a functioning communication is assumed. \nNote that the write function functionality is not explicitly tested.  \n10.4.2 Bond wire test \nA pressure and temperature measurement is performed and uncompensated pressure and \ntemperature values are read out. If the measurement results are clipped to the respective minimum or \nmaximum ADC values, this is usually caused by defective bond wires. However, a defective sensing \nelement could also cause this test to fail.  \nPlease note that some combinations of bond wire or sensing element defects do not result in clipping \nof the measurement value and will therefore not be detected with this test. These cases can be \ndetected by the plausibility test instead.  \n10.4.3 Measurement plausibility test \nThe pressure and temperature values read out previously are compensated using the read out \ncompensation parameters. The compensated temperature and pressure is compared against \nplausibility limits set in bme280_selftest.h, which must be set to match the customer production \nenvironment. Please use the the plausibility limits as described in chapter 3. \n \n \n "
+  },
+  {
+   "page": 56,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 57 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n10.5 Sample read, write and delay function \nBelow some samples read, write and delay functions are given. These are platform dependant and \nshould only give an idea of how the functions could look.  \n \nsigned char BME280_I2C_bus_read(unsigned char device_addr, unsigned char \nreg_addr, unsigned char *reg_data, unsigned char cnt) \n{ \n int iError=0; \n unsigned char array[I2C_BUFFER_LEN]; \n unsigned char stringpos; \n array[0] = reg_addr; \n iError = I2C_write_read_string(I2C0, device_addr, array, array, 1, cnt); \n for(stringpos=0;stringpos<cnt;stringpos++) \n { \n  *(reg_data + stringpos) = array[stringpos]; \n } \n return (signed char)iError; \n} \n \nsigned char BME280_I2C_bus_write(unsigned char device_addr, unsigned char \nreg_addr, unsigned char *reg_data, unsigned char cnt) \n{ \n int iError=0; \n unsigned char array[I2C_BUFFER_LEN]; \n unsigned char stringpos; \n array[0] = reg_addr; \n for(stringpos=0;stringpos<cnt;stringpos++) \n { \n  array[stringpos+1] = *(reg_data + stringpos); \n } \n iError = I2C_write_string(I2C0, device_addr, array, cnt+1); \n return (signed char)iError; \n} \n \nvoid BME280_delay_msec(BME280_U16_t msec) //delay in milliseconds \n{ \n BME280_U32_t counter; \n for (counter = 0; counter/2000 < msec; counter++); // 2000 counts = 1 \nmsec \n} \n \n "
+  },
+  {
+   "page": 57,
+   "text": " \n \nBosch Sensortec | BME280 Data sheet 58 | 60 \nModifications reserved | Data subject to change without notice  \n Document number: BST-BME280-DS001-23 Revision_1.23_012022 \n11. Legal disclaimer \n11.1 Engineering samples \nEngineering Samples are marked with an asterisk (*) , (E) or (e). Samples may vary from the valid \ntechnical specifications of the product series contained in this data sheet. They are therefore not \nintended or fit for resale to third parties or for use in end products. Their sole purpose is internal client \ntesting. The testing of an engineering sample may in no way replace the testing of a product series. \nBosch Sensortec assumes no liability for the use of engineering samples. The Purchaser shall indemnify \nBosch Sensortec from all claims arising from the use of engineering samples. \n \n11.2 Product use \n \nBosch Sensortec products are developed for the consumer goods industry. They may only be used \nwithin the parameters of this product data sheet. They are not fit for use in life- sustaining or safety -\ncritical systems. Safety-critical systems are those for which a malfunctio n is expected to lead to bodily \nharm, death or severe property damage. In addition, they shall not be used directly or indirectly for \nmilitary purposes (including but not limited to nuclear, chemical or biological proliferation of weapons or \ndevelopment of missile technology), nuclear power, deep sea or space applications (including but not \nlimited to satellite technology). \n \nBosch Sensortec products are released on the basis of  the legal and normative requirements relevant \nto the Bosch Sensortec product for use in the following geographical target market: BE, BG, DK, DE, \nEE, FI, FR, GR, IE, IT, HR, LV, LT, LU, MT, NL, AT, PL, PT, RO, SE, SK, SI, ES, CZ, HU, CY , US, CN, \nJP , KR, TW. If you need further information or have further requirements, please contact your local sales \ncontact.  \n \nThe resale and/or use of Bosch Sensortec products are at the purchaser \u2019s own risk and his own \nresponsibility. The examination of fitness for the intended use is the sole responsibility of the purchaser.  \n \nThe purchaser shall indemnify Bosch Sensortec from all third party claims arising from any product use \nnot covered by the parameters of this product data sheet or not approved by Bosch Sensortec and \nreimburse Bosch Sensortec for all costs in connection with such claims. \n \nThe purchaser accepts the responsibility to monitor the market for the purchased products, particularly \nwith regard to product safety, and to inform Bosch Sensortec without delay of all safety-critical incidents. \n \n11.3 Application examples and hints \nWith respect to any examples or hints given herein, any typical values stated herein and/or any \ninformation regarding the application of the device, Bosch Sensortec hereby disclaims any and all \nwarranties and liabilities of any kind, including without limitation warranties of non -infringement of \nintellectual property rights or copyrights of any third party. The information given in this document shall \nin no event be regarded as a guarantee of conditions or characteristics. They are provided for illustrative \npurposes only and no evaluation regarding infringement of intellectual property rights or copyrights or \nregarding functionality, performance or error has been made. \n "
+  },
+  {
+   "page": 58,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 59 | 60",
+   "chars": 868
+  },
+  {
+   "page": 59,
+   "first_line": "Bosch Sensortec | BME280 Data sheet 60 | 60",
+   "chars": 395
+  }
+ ],
+ "schema": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hwde datasheet extraction",
+  "type": "object",
+  "required": [
+   "mpn",
+   "pinout"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "mpn": {
+    "type": "string",
+    "minLength": 1
+   },
+   "lcsc": {
+    "type": "string"
+   },
+   "package": {
+    "type": "string"
+   },
+   "description": {
+    "type": "string"
+   },
+   "pinout": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pin",
+      "name",
+      "type"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pin": {
+       "type": "string",
+       "minLength": 1
+      },
+      "name": {
+       "type": "string",
+       "minLength": 1
+      },
+      "type": {
+       "type": "string",
+       "enum": [
+        "power_in",
+        "power_out",
+        "ground",
+        "input",
+        "output",
+        "bidirectional",
+        "passive",
+        "analog",
+        "clock",
+        "nc",
+        "open_collector",
+        "tristate",
+        "unspecified"
+       ]
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "decoupling": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "value": {
+       "type": "string",
+       "minLength": 1
+      },
+      "placement": {
+       "type": "string"
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "land_pattern": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "pad_count"
+    ],
+    "properties": {
+     "package": {
+      "type": "string"
+     },
+     "pad_count": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "pitch_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "pad_size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "row_spacing_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "drill_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "annulus_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "courtyard_excess_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "courtyard_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "wire_entry_local": {
+      "type": "string",
+      "enum": [
+       "+X",
+       "-X",
+       "+Y",
+       "-Y"
+      ],
+      "description": "connector wire/cable entry direction in footprint-local coords (KiCad y down)"
+     },
+     "pin1": {
+      "type": "string",
+      "description": "pad number that is pin 1 (default '1')"
+     },
+     "notes": {
+      "type": "string"
+     }
+    }
+   },
+   "exposed_pad": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "present": {
+      "type": "boolean"
+     },
+     "connect_to": {
+      "type": "string"
+     },
+     "thermal_vias": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "present"
+    ]
+   },
+   "layout_notes": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "abs_max": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "param",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "param": {
+       "type": "string"
+      },
+      "value": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "unit": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "pin_ratings": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "kind": {
+       "type": "string",
+       "enum": [
+        "voltage",
+        "current"
+       ]
+      },
+      "level": {
+       "type": "string",
+       "enum": [
+        "abs_max",
+        "recommended"
+       ]
+      },
+      "min": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "max": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "ref": {
+       "type": "string"
+      },
+      "source": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "source_pdf": {
+    "type": "string"
+   },
+   "layout_implications": {
+    "type": "object"
+   }
+  }
+ },
+ "template": {
+  "mpn": "",
+  "lcsc": "",
+  "package": "",
+  "pinout": [
+   {
+    "pin": "1",
+    "name": "",
+    "type": "unspecified"
+   }
+  ],
+  "decoupling": [],
+  "land_pattern": {
+   "pad_count": 0
+  },
+  "layout_notes": [],
+  "abs_max": []
+ },
+ "note": "Fill the template from text_by_page and the PDF pages, then re-run with --validate. Pages without schema-relevant keywords are stubs {page, first_line, chars} - read those PDF pages directly if needed, or re-run with --full-text. If text_chars is ~0 the PDF is image-only; read the rendered pages directly."
+}

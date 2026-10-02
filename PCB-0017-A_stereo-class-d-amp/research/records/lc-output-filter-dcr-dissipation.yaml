@@ -1,0 +1,49 @@
+id: lc-output-filter-dcr-dissipation
+classes: [thermal]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  p_dcr_per_channel: "2 x I_out^2 x DCR (two inductors in series with a BTL load)"
+  idle_loss: "core loss at fpwm with the idle ripple current - compare inductors by Rp at the switching frequency"
+prose: >
+  DCR is a real dissipation line: P = I_out^2 x DCR (eq 14, p24), and "for
+  a BTL amplifier ... there are two inductors in series with the load, so
+  the DCR power loss for a single BTL channel is 2x the loss of just one
+  inductor". Fig 1-27 (p24) shows the inductor DCR share rising to about
+  2.5 W of a 21 W system loss at 200 W total output on a TPA3251 (2 x BTL
+  into 4 ohm, so 100 W per channel = 5 A rms, 7 A peak) - small in
+  fraction, but it sits in the inductor body, not the heatsinked IC. At
+  the 3 A / 66 mOhm point this is 0.59 W per inductor, 1.2 W per channel,
+  2.4 W for a stereo pair at full current, dissipated in four 7 mm bodies -
+  a number the thermal budget must carry alongside the IC's. Idle loss is
+  core loss, not DCR: it scales with the ripple current at fpwm, and
+  inductors of identical inductance differed by more than 3x in idle PVDD
+  power (Table 1-7, p23-24: 1.09 W vs 3.79 W), so a shielded ferrite part
+  with a high parallel Rp at the switching frequency is worth more than a
+  few mOhm of DCR. Derate Isat/Irms for the ambient the inductor will
+  actually see: Coilcraft rates Irms at 20 C and 40 C rise separately
+  (doc 1404, p1). Lower DCR also drops the load-current loss that makes the
+  AD-modulation LC "required" in the first place (7.3.13, p21).
+sources:
+  - {file: research/sources/slaa701b.pdf, page: 24, note: "1.4.5 DCR: eq 14 P = I^2 DCR, BTL channel pays it twice; Fig 1-27 TPA3251 loss vs total output, PVDD 30 V, 600 kHz, 2x BTL, 4 ohm, to 200 W total (100 W/ch = 5 A rms); Table 1-7 cont. idle power per inductor"}
+  - {file: research/sources/slaa701b.pdf, page: 23, note: "1.4.4 core loss model Fig 1-26 (Rs, L, Rp); Table 1-7 Rp, DF and idle PVDD power for 10 inductors measured at 600 kHz, 1 A"}
+  - {file: research/sources/tpa3116d2.pdf, page: 21, note: "7.3.13: an LC with cutoff below fsw diverts switching current from the load; the filter's resistance is what dissipates"}
+  - {file: research/sources/doc1404_classd.pdf, page: 1, note: "Coilcraft table: Irms specified at 20 C rise and 40 C rise (UA8014: 6.5 A / 9.0 A), DCR max per winding"}
+status: active
+origin: research:block-lc-output-filter-1
+level: topology
+envelope:
+  iout_a: {min: 1, max: 5}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with output current: the I^2 R framing is the whole rule and the
+  sourced numbers run from the 1 A idle measurement (Table 1-7, p23-24) to
+  the 2 x BTL / 4 ohm / 200 W total TPA3251 sweep (100 W per channel,
+  5 A rms, Fig 1-27 p24). Outside 1-5 A rms the rule still reads I^2 R but
+  no cited page measures it.
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: Fig 1-27 p24 (2x BTL, 4 ohm, 200 W total) now read as 100 W/ch = 5 A rms, 7 A peak - correct; envelope narrowed to iout_a 1-5 A, matching Table 1-7's 1 A (p23-24) and Fig 1-27's 5 A rms, with the note stating nothing outside is measured. Other claims confirmed on pass 1."}

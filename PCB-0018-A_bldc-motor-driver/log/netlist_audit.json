@@ -1,0 +1,174 @@
+{
+ "script": "netlist_audit",
+ "status": "pass",
+ "board": "PCB-0018-A_bldc-motor-driver.net",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "mode": "audit",
+ "nets": 117,
+ "components": 174,
+ "unconnected_pins": 22,
+ "constraint_nets_checked": 30,
+ "constraint_refs_checked": 71,
+ "pins_expected": 482,
+ "pins_connected": 482,
+ "decoupling_associations": 33,
+ "power": [
+  {
+   "net": "/power_in/VM_IN",
+   "nodes": 8,
+   "power_in": 1,
+   "power_out": 0
+  },
+  {
+   "net": "VM",
+   "nodes": 27,
+   "power_in": 1,
+   "power_out": 0
+  },
+  {
+   "net": "GND",
+   "nodes": 109,
+   "power_in": 12,
+   "power_out": 0
+  },
+  {
+   "net": "/PHASE_A",
+   "nodes": 11,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C301",
+    "C431",
+    "R421",
+    "R432",
+    "R510"
+   ]
+  },
+  {
+   "net": "/PHASE_B",
+   "nodes": 11,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C302",
+    "C433",
+    "R423",
+    "R434",
+    "R512"
+   ]
+  },
+  {
+   "net": "/PHASE_C",
+   "nodes": 11,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C303",
+    "C435",
+    "R425",
+    "R436",
+    "R514"
+   ]
+  },
+  {
+   "net": "/power_stage/LS_SRC_A",
+   "nodes": 7,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C432",
+    "NT401",
+    "R422"
+   ]
+  },
+  {
+   "net": "/power_stage/LS_SRC_B",
+   "nodes": 7,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C434",
+    "NT403",
+    "R424"
+   ]
+  },
+  {
+   "net": "/power_stage/LS_SRC_C",
+   "nodes": 7,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "C436",
+    "NT405",
+    "R426"
+   ]
+  },
+  {
+   "net": "+5V",
+   "nodes": 13,
+   "power_in": 2,
+   "power_out": 0
+  },
+  {
+   "net": "/regulators/BUCK_SW",
+   "nodes": 4,
+   "power_in": 0,
+   "power_out": 1,
+   "passive_fed_via": [
+    "C201",
+    "L201",
+    "R206"
+   ]
+  },
+  {
+   "net": "+12V",
+   "nodes": 7,
+   "power_in": 1,
+   "power_out": 0
+  },
+  {
+   "net": "/regulators/BOOST_SW",
+   "nodes": 3,
+   "power_in": 0,
+   "power_out": 1,
+   "passive_fed_via": [
+    "D201",
+    "L202"
+   ]
+  },
+  {
+   "net": "+3V3",
+   "nodes": 25,
+   "power_in": 7,
+   "power_out": 1
+  },
+  {
+   "net": "/io/CTL_5V",
+   "nodes": 2,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "F701"
+   ]
+  },
+  {
+   "net": "/io/SEN_5V",
+   "nodes": 2,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "F702"
+   ]
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T20:40:24+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/kicad/PCB-0018-A_bldc-motor-driver.net",
+ "input_digest": "netlist_canonical:7e8ebcc480c52871e1e18fcecd774aba387eb511dfb0ccd105b1baf1517ff7a9"
+}

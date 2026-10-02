@@ -1,0 +1,204 @@
+{
+ "script": "route_critical",
+ "status": "pass",
+ "board": "PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "facts": {
+  "routed": [
+   {
+    "kind": "diff",
+    "nets": [
+     "/ISNS_A_P",
+     "/ISNS_A_N"
+    ],
+    "impedance_ohm": 100,
+    "width_mm": 0.2172,
+    "gap_mm": 0.05,
+    "impedance_width_mm": 0.2172,
+    "ladder_rung": 1,
+    "stub_pads_detached": [
+     [
+      "NT401",
+      "/ISNS_A_P"
+     ],
+     [
+      "NT402",
+      "/ISNS_A_N"
+     ]
+    ],
+    "layers_used": [],
+    "krt": {},
+    "constraint": {
+     "max_skew_mm": 3,
+     "max_uncoupled_mm": 3
+    }
+   },
+   {
+    "kind": "diff",
+    "nets": [
+     "/ISNS_B_P",
+     "/ISNS_B_N"
+    ],
+    "impedance_ohm": 100,
+    "width_mm": 0.2172,
+    "gap_mm": 0.05,
+    "impedance_width_mm": 0.2172,
+    "ladder_rung": 1,
+    "stub_pads_detached": [
+     [
+      "NT403",
+      "/ISNS_B_P"
+     ],
+     [
+      "NT404",
+      "/ISNS_B_N"
+     ]
+    ],
+    "layers_used": [],
+    "krt": {},
+    "constraint": {
+     "max_skew_mm": 3,
+     "max_uncoupled_mm": 3
+    }
+   },
+   {
+    "kind": "diff",
+    "nets": [
+     "/ISNS_C_P",
+     "/ISNS_C_N"
+    ],
+    "impedance_ohm": 100,
+    "width_mm": 0.2172,
+    "gap_mm": 0.05,
+    "impedance_width_mm": 0.2172,
+    "ladder_rung": 1,
+    "stub_pads_detached": [
+     [
+      "NT405",
+      "/ISNS_C_P"
+     ],
+     [
+      "NT406",
+      "/ISNS_C_N"
+     ]
+    ],
+    "layers_used": [],
+    "krt": {},
+    "constraint": {
+     "max_skew_mm": 3,
+     "max_uncoupled_mm": 3
+    }
+   }
+  ],
+  "skipped": [
+   {
+    "kind": "power",
+    "count": 16,
+    "why": "not in --only/plan"
+   }
+  ],
+  "drc_delta": {
+   "before": {
+    "clearance": 24,
+    "silk_overlap": 199,
+    "silk_over_copper": 119,
+    "lib_footprint_issues": 174,
+    "silk_edge_clearance": 3,
+    "unconnected_items": 342
+   },
+   "after": {
+    "clearance": 24,
+    "silk_overlap": 199,
+    "silk_over_copper": 119,
+    "lib_footprint_issues": 174,
+    "silk_edge_clearance": 3,
+    "unconnected_items": 342
+   },
+   "new": {},
+   "new_warnings": {}
+  },
+  "diffpair_check": "pass",
+  "diffpair_facts": [
+   {
+    "pair": [
+     "/ISNS_A_P",
+     "/ISNS_A_N"
+    ],
+    "routed": false,
+    "length_p_mm": 0.0,
+    "length_n_mm": 0.0,
+    "note": "pair not fully routed; coupling not evaluated"
+   },
+   {
+    "pair": [
+     "/ISNS_B_P",
+     "/ISNS_B_N"
+    ],
+    "routed": false,
+    "length_p_mm": 0.0,
+    "length_n_mm": 0.0,
+    "note": "pair not fully routed; coupling not evaluated"
+   },
+   {
+    "pair": [
+     "/ISNS_C_P",
+     "/ISNS_C_N"
+    ],
+    "routed": false,
+    "length_p_mm": 0.0,
+    "length_n_mm": 0.0,
+    "note": "pair not fully routed; coupling not evaluated"
+   }
+  ],
+  "floors": {
+   "clearance": 0.2,
+   "track_width": 0.1524,
+   "via_diameter": 0.45,
+   "via_drill": 0.2,
+   "edge_clearance": 0.3
+  },
+  "net_clearances": {
+   "+12V": 0.1016,
+   "+3V3": 0.1016,
+   "+5V": 0.1016,
+   "/GHA": 0.5,
+   "/GHB": 0.5,
+   "/GHC": 0.5,
+   "/ISNS_A_N": 0.1016,
+   "/ISNS_A_P": 0.1016,
+   "/ISNS_B_N": 0.1016,
+   "/ISNS_B_P": 0.1016,
+   "/ISNS_C_N": 0.1016,
+   "/ISNS_C_P": 0.1016,
+   "/PHASE_A": 0.4,
+   "/PHASE_B": 0.4,
+   "/PHASE_C": 0.4,
+   "/gate_driver/BSTA": 0.5,
+   "/gate_driver/BSTB": 0.5,
+   "/gate_driver/BSTC": 0.5,
+   "/io/CTL_5V": 0.1016,
+   "/io/SEN_5V": 0.1016,
+   "/power_in/VM_IN": 0.4,
+   "/power_stage/LS_SRC_A": 0.2,
+   "/power_stage/LS_SRC_B": 0.2,
+   "/power_stage/LS_SRC_C": 0.2,
+   "/regulators/BOOST_SW": 0.1016,
+   "/regulators/BST5V": 0.4,
+   "/regulators/BUCK_SW": 0.4,
+   "GND": 0.2,
+   "VM": 0.4
+  },
+  "board_updated": true,
+  "work_dir": "rc-diff"
+ },
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T23:43:22+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:225d0e2cc7dc9822c56ef4a172a33549048392bc29e12d3ee7cdb2b71b864d9d"
+}

@@ -1,0 +1,437 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-27T06:01:31",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        },
+        {
+            "description": "Footprint not found in libraries",
+            "key": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint doesn't match copy in library",
+            "key": "lib_footprint_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "PCB-0017-A_astra-amp.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 8.799
+                    },
+                    "uuid": "d0df800d-1478-4890-9d5a-eb6708296314"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 8.799
+                    },
+                    "uuid": "d0df800d-1478-4890-9d5a-eb6708296314"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/SPK_L_P] on F.Cu, length 4.0800 mm",
+                    "pos": {
+                        "x": 43.58,
+                        "y": 40.95
+                    },
+                    "uuid": "b26b86a5-75db-43a4-83d0-09e3dcd6df7f"
+                },
+                {
+                    "description": "Pad 2 [GND] of C19 on F.Cu",
+                    "pos": {
+                        "x": 41.5,
+                        "y": 41.75
+                    },
+                    "uuid": "288b147e-bbb9-4b61-9151-e708b3a3654b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Clearance violation (rule 'aiee_clearance_floor' clearance 0.1524 mm; actual 0.0476 mm)",
+            "items": [
+                {
+                    "description": "Track [/BSNR] on F.Cu, length 1.1800 mm",
+                    "pos": {
+                        "x": 29.72,
+                        "y": 26.02
+                    },
+                    "uuid": "1c8e36a1-889c-4f88-9ed7-d604d1752820"
+                },
+                {
+                    "description": "Track [/OUTNR] on F.Cu, length 1.3859 mm",
+                    "pos": {
+                        "x": 30.9,
+                        "y": 25.37
+                    },
+                    "uuid": "75f8ed99-845c-4e05-a92f-97c8e89cef71"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'aiee_clearance_floor' clearance 0.1524 mm; actual 0.0476 mm)",
+            "items": [
+                {
+                    "description": "Track [/BSNR] on F.Cu, length 0.2400 mm",
+                    "pos": {
+                        "x": 30.9,
+                        "y": 26.02
+                    },
+                    "uuid": "01c87af6-fe59-4404-856c-2730006d6cb3"
+                },
+                {
+                    "description": "Track [/OUTNR] on F.Cu, length 1.3859 mm",
+                    "pos": {
+                        "x": 30.9,
+                        "y": 25.37
+                    },
+                    "uuid": "75f8ed99-845c-4e05-a92f-97c8e89cef71"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /SPK_L_P)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C19 on F.Cu",
+                    "pos": {
+                        "x": 41.5,
+                        "y": 41.75
+                    },
+                    "uuid": "288b147e-bbb9-4b61-9151-e708b3a3654b"
+                },
+                {
+                    "description": "Track [/SPK_L_P] on F.Cu, length 4.0800 mm",
+                    "pos": {
+                        "x": 43.58,
+                        "y": 40.95
+                    },
+                    "uuid": "b26b86a5-75db-43a4-83d0-09e3dcd6df7f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation (rule 'aiee_clearance_floor' clearance 0.1524 mm; actual 0.0880 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C14 on F.Cu",
+                    "pos": {
+                        "x": 33.87,
+                        "y": 41.0
+                    },
+                    "uuid": "9343c18a-0df2-48e1-a7eb-977170cbee45"
+                },
+                {
+                    "description": "Track [/OUTNL] on F.Cu, length 10.1500 mm",
+                    "pos": {
+                        "x": 35.4,
+                        "y": 40.0
+                    },
+                    "uuid": "ea456265-e8d3-4913-85cf-98381abf066b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'aiee_clearance_floor' clearance 0.1524 mm; actual 0.0880 mm)",
+            "items": [
+                {
+                    "description": "Track [/OUTNL] on F.Cu, length 10.7500 mm",
+                    "pos": {
+                        "x": 35.4,
+                        "y": 29.25
+                    },
+                    "uuid": "1e27abf7-e26b-406c-829b-8eaf9be58566"
+                },
+                {
+                    "description": "Pad 2 [GND] of C14 on F.Cu",
+                    "pos": {
+                        "x": 33.87,
+                        "y": 41.0
+                    },
+                    "uuid": "9343c18a-0df2-48e1-a7eb-977170cbee45"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of C24",
+                    "pos": {
+                        "x": 51.0,
+                        "y": 41.055
+                    },
+                    "uuid": "8378fba3-2883-4727-bb22-c5d4de1658b3"
+                },
+                {
+                    "description": "Segment of L2 on F.Silkscreen",
+                    "pos": {
+                        "x": 46.52,
+                        "y": 40.78
+                    },
+                    "uuid": "98d29d04-776f-4ed7-9eb6-b16ae22d8090"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of C9",
+                    "pos": {
+                        "x": 34.7,
+                        "y": 33.3
+                    },
+                    "uuid": "736fe727-aee6-41bd-ac40-33d3d9e65395"
+                },
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 33.05
+                    },
+                    "uuid": "c7c38d71-8d38-4f72-8c89-20abe256f512"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C18",
+                    "pos": {
+                        "x": 35.4,
+                        "y": 22.1
+                    },
+                    "uuid": "c95881fa-3c49-4db6-b488-d186fa22151a"
+                },
+                {
+                    "description": "Pad 2 [GND] of C12 on F.Cu",
+                    "pos": {
+                        "x": 34.65,
+                        "y": 20.2
+                    },
+                    "uuid": "392eabac-cbd6-40b5-8411-dd0f46ed8c7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C24",
+                    "pos": {
+                        "x": 51.0,
+                        "y": 41.055
+                    },
+                    "uuid": "8378fba3-2883-4727-bb22-c5d4de1658b3"
+                },
+                {
+                    "description": "Pad 1 [/SPK_L_N] of R5 on F.Cu",
+                    "pos": {
+                        "x": 49.75,
+                        "y": 41.45
+                    },
+                    "uuid": "b8e0d671-15ca-402c-8a78-a2fe459e1483"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C24",
+                    "pos": {
+                        "x": 51.0,
+                        "y": 41.055
+                    },
+                    "uuid": "8378fba3-2883-4727-bb22-c5d4de1658b3"
+                },
+                {
+                    "description": "Pad 2 [/ZL_N] of R5 on F.Cu",
+                    "pos": {
+                        "x": 51.25,
+                        "y": 41.45
+                    },
+                    "uuid": "a8e45dbb-630e-4dde-b622-f6fe26248a9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 33.05
+                    },
+                    "uuid": "c7c38d71-8d38-4f72-8c89-20abe256f512"
+                },
+                {
+                    "description": "Pad 2 [GND] of C11 on F.Cu",
+                    "pos": {
+                        "x": 34.15,
+                        "y": 34.6
+                    },
+                    "uuid": "45576d84-c399-4072-a31c-1a07c55b637a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 33.05
+                    },
+                    "uuid": "c7c38d71-8d38-4f72-8c89-20abe256f512"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 32.9,
+                        "y": 33.1
+                    },
+                    "uuid": "2c427954-a245-497f-ab20-166c389d4e4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 33.05
+                    },
+                    "uuid": "c7c38d71-8d38-4f72-8c89-20abe256f512"
+                },
+                {
+                    "description": "Pad 1 [/BSNL] of C15 on F.Cu",
+                    "pos": {
+                        "x": 32.8,
+                        "y": 31.25
+                    },
+                    "uuid": "ed525edd-c218-429a-a28e-73270bbe77df"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L3 on F.Silkscreen",
+                    "pos": {
+                        "x": 36.92,
+                        "y": 25.78
+                    },
+                    "uuid": "d15f50cb-cfbe-4ab5-8e0e-4910f66d2595"
+                },
+                {
+                    "description": "Pad 2 [/OUTNR] of C17 on F.Cu",
+                    "pos": {
+                        "x": 38.4,
+                        "y": 26.35
+                    },
+                    "uuid": "26c3efa6-ddbb-4512-aef9-18d9cabc46ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 33.05
+                    },
+                    "uuid": "c7c38d71-8d38-4f72-8c89-20abe256f512"
+                },
+                {
+                    "description": "Pad 2 [GND] of C9 on F.Cu",
+                    "pos": {
+                        "x": 32.9,
+                        "y": 34.6
+                    },
+                    "uuid": "6dd7d0c4-6a01-47d2-b77f-4b9aecbcdae1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

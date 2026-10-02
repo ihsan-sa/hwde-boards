@@ -1,0 +1,142 @@
+{
+ "script": "check_decoupling",
+ "status": "violations",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check_decoupling": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    17.4,
+    21.7
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C4"
+   ],
+   "msg": "C4 ground pad is 5.1 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C4 ground pad is 5.1 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      17.4,
+      21.7
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 5.2,
+   "euclid_mm": 3.8269,
+   "loop_nh": 8.2334,
+   "vias_in_loop": 1,
+   "pin": "U3.5"
+  }
+ ],
+ "checked": [
+  {
+   "cap": "C1",
+   "pin": "U2.4",
+   "rail": "VBUS",
+   "class": "bulk",
+   "manhattan_mm": 3.5,
+   "euclid_mm": 2.4789,
+   "gnd_leg_mm": 2.709,
+   "vias_in_loop": 1,
+   "loop_nh": 5.3463
+  },
+  {
+   "cap": "C2",
+   "pin": "U2.3",
+   "rail": "VBAT",
+   "class": "bulk",
+   "manhattan_mm": 3.8,
+   "euclid_mm": 3.3801,
+   "gnd_leg_mm": 1.7425,
+   "vias_in_loop": 1,
+   "loop_nh": 4.8798
+  },
+  {
+   "cap": "C3",
+   "pin": "U3.1",
+   "rail": "VSYS",
+   "class": "bulk",
+   "manhattan_mm": 5.4,
+   "euclid_mm": 4.9704,
+   "gnd_leg_mm": 3.9478,
+   "vias_in_loop": 1,
+   "loop_nh": 7.5435
+  },
+  {
+   "cap": "C4",
+   "pin": "U3.5",
+   "rail": "+3V3",
+   "class": "bulk",
+   "manhattan_mm": 5.2,
+   "euclid_mm": 3.8269,
+   "gnd_leg_mm": 5.1335,
+   "vias_in_loop": 1,
+   "loop_nh": 8.2334
+  },
+  {
+   "cap": "C10",
+   "pin": "U1.3",
+   "rail": "+3V3",
+   "class": "bulk",
+   "manhattan_mm": 3.6,
+   "euclid_mm": 3.2249,
+   "gnd_leg_mm": 0.3808,
+   "vias_in_loop": 1,
+   "loop_nh": 3.7866
+  },
+  {
+   "cap": "C11",
+   "pin": "U1.3",
+   "rail": "+3V3",
+   "class": "mid",
+   "manhattan_mm": 1.8,
+   "euclid_mm": 1.5297,
+   "gnd_leg_mm": 1.2021,
+   "vias_in_loop": 1,
+   "loop_nh": 3.1015
+  },
+  {
+   "cap": "C13",
+   "pin": "U5.8",
+   "rail": "+3V3",
+   "class": "mid",
+   "manhattan_mm": 5.84,
+   "euclid_mm": 4.3836,
+   "gnd_leg_mm": 2.0359,
+   "vias_in_loop": 1,
+   "loop_nh": 6.5131
+  },
+  {
+   "cap": "C14",
+   "pin": "U5.6",
+   "rail": "+3V3",
+   "class": "mid",
+   "manhattan_mm": 2.64,
+   "euclid_mm": 2.1541,
+   "gnd_leg_mm": 2.5739,
+   "vias_in_loop": 1,
+   "loop_nh": 4.6497
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T12:52:33+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695"
+}

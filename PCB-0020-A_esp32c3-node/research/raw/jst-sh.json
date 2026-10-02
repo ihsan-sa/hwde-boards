@@ -1,0 +1,287 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "SM04B-SRSS-TB",
+ "total": 5,
+ "count": 3,
+ "results": [
+  {
+   "lcsc": "C160404",
+   "mpn": "SM04B-SRSS-TB(LF)(SN)",
+   "brand": "JST",
+   "description": "-25\u2103~+85\u2103 1 1A 1mm 1x4P 2.9mm 4 4.32mm 4P 50V 6mm Auxiliary Solder Pin Copper alloy PA SH Surface Mount, Right Angle Tin UL94V-0 White SMD,P=1mm,\u5367\u8d34 Wire To Board Connector ROHS",
+   "package": "SMD,P=1mm,Surface Mount\uff0cRight Angle",
+   "category": "Wire To Board Connector",
+   "type": "Extended",
+   "basic": false,
+   "stock": 35535,
+   "price": 0.261,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.261
+    },
+    {
+     "qty": 50,
+     "price": 0.2111
+    },
+    {
+     "qty": 150,
+     "price": 0.1868
+    },
+    {
+     "qty": 500,
+     "price": 0.165
+    },
+    {
+     "qty": 3000,
+     "price": 0.1546
+    },
+    {
+     "qty": 6000,
+     "price": 0.1511
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_JST-SM04B-SRSS-TB-LF-SN_C160404.pdf",
+   "url": "https://www.lcsc.com/product-detail/wire-to-board-connector_jst-sm04b-srss-tb-lf-sn_C160404.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+85\u2103"
+    },
+    {
+     "name": "Number of Rows",
+     "value": "1"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Color",
+     "value": "White"
+    },
+    {
+     "name": "Current Rating",
+     "value": "1A"
+    },
+    {
+     "name": "Pins Structure",
+     "value": "1x4P"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Surface Mount, Right Angle"
+    },
+    {
+     "name": "Flame Retardant Rating",
+     "value": "UL94V-0"
+    },
+    {
+     "name": "Y-Width of Bottom Edge on Board",
+     "value": "4.32mm"
+    },
+    {
+     "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+     "value": "6mm"
+    },
+    {
+     "name": "Reference Series",
+     "value": "SH"
+    },
+    {
+     "name": "Contact Plating",
+     "value": "Tin"
+    },
+    {
+     "name": "Number of Pins",
+     "value": "4P"
+    },
+    {
+     "name": "Pitch",
+     "value": "1mm"
+    },
+    {
+     "name": "Contact Material",
+     "value": "Copper alloy"
+    },
+    {
+     "name": "Supplementary Features",
+     "value": "Auxiliary Solder Pin"
+    },
+    {
+     "name": "Z-Height of the Board",
+     "value": "2.9mm"
+    },
+    {
+     "name": "Plastic Material",
+     "value": "PA"
+    },
+    {
+     "name": "Number of PINs Per Row",
+     "value": "4"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C51940130",
+   "mpn": "XY-SM04B-SRSS-TB",
+   "brand": "XYECONN",
+   "description": "-25\u2103~+85\u2103 1 1A 1mm 1x4P 4 4P 50V Brass LCP Surface Mount, Right Angle Tin UL94V-0 SMD,P=1mm,\u5367\u8d34 Wire To Board Connector ROHS",
+   "package": "SMD,P=1mm,Surface Mount\uff0cRight Angle",
+   "category": "Wire To Board Connector",
+   "type": "Extended",
+   "basic": false,
+   "stock": 18731,
+   "price": 0.0391,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0391
+    },
+    {
+     "qty": 200,
+     "price": 0.0306
+    },
+    {
+     "qty": 600,
+     "price": 0.0261
+    },
+    {
+     "qty": 2000,
+     "price": 0.0233
+    },
+    {
+     "qty": 10000,
+     "price": 0.0209
+    },
+    {
+     "qty": 20000,
+     "price": 0.0196
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+85\u2103"
+    },
+    {
+     "name": "Number of Rows",
+     "value": "1"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Current Rating",
+     "value": "1A"
+    },
+    {
+     "name": "Pins Structure",
+     "value": "1x4P"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Surface Mount, Right Angle"
+    },
+    {
+     "name": "Flame Retardant Rating",
+     "value": "UL94V-0"
+    },
+    {
+     "name": "Y-Width of Bottom Edge on Board",
+     "value": "5.01mm"
+    },
+    {
+     "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+     "value": "6.2mm"
+    },
+    {
+     "name": "Contact Plating",
+     "value": "Tin"
+    },
+    {
+     "name": "Number of Pins",
+     "value": "4P"
+    },
+    {
+     "name": "Contact Material",
+     "value": "Brass"
+    },
+    {
+     "name": "Pitch",
+     "value": "1mm"
+    },
+    {
+     "name": "Supplementary Features",
+     "value": "Auxiliary Solder Pin"
+    },
+    {
+     "name": "Z-Height of the Board",
+     "value": "2.9mm"
+    },
+    {
+     "name": "Plastic Material",
+     "value": "LCP"
+    },
+    {
+     "name": "Number of PINs Per Row",
+     "value": "4"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C28867426",
+   "mpn": "SM04B-SRSS-TB(LF)(SN)(P)",
+   "brand": "JST",
+   "description": "- Lack of specifications ROHS",
+   "package": "-",
+   "category": "Lack of specifications",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 1.4501,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.4501
+    },
+    {
+     "qty": 10,
+     "price": 1.4501
+    },
+    {
+     "qty": 30,
+     "price": 1.4501
+    },
+    {
+     "qty": 200,
+     "price": 0.5788
+    },
+    {
+     "qty": 500,
+     "price": 0.5593
+    },
+    {
+     "qty": 1000,
+     "price": 0.5495
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 2
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 2
+}

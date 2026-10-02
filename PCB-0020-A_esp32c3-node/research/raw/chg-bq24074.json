@@ -1,0 +1,264 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "BQ24074",
+ "total": 4,
+ "count": 3,
+ "results": [
+  {
+   "lcsc": "C54313",
+   "mpn": "BQ24074RGTR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 1 1.5A 4.2V 4.35V~10.2V 6.5uA Charging IC Lithium Battery Not supported Support QFN-16-EP(3x3) Battery Management ROHS",
+   "package": "QFN-16-EP(3x3)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 415,
+   "price": 2.5036,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.5036
+    },
+    {
+     "qty": 10,
+     "price": 2.1735
+    },
+    {
+     "qty": 30,
+     "price": 1.9687
+    },
+    {
+     "qty": 100,
+     "price": 1.7574
+    },
+    {
+     "qty": 500,
+     "price": 1.5038
+    },
+    {
+     "qty": 1000,
+     "price": 1.4631
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809192125_Texas-Instruments-BQ24074RGTR_C54313.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_texas-instruments-bq24074rgtr_C54313.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "6.5uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.35V~10.2V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.5A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2861252",
+   "mpn": "BQ24074RGTT",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 1 1.5A 4.2V 4.35V~10.5V 6.5uA Charging IC Lithium Battery Support Support VQFN-16-EP(3x3) Battery Management ROHS",
+   "package": "VQFN-16-EP(3x3)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 105,
+   "price": 3.7976,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.7976
+    },
+    {
+     "qty": 10,
+     "price": 3.2611
+    },
+    {
+     "qty": 30,
+     "price": 2.9409
+    },
+    {
+     "qty": 250,
+     "price": 2.619
+    },
+    {
+     "qty": 500,
+     "price": 2.4694
+    },
+    {
+     "qty": 1000,
+     "price": 2.4028
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010930_Texas-Instruments-BQ24074RGTT_C2861252.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_texas-instruments-bq24074rgtt_C2861252.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "6.5uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.35V~10.5V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.5A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C3682481",
+   "mpn": "BQ24074RGTRG4",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 1 1.5A 4.2V 4.35V~10.5V 6.5uA Charging IC Lithium Battery Support Support VQFN-16(3x3) Battery Management ROHS",
+   "package": "VQFN-16(3x3)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 1.4631,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.4631
+    },
+    {
+     "qty": 10,
+     "price": 1.4631
+    },
+    {
+     "qty": 12,
+     "price": 1.4631
+    },
+    {
+     "qty": 200,
+     "price": 0.5674
+    },
+    {
+     "qty": 500,
+     "price": 0.5479
+    },
+    {
+     "qty": 1000,
+     "price": 0.5365
+    }
+   ],
+   "min_qty": 7,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302282101_Texas-Instruments-BQ24074RGTRG4_C3682481.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_texas-instruments-bq24074rgtrg4_C3682481.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "6.5uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.35V~10.5V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.5A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 2
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 1
+}

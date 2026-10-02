@@ -1,0 +1,200 @@
+{
+ "script": "gen_cost",
+ "board": "esp32c3-node",
+ "workspace": "PCB-0020-A_esp32c3-node",
+ "currency": "USD",
+ "prices": {
+  "source": "fitted to Claude Code cost-state session totals, 2026-09-24",
+  "verified": "2026-09-24",
+  "table": "reference/model_prices.yaml"
+ },
+ "rounds": [
+  {
+   "label": "design run",
+   "sessions": [
+    {
+     "id": "ca07b7b8-16c0-481d-a951-53e582ed9a48",
+     "transcript": "(session transcript, not published)",
+     "usd": 6.763,
+     "start": "2026-10-01T09:32:16Z",
+     "end": "2026-10-01T10:06:23Z",
+     "messages": 152,
+     "priced_usd": 4.0282,
+     "recorded_usd": 6.763,
+     "complete": true,
+     "by_step": {
+      "setup": 0.5989,
+      "P0": 0.5484,
+      "P1": 0.9542,
+      "P2": 1.9266
+     },
+     "unpriced_tokens": {
+      "claude-sonnet-5-5": 2529897
+     }
+    },
+    {
+     "id": "0f3d3232-304b-4148-ab7c-3064b9c54262",
+     "transcript": "(session transcript, not published)",
+     "usd": 6.6767,
+     "start": "2026-10-01T10:07:24Z",
+     "end": "2026-10-01T10:44:56Z",
+     "messages": 147,
+     "priced_usd": 4.0828,
+     "recorded_usd": 6.6767,
+     "complete": true,
+     "by_step": {
+      "P2": 0.79,
+      "P4": 1.9652,
+      "P6": 1.3276
+     },
+     "unpriced_tokens": {
+      "claude-sonnet-5-5": 255869
+     }
+    },
+    {
+     "id": "51f371d1-f909-4826-aa36-6b0bb4c9127b",
+     "transcript": "(session transcript, not published)",
+     "usd": 6.3127,
+     "start": "2026-10-01T10:45:50Z",
+     "end": "2026-10-01T11:40:49Z",
+     "messages": 182,
+     "priced_usd": 3.739,
+     "recorded_usd": 6.3127,
+     "complete": true,
+     "by_step": {
+      "P4": 0.4212,
+      "P6": 0.2169,
+      "P7": 3.1009
+     },
+     "unpriced_tokens": {
+      "claude-sonnet-5-5": 3379458
+     }
+    },
+    {
+     "id": "ecaa501b-b1da-4fae-9216-1da61a458bf5",
+     "transcript": "(session transcript, not published)",
+     "usd": 5.2281,
+     "start": "2026-10-01T11:41:37Z",
+     "end": "2026-10-01T12:39:19Z",
+     "messages": 96,
+     "priced_usd": 3.2015,
+     "recorded_usd": 5.2281,
+     "complete": true,
+     "by_step": {
+      "P7": 3.0526,
+      "P9": 0.1489
+     },
+     "unpriced_tokens": {
+      "claude-sonnet-5-5": 2000431
+     }
+    }
+   ],
+   "start": "2026-10-01T09:32:16Z",
+   "end": "2026-10-01T12:39:19Z",
+   "usd": 24.9805,
+   "priced_usd": 15.0515,
+   "recorded_usd": 24.9805,
+   "hwde_records_inside": 44,
+   "breakdown": true,
+   "breakdown_reason": null,
+   "loop": {
+    "logs": [
+     "(run log, not published)"
+    ],
+    "iterations": [
+     {
+      "iter": 1,
+      "start": "2026-10-01T09:32:12Z",
+      "end": "2026-10-01T10:06:49Z",
+      "rc": 0,
+      "cost_usd": 6.7630295999999985
+     },
+     {
+      "iter": 2,
+      "start": "2026-10-01T10:07:20Z",
+      "end": "2026-10-01T10:45:16Z",
+      "rc": 0,
+      "cost_usd": 6.676737200000001
+     },
+     {
+      "iter": 3,
+      "start": "2026-10-01T10:45:44Z",
+      "end": "2026-10-01T11:41:03Z",
+      "rc": 0,
+      "cost_usd": 6.312748900000003
+     },
+     {
+      "iter": 4,
+      "start": "2026-10-01T11:41:32Z",
+      "end": "2026-10-01T12:39:32Z",
+      "rc": 0,
+      "cost_usd": 5.228149599999997
+     }
+    ],
+    "logged_usd": 24.9807,
+    "unlogged_iterations": 0
+   }
+  }
+ ],
+ "notes": [],
+ "total_usd": 24.9805,
+ "recorded_usd": 24.9805,
+ "loop_logged_usd": 24.9807,
+ "by_step": [
+  {
+   "step": "setup",
+   "label": "Before the workspace (brief and skill read)",
+   "usd": 0.5989
+  },
+  {
+   "step": "P0",
+   "label": "Brief and intake",
+   "usd": 0.5484
+  },
+  {
+   "step": "P1",
+   "label": "Research",
+   "usd": 0.9542
+  },
+  {
+   "step": "P2",
+   "label": "Architecture",
+   "usd": 2.7166
+  },
+  {
+   "step": "P4",
+   "label": "Schematic",
+   "usd": 2.3864
+  },
+  {
+   "step": "P6",
+   "label": "Placement",
+   "usd": 1.5445
+  },
+  {
+   "step": "P7",
+   "label": "Routing",
+   "usd": 6.1535
+  },
+  {
+   "step": "P9",
+   "label": "DFM, order files and guide",
+   "usd": 0.1489
+  },
+  {
+   "step": "unattributed",
+   "label": "Not in the transcript (side calls)",
+   "usd": 9.929
+  }
+ ],
+ "breakdown": "full",
+ "breakdown_reason": null,
+ "shared": [],
+ "unpriced_tokens": {
+  "claude-sonnet-5-5": 8165655
+ },
+ "incomplete_sessions": [],
+ "missing": [],
+ "status": "pass",
+ "generated": "2026-10-01T12:52:07Z"
+}

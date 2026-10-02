@@ -1,0 +1,86 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "SS14",
+ "total": 1,
+ "count": 1,
+ "results": [
+  {
+   "lcsc": "C2480",
+   "mpn": "SS14",
+   "brand": "MDD(Microdiode Semiconductor)",
+   "description": "-55\u2103~+150\u2103 1A 25A 300uA@40V 40V 550mV@1A Independent SMA(DO-214AC) Schottky Diodes ROHS",
+   "package": "SMA(DO-214AC)",
+   "category": "Schottky Diodes",
+   "type": "Basic",
+   "basic": true,
+   "stock": 1172872,
+   "price": 0.0191,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0191
+    },
+    {
+     "qty": 500,
+     "price": 0.0151
+    },
+    {
+     "qty": 1500,
+     "price": 0.0134
+    },
+    {
+     "qty": 5000,
+     "price": 0.0096
+    },
+    {
+     "qty": 25000,
+     "price": 0.0091
+    },
+    {
+     "qty": 50000,
+     "price": 0.0087
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf",
+   "url": "https://www.lcsc.com/product-detail/schottky-diodes_mdd-microdiode-semiconductor-ss14_C2480.html",
+   "attributes": [
+    {
+     "name": "Voltage - Forward(Vf@If)",
+     "value": "550mV@1A"
+    },
+    {
+     "name": "Non-Repetitive Peak Forward Surge Current",
+     "value": "25A"
+    },
+    {
+     "name": "Voltage - DC Reverse(Vr)",
+     "value": "40V"
+    },
+    {
+     "name": "Operating Junction Temperature Range",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Diode Configuration",
+     "value": "Standalone"
+    },
+    {
+     "name": "Current - Rectified",
+     "value": "1A"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "300uA@40V"
+    }
+   ],
+   "rank": 0
+  }
+ ],
+ "filters": {
+  "type": "basic"
+ },
+ "placeholders_filtered": 0
+}

@@ -1,0 +1,50 @@
+id: half-bridge-inverter-thermal-copper-vias
+classes: [thermal, thermal-via]
+applies:
+  topologies: [half-bridge-inverter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  copper_oz: "1.5-2 where possible"
+  pours: "continuous from the thermal pad out to wide planes; do not break them"
+  via_drill_mil: 8
+  via_diameter_mil: 20
+  via_connect: "direct connect (no thermal relief), not tented/masked, grouped in arrays"
+prose: >
+  SLVA959B p8 Fig 2-1: the exposed pad is the dominant heat path; bond the pour
+  under it to the inner/bottom planes with vias directly under the pad. p9 Fig
+  2-2: a broken ground pour visibly heats the area around the part versus a
+  continuous one; Eq 1-3: a 1 cm x 1 cm plane goes from 71.4 C/W at 1 oz to 35.7
+  C/W at 2 oz. p9 Section 2.4 + p10 Fig 2-3: thermal-relief spokes raise the
+  temperature versus direct-connect vias; do not cover thermal vias with mask.
+  p10 Section 2.5: 8 mil drill / 20 mil diameter vias (5.73 C/W each through
+  1.56 mm FR-4) limit solder wicking; p11 Fig 2-4 shows a pad-via array plus
+  layer-bond arrays; Section 2.6 summarises: continuous pours, 1.5-2 oz, direct
+  connect, arrays. The pages speak of a driver IC's pad; the same via and pour
+  rules apply to a power FET's drain pad (inference). TIDA-010251 p2 table: 60 x
+  60 mm, 4-layer, 2 oz, 20 kHz, 0.79 mOhm SON5x6 FETs; p18 Fig 4-9/4-10: 18 V,
+  10 A RMS winding, 15% duty gives a hottest-FET reading of 49.3 C; Fig
+  4-11/4-12: 33 A RMS gives 97.1 C. Scale by the chosen FET's Rds(on).
+sources:
+  - {file: research/sources/slva959b.pdf, page: 8, note: "Section 2.1-2.2 + Fig 2-1 cross-section: thermal pad -> vias -> internal planes"}
+  - {file: research/sources/slva959b.pdf, page: 9, note: "Fig 2-2 broken vs continuous pour heat map; Eq 1-3 copper thickness 71.4 vs 35.7 C/W; Section 2.4 direct-connect vias"}
+  - {file: research/sources/slva959b.pdf, page: 10, note: "Fig 2-3 thermal relief vs direct-connect heat map; Section 2.5 8 mil hole / 20 mil via, Eq 4 5.73 C/W"}
+  - {file: research/sources/slva959b.pdf, page: 11, note: "Fig 2-4 thermal pad via array + layer bond arrays; Section 2.6 summary bullets"}
+  - {file: research/sources/tiduf36a.pdf, page: 2, note: "Table 1.1 key specs: 60 x 60 mm 4-layer 2-oz board, 33 A RMS, 20 kHz; text: CSD18510Q5B 0.79 mOhm SON5x6"}
+  - {file: research/sources/tiduf36a.pdf, page: 18, note: "Section 4.4.4 + Fig 4-10/4-12 thermal images: 10 A RMS -> 49.3 C max FET, 33 A RMS -> 97.1 C at 18 V, 15% duty"}
+status: active
+origin: research:block-half-bridge-inverter-1
+level: topology
+envelope:
+  iout_a: {min: 0, max: 33}
+  board_layers: {min: 4, max: 4}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with phase RMS current (conduction loss I^2 R) against copper area and
+  weight. The board evidence is a 4-layer 2 oz 60 x 60 mm board to 33 A
+  RMS; fewer layers or thinner copper lose the inner spreading planes, so the
+  bound is 4 layers.
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p8-11 SLVA959B thermal pad/via text and figures match exactly incl 71.4/35.7 C/W and 5.73 C/W via calc; p2,18 TIDUF36A key-spec table and 49.3C/97.1C thermal readings at 10A/33A match exactly"}

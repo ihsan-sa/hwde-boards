@@ -1,0 +1,87 @@
+{
+ "script": "check_silk",
+ "status": "violations",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 2,
+  "by_severity": {
+   "warning": 2
+  },
+  "by_source": {
+   "check_silk": 2
+  }
+ },
+ "violations": [
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    50.0,
+    40.175
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "U2"
+   ],
+   "msg": "refdes \"U2\" sits 2.30 mm beyond its own pads and 0.52 mm from R10 - reads as R10's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"U2\" sits 2.30 mm beyond its own pads and 0.52 mm from R10 - reads as R10's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      50.0,
+      40.175
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "U2",
+   "offset_mm": 2.3,
+   "nearest_ref": "R10",
+   "nearest_mm": 0.518
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    45.922,
+    40.0
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R10"
+   ],
+   "msg": "refdes \"R10\" sits 2.05 mm beyond its own pads and 0.47 mm from R11 - reads as R11's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R10\" sits 2.05 mm beyond its own pads and 0.47 mm from R11 - reads as R11's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      45.922,
+      40.0
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R10",
+   "offset_mm": 2.05,
+   "nearest_ref": "R11",
+   "nearest_mm": 0.471
+  }
+ ],
+ "checked": [
+  {
+   "silk_items": 288,
+   "texts": 33,
+   "graphics": 255,
+   "refdes_checked": 33
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T13:31:32+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f"
+}

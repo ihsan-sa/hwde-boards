@@ -1,0 +1,75 @@
+id: class-d-amp-2layer-pour-heat-spreader
+classes:
+- thermal
+applies:
+  topologies:
+  - class-d-amp
+  packages:
+  - HTSSOP-32-DAP
+  interfaces: []
+  parts:
+  - TPA3116D2
+  - TPA3118D2
+  - TPA3130D2
+rule:
+  enforced_by: null
+  rthja_2layer_evm_c_per_w: 22
+  psi_jb_c_per_w: 4.7
+  top_layer: GND pour, no traces cutting it around the IC
+  bottom_layer: GND pour
+  stitching: many vias under pad and along PCB edge
+prose: 'On a 2-layer board the copper pour IS the heatsink for a pad-down class-D amp: fill the top layer
+  with GND around the IC with wide open areas and no traces cutting the GND under/around the package,
+  fill the bottom layer with GND, and stitch the two with many vias under the pad and around the board
+  (vias along the PCB edge too). What was read: SLOS708 p29 Fig 40 (EVM top): ''lots of vias to connect
+  top and bottom'', ''wide open areas for thermal flow, no wires cutting the GND layer'', ''top layer
+  filled with GND''; p30 Fig 41 (bottom): solid GND plane, vias along the PCB edge, bottom filled with
+  GND. Numbers (p6 Table 6.4): TPA3118D2 DAP RthJA 22 C/W, psiJB 4.7, psiJT 0.3 - measured on the TPA3118D2EVM,
+  a 2-layer board with no heatsink (SLOU342A p7/p8 show only top and bottom copper, no sink in the BOM
+  p10); TPA3116D2 DAD 14 C/W but footnote 4 says that is WITH the EVM''s 14x25x50 mm sink (p31 Fig 42).
+  p1: TPA3118D2 ''can even run 2 x 30 W / 8 ohm without heat sink on a dual layer PCB''. p31: ''crest
+  factor of music and having airflow will lower the requirement''. SLMA002 p4 (2.3): for double-sided
+  PCBs the surface layers must remove the heat; make the land as large as needed; if copper is insufficient
+  attach the plane to a chassis member. Rule: Tj = Ta + Pdiss x 22 C/W holds only at EVM-class copper
+  area; a smaller board runs hotter and must be checked (psiJB 4.7 C/W lets a board probe verify it).
+  SLOU342A does not dimension the EVM outline, so measure or model rather than scale.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 6
+  note: 'Table 6.4 thermal information: DAP RthJA 22 C/W (TPA3118D2), 36 (TPA3130D2), DAD 14 C/W with
+    heatsink (footnote 4); psiJB 4.7, psiJT 0.3'
+- file: research/sources/tpa3116d2.pdf
+  page: 29
+  note: 'Fig 40 layout example top with annotations: vias top-to-bottom, open GND areas for thermal flow,
+    no wires cutting GND, top filled with GND'
+- file: research/sources/tpa3116d2.pdf
+  page: 30
+  note: 'Fig 41 layout example bottom: solid GND plane, vias along the PCB edge, bottom filled with GND'
+- file: research/sources/tpa3116d2.pdf
+  page: 1
+  note: 'Description: TPA3118D2 runs 2x30 W/8 ohm without heat sink on a dual layer PCB; TPA3116D2 needs
+    a small sink on its top-side PowerPAD'
+- file: research/sources/tpa3116d2.pdf
+  page: 31
+  note: 10.3 EVM heatsink drawing 14x25x50 mm; sink sufficient for continuous power; music crest factor
+    and airflow lower the requirement
+- file: research/sources/slou342a.pdf
+  page: 7
+  note: 'Fig 4 EVM top layer: whole board is GND pour, U1 centre, 2-layer (only top/bottom shown)'
+- file: research/sources/slma002h.pdf
+  page: 4
+  note: '2.3 Thermal Lands: double-sided PCBs must use the surface layers; land as large as needed; chassis
+    attach if copper insufficient'
+status: active
+origin: research:block-class-d-amp-1
+level: family
+maturity: verified
+generalizes: []
+envelope:
+  pdiss_w:
+    max: 3.8
+envelope_note: 'Scales with dissipated power: at the EVM''s 22 C/W the 85 C rise from Ta 40 C to Tj 125
+  C is used up at 3.8 W, and above that the 2-layer pour cannot hold Tj without a sink or PLIMIT. Below
+  it the rule (pour + stitch, RthJA from the EVM) is the design; the actual RthJA of a smaller board is
+  still the designer''s to verify.'
+verification: {by: "second-reader", date: "2026-09-27", note: "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p6 Table 6.4 (DAP 22/36 C/W, psiJB 4.7, psiJT 0.3, fn4 DAD with 14x50x25 mm sink), p29 Fig 40, p30 Fig 41 annotations; SLOU342A p7 2-layer pour. Nit stands: fn3 names the EVM layout, not that 22 C/W was measured on it."}

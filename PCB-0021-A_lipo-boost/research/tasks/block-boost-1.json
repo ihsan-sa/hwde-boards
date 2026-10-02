@@ -1,0 +1,153 @@
+{
+ "id": "block-boost-1",
+ "slot": "block:B2",
+ "kind": "block",
+ "token": "boost",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified_with_drafts",
+ "opened": "2026-10-01T05:43:30",
+ "closed": "2026-10-01T05:50:56",
+ "coverage_report": "PCB-0021-A_lipo-boost/log/coverage-P2.json",
+ "gap": {
+  "slot": "block:B2",
+  "kind": "block",
+  "topology": "boost",
+  "operating_point": {
+   "vin_v": 3.6,
+   "vout_v": 5,
+   "iout_a": 1.0,
+   "fsw_khz": 1000,
+   "pdiss_w": 0.45,
+   "board_layers": 2,
+   "switching_kind": "hard",
+   "rectifier_kind": "sync",
+   "integration_kind": "integrated-fet",
+   "source_kind": "battery",
+   "control_kind": "cot"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'boost' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'boost': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "TPS61023",
+   "file": "research/sources/tps61023.pdf",
+   "sha256": "45653870fc7e7a9959f67853d2a9bda047ad8cfcaa464a272cf9818e5bb68c24",
+   "bytes": 2392725,
+   "content_type": "application/pdf",
+   "pages": 28,
+   "fetched": "2026-10-01T05:44:29",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/an/slva372c/slva372c.pdf",
+   "final_url": "https://www.ti.com/lit/an/slva372d/slva372d.pdf?ts=1790826160892",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": "TPS61023",
+   "file": "research/sources/slva372d.pdf",
+   "sha256": "27f8a71623f240dfb3515c26107f201f7410ad3998461f921f6b392478465b36",
+   "bytes": 621292,
+   "content_type": "application/pdf",
+   "pages": 10,
+   "fetched": "2026-10-01T05:44:41",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "boost-hot-loop-vout-cap-to-gnd": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p18 s10.1 text and Fig 10-1 re-read visually: switch FET-rectifier-Cout-GND path, Cout at VOUT and GND, Cin at VIN and GND, 2 Cout stacked right of VOUT/GND pins, 2x8 via field; Vout 2.2-5.5 from p4/5 EC.",
+   "ts": "2026-10-01T05:50:19"
+  },
+  "boost-sw-node-containment": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p18 s10.1 and Fig 10-1 visual: minimize SW trace length/area, ground plane under regulator; SW is a short stub to the inductor pad, big pours only VIN/VOUT/GND.",
+   "ts": "2026-10-01T05:50:20"
+  },
+  "boost-inductor-and-peak-current": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p13-14 text and Table 8-2: L 0.37-2.9 uH, Eq5-7, -30% L, 90% eta, ripple <40%, Table 8-2 1 uH Isat 7.0-9.6 A DCR 9.78-13.5 mohm, ILIM 2.7 min at 3.6V/5V; SLVA372D p3-4 Imaxout/Isw(max)/20-40% match.",
+   "ts": "2026-10-01T05:50:20"
+  },
+  "boost-input-output-caps": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p14-15 text: Cout 4-1000 uF effective, >50% DC-bias loss, 10 uF Cin sufficient, long-wire ringing warning; SLVA372D p6 X5R or better. Note table CIN typ is 4.7 uF vs prose 10 uF (text says 10 uF sufficient) - consistent.",
+   "ts": "2026-10-01T05:50:21"
+  },
+  "boost-passthrough-enable-sequencing": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p8-10 text: UVLO 1.8 V, EN 1.2 V high, 0.4 V low shutdown, 101%/97% pass-through, OVP 5.7 V typ, short <0.4 V about 350 mA, soft start restart; all match.",
+   "ts": "2026-10-01T05:50:21"
+  },
+  "boost-fb-divider-and-feedforward": {
+   "verdict": "refuted",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p5 EC table: VREF is 580/595/610 mV in PWM and 585/601 in PFM (min/typ), not a 585-601 band; record states the PFM min-typ pair as the tolerance. Fix: give 580-610 PWM, 585-601 PFM; R2<300k, FF 1 kHz/40 uF and Fig 10-1 are otherwise correct.",
+   "ts": "2026-10-01T05:50:21"
+  },
+  "boost-thermal-copper-and-vias": {
+   "verdict": "refuted",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p4 s6.4 gives RthJA 142.7 C/W (standard) and 91.4 C/W (4-layer 2oz EVM), not cited; record says RthJA unspecified. 0.3-0.55 W loss is unsourced arithmetic (94% eff is quoted at 1.5 A, not 1 A). At 142.7 C/W and 2 layers that loss is 43-78 C rise. Cite p4 numbers, mark 2-layer board vs EVM, label loss as derived.",
+   "ts": "2026-10-01T05:50:21"
+  }
+ },
+ "queue_entry": "2026-10-01-research-task-block-boost-1-5-verified",
+ "updated": "2026-10-01T05:50:56",
+ "accepted_drafts": [
+  "boost-fb-divider-and-feedforward",
+  "boost-thermal-copper-and-vias"
+ ],
+ "summary": {
+  "verified": 5,
+  "refuted": 2,
+  "checklists": 1,
+  "sources": 2
+ }
+}

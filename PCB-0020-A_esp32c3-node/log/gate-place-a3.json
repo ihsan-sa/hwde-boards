@@ -1,0 +1,63 @@
+{
+  "script": "gate",
+  "gate": "place",
+  "phase": "P6",
+  "tool": "place",
+  "input": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:3cab05d70c4cf133219d7d79dc70a0325fd5d2cda133e8d8b245b73e35a24a27",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "ran": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "passed": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "failed": [],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0020-A_esp32c3-node",
+    "gate": "place",
+    "status": "pass",
+    "attempts": 3,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:3cab05d70c4cf133219d7d79dc70a0325fd5d2cda133e8d8b245b73e35a24a27",
+      "constraints": "json_canonical:556e8aee2334602bf8094bbe00ab5f7e4ecaab5f88a044b0c259d376d67f5c56",
+      "decoupling": "json_canonical:7e27ca0a4ca5deaacaf4d163607977f7ea0db0d0fdb53f2ce6dd0c1fe5ef3a3a"
+    }
+  }
+}

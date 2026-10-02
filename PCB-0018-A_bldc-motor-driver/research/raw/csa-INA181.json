@@ -1,0 +1,536 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "INA181",
+ "total": 25,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C2058784",
+   "mpn": "INA181A2IDBVR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~26V -40\u2103~+125\u2103 1 100dB 195uA 1uV/\u2103 2.7V~5.5V 210kHz 25uV 2V/us 40nV/\u221aHz@1kHz 50V/V 6uA 8mA Bidirectional detection\u3001Programmable output reference level\u3001Analog output interface \u00b126V SOT-23-6 Current Sense Amplifiers ROHS",
+   "package": "SOT-23-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 22358,
+   "price": 0.3344,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3344
+    },
+    {
+     "qty": 50,
+     "price": 0.2669
+    },
+    {
+     "qty": 150,
+     "price": 0.238
+    },
+    {
+     "qty": 500,
+     "price": 0.2017
+    },
+    {
+     "qty": 3000,
+     "price": 0.1857
+    },
+    {
+     "qty": 6000,
+     "price": 0.1761
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303012200_Texas-Instruments-INA181A2IDBVR_C2058784.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina181a2idbvr_C2058784.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "25uV"
+    },
+    {
+     "name": "Output Current",
+     "value": "8mA"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "1uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "100dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b126V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~26V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "210kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "195uA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Programmable output reference level\u3001Analog output interface"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "6uA"
+    },
+    {
+     "name": "Gain",
+     "value": "50V/V"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2652255",
+   "mpn": "INA181A3IDBVR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~26V -40\u2103~+125\u2103 1 100V/V 100dB 150kHz 195uA 1uV/\u2103 2.7V~5.5V 25uV 2V/us 40nV/\u221aHz@1kHz 6uA 8mA Bidirectional detection\u3001Programmable output reference level\u3001Analog output interface\u3001Enable/shutdown function \u00b126V SOT-23-6 Current Sense Amplifiers ROHS",
+   "package": "SOT-23-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 9214,
+   "price": 0.3638,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3638
+    },
+    {
+     "qty": 50,
+     "price": 0.2857
+    },
+    {
+     "qty": 150,
+     "price": 0.2524
+    },
+    {
+     "qty": 500,
+     "price": 0.2107
+    },
+    {
+     "qty": 3000,
+     "price": 0.192
+    },
+    {
+     "qty": 6000,
+     "price": 0.181
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121730_Texas-Instruments-INA181A3IDBVR_C2652255.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina181a3idbvr_C2652255.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "25uV"
+    },
+    {
+     "name": "Output Current",
+     "value": "8mA"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "1uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "100dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b126V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~26V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "150kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "195uA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Programmable output reference level\u3001Analog output interface\u3001Enable/shutdown function"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "6uA"
+    },
+    {
+     "name": "Gain",
+     "value": "100V/V"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C45351496",
+   "mpn": "INA181A1IDBVR(XBLW)",
+   "brand": "XBLW",
+   "description": "-200mV~30V -40\u2103~+125\u2103 1 100dB 175uA 1uV/\u2103 2.7V~5.5V 20V/V 25uV 2V/us 350kHz 40nV/\u221aHz@1kHz 75uA 8mA Bidirectional detection\u3001Zero drift / auto-zero \u00b130V SOT-23-6 Current Sense Amplifiers ROHS",
+   "package": "SOT-23-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6249,
+   "price": 0.2016,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2016
+    },
+    {
+     "qty": 50,
+     "price": 0.1607
+    },
+    {
+     "qty": 150,
+     "price": 0.1431
+    },
+    {
+     "qty": 500,
+     "price": 0.1212
+    },
+    {
+     "qty": 3000,
+     "price": 0.1033
+    },
+    {
+     "qty": 6000,
+     "price": 0.0975
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "25uV"
+    },
+    {
+     "name": "Output Current",
+     "value": "8mA"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "1uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "100dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b130V"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~30V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "350kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "175uA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Zero drift / auto-zero"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "75uA"
+    },
+    {
+     "name": "Gain",
+     "value": "20V/V"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C32077329",
+   "mpn": "INA181A3IDCKR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~26V -40\u2103~+125\u2103 1 100V/V 100dB 150kHz 195uA 1uV/\u2103 2.7V~5.5V 25uV 2V/us 8mA Bidirectional detection\u3001Programmable output reference level\u3001Analog output interface \u00b126V SC-70-6 Current Sense Amplifiers ROHS",
+   "package": "SC-70-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5937,
+   "price": 0.4856,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.4856
+    },
+    {
+     "qty": 10,
+     "price": 0.4109
+    },
+    {
+     "qty": 30,
+     "price": 0.3589
+    },
+    {
+     "qty": 100,
+     "price": 0.3151
+    },
+    {
+     "qty": 500,
+     "price": 0.3005
+    },
+    {
+     "qty": 1000,
+     "price": 0.2924
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "25uV"
+    },
+    {
+     "name": "Output Current",
+     "value": "8mA"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "1uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "100dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b126V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~26V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "150kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "195uA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Programmable output reference level\u3001Analog output interface"
+    },
+    {
+     "name": "Gain",
+     "value": "100V/V"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C53198614",
+   "mpn": "INA181A3IDBVR(LX)",
+   "brand": "lingxingic",
+   "description": "-200mV~3V -40\u2103~+125\u2103 0.2uV/\u2103 1 100V/V 100dB 150kHz 175uA 2.7V~5.5V 25uV 6V/us 6uA Bidirectional detection\u3001Zero drift / auto-zero \u00b130V SOT-23-6 Current Sense Amplifiers ROHS",
+   "package": "SOT-23-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5616,
+   "price": 0.1498,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1498
+    },
+    {
+     "qty": 50,
+     "price": 0.1191
+    },
+    {
+     "qty": 150,
+     "price": 0.1037
+    },
+    {
+     "qty": 500,
+     "price": 0.0921
+    },
+    {
+     "qty": 3000,
+     "price": 0.0822
+    },
+    {
+     "qty": 6000,
+     "price": 0.0775
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "25uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "0.2uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "6V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "100dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b130V"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~3V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "150kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "175uA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Zero drift / auto-zero"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "6uA"
+    },
+    {
+     "name": "Gain",
+     "value": "100V/V"
+    }
+   ],
+   "rank": 4
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 1
+}

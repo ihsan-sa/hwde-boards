@@ -1,0 +1,1345 @@
+{
+ "script": "lib_pull",
+ "status": "fail",
+ "lib_name": "aiee",
+ "parts_file": "PCB-0021-A_lipo-boost/parts/parts.json",
+ "paced_s": 4.0,
+ "retried": 1,
+ "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+ "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+ "results": [
+  {
+   "lcsc": "C54313",
+   "status": "exists",
+   "symbol": "BQ24074RGTR",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "QFN-16_L3.0-W3.0-P0.50-TL-EP1.7",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/QFN-16_L3.0-W3.0-P0.50-TL-EP1.7.kicad_mod",
+     "copper_pads": 17,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C919459",
+   "status": "exists",
+   "symbol": "TPS61023DRLR",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "SOT-563_L1.6-W1.2-P0.50-LS1.6-BR",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-563_L1.6-W1.2-P0.50-LS1.6-BR.kicad_mod",
+     "copper_pads": 6,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C45367187",
+   "status": "exists",
+   "symbol": "MSXC61CN3302MR",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.kicad_mod",
+     "copper_pads": 3,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C8545",
+   "status": "exists",
+   "symbol": "2N7002",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.kicad_mod",
+     "copper_pads": 3,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C205445",
+   "status": "exists",
+   "symbol": "ORH-R36A",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "LED0603-RD",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/LED0603-RD.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C12624",
+   "status": "pulled",
+   "symbol": "0603Green509-620mcd",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "LED0603-RD",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/LED0603-RD.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C2286",
+   "status": "exists",
+   "symbol": "KT-0603R",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "LED-SMD_L1.6-W0.8-R-RD",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/LED-SMD_L1.6-W0.8-R-RD.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C602028",
+   "status": "exists",
+   "symbol": "FHD4020S-1R0MT",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "IND-SMD_L4.0-W4.0",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/IND-SMD_L4.0-W4.0.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C404969",
+   "status": "exists",
+   "symbol": "MICROXNJ",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "MICRO-USB-SMD_MICROXNJ_1",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/MICRO-USB-SMD_MICROXNJ_1.kicad_mod",
+     "copper_pads": 9,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C295747",
+   "status": "exists",
+   "symbol": "S2B-PH-SM4-TB",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN.kicad_mod",
+     "copper_pads": 4,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C32713273",
+   "status": "pulled",
+   "symbol": "HXPZ2.54-1X7PZZ",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "HDR-TH_7P-P2.54-V-M",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/HDR-TH_7P-P2.54-V-M.kicad_mod",
+     "copper_pads": 7,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C18077685",
+   "status": "error",
+   "symbol_verified": false,
+   "footprint_verified": false,
+   "detail": "no symbol carrying (property \"LCSC Part\" \"C18077685\") in aiee.kicad_sym | log: -- easyeda2kicad.py v1.0.1 --\n[ERROR] Failed to fetch data from EasyEDA API for part C18077685"
+  },
+  {
+   "lcsc": "C25804",
+   "status": "pulled",
+   "symbol": "0603WAF1002T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C25803",
+   "status": "error",
+   "symbol_verified": false,
+   "footprint_verified": false,
+   "detail": "no symbol carrying (property \"LCSC Part\" \"C25803\") in aiee.kicad_sym | log: -- easyeda2kicad.py v1.0.1 --\n[ERROR] API request failed: HTTP Error 403: Forbidden\n[ERROR] Failed to fetch data from EasyEDA API for part C25803",
+   "retried": true
+  },
+  {
+   "lcsc": "C23239",
+   "status": "pulled",
+   "symbol": "0603WAF7323T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C21190",
+   "status": "pulled",
+   "symbol": "0603WAF1001T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C22765",
+   "status": "pulled",
+   "symbol": "0603WAF1201T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C23196",
+   "status": "pulled",
+   "symbol": "0603WAF5102T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C23179",
+   "status": "pulled",
+   "symbol": "0603WAF4700T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C21189",
+   "status": "pulled",
+   "symbol": "0603WAF0000T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C1779",
+   "status": "pulled",
+   "symbol": "CL21A475KAQNNNE",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C15850",
+   "status": "pulled",
+   "symbol": "CL21A106KAYNNNE",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C45783",
+   "status": "pulled",
+   "symbol": "CL21A226MAQNNNE",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C14663",
+   "status": "pulled",
+   "symbol": "CC0603KRX7R9BB104",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/C0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "symbol_dedup": {
+  "removed": 1,
+  "names": [
+   "0603Green509-620mcd"
+  ]
+ },
+ "registered": {
+  "fp": "created",
+  "sym": "created"
+ },
+ "autofix": {
+  "footprints": 13,
+  "changed": 13,
+  "actions": 50,
+  "residue": 22,
+  "results": [
+   {
+    "footprint": "C0603",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/C0603.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 9,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.1554,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "C0805",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/C0805.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 1,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.15,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 2.345
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.25,
+      "gap_mm": 0.105,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.25,
+      "gap_mm": 0.105,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.25,
+      "gap_mm": 0.105,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.25,
+      "gap_mm": 0.115,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.25,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.25,
+      "gap_mm": 0.115,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 6,
+    "before": {
+     "worst_gap_mm": 0.075,
+     "unprintable_silk": 1,
+     "under_gap_silk": 6,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.075,
+     "unprintable_silk": 0,
+     "under_gap_silk": 6,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "HDR-TH_7P-P2.54-V-M",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/HDR-TH_7P-P2.54-V-M.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 0.4678
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": 0.275,
+     "unprintable_silk": 1,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.275,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "IND-SMD_L4.0-W4.0",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/IND-SMD_L4.0-W4.0.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": 0.19
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.065,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.055,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 4,
+    "before": {
+     "worst_gap_mm": 0.055,
+     "unprintable_silk": 1,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.055,
+     "unprintable_silk": 0,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "LED-SMD_L1.6-W0.8-R-RD",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/LED-SMD_L1.6-W0.8-R-RD.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.1,
+      "gap_mm": -0.05
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.15,
+      "gap_mm": 0.105,
+      "new_gap_mm": 0.155
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.15,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.185
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.05,
+     "unprintable_silk": 1,
+     "under_gap_silk": 3,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.155,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "LED0603-RD",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/LED0603-RD.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.055,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.065,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.055,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.055,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.055,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.055,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 6,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 7,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.055,
+     "unprintable_silk": 0,
+     "under_gap_silk": 6,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "MICRO-USB-SMD_MICROXNJ_1",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/MICRO-USB-SMD_MICROXNJ_1.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 0.9757
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.15,
+      "gap_mm": 0.1016,
+      "new_gap_mm": 0.1516
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.15,
+      "gap_mm": 0.1049,
+      "new_gap_mm": 0.1549
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": 0.1016,
+     "unprintable_silk": 1,
+     "under_gap_silk": 2,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.1516,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "QFN-16_L3.0-W3.0-P0.50-TL-EP1.7",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/QFN-16_L3.0-W3.0-P0.50-TL-EP1.7.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 0.505
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": 0.28,
+     "unprintable_silk": 1,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.28,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "R0603",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 1,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.153,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": 0.115
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.09,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.09,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.09,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 3,
+    "before": {
+     "worst_gap_mm": 0.09,
+     "unprintable_silk": 1,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.09,
+     "unprintable_silk": 0,
+     "under_gap_silk": 3,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": 0.15
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.115,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.115,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.115,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 3,
+    "before": {
+     "worst_gap_mm": 0.115,
+     "unprintable_silk": 1,
+     "under_gap_silk": 3,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.115,
+     "unprintable_silk": 0,
+     "under_gap_silk": 3,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "SOT-563_L1.6-W1.2-P0.50-LS1.6-BR",
+    "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/SOT-563_L1.6-W1.2-P0.50-LS1.6-BR.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_line",
+      "width_mm": 0.1,
+      "gap_mm": 0.09
+     },
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_line",
+      "width_mm": 0.1,
+      "gap_mm": 0.09
+     },
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": 0.09
+     },
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.1,
+      "gap_mm": 0.17
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": 0.09,
+     "unprintable_silk": 4,
+     "under_gap_silk": 3,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": null,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   }
+  ]
+ },
+ "refdes_norm": {
+  "footprints": 13,
+  "changed": 13,
+  "unchanged": 0,
+  "skipped": 0,
+  "results": [
+   {
+    "footprint": "C0603",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.535
+    ],
+    "pad_top": -0.45,
+    "silk_top": -0.71,
+    "clear_of": -0.71,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "C0805",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.725
+    ],
+    "pad_top": -0.675,
+    "silk_top": -0.9,
+    "clear_of": -0.9,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+    "status": "changed",
+    "from": [
+     0.0,
+     -6.925
+    ],
+    "to": [
+     0.0,
+     -5.655
+    ],
+    "pad_top": -4.83,
+    "silk_top": -4.23,
+    "clear_of": -4.83,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "HDR-TH_7P-P2.54-V-M",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -2.075
+    ],
+    "pad_top": -0.85,
+    "silk_top": -1.25,
+    "clear_of": -1.25,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "IND-SMD_L4.0-W4.0",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -2.925
+    ],
+    "pad_top": -1.75,
+    "silk_top": -2.1,
+    "clear_of": -2.1,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "LED-SMD_L1.6-W0.8-R-RD",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.525
+    ],
+    "pad_top": -0.4,
+    "silk_top": -0.7,
+    "clear_of": -0.7,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "LED0603-RD",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.585
+    ],
+    "pad_top": -0.4,
+    "silk_top": -0.76,
+    "clear_of": -0.76,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "MICRO-USB-SMD_MICROXNJ_1",
+    "status": "changed",
+    "from": [
+     0.0,
+     -7.625
+    ],
+    "to": [
+     0.0,
+     -5.345
+    ],
+    "pad_top": -4.52,
+    "silk_top": -3.93,
+    "clear_of": -4.52,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "QFN-16_L3.0-W3.0-P0.50-TL-EP1.7",
+    "status": "changed",
+    "from": [
+     0.0,
+     -5.5
+    ],
+    "to": [
+     0.0,
+     -2.75
+    ],
+    "pad_top": -1.925,
+    "silk_top": -1.73,
+    "clear_of": -1.925,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "R0603",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.485
+    ],
+    "pad_top": -0.432,
+    "silk_top": -0.66,
+    "clear_of": -0.66,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.95
+    ],
+    "to": [
+     0.0,
+     -2.355
+    ],
+    "pad_top": -1.275,
+    "silk_top": -1.53,
+    "clear_of": -1.53,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.95
+    ],
+    "to": [
+     0.0,
+     -2.365
+    ],
+    "pad_top": -1.25,
+    "silk_top": -1.54,
+    "clear_of": -1.54,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "SOT-563_L1.6-W1.2-P0.50-LS1.6-BR",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.5
+    ],
+    "to": [
+     0.0,
+     -1.625
+    ],
+    "pad_top": -0.8,
+    "silk_top": null,
+    "clear_of": -0.8,
+    "inked_half_h": 0.575
+   }
+  ]
+ },
+ "load_check": {
+  "ok": true,
+  "svgs": 13,
+  "detail": "ok"
+ },
+ "drc_check": null
+}

@@ -1,0 +1,380 @@
+{
+ "script": "place_anneal",
+ "status": "violations",
+ "board": "PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "counts": {
+  "total": 10,
+  "by_severity": {
+   "error": 10
+  },
+  "by_source": {
+   "check.place": 10
+  }
+ },
+ "violations": [
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    16.27,
+    23.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C204",
+    "D201"
+   ],
+   "msg": "courtyard overlap C204/D201 (4.60 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C204/D201 (4.60 mm2)",
+     "pos": [
+      16.27,
+      23.0
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 4.604
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    17.4689,
+    36.0026
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C205",
+    "R435"
+   ],
+   "msg": "courtyard overlap C205/R435 (3.54 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C205/R435 (3.54 mm2)",
+     "pos": [
+      17.4689,
+      36.0026
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 3.5416
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    63.2387,
+    39.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C301",
+    "R434"
+   ],
+   "msg": "courtyard overlap C301/R434 (2.41 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C301/R434 (2.41 mm2)",
+     "pos": [
+      63.2387,
+      39.0
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 2.414
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    51.1996,
+    42.4745
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C304",
+    "D603"
+   ],
+   "msg": "courtyard overlap C304/D603 (2.39 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C304/D603 (2.39 mm2)",
+     "pos": [
+      51.1996,
+      42.4745
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 2.3906
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    57.2469,
+    27.496
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C502",
+    "C605"
+   ],
+   "msg": "courtyard overlap C502/C605 (3.69 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C502/C605 (3.69 mm2)",
+     "pos": [
+      57.2469,
+      27.496
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 3.693
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    58.274,
+    23.0185
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C601",
+    "R601"
+   ],
+   "msg": "courtyard overlap C601/R601 (0.35 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C601/R601 (0.35 mm2)",
+     "pos": [
+      58.274,
+      23.0185
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 0.3473
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    58.2759,
+    24.7407
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C608",
+    "R601"
+   ],
+   "msg": "courtyard overlap C608/R601 (0.55 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap C608/R601 (0.55 mm2)",
+     "pos": [
+      58.2759,
+      24.7407
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 0.5455
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    37.4296,
+    60.7565
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R421",
+    "R510"
+   ],
+   "msg": "courtyard overlap R421/R510 (0.39 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap R421/R510 (0.39 mm2)",
+     "pos": [
+      37.4296,
+      60.7565
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 0.3886
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    64.4855,
+    60.5095
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R423",
+    "R512"
+   ],
+   "msg": "courtyard overlap R423/R512 (0.69 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap R423/R512 (0.69 mm2)",
+     "pos": [
+      64.4855,
+      60.5095
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 0.6889
+  },
+  {
+   "check": "place",
+   "severity": "error",
+   "pos": [
+    64.4855,
+    62.5155
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R424",
+    "R512"
+   ],
+   "msg": "courtyard overlap R424/R512 (0.65 mm2)",
+   "source": "check.place",
+   "items": [
+    {
+     "msg": "courtyard overlap R424/R512 (0.65 mm2)",
+     "pos": [
+      64.4855,
+      62.5155
+     ]
+    }
+   ],
+   "kind": "courtyard_overlap",
+   "overlap_mm2": 0.6471
+  }
+ ],
+ "candidates": [
+  {
+   "rank": 1,
+   "cost": 10586.862,
+   "score": 10586.862,
+   "hpwl_mm": 3530.54,
+   "terms": {
+    "hpwl_raw_mm": 3530.54,
+    "hpwl_weighted": 2973.01,
+    "overlap_mm2": 0.0,
+    "cong_overflow": 76,
+    "crossings_weighted": 380.5,
+    "rule": 6700.8525,
+    "corridor_mm2": 0.0,
+    "assembly_mm": 0.0,
+    "back_parts": 0
+   },
+   "legal": false,
+   "repaired": true,
+   "completion": null,
+   "sides": {
+    "front": 84,
+    "back": 0
+   },
+   "corridors": [
+    {
+     "a": "TP101",
+     "b": "Q101",
+     "width_mm": 5.0,
+     "intrusion_mm2": 0.0,
+     "intruders": []
+    }
+   ],
+   "ops_file": "kicad/anneal/cand1.ops.json",
+   "n_violations": 10
+  }
+ ],
+ "seed": 1,
+ "separation_unknown_refs": [
+  "L201",
+  "L202",
+  "U201",
+  "U202",
+  "U501",
+  "U502",
+  "U503"
+ ],
+ "corridor_unknown_refs": [],
+ "side_unknown_refs": [],
+ "side_conflicts": [],
+ "clusters": 84,
+ "movable_clusters": 84,
+ "flippable_clusters": 0,
+ "back_parts_fixed": 0,
+ "sides_input": {
+  "front": 84,
+  "back": 0
+ },
+ "sides_best": {
+  "front": 84,
+  "back": 0
+ },
+ "satellites_reslotted": [],
+ "hpwl_input_mm": 4653.7292,
+ "hpwl_start_mm": 4653.7292,
+ "hpwl_best_mm": 3530.54,
+ "improvement_pct": 24.14,
+ "start_terms": {
+  "hpwl_raw_mm": 4653.7292,
+  "hpwl_weighted": 3923.0916,
+  "overlap_mm2": 14.2966,
+  "cong_overflow": 227,
+  "crossings_weighted": 691.5,
+  "rule": 9836.4456,
+  "corridor_mm2": 9.3398,
+  "assembly_mm": 0.0,
+  "back_parts": 0
+ },
+ "epochs": 30,
+ "moves": 76860,
+ "accepted": 46731,
+ "t0": 2163.8415,
+ "t_end": 51.999611,
+ "feedback_used": false,
+ "last_completion": null,
+ "runtime_s": 1442.58,
+ "warnings": [
+  "group input: C102 already satellite of U101 - keeping first association"
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T22:51:58+00:00",
+ "input": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:99a4ec11c59d7af17fd4e7251abb0f37c56dcae2f8d091bae089350904b71592"
+}

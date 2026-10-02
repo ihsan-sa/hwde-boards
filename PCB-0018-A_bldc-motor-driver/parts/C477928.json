@@ -1,0 +1,182 @@
+{
+ "mpn": "LM5164DDAR",
+ "lcsc": "C477928",
+ "package": "SO PowerPAD (DDA0008B), 8-pin SOIC",
+ "description": "100V input, 1A synchronous buck DC/DC converter, ultra-low IQ, COT control",
+ "pinout": [
+  {
+   "pin": "1",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground connection for internal circuits"
+  },
+  {
+   "pin": "2",
+   "name": "VIN",
+   "type": "power_in",
+   "notes": "Regulator supply input to high-side FET and internal bias regulator. Connect directly to input supply with short, low-impedance paths."
+  },
+  {
+   "pin": "3",
+   "name": "EN/UVLO",
+   "type": "input",
+   "notes": "Precision enable and UVLO programming pin. <1.1V shutdown, 1.1-1.5V standby (VCC reg on, no switching), >1.5V start-up."
+  },
+  {
+   "pin": "4",
+   "name": "RON",
+   "type": "input",
+   "notes": "On-time programming pin; resistor to GND sets buck switch on-time"
+  },
+  {
+   "pin": "5",
+   "name": "FB",
+   "type": "input",
+   "notes": "Feedback input of voltage regulation comparator"
+  },
+  {
+   "pin": "6",
+   "name": "PGOOD",
+   "type": "open_collector",
+   "notes": "Power good indicator, open-drain output. Pull up externally with 10k-100k ohm resistor."
+  },
+  {
+   "pin": "7",
+   "name": "BST",
+   "type": "power_in",
+   "notes": "Bootstrap gate-drive supply. Requires 2.2nF 50V X7R ceramic capacitor between BST and SW."
+  },
+  {
+   "pin": "8",
+   "name": "SW",
+   "type": "power_out",
+   "notes": "Switching node, internally connected to source of high-side NMOS and drain of low-side NMOS synchronous rectifier. Connect to power inductor."
+  },
+  {
+   "pin": "EP",
+   "name": "EP",
+   "type": "ground",
+   "notes": "Exposed pad, no internal electrical connection. Connect EP to GND pin and to a large copper plane to reduce thermal resistance."
+  }
+ ],
+ "decoupling": [
+  {
+   "pins": [
+    "VIN"
+   ],
+   "value": "low-ESR ceramic bypass capacitor, high-quality dielectric",
+   "placement": "as close as possible to VIN and GND pins",
+   "notes": "Datasheet typical application shows CIN 2.2uF; add 10uF electrolytic in parallel for damping if long input cable/PCB trace impedance is present (typical ESR 0.5 ohm)."
+  },
+  {
+   "pins": [
+    "BST",
+    "SW"
+   ],
+   "value": "2.2nF 50V X7R ceramic (CBST)",
+   "placement": "between BST and SW pins",
+   "notes": "Required to bias the internal high-side gate driver. Abs max external BST-to-SW capacitance range is 1.5nF-2.5nF; recommended operating value is 2.2nF."
+  }
+ ],
+ "land_pattern": {
+  "package": "DDA0008B, PowerPAD SOIC-8, 1.7mm max height",
+  "pad_count": 9,
+  "pitch_mm": 1.27,
+  "pad_size_mm": [
+   1.55,
+   0.6
+  ],
+  "row_spacing_mm": 5.8,
+  "pin1": "1",
+  "notes": "From TI DDA0008B example board layout (land pattern), 4214849/B 09/2025. Exposed thermal pad land: solder mask opening 2.71mm x 3.4mm; copper pad approx 2.95mm x 4.9mm (metal may vary per creepage requirement, note 9). Vias under the thermal pad are optional per datasheet; if implemented, recommended to fill/plug/tent them. pad_count counts the exposed pad (EP=GND), as the footprint does."
+ },
+ "exposed_pad": {
+  "present": true,
+  "connect_to": "GND",
+  "thermal_vias": 0
+ },
+ "layout_notes": [
+  "Bypass VIN to GND with a low-ESR ceramic capacitor placed as close as possible to VIN and GND pins; ground both input and output capacitors with localized top-side planes connecting to GND pin and GND pad.",
+  "Minimize the loop area formed by the input capacitor connections to VIN and GND pins.",
+  "Locate the inductor close to the SW pin; minimize SW trace/plane area to prevent excessive capacitive coupling.",
+  "Tie the GND pin directly to the power pad under the device and to a heat-sinking PCB ground plane.",
+  "Use a ground plane in an inner layer (layer 2, below the power stage) for noise shielding and heat dissipation.",
+  "Use a single-point ground connection to the plane; route feedback, RON, and enable component grounds to the ground plane to keep switched/load currents out of analog ground traces.",
+  "Make VIN, VOUT, and ground bus connections as wide as possible to reduce voltage drops and maximize efficiency.",
+  "Minimize trace length to the FB pin; place feedback resistors RFB1/RFB2 close to FB. Route VOUT sense away from noisy nodes, preferably on a layer separated by a grounded shielding layer.",
+  "Package is designed to be soldered to a thermal pad on the board (PowerPAD); connect the exposed pad to GND and to a large copper plane / heat-sinking ground plane to reduce thermal resistance."
+ ],
+ "abs_max": [
+  {
+   "param": "VIN to GND",
+   "value": "-0.3 to 100",
+   "unit": "V"
+  },
+  {
+   "param": "EN to GND",
+   "value": "-0.3 to 100",
+   "unit": "V"
+  },
+  {
+   "param": "FB to GND",
+   "value": "-0.3 to 5.5",
+   "unit": "V"
+  },
+  {
+   "param": "RON to GND",
+   "value": "-0.3 to 5.5",
+   "unit": "V"
+  },
+  {
+   "param": "External BST to SW capacitance",
+   "value": "1.5 to 2.5",
+   "unit": "nF"
+  },
+  {
+   "param": "BST to GND",
+   "value": "-0.3 to 105.5",
+   "unit": "V"
+  },
+  {
+   "param": "BST to SW",
+   "value": "-0.3 to 5.5",
+   "unit": "V"
+  },
+  {
+   "param": "SW to GND",
+   "value": "-1.5 to 100",
+   "unit": "V"
+  },
+  {
+   "param": "SW to GND (20ns transient)",
+   "value": -3,
+   "unit": "V"
+  },
+  {
+   "param": "PGOOD to GND",
+   "value": "-0.3 to 14",
+   "unit": "V"
+  },
+  {
+   "param": "Operating junction temperature TJ",
+   "value": "-40 to 150",
+   "unit": "C"
+  },
+  {
+   "param": "Storage temperature Tstg",
+   "value": "-65 to 150",
+   "unit": "C"
+  },
+  {
+   "param": "ESD HBM",
+   "value": 2000,
+   "unit": "V"
+  },
+  {
+   "param": "ESD CDM",
+   "value": 500,
+   "unit": "V"
+  }
+ ],
+ "source_pdf": "parts/C477928.pdf"
+}

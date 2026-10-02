@@ -1,0 +1,519 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "remove",
+   "uuid": "1ac991d3-ce12-45b6-810a-b7eaad64a392"
+  },
+  {
+   "op": "remove",
+   "uuid": "1e00c323-6bfd-4e40-a88f-5d308712e2c7"
+  },
+  {
+   "op": "remove",
+   "uuid": "17f04462-8a2c-45c8-b76d-8967f5967a12"
+  },
+  {
+   "op": "remove",
+   "uuid": "27a1b789-619f-49ad-a633-c2cc2a8497bf"
+  },
+  {
+   "op": "remove",
+   "uuid": "dd53c9fd-f757-4d02-b933-ce1558d46254"
+  },
+  {
+   "op": "remove",
+   "uuid": "838f23bc-f884-4fbd-a50d-4561b1003abd"
+  },
+  {
+   "op": "remove",
+   "uuid": "e555a534-3c7d-4356-bbba-91a0d9d17b25"
+  },
+  {
+   "op": "remove",
+   "uuid": "19366d73-e60f-4a54-a969-dd0f3bac41e0"
+  },
+  {
+   "op": "remove",
+   "uuid": "39f301ab-a969-44ad-83e6-52ab0e480602"
+  },
+  {
+   "op": "remove",
+   "uuid": "3f3f1fbd-4f8f-462d-8248-14b010a95a65"
+  },
+  {
+   "op": "remove",
+   "uuid": "80267707-8903-43ba-bf37-85cd72b0718c"
+  },
+  {
+   "op": "remove",
+   "uuid": "8fedd0c2-885b-4cbb-9cbf-4fd388fb35c1"
+  },
+  {
+   "op": "remove",
+   "uuid": "93881f50-dbb1-4435-bab5-3c9906278139"
+  },
+  {
+   "op": "remove",
+   "uuid": "f95fbf35-4b36-4f89-8dc2-43088227a7ba"
+  },
+  {
+   "op": "remove",
+   "uuid": "1c8050fa-6c77-4146-99e0-7b7d8a67f290"
+  },
+  {
+   "op": "remove",
+   "uuid": "e8e103bc-bc17-49b6-b2ca-c06e6ec09a6c"
+  },
+  {
+   "op": "remove",
+   "uuid": "2c1d570c-cd37-4062-9dac-26efe49129f9"
+  },
+  {
+   "op": "remove",
+   "uuid": "9c2d0adc-8edf-488a-8ab5-15d6aef53dde"
+  },
+  {
+   "op": "remove",
+   "uuid": "7c9c411a-4f61-4707-a5da-f046248b90f5"
+  },
+  {
+   "op": "remove",
+   "uuid": "cabe422e-3324-4266-961d-dcd2d0e8fdfd"
+  },
+  {
+   "op": "remove",
+   "uuid": "e4c99f8b-9628-4d60-ae1d-53636a0f18e9"
+  },
+  {
+   "op": "remove",
+   "uuid": "ee6564cf-95f8-49f2-ba54-98afb5c70097"
+  },
+  {
+   "op": "remove",
+   "uuid": "5a0f54f9-6c0c-4a62-b285-74ecd3f0dcb7"
+  },
+  {
+   "op": "remove",
+   "uuid": "78eb3fe8-173b-4e55-ba86-6528979f29bf"
+  },
+  {
+   "op": "remove",
+   "uuid": "21f859e7-b765-4387-8b4c-4d304fe2b90f"
+  },
+  {
+   "op": "remove",
+   "uuid": "f37816cb-64ce-4a7a-a767-520409695d8d"
+  },
+  {
+   "op": "remove",
+   "uuid": "308ed875-d6b5-4c3c-8842-28ab7c269831"
+  },
+  {
+   "op": "remove",
+   "uuid": "48906997-4aaf-4d4d-b2ff-b41c685a3f73"
+  },
+  {
+   "op": "remove",
+   "uuid": "dbf24791-8882-4229-8032-998a553749d6"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    57.8,
+    35.6
+   ],
+   "end": [
+    57.8,
+    50.0
+   ],
+   "width": 0.8,
+   "layer": "F.Cu",
+   "net": "+5V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    57.8,
+    50.0
+   ],
+   "end": [
+    59.6,
+    50.0
+   ],
+   "width": 0.8,
+   "layer": "F.Cu",
+   "net": "+5V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    59.6,
+    50.0
+   ],
+   "end": [
+    59.6,
+    55.5
+   ],
+   "width": 0.8,
+   "layer": "F.Cu",
+   "net": "+5V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    59.6,
+    55.5
+   ],
+   "end": [
+    56.75,
+    55.5
+   ],
+   "width": 0.8,
+   "layer": "F.Cu",
+   "net": "+5V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    52.75,
+    55.5
+   ],
+   "end": [
+    52.75,
+    60.35
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DP"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    52.75,
+    60.35
+   ],
+   "end": [
+    53.0,
+    60.6
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DP"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    54.75,
+    55.5
+   ],
+   "end": [
+    54.75,
+    60.35
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    54.75,
+    60.35
+   ],
+   "end": [
+    54.5,
+    60.6
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    47.85,
+    56.1
+   ],
+   "end": [
+    48.95,
+    56.1
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG_A"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.95,
+    56.1
+   ],
+   "end": [
+    48.95,
+    61.6
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG_A"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.95,
+    61.6
+   ],
+   "end": [
+    61.25,
+    61.6
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG_A"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    61.25,
+    61.6
+   ],
+   "end": [
+    61.25,
+    63.17
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG_A"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    49.7,
+    62.4
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/CHG"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    49.7,
+    62.4
+   ],
+   "end": [
+    50.0,
+    63.25
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    50.0,
+    63.25
+   ],
+   "end": [
+    50.6,
+    62.65
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    50.6,
+    62.65
+   ],
+   "end": [
+    59.25,
+    62.65
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    59.25,
+    62.65
+   ],
+   "end": [
+    59.75,
+    63.17
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/CHG"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    44.4,
+    50.95
+   ],
+   "end": [
+    48.85,
+    50.95
+   ],
+   "width": 0.2,
+   "layer": "B.Cu",
+   "net": "/PGOOD"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.85,
+    50.95
+   ],
+   "end": [
+    48.85,
+    59.6
+   ],
+   "width": 0.2,
+   "layer": "B.Cu",
+   "net": "/PGOOD"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.85,
+    59.6
+   ],
+   "end": [
+    49.25,
+    60.0
+   ],
+   "width": 0.2,
+   "layer": "B.Cu",
+   "net": "/PGOOD"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    49.25,
+    60.0
+   ],
+   "end": [
+    51.0,
+    60.0
+   ],
+   "width": 0.2,
+   "layer": "B.Cu",
+   "net": "/PGOOD"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    51.0,
+    60.0
+   ],
+   "end": [
+    51.0,
+    65.15
+   ],
+   "width": 0.2,
+   "layer": "B.Cu",
+   "net": "/PGOOD"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    51.0,
+    65.15
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/PGOOD"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    51.0,
+    65.15
+   ],
+   "end": [
+    50.0,
+    65.15
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/PGOOD"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    52.0,
+    64.2
+   ],
+   "end": [
+    64.41,
+    64.2
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/DONE_K"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    64.41,
+    64.2
+   ],
+   "end": [
+    64.41,
+    63.17
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/DONE_K"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.25,
+    58.35
+   ],
+   "end": [
+    48.25,
+    66.0
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/DONE_A"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.25,
+    66.0
+   ],
+   "end": [
+    65.91,
+    66.0
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/DONE_A"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    65.91,
+    66.0
+   ],
+   "end": [
+    65.91,
+    63.17
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/DONE_A"
+  }
+ ]
+}

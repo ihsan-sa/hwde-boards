@@ -1,0 +1,120 @@
+{
+ "type": "flowchart",
+ "canvas": 553,
+ "alt": "How the esp32c3-node run went",
+ "nodes": [
+  {
+   "id": "P0",
+   "title": "P0 Intake",
+   "col": 0,
+   "row": 0,
+   "sub": [
+    "7 decisions"
+   ]
+  },
+  {
+   "id": "P1",
+   "title": "P1 Research",
+   "col": 0,
+   "row": 1,
+   "sub": [
+    "2 decisions"
+   ]
+  },
+  {
+   "id": "P2",
+   "title": "P2 Architecture",
+   "col": 0,
+   "row": 2,
+   "sub": [
+    "10 decisions"
+   ]
+  },
+  {
+   "id": "P3",
+   "title": "P3 Parts and library",
+   "col": 0,
+   "row": 3,
+   "sub": [
+    "4 decisions"
+   ]
+  },
+  {
+   "id": "P4",
+   "title": "P4 Schematic",
+   "col": 0,
+   "row": 4,
+   "sub": [
+    "gate: 5 attempts"
+   ]
+  },
+  {
+   "id": "P5",
+   "title": "P5 Board setup",
+   "col": 0,
+   "row": 5
+  },
+  {
+   "id": "P6",
+   "title": "P6 Placement",
+   "col": 0,
+   "row": 6,
+   "sub": [
+    "gate: 5 attempts"
+   ]
+  },
+  {
+   "id": "P7",
+   "title": "P7 Routing",
+   "col": 0,
+   "row": 7,
+   "sub": [
+    "gate: 11 attempts"
+   ]
+  },
+  {
+   "id": "P8",
+   "title": "P8 Verification",
+   "col": 0,
+   "row": 8,
+   "sub": [
+    "gate: 7 attempts"
+   ],
+   "mark": true
+  }
+ ],
+ "edges": [
+  {
+   "from": "P0",
+   "to": "P1"
+  },
+  {
+   "from": "P1",
+   "to": "P2"
+  },
+  {
+   "from": "P2",
+   "to": "P3"
+  },
+  {
+   "from": "P3",
+   "to": "P4"
+  },
+  {
+   "from": "P4",
+   "to": "P5"
+  },
+  {
+   "from": "P5",
+   "to": "P6"
+  },
+  {
+   "from": "P6",
+   "to": "P7"
+  },
+  {
+   "from": "P7",
+   "to": "P8"
+  }
+ ]
+}

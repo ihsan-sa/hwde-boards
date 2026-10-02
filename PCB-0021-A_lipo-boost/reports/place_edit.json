@@ -1,0 +1,21 @@
+{
+ "script": "place_edit",
+ "status": "pass",
+ "board": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "applied": 1,
+ "verified": true,
+ "results": [
+  {
+   "ref": "R6",
+   "x": 48.0,
+   "y": 57.6,
+   "deg": -90.0,
+   "side": "front",
+   "locked": false
+  }
+ ],
+ "routed_board": true,
+ "warnings": [
+  "footprint ops applied on a routed board (--allow-routed): re-run the drc_routed gate"
+ ]
+}

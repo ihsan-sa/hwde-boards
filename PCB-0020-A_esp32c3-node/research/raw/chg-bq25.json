@@ -1,0 +1,176 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "BQ25170",
+ "total": 2,
+ "count": 2,
+ "results": [
+  {
+   "lcsc": "C5208201",
+   "mpn": "BQ25170DSGR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 1 350nA 6.6V 800mA Charging IC Lithium Battery\u3001LiFePO4 Battery Support \u6052\u6d41\u5145\u7535\u3001\u6052\u538b\u5145\u7535\u3001\u6d93\u6d41\u5145\u7535\u3001\u81ea\u52a8\u518d\u5145\u7535\u3001\u5145\u7535\u7ec8\u6b62\u3001\u53ef\u7f16\u7a0b\u5145\u7535\u7535\u6d41\u3001\u6b20\u538b\u9501\u5b9a\u3001Overcurrent Protection\u3001Short-Circuit  Protection\u3001\u8fc7\u538b\u4fdd\u62a4 WSON-8(2x2) Battery Management ROHS",
+   "package": "WSON-8(2x2)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3172,
+   "price": 0.9299,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.9299
+    },
+    {
+     "qty": 10,
+     "price": 0.7706
+    },
+    {
+     "qty": 30,
+     "price": 0.6893
+    },
+    {
+     "qty": 100,
+     "price": 0.6113
+    },
+    {
+     "qty": 500,
+     "price": 0.5642
+    },
+    {
+     "qty": 1000,
+     "price": 0.5381
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "https://www.lcsc.com/product-detail/battery-management_texas-instruments-bq25170dsgr_C5208201.html",
+   "attributes": [
+    {
+     "name": "Supply Current (Iq)",
+     "value": "350nA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery\u3001LiFePO4 Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6.6V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "800mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcurrent Protection\u3001Short-Circuit  Protection\u3001Overvoltage protection"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C3682876",
+   "mpn": "BQ25170JDSGR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 1 4.2V 6.6V 800mA 80uA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcurrent Protection\u3001Short-Circuit  Protection\u3001Overvoltage protection Lithium Battery\u3001LiFePO4 Battery Support WSON-8(2x2) Battery Management ROHS",
+   "package": "WSON-8(2x2)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 47,
+   "price": 1.5997,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.5997
+    },
+    {
+     "qty": 10,
+     "price": 1.4095
+    },
+    {
+     "qty": 30,
+     "price": 1.2746
+    },
+    {
+     "qty": 100,
+     "price": 1.151
+    },
+    {
+     "qty": 500,
+     "price": 1.0941
+    },
+    {
+     "qty": 1000,
+     "price": 1.0714
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://www.ti.com/cn/lit/gpn/bq25170j",
+   "url": "https://www.lcsc.com/product-detail/battery-management_texas-instruments-bq25170jdsgr_C3682876.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "80uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery\u3001LiFePO4 Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "800mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6.6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcurrent Protection\u3001Short-Circuit  Protection\u3001Overvoltage protection"
+    }
+   ],
+   "rank": 1
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

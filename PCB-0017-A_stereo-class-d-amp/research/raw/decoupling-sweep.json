@@ -1,0 +1,314 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "2.2uF X7R 50V",
+ "total": 5,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C14663",
+   "mpn": "CC0603KRX7R9BB104",
+   "brand": "YAGEO",
+   "description": "100nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0603",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Basic",
+   "basic": true,
+   "stock": 51362410,
+   "price": 0.0122,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0122
+    },
+    {
+     "qty": 500,
+     "price": 0.0088
+    },
+    {
+     "qty": 1500,
+     "price": 0.0073
+    },
+    {
+     "qty": 4000,
+     "price": 0.0058
+    },
+    {
+     "qty": 24000,
+     "price": 0.0054
+    },
+    {
+     "qty": 48000,
+     "price": 0.0051
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_yageo-cc0603krx7r9bb104_C14663.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C49678",
+   "mpn": "CC0805KRX7R9BB104",
+   "brand": "YAGEO",
+   "description": "100nF 50V X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Basic",
+   "basic": true,
+   "stock": 18110014,
+   "price": 0.0191,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0191
+    },
+    {
+     "qty": 200,
+     "price": 0.0141
+    },
+    {
+     "qty": 600,
+     "price": 0.0119
+    },
+    {
+     "qty": 4000,
+     "price": 0.0099
+    },
+    {
+     "qty": 8000,
+     "price": 0.0092
+    },
+    {
+     "qty": 20000,
+     "price": 0.0088
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805KRX7R9BB104_C49678.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_yageo-cc0805krx7r9bb104_C49678.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C107145",
+   "mpn": "CC0805KRX7R9BB221",
+   "brand": "YAGEO",
+   "description": "220pF 50V X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Basic",
+   "basic": true,
+   "stock": 1638333,
+   "price": 0.01,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.01
+    },
+    {
+     "qty": 1000,
+     "price": 0.0087
+    },
+    {
+     "qty": 4000,
+     "price": 0.008
+    },
+    {
+     "qty": 8000,
+     "price": 0.0075
+    },
+    {
+     "qty": 48000,
+     "price": 0.0072
+    },
+    {
+     "qty": 100000,
+     "price": 0.007
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805KRX7R9BB221_C107145.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_yageo-cc0805krx7r9bb221_C107145.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "220pF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C377773",
+   "mpn": "CL21A225KBQNNNE",
+   "brand": "Samsung Electro-Mechanics",
+   "description": "2.2uF 50V X5R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Basic",
+   "basic": true,
+   "stock": 682011,
+   "price": 0.053,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.053
+    },
+    {
+     "qty": 100,
+     "price": 0.0429
+    },
+    {
+     "qty": 300,
+     "price": 0.0377
+    },
+    {
+     "qty": 2000,
+     "price": 0.0312
+    },
+    {
+     "qty": 4000,
+     "price": 0.0296
+    },
+    {
+     "qty": 10000,
+     "price": 0.0286
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21A225KBQNNNE_C377773.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_samsung-electro-mechanics-cl21a225kbqnnne_C377773.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "2.2uF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X5R"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C50254",
+   "mpn": "CL31B225KBHNNNE",
+   "brand": "Samsung Electro-Mechanics",
+   "description": "2.2uF 50V X7R \u00b110% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "1206",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Basic",
+   "basic": true,
+   "stock": 414087,
+   "price": 0.0856,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0856
+    },
+    {
+     "qty": 100,
+     "price": 0.0676
+    },
+    {
+     "qty": 300,
+     "price": 0.0583
+    },
+    {
+     "qty": 2000,
+     "price": 0.0507
+    },
+    {
+     "qty": 4000,
+     "price": 0.0481
+    },
+    {
+     "qty": 10000,
+     "price": 0.0463
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL31B225KBHNNNE_C50254.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_samsung-electro-mechanics-cl31b225kbhnnne_C50254.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "2.2uF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 4
+  }
+ ],
+ "filters": {
+  "type": "basic"
+ },
+ "placeholders_filtered": 0
+}

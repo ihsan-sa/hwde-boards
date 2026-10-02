@@ -1,0 +1,2053 @@
+{
+ "parts": [
+  {
+   "ref_prefix_hint": "U",
+   "block": "charger",
+   "mpn": "BQ24074RGTR",
+   "lcsc": "C54313",
+   "value": "BQ24074RGTR",
+   "package": "QFN-16-EP(3x3)",
+   "basic": false,
+   "stock": 417,
+   "price": 2.5036,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809192125_Texas-Instruments-BQ24074RGTR_C54313.pdf",
+   "alternates": [
+    {
+     "mpn": "BQ24074RGTT",
+     "lcsc": "C2861252",
+     "note": "same die, small reel, stock 105"
+    },
+    {
+     "mpn": "BQ24074RGTRG4",
+     "lcsc": "C3682481",
+     "note": "same die, stock 0"
+    }
+   ],
+   "role": "U1 linear charger + power path, OUT 4.4 V; EN2=+SYS, EN1=CE=GND, ILIM mode, ITERM open (10%), no SYSOFF/TD pin on this variant",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.5036
+    },
+    {
+     "qty": 10,
+     "price": 2.1735
+    },
+    {
+     "qty": 30,
+     "price": 1.9687
+    },
+    {
+     "qty": 100,
+     "price": 1.7574
+    },
+    {
+     "qty": 500,
+     "price": 1.5038
+    },
+    {
+     "qty": 1000,
+     "price": 1.4631
+    }
+   ],
+   "brand": "Texas Instruments",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "6.5uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.35V~10.2V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.5A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "refs": [
+    "U1"
+   ]
+  },
+  {
+   "ref_prefix_hint": "U",
+   "block": "boost",
+   "mpn": "TPS61023DRLR",
+   "lcsc": "C919459",
+   "value": "TPS61023DRLR",
+   "package": "SOT-563",
+   "basic": false,
+   "stock": 56120,
+   "price": 0.2445,
+   "datasheet": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+   "alternates": [
+    {
+     "mpn": "TPS61023DRLT",
+     "lcsc": "C1852149",
+     "note": "same die, small reel, stock 486"
+    }
+   ],
+   "role": "U2 sync boost 5 V, FB 732k/100k, EN pull-up to +SYS",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2445
+    },
+    {
+     "qty": 50,
+     "price": 0.1922
+    },
+    {
+     "qty": 150,
+     "price": 0.1667
+    },
+    {
+     "qty": 500,
+     "price": 0.1439
+    },
+    {
+     "qty": 2500,
+     "price": 0.1251
+    },
+    {
+     "qty": 4000,
+     "price": 0.1213
+    }
+   ],
+   "brand": "Texas Instruments",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(TJ)"
+    },
+    {
+     "name": "Function",
+     "value": "Boost"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "Yes"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "1MHz"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "500mV~5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "3A"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "3uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Load disconnect"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Boost"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "2.2V~5.5V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "refs": [
+    "U2"
+   ]
+  },
+  {
+   "ref_prefix_hint": "U",
+   "block": "charger",
+   "mpn": "MSXC61CN3302MR",
+   "lcsc": "C45367187",
+   "value": "MSXC61CN3302MR",
+   "package": "SOT-23-3",
+   "basic": false,
+   "stock": 3713,
+   "price": 0.1127,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2504101957_MSKSEMI-MSXC61CN3302MR_C45367187.pdf",
+   "alternates": [
+    {
+     "mpn": "XC61CN3202MR-G",
+     "lcsc": "C2461448",
+     "note": "exact 3.2 V, same SOT-23 pinout, stock 0 at 2026-10-01"
+    }
+   ],
+   "role": "U3 3.3 V open-drain voltage detector on VBAT (pins per datasheet: 1 VOUT/LBO, 2 VSS, 3 VIN); 3.2 V part not stocked, threshold 3.3 V +/-2%, hysteresis 5%",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1127
+    },
+    {
+     "qty": 50,
+     "price": 0.0893
+    },
+    {
+     "qty": 150,
+     "price": 0.0776
+    },
+    {
+     "qty": 500,
+     "price": 0.0688
+    },
+    {
+     "qty": 3000,
+     "price": 0.0608
+    },
+    {
+     "qty": 6000,
+     "price": 0.0574
+    }
+   ],
+   "brand": "MSKSEMI",
+   "attributes": [
+    {
+     "name": "Number of Voltages Monitored",
+     "value": "1"
+    },
+    {
+     "name": "ChipType",
+     "value": "Voltage Detector"
+    },
+    {
+     "name": "Threshold Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "950mV~7V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Open-drain"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "1uA"
+    }
+   ],
+   "refs": [
+    "U3"
+   ]
+  },
+  {
+   "ref_prefix_hint": "Q",
+   "block": "charger",
+   "mpn": "2N7002",
+   "lcsc": "C8545",
+   "value": "2N7002",
+   "package": "SOT-23",
+   "basic": true,
+   "stock": 1644094,
+   "price": 0.0178,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf",
+   "alternates": [
+    {
+     "mpn": "AO3400A",
+     "lcsc": "C20917",
+     "note": "Basic, lower Vth, same SOT-23 pinout G/S/D"
+    }
+   ],
+   "role": "Q1 DONE-LED N-MOSFET, gate=CHG with 100k pull-up to +SYS, source=PGOOD",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0178
+    },
+    {
+     "qty": 500,
+     "price": 0.0141
+    },
+    {
+     "qty": 3000,
+     "price": 0.0125
+    },
+    {
+     "qty": 6000,
+     "price": 0.0113
+    },
+    {
+     "qty": 24000,
+     "price": 0.0108
+    },
+    {
+     "qty": 51000,
+     "price": 0.0105
+    }
+   ],
+   "brand": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+   "attributes": [
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "5pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "115mA"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "60V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "25pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "5\u03a9@10V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "50pF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2.5V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "225mW"
+    }
+   ],
+   "refs": [
+    "Q1"
+   ]
+  },
+  {
+   "ref_prefix_hint": "D",
+   "block": "charger",
+   "mpn": "ORH-R36A",
+   "lcsc": "C205445",
+   "value": "ORH-R36A",
+   "package": "0603",
+   "basic": false,
+   "stock": 266413,
+   "price": 0.0076,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1806122240_Orient-ORH-R36A_C205445.pdf",
+   "alternates": [
+    {
+     "mpn": "KT-0603Y",
+     "lcsc": "C2287"
+    }
+   ],
+   "role": "D1 CHG LED orange 0603, 1k to +SYS",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0076
+    },
+    {
+     "qty": 1000,
+     "price": 0.0058
+    },
+    {
+     "qty": 4000,
+     "price": 0.0051
+    },
+    {
+     "qty": 8000,
+     "price": 0.0045
+    },
+    {
+     "qty": 48000,
+     "price": 0.004
+    },
+    {
+     "qty": 100000,
+     "price": 0.0037
+    }
+   ],
+   "brand": "Orient",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+80\u2103"
+    },
+    {
+     "name": "Wavelength - Dominant",
+     "value": "618nm~630nm"
+    },
+    {
+     "name": "Test Current",
+     "value": "20mA"
+    },
+    {
+     "name": "Viewing Angle",
+     "value": "120\u00b0"
+    },
+    {
+     "name": "Luminous Intensity",
+     "value": "63mcd~210mcd"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Diode Configuration",
+     "value": "Discrete Diode"
+    },
+    {
+     "name": "Illumination Color",
+     "value": "Orange Red"
+    },
+    {
+     "name": "Lens Color",
+     "value": "Water Clear"
+    },
+    {
+     "name": "Peak Wavelength",
+     "value": "630nm"
+    },
+    {
+     "name": "Voltage - Forward(Vf)",
+     "value": "1.6V~2.4V"
+    }
+   ],
+   "refs": [
+    "D1"
+   ]
+  },
+  {
+   "ref_prefix_hint": "D",
+   "block": "charger",
+   "mpn": "KT-0603G",
+   "lcsc": "C12624",
+   "value": "KT-0603G",
+   "package": "0603",
+   "basic": false,
+   "stock": 313502,
+   "price": 0.0122,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1806151818_Hubei-KENTO-Elec-KT-0603G_C12624.pdf",
+   "alternates": [
+    {
+     "mpn": "NCD0603G1",
+     "lcsc": "C84267"
+    }
+   ],
+   "role": "D2 DONE LED green 0603 (Vf 3.1 V), 470R to +SYS",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0122
+    },
+    {
+     "qty": 500,
+     "price": 0.0097
+    },
+    {
+     "qty": 1500,
+     "price": 0.0083
+    },
+    {
+     "qty": 4000,
+     "price": 0.0075
+    },
+    {
+     "qty": 24000,
+     "price": 0.0068
+    },
+    {
+     "qty": 48000,
+     "price": 0.0064
+    }
+   ],
+   "brand": "Hubei KENTO Elec",
+   "attributes": [
+    {
+     "name": "Wavelength - Dominant",
+     "value": "513nm~528nm"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Test Current",
+     "value": "5mA"
+    },
+    {
+     "name": "Viewing Angle",
+     "value": "120\u00b0"
+    },
+    {
+     "name": "Lamp Holder Type",
+     "value": "1.6mm x 0.8mm square LED"
+    },
+    {
+     "name": "Luminous Intensity",
+     "value": "430mcd"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Diode Configuration",
+     "value": "Discrete Diode"
+    },
+    {
+     "name": "Illumination Color",
+     "value": "Emerald Green"
+    },
+    {
+     "name": "Lens Color",
+     "value": "Water Clear"
+    },
+    {
+     "name": "Peak Wavelength",
+     "value": "525nm"
+    },
+    {
+     "name": "Voltage - Forward(Vf)",
+     "value": "3.1V"
+    }
+   ],
+   "refs": [
+    "D2"
+   ]
+  },
+  {
+   "ref_prefix_hint": "D",
+   "block": "charger",
+   "mpn": "KT-0603R",
+   "lcsc": "C2286",
+   "value": "KT-0603R",
+   "package": "0603",
+   "basic": true,
+   "stock": 4848836,
+   "price": 0.0076,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf",
+   "alternates": [
+    {
+     "mpn": "NCD0603R1",
+     "lcsc": "C84263"
+    }
+   ],
+   "role": "D3 LOW-BATT LED red 0603, 1k to +SYS",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0076
+    },
+    {
+     "qty": 1000,
+     "price": 0.0058
+    },
+    {
+     "qty": 4000,
+     "price": 0.0045
+    },
+    {
+     "qty": 8000,
+     "price": 0.0039
+    },
+    {
+     "qty": 48000,
+     "price": 0.0037
+    },
+    {
+     "qty": 100000,
+     "price": 0.0035
+    }
+   ],
+   "brand": "Hubei KENTO Elec",
+   "attributes": [
+    {
+     "name": "Wavelength - Dominant",
+     "value": "615nm~630nm"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Test Current",
+     "value": "20mA"
+    },
+    {
+     "name": "Viewing Angle",
+     "value": "120\u00b0"
+    },
+    {
+     "name": "Lamp Holder Type",
+     "value": "1.6mm x 0.8mm square LED"
+    },
+    {
+     "name": "Luminous Intensity",
+     "value": "300mcd"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "40mW"
+    },
+    {
+     "name": "Diode Configuration",
+     "value": "Discrete Diode"
+    },
+    {
+     "name": "Illumination Color",
+     "value": "Red"
+    },
+    {
+     "name": "Lens Color",
+     "value": "Water Clear"
+    },
+    {
+     "name": "Peak Wavelength",
+     "value": "645nm"
+    },
+    {
+     "name": "Voltage - Forward(Vf)",
+     "value": "1.8V~2.4V"
+    }
+   ],
+   "refs": [
+    "D3"
+   ]
+  },
+  {
+   "ref_prefix_hint": "L",
+   "block": "boost",
+   "mpn": "FHD4020S-1R0MT",
+   "lcsc": "C602028",
+   "value": "FHD4020S-1R0MT",
+   "package": "SMD,4x4mm",
+   "basic": false,
+   "stock": 10486,
+   "price": 0.0735,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_cjiang--Changjiang-Microelectronics-Tech-FHD4020S-1R0MT_C602028.pdf",
+   "alternates": [
+    {
+     "mpn": "FXL0420-1R0-M",
+     "lcsc": "C167203",
+     "note": "Isat 5.6 A min/7.0 typ, DCR 27 mohm max, 4.4x4.2 footprint differs"
+    }
+   ],
+   "role": "L1 1 uH shielded, 4x4x2 mm; datasheet: Isat 8.7 A min/11 A typ (30% drop at 1 MHz), DCR 28 mohm max, Irms 5.8 A",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0735
+    },
+    {
+     "qty": 100,
+     "price": 0.0587
+    },
+    {
+     "qty": 300,
+     "price": 0.0514
+    },
+    {
+     "qty": 3000,
+     "price": 0.0399
+    },
+    {
+     "qty": 6000,
+     "price": 0.0355
+    },
+    {
+     "qty": 9000,
+     "price": 0.0332
+    }
+   ],
+   "brand": "cjiang (Changjiang Microelectronics Tech)",
+   "attributes": [
+    {
+     "name": "Current - Saturation(Isat)",
+     "value": "11A"
+    },
+    {
+     "name": "Inductance",
+     "value": "1uH"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Current Rating",
+     "value": "6.7A"
+    },
+    {
+     "name": "DC Resistance(DCR)",
+     "value": "23m\u03a9"
+    }
+   ],
+   "refs": [
+    "L1"
+   ]
+  },
+  {
+   "ref_prefix_hint": "J",
+   "block": "charger",
+   "mpn": "MicroXNJ",
+   "lcsc": "C404969",
+   "value": "MicroXNJ",
+   "package": "SMD",
+   "basic": false,
+   "stock": 179483,
+   "price": 0.041,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204151400_SHOU-HAN-MicroXNJ_C404969.pdf",
+   "alternates": [
+    {
+     "mpn": "USB-MICRO XNJ JB",
+     "lcsc": "C7507410"
+    }
+   ],
+   "role": "J1 USB micro-B receptacle SMT right angle, 1.8 A",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.041
+    },
+    {
+     "qty": 100,
+     "price": 0.0332
+    },
+    {
+     "qty": 300,
+     "price": 0.0291
+    },
+    {
+     "qty": 1000,
+     "price": 0.0251
+    },
+    {
+     "qty": 5000,
+     "price": 0.0239
+    },
+    {
+     "qty": 10000,
+     "price": 0.0231
+    }
+   ],
+   "brand": "SHOU HAN",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-30\u2103~+80\u2103"
+    },
+    {
+     "name": "Current Rating-Power",
+     "value": "1.8A"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "30V"
+    },
+    {
+     "name": "Gender",
+     "value": "Female"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Surface Mount, Right Angle"
+    },
+    {
+     "name": "Detection color",
+     "value": "Black"
+    },
+    {
+     "name": "Number of Ports",
+     "value": "1"
+    },
+    {
+     "name": "Length",
+     "value": "5.7mm"
+    },
+    {
+     "name": "Connector Type",
+     "value": "Micro-B"
+    },
+    {
+     "name": "Number of Contacts",
+     "value": "5P"
+    },
+    {
+     "name": "Connect-Disconnect Life",
+     "value": "2,000 cycles"
+    },
+    {
+     "name": "Protocol Standard",
+     "value": "USB 2.0"
+    }
+   ],
+   "refs": [
+    "J1"
+   ]
+  },
+  {
+   "ref_prefix_hint": "J",
+   "block": "charger",
+   "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+   "lcsc": "C295747",
+   "value": "S2B-PH-SM4-TB(LF)(SN)",
+   "package": "SMD,P=2mm,Surface Mount\uff0cRight Angle",
+   "basic": false,
+   "stock": 21059,
+   "price": 0.2364,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2102031704_JST-S2B-PH-SM4-TB-LF-SN_C295747.pdf",
+   "alternates": [
+    {
+     "mpn": "XY-S2B-PH-SM4-TB",
+     "lcsc": "C54582899"
+    }
+   ],
+   "role": "J2 JST-PH 2-pin SMT right angle",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2364
+    },
+    {
+     "qty": 50,
+     "price": 0.1904
+    },
+    {
+     "qty": 150,
+     "price": 0.1708
+    },
+    {
+     "qty": 1000,
+     "price": 0.1462
+    },
+    {
+     "qty": 2000,
+     "price": 0.1351
+    },
+    {
+     "qty": 5000,
+     "price": 0.1286
+    }
+   ],
+   "brand": "JST",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+85\u2103"
+    },
+    {
+     "name": "Number of Rows",
+     "value": "1"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "100V"
+    },
+    {
+     "name": "Color",
+     "value": "Beige"
+    },
+    {
+     "name": "Current Rating",
+     "value": "2A"
+    },
+    {
+     "name": "Pins Structure",
+     "value": "1x2P"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Surface Mount, Right Angle"
+    },
+    {
+     "name": "Flame Retardant Rating",
+     "value": "UL94V-0"
+    },
+    {
+     "name": "Y-Width of Bottom Edge on Board",
+     "value": "8.6mm"
+    },
+    {
+     "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+     "value": "7.9mm"
+    },
+    {
+     "name": "Reference Series",
+     "value": "PH"
+    },
+    {
+     "name": "Contact Plating",
+     "value": "Tin"
+    },
+    {
+     "name": "Number of Pins",
+     "value": "2P"
+    },
+    {
+     "name": "Pitch",
+     "value": "2mm"
+    },
+    {
+     "name": "Contact Material",
+     "value": "Copper alloy"
+    },
+    {
+     "name": "Supplementary Features",
+     "value": "Auxiliary Solder Pin"
+    },
+    {
+     "name": "Z-Height of the Board",
+     "value": "5.5mm"
+    },
+    {
+     "name": "Plastic Material",
+     "value": "PA"
+    },
+    {
+     "name": "Number of PINs Per Row",
+     "value": "2"
+    }
+   ],
+   "refs": [
+    "J2"
+   ]
+  },
+  {
+   "ref_prefix_hint": "J",
+   "block": "boost",
+   "mpn": "HX PZ2.54-1x7P ZZ",
+   "lcsc": "C32713273",
+   "value": "HX PZ2.54-1x7P ZZ",
+   "package": "Plugin,P=2.54mm",
+   "basic": false,
+   "stock": 19115,
+   "price": 0.054,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407231541_hanxia-HX-PZ2-54-1x7P-ZZ_C32713273.pdf",
+   "alternates": [
+    {
+     "mpn": "KH-2.54PH180-1X7P-L11.5",
+     "lcsc": "C2932700"
+    }
+   ],
+   "role": "J3 1x7 2.54 mm THT straight header",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.054
+    },
+    {
+     "qty": 100,
+     "price": 0.0428
+    },
+    {
+     "qty": 300,
+     "price": 0.0371
+    },
+    {
+     "qty": 1000,
+     "price": 0.0329
+    },
+    {
+     "qty": 5000,
+     "price": 0.0295
+    },
+    {
+     "qty": 10000,
+     "price": 0.0277
+    }
+   ],
+   "brand": "hanxia",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Number of Rows",
+     "value": "1"
+    },
+    {
+     "name": "Voltage Rating (Max)",
+     "value": "1kV"
+    },
+    {
+     "name": "Insulation Height",
+     "value": "2.5mm"
+    },
+    {
+     "name": "Length of End Connection Pin",
+     "value": "3mm"
+    },
+    {
+     "name": "Color",
+     "value": "Black"
+    },
+    {
+     "name": "Current Rating",
+     "value": "3A"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Through Hole"
+    },
+    {
+     "name": "Contact Plating",
+     "value": "Gold"
+    },
+    {
+     "name": "Number of Pins",
+     "value": "7P"
+    },
+    {
+     "name": "Pitch",
+     "value": "2.54mm"
+    },
+    {
+     "name": "Contact Material",
+     "value": "Brass"
+    },
+    {
+     "name": "Pin Structure",
+     "value": "1x7P"
+    },
+    {
+     "name": "Length of Mating Pin",
+     "value": "6mm"
+    },
+    {
+     "name": "Circluar Pins/Square Pins",
+     "value": "Square pin"
+    }
+   ],
+   "refs": [
+    "J3"
+   ]
+  },
+  {
+   "ref_prefix_hint": "J",
+   "block": "boost",
+   "mpn": "Type-A-AF90",
+   "lcsc": "C53207796",
+   "value": "Type-A-AF90",
+   "package": "Plugin",
+   "basic": false,
+   "stock": 180,
+   "price": 0.1238,
+   "datasheet": "",
+   "alternates": [
+    {
+     "mpn": "BX-TYPE-A-MCC4P",
+     "lcsc": "C18077685",
+     "note": "original pick; not in EasyEDA API, no pullable footprint"
+    }
+   ],
+   "role": "J4 USB-A female right angle THT, 4P + shell tabs, 1.5 A (swapped from C18077685: no EasyEDA footprint)",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1238
+    },
+    {
+     "qty": 50,
+     "price": 0.0981
+    },
+    {
+     "qty": 200,
+     "price": 0.0852
+    },
+    {
+     "qty": 500,
+     "price": 0.0755
+    },
+    {
+     "qty": 2500,
+     "price": 0.0678
+    },
+    {
+     "qty": 5000,
+     "price": 0.0639
+    }
+   ],
+   "brand": "JXTCONN",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-20\u2103~+70\u2103"
+    },
+    {
+     "name": "Detection color",
+     "value": "White"
+    },
+    {
+     "name": "Number of Ports",
+     "value": "1"
+    },
+    {
+     "name": "Length",
+     "value": "19.4mm"
+    },
+    {
+     "name": "Current Rating-Power",
+     "value": "1.5A"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "30V"
+    },
+    {
+     "name": "Connector Type",
+     "value": "Type-A"
+    },
+    {
+     "name": "Number of Contacts",
+     "value": "4P"
+    },
+    {
+     "name": "Gender",
+     "value": "Female"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Side insertion"
+    },
+    {
+     "name": "Protocol Standard",
+     "value": "USB 2.0"
+    }
+   ],
+   "refs": [
+    "J4"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "charger",
+   "mpn": "0603WAF1002T5E",
+   "lcsc": "C25804",
+   "value": "10k 0603 1%",
+   "package": "0603",
+   "basic": true,
+   "stock": 23144302,
+   "price": 0.0018,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+   "alternates": [],
+   "role": "R_TS fixed 10k TS to GND",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0018
+    },
+    {
+     "qty": 1000,
+     "price": 0.0015
+    },
+    {
+     "qty": 5000,
+     "price": 0.0014
+    },
+    {
+     "qty": 10000,
+     "price": 0.0013
+    },
+    {
+     "qty": 50000,
+     "price": 0.0012
+    },
+    {
+     "qty": 50200,
+     "price": 0.0012
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "10k\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R1"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "both",
+   "mpn": "0603WAF1003T5E",
+   "lcsc": "C25803",
+   "value": "100k 0603 1%",
+   "package": "0603",
+   "basic": true,
+   "stock": 22181258,
+   "price": 0.0031,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf",
+   "alternates": [],
+   "role": "Q1 gate pull-up, U2 EN pull-up, FB bottom R",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0031
+    },
+    {
+     "qty": 1000,
+     "price": 0.0024
+    },
+    {
+     "qty": 5000,
+     "price": 0.0021
+    },
+    {
+     "qty": 10000,
+     "price": 0.0017
+    },
+    {
+     "qty": 50000,
+     "price": 0.0016
+    },
+    {
+     "qty": 50200,
+     "price": 0.0016
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "100k\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R8",
+    "R9",
+    "R11"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "boost",
+   "mpn": "0603WAF7323T5E",
+   "lcsc": "C23239",
+   "value": "732k 0603 1%",
+   "package": "0603",
+   "basic": false,
+   "stock": 20860,
+   "price": 0.0024,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF7323T5E_C23239.pdf",
+   "alternates": [
+    {
+     "mpn": "FRC0603F7323TS",
+     "lcsc": "C5159703"
+    }
+   ],
+   "role": "FB top resistor, Vout 4.95 V typ (4.83-5.07)",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0024
+    },
+    {
+     "qty": 1000,
+     "price": 0.0019
+    },
+    {
+     "qty": 5000,
+     "price": 0.0016
+    },
+    {
+     "qty": 10000,
+     "price": 0.0015
+    },
+    {
+     "qty": 50000,
+     "price": 0.0013
+    },
+    {
+     "qty": 50200,
+     "price": 0.0013
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "732k\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R10"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "charger",
+   "mpn": "0603WAF1001T5E",
+   "lcsc": "C21190",
+   "value": "1k 0603 1%",
+   "package": "0603",
+   "basic": true,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf",
+   "alternates": [
+    {
+     "mpn": "0603WAF9100T5E",
+     "lcsc": "C23264",
+     "note": "910R Extended, 0.98 A typ"
+    }
+   ],
+   "role": "RISET 1k: ~0.89 A typ charge (P3 decision, Basic)",
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "910\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R3",
+    "R5"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "charger",
+   "mpn": "0603WAF1201T5E",
+   "lcsc": "C22765",
+   "value": "1.2k 0603 1%",
+   "package": "0603",
+   "basic": true,
+   "alternates": [
+    {
+     "mpn": "FRC0603F1151TS",
+     "lcsc": "C2998059",
+     "note": "1.15k Extended"
+    }
+   ],
+   "role": "RILIM 1.2k: 1.25-1.43 A input limit (KILIM 1500-1720; P3 decision, Basic)",
+   "brand": "FOJAN",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "1.15k\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R2"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "charger",
+   "mpn": "0603WAF5102T5E",
+   "lcsc": "C23196",
+   "value": "51k 0603 1%",
+   "package": "0603",
+   "basic": true,
+   "stock": 2944558,
+   "price": 0.0017,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5102T5E_C23196.pdf",
+   "alternates": [],
+   "role": "RTMR: precharge 41 min, fast charge 6.8 h typ",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0017
+    },
+    {
+     "qty": 1000,
+     "price": 0.0013
+    },
+    {
+     "qty": 5000,
+     "price": 0.0011
+    },
+    {
+     "qty": 10000,
+     "price": 0.001
+    },
+    {
+     "qty": 50000,
+     "price": 0.0008
+    },
+    {
+     "qty": 50200,
+     "price": 0.0008
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "51k\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R4"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "charger",
+   "mpn": "0603WAF1001T5E",
+   "lcsc": "C21190",
+   "value": "1k 0603 1%",
+   "package": "0603",
+   "basic": true,
+   "stock": 21690093,
+   "price": 0.0026,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf",
+   "alternates": [],
+   "role": "D1 and D3 LED resistors",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0026
+    },
+    {
+     "qty": 1000,
+     "price": 0.002
+    },
+    {
+     "qty": 5000,
+     "price": 0.0018
+    },
+    {
+     "qty": 10000,
+     "price": 0.0014
+    },
+    {
+     "qty": 50000,
+     "price": 0.0013
+    },
+    {
+     "qty": 50200,
+     "price": 0.0013
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "1k\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R7"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "charger",
+   "mpn": "0603WAF4700T5E",
+   "lcsc": "C23179",
+   "value": "470R 0603 1%",
+   "package": "0603",
+   "basic": true,
+   "stock": 6399567,
+   "price": 0.0023,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4700T5E_C23179.pdf",
+   "alternates": [],
+   "role": "D2 LED resistor",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0023
+    },
+    {
+     "qty": 1000,
+     "price": 0.0018
+    },
+    {
+     "qty": 5000,
+     "price": 0.0015
+    },
+    {
+     "qty": 10000,
+     "price": 0.0012
+    },
+    {
+     "qty": 50000,
+     "price": 0.0011
+    },
+    {
+     "qty": 50200,
+     "price": 0.0011
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "470\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1100ppm/\u2103"
+    }
+   ],
+   "refs": [
+    "R6"
+   ]
+  },
+  {
+   "ref_prefix_hint": "R",
+   "block": "boost",
+   "mpn": "0603WAF0000T5E",
+   "lcsc": "C21189",
+   "value": "0R 0603",
+   "package": "0603",
+   "basic": true,
+   "stock": 23781179,
+   "price": 0.0023,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2411221126_UNI-ROYAL-Uniroyal-Elec-0603WAF0000T5E_C21189.pdf",
+   "alternates": [],
+   "role": "R_DCP joins USB-A D+/D-",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0023
+    },
+    {
+     "qty": 1000,
+     "price": 0.0018
+    },
+    {
+     "qty": 5000,
+     "price": 0.0016
+    },
+    {
+     "qty": 10000,
+     "price": 0.0013
+    },
+    {
+     "qty": 50000,
+     "price": 0.0012
+    },
+    {
+     "qty": 50200,
+     "price": 0.0012
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "0\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    }
+   ],
+   "refs": [
+    "R12"
+   ]
+  },
+  {
+   "ref_prefix_hint": "C",
+   "block": "charger",
+   "mpn": "CL21A475KAQNNNE",
+   "lcsc": "C1779",
+   "value": "4.7uF 25V X5R 0805",
+   "package": "0805",
+   "basic": true,
+   "stock": 3059986,
+   "price": 0.0345,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21A475KAQNNNE_C1779.pdf",
+   "alternates": [],
+   "role": "U1 IN cap (VIN to 10.2 V, rated >=16 V)",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0345
+    },
+    {
+     "qty": 200,
+     "price": 0.0265
+    },
+    {
+     "qty": 600,
+     "price": 0.0225
+    },
+    {
+     "qty": 2000,
+     "price": 0.015
+    },
+    {
+     "qty": 10000,
+     "price": 0.0139
+    },
+    {
+     "qty": 20000,
+     "price": 0.0131
+    }
+   ],
+   "brand": "Samsung Electro-Mechanics",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "4.7uF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X5R"
+    }
+   ],
+   "refs": [
+    "C1"
+   ]
+  },
+  {
+   "ref_prefix_hint": "C",
+   "block": "both",
+   "mpn": "CL21A106KAYNNNE",
+   "lcsc": "C15850",
+   "value": "10uF 25V X5R 0805",
+   "package": "0805",
+   "basic": true,
+   "stock": 5017972,
+   "price": 0.0651,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+   "alternates": [],
+   "role": "U1 OUT, U1 BAT, U2 Cin",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0651
+    },
+    {
+     "qty": 200,
+     "price": 0.0472
+    },
+    {
+     "qty": 600,
+     "price": 0.0381
+    },
+    {
+     "qty": 2000,
+     "price": 0.0304
+    },
+    {
+     "qty": 10000,
+     "price": 0.0278
+    },
+    {
+     "qty": 20000,
+     "price": 0.0261
+    }
+   ],
+   "brand": "Samsung Electro-Mechanics",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "10uF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X5R"
+    }
+   ],
+   "refs": [
+    "C2",
+    "C3",
+    "C10"
+   ]
+  },
+  {
+   "ref_prefix_hint": "C",
+   "block": "boost",
+   "mpn": "CL21A226MAQNNNE",
+   "lcsc": "C45783",
+   "value": "22uF 25V X5R 0805",
+   "package": "0805",
+   "basic": true,
+   "stock": 4010213,
+   "price": 0.2202,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.pdf",
+   "alternates": [],
+   "role": "U2 Cout x2",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2202
+    },
+    {
+     "qty": 200,
+     "price": 0.1638
+    },
+    {
+     "qty": 600,
+     "price": 0.1363
+    },
+    {
+     "qty": 2000,
+     "price": 0.1117
+    },
+    {
+     "qty": 10000,
+     "price": 0.1049
+    },
+    {
+     "qty": 20000,
+     "price": 0.1008
+    }
+   ],
+   "brand": "Samsung Electro-Mechanics",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "22uF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X5R"
+    }
+   ],
+   "refs": [
+    "C11",
+    "C12"
+   ]
+  },
+  {
+   "ref_prefix_hint": "C",
+   "block": "both",
+   "mpn": "CC0603KRX7R9BB104",
+   "lcsc": "C14663",
+   "value": "100nF 50V X7R 0603",
+   "package": "0603",
+   "basic": true,
+   "stock": 54587421,
+   "price": 0.0123,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+   "alternates": [],
+   "role": "HF bypass at U2 VOUT, U2 VIN and U1 IN (qty 4: C4, C13, C14 + one spare use)",
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0123
+    },
+    {
+     "qty": 500,
+     "price": 0.0088
+    },
+    {
+     "qty": 1500,
+     "price": 0.0073
+    },
+    {
+     "qty": 4000,
+     "price": 0.0058
+    },
+    {
+     "qty": 24000,
+     "price": 0.0054
+    },
+    {
+     "qty": 48000,
+     "price": 0.0051
+    }
+   ],
+   "brand": "YAGEO",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "refs": [
+    "C4",
+    "C13",
+    "C14"
+   ]
+  }
+ ]
+}

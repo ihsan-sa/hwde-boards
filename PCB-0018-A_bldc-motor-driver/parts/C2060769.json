@@ -1,0 +1,53 @@
+{
+  "mpn": "INA240A1DR",
+  "lcsc": "C2060769",
+  "package": "SOIC-8 (D0008A)",
+  "description": "Bidirectional, zero-drift, PWM-rejection current-sense amplifier, A1 gain grade (20 V/V), D (SOIC-8) package.",
+  "pinout": [
+    {"pin": "1", "name": "IN-", "type": "analog", "notes": "Analog input. Connect to load side of shunt resistor."},
+    {"pin": "2", "name": "GND", "type": "ground", "notes": "Analog ground."},
+    {"pin": "3", "name": "REF2", "type": "analog", "notes": "Reference 2 voltage input, 0V to VS. Do not connect to a voltage source lower than GND or higher than VS."},
+    {"pin": "4", "name": "NC", "type": "nc", "notes": "Reserved. Connect to ground or leave floating."},
+    {"pin": "5", "name": "OUT", "type": "output", "notes": "Analog output voltage."},
+    {"pin": "6", "name": "VS", "type": "power_in", "notes": "Power supply, 2.7V to 5.5V."},
+    {"pin": "7", "name": "REF1", "type": "analog", "notes": "Reference 1 voltage input, 0V to VS. Do not connect to a voltage source lower than GND or higher than VS."},
+    {"pin": "8", "name": "IN+", "type": "analog", "notes": "Analog input. Connect to supply side of shunt resistor."}
+  ],
+  "decoupling": [
+    {
+      "pins": ["VS", "GND"],
+      "value": "0.1uF (bypass), TI recommendation",
+      "placement": "as close as possible to the supply and ground pins",
+      "notes": "Additional decoupling capacitance can be added to compensate for noisy or high-impedance power supplies (Power Supply Decoupling section)."
+    }
+  ],
+  "land_pattern": {
+    "package": "D0008A, SOIC-8, 1.75mm max height",
+    "pad_count": 8,
+    "pitch_mm": 1.27,
+    "pad_size_mm": [0.6, 1.55],
+    "row_spacing_mm": 5.4,
+    "pin1": "1",
+    "notes": "IPC land pattern from TI's example board layout: 8x pads 0.6mm x 1.55mm at 1.27mm pitch, non-solder-mask-defined preferred. No exposed pad on this package."
+  },
+  "exposed_pad": {
+    "present": false
+  },
+  "layout_notes": [
+    "Input filters are not required for accurate measurement and are not recommended at the input pins; if used, keep series resistors <=10 ohm (added series R creates differential error via internal bias-current mismatch) and prefer filtering at the amplifier output instead.",
+    "Use a Kelvin (4-wire) connection from the current-sense shunt resistor to the IN+/IN- pins; poor routing adds series impedance that causes measurement error given the very low shunt resistance.",
+    "Provide adequate bypass capacitance on the VS pin, placed as close as possible to the supply/ground pins, for high-precision applications.",
+    "Recommended board layout (both TSSOP and SOIC examples) routes IN+/IN- directly to the shunt with vias to the ground plane near GND and REF2/NC, and places CBYPASS next to VS.",
+    "Do not connect REF1 or REF2 to any voltage source below GND or above VS; there is no operational difference between the two reference pins."
+  ],
+  "abs_max": [
+    {"param": "Supply voltage (VS)", "value": 6, "unit": "V"},
+    {"param": "Analog inputs, differential (VIN+ - VIN-)", "value": "-80 to 80", "unit": "V"},
+    {"param": "Analog inputs, common-mode", "value": "-6 to 90", "unit": "V"},
+    {"param": "REF1, REF2, NC inputs", "value": "GND-0.3 to VS+0.3", "unit": "V"},
+    {"param": "Output", "value": "GND-0.3 to VS+0.3", "unit": "V"},
+    {"param": "TA (operating free-air)", "value": "-55 to 150", "unit": "C"},
+    {"param": "TJ (junction)", "value": 150, "unit": "C"},
+    {"param": "Tstg (storage)", "value": "-65 to 150", "unit": "C"}
+  ]
+}

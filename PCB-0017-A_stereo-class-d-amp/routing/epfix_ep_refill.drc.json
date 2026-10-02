@@ -1,0 +1,24 @@
+{
+  "script": "kc",
+  "tool": "drc",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "units": "mm",
+  "kicad_version": "10.0.6",
+  "options": {
+    "parity": false,
+    "all_track_errors": false,
+    "refill": true,
+    "save_board": true
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "status": "pass",
+  "violations": [],
+  "report_schema": 1,
+  "checker_version": 1,
+  "generated_at": "2026-09-27T11:49:25+00:00",
+  "input_digest": "sexpr_no_uuid:8942e2da832c9da7abab9ca781b7e3c63079aaad3372bddf22264bebd6baea3b"
+}

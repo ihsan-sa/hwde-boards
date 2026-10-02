@@ -1,0 +1,53 @@
+id: lc-output-filter-placement-and-loop
+classes: [emi]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  loop: "output pin -> L -> filter cap -> GND kept as small and tight as possible; its area is the antenna"
+  placement: "LC filter close to the output pins; ferrite/EMI filter close to the output terminals"
+  traces: "direct, wide, low-impedance output traces, no detours"
+prose: >
+  The switching edges are fast, so the current loop from each output pin
+  through the inductor and the filter cap back to GND is the radiator: "the
+  size of this current loop determines its effectiveness as an antenna"
+  (10.1, p28). Place the LC close to the outputs and ground its caps; a
+  ferrite-bead EMI filter, if used instead of or after the LC, goes as close
+  to the output terminals as possible (p28). The datasheet's layout example
+  (Fig 40, p29) annotates exactly this: "Output filters placed close to the
+  output pins to minimize return loop" and "Direct low impedance traces for
+  PVCC and output traces", with the top layer filled with GND. The EVM
+  (Fig 3, p6) shows the arrangement on a 2-layer board: the four inductors
+  L1-L4 sit immediately to the right of the IC's OUTxx pins in a 2 x 2
+  block, the 0.68 uF caps C21-C24 sit at the inductor outputs on the way to
+  the binding posts, the RC snubber parts are between the pins and the
+  inductors, and every output trace is short, wide and on the top layer.
+  The bottom (Fig 4, p7) carries no output copper: its one wide route is
+  the PVCC feed from the supply post to the IC, so the output loop never
+  changes layer. The switch-node snubber (if fitted)
+  has its own tighter rule: "layout of the snubber network is tight and
+  returns directly to the GND pins on the IC" (7.3.14, p21). Speaker wires
+  are antennas above 30 MHz (p21), so the filter is the last thing before
+  the connector, not the first thing after the IC.
+sources:
+  - {file: research/sources/tpa3116d2.pdf, page: 28, note: "10.1 layout guidelines bullets: loop from output through bead and filter cap back to GND as small and tight as possible; LC close to the outputs; filter caps grounded"}
+  - {file: research/sources/tpa3116d2.pdf, page: 29, note: "Fig 40 layout example top with callouts: output filters close to the output pins to minimize return loop; direct low-impedance output traces; top filled with GND"}
+  - {file: research/sources/tpa3116d2.pdf, page: 21, note: "7.3.14: speaker wires and supply lines are antennas above 30 MHz; snubber layout tight, returning directly to the IC GND pins"}
+  - {file: research/sources/slou336b.pdf, page: 6, note: "Fig 3 EVM top layout: L1-L4 in a 2x2 block right at the OUTxx pins, C21-C24 at the inductor outputs before the posts, snubber parts between pins and inductors, wide short traces"}
+  - {file: research/sources/slou336b.pdf, page: 7, note: "Fig 4 EVM bottom (routes only, no pour drawn): the wide bottom route is PVCC from the supply post to the IC; no output copper on the bottom, the output path stays on top"}
+status: active
+origin: research:block-lc-output-filter-1
+level: topology
+envelope:
+  board_layers: {min: 2, max: 4}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with layer count: the sources show the placement on a 2-layer
+  board (EVM) and the datasheet's 2-layer example; the same proximity rule
+  holds on 4 layers, where an inner plane shortens the return further.
+  Beyond 4 layers nothing here is contradicted but nothing is sourced.
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: the Fig 4 (slou336b p7) sentence and source note now say the bottom carries no output copper, its one wide route is the PVCC feed, and no pour is drawn - matches the page (legend: green = top routes, red = bottom routes). Other citations unchanged and confirmed on pass 1."}

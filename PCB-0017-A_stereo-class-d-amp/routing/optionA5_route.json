@@ -1,0 +1,211 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "add_track",
+   "start": [
+    35.5,
+    29.25
+   ],
+   "end": [
+    35.5,
+    39.9
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    35.5,
+    39.9
+   ],
+   "end": [
+    45.55,
+    39.9
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    45.55,
+    39.9
+   ],
+   "end": [
+    45.55,
+    37.4
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    42.7,
+    38.6
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    43.55,
+    38.6
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    44.4,
+    38.6
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    43.0,
+    40.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    43.85,
+    40.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    44.7,
+    40.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    42.7,
+    38.6
+   ],
+   "end": [
+    44.4,
+    38.6
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.0,
+    40.75
+   ],
+   "end": [
+    44.7,
+    40.75
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.55,
+    38.6
+   ],
+   "end": [
+    43.55,
+    40.75
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    44.4,
+    38.6
+   ],
+   "end": [
+    44.4,
+    40.75
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.0,
+    40.75
+   ],
+   "end": [
+    44.7,
+    40.75
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.15,
+    40.75
+   ],
+   "end": [
+    43.15,
+    41.75
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    57.2,
+    27.0
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    54.8,
+    27.0
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  }
+ ]
+}

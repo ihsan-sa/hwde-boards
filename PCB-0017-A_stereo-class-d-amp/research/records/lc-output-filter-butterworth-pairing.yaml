@@ -1,0 +1,57 @@
+id: lc-output-filter-butterworth-pairing
+classes: [selection]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  se_equivalent_type2: "C = C_g (per-leg cap to GND), R_L = R_BTL/2"
+  q_formula: "Q = R_L * sqrt(C / L); f0 = 1 / (2 pi sqrt(L C))"
+  q_target: 0.707
+  pair_10uh_680nf_f0_khz: 61
+  pair_10uh_680nf_atten_400khz_db: -33
+prose: >
+  Pick L and C from the single-ended equivalent, targeting Butterworth
+  Q = 1/sqrt(2) at the DESIGN load. For a cap-to-ground (Type-2) BTL filter
+  the SE circuit is L in series, C = C_g to ground, R_L = R_BTL/2 (Fig 1-14,
+  p13); for a differential (Type-1) cap C = 2 x C_BTL (Fig 1-10, p11). Then
+  L = R_L sqrt(2)/w0, C = 1/(w0 R_L sqrt(2)), Q = R_L sqrt(C/L), and the
+  worked 4 ohm / 40 kHz example lands on 10 uH and 0.68 uF (p11, eq 7). TI's
+  quick-selection tables (p18) list 10 uH + 0.68 uF at 61 kHz with 0.12 dB
+  peaking at 20 kHz and -33 dB at 400 kHz / -40 dB at 600 kHz (Table 1-4,
+  6 ohm), 10 uH + 0.47 uF at 73 kHz for 8 ohm and 10 uH + 1.0 uF at 50 kHz
+  for 4 ohm. Note Table 1-4's Q of 0.639 for 10 uH + 0.68 uF is what eq 7
+  gives for 15 uH, not 10 uH (eq 7 gives 0.78 at 6 ohm); trust the equation,
+  not that cell. The TPA31xxD2 datasheet's own filter is 10 uH + 0.68 uF per
+  leg to GND for 4-8 ohm (Fig 35, p23) and is the test condition behind its
+  RL(BTL) minimum-load row (p5). Fig 1-6 (p7) is why the Q target matters:
+  underdamped peaking is harsh and can trip overcurrent, overdamped rolls off
+  audio. Attenuation at the carrier is the second selection check: read it
+  off the table for the switching frequency actually programmed.
+sources:
+  - {file: research/sources/slaa701b.pdf, page: 7, note: "Fig 1-6 gain vs frequency for Q 0.3/0.707/1.4; text: Butterworth recommended, peaking can trigger overcurrent"}
+  - {file: research/sources/slaa701b.pdf, page: 11, note: "Fig 1-10 Type-1 SE equivalent; worked 4 ohm 40 kHz example L 11.25 -> 10 uH, C 1.4 uF -> C_BTL 0.68 uF, eq 7 Q = R_L sqrt(C/L) = 0.737, f0 43 kHz"}
+  - {file: research/sources/slaa701b.pdf, page: 13, note: "Fig 1-12/1-13/1-14 Type-2 cap-to-ground filter and its SE equivalent: C = C_g, R_L = R_BTL/2"}
+  - {file: research/sources/slaa701b.pdf, page: 18, note: "Tables 1-3/1-4/1-5 L/C vs Q, f0, 20 kHz peaking and 400/600 kHz attenuation for 8/6/4 ohm; 10 uH + 0.68 uF row: 61 kHz, 0.122 dB, -33/-40 dB"}
+  - {file: research/sources/slaa701b.pdf, page: 12, note: "Fig 1-11 Type-1 response 10 uH / C_BTL 0.68 uF swept over 2/3/4/6/8 ohm - the 2-8 ohm load span"}
+  - {file: research/sources/slaa701b.pdf, page: 17, note: "Fig 1-18 hybrid filter response swept over 2/3/4/6/8 ohm"}
+  - {file: research/sources/tpa3116d2.pdf, page: 23, note: "Fig 35 output filters: L1/L2 10 uH with C2/C3 0.68 uF to GND per leg into 4-8 ohm; ferrite bead + 1 nF alternative"}
+  - {file: research/sources/tpa3116d2.pdf, page: 5, note: "6.3 recommended operating conditions: RL(BTL) min 3.2/4 ohm with output filter L = 10 uH, C = 680 nF"}
+status: active
+origin: research:block-lc-output-filter-1
+level: topology
+envelope:
+  output_kind: {in: [btl]}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with the output configuration: the SE equivalent (R_L = R_BTL/2,
+  C = C_g) and the tables are derived for a bridge-tied load; for SE or
+  PBTL outputs the equivalent circuit changes and the pairing must be
+  re-derived (SLAA701B 1.1). The p18 tables cover 4, 6 and 8 ohm BTL loads
+  only; the 2-8 ohm sweeps are the response figures (Fig 1-11 p12,
+  Fig 1-18 p17). The operating point's rload_ohm_min/_typ keys are not
+  unit-suffixed dims, so the load range is stated here rather than bounded.
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: envelope_note now says the p18 tables cover 4/6/8 ohm only and attributes the 2-8 ohm span to Fig 1-11 (p12) and Fig 1-18 (p17), both now cited and matching the pages re-read on pass 1. Other citations unchanged and confirmed on pass 1."}

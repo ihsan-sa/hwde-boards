@@ -1,0 +1,255 @@
+{
+  "schema": "fwe-manifest/1",
+  "board": "PCB-0018-A",
+  "mcu": {
+    "part": "STM32G431CBT6",
+    "core": "cortex-m4",
+    "flash_base": "0x08000000"
+  },
+  "stage": "sixstep",
+  "version": "0.1.0+g6a564231",
+  "artifact": {
+    "elf": "build/fw.elf",
+    "bin": "build/fw.bin",
+    "hex": "build/fw.hex",
+    "sha256": {
+      "elf": "360ed127fec7b60c142b5e237aac7baf81c4468b73b1686257bd478952650c2b",
+      "bin": "8fe270458123c369cb612295671a66e0088fcefe267a5f6f805544f6ed93f85b",
+      "hex": "d632253834ea467b80ddca952e65003d0d1c25dd8bd72135746ab4fa9d79ce7a"
+    }
+  },
+  "flash": {
+    "interface": "swd",
+    "connector": "J601",
+    "commands": {
+      "probe-rs": [
+        "probe-rs",
+        "download",
+        "--chip",
+        "STM32G431CBTx",
+        "{elf}"
+      ],
+      "openocd": [
+        "openocd",
+        "-f",
+        "interface/stlink.cfg",
+        "-f",
+        "target/stm32g4x.cfg",
+        "-c",
+        "program {elf} verify reset exit"
+      ]
+    }
+  },
+  "uart": {
+    "connector": "J701",
+    "tx_pin": "3",
+    "rx_pin": "4",
+    "baud": 115200,
+    "format": "8N1",
+    "levels": "3V3",
+    "banner_regex": "^fwe PCB-0018-A "
+  },
+  "commands": [
+    {
+      "name": "version",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "board",
+        "mcu",
+        "version",
+        "stage"
+      ],
+      "safe": true
+    },
+    {
+      "name": "status",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "armed",
+        "faults",
+        "active",
+        "vbus_v",
+        "i_a",
+        "duty",
+        "hw_trip",
+        "six",
+        "hall",
+        "uptime_ms"
+      ],
+      "safe": true
+    },
+    {
+      "name": "selftest",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "pass",
+        "checks"
+      ],
+      "safe": true
+    },
+    {
+      "name": "adc",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "raw",
+        "v",
+        "vbus_v",
+        "i_a",
+        "i_ref_v",
+        "ok"
+      ],
+      "safe": true
+    },
+    {
+      "name": "offsets",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "i_ref_v",
+        "ok"
+      ],
+      "safe": true
+    },
+    {
+      "name": "led",
+      "args": "<status|fault> <on|off|auto>",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "led",
+        "mode"
+      ],
+      "safe": true
+    },
+    {
+      "name": "arm",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "armed",
+        "duty"
+      ],
+      "safe": false
+    },
+    {
+      "name": "disarm",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "armed"
+      ],
+      "safe": true
+    },
+    {
+      "name": "duty",
+      "args": "<a> <b> <c>",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "duty",
+        "max_duty"
+      ],
+      "safe": false
+    },
+    {
+      "name": "six",
+      "args": "<duty 0..1> <fwd|rev> | stop",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "six",
+        "armed",
+        "duty_cmd",
+        "max_duty",
+        "i_soft_a",
+        "dir",
+        "hall"
+      ],
+      "safe": false
+    },
+    {
+      "name": "hall",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "hall",
+        "valid",
+        "edges"
+      ],
+      "safe": true
+    },
+    {
+      "name": "clear",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "faults"
+      ],
+      "safe": true
+    },
+    {
+      "name": "reset",
+      "args": "",
+      "reply": "OK {json} | ERR <code> <text>",
+      "reply_fields": [
+        "reset"
+      ],
+      "safe": true
+    }
+  ],
+  "test_hooks": [
+    {
+      "name": "version",
+      "send": "version",
+      "expect": "^OK \\{\"board\":\"PCB-0018-A\"",
+      "timeout_s": 5,
+      "needs": [
+        "+3V3"
+      ]
+    },
+    {
+      "name": "status",
+      "send": "status",
+      "expect": "^OK ",
+      "timeout_s": 5,
+      "needs": [
+        "+3V3"
+      ]
+    },
+    {
+      "name": "selftest",
+      "send": "selftest",
+      "expect": "^OK ",
+      "timeout_s": 5,
+      "needs": [
+        "+3V3"
+      ]
+    },
+    {
+      "name": "adc",
+      "send": "adc",
+      "expect": "^OK ",
+      "timeout_s": 5,
+      "needs": [
+        "+3V3"
+      ]
+    }
+  ],
+  "safety": {
+    "pwm_at_reset": "off",
+    "fault_clear": "clear",
+    "i_trip_a": 20.0,
+    "i_limit_a": 15.0,
+    "vbus_ov_v": 30.0,
+    "vbus_uv_v": 9.0,
+    "max_duty": 0.95,
+    "pwm_hz": 20000
+  },
+  "verified": {
+    "build": true,
+    "host_tests": true,
+    "sim": "renode",
+    "hardware": false
+  }
+}

@@ -1,0 +1,948 @@
+{
+ "script": "lib_pull",
+ "status": "pass",
+ "lib_name": "aiee",
+ "parts_file": "PCB-0017-A_astra-amp/parts/parts.json",
+ "paced_s": 15.0,
+ "retried": 0,
+ "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+ "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+ "results": [
+  {
+   "lcsc": "C46497",
+   "status": "pulled",
+   "symbol": "TPA3118D2DAPR",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
+     "copper_pads": 42,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C207842",
+   "status": "pulled",
+   "symbol": "SLO0630H100MTT",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "IND-SMD_L7.3-W6.6_MHCI06030",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/IND-SMD_L7.3-W6.6_MHCI06030.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C46550465",
+   "status": "pulled",
+   "symbol": "MA25V100M6X6",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C5138965",
+   "status": "pulled",
+   "symbol": "RVT100UF35V167RV0082",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "CAP-SMD_BD6.3-L6.6-W6.6-FD",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-FD.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C23692980",
+   "status": "pulled",
+   "symbol": "CGA0805X7R225M500MT",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C106858",
+   "status": "pulled",
+   "symbol": "CC0603KRX7R8BB105",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0603",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C14663",
+   "status": "pulled",
+   "symbol": "CC0603KRX7R9BB104",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0603",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C106246",
+   "status": "pulled",
+   "symbol": "CC0603JRNPO9BN102",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0603",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C15850",
+   "status": "pulled",
+   "symbol": "CL21A106KAYNNNE",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C5378",
+   "status": "pulled",
+   "symbol": "CL21B224KBFNNNE",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C107133",
+   "status": "pulled",
+   "symbol": "CC0805KKX7R9BB684",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C15195",
+   "status": "pulled",
+   "symbol": "CL05B103KB5NNNC",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0402",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0402.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C23189",
+   "status": "pulled",
+   "symbol": "0603WAF5601T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C25803",
+   "status": "pulled",
+   "symbol": "0603WAF1003T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C137725",
+   "status": "pulled",
+   "symbol": "RC0603FR-073R3L",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0017-A_astra-amp/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0017-A_astra-amp/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "symbol_dedup": {
+  "removed": 0,
+  "names": []
+ },
+ "registered": {
+  "fp": "created",
+  "sym": "created"
+ },
+ "autofix": {
+  "footprints": 8,
+  "changed": 8,
+  "actions": 35,
+  "residue": 18,
+  "results": [
+   {
+    "footprint": "C0402",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0402.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.125,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.125,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_arc",
+      "width_mm": 0.15,
+      "gap_mm": 0.1404,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_arc",
+      "width_mm": 0.15,
+      "gap_mm": 0.1404,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_arc",
+      "width_mm": 0.15,
+      "gap_mm": 0.1404,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_arc",
+      "width_mm": 0.15,
+      "gap_mm": 0.1404,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 6,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 7,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.125,
+     "unprintable_silk": 0,
+     "under_gap_silk": 6,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "C0603",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0603.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.135,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_arc",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.1304,
+      "new_gap_mm": 0.1554
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 9,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.1554,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "C0805",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/C0805.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 1,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.15,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-FD",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-FD.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 2.595
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.065,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.015,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.035,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.015,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 4,
+    "before": {
+     "worst_gap_mm": 0.015,
+     "unprintable_silk": 1,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.015,
+     "unprintable_silk": 0,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 2.595
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.065,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.015,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.035,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.015,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 4,
+    "before": {
+     "worst_gap_mm": 0.015,
+     "unprintable_silk": 1,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.015,
+     "unprintable_silk": 0,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 0.3435
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_circle",
+      "from_mm": 0.3,
+      "to_mm": 0.25,
+      "gap_mm": 0.1485,
+      "new_gap_mm": 0.1735
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": 0.1485,
+     "unprintable_silk": 1,
+     "under_gap_silk": 1,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.1595,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "IND-SMD_L7.3-W6.6_MHCI06030",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/IND-SMD_L7.3-W6.6_MHCI06030.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 1.645
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 4,
+    "before": {
+     "worst_gap_mm": 0.075,
+     "unprintable_silk": 1,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.075,
+     "unprintable_silk": 0,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "R0603",
+    "file": "PCB-0017-A_astra-amp/lib/aiee.pretty/R0603.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 1,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.153,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   }
+  ]
+ },
+ "refdes_norm": {
+  "footprints": 11,
+  "changed": 11,
+  "unchanged": 0,
+  "skipped": 0,
+  "results": [
+   {
+    "footprint": "C0402",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.325
+    ],
+    "pad_top": -0.27,
+    "silk_top": -0.5,
+    "clear_of": -0.5,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "C0603",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.535
+    ],
+    "pad_top": -0.45,
+    "silk_top": -0.71,
+    "clear_of": -0.71,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "C0805",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.725
+    ],
+    "pad_top": -0.675,
+    "silk_top": -0.9,
+    "clear_of": -0.9,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-FD",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -4.205
+    ],
+    "pad_top": -0.6,
+    "silk_top": -3.38,
+    "clear_of": -3.38,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -4.205
+    ],
+    "pad_top": -0.6,
+    "silk_top": -3.38,
+    "clear_of": -3.38,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+    "status": "changed",
+    "from": [
+     0.0,
+     -7.716
+    ],
+    "to": [
+     0.0,
+     -5.411
+    ],
+    "pad_top": -4.586,
+    "silk_top": -2.62,
+    "clear_of": -4.586,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "IND-SMD_L7.3-W6.6_MHCI06030",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -4.205
+    ],
+    "pad_top": -1.56,
+    "silk_top": -3.38,
+    "clear_of": -3.38,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "R0603",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.485
+    ],
+    "pad_top": -0.432,
+    "silk_top": -0.66,
+    "clear_of": -0.66,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "TestPoint_SMD_1.5mm_Round",
+    "status": "changed",
+    "from": [
+     0.0,
+     -1.8
+    ],
+    "to": [
+     0.0,
+     -1.46
+    ],
+    "pad_top": -0.75,
+    "silk_top": null,
+    "clear_of": -0.75,
+    "inked_half_h": 0.46
+   },
+   {
+    "footprint": "WirePad_2P_3.0x6.0mm_P4.6mm",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.2
+    ],
+    "to": [
+     0.0,
+     -4.175
+    ],
+    "pad_top": -3.0,
+    "silk_top": -3.35,
+    "clear_of": -3.35,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "WirePad_3P_1.5x3.0mm_P2.7mm",
+    "status": "changed",
+    "from": [
+     0.0,
+     -2.6
+    ],
+    "to": [
+     0.0,
+     -2.925
+    ],
+    "pad_top": -1.5,
+    "silk_top": -2.1,
+    "clear_of": -2.1,
+    "inked_half_h": 0.575
+   }
+  ]
+ },
+ "load_check": {
+  "ok": true,
+  "svgs": 11,
+  "detail": "ok"
+ },
+ "drc_check": null
+}

@@ -1,0 +1,54 @@
+id: lc-output-filter-q-tracks-load
+classes: [selection]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  q_scaling: "Q is proportional to R_L at fixed L/C - check Q at the HIGHEST load impedance"
+  q_10uh_680nf_4ohm: 0.52
+  q_10uh_680nf_8ohm: 1.04
+  post_filter_rc_is_damping: false
+  post_filter_rc_corner_mhz: 4.8
+prose: >
+  A fixed L/C is critically damped at one load only. Q = R_L sqrt(C/L) (eq 7,
+  p11) rises linearly with R_L, so the check is at the highest impedance the
+  board must drive, and the 20 kHz peaking must stay small there. For
+  10 uH + 0.68 uF to ground (C = 0.68 uF in the SE circuit), eq 7 gives
+  Q = 0.52 at 4 ohm (R_L 2 ohm), 0.78 at 6 ohm and 1.04 at 8 ohm; f0 stays
+  at 61 kHz, so the 8 ohm response peaks about +1.5 dB near 45 kHz (the
+  second-order peak for Q 1.04), above the audio band, and the 4 ohm case
+  is slightly overdamped, which is why TI lists the pair for 4-8 ohm
+  (Fig 35, p23). Fig 1-11 (p12) shows the same trend for the Type-1 cousin
+  (C_BTL 0.68 uF, i.e. SE C 1.36 uF, Q 1.47 at 8 ohm): 2 ohm rolls off
+  early, 8 ohm peaks about +4 dB near 40 kHz; Fig 1-18 (p17) shows it again for the hybrid
+  filter. The post-filter 3.3 ohm + 10 nF branch is NOT audio-band damping:
+  its corner is 1/(2 pi 3.3 10n) = 4.8 MHz and at 61 kHz the 10 nF alone is
+  about 260 ohm against an 8 ohm load. TI's Fig 37 (p26) labels it EMI C-RC
+  SNUBBER and pairs it with a 1 nF cap per leg; the EVM populates it as
+  R15-R18 3.3 ohm with C25-C28 0.01 uF/100 V X7R (p9). Damping across the
+  load range therefore comes from the L/C pair itself; if a design must be
+  flatter at 8 ohm, retune C (10 uH + 0.47 uF, Table 1-3) rather than lean
+  on the RC.
+sources:
+  - {file: research/sources/slaa701b.pdf, page: 11, note: "eq 7 Q = R_L sqrt(C/L) with R_L = R_BTL/2; worked example Q 0.737 at 4 ohm"}
+  - {file: research/sources/slaa701b.pdf, page: 12, note: "eq 8 transfer function; Fig 1-11 Type-1 response 10 uH / C_BTL 0.68 uF for 2/3/4/6/8 ohm: 8 ohm peaks ~+4 dB near 40 kHz, 2 ohm rolls off early"}
+  - {file: research/sources/slaa701b.pdf, page: 17, note: "eq 10 hybrid transfer function; Fig 1-18 response vs 2-8 ohm, peaking grows with load impedance"}
+  - {file: research/sources/tpa3116d2.pdf, page: 23, note: "Fig 35: the 10 uH + 0.68 uF filter is drawn for a 4-8 ohm load"}
+  - {file: research/sources/tpa3116d2.pdf, page: 26, note: "Fig 37: after the OUTPUT LC FILTER block, an EMI C-RC SNUBBER block with 3.3R + 10 nF and a 1 nF cap from each speaker leg to GND"}
+  - {file: research/sources/slou336b.pdf, page: 9, note: "Table 2 BOM items 18 and 10: R15-R18 3.3 ohm 5%, C25-C28 0.01 uF 100 V X7R 0805; item 9 C21-C24 0.68 uF 50 V X7R 1206"}
+status: active
+origin: research:block-lc-output-filter-1
+level: topology
+envelope:
+  rload_ohm: {min: 4, max: 8}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with the load impedance range: the numbers are eq 7 evaluated for
+  a 4-8 ohm BTL load with the 10 uH + 0.68 uF pair, and the qualitative
+  rule (check Q at the highest impedance) holds wherever the filter is a
+  plain second-order LC. Outside 4-8 ohm the stated Q values do not apply.
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: Fig 1-11 p12 8 ohm peak now ~+4 dB near 40 kHz (Q 1.47) - matches the plot; the Type-2 8 ohm case now states the second-order maximum ~+1.5 dB near 45 kHz for Q 1.04 - correct. Residual, non-blocking: 'which is why TI lists the pair for 4-8 ohm' is still inference; tpa3116 p23 Fig 35 shows only the 4-8 ohm label."}

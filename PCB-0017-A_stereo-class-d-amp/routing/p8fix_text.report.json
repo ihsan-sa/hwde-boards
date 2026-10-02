@@ -1,0 +1,58 @@
+{
+ "script": "place_edit",
+ "status": "pass",
+ "board": "PCB-0017-A_astra-amp/kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 7,
+ "verified": true,
+ "results": [
+  {
+   "text": "+",
+   "layer": "F.SilkS",
+   "x": 54.7,
+   "y": 18.3,
+   "deg": 0.0
+  },
+  {
+   "text": "-",
+   "layer": "F.SilkS",
+   "x": 54.7,
+   "y": 13.7,
+   "deg": 0.0
+  },
+  {
+   "text": "+",
+   "layer": "F.SilkS",
+   "x": 54.7,
+   "y": 43.4,
+   "deg": 0.0
+  },
+  {
+   "text": "-",
+   "layer": "F.SilkS",
+   "x": 58.5,
+   "y": 35.7,
+   "deg": 0.0
+  },
+  {
+   "text": "R",
+   "layer": "F.SilkS",
+   "x": 9.85,
+   "y": 23.3,
+   "deg": 0.0
+  },
+  {
+   "text": "G",
+   "layer": "F.SilkS",
+   "x": 9.85,
+   "y": 26.0,
+   "deg": 0.0
+  },
+  {
+   "text": "L",
+   "layer": "F.SilkS",
+   "x": 9.85,
+   "y": 28.7,
+   "deg": 0.0
+  }
+ ]
+}

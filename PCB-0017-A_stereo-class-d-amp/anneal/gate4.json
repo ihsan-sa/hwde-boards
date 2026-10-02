@@ -1,0 +1,63 @@
+{
+  "script": "gate",
+  "gate": "place",
+  "phase": "P6",
+  "tool": "place",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:f7fdd0380844ab1f2cde483a708dd59e6fd92dbdab3c7f8319d27ab45a8d9578",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "ran": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "passed": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "failed": [],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0017-A_astra-amp",
+    "gate": "place",
+    "status": "pass",
+    "attempts": 8,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:f7fdd0380844ab1f2cde483a708dd59e6fd92dbdab3c7f8319d27ab45a8d9578",
+      "constraints": "json_canonical:010a016dfd4c5decbd308b548830a8f178c121a4d4078e5556153e1278bda1ed",
+      "decoupling": "json_canonical:aca94291a3791b958b2be40d518c04b5903398300f1e8824edf99426099dcada"
+    }
+  }
+}

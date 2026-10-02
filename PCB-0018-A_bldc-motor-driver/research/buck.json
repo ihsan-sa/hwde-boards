@@ -1,0 +1,7 @@
+{"block": "buck", "candidates": [
+{"mpn": "TPS54331DR", "lcsc": "C9865", "package": "SOIC-8", "basic": false, "stock": 345196, "price": 0.3385, "datasheet": "https://www.lcsc.com/product-detail/dc-dc-converters_texas-instruments-tps54331d", "rank": 1, "fit": "VM 3.5-28V direct input covers the full 10-28V op range, 3A (covers 3.3V/5V @ 0.5-1A with margin), huge stock, cheap -- top pick."},
+{"mpn": "MP1584EN-LF-Z", "lcsc": "C15051", "package": "SOIC-8-EP", "basic": false, "stock": 2335, "price": 2.9231, "datasheet": "https://lcsc.com/product-detail/DC-DC-Converters_Monolithic-Power-Systems-MP1584", "rank": 2, "fit": "VM 4.5-28V, 3A, same input range as TPS54331 but ~9x the price and far less stock -- backup only."},
+{"mpn": "MP2315GJ-Z-JSM", "lcsc": "C49367820", "package": "TSOT-23-8", "basic": false, "stock": 2103, "price": 0.4677, "datasheet": "", "rank": 3, "fit": "4-24V input misses the 28V top of range, 3A, cheap -- excluded on input-voltage coverage."},
+{"mpn": "TPS563201DDCR", "lcsc": "C116592", "package": "SOT-23-THIN-6", "basic": false, "stock": 165036, "price": 0.0679, "datasheet": "", "rank": 4, "fit": "Excellent price/stock but 4.5-17V input misses 28V entirely -- only useful for a downstream 5V->3.3V rail, not VM-fed."},
+{"mpn": "AP62200TWU-7", "lcsc": "C2895288", "package": "TSOT-26", "basic": false, "stock": 31062, "price": 0.2047, "datasheet": "", "rank": 5, "fit": "4.2-18V input misses 28V, small/cheap -- same limitation as TPS563201, not VM-capable."}
+]}

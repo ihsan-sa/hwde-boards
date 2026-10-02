@@ -1,0 +1,54 @@
+id: lc-output-filter-ground-return-2layer
+classes: [return-path]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  star: "all grounds join at the IC GND (pad/pins) - the filter caps' return included"
+  planes: "bottom layer solid GND for the return path, top layer filled with GND, stitched with many vias"
+  no_cuts: "no traces cutting the GND under/around the IC"
+prose: >
+  The filter caps and snubbers return switching current, so where their
+  GND goes is a return-path decision. The datasheet makes the IC GND the
+  star: "All ground should be connected at the IC GND ... star ground"
+  (10.1, p28), with PVCC decoupling and filter caps grounded there. The
+  layout example gives the 2-layer form: top layer filled with GND, lots
+  of vias top-to-bottom, no wires cutting the GND layer (Fig 40, p29);
+  bottom layer a solid GND plane for the low-impedance return, vias along
+  the board edge, and the one wide non-GND copper on it is the PVCC feed
+  from the supply post to the IC (Fig 41, p30). The EVM matches: its
+  bottom (Fig 4, p7) carries the wide PVCC route to both PVCC pin groups
+  and otherwise short signal routes, while the output copper from the
+  OUTxx pins through L1-L4 to the posts is all on top (Fig 3, p6), where
+  the GND fill surrounds the filter and the caps' GND ends drop straight
+  into it. Rule for a 2-layer board: keep the output path on the component
+  layer, tie each filter cap's GND pad into the top fill and through nearby
+  vias into the bottom pour, and let that pour run unbroken under the IC
+  to its PowerPAD/GND pins; the PVCC route is the one allowed cut in the
+  bottom copper and must not pass between the IC and the filter caps'
+  vias. Bulk PVCC caps return to the same star (p28); on the EVM the PVCC
+  post and bulk caps C7/C18 sit on the output side of U1 beside the
+  filters, so the two loops share that side and are kept apart by the
+  star, not by distance.
+sources:
+  - {file: research/sources/tpa3116d2.pdf, page: 28, note: "10.1 grounding bullet: PVCC decoupling to GND, all ground connected at the IC GND as star; filter caps grounded"}
+  - {file: research/sources/tpa3116d2.pdf, page: 29, note: "Fig 40 callouts: lots of vias top-to-bottom, wide open areas with no wires cutting the GND layer, top layer filled with GND"}
+  - {file: research/sources/tpa3116d2.pdf, page: 30, note: "Fig 41 layout example bottom: solid GND plane for low-impedance return, bottom filled with GND, vias along the PCB edge; the wide bottom trace is the PVCC feed from the supply post to the IC"}
+  - {file: research/sources/slou336b.pdf, page: 6, note: "Fig 3 EVM top: output copper OUTxx -> L1-L4 -> posts all on top, GND fill around the filter, cap GND ends into the fill; PVCC post and bulk caps C7/C18 on the same (output) side of U1 as the filters"}
+  - {file: research/sources/slou336b.pdf, page: 7, note: "Fig 4 EVM bottom (routes only, no pour drawn): wide bottom route is PVCC from the post to both PVCC pin groups; no output copper on the bottom"}
+status: active
+origin: research:block-lc-output-filter-1
+level: topology
+envelope:
+  board_layers: {min: 2, max: 2}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with layer count: the fill-both-layers-and-stitch form is the
+  2-layer answer to having no dedicated plane. On 4+ layers the return is
+  an inner plane and the top fill becomes optional, so this record stops
+  at 2 layers.
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: wide bottom copper is now identified as the PVCC feed (tpa3116 p30 Fig 41; slou336b p7 Fig 4 red bottom route to both PVCC pin groups, routes only, no pour drawn); output path OUTxx->L1-L4->posts on top (slou336b p6 Fig 3); PVCC post and bulk C7/C18 on the output side of U1 - all match the pages. The opposite-sides claim is gone. Fig 41 carries no PVCC label; the identification rests on matching the EVM layout, which holds."}

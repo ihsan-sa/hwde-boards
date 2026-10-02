@@ -1,0 +1,1057 @@
+{
+ "_comment": "PCB-0017-A stereo-class-d-amp P3 part-sourcer output (SPEC P3, 6.1). Build qty 5, JLC PCBA top side. Every LCSC code re-verified live against parts_search.py on 2026-09-27, not carried unchecked from research/*.json. Two corrections against the P2 research shortlist, both real dielectric mismatches against architecture/sheets.md's own value table: (1) C1-C4 spec'd X7R but research picked CL21A225KBQNNNE which is X5R - replaced with a genuine X7R part; (2) C7/C8 spec'd C0G/NP0 but research picked CL10B102KB8NNNC which is X7R - replaced with a genuine NP0 part. C11/C12 (10uF, sheets.md says X7R) keeps the orchestrator's explicit state.json-decided MPN CL21A106KAYNNNE, which is X5R at JLC - flagged in OPEN rather than overridden, since that MPN was a named P1 decision, not a research guess. One entry per distinct part; qty_per_board and refs carried for the librarian/schematic phases, `stock` and `price` are the live parts_search values, `price` is qty-1 unit price (price_breaks carried where present).",
+ "parts": [
+  {
+   "ref_prefix_hint": "U",
+   "refs": [
+    "U1"
+   ],
+   "block": "class-d-amp",
+   "mpn": "TPA3118D2DAPR",
+   "lcsc": "C46497",
+   "value": "TPA3118D2DAPR - stereo BTL class-D amp, HTSSOP-32-EP-6.1mm, PowerPAD DOWN",
+   "package": "HTSSOP-32-EP-6.1mm",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 1,
+   "stock": 38903,
+   "price": 1.0751,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.0751
+    },
+    {
+     "qty": 10,
+     "price": 0.8932
+    },
+    {
+     "qty": 30,
+     "price": 0.7942
+    },
+    {
+     "qty": 100,
+     "price": 0.6821
+    },
+    {
+     "qty": 500,
+     "price": 0.5814
+    },
+    {
+     "qty": 1000,
+     "price": 0.5587
+    }
+   ],
+   "brand": "Texas Instruments",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810271112_Texas-Instruments-TPA3118D2DAPR_C46497.pdf",
+   "alternates": [
+    {
+     "mpn": "TPA3118D2QDAPRQ1",
+     "lcsc": "C2863787",
+     "note": "Automotive AEC-Q100 grade of the same part, same HTSSOP-32-EP-6.1mm DAP pad-down package (verified live - description confirms the EP/pad-down footprint match, not the pad-up DAD family). Genuine pin- and footprint-compatible swap, no layout change needed. Stock 585 (117x this board's 5-unit build qty) at $2.26@1, ~2.1x TPA3118D2DAPR's price - a real alternate, not a cost-equal one."
+    }
+   ],
+   "role": "U1, the whole amplifier. Live-reconfirmed C46497: stock 38903 (7781x build qty), unchanged from P1's amp-ic research. DAP=pad-down is the recorded (state.json P1) deviation from the brief's TPA3116D2, which exists at JLC only as DAD=pad-up (TPA3116D2DADR C50144, TPA3116D2DAD C2865736 - both checked, both rejected, package confirmed pad-up in both live descriptions) and would need a top clip heatsink the brief's SMD-only/thermal-copper design does not build. Single-source risk on the pad-down variant itself is real (only one non-automotive DAP listing exists at JLC) but is not unmitigated: the automotive-grade sibling above is a true alternate at 117x stock margin."
+  },
+  {
+   "ref_prefix_hint": "L",
+   "refs": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "block": "lc-output-filter",
+   "mpn": "SLO0630H100MTT",
+   "lcsc": "C207842",
+   "value": "10uH, Isat 5.5A, Irms 4A, DCR 66mOhm, shielded power inductor",
+   "package": "SMD 7.3x6.6mm",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 4,
+   "stock": 16183,
+   "price": 0.1116,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1116
+    },
+    {
+     "qty": 50,
+     "price": 0.0915
+    },
+    {
+     "qty": 150,
+     "price": 0.0814
+    },
+    {
+     "qty": 1000,
+     "price": 0.0676
+    },
+    {
+     "qty": 2000,
+     "price": 0.0614
+    },
+    {
+     "qty": 5000,
+     "price": 0.0585
+    }
+   ],
+   "brand": "Sunltech Tech",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Sunltech-Tech-SLO0630H100MTT_C207842.pdf",
+   "alternates": [
+    {
+     "mpn": "MHCI06030-100M-R8A",
+     "lcsc": "C108290",
+     "note": "Chilisin near-identical: Isat 5.5A, Irms 4A, DCR 68mOhm, same 7.3x6.6mm SMD footprint. Stock 9210 (115x this board's 80-unit build qty), $0.1326@1. Straight footprint/electrical swap."
+    }
+   ],
+   "role": "L1-L4, one per BTL leg. Live-reconfirmed C207842: stock 16183 (202x the 80-unit build qty), unchanged from P1/P2. Isat 5.5A clears the 4.0A spec floor (constraints.json B4 isat_min_a) with margin against the 7.5A OC trip's 1uH-remaining rule; DCR 66mOhm is within the <=70mOhm sheets.md ceiling. Not Basic (no Basic part exists at this Isat/size class); size is the board's own driver per blocks.md, not a P3 choice."
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C13"
+   ],
+   "block": "dc-input",
+   "mpn": "MA35V100M6X8",
+   "lcsc": "C46550467",
+   "value": "100uF, 35V, aluminium-polymer, ESR 30mOhm@100kHz, ripple 2.9A@100kHz",
+   "package": "SMD,D6.3xL7.7mm",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 1,
+   "stock": 167459,
+   "price": 0.2116,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2116
+    },
+    {
+     "qty": 50,
+     "price": 0.1641
+    },
+    {
+     "qty": 150,
+     "price": 0.1408
+    },
+    {
+     "qty": 1000,
+     "price": 0.1202
+    },
+    {
+     "qty": 2000,
+     "price": 0.1145
+    },
+    {
+     "qty": 5000,
+     "price": 0.1111
+    }
+   ],
+   "brand": "jieerrui",
+   "datasheet": "",
+   "alternates": [
+    {
+     "mpn": "KNM2100UF35V149EC0055",
+     "lcsc": "C2982822",
+     "note": "35V polymer D6.3xL7, ESR 80mOhm, ripple 1.5A@100kHz; fallback only (higher ESR)."
+    }
+   ],
+   "role": "C13, bulk polymer cap at PVCC 31/32 (nearest J1). Uprated 25V->35V after schematic review W1: the ~26V hot-plug ring exceeded the 25V part. Same family as the earlier pick (jieerrui MA), same D6.3 land.",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "Polymer"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "30m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "35V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.9A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ]
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C14"
+   ],
+   "block": "dc-input",
+   "mpn": "FZ100UF35V90RV0064",
+   "lcsc": "C2992596",
+   "value": "100uF, 35V, low-ESR aluminium electrolytic, ESR 360mOhm@100kHz, ripple 280mA@100kHz",
+   "package": "SMD,D6.3xL7.7mm",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 1,
+   "stock": 24167,
+   "price": 0.0525,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0525
+    },
+    {
+     "qty": 100,
+     "price": 0.0423
+    },
+    {
+     "qty": 300,
+     "price": 0.0371
+    },
+    {
+     "qty": 1000,
+     "price": 0.0285
+    },
+    {
+     "qty": 5000,
+     "price": 0.0254
+    },
+    {
+     "qty": 10000,
+     "price": 0.0239
+    }
+   ],
+   "brand": "KNSCHA",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204151800_KNSCHA-FZ100UF35V90RV0064_C2992596.pdf",
+   "alternates": [
+    {
+     "mpn": "RVE100UF35V67RV0072",
+     "lcsc": "C2836437",
+     "note": "35V D6.3xL7.7, ESR 600mOhm@100kHz; fallback."
+    }
+   ],
+   "role": "C14, second bulk cap at PVCC 15/16. Replaced RVT (no stated ESR) after schematic review W2 with a part that states ESR and 100kHz ripple. Not relied on to damp the hot-plug ring (review W1: parallel polymer dominates); D1 TVS clamps that instead.",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "3000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "360m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "35V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "280mA@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ]
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+   ],
+   "block": "audio-line-in",
+   "mpn": "CL21B105KBFNNNE",
+   "lcsc": "C28323",
+   "value": "1uF, X7R, 50V, 0805, +/-10%",
+   "package": "0805",
+   "basic": true,
+   "type": "Basic",
+   "qty_per_board": 4,
+   "stock": 2493633,
+   "price": 0.0397,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0397
+    },
+    {
+     "qty": 100,
+     "price": 0.0304
+    },
+    {
+     "qty": 300,
+     "price": 0.0257
+    },
+    {
+     "qty": 2000,
+     "price": 0.0218
+    },
+    {
+     "qty": 4000,
+     "price": 0.0203
+    },
+    {
+     "qty": 10000,
+     "price": 0.0194
+    }
+   ],
+   "brand": "Samsung Electro-Mechanics",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf",
+   "alternates": [
+    {
+     "mpn": "CC0805KKX7R9BB105",
+     "lcsc": "C91185",
+     "note": "Yageo 1uF 50V X7R K 0805, Extended."
+    }
+   ],
+   "role": "C1-C4, AC-coupling into LINP/LINN/RINP/RINN. Cut 2.2uF->1uF after schematic review W3: tau 60k*1uF=60ms, so an unplugged-input start-up offset decays below the DC-detect threshold in ~150ms, well inside the 420ms window. HPF corner ~2.7Hz at Zi 60k (4.2Hz at Zi -20%+cap -10%). Basic part.",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "1uF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ]
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C5"
+   ],
+   "block": "class-d-amp",
+   "mpn": "CC0603KRX7R8BB105",
+   "lcsc": "C106858",
+   "value": "1uF, X7R, 25V, 0603",
+   "package": "0603",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 1,
+   "stock": 321218,
+   "price": 0.0294,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0294
+    },
+    {
+     "qty": 200,
+     "price": 0.0249
+    },
+    {
+     "qty": 600,
+     "price": 0.0228
+    },
+    {
+     "qty": 4000,
+     "price": 0.0208
+    },
+    {
+     "qty": 8000,
+     "price": 0.0203
+    },
+    {
+     "qty": 20000,
+     "price": 0.0199
+    }
+   ],
+   "brand": "YAGEO",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0603KRX7R8BB105_C106858.pdf",
+   "alternates": [
+    {
+     "mpn": "CS1608X7R105K250NRB",
+     "lcsc": "C513775",
+     "note": "Samwha, same 1uF/25V/X7R/0603, cheaper ($0.0132@1), stock 224412 (44882x build qty)."
+    }
+   ],
+   "role": "C5, GVDD decoupling (datasheet-mandated, TI SLOS708G 6.5). CORRECTED from the P2 research pick (CL10A105KB8NNNC, C15849): that part is X5R/50V, but sheets.md's own value table specifies X7R 25V 0603 for C5. Live-verified C106858 is genuinely X7R at the exact 25V rating; stock 321218 (64243x the 5-unit build qty)."
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C6",
+    "C9",
+    "C10"
+   ],
+   "block": "class-d-amp",
+   "mpn": "CC0603KRX7R9BB104",
+   "lcsc": "C14663",
+   "value": "100nF, X7R, 50V, 0603",
+   "package": "0603",
+   "basic": true,
+   "type": "Basic",
+   "qty_per_board": 3,
+   "stock": 51371976,
+   "price": 0.0122,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0122
+    },
+    {
+     "qty": 500,
+     "price": 0.0088
+    },
+    {
+     "qty": 1500,
+     "price": 0.0073
+    },
+    {
+     "qty": 4000,
+     "price": 0.0058
+    },
+    {
+     "qty": 24000,
+     "price": 0.0054
+    },
+    {
+     "qty": 48000,
+     "price": 0.0051
+    }
+   ],
+   "brand": "YAGEO",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+   "alternates": [],
+   "role": "C6 (AVCC, pin 17) + C9/C10 (100nF tier at each PVCC pair, sheets.md pin table 18/19 and 31/32). Basic passive, huge stock (17123992x build qty of 15) - no alternate needed for a part this deep in stock. Live-reconfirmed X7R/50V matches sheets.md exactly."
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C7",
+    "C8"
+   ],
+   "block": "class-d-amp",
+   "mpn": "CC0603JRNPO9BN102",
+   "lcsc": "C106246",
+   "value": "1nF, C0G/NP0, 50V, 0603",
+   "package": "0603",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 2,
+   "stock": 2196632,
+   "price": 0.0053,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0053
+    },
+    {
+     "qty": 500,
+     "price": 0.004
+    },
+    {
+     "qty": 1500,
+     "price": 0.0035
+    },
+    {
+     "qty": 4000,
+     "price": 0.0029
+    },
+    {
+     "qty": 24000,
+     "price": 0.0027
+    },
+    {
+     "qty": 48000,
+     "price": 0.0026
+    }
+   ],
+   "brand": "YAGEO",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811021411_YAGEO-CC0603JRNPO9BN102_C106246.pdf",
+   "alternates": [
+    {
+     "mpn": "CC0603FRNPO9BN102",
+     "lcsc": "C309468",
+     "note": "Same 1nF/50V/NP0/0603, tighter +/-1% tolerance vs the primary's +/-5%. Stock 507379 (50738x build qty), $0.0165@1."
+    }
+   ],
+   "role": "C7/C8, the switching-edge loop cap at each PVCC pair (sheets.md pin table 18/19, 31/32; DS 8.2.2.4). CORRECTED from the P2 research pick (CL10B102KB8NNNC, C1588): that part's own JLC description is X7R, not C0G/NP0 as sheets.md's value table specifies for this position (a real dielectric-stability difference at the switching-edge node, not a cosmetic one). Live-verified C106246 is genuinely NP0; no Basic NP0 1nF 0603 part was found at JLC (all C0G/NP0 1nF 0603 hits came back Extended), so this stays Extended - stock 2196632 (109831x the 10-unit build qty) makes that a non-issue."
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C11",
+    "C12"
+   ],
+   "block": "class-d-amp",
+   "mpn": "CL21A106KAYNNNE",
+   "lcsc": "C15850",
+   "value": "10uF, X5R, 25V, 0805",
+   "package": "0805",
+   "basic": true,
+   "type": "Basic",
+   "qty_per_board": 2,
+   "stock": 5536272,
+   "price": 0.0788,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0788
+    },
+    {
+     "qty": 200,
+     "price": 0.0609
+    },
+    {
+     "qty": 600,
+     "price": 0.0519
+    },
+    {
+     "qty": 2000,
+     "price": 0.0442
+    },
+    {
+     "qty": 10000,
+     "price": 0.0416
+    },
+    {
+     "qty": 20000,
+     "price": 0.0398
+    }
+   ],
+   "brand": "Samsung Electro-Mechanics",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+   "alternates": [],
+   "role": "C11/C12, 10uF tier at each PVCC pair (sheets.md pin table; state.json P1 decision names this exact MPN, 'Basic 0805, not 1206'). Live-reconfirmed C15850: stock 5536272 (276813x build qty of 20), still Basic. NOTE (see OPEN): this MPN is X5R, while sheets.md's own value table lists X7R for C11/C12 - kept as-is because the orchestrator named this MPN explicitly as a P1 decision, not because P3 re-derived it; flagged for H1/P1 to reconcile the dielectric note against the named part."
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C15",
+    "C16",
+    "C17",
+    "C18"
+   ],
+   "block": "class-d-amp",
+   "mpn": "CL21B224KBFNNNE",
+   "lcsc": "C5378",
+   "value": "220nF, X7R, 50V, 0805",
+   "package": "0805",
+   "basic": true,
+   "type": "Basic",
+   "qty_per_board": 4,
+   "stock": 671741,
+   "price": 0.0187,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0187
+    },
+    {
+     "qty": 500,
+     "price": 0.0144
+    },
+    {
+     "qty": 2000,
+     "price": 0.0121
+    },
+    {
+     "qty": 4000,
+     "price": 0.0106
+    },
+    {
+     "qty": 24000,
+     "price": 0.01
+    },
+    {
+     "qty": 50000,
+     "price": 0.0096
+    }
+   ],
+   "brand": "Samsung Electro-Mechanics",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21B224KBFNNNE_C5378.pdf",
+   "alternates": [],
+   "role": "C15-C18, one bootstrap cap per BSxx/OUTxx pin pair, each loop local (sheets.md pin table). Basic, live-reconfirmed X7R/50V matches spec exactly. Stock 671741 (33587x the 20-unit build qty) - no alternate needed."
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C19",
+    "C20",
+    "C21",
+    "C22"
+   ],
+   "block": "lc-output-filter",
+   "mpn": "CC0805KKX7R9BB684",
+   "lcsc": "C107133",
+   "value": "680nF, X7R, 50V, 0805",
+   "package": "0805",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 4,
+   "stock": 15895,
+   "price": 0.0389,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0389
+    },
+    {
+     "qty": 200,
+     "price": 0.0324
+    },
+    {
+     "qty": 600,
+     "price": 0.0288
+    },
+    {
+     "qty": 3000,
+     "price": 0.0265
+    },
+    {
+     "qty": 9000,
+     "price": 0.0247
+    },
+    {
+     "qty": 21000,
+     "price": 0.0236
+    }
+   ],
+   "brand": "YAGEO",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805KKX7R9BB684_C107133.pdf",
+   "alternates": [
+    {
+     "mpn": "TCC0805X7R684K500DT",
+     "lcsc": "C282780",
+     "note": "CCTC, same 680nF/50V/X7R/0805, cheapest of the group ($0.0174@1) but thinner stock (10944, still 547x build qty)."
+    }
+   ],
+   "role": "C19-C22, the LC output filter cap, f0=61kHz with the 10uH inductor (blocks.md B4). Live-reconfirmed C107133: stock 15895 (795x the 20-unit build qty) - comfortably above the 5x floor despite being Extended."
+  },
+  {
+   "ref_prefix_hint": "C",
+   "refs": [
+    "C23",
+    "C24",
+    "C25",
+    "C26"
+   ],
+   "block": "lc-output-filter",
+   "mpn": "CL05B103KB5NNNC",
+   "lcsc": "C15195",
+   "value": "10nF, X7R, 50V, 0402",
+   "package": "0402",
+   "basic": true,
+   "type": "Basic",
+   "qty_per_board": 4,
+   "stock": 4452622,
+   "price": 0.005,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.005
+    },
+    {
+     "qty": 1000,
+     "price": 0.0038
+    },
+    {
+     "qty": 3000,
+     "price": 0.0033
+    },
+    {
+     "qty": 10000,
+     "price": 0.0029
+    },
+    {
+     "qty": 50000,
+     "price": 0.0027
+    },
+    {
+     "qty": 100000,
+     "price": 0.0026
+    }
+   ],
+   "brand": "Samsung Electro-Mechanics",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL05B103KB5NNNC_C15195.pdf",
+   "alternates": [],
+   "role": "C23-C26, damping-branch cap in series with R4-R7 (Zobel-style, sheets.md B4). 0402 is allowed here even though the board is JLC PCBA (not hand-solder) - rule 3's 0402 floor is a hand-solder concern, not a PCBA one. Basic, stock 4452622 (222631x build qty) - no alternate needed."
+  },
+  {
+   "ref_prefix_hint": "R",
+   "refs": [
+    "R1"
+   ],
+   "block": "class-d-amp",
+   "mpn": "0603WAF5601T5E",
+   "lcsc": "C23189",
+   "value": "5.6k, 1%, 0603",
+   "package": "0603",
+   "basic": true,
+   "type": "Basic",
+   "qty_per_board": 1,
+   "stock": 1191631,
+   "price": 0.0032,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0032
+    },
+    {
+     "qty": 1000,
+     "price": 0.0024
+    },
+    {
+     "qty": 5000,
+     "price": 0.002
+    },
+    {
+     "qty": 10000,
+     "price": 0.0018
+    },
+    {
+     "qty": 50000,
+     "price": 0.0016
+    },
+    {
+     "qty": 50200,
+     "price": 0.0016
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5601T5E_C23189.pdf",
+   "alternates": [],
+   "role": "R1, GAIN/SLV to GND - sets 20dB master mode, latched at power-up (sheets.md pin 8). Picked via parts_search --pick basic-passive (not in the P2 research shortlist, which covered ICs/caps/inductor/one damping resistor value only). Basic, stock 1191631 (238326x build qty) - no alternate needed."
+  },
+  {
+   "ref_prefix_hint": "R",
+   "refs": [
+    "R2",
+    "R3"
+   ],
+   "block": "class-d-amp",
+   "mpn": "0603WAF1003T5E",
+   "lcsc": "C25803",
+   "value": "100k, 1%, 0603",
+   "package": "0603",
+   "basic": true,
+   "type": "Basic",
+   "qty_per_board": 2,
+   "stock": 22826205,
+   "price": 0.0031,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0031
+    },
+    {
+     "qty": 1000,
+     "price": 0.0024
+    },
+    {
+     "qty": 5000,
+     "price": 0.0021
+    },
+    {
+     "qty": 10000,
+     "price": 0.0017
+    },
+    {
+     "qty": 50000,
+     "price": 0.0016
+    },
+    {
+     "qty": 50200,
+     "price": 0.0016
+    }
+   ],
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf",
+   "alternates": [],
+   "role": "R2 (SDZ+FAULTZ pull-up to +12V, self-clearing fault) and R3 (MUTE pull-down to GND, outputs enabled) - sheets.md pins 2/3 and 12. Picked via parts_search --pick basic-passive. Basic, stock 22826205 (2282620x build qty) - no alternate needed."
+  },
+  {
+   "ref_prefix_hint": "R",
+   "refs": [
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+   ],
+   "block": "lc-output-filter",
+   "mpn": "RC0603FR-073R3L",
+   "lcsc": "C137725",
+   "value": "3.3R, 1%, 0603, 100mW",
+   "package": "0603",
+   "basic": false,
+   "type": "Extended",
+   "qty_per_board": 4,
+   "stock": 159062,
+   "price": 0.0072,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0072
+    },
+    {
+     "qty": 1000,
+     "price": 0.0062
+    },
+    {
+     "qty": 5000,
+     "price": 0.0056
+    },
+    {
+     "qty": 10000,
+     "price": 0.0054
+    },
+    {
+     "qty": 50000,
+     "price": 0.0051
+    },
+    {
+     "qty": 50200,
+     "price": 0.0051
+    }
+   ],
+   "brand": "YAGEO",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0603FR-073R3L_C137725.pdf",
+   "alternates": [],
+   "role": "R4-R7, Zobel damping branch across each speaker net (blocks.md B4). No Basic 3.3ohm exists at any package per P2 research; live-reconfirmed 100mW rating exactly meets sheets.md's '>=100mW' floor (no margin above it - worth a second look at P4/P8 if the damping branch's dissipation estimate tightens). Stock 159062 (7953x the 20-unit build qty)."
+  },
+  {
+   "ref_prefix_hint": "J",
+   "refs": [
+    "J1"
+   ],
+   "block": "dc-input",
+   "mpn": null,
+   "lcsc": null,
+   "value": "Bare SMD wire-pad pair, +12V / GND",
+   "package": "2x SMD pad, approx 3.0x6.0mm each, >=1.5mm apart, no connector body",
+   "basic": null,
+   "type": null,
+   "qty_per_board": 1,
+   "stock": null,
+   "price": null,
+   "datasheet": null,
+   "alternates": [],
+   "role": "J1, 12V power in for 18-20AWG leads (blocks.md B1, requirements.md Q3/Q1 default). No LCSC part exists for a bare copper pad and none is invented here - footprint-only, not orderable. Carries 4A design current per constraints.json; pad sizing/spoke count is P6's job."
+  },
+  {
+   "ref_prefix_hint": "J",
+   "refs": [
+    "J2"
+   ],
+   "block": "audio-line-in",
+   "mpn": null,
+   "lcsc": null,
+   "value": "Bare SMD wire-pad trio, R / GND / L stereo line input",
+   "package": "3x SMD pad, no connector body",
+   "basic": null,
+   "type": null,
+   "qty_per_board": 1,
+   "stock": null,
+   "price": null,
+   "datasheet": null,
+   "alternates": [],
+   "role": "J2, stereo line-level input (blocks.md B2). Footprint-only, no orderable part."
+  },
+  {
+   "ref_prefix_hint": "J",
+   "refs": [
+    "J3"
+   ],
+   "block": "lc-output-filter",
+   "mpn": null,
+   "lcsc": null,
+   "value": "Bare SMD wire-pad pair, left speaker +/- (BTL, neither terminal is ground)",
+   "package": "2x SMD pad, no connector body",
+   "basic": null,
+   "type": null,
+   "qty_per_board": 1,
+   "stock": null,
+   "price": null,
+   "datasheet": null,
+   "alternates": [],
+   "role": "J3, left speaker output, 3A design current (blocks.md B4/interfaces table). Footprint-only, no orderable part. Silkscreen must flag BTL per requirements.md section 8."
+  },
+  {
+   "ref_prefix_hint": "J",
+   "refs": [
+    "J4"
+   ],
+   "block": "lc-output-filter",
+   "mpn": null,
+   "lcsc": null,
+   "value": "Bare SMD wire-pad pair, right speaker +/- (BTL, neither terminal is ground)",
+   "package": "2x SMD pad, no connector body",
+   "basic": null,
+   "type": null,
+   "qty_per_board": 1,
+   "stock": null,
+   "price": null,
+   "datasheet": null,
+   "alternates": [],
+   "role": "J4, right speaker output, 3A design current. Footprint-only, no orderable part. Silkscreen must flag BTL per requirements.md section 8."
+  },
+  {
+   "ref_prefix_hint": "TP",
+   "refs": [
+    "TP1"
+   ],
+   "block": "dc-input",
+   "mpn": null,
+   "lcsc": null,
+   "value": "Bare SMD test-point pad, GND probe",
+   "package": "1x SMD pad, no connector body",
+   "basic": null,
+   "type": null,
+   "qty_per_board": 1,
+   "stock": null,
+   "price": null,
+   "datasheet": null,
+   "alternates": [],
+   "role": "TP1, GND probe pad on the quiet input corner (constraints.json placement.edges). Footprint-only, no orderable part."
+  },
+  {
+   "ref_prefix_hint": "D",
+   "refs": [
+    "D1"
+   ],
+   "block": "dc-input",
+   "mpn": "SMBJ15A",
+   "lcsc": "C113988",
+   "package": "DO-214AA(SMB)",
+   "basic": false,
+   "stock": 135294,
+   "price": 0.0582,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0582
+    },
+    {
+     "qty": 100,
+     "price": 0.0484
+    },
+    {
+     "qty": 300,
+     "price": 0.0436
+    },
+    {
+     "qty": 3000,
+     "price": 0.0309
+    },
+    {
+     "qty": 6000,
+     "price": 0.028
+    },
+    {
+     "qty": 9000,
+     "price": 0.0265
+    }
+   ],
+   "brand": "MDD(Microdiode Semiconductor)",
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407291900_MDD-Microdiode-Semiconductor-SMBJ15A-T3_C113988.pdf",
+   "type": "Extended",
+   "qty_per_board": 1,
+   "value": "SMBJ15A, 600W unidirectional TVS, Vwm 15V, Vc 24.4V@24.6A",
+   "role": "D1, TVS across J1 +12V/GND. Added after schematic review W1: clamps the hot-plug ring (~26V) below the TPA3118 30V PVCC abs max. Vwm 15V clears a 12V +10% adapter.",
+   "alternates": [
+    {
+     "mpn": "SMBJ15A",
+     "lcsc": "C188412",
+     "note": "other-vendor SMBJ15A, same SMB land."
+    }
+   ],
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-65\u2103~+150\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "TVS"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "600W@10/1000us"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "24.4V"
+    },
+    {
+     "name": "Polarity",
+     "value": "Unidirectional"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "24.6A@10/1000us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "18.5V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "15V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "1uA"
+    }
+   ]
+  }
+ ]
+}

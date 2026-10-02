@@ -1,0 +1,64 @@
+id: class-d-amp-emi-filter-and-snubber
+classes:
+- emi
+applies:
+  topologies:
+  - class-d-amp
+  packages: []
+  interfaces: []
+  parts:
+  - TPA3116D2
+  - TPA3118D2
+  - TPA3130D2
+rule:
+  enforced_by: null
+  switch_node_snubber: 10 ohm + 330 pF at OUTxx, into pad
+  post_filter_zobel: 3.3 ohm + 10 nF at terminal
+  lc_filter: 10 uH + 680 nF, close to outputs
+prose: 'EMI on a class-D output is handled at two places, both grounded at the IC star point. (1) Output
+  filter: SLOS708 p28 (10.1): a ferrite bead filter placed as close to the output terminals as possible,
+  or an LC filter placed close to the outputs; the caps of both are grounded. (2) Snubbers: p26 Fig 37
+  draws per output an ''EMI C-RC SNUBBER'' of 3.3 ohm + 10 nF after the LC plus 1 nF to GND, and the LC
+  itself 10 uH + 680 nF. SLOU342A p10 BOM shows the EVM fits a switch-node RC too: R11-R14 10 ohm 0805
+  1/4 W with C11/C13/C15/C17 330 pF COG at OUTxx (before the inductor), and R15-R18 3.3 ohm with C25-C28
+  0.01 uF 100 V X7R after it; p6 Fig 3 places the 330 pF/10 ohm pairs at the U1 output pins and the 3.3
+  ohm/10 nF at the speaker jacks. p7 Fig 4: the switch-node RCs sit in the pin row (C11..C17 labels beside
+  U1), the 3.3 ohm/10 nF at the RIGHT/LEFT posts. Rule: keep the switching-node copper short (pin to inductor),
+  put the switch-node snubber inside that copper with its GND end into the pad, and the post-filter Zobel
+  at the terminal; the 100 V rating on the 10 nF is the EVM''s choice for a 26 V rail with BTL swing.
+  Why: BD modulation (p18 7.3.12.1) leaves both outputs switching at fsw with the load seeing near 0 V,
+  so the common-mode edge current is what radiates; the filter attenuates it and the snubber damps the
+  ring at the node.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 28
+  note: '10.1 Output filter bullet: ferrite close to output terminals, LC close to outputs, caps grounded'
+- file: research/sources/tpa3116d2.pdf
+  page: 26
+  note: 'Fig 37: OUTPUT LC FILTER 10 uH + 680 nF, EMI C-RC SNUBBER 3.3 ohm + 10 nF, 1 nF to GND per output'
+- file: research/sources/tpa3116d2.pdf
+  page: 18
+  note: '7.3.12.1 BD modulation: both outputs switch 0-PVCC, load sees ~0 V at idle'
+- file: research/sources/slou342a.pdf
+  page: 10
+  note: 'BOM: R11-R14 10 ohm 1/4 W + C11/C13/C15/C17 330 pF COG (switch node); R15-R18 3.3 ohm + C25-C28
+    0.01 uF 100 V (post filter)'
+- file: research/sources/slou342a.pdf
+  page: 6
+  note: 'Fig 3 schematic: 330 pF/10 ohm at U1 outputs before L, 3.3 ohm/10 nF at the speaker jacks'
+- file: research/sources/slou342a.pdf
+  page: 7
+  note: 'Fig 4: C11..C17 in the pin row at U1, Zobel parts at the LEFT/RIGHT posts'
+status: active
+origin: research:block-class-d-amp-1
+level: family
+maturity: verified
+generalizes: []
+envelope:
+  fsw_khz:
+    min: 400
+    max: 1200
+envelope_note: 'Scales with switching frequency: the 330 pF/10 ohm and 3.3 ohm/10 nF values are tuned
+  for this family''s 400 kHz-1.2 MHz PWM range (p27 design requirements); a different fsw changes the
+  snubber corner and the filter cutoff, though the placement rule survives.'
+verification: {by: "second-reader", date: "2026-09-27", note: "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p28 output-filter bullet and SLOU342A p7 Fig 4 (C11..C17 by U1, Zobel parts at posts); p26 Fig 37, p18, SLOU342A p6/p10 as pass 1."}

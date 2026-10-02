@@ -1,0 +1,1 @@
+{"mappings": [], "note": "Candidates are buck/class-e records; none applies to an LDO, linear charger, module or sensor block, and buck-upstream-inrush-limit already reaches interface:usb inrush by key. No justified edges."}

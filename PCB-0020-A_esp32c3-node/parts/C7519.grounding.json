@@ -1,0 +1,379 @@
+{
+ "script": "datasheet_extract",
+ "status": "extracted",
+ "source_pdf": "PCB-0020-A_esp32c3-node/parts/U4_USBLC6-2SC6_C7519.pdf",
+ "lcsc": "",
+ "n_pages": 14,
+ "text_chars": 15963,
+ "pages_trimmed": 8,
+ "text_by_page": [
+  {
+   "page": 0,
+   "text": "October 2011 Doc ID 11265 Rev 5 1/14\n14\nUSBLC6-2\nVery low capacitance ESD protection\nFeatures\n\u25a0 2 data-line protection\n\u25a0 Protects VBUS\n\u25a0 Very low capacitance: 3.5 pF max.\n\u25a0 Very low leakage current: 150 nA max.\n\u25a0 SOT-666 and SOT23-6L packages\n\u25a0 RoHS compliant\nBenefits\n\u25a0 Very low capacitance between lines to GND for \noptimized data integrity and speed\n\u25a0 Low PCB space consumption: 2.9 mm2 max for \nSOT-666 and 9 mm\u00b2 max for SOT23-6L\n\u25a0 Enhanced ESD protection: IEC 61000-4-2 \nlevel 4 compliance guaranteed at device level, \nhence greater immunity at system level\n\u25a0 ESD protection of VBUS\n\u25a0 High reliability offered by monolithic integration\n\u25a0 Low leakage current for longer operation of \nbattery powered devices\n\u25a0 Fast response time\n\u25a0 Consistent D+ / D- signal balance:\n\u2013 Very low capacitance matching tolerance\nI/O to GND = 0.015 pF\n\u2013 Compliant with USB 2.0 requirements\nComplies with the following standards:\n\u25a0 IEC 61000-4-2 level 4:\n\u2013 15 kV (air discharge)\n\u2013 8 kV (contact discharge)\nFigure 1. Functional diagram (top view)\nApplications\n\u25a0 USB 2.0 ports up to 480 Mb/s (high speed)\n\u25a0 Compatible with USB 1.1 low and full speed\n\u25a0 Ethernet port: 10/100 Mb/s\n\u25a0 SIM card protection\n\u25a0 Video line protection\n\u25a0 Portable electronics\nDescription\nThe USBLC6-2SC6 and USBLC6-2P6 are \nmonolithic application specific devices dedicated \nto ESD protection of high speed interfaces, such \nas USB 2.0, Ethernet links and video lines.\nThe very low line capacitance secures a high level \nof signal integrity without compromising in \nprotecting sensitive chips against the most \nstringently characterized ESD strikes.\nSOT23-6L\nUSBLC6-2SC6\nSOT-666\nUSBLC6-2P6\n11 6\n2 5\n3 4\nI/O1 I/O1\nGND V BUS\nI/O2 I/O2\nwww.st.com"
+  },
+  {
+   "page": 1,
+   "text": "Characteristics USBLC6-2\n2/14 Doc ID 11265 Rev 5\n1 Characteristics\n         \n         \nTable 1. Absolute ratings\nSymbol Parameter Value Unit\nVPP Peak pulse voltage\nIEC 61000-4-2 air discharge\nIEC 61000-4-2 contact discharge\nMIL STD883G-Method 3015-7\n15\n15\n25\nkV\nT\nstg Storage temperature range -55 to +150 \u00b0C\nTj Operating junction temperature range -40 to +125 \u00b0C\nTL Lead solder temperature (10 seconds duration) 260 \u00b0C\nTable 2. Electrical characteristics (T amb = 25 \u00b0C)\nSymbol Parameter Test conditions\nValue\nUnit\nMin. Typ. Max.\nIRM Leakage current V RM = 5.25 V 10 150 nA\nVBR\nBreakdown voltage between \nVBUS and GND IR = 1 mA 6 V\nVF Forward voltage I F = 10 mA 1.1 V\nVCL Clamping voltage\nIPP = 1 A, 8/20 \u00b5s\nAny I/O pin to GND 12 V\nIPP = 5 A, 8/20 \u00b5s\nAny I/O pin to GND 17 V\nCi/o-GND\nCapacitance between I/O \nand GND VR = 1.65 V 2.5 3.5\npF\n\u0394Ci/o-GND 0.015\nCi/o-i/o Capacitance between I/O V R = 1.65 V 1.2 1.7\npF\n\u0394Ci/o-i/o 0.04"
+  },
+  {
+   "page": 2,
+   "first_line": "USBLC6-2 Characteristics",
+   "chars": 745
+  },
+  {
+   "page": 3,
+   "text": "Technical information USBLC6-2\n4/14 Doc ID 11265 Rev 5\n2 Technical information\n2.1 Surge protection\nThe USBLC6-2 is particularly optimized to perform surge protection based on the rail to rail \ntopology.\nThe clamping voltage VCL can be calculated as follow:\nVCL+ = VTRANSIL + VF for positive surges\nVCL- = - VF for negative surges\nwith: VF = VT + Rd.Ip\n(VF forward drop voltage) / (VT forward drop threshold voltage)\nand VTRANSIL = VBR + Rd_TRANSIL.IP\nCalculation example\nWe assume that the value of the dynamic resistance of the clamping diode is typically:\nR\nd = 0.5 \u03a9 and VT = 1.1 V\nWe assume that the value of the dynamic resistance of the transil diode is typically:\nRd_TRANSIL = 0.5 \u03a9 and VBR = 6.1 V\nFor an IEC 61000-4-2 surge Level 4 (Contact Discharge: Vg = 8 kV, Rg = 330 \u03a9), \nVBUS = +5 V, and if in first approximation, we assume that: \nIp = Vg / Rg = 24 A.\nSo, we find:\nVCL+ = +31.2 V\nVCL- = -13 V\nNote: The calculations do not take into account phenomena due to parasitic inductances.\n2.2 Surge protection application example\nIf we consider that the connections from the pin VBUS to VCC, from I/O to data line and from \nGND to PCB GND plane are done by tracks of 10 mm long and 0.5 mm large, we assume \nthat the parasitic inductances L\nVBUS, LI/O and LGND of these tracks are about 6 nH. So when \nan IEC 61000-4-2 surge occurs on data line, due to the rise time of this spike (tr=1ns), the \nvoltage VCL has an extra value equal to LI/O.dl/dt + LGND.dI/dt.\nThe dI/dt is calculated as:\ndI/dt = Ip/tr = 24 A/ns\nThe overvoltage due to the parasitic inductances is: \nLI/O.dl/dt = LGND.dI/dt = 6 nH x 24 A/ns = 144 V\nBy taking into account the effect of these parasitic inductances due to unsuitable layout, the \nclamping voltage will be:\nVCL+ = +31.2 + 144 + 144 = 319.2 V\nVCL- = -13.1 - 144 - 144 = -301.1 V"
+  },
+  {
+   "page": 4,
+   "text": "USBLC6-2 Technical information\nDoc ID 11265 Rev 5 5/14\nWe can significantly reduce this phenomena with simple layout optimization. It is for this \nreason that some recommendations have to be followed (see 2.3: How to ensure good ESD \nprotection).\nFigure 6. ESD behavior: parasitic phenomena due to unsuitable layout\n2.3 How to ensure good ESD protection\nWhile the USBLC6-2 provides high immunity to ESD surge, efficient protection depends on \nthe layout of the board. In the same way, with the rail to rail topology, the track from data \nlines to I/O pins, from V\nCC to VBUS pin and from GND plane to GND pin must be as short as \npossible to avoid overvoltages due to parasitic phenomena (see Figure 6. and Figure 7. for \nlayout consideration)\n         \nVBUS\nLI/O LVBUS\nLGND\nLI/O\nLGND\nV pinCC\nVCL\nVF\nI/O pin\nVTRANSIL V+ VTRANSIL F\n-V F\nVCL-\nt = 1 nsr\nt\nt\nt = 1 nsr\nVCL+\nGND pin\nData line\nPositive\nSurge\nNegative\nSurge\nESD surge on data line\ndi\ndt LI/O + LGNDdi\ndt\ndi\ndt\n-LI/O - LGNDdi\ndt\ndi\ndt\nV + =V +V +  L +  L surge > 0CL TRANSIL F I/O GND\nV = -V - L - L surge > 0CL- F I/O GND\ndi\ndt\ndi\ndt\ndi\ndt\ndi\ndt\ndi\ndt\nRd.IpVV BRTRANSIL +=\nFigure 7. ESD behavior: layout optimiza tion Figure 8. ESD behavior: measurement \nconditions\nUnsuitable layout\nOptimized layout\n11 6\n2 5\n3 4\n11 6\n2 5\n3 4\n+5 V\nIN OUT\nTEST BOARD\nESD SURGE\nUSBLC6-2SC6"
+  },
+  {
+   "page": 5,
+   "first_line": "Technical information USBLC6-2",
+   "chars": 1201
+  },
+  {
+   "page": 6,
+   "first_line": "USBLC6-2 Technical information",
+   "chars": 855
+  },
+  {
+   "page": 7,
+   "first_line": "Technical information USBLC6-2",
+   "chars": 959
+  },
+  {
+   "page": 8,
+   "text": "USBLC6-2 Technical information\nDoc ID 11265 Rev 5 9/14\n2.6 PSpice model\nFigure 16. shows the PSpice model of one USBLC6-2 cell. In this model, the diodes are \ndefined by the PSpice parameters given in Figure 17.\nFigure 16. PSpice model\nNote: This simulation model is available only for an ambient temperature of 27 \u00b0C.\n         \nMODEL = Dlow MODEL = Dhigh\nVBUS\nLI/O\nLGND\nGND\nD+in\nMODEL = Dzener\nRI/O\nLI/O\nD-in\nRI/O\nLI/O\nLI/O\nRGND RI/O\nD-out\nRI/O\nMODEL = Dlow MODEL = Dhigh\nLI/O\nD+out\nRI/O\nFigure 17. PSpice parameters Figure 18. USBLC6-2 PCB layout \nconsiderations\nDlow Dhigh Dzener\nBV 50 50 7.3\nCJ0 0.9p 2.0p 40p\nIBV 1m 1m 1m\nM 0.3333 0.3333 0.3333\nRS 0.2 0.52 0.84\nVJ 0.6 0.6 0.6\nTT 0.1u 0.1u 0.1u\nLI/O 750p\nRI/O 110m\nLGND 550p\nRGND 60m\nD+in\nD+out\nD-out\nGND\nUSBLC6-2\nD-in\nVBUS\n1\nC = 100nFBUS"
+  },
+  {
+   "page": 9,
+   "first_line": "Ordering information scheme USBLC6-2",
+   "chars": 300
+  },
+  {
+   "page": 10,
+   "first_line": "USBLC6-2 Package information",
+   "chars": 902
+  },
+  {
+   "page": 11,
+   "first_line": "Package information USBLC6-2",
+   "chars": 542
+  },
+  {
+   "page": 12,
+   "first_line": "USBLC6-2 Ordering information",
+   "chars": 868
+  },
+  {
+   "page": 13,
+   "text": "USBLC6-2\n14/14 Doc ID 11265 Rev 5\n \nPlease Read Carefully:\nInformation in this document is provided solely in connection with ST products. STMicroelectronics NV and its subsidiaries (\u201cST\u201d) reserve the\nright to make changes, corrections, modifications or improvements, to this document, and the products and services described herein at any\ntime, without notice.\nAll ST products are sold pursuant to ST\u2019s terms and conditions of sale.\nPurchasers are solely responsible for the choice, selection and use of the ST products and services described herein, and ST as sumes no\nliability whatsoever relating to the choice, selection or use of the ST products and services described herein.\nNo license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted under this document. If any part of this\ndocument refers to any third party products or services it shall not be deemed a license grant by ST for the use of such third party products\nor services, or any intellectual property contained therein or considered as a warranty covering the use in any manner whatsoev er of such\nthird party products or services or any intellectual property contained therein.\nUNLESS OTHERWISE SET FORTH IN ST\u2019S TERMS AND CONDITIONS OF SALE ST DISCLAIMS ANY EXPRESS OR IMPLIED\nWARRANTY WITH RESPECT TO THE USE AND/OR SALE OF ST PRODUCTS INCLUDING WITHOUT LIMITATION IMPLIED\nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE (AND THEIR EQUIVALENTS UNDER THE LAWS\nOF ANY JURISDICTION), OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR OTHER INTELLECTUAL PROPERTY RIGHT.\nUNLESS EXPRESSLY APPROVED IN WRITING BY TWO AUTHORIZED ST REPRESENTATIVES, ST PRODUCTS ARE NOT\nRECOMMENDED, AUTHORIZED OR WARRANTED FOR USE IN MILITARY, AIR CRAFT, SPACE, LIFE SAVING, OR LIFE SUSTAINING\nAPPLICATIONS, NOR IN PRODUCTS OR SYSTEMS WHERE FAILURE OR MALFUNCTION MAY RESULT IN PERSONAL INJURY,\nDEATH, OR SEVERE PROPERTY OR ENVIRONMENTAL DAMAGE. ST PRODUCTS WHICH ARE NOT SPECIFIED AS \"AUTOMOTIVE\nGRADE\" MAY ONLY BE USED IN AUTOMOTIVE APPLICATIONS AT USER\u2019S OWN RISK.\nResale of ST products with provisions different from the statements and/or technical features set forth in this document shall immediately void\nany warranty granted by ST for the ST product or service described herein and shall not create or extend in any manner whatsoev er, any\nliability of ST.\nST and the ST logo are trademarks or registered trademarks of ST in various countries.\nInformation in this document supersedes and replaces all information previously supplied.\nThe ST logo is a registered trademark of STMicroelectronics. All other names are the property of their respective owners.\n\u00a9 2011 STMicroelectronics - All rights reserved\nSTMicroelectronics group of companies\nAustralia - Belgium - Brazil - Canada - China - Czech Republic - Finland - France - Germany - Hong Kong - India - Israel - Italy - Japan - \nMalaysia - Malta - Morocco - Philippines - Singapore - Spain - Sweden - Switzerland - United Kingdom - United States of America\nwww.st.com"
+  }
+ ],
+ "schema": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hwde datasheet extraction",
+  "type": "object",
+  "required": [
+   "mpn",
+   "pinout"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "mpn": {
+    "type": "string",
+    "minLength": 1
+   },
+   "lcsc": {
+    "type": "string"
+   },
+   "package": {
+    "type": "string"
+   },
+   "description": {
+    "type": "string"
+   },
+   "pinout": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pin",
+      "name",
+      "type"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pin": {
+       "type": "string",
+       "minLength": 1
+      },
+      "name": {
+       "type": "string",
+       "minLength": 1
+      },
+      "type": {
+       "type": "string",
+       "enum": [
+        "power_in",
+        "power_out",
+        "ground",
+        "input",
+        "output",
+        "bidirectional",
+        "passive",
+        "analog",
+        "clock",
+        "nc",
+        "open_collector",
+        "tristate",
+        "unspecified"
+       ]
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "decoupling": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "value": {
+       "type": "string",
+       "minLength": 1
+      },
+      "placement": {
+       "type": "string"
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "land_pattern": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "pad_count"
+    ],
+    "properties": {
+     "package": {
+      "type": "string"
+     },
+     "pad_count": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "pitch_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "pad_size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "row_spacing_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "drill_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "annulus_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "courtyard_excess_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "courtyard_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "wire_entry_local": {
+      "type": "string",
+      "enum": [
+       "+X",
+       "-X",
+       "+Y",
+       "-Y"
+      ],
+      "description": "connector wire/cable entry direction in footprint-local coords (KiCad y down)"
+     },
+     "pin1": {
+      "type": "string",
+      "description": "pad number that is pin 1 (default '1')"
+     },
+     "notes": {
+      "type": "string"
+     }
+    }
+   },
+   "exposed_pad": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "present": {
+      "type": "boolean"
+     },
+     "connect_to": {
+      "type": "string"
+     },
+     "thermal_vias": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "present"
+    ]
+   },
+   "layout_notes": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "abs_max": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "param",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "param": {
+       "type": "string"
+      },
+      "value": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "unit": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "pin_ratings": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "kind": {
+       "type": "string",
+       "enum": [
+        "voltage",
+        "current"
+       ]
+      },
+      "level": {
+       "type": "string",
+       "enum": [
+        "abs_max",
+        "recommended"
+       ]
+      },
+      "min": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "max": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "ref": {
+       "type": "string"
+      },
+      "source": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "source_pdf": {
+    "type": "string"
+   },
+   "layout_implications": {
+    "type": "object"
+   }
+  }
+ },
+ "template": {
+  "mpn": "",
+  "lcsc": "",
+  "package": "",
+  "pinout": [
+   {
+    "pin": "1",
+    "name": "",
+    "type": "unspecified"
+   }
+  ],
+  "decoupling": [],
+  "land_pattern": {
+   "pad_count": 0
+  },
+  "layout_notes": [],
+  "abs_max": []
+ },
+ "note": "Fill the template from text_by_page and the PDF pages, then re-run with --validate. Pages without schema-relevant keywords are stubs {page, first_line, chars} - read those PDF pages directly if needed, or re-run with --full-text. If text_chars is ~0 the PDF is image-only; read the rendered pages directly."
+}

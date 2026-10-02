@@ -1,0 +1,823 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "TP4056",
+ "total": 40,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C725790",
+   "mpn": "TP4056",
+   "brand": "UMW(Youtai Semiconductor Co., Ltd.)",
+   "description": "-40\u2103~+85\u2103 1 1A 35uA 4.2V 4V~6.5V Charging IC Lithium Battery Support Support \u6052\u6d41\u5145\u7535\u3001\u6052\u538b\u5145\u7535\u3001\u6d93\u6d41\u5145\u7535\u3001\u81ea\u52a8\u518d\u5145\u7535\u3001\u5145\u7535\u7ec8\u6b62\u3001\u53ef\u7f16\u7a0b\u5145\u7535\u7535\u6d41\u3001\u8f6f\u542f\u52a8\u3001\u6b20\u538b\u9501\u5b9a ESOP-8 Battery Management ROHS",
+   "package": "ESOP-8",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 272316,
+   "price": 0.0841,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0841
+    },
+    {
+     "qty": 50,
+     "price": 0.0664
+    },
+    {
+     "qty": 150,
+     "price": 0.0574
+    },
+    {
+     "qty": 500,
+     "price": 0.0498
+    },
+    {
+     "qty": 2500,
+     "price": 0.0428
+    },
+    {
+     "qty": 4000,
+     "price": 0.0412
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311091738_UMW-Youtai-Semiconductor-Co---Ltd--TP4056_C725790.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_umw-youtai-semiconductor-co-ltd-tp4056_C725790.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "35uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~6.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C7473158",
+   "mpn": "TP4056-MS",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+85\u2103 1 1A 4.2V 4.2V~9V 70uA Charging IC Lithium Battery Support \u6052\u6d41\u5145\u7535\u3001\u6052\u538b\u5145\u7535\u3001\u6d93\u6d41\u5145\u7535\u3001\u81ea\u52a8\u518d\u5145\u7535\u3001\u5145\u7535\u7ec8\u6b62\u3001\u53ef\u7f16\u7a0b\u5145\u7535\u7535\u6d41\u3001\u8f6f\u542f\u52a8\u3001\u6b20\u538b\u9501\u5b9a SOP-8-EP Battery Management ROHS",
+   "package": "SOP-8-EP",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 157273,
+   "price": 0.0569,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0569
+    },
+    {
+     "qty": 100,
+     "price": 0.0459
+    },
+    {
+     "qty": 300,
+     "price": 0.0405
+    },
+    {
+     "qty": 1000,
+     "price": 0.0363
+    },
+    {
+     "qty": 4000,
+     "price": 0.0282
+    },
+    {
+     "qty": 8000,
+     "price": 0.0265
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308080947_MSKSEMI-TP4056-MS_C7473158.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_msksemi-tp4056-ms_C7473158.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "70uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~5.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C16581",
+   "mpn": "TP4056-42-ESOP8",
+   "brand": "TOPPOWER(Nanjing Extension Microelectronics)",
+   "description": "-40\u2103~+85\u2103 1 1A 2uA 4.2V 4V~8V Charging IC Lithium Battery Support ESOP-8 Battery Management ROHS",
+   "package": "ESOP-8",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 81496,
+   "price": 0.1844,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1844
+    },
+    {
+     "qty": 50,
+     "price": 0.146
+    },
+    {
+     "qty": 150,
+     "price": 0.1273
+    },
+    {
+     "qty": 500,
+     "price": 0.1106
+    },
+    {
+     "qty": 2500,
+     "price": 0.0908
+    },
+    {
+     "qty": 4000,
+     "price": 0.088
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261820_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_toppower-nanjing-extension-microelectronics-tp4056-42-esop8_C16581.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "2uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~8V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C49208530",
+   "mpn": "MSTP4056H(2x2)",
+   "brand": "MSKSEMI",
+   "description": "1 1A 4.2V\u30014.35V 5V 65uA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout\u3001Overvoltage protection Lithium Battery Support DFN-8(2x2) Battery Management ROHS",
+   "package": "DFN-8(2x2)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 46636,
+   "price": 0.1138,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1138
+    },
+    {
+     "qty": 50,
+     "price": 0.0904
+    },
+    {
+     "qty": 150,
+     "price": 0.0787
+    },
+    {
+     "qty": 500,
+     "price": 0.07
+    },
+    {
+     "qty": 3000,
+     "price": 0.063
+    },
+    {
+     "qty": 6000,
+     "price": 0.0595
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V\u30014.35V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "65uA"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout\u3001Overvoltage protection"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C382139",
+   "mpn": "TP4056",
+   "brand": "TPOWER",
+   "description": "-40\u2103~+85\u2103 1 1A 1uA 4.2V 4V~6V Charging IC Lithium Battery Support \u6052\u6d41\u5145\u7535\u3001\u6052\u538b\u5145\u7535\u3001\u6d93\u6d41\u5145\u7535\u3001\u81ea\u52a8\u518d\u5145\u7535\u3001\u5145\u7535\u7ec8\u6b62\u3001\u53ef\u7f16\u7a0b\u5145\u7535\u7535\u6d41\u3001\u8f6f\u542f\u52a8\u3001\u6b20\u538b\u9501\u5b9a ESOP-8 Battery Management ROHS",
+   "package": "ESOP-8",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 32757,
+   "price": 0.1272,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1272
+    },
+    {
+     "qty": 50,
+     "price": 0.1007
+    },
+    {
+     "qty": 150,
+     "price": 0.0873
+    },
+    {
+     "qty": 500,
+     "price": 0.0774
+    },
+    {
+     "qty": 2500,
+     "price": 0.0693
+    },
+    {
+     "qty": 4000,
+     "price": 0.0652
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_TPOWER-TP4056_C382139.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_tpower-tp4056_C382139.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "1uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C22470410",
+   "mpn": "TP4056",
+   "brand": "JSMSEMI",
+   "description": "-40\u2103~+85\u2103 1 1A 1uA 4.2V 4.5V~5.5V Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout Lithium Battery Not supported Support ESOP-8 Battery Management ROHS",
+   "package": "ESOP-8",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 27947,
+   "price": 0.0539,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0539
+    },
+    {
+     "qty": 100,
+     "price": 0.0422
+    },
+    {
+     "qty": 300,
+     "price": 0.0363
+    },
+    {
+     "qty": 1000,
+     "price": 0.0319
+    },
+    {
+     "qty": 4000,
+     "price": 0.0303
+    },
+    {
+     "qty": 8000,
+     "price": 0.0287
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406251601_JSMSEMI-TP4056_C22470410.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_jsmsemi-tp4056_C22470410.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "1uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~5.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C2763448",
+   "mpn": "TP4056X-42-ESOP8",
+   "brand": "TOPPOWER(Nanjing Extension Microelectronics)",
+   "description": "-40\u2103~+85\u2103 1 1A 4.2V 4V~8V 70uA Charging IC Lithium Battery Not supported Support SOP-8-EP Battery Management ROHS",
+   "package": "SOP-8-EP",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 26452,
+   "price": 0.2024,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2024
+    },
+    {
+     "qty": 50,
+     "price": 0.1631
+    },
+    {
+     "qty": 150,
+     "price": 0.1462
+    },
+    {
+     "qty": 500,
+     "price": 0.1251
+    },
+    {
+     "qty": 2500,
+     "price": 0.1036
+    },
+    {
+     "qty": 4000,
+     "price": 0.0979
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211111030_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056X-42-ESOP8_C2763448.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_toppower-nanjing-extension-microelectronics-tp4056x-42-esop8_C2763448.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "70uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~8V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C22451416",
+   "mpn": "TP4056EDTR(XBLW)",
+   "brand": "XBLW",
+   "description": "-20\u2103~+85\u2103 1 1A 4.2V 4.5V~6V 55uA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout Lithium Battery Support ESOP-8 Battery Management ROHS",
+   "package": "ESOP-8",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 24785,
+   "price": 0.0506,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0506
+    },
+    {
+     "qty": 100,
+     "price": 0.0404
+    },
+    {
+     "qty": 300,
+     "price": 0.0352
+    },
+    {
+     "qty": 1000,
+     "price": 0.0314
+    },
+    {
+     "qty": 4000,
+     "price": 0.0283
+    },
+    {
+     "qty": 8000,
+     "price": 0.0267
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406041454_XBLW-TP4056EDTR-XBLW_C22451416.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_xblw-tp4056edtr-xblw_C22451416.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "55uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-20\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C49023496",
+   "mpn": "TP4056H-TD",
+   "brand": "TDSEMIC",
+   "description": "-40\u2103~+105\u2103 1 1.2A 100uA 4.2V 4.5V~5.5V Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout\u3001Overvoltage protection Lithium Battery Support Support ESOP-8 Battery Management ROHS",
+   "package": "ESOP-8",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 24036,
+   "price": 0.0804,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0804
+    },
+    {
+     "qty": 100,
+     "price": 0.0633
+    },
+    {
+     "qty": 300,
+     "price": 0.0547
+    },
+    {
+     "qty": 1000,
+     "price": 0.0483
+    },
+    {
+     "qty": 4000,
+     "price": 0.0431
+    },
+    {
+     "qty": 8000,
+     "price": 0.0405
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "https://www.lcsc.com/product-detail/battery-management_tdsemic-tp4056h-td_C49023496.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "100uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.2A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~5.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout\u3001Overvoltage protection"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C54863579",
+   "mpn": "TP4056-MS-N1",
+   "brand": "MSKSEMI",
+   "description": "SOP-8-EP Battery Management ROHS",
+   "package": "SOP-8-EP",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 22528,
+   "price": 0.0569,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0569
+    },
+    {
+     "qty": 100,
+     "price": 0.0452
+    },
+    {
+     "qty": 300,
+     "price": 0.0394
+    },
+    {
+     "qty": 1000,
+     "price": 0.035
+    },
+    {
+     "qty": 4000,
+     "price": 0.0316
+    },
+    {
+     "qty": 8000,
+     "price": 0.0298
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 12
+}

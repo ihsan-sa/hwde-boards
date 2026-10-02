@@ -1,0 +1,88 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "place",
+   "ref": "C17",
+   "x": 33.9,
+   "y": 26.85,
+   "deg": 90
+  },
+  {
+   "op": "place",
+   "ref": "C16",
+   "x": 33.7,
+   "y": 30.8,
+   "deg": -90
+  },
+  {
+   "op": "place",
+   "ref": "C15",
+   "x": 32.4,
+   "y": 34.15,
+   "deg": 0
+  },
+  {
+   "op": "place",
+   "ref": "C7",
+   "x": 28.2,
+   "y": 33.95,
+   "deg": 0
+  },
+  {
+   "op": "place",
+   "ref": "C9",
+   "x": 27.85,
+   "y": 35.4,
+   "deg": 0
+  },
+  {
+   "op": "move_text",
+   "ref": "C17",
+   "field": "reference",
+   "x": 35.8,
+   "y": 26.85,
+   "deg": 90
+  },
+  {
+   "op": "move_text",
+   "ref": "C16",
+   "field": "reference",
+   "x": 36.0,
+   "y": 30.8,
+   "deg": 90
+  },
+  {
+   "op": "move_text",
+   "ref": "C15",
+   "field": "reference",
+   "x": 34.75,
+   "y": 34.15,
+   "deg": 90
+  },
+  {
+   "op": "move_text",
+   "ref": "C18",
+   "field": "reference",
+   "x": 34.7,
+   "y": 21.9,
+   "deg": 0
+  },
+  {
+   "op": "move_text",
+   "ref": "C7",
+   "field": "reference",
+   "x": 26.5,
+   "y": 33.95,
+   "deg": 90
+  },
+  {
+   "op": "move_text",
+   "ref": "C9",
+   "field": "reference",
+   "x": 26.15,
+   "y": 35.4,
+   "deg": 90
+  }
+ ]
+}

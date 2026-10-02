@@ -1,0 +1,164 @@
+{
+  "script": "kc",
+  "tool": "drc",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "units": "mm",
+  "kicad_version": "10.0.6",
+  "options": {
+    "parity": true,
+    "all_track_errors": true,
+    "refill": true,
+    "save_board": true
+  },
+  "counts": {
+    "total": 4,
+    "by_severity": {
+      "warning": 4
+    },
+    "by_source": {
+      "drc": 4
+    }
+  },
+  "status": "violations",
+  "violations": [
+    {
+      "check": "silk_overlap",
+      "severity": "warning",
+      "pos": [
+        36.92,
+        24.11
+      ],
+      "layer": "F.Silkscreen",
+      "net": null,
+      "refs": [
+        "C18",
+        "L3"
+      ],
+      "msg": "Silkscreen clearance",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Segment of L3 on F.Silkscreen",
+          "pos": [
+            36.92,
+            24.11
+          ],
+          "uuid": "5ea2aaa8-d5bf-4d7b-a664-36d66162fad5"
+        },
+        {
+          "msg": "Reference field of C18",
+          "pos": [
+            35.7,
+            24.9
+          ],
+          "uuid": "c95881fa-3c49-4db6-b488-d186fa22151a"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        35.7,
+        24.9
+      ],
+      "layer": "F.Cu",
+      "net": "/OUTNR",
+      "refs": [
+        "C17",
+        "C18"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C18",
+          "pos": [
+            35.7,
+            24.9
+          ],
+          "uuid": "c95881fa-3c49-4db6-b488-d186fa22151a"
+        },
+        {
+          "msg": "Pad 2 [/OUTNR] of C17 on F.Cu",
+          "pos": [
+            33.9,
+            25.85
+          ],
+          "uuid": "26c3efa6-ddbb-4512-aef9-18d9cabc46ce"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        30.4,
+        34.8
+      ],
+      "layer": "F.Cu",
+      "net": "+12V",
+      "refs": [
+        "C9"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C9",
+          "pos": [
+            30.4,
+            34.8
+          ],
+          "uuid": "736fe727-aee6-41bd-ac40-33d3d9e65395"
+        },
+        {
+          "msg": "Pad 1 [+12V] of C9 on F.Cu",
+          "pos": [
+            31.6,
+            35.1
+          ],
+          "uuid": "3f9956b9-ef84-4c43-9a36-e985337181ff"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        30.4,
+        34.8
+      ],
+      "layer": "F.Cu",
+      "net": "+12V",
+      "refs": [
+        "C7",
+        "C9"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C9",
+          "pos": [
+            30.4,
+            34.8
+          ],
+          "uuid": "736fe727-aee6-41bd-ac40-33d3d9e65395"
+        },
+        {
+          "msg": "Pad 1 [+12V] of C7 on F.Cu",
+          "pos": [
+            31.6,
+            33.95
+          ],
+          "uuid": "9009e697-034a-46e3-b117-6702122ca649"
+        }
+      ]
+    }
+  ],
+  "report_schema": 1,
+  "checker_version": 1,
+  "generated_at": "2026-09-27T12:50:22+00:00",
+  "input_digest": "sexpr_no_uuid:6bb33b040bf45ea0c2091cc106c04a625635c1506f3d36ba450da1409d823a15"
+}

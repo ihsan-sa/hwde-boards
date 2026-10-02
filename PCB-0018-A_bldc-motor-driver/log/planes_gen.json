@@ -1,0 +1,193 @@
+{
+ "script": "planes_gen",
+ "status": "pass",
+ "board": "PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "facts": {
+  "plan_source": "constraints",
+  "zones_added": 3,
+  "zones": [
+   {
+    "net": "GND",
+    "layer": "In1.Cu",
+    "region": [
+     9.5,
+     9.5,
+     86.5,
+     86.5
+    ],
+    "priority": 0,
+    "status": "added",
+    "area_mm2": 5748.798,
+    "islands": 1
+   },
+   {
+    "net": "VM",
+    "layer": "In2.Cu",
+    "region": [
+     9.5,
+     9.5,
+     86.5,
+     86.5
+    ],
+    "priority": 0,
+    "status": "added",
+    "area_mm2": 5702.152,
+    "islands": 1
+   },
+   {
+    "net": "GND",
+    "layer": "B.Cu",
+    "region": [
+     9.5,
+     9.5,
+     86.5,
+     86.5
+    ],
+    "priority": 0,
+    "status": "added",
+    "area_mm2": 5748.798,
+    "islands": 1
+   }
+  ],
+  "thermal_vias": 30,
+  "thermal_pads": [
+   {
+    "ref": "C204",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C304",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C401",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C402",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C403",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C404",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C405",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C406",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C407",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C408",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C409",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C410",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C411",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "C412",
+    "pad": "2",
+    "net": "GND",
+    "vias": 1
+   },
+   {
+    "ref": "D101",
+    "pad": "2",
+    "net": "GND",
+    "vias": 3
+   },
+   {
+    "ref": "R401",
+    "pad": "2",
+    "net": "GND",
+    "vias": 3
+   },
+   {
+    "ref": "R402",
+    "pad": "2",
+    "net": "GND",
+    "vias": 3
+   },
+   {
+    "ref": "R403",
+    "pad": "2",
+    "net": "GND",
+    "vias": 3
+   },
+   {
+    "ref": "U201",
+    "pad": "9",
+    "net": "GND",
+    "vias": 3
+   },
+   {
+    "ref": "U301",
+    "pad": "25",
+    "net": "GND",
+    "vias": 1
+   }
+  ],
+  "layer_types": {
+   "In1.Cu": "power",
+   "In2.Cu": "power"
+  },
+  "added_for_reference": [],
+  "notes": []
+ },
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T23:19:26+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:225d0e2cc7dc9822c56ef4a172a33549048392bc29e12d3ee7cdb2b71b864d9d"
+}

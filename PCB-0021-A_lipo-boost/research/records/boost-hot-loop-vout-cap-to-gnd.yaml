@@ -1,0 +1,41 @@
+id: boost-hot-loop-vout-cap-to-gnd
+classes:
+- power-loop
+applies:
+  topologies:
+  - boost
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  cout_to_vout_pin: adjacent
+  cout_to_gnd_pin: adjacent
+  loop: SW FET -> rectifier FET -> Cout -> GND pin
+prose: 'Boost hot loop is the OUTPUT side: low-side FET, then rectifier FET, then Cout, back to the GND
+  pin of the switch. It carries ns edges and must be shortest on the board, so each Cout sits next to
+  BOTH the VOUT and the GND pin (reduces SW and VOUT overshoot). Cin must be close to VIN and also to
+  GND, to cut input ripple. TI Fig 10-1 shows the 6-pin SOT563 with the two Cout caps stacked to the right
+  of the VOUT/GND pins, a VOUT pour and a GND pour with a 2x8 via field right of Cout, the inductor below
+  the IC with VIN pour on its left, a single Cin to the left of VIN/EN and the FB divider above, away
+  from SW. Contrast with a buck: here the input cap loop is NOT the pulsed one.'
+sources:
+- file: research/sources/tps61023.pdf
+  page: 18
+  note: '10.1 text: critical path is switch FET -> rectifier FET -> output caps -> GND; Cout close to
+    VOUT and GND pins; Cin close to VIN and GND. Fig 10-1 layout example described in prose.'
+status: active
+origin: research:block-boost-1
+level: topology
+maturity: verified
+envelope:
+  vout_v:
+    min: 2.2
+    max: 5.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: Scales with integration (hot loop is inside the IC only when both FETs are integrated)
+  and with the part Vout range 2.2-5.5 V read from TPS61023 sec 6.3; discrete-FET boosts have a bigger
+  external loop. Not verified for other integrated boosts.
+verification: {by: "second-reader", date: "2026-10-01", note: "p18 s10.1 text and Fig 10-1 re-read visually: switch FET-rectifier-Cout-GND path, Cout at VOUT and GND, Cin at VIN and GND, 2 Cout stacked right of VOUT/GND pins, 2x8 via field; Vout 2.2-5.5 from p4/5 EC."}

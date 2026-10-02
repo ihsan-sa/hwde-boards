@@ -1,0 +1,9 @@
+{
+ "block": "bulk-cap",
+ "candidates": [
+  {"mpn": "MA25V100M6x6", "lcsc": "C46550465", "package": "SMD D6.3xL6mm", "basic": false, "stock": 61325, "price": 0.1685, "datasheet": "", "rank": 1, "fit": "polymer, 25V, ripple 2.65A@100kHz, ESR 30mOhm@100kHz - meets ripple floor and ESR ceiling, best stock"},
+  {"mpn": "SVS1EM101E06E00RAXXX", "lcsc": "C2939798", "package": "SMD D6.3xL6mm", "basic": false, "stock": 20035, "price": 0.1803, "datasheet": "", "rank": 2, "fit": "polymer alt, 25V, ripple 2.2A@100kHz, ESR 45mOhm@100kHz, same footprint, less stock/higher ESR than #1"},
+  {"mpn": "RVT100UF35V167RV0082", "lcsc": "C5138965", "package": "SMD D6.3xL5.4mm", "basic": false, "stock": 291726, "price": 0.0514, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208230930_KNSCHA-RVT100UF35V167RV0082_C5138965.pdf", "rank": 3, "fit": "electrolytic bulk cap, 35V, best stock of any 100uF electrolytic; JLC doesn't publish an ESR-at-100kHz spec for this part"},
+  {"mpn": "RST100UF25V004", "lcsc": "C4747964", "package": "SMD D6.3xL5.4mm", "basic": false, "stock": 162793, "price": 0.0411, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207221830_KNSCHA-RST100UF25V004_C4747964.pdf", "rank": 4, "fit": "electrolytic alt, exactly-25V rated, cheapest, same footprint as #3"}
+ ]
+}

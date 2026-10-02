@@ -1,0 +1,54 @@
+{
+  "mpn": "MCP73831T-2ACI/OT",
+  "lcsc": "C424093",
+  "package": "SOT-23-5",
+  "description": "Microchip MCP73831/2 (DS20001984G): single-cell Li-Ion/Li-Polymer linear charge controller with integrated pass transistor. Ordering code MCP73831T-2ACI/OT = MCP73831 (tri-state STAT), tape and reel, -2 = 4.20V VREG, option AC (preconditioning 10% of IREG, precondition threshold 66.5% of VREG, termination 7.5% of IREG, recharge threshold 96.5% of VREG), industrial -40 to +85C, 5-lead SOT-23.",
+  "pinout": [
+    {"pin": "1", "name": "STAT", "type": "tristate", "notes": "Charge status output (SOT-23-5 pin 1, Table 3-1). Tri-state on the MCP73831 (High / Low / High-Z; open-drain only on the MCP73832). Table 5-1 (MCP73831): Shutdown = High-Z; No Battery Present = High-Z; Preconditioning = Low; Constant-Current Fast Charge = Low; Constant Voltage = Low; Charge Complete/Standby = High. Sink 25 mA max (VOL 0.4V typ at 4 mA); source 35 mA max (VOH = VDD-0.4V typ at 4 mA). Drives an LED (via RLED to VDD) or a host input / pull-up."},
+    {"pin": "2", "name": "VSS", "type": "ground", "notes": "Battery management 0V reference; connect to the negative terminal of the battery and the input supply."},
+    {"pin": "3", "name": "VBAT", "type": "power_out", "notes": "Battery charge control output; drain of the internal P-channel pass MOSFET. Connect to the positive terminal of the battery. Bypass to VSS with minimum 4.7uF for loop stability when the battery is disconnected. Reverse-discharge protected (output reverse leakage 0.15-0.25uA typ)."},
+    {"pin": "4", "name": "VDD", "type": "power_in", "notes": "Battery management input supply. Recommended VREG(typ)+0.3V to 6V (4.5V to 6V for the 4.20V part); VDD supply voltage 3.75V min, 6V max (Electrical Characteristics); abs max 7.0V. UVLO start 3.45V typ, stop 3.38V typ. Bypass to VSS with minimum 4.7uF."},
+    {"pin": "5", "name": "PROG", "type": "analog", "notes": "Current regulation set and charge control enable. RPROG from PROG to VSS sets IREG: IREG (mA) = 1000 V / RPROG (kOhm), RPROG range 2 kOhm to 67 kOhm (500 mA to about 15 mA). Floating PROG or a logic-high input disables the device (supply current about 25uA typ). Minimum shutdown impedance 70-200 kOhm."}
+  ],
+  "decoupling": [
+    {"pins": ["4", "2"], "value": "4.7uF minimum", "placement": "VDD to VSS (CIN)", "notes": "Pin description 3.1: 'Bypass to VSS with a minimum of 4.7 uF.' Typical Application (page 1) shows 4.7uF on VDD and 4.7uF on VBAT."},
+    {"pins": ["3", "2"], "value": "4.7uF minimum", "placement": "VBAT to VSS (COUT)", "notes": "Section 3.2 / 6.1.1.4: minimum 4.7uF bypass for AC stability in Constant-Voltage mode, especially with no battery load; a 4.7uF ceramic, tantalum or aluminum electrolytic is usually sufficient for output currents up to 500 mA. Virtually any good-quality capacitor can be used, independent of its minimum ESR. The battery and its interconnect appear inductive at high frequency and sit in the feedback loop, so the bypass may also compensate for that."}
+  ],
+  "land_pattern": {
+    "package": "5-Lead SOT-23 (OT), Microchip drawing C04-2091A recommended land pattern (p.23); package outline C04-091B (p.22)",
+    "pad_count": 5,
+    "pitch_mm": 0.95,
+    "pad_size_mm": [0.6, 1.1],
+    "row_spacing_mm": 2.8,
+    "pin1": "1",
+    "notes": "Recommended land pattern (p.23): contact pitch E 0.95 BSC; contact pad spacing C 2.80 (pad-centre row spacing); contact pad width X max 0.60; contact pad length Y max 1.10; distance between pad rows G min 1.70; distance between adjacent pads GX min 0.35; overall width Z max 3.90. Pins 1,2,3 on one side (pitch 0.95), pins 4 and 5 on the other side at the outer positions (middle position empty). Package outline: body length D 2.70-3.10, body width E1 1.30-1.80, overall width E 2.20-3.20, outside lead pitch e1 1.90 BSC, height A 0.90-1.45. No courtyard stated; no exposed pad on the SOT-23-5."
+  },
+  "layout_notes": [
+    "Place the battery pack (VBAT connection) as close as possible to the device's VBAT and VSS pins to minimise voltage drops along the high-current traces and so get optimum voltage regulation (Sec 6.2).",
+    "If the PCB is used as a heat sink, add many vias in the heat-sink pad to conduct heat to the PCB backplane and lower junction temperature; Figures 6-4/6-5 show a typical layout with PCB heat-sinking (top: RLED/LED, RPROG, COUT and CIN right at the pins; bottom: VSS, VBAT, VDD planes).",
+    "Thermal: SOT-23-5 theta-JA 230 C/W typ on a 4-layer JC51-7 board; with a large copper area it can reach 130 C/W typ or better (Temperature Specifications, Note 2). Thermal regulation limits charge current by die temperature (Fig. 4-2); charging suspends above 150C die temperature and resumes about 10C lower.",
+    "Worst-case power = (VDDMAX - VPTHMIN) x IREGMAX at the preconditioning-to-constant-current transition; datasheet example 5V +/-10% input, 550 mA: (5.5V-2.7V) x 550 mA = 1.54 W, which forces thermal regulation in the SOT-23-5 (the 2x3 DFN would shorten charge time).",
+    "Input overvoltage protection (transzorb from input connector V+ to 0V) is needed when the input is hot-pluggable (USB cable, wall supply): cable inductance causes large transients on connect/disconnect (Sec 6.1.1.2).",
+    "Charge current is the programmed IREG = 1000 V / RPROG (RPROG in kOhm, IREG in mA); typical values: 2 kOhm gives 505 mA, 10 kOhm gives 100 mA, 67 kOhm gives 14.5 mA. Preconditioning and termination currents scale as a percentage of IREG (option AC: 10% and 7.5%); no preconditioning trickle at 100% only on option DC, not this part.",
+    "Voltage: VREG = 4.20V +/-0.75% (4.168-4.232V) for the -2 variant. Automatic recharge when VBAT falls to 96.5% of VREG (option AC). Charge timer is not present; termination is current-based with a 1 ms filter.",
+    "Stable with or without a battery load provided VBAT has the 4.7uF bypass; no-battery detection current is 6uA source, so leakage on VBAT must stay small (VBAT impedance > 2 MOhm for the no-battery condition).",
+    "Reverse-blocking: with VDD removed or shorted the battery is not discharged through the pass transistor body diode (Sec 6.1.1.5); VDD below VSTOP gives automatic power-down with 0.1uA typ supply current."
+  ],
+  "abs_max": [
+    {"param": "VDD", "value": 7.0, "unit": "V"},
+    {"param": "All inputs and outputs w.r.t. VSS", "value": "-0.3 to (VDD+0.3)", "unit": "V"},
+    {"param": "Maximum junction temperature TJ", "value": "Internally limited"},
+    {"param": "Storage temperature", "value": "-65 to 150", "unit": "C"},
+    {"param": "ESD HBM (1.5 kOhm series, 100 pF)", "value": 4, "unit": "kV"},
+    {"param": "ESD MM (200 pF, no series resistance)", "value": 400, "unit": "V"},
+    {"param": "Thermal resistance theta-JA, SOT-23-5 (4-layer JC51-7)", "value": 230, "unit": "C/W"}
+  ],
+  "pin_ratings": [
+    {"pins": ["4"], "kind": "voltage", "level": "abs_max", "max": 7.0, "ref": "2", "source": "Absolute Maximum Ratings, p.3"},
+    {"pins": ["4"], "kind": "voltage", "level": "recommended", "min": 3.75, "max": 6, "ref": "2", "source": "DC Characteristics, p.3 (VDD supply voltage)"},
+    {"pins": ["1", "3", "5"], "kind": "voltage", "level": "abs_max", "min": -0.3, "max": "VDD+0.3", "ref": "2", "source": "Absolute Maximum Ratings, p.3 (all inputs and outputs w.r.t. VSS)"},
+    {"pins": ["1"], "kind": "current", "level": "abs_max", "max": 25, "source": "Status Indicator sink current 25 mA max (source 35 mA max), p.4"}
+  ],
+  "exposed_pad": {"present": false},
+  "source_pdf": "boards/esp32c3-node/parts/U2_MCP73831T-2ACI-OT_C424093.pdf"
+}

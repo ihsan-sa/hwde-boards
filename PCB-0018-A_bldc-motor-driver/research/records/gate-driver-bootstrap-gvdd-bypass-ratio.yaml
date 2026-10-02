@@ -1,0 +1,34 @@
+id: gate-driver-bootstrap-gvdd-bypass-ratio
+classes: [decoupling]
+applies:
+  topologies: [gate-driver-bootstrap]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  cvdd_vs_cboot: ">= 10x"
+  cvdd_pair: "small HF ceramic at the GVDD/GND pins + larger bulk ceramic"
+  cvdd_rating: ">= 2x max applied voltage"
+prose: >
+  The bootstrap cap is recharged from the gate-driver supply cap, so that cap
+  must be at least 10x Cboot (SLUA887A p4 Eq 5), which keeps worst-case droop on
+  VDD to ~10% during the refresh. DRV8300 datasheet p19 Eq 5 uses the same ratio
+  (CGVDD >= 10 x 100 nF = 1 uF) and p20 adds: rate the cap >= 2x the voltage it
+  sees because MLCCs lose capacitance under bias. p21 (Power Supply
+  Recommendations): use TWO caps across GVDD-GND, a low-value ceramic very close
+  to the pins for HF and a larger one for bias current; likewise a cap across
+  BSTx-SHx large enough to deliver the GHx pulses. With three half-bridges
+  sharing one GVDD, count all three Cboot in the ratio (inference from the
+  per-cap ratio, not stated by either source).
+sources:
+  - {file: research/sources/slua887a.pdf, page: 4, note: "Section 3.2 Eq 5: CVDD >= 10x Cboot, 10% max ripple on VDD cap"}
+  - {file: research/sources/drv8300.pdf, page: 19, note: "Eq 5: CGVDD >= 10 x CBSTX = 1 uF"}
+  - {file: research/sources/drv8300.pdf, page: 20, note: "text above Fig 9-2: choose 1 uF CGVDD rated >= 2x max voltage due to DC-bias loss"}
+  - {file: research/sources/drv8300.pdf, page: 21, note: "Section 10: two caps GVDD-GND (small HF close, larger bulk), BSTx-SHx cap sized for GHx pulses"}
+status: active
+origin: research:block-gate-driver-bootstrap-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p4 SLUA887A Eq5 10x/10%ripple match; p19-21 DRV8300 Eq5 1uF, 2x voltage rating text, two-cap section10 all match exactly"}

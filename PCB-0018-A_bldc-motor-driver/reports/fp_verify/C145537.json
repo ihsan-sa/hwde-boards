@@ -1,0 +1,74 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "DFN-5_L4.9-W5.9-P1.27-LS6.2-BL.kicad_mod",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "DFN-5_L4.9-W5.9-P1.27-LS6.2-BL"
+   ],
+   "msg": "pad size(s) [[0.005, 0.005]] mm != datasheet [0.75, 1.0] mm (tol 0.1; min/max of 2 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.005, 0.005]] mm != datasheet [0.75, 1.0] mm (tol 0.1; min/max of 2 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.75,
+    1.0
+   ],
+   "measured_mm": [
+    [
+     0.005,
+     0.005
+    ]
+   ]
+  }
+ ],
+ "footprint": "DFN-5_L4.9-W5.9-P1.27-LS6.2-BL",
+ "footprint_file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/DFN-5_L4.9-W5.9-P1.27-LS6.2-BL.kicad_mod",
+ "copper_pads": 5,
+ "total_pads": 5,
+ "measured_pitch_mm": 1.26,
+ "measured_pad_size_mm": [
+  0.75,
+  1.0
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "DFN5 5x6, 1.27P (SO-8FL), Case 488AA, Issue L",
+  "pad_count": 5,
+  "pitch_mm": 1.27,
+  "pad_size_mm": [
+   1.0,
+   0.75
+  ],
+  "row_spacing_mm": 5.8,
+  "pin1": "1",
+  "notes": "Body D1 4.70-4.90mm x E1 5.70-5.90mm, overall D 5.15mm x E 6.15mm, lead pitch e=1.27mm BSC. Recommended soldering footprint (from datasheet drawing dims): source/gate lead pads approx 1.0mm x 0.75mm at 1.27mm pitch; exposed drain pad (Pin 5) approx 3.2mm x 4.56mm centered on the package. Exact pad geometry read from the footprint drawing's dimension callouts (1.270, 0.750, 1.000, 0.905, 4.530, 1.530, 4.560, 0.495, 3.200, 1.330, 0.965mm); verify against the vendor land-pattern drawing before finalizing the footprint, since the numeric labels could not be matched one-to-one to specific pad edges from text extraction alone."
+ },
+ "svg": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/DFN-5_L4.9-W5.9-P1.27-LS6.2-BL.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T19:26:39+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/DFN-5_L4.9-W5.9-P1.27-LS6.2-BL.kicad_mod",
+ "input_digest": "sexpr_no_uuid:2e291db1b9900d81abcb57d63470d0ad1b3f2dc29666431e2bf2cf4f97c06542"
+}

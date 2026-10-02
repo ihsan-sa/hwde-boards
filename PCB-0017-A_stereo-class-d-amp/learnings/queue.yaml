@@ -1,0 +1,57 @@
+version: 1
+board: PCB-0017-A_stereo-class-d-amp
+source: LEARNINGS.md
+compiled: '2026-09-27'
+entries:
+- entry: 2026-09-27-research-task-block-dc-input-1-2
+  line: 8
+  date: '2026-09-27'
+  title: 'research task block-dc-input-1: 2 verified record(s) for block:B1'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:B1
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending
+- entry: 2026-09-27-research-task-block-audio-line-in-1
+  line: 24
+  date: '2026-09-27'
+  title: 'research task block-audio-line-in-1: 4 verified record(s) for block:B2'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:B2
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending
+- entry: 2026-09-27-research-task-block-lc-output-filter-1
+  line: 42
+  date: '2026-09-27'
+  title: 'research task block-lc-output-filter-1: 9 verified record(s) for block:B4'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:B4
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending
+- entry: 2026-09-27-research-task-block-class-d-amp-1
+  line: 66
+  date: '2026-09-27'
+  title: 'research task block-class-d-amp-1: 10 verified record(s) for block:B3'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:B3
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending

@@ -1,0 +1,59 @@
+{
+  "script": "board_init",
+  "status": "pass",
+  "board": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+  "stackup": "JLC04162H-7628A",
+  "layers": 4,
+  "fab_profile": "4layer_2oz",
+  "copper_oz": 2.0,
+  "fab_floors": {
+    "min_clearance": 0.1016,
+    "min_track_width": 0.1524,
+    "min_via_diameter": 0.45,
+    "min_through_hole_diameter": 0.2,
+    "min_via_annular_width": 0.1,
+    "min_hole_to_hole": 0.5,
+    "min_copper_edge_clearance": 0.3
+  },
+  "components": 174,
+  "nets": 95,
+  "outline_bbox": [
+    9.0,
+    9.0,
+    153.582,
+    169.782
+  ],
+  "mounting_holes": 0,
+  "mounting_hole_fp": null,
+  "corner_radius": 2.0,
+  "outline_origin": [
+    9.0,
+    9.0
+  ],
+  "cutouts": [],
+  "self_check": {
+    "drc": {
+      "total": 365,
+      "by_severity": {
+        "error": 365
+      },
+      "by_source": {
+        "unconnected": 365
+      }
+    },
+    "setup_violations": [],
+    "transient_silk": [],
+    "parity_count": 0,
+    "unconnected_count": 365,
+    "clean": true
+  },
+  "worker_notes": [
+    "stackup_freshness: verified 2026-08-06 (52 days ago); JLC template list churns (7628G vanished in <7 days) - re-probe getImpedanceTemplateSettingList before routing controlled impedance; recipe in stackups.yaml header"
+  ],
+  "unconnected_nets_skipped": true,
+  "stackup_freshness": {
+    "verified": "2026-08-06",
+    "age_days": 52,
+    "warning": "verified 2026-08-06 (52 days ago); JLC template list churns (7628G vanished in <7 days) - re-probe getImpedanceTemplateSettingList before routing controlled impedance; recipe in stackups.yaml header"
+  }
+}

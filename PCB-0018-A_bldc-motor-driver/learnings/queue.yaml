@@ -1,0 +1,57 @@
+version: 1
+board: PCB-0018-A_bldc-motor-driver
+source: LEARNINGS.md
+compiled: '2026-09-27'
+entries:
+- entry: 2026-09-27-research-task-block-gate-driver-bootstrap-1
+  line: 8
+  date: '2026-09-27'
+  title: 'research task block-gate-driver-bootstrap-1: 4 verified record(s) for block:gate_driver'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:gate_driver
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending
+- entry: 2026-09-27-research-task-block-current-sense-shunt-1
+  line: 25
+  date: '2026-09-27'
+  title: 'research task block-current-sense-shunt-1: 7 verified record(s) for block:sensing'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:sensing
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending
+- entry: 2026-09-27-research-task-block-reverse-polarity-fet-1
+  line: 45
+  date: '2026-09-27'
+  title: 'research task block-reverse-polarity-fet-1: 6 verified record(s) for block:power_in'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:power_in
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending
+- entry: 2026-09-27-research-task-block-half-bridge-inverter-1
+  line: 64
+  date: '2026-09-27'
+  title: 'research task block-half-bridge-inverter-1: 2 verified record(s) for block:power_stage'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:power_stage
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending

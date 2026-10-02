@@ -1,0 +1,451 @@
+{
+ "mpn": "STM32G431CBT6",
+ "lcsc": "C529355",
+ "package": "LQFP-48 (7x7mm)",
+ "description": "STM32G431xB: Arm Cortex-M4 32-bit MCU+FPU, 170MHz/213DMIPS, up to 128KB Flash, 32KB SRAM, rich analog (2x ADC, 4x DAC, 4x rail-to-rail comparators, 3x op-amps, CORDIC/FMAC math accelerators), 14 timers incl. 2x 16-bit advanced motor control timers (TIM1/TIM8) with dead-time generation and emergency stop, for FOC/BLDC motor control. LQFP48 package.",
+ "pinout": [
+  {
+   "pin": "1",
+   "name": "VBAT",
+   "type": "power_in",
+   "notes": "Backup battery supply for RTC, LSE and backup registers, 1.55-3.6V. Powered from VDD via power switch when VDD present. Not decoupled per datasheet Figure 16 power supply scheme (only VDD, VDDA, VREF+ shown decoupled)."
+  },
+  {
+   "pin": "2",
+   "name": "PC13",
+   "type": "bidirectional",
+   "notes": "5V-tolerant I/O (FT). Alt func: TIM1_BKIN, TIM1_CH1N, TIM8_CH4N, EVENTOUT. Additional func: WKUP2, RTC_TAMP1, RTC_TS, RTC_OUT1. Supplied through internal power switch (limited to 3mA sink); in output mode speed must not exceed 2MHz/30pF load and must not be used as a current source (note 2). After backup domain power-up behaves as GPIO until RTC registers configure it (note 3)."
+  },
+  {
+   "pin": "3",
+   "name": "PC14-OSC32_IN",
+   "type": "bidirectional",
+   "notes": "5V-tolerant I/O (FT). Alt func: EVENTOUT. Additional func: OSC32_IN (32.768kHz crystal input). Same power-switch current limit as PC13 (notes 2,3)."
+  },
+  {
+   "pin": "4",
+   "name": "PC15-OSC32_OUT",
+   "type": "bidirectional",
+   "notes": "5V-tolerant I/O (FT). Alt func: EVENTOUT. Additional func: OSC32_OUT (32.768kHz crystal output). Same power-switch current limit as PC13 (notes 2,3)."
+  },
+  {
+   "pin": "5",
+   "name": "PF0-OSC_IN",
+   "type": "input",
+   "notes": "Input-only pin, FT_fa (5V tolerant, analog switch via VDDA). Alt func: I2C2_SDA, SPI2_NSS/I2S2_WS, TIM1_CH3N, EVENTOUT. Additional func: ADC1_IN10, OSC_IN (4-48MHz crystal input)."
+  },
+  {
+   "pin": "6",
+   "name": "PF1-OSC_OUT",
+   "type": "output",
+   "notes": "Output-only pin, FT_a. Alt func: SPI2_SCK/I2S2_CK, EVENTOUT. Additional func: ADC2_IN10, COMP3_INM, OSC_OUT (crystal output)."
+  },
+  {
+   "pin": "7",
+   "name": "PG10-NRST",
+   "type": "bidirectional",
+   "notes": "Bidirectional reset pin with embedded weak pull-up resistor (Table 11 legend). Alt func: MCO, EVENTOUT. Additional func: NRST (device reset)."
+  },
+  {
+   "pin": "8",
+   "name": "PA0",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM2_CH1, USART2_CTS, COMP1_OUT, TIM8_BKIN, TIM8_ETR, TIM2_ETR, EVENTOUT. Additional func: ADC12_IN1, COMP1_INM, COMP3_INP, RTC_TAMP2, WKUP1. ADC input also a comparator (COMP3) non-inverting input."
+  },
+  {
+   "pin": "9",
+   "name": "PA1",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: RTC_REFIN, TIM2_CH2, USART2_RTS_DE, TIM15_CH1N, EVENTOUT. Additional func: ADC12_IN2, COMP1_INP, OPAMP1_VINP, OPAMP3_VINP. ADC input also COMP1 non-inverting input."
+  },
+  {
+   "pin": "10",
+   "name": "PA2",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM2_CH3, USART2_TX, COMP2_OUT, TIM15_CH1, LPUART1_TX, UCPD1_FRSTX, EVENTOUT. Additional func: ADC1_IN3, COMP2_INM, OPAMP1_VOUT, WKUP4/LSCO."
+  },
+  {
+   "pin": "11",
+   "name": "PA3",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM2_CH4, SAI1_CK1, USART2_RX, TIM15_CH2, LPUART1_RX, SAI1_MCLK_A, EVENTOUT. Additional func: ADC1_IN4, COMP2_INP, OPAMP1_VINM/OPAMP1_VINP. ADC input also COMP2 non-inverting input."
+  },
+  {
+   "pin": "12",
+   "name": "PA4",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM3_CH2, SPI1_NSS, SPI3_NSS/I2S3_WS, USART2_CK, SAI1_FS_B, EVENTOUT. Additional func: ADC2_IN17, DAC1_OUT1, COMP1_INM."
+  },
+  {
+   "pin": "13",
+   "name": "PA5",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM2_CH1, TIM2_ETR, SPI1_SCK, UCPD1_FRSTX, EVENTOUT. Additional func: ADC2_IN13, DAC1_OUT2, COMP2_INM, OPAMP2_VINM."
+  },
+  {
+   "pin": "14",
+   "name": "PA6",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM16_CH1, TIM3_CH1, TIM8_BKIN, SPI1_MISO, TIM1_BKIN, COMP1_OUT, LPUART1_CTS, EVENTOUT. Additional func: ADC2_IN3, OPAMP2_VOUT."
+  },
+  {
+   "pin": "15",
+   "name": "PA7",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM17_CH1, TIM3_CH2, TIM8_CH1N, SPI1_MOSI, TIM1_CH1N, COMP2_OUT, UCPD1_FRSTX, EVENTOUT. Additional func: ADC2_IN4, COMP2_INP, OPAMP1_VINP, OPAMP2_VINP. ADC input also COMP2 non-inverting input."
+  },
+  {
+   "pin": "16",
+   "name": "PB0",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM3_CH3, TIM8_CH2N, TIM1_CH2N, UCPD1_FRSTX, EVENTOUT. Additional func: ADC1_IN15, COMP4_INP, OPAMP2_VINP, OPAMP3_VINP. ADC input also COMP4 non-inverting input."
+  },
+  {
+   "pin": "17",
+   "name": "PB1",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM3_CH4, TIM8_CH3N, TIM1_CH3N, COMP4_OUT, LPUART1_RTS_DE, EVENTOUT. Additional func: ADC1_IN12, COMP1_INP, OPAMP3_VOUT. ADC input also COMP1 non-inverting input."
+  },
+  {
+   "pin": "18",
+   "name": "PB2",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: RTC_OUT2, LPTIM1_OUT, I2C3_SMBA, EVENTOUT. Additional func: ADC2_IN12, COMP4_INM, OPAMP3_VINM."
+  },
+  {
+   "pin": "19",
+   "name": "VSSA",
+   "type": "ground",
+   "notes": "Analog ground, reference for ADC/DAC/COMP/OPAMP and VREF-."
+  },
+  {
+   "pin": "20",
+   "name": "VREF+",
+   "type": "power_in",
+   "notes": "ADC/DAC/comparator/VREFBUF positive reference voltage input. Additional func: VREFBUF_OUT (can be driven by the internal reference buffer)."
+  },
+  {
+   "pin": "21",
+   "name": "VDDA",
+   "type": "power_in",
+   "notes": "Analog power supply for ADC, DAC, reset block, oscillators, PLL, comparators, op-amps."
+  },
+  {
+   "pin": "22",
+   "name": "PB10",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM2_CH3, USART3_TX, LPUART1_RX, TIM1_BKIN, SAI1_SCK_A, EVENTOUT. Additional func: OPAMP3_VINM."
+  },
+  {
+   "pin": "23",
+   "name": "VSS",
+   "type": "ground",
+   "notes": "Digital ground."
+  },
+  {
+   "pin": "24",
+   "name": "VDD",
+   "type": "power_in",
+   "notes": "Digital power supply, 1.71-3.6V."
+  },
+  {
+   "pin": "25",
+   "name": "PB11",
+   "type": "bidirectional",
+   "notes": "FT_a I/O. Alt func: TIM2_CH4, USART3_RX, LPUART1_TX, EVENTOUT. Additional func: ADC12_IN14."
+  },
+  {
+   "pin": "26",
+   "name": "PB12",
+   "type": "bidirectional",
+   "notes": "FT_a I/O. Alt func: I2C2_SMBA, SPI2_NSS/I2S2_WS, TIM1_BKIN, USART3_CK, LPUART1_RTS_DE, EVENTOUT. Additional func: ADC1_IN11."
+  },
+  {
+   "pin": "27",
+   "name": "PB13",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: SPI2_SCK/I2S2_CK, TIM1_CH1N, USART3_CTS, LPUART1_CTS, EVENTOUT. Additional func: OPAMP3_VINP."
+  },
+  {
+   "pin": "28",
+   "name": "PB14",
+   "type": "bidirectional",
+   "notes": "TT_a I/O. Alt func: TIM15_CH1, SPI2_MISO, TIM1_CH2N, USART3_RTS_DE, COMP4_OUT, EVENTOUT. Additional func: ADC1_IN5, OPAMP2_VINP."
+  },
+  {
+   "pin": "29",
+   "name": "PB15",
+   "type": "bidirectional",
+   "notes": "FT_a I/O. Alt func: RTC_REFIN, TIM15_CH2, TIM15_CH1N, COMP3_OUT, TIM1_CH3N, SPI2_MOSI/I2S2_SD, EVENTOUT. Additional func: ADC2_IN15."
+  },
+  {
+   "pin": "30",
+   "name": "PA8",
+   "type": "bidirectional",
+   "notes": "FT_f I/O. Alt func: MCO, I2C3_SCL, I2C2_SDA, I2S2_MCK, TIM1_CH1, USART1_CK, TIM4_ETR, SAI1_CK2, SAI1_SCK_A, EVENTOUT."
+  },
+  {
+   "pin": "31",
+   "name": "PA9",
+   "type": "bidirectional",
+   "notes": "FT_fd I/O. Alt func: I2C3_SMBA, I2C2_SCL, I2S3_MCK, TIM1_CH2, USART1_TX, TIM15_BKIN, TIM2_CH3, SAI1_FS_A, EVENTOUT. Additional func: UCPD1_DBCC1."
+  },
+  {
+   "pin": "32",
+   "name": "PA10",
+   "type": "bidirectional",
+   "notes": "FT_da I/O. Alt func: TIM17_BKIN, USB_CRS_SYNC, I2C2_SMBA, SPI2_MISO, TIM1_CH3, USART1_RX, TIM2_CH4, TIM8_BKIN, SAI1_D1, SAI1_SD_A, EVENTOUT. Additional func: UCPD1_DBCC2."
+  },
+  {
+   "pin": "33",
+   "name": "PA11",
+   "type": "bidirectional",
+   "notes": "FT_u I/O (USB-capable). Alt func: SPI2_MOSI/I2S2_SD, TIM1_CH1N, USART1_CTS, COMP1_OUT, FDCAN1_RX, TIM4_CH1, TIM1_CH4, TIM1_BKIN2, EVENTOUT. Additional func: USB_DM."
+  },
+  {
+   "pin": "34",
+   "name": "PA12",
+   "type": "bidirectional",
+   "notes": "FT_u I/O (USB-capable). Alt func: TIM16_CH1, I2SCKIN, TIM1_CH2N, USART1_RTS_DE, COMP2_OUT, FDCAN1_TX, TIM4_CH2, TIM1_ETR, EVENTOUT. Additional func: USB_DP."
+  },
+  {
+   "pin": "35",
+   "name": "VSS",
+   "type": "ground",
+   "notes": "Digital ground."
+  },
+  {
+   "pin": "36",
+   "name": "VDD",
+   "type": "power_in",
+   "notes": "Digital power supply, 1.71-3.6V."
+  },
+  {
+   "pin": "37",
+   "name": "PA13",
+   "type": "bidirectional",
+   "notes": "FT_f I/O. Alt func: SWDIO-JTMS, TIM16_CH1N, I2C1_SCL, IR_OUT, USART3_CTS, TIM4_CH3, SAI1_SD_B, EVENTOUT. Note (4): after reset configured as JTAG/SW debug alt function with internal pull-up active (SWDIO)."
+  },
+  {
+   "pin": "38",
+   "name": "PA14",
+   "type": "bidirectional",
+   "notes": "FT_f I/O. Alt func: SWCLK-JTCK, LPTIM1_OUT, I2C1_SDA, TIM8_CH2, TIM1_BKIN, USART2_TX, SAI1_FS_B, EVENTOUT. Note (4): after reset configured as JTAG/SW debug alt function (SWCLK) with internal pull-down active."
+  },
+  {
+   "pin": "39",
+   "name": "PA15",
+   "type": "bidirectional",
+   "notes": "FT_f I/O. Alt func: JTDI, TIM2_CH1, TIM8_CH1, I2C1_SCL, SPI1_NSS, SPI3_NSS/I2S3_WS, USART2_RX, UART4_RTS_DE, TIM1_BKIN, TIM2_ETR, EVENTOUT. Note (4): after reset configured as JTAG/SW debug alt function (JTDI) with internal pull-up active."
+  },
+  {
+   "pin": "40",
+   "name": "PB3",
+   "type": "bidirectional",
+   "notes": "FT I/O. Alt func: JTDO-TRACESWO, TIM2_CH2, TIM4_ETR, USB_CRS_SYNC, TIM8_CH1N, SPI1_SCK, SPI3_SCK/I2S3_CK, USART2_TX, TIM3_ETR, SAI1_SCK_B, EVENTOUT. Note (4): after reset configured as JTAG/SW debug alt function (JTDO) with internal pull-up active."
+  },
+  {
+   "pin": "41",
+   "name": "PB4",
+   "type": "bidirectional",
+   "notes": "FT_c I/O (USB Type-C PD capable). Alt func: JTRST, TIM16_CH1, TIM3_CH1, TIM8_CH2N, SPI1_MISO, SPI3_MISO, USART2_RX, TIM17_BKIN, SAI1_MCLK_B, EVENTOUT. Additional func: UCPD1_CC2. Note (4): after reset configured as JTAG/SW debug alt function (JTRST) with internal pull-up active."
+  },
+  {
+   "pin": "42",
+   "name": "PB5",
+   "type": "bidirectional",
+   "notes": "FT_f I/O. Alt func: TIM16_BKIN, TIM3_CH2, TIM8_CH3N, I2C1_SMBA, SPI1_MOSI, SPI3_MOSI/I2S3_SD, USART2_CK, I2C3_SDA, TIM17_CH1, LPTIM1_IN1, SAI1_SD_B, EVENTOUT."
+  },
+  {
+   "pin": "43",
+   "name": "PB6",
+   "type": "bidirectional",
+   "notes": "FT_c I/O (USB Type-C PD capable). Alt func: TIM16_CH1N, TIM4_CH1, TIM8_CH1, TIM8_ETR, USART1_TX, COMP4_OUT, TIM8_BKIN2, LPTIM1_ETR, SAI1_FS_B, EVENTOUT. Additional func: UCPD1_CC1."
+  },
+  {
+   "pin": "44",
+   "name": "PB7",
+   "type": "bidirectional",
+   "notes": "FT_f I/O. Alt func: TIM17_CH1N, TIM4_CH2, I2C1_SDA, TIM8_BKIN, USART1_RX, COMP3_OUT, TIM3_CH4, LPTIM1_IN2, UART4_CTS, EVENTOUT. Additional func: PVD_IN."
+  },
+  {
+   "pin": "45",
+   "name": "PB8-BOOT0",
+   "type": "bidirectional",
+   "notes": "FT_f I/O, dedicated shared BOOT0 function. Alt func: TIM16_CH1, TIM4_CH3, SAI1_CK1, I2C1_SCL, USART3_RX, COMP1_OUT, FDCAN1_RX, TIM8_CH2, TIM1_BKIN, SAI1_MCLK_A, EVENTOUT. Note (5): recommended to set PB8 to a mode other than analog after startup to limit consumption if the pin is left unconnected."
+  },
+  {
+   "pin": "46",
+   "name": "PB9",
+   "type": "bidirectional",
+   "notes": "FT_f I/O. Alt func: TIM17_CH1, TIM4_CH4, SAI1_D2, I2C1_SDA, IR_OUT, USART3_TX, COMP2_OUT, FDCAN1_TX, TIM8_CH3, TIM1_CH3N, SAI1_FS_A, EVENTOUT."
+  },
+  {
+   "pin": "47",
+   "name": "VSS",
+   "type": "ground",
+   "notes": "Digital ground."
+  },
+  {
+   "pin": "48",
+   "name": "VDD",
+   "type": "power_in",
+   "notes": "Digital power supply, 1.71-3.6V."
+  }
+ ],
+ "decoupling": [
+  {
+   "pins": [
+    "VDD (24,36,48)",
+    "VSS (23,35,47)"
+   ],
+   "value": "100nF ceramic per VDD/VSS pin pair + 1x 4.7uF bulk",
+   "placement": "as close as possible to, or below, the VDD/VSS pins on the underside of the PCB",
+   "notes": "Datasheet Figure 16 'Power supply scheme': 'n x 100 nF + 1 x 4.7 uF' across the n VDD/VSS pin pairs (3 pairs on LQFP48: VDD/VSS at pins 24/23, 36/35, 48/47). Caution note: each power supply pair (VDD/VSS, VDDA/VSSA etc.) must be decoupled with filtering ceramic capacitors as shown, placed as close as possible to, or below, the appropriate pins."
+  },
+  {
+   "pins": [
+    "VDDA (21)",
+    "VSSA (19)"
+   ],
+   "value": "10nF + 1uF",
+   "placement": "as close as possible to, or below, the VDDA/VSSA pins",
+   "notes": "Datasheet Figure 16 power supply scheme, VDDA/VSSA branch."
+  },
+  {
+   "pins": [
+    "VREF+ (20)"
+   ],
+   "value": "100nF + 1uF",
+   "placement": "as close as possible to, or below, the VREF+ pin, referenced to VSSA (this package ties VREF- internally, no separate VREF- pin on LQFP48)",
+   "notes": "Datasheet Figure 16 power supply scheme, VREF+ branch."
+  }
+ ],
+ "land_pattern": {
+  "package": "LQFP48, 7x7mm body (D1=E1=7.0mm typ, overall D=E=9.0mm typ with leads), 0.5mm pitch",
+  "pad_count": 48,
+  "pitch_mm": 0.5,
+  "pad_size_mm": [
+   0.3,
+   1.2
+  ],
+  "pin1": "1",
+  "notes": "From datasheet Table 94 (LQFP48 mechanical data) and Figure 50 (LQFP48 recommended footprint): 48 perimeter gull-wing leads, lead width b=0.22mm typ (0.17-0.27mm range), recommended land pad 0.30mm x 1.20mm at 0.50mm pitch. Footprint span (pad outer edge to pad outer edge) 9.70mm x 9.70mm, inner span 7.30mm x 7.30mm between pad inner edges, 5.80mm between pad centers on opposite sides (per Figure 50 dimensions 9.70/7.30/5.80/1.20/0.30/0.50). No exposed pad on this package; pad_count=48 covers only the 48 perimeter leads."
+ },
+ "exposed_pad": {
+  "present": false
+ },
+ "layout_notes": [
+  "Decoupling: 100nF ceramic on each of the three VDD/VSS pin pairs (24/23, 36/35, 48/47) plus one shared 4.7uF bulk capacitor on VDD, placed as close as possible to (or below, on the underside of the PCB) the supply pins (Figure 16, caution note).",
+  "VDDA/VSSA (pins 21/19): decouple with 10nF + 1uF close to the pins (Figure 16).",
+  "VREF+ (pin 20): decouple with 100nF + 1uF close to the pin; this package has no separate VREF- pin (tied internally), so the reference return is VSSA.",
+  "BOOT0 is multiplexed on PB8 (pin 45, PB8-BOOT0). Datasheet note (5): set PB8 to a mode other than analog after startup to limit consumption if the pin is left unconnected. Boot mode selection (BOOT0 sampled at reset) requires an external pull to define a known level at reset per the reference manual; the datasheet text extracted here does not state a specific pull value, so external pull sizing is not grounded from this document.",
+  "NRST is on PG10-NRST (pin 7), a bidirectional reset pin with an embedded weak pull-up resistor (Table 11 legend); no external decoupling/pull value stated in the extracted datasheet text.",
+  "PC13, PC14-OSC32_IN and PC15-OSC32_OUT (pins 2-4) are supplied through an internal power switch that sinks a limited 3mA: in output mode their speed must not exceed 2MHz into a 30pF load and they must not be used as current sources (e.g. driving an LED) (notes 2,3).",
+  "Debug pins PA13/PA14/PA15/PB3/PB4 (SWDIO/SWCLK/JTDI/JTDO/JTRST, pins 37,38,39,40,41) come out of reset configured as JTAG/SW debug alternate functions with internal pull-up (PA13,PA15,PB3,PB4) or pull-down (PA14) active (note 4).",
+  "ADC inputs that are also comparator non-inverting (COMPx_INP) inputs, relevant for current-sense/overcurrent routing: PA0 (pin8, ADC12_IN1 + COMP3_INP), PA1 (pin9, ADC12_IN2 + COMP1_INP), PA7 (pin15, ADC2_IN4 + COMP2_INP), PB0 (pin16, ADC1_IN15 + COMP4_INP), PB1 (pin17, ADC1_IN12 + COMP1_INP)."
+ ],
+ "abs_max": [
+  {
+   "param": "VDD - VSS",
+   "value": "-0.3 to 4.0",
+   "unit": "V"
+  },
+  {
+   "param": "VIN on FT_xxx pins except FT_c",
+   "value": "VSS-0.3 to min(VDD,VDDA)+4.0",
+   "unit": "V"
+  },
+  {
+   "param": "VIN on FT_c pins",
+   "value": "VSS-0.3 to 5.5",
+   "unit": "V"
+  },
+  {
+   "param": "VIN on TT_xx pins",
+   "value": "VSS-0.3 to 4.0",
+   "unit": "V"
+  },
+  {
+   "param": "VIN on any other pins",
+   "value": "VSS-0.3 to 4.0",
+   "unit": "V"
+  },
+  {
+   "param": "|deltaVDDx| between different VDDx pins of same domain",
+   "value": "50",
+   "unit": "mV"
+  },
+  {
+   "param": "|VSSx-VSS| between all ground pins (incl. VREF-)",
+   "value": "50",
+   "unit": "mV"
+  },
+  {
+   "param": "Sum IVDD, total current into all VDD lines",
+   "value": "150",
+   "unit": "mA"
+  },
+  {
+   "param": "Sum IVSS, total current out of all VSS lines",
+   "value": "150",
+   "unit": "mA"
+  },
+  {
+   "param": "IVDD(PIN), max current into each VDD pin",
+   "value": "100",
+   "unit": "mA"
+  },
+  {
+   "param": "IVSS(PIN), max current out of each VSS pin",
+   "value": "100",
+   "unit": "mA"
+  },
+  {
+   "param": "IIO(PIN) sunk, any I/O except FT_f",
+   "value": "20",
+   "unit": "mA"
+  },
+  {
+   "param": "IIO(PIN) sunk, FT_f pin",
+   "value": "20",
+   "unit": "mA"
+  },
+  {
+   "param": "IIO(PIN) sourced, any I/O",
+   "value": "20",
+   "unit": "mA"
+  },
+  {
+   "param": "Sum IIO(PIN) sunk, all I/Os",
+   "value": "100",
+   "unit": "mA"
+  },
+  {
+   "param": "Sum IIO(PIN) sourced, all I/Os",
+   "value": "100",
+   "unit": "mA"
+  },
+  {
+   "param": "IINJ(PIN), injected current on FT_xxx/TT_xx/NRST pins",
+   "value": "-5/0",
+   "unit": "mA"
+  },
+  {
+   "param": "Sum |IINJ(PIN)|, total injected current",
+   "value": "25",
+   "unit": "mA"
+  },
+  {
+   "param": "TSTG, storage temperature range",
+   "value": "-65 to 150",
+   "unit": "C"
+  },
+  {
+   "param": "TJ, maximum junction temperature",
+   "value": "150",
+   "unit": "C"
+  }
+ ],
+ "source_pdf": "parts/C529355.pdf"
+}

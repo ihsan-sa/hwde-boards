@@ -1,0 +1,860 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "MCP73831",
+ "total": 21,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C424093",
+   "mpn": "MCP73831T-2ACI/OT",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 3.75V~6V 4.2V 53uA 550mA Charging IC Lithium Battery Not supported SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 9441,
+   "price": 0.782,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.782
+    },
+    {
+     "qty": 10,
+     "price": 0.6324
+    },
+    {
+     "qty": 30,
+     "price": 0.5576
+    },
+    {
+     "qty": 100,
+     "price": 0.4845
+    },
+    {
+     "qty": 500,
+     "price": 0.4374
+    },
+    {
+     "qty": 1000,
+     "price": 0.4146
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Microchip-Tech-MCP73831T-2ACI-OT_C424093.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831t-2aci-ot_C424093.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "53uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C14879",
+   "mpn": "MCP73831T-2ATI/OT",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 100nA 3.75V~6V 4.2V 550mA Charging IC Lithium Battery SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 4054,
+   "price": 1.2746,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.2746
+    },
+    {
+     "qty": 10,
+     "price": 1.0421
+    },
+    {
+     "qty": 30,
+     "price": 0.9137
+    },
+    {
+     "qty": 100,
+     "price": 0.769
+    },
+    {
+     "qty": 500,
+     "price": 0.6227
+    },
+    {
+     "qty": 1000,
+     "price": 0.5934
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Microchip-Tech-MCP73831T-2ATI-OT_C14879.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831t-2ati-ot_C14879.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "100nA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C625597",
+   "mpn": "MCP73831T-2DCI/OT",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 3.75V~6V 4.2V 53uA 550mA Charging IC Lithium Battery SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1950,
+   "price": 1.5769,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.5769
+    },
+    {
+     "qty": 10,
+     "price": 1.3428
+    },
+    {
+     "qty": 30,
+     "price": 1.2144
+    },
+    {
+     "qty": 100,
+     "price": 1.0697
+    },
+    {
+     "qty": 500,
+     "price": 1.0047
+    },
+    {
+     "qty": 1000,
+     "price": 0.9754
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221830_Microchip-Tech-MCP73831T-2DCI-OT_C625597.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831t-2dci-ot_C625597.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "53uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C42432883",
+   "mpn": "MCP73831T-2ACI/OT-HXY",
+   "brand": "HXY MOSFET",
+   "description": "-40\u2103~+85\u2103 1 200uA 4.25V~6V 4.2V 535mA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout Lithium Battery Not supported Not supported SOT-23-5L Battery Management ROHS",
+   "package": "SOT-23-5L",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1885,
+   "price": 0.6779,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.6779
+    },
+    {
+     "qty": 10,
+     "price": 0.5511
+    },
+    {
+     "qty": 30,
+     "price": 0.4877
+    },
+    {
+     "qty": 100,
+     "price": 0.426
+    },
+    {
+     "qty": 500,
+     "price": 0.374
+    },
+    {
+     "qty": 1000,
+     "price": 0.3544
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2501061745_HXY-MOSFET-MCP73831T-2ACI-OT-HXY_C42432883.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_hxy-mosfet-mcp73831t-2aci-ot-hxy_C42432883.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "200uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "535mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.25V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C411870",
+   "mpn": "MCP73831T-2ACI/MC",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 3.75V~6V 4.2V 53uA 550mA Charging IC Lithium Battery DFN-8-EP(2x3) Battery Management ROHS",
+   "package": "DFN-8-EP(2x3)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 271,
+   "price": 1.0096,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.0096
+    },
+    {
+     "qty": 10,
+     "price": 0.8291
+    },
+    {
+     "qty": 30,
+     "price": 0.7283
+    },
+    {
+     "qty": 100,
+     "price": 0.6162
+    },
+    {
+     "qty": 500,
+     "price": 0.5658
+    },
+    {
+     "qty": 1000,
+     "price": 0.543
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Microchip-Tech-MCP73831T-2ACI-MC_C411870.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831t-2aci-mc_C411870.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "53uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C150772",
+   "mpn": "MCP73831-2ACI/MC",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 100nA 3.75V~6V 4.2V 550mA Charging IC Lithium Battery TDFN-8-EP(2x3) Battery Management ROHS",
+   "package": "TDFN-8-EP(2x3)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 197,
+   "price": 1.4664,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.4664
+    },
+    {
+     "qty": 10,
+     "price": 1.2225
+    },
+    {
+     "qty": 30,
+     "price": 1.0876
+    },
+    {
+     "qty": 150,
+     "price": 0.9348
+    },
+    {
+     "qty": 450,
+     "price": 0.8681
+    },
+    {
+     "qty": 1050,
+     "price": 0.8373
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1806091537_Microchip-Tech-MCP73831-2ACI-MC_C150772.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831-2aci-mc_C150772.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "100nA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C625598",
+   "mpn": "MCP73831T-3ACI/OT",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 1uA 3.75V~6V 4.35V 500mA Charging IC Lithium Battery SOT-23-5 Battery Management",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 108,
+   "price": 1.6046,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.6046
+    },
+    {
+     "qty": 10,
+     "price": 1.3461
+    },
+    {
+     "qty": 30,
+     "price": 1.1835
+    },
+    {
+     "qty": 100,
+     "price": 1.0177
+    },
+    {
+     "qty": 500,
+     "price": 0.9429
+    },
+    {
+     "qty": 1000,
+     "price": 0.9104
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210180300_Microchip-Tech-MCP73831T-3ACI-OT_C625598.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831t-3aci-ot_C625598.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.35V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "1uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "500mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C635037",
+   "mpn": "MCP73831-2DCI/MC",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 3.75V~6V 4.2V 53uA 550mA Charging IC Lithium Battery Not supported DFN-8-EP(2x3) Battery Management ROHS",
+   "package": "DFN-8-EP(2x3)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 99,
+   "price": 1.5753,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.5753
+    },
+    {
+     "qty": 10,
+     "price": 1.2924
+    },
+    {
+     "qty": 30,
+     "price": 1.138
+    },
+    {
+     "qty": 100,
+     "price": 0.9624
+    },
+    {
+     "qty": 500,
+     "price": 0.8844
+    },
+    {
+     "qty": 1000,
+     "price": 0.8503
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210172200_Microchip-Tech-MCP73831-2DCI-MC_C635037.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831-2dci-mc_C635037.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "53uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C625600",
+   "mpn": "MCP73831T-5ACI/OT",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 3.75V~6V 4.5V 53uA 550mA Charging IC Lithium Battery SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 88,
+   "price": 1.6517,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.6517
+    },
+    {
+     "qty": 10,
+     "price": 1.3851
+    },
+    {
+     "qty": 30,
+     "price": 1.2177
+    },
+    {
+     "qty": 100,
+     "price": 1.047
+    },
+    {
+     "qty": 500,
+     "price": 0.9706
+    },
+    {
+     "qty": 1000,
+     "price": 0.9364
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210180300_Microchip-Tech-MCP73831T-5ACI-OT_C625600.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831t-5aci-ot_C625600.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.5V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "53uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C623846",
+   "mpn": "MCP73831T-2ATI/MC",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 3.75V~6V 4.2V 53uA 550mA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking Lithium Battery Not supported DFN-8-EP(2x3) Battery Management ROHS",
+   "package": "DFN-8-EP(2x3)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 70,
+   "price": 2.037,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.037
+    },
+    {
+     "qty": 10,
+     "price": 1.7119
+    },
+    {
+     "qty": 30,
+     "price": 1.5087
+    },
+    {
+     "qty": 100,
+     "price": 1.3006
+    },
+    {
+     "qty": 500,
+     "price": 1.2063
+    },
+    {
+     "qty": 1000,
+     "price": 1.1656
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2008241905_Microchip-Tech-MCP73831T-2ATI-MC_C623846.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73831t-2ati-mc_C623846.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "53uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "550mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.75V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 1
+}

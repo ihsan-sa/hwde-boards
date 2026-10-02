@@ -1,0 +1,4 @@
+{"version":1,"ops":[{"op":"move","ref":"C11","x":34.6,"y":35.6},
+{"op":"move_text","ref":"C11","field":"reference","x":37.6,"y":37.8,"deg":0},
+{"op":"move_text","ref":"C9","field":"reference","x":34.7,"y":33.3,"deg":0},
+{"op":"move_text","ref":"C12","field":"reference","x":36.35,"y":17.5,"deg":0}]}

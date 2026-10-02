@@ -1,0 +1,819 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "TP4054",
+ "total": 33,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C5381776",
+   "mpn": "TP4054",
+   "brand": "JSMSEMI",
+   "description": "-65\u2103~+125\u2103 1 20uA 4.2V 4.5V~5.5V 535mA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout Lithium Battery Not supported SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 300038,
+   "price": 0.021,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.021
+    },
+    {
+     "qty": 200,
+     "price": 0.0163
+    },
+    {
+     "qty": 600,
+     "price": 0.0137
+    },
+    {
+     "qty": 3000,
+     "price": 0.0121
+    },
+    {
+     "qty": 9000,
+     "price": 0.0108
+    },
+    {
+     "qty": 21000,
+     "price": 0.01
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401050929_JSMSEMI-TP4054_C5381776.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_jsmsemi-tp4054_C5381776.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "20uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-65\u2103~+125\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "535mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~5.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C668215",
+   "mpn": "TP4054",
+   "brand": "UMW(Youtai Semiconductor Co., Ltd.)",
+   "description": "-40\u2103~+85\u2103 1 25uA 4.2V 4.2V~6.5V 500mA Charging IC Lithium Battery Not supported \u6052\u6d41\u5145\u7535\u3001\u6052\u538b\u5145\u7535\u3001\u6d93\u6d41\u5145\u7535\u3001\u81ea\u52a8\u518d\u5145\u7535\u3001\u5145\u7535\u7ec8\u6b62\u3001\u53ef\u7f16\u7a0b\u5145\u7535\u7535\u6d41\u3001\u8f6f\u542f\u52a8\u3001\u6b20\u538b\u9501\u5b9a SOT-23-5L Battery Management ROHS",
+   "package": "SOT-23-5L",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 143175,
+   "price": 0.0431,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0431
+    },
+    {
+     "qty": 100,
+     "price": 0.0339
+    },
+    {
+     "qty": 300,
+     "price": 0.0291
+    },
+    {
+     "qty": 3000,
+     "price": 0.0239
+    },
+    {
+     "qty": 6000,
+     "price": 0.021
+    },
+    {
+     "qty": 9000,
+     "price": 0.0197
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311091738_UMW-Youtai-Semiconductor-Co---Ltd--TP4054_C668215.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_umw-youtai-semiconductor-co-ltd-tp4054_C668215.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "25uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "500mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~6.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C45384876",
+   "mpn": "TP4054(LX)",
+   "brand": "lingxingic",
+   "description": "SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 46663,
+   "price": 0.0173,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0173
+    },
+    {
+     "qty": 500,
+     "price": 0.0136
+    },
+    {
+     "qty": 3000,
+     "price": 0.0117
+    },
+    {
+     "qty": 6000,
+     "price": 0.0105
+    },
+    {
+     "qty": 24000,
+     "price": 0.0098
+    },
+    {
+     "qty": 51000,
+     "price": 0.0092
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 2
+  },
+  {
+   "lcsc": "C51927323",
+   "mpn": "TP40540B",
+   "brand": "GREENMICRO",
+   "description": "-65\u2103~+125\u2103 1 20uA 4.2V 4.5V~5.5V 535mA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout\u3001Overvoltage protection Lithium Battery Not supported SOT-23-5L Battery Management ROHS",
+   "package": "SOT-23-5L",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 30544,
+   "price": 0.0145,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0145
+    },
+    {
+     "qty": 500,
+     "price": 0.0114
+    },
+    {
+     "qty": 3000,
+     "price": 0.0096
+    },
+    {
+     "qty": 6000,
+     "price": 0.0086
+    },
+    {
+     "qty": 24000,
+     "price": 0.0077
+    },
+    {
+     "qty": 51000,
+     "price": 0.0072
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "20uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-65\u2103~+125\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "535mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~5.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout\u3001Overvoltage protection"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C32574",
+   "mpn": "TP4054-42-SOT25R",
+   "brand": "TOPPOWER(Nanjing Extension Microelectronics)",
+   "description": "-40\u2103~+85\u2103 1 4.2V 450mA 45uA 4V~9V Charging IC Lithium Battery Not supported Not supported SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 27009,
+   "price": 0.1327,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1327
+    },
+    {
+     "qty": 50,
+     "price": 0.1054
+    },
+    {
+     "qty": 150,
+     "price": 0.0917
+    },
+    {
+     "qty": 500,
+     "price": 0.0815
+    },
+    {
+     "qty": 3000,
+     "price": 0.07
+    },
+    {
+     "qty": 6000,
+     "price": 0.0659
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOPPOWER-Nanjing-Extension-Microelectronics-TP4054-42-SOT25R_C32574.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_toppower-nanjing-extension-microelectronics-tp4054-42-sot25r_C32574.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "45uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "450mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~9V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C5342385",
+   "mpn": "TP4054",
+   "brand": "TECH PUBLIC",
+   "description": "-20\u2103~+85\u2103 1 4.2V 4.2V~7.5V 40uA Charging IC Lithium Battery Not supported SOT-23-5L Battery Management ROHS",
+   "package": "SOT-23-5L",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10744,
+   "price": 0.0304,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0304
+    },
+    {
+     "qty": 100,
+     "price": 0.0269
+    },
+    {
+     "qty": 300,
+     "price": 0.0251
+    },
+    {
+     "qty": 3000,
+     "price": 0.0225
+    },
+    {
+     "qty": 6000,
+     "price": 0.0213
+    },
+    {
+     "qty": 9000,
+     "price": 0.0209
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2301051530_TECH-PUBLIC-TP4054_C5342385.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_tech-public-tp4054_C5342385.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "40uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-20\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "500mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~7.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C49208527",
+   "mpn": "MSTP4054-42",
+   "brand": "MSKSEMI",
+   "description": "-20\u2103~+85\u2103 1 4.2V 4.5V~6.5V 500mA 5nA Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Reverse current blocking Lithium Battery Not supported SOT23-5L Battery Management ROHS",
+   "package": "SOT23-5L",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8838,
+   "price": 0.0239,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0239
+    },
+    {
+     "qty": 200,
+     "price": 0.0187
+    },
+    {
+     "qty": 600,
+     "price": 0.0158
+    },
+    {
+     "qty": 3000,
+     "price": 0.0141
+    },
+    {
+     "qty": 9000,
+     "price": 0.0121
+    },
+    {
+     "qty": 21000,
+     "price": 0.0112
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "5nA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-20\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "500mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~6.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Reverse current blocking"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C382138",
+   "mpn": "TP4054",
+   "brand": "TPOWER",
+   "description": "-40\u2103~+85\u2103 1 2.9V 3uA 4.2V 4V~6V 600mA Charging IC Lithium Battery SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6827,
+   "price": 0.0594,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0594
+    },
+    {
+     "qty": 100,
+     "price": 0.0459
+    },
+    {
+     "qty": 300,
+     "price": 0.0392
+    },
+    {
+     "qty": 3000,
+     "price": 0.0391
+    },
+    {
+     "qty": 6000,
+     "price": 0.035
+    },
+    {
+     "qty": 9000,
+     "price": 0.0329
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_TPOWER-TP4054_C382138.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_tpower-tp4054_C382138.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "3uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "600mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~6V"
+    },
+    {
+     "name": "End-Off Voltage",
+     "value": "2.9V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C49208529",
+   "mpn": "MSTP4054H",
+   "brand": "MSKSEMI",
+   "description": "-20\u2103~+85\u2103 1 1uA 4.2V 4V~6.5V 500mA Charging IC Lithium Battery SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6369,
+   "price": 0.0602,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0602
+    },
+    {
+     "qty": 100,
+     "price": 0.0485
+    },
+    {
+     "qty": 300,
+     "price": 0.0426
+    },
+    {
+     "qty": 3000,
+     "price": 0.0358
+    },
+    {
+     "qty": 6000,
+     "price": 0.0322
+    },
+    {
+     "qty": 9000,
+     "price": 0.0304
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "1uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-20\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "500mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4V~6.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout\u3001Overvoltage protection"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C54899530",
+   "mpn": "TP4054(AT)",
+   "brand": "AOTE",
+   "description": "-40\u2103~+85\u2103 1 25uA 4.2V 4.2V~6.5V 500mA Charging IC Lithium Battery SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3460,
+   "price": 0.0217,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0217
+    },
+    {
+     "qty": 200,
+     "price": 0.0168
+    },
+    {
+     "qty": 600,
+     "price": 0.0141
+    },
+    {
+     "qty": 3000,
+     "price": 0.0125
+    },
+    {
+     "qty": 9000,
+     "price": 0.0111
+    },
+    {
+     "qty": 21000,
+     "price": 0.0103
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "25uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.2V~6.5V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "500mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    }
+   ],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 3
+}

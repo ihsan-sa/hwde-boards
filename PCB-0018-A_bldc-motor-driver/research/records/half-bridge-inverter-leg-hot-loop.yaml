@@ -1,0 +1,42 @@
+id: half-bridge-inverter-leg-hot-loop
+classes: [power-loop, decoupling]
+applies:
+  topologies: [half-bridge-inverter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  bulk: ">10 uF low-ESR at the power entry, multiple vias per pad"
+  leg_bypass: "<10 uF ceramic per leg, from HS drain to LS source, as close to the FETs as possible"
+  placement: "HS and LS FET side-by-side / stacked so VM, SW and GND copper are short and wide"
+  layer_jumps: "minimise in the high-current path; size and count vias when jumping"
+prose: >
+  SLVA959B p19 Section 5.1 + Fig 5-1/5-2: bulk (>10 uF, low ESR) near the power
+  entry, each pad with multiple vias to its plane, sources the low-frequency
+  winding current. p21 Section 5.3.2 + Fig 5-6: small ceramics (<10 uF) across
+  each half-bridge absorb the HF switching current; 5.3.3 says any inductance
+  between these caps and the switching FETs cuts their effect, so place them at
+  the FETs. p22 Fig 5-7 shows CCRM right beside each leg's HS drain / LS source
+  pair and CBULK at BAT+/BAT-. p25 Fig 6-6/6-7: stacked and side-by-side
+  half-bridge placements for SON-8, VM and GND pours on either side of the SW
+  pour, repeatable for 3 legs. p27-28 Section 6.3.2 + Fig 6-11/6-12: the high
+  current loop runs supply+ -> HS FET -> winding -> opposite LS FET -> supply-;
+  minimise it with wide traces, tight placement and few layer jumps (correctly
+  sized via counts where it must jump). TIDA-010251 p5 Fig 3-1 does exactly
+  this: C30/C31/C32 (10 uF 100 V) between VDC and each bottom FET's source, which
+  the text says reduces supply-line ringing from the sense resistor and power
+  track inductance.
+sources:
+  - {file: research/sources/slva959b.pdf, page: 19, note: "Section 5.1 + Fig 5-1 bulk cap multi-via, Fig 5-2 bulk vs IC bypass placement"}
+  - {file: research/sources/slva959b.pdf, page: 21, note: "Section 5.3.2-5.3.3 + Fig 5-6: <10 uF ceramics per bridge leg, >10 uF bulk; place at the switching FETs"}
+  - {file: research/sources/slva959b.pdf, page: 22, note: "Fig 5-7 bypass layout example: CCRM beside each leg, CBULK at BAT+/-"}
+  - {file: research/sources/slva959b.pdf, page: 27, note: "Section 6.3.2 + Fig 6-11: high-current loop path; bullet: correct trace widths"}
+  - {file: research/sources/slva959b.pdf, page: 28, note: "bullets: tight placement, minimise layer jumps; Fig 6-12 optimised H-bridge loop layout"}
+  - {file: research/sources/tiduf36a.pdf, page: 5, note: "Fig 3-1 + text: C30-C32 10 uF 100 V per leg from VDC to bottom FET source, reduce supply ringing"}
+status: active
+origin: research:block-half-bridge-inverter-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p19,21,22,27,28 SLVA959B text/figs match exactly; p5 TIDUF36A text on C30-C32 10uF/100V decoupling reducing supply-line ringing from sense resistor and power track inductance matches verbatim"}

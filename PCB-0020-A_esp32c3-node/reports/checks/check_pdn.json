@@ -1,0 +1,75 @@
+{
+ "script": "check_pdn",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "checked": [
+  {
+   "rail": "VBUS",
+   "current_a": 0.5,
+   "on_board": true,
+   "caps": [
+    "C1"
+   ],
+   "cap_count": 1,
+   "bulk_count": 1,
+   "ceramic_count": 0,
+   "total_uf": 4.7
+  },
+  {
+   "rail": "VSYS",
+   "current_a": 0.5,
+   "on_board": true,
+   "caps": [
+    "C3"
+   ],
+   "cap_count": 1,
+   "bulk_count": 1,
+   "ceramic_count": 0,
+   "total_uf": 1.0
+  },
+  {
+   "rail": "VBAT",
+   "current_a": 0.5,
+   "on_board": true,
+   "caps": [
+    "C2"
+   ],
+   "cap_count": 1,
+   "bulk_count": 1,
+   "ceramic_count": 0,
+   "total_uf": 4.7
+  },
+  {
+   "rail": "+3V3",
+   "current_a": 0.5,
+   "on_board": true,
+   "caps": [
+    "C10",
+    "C11",
+    "C13",
+    "C14",
+    "C4"
+   ],
+   "cap_count": 5,
+   "bulk_count": 2,
+   "ceramic_count": 3,
+   "total_uf": 11.3
+  },
+  {
+   "rail": "GND",
+   "current_a": 0.7,
+   "skipped": "pdn:false (width-only power entry)"
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T12:52:35+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695"
+}

@@ -1,0 +1,1113 @@
+{
+ "schema": "npie-run/1",
+ "board": "PCB-0018-A_bldc-motor-driver",
+ "workspace": "PCB-0018-A_bldc-motor-driver",
+ "procedure_sha256": "6409f9a842f16f61b47320419a5d6ec586a660d33cc3fb5621a85ed828e3cb42",
+ "procedure_generated": "2026-09-30T19:48:24Z",
+ "bench": "sim",
+ "started": "2026-09-30T19:48:40Z",
+ "finished": "2026-09-30T19:48:43Z",
+ "status": "passed",
+ "cursor": null,
+ "steps": [
+  {
+   "id": "visual.01",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "visual.02",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.01",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.02",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.03",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 7015.463661686018,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 1000.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.04",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.05",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 17711.50605405849,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 1000.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.06",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.07",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 1645.6619284649212,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 100.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.08",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.09",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 882.6035386091326,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 100.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.10",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.11",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 1243.1526306379114,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 100.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.12",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.13",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 1174.2365971831073,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 100.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.14",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.15",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 14773.894590841444,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 1000.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.16",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.17",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 16830.8502670327,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 1000.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.18",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.19",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 6407.8938016135235,
+   "unit": "ohm",
+   "expect": {
+    "nominal": null,
+    "min": 1000.0,
+    "max": null,
+    "unit": "ohm"
+   }
+  },
+  {
+   "id": "unpowered.20",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.21",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 0.4434016971826408,
+   "unit": "V",
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.3,
+    "max": 0.8,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "unpowered.22",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.23",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 0.5402918124703844,
+   "unit": "V",
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.3,
+    "max": 0.8,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "unpowered.24",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.25",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 0.4919320481486064,
+   "unit": "V",
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.3,
+    "max": 0.8,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "unpowered.26",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.27",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 0.5314736098949531,
+   "unit": "V",
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.3,
+    "max": 0.8,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "unpowered.28",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.29",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 0.4402527264021333,
+   "unit": "V",
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.3,
+    "max": 0.8,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "unpowered.30",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "unpowered.31",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 0.49344646328657615,
+   "unit": "V",
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.3,
+    "max": 0.8,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "power-up.01",
+   "type": "supply",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "set": {
+    "v": 12.0,
+    "i_limit": 0.2,
+    "output": false
+   }
+  },
+  {
+   "id": "power-up.02",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "power-up.03",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "power-up.04",
+   "type": "supply",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "set": {
+    "v": 12.0,
+    "i_limit": 0.2,
+    "output": true
+   }
+  },
+  {
+   "id": "power-up.05",
+   "type": "wait",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass"
+  },
+  {
+   "id": "power-up.06",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 0.03475323610995867,
+   "unit": "A",
+   "expect": {
+    "nominal": null,
+    "min": 0.002,
+    "max": 0.18,
+    "unit": "A"
+   }
+  },
+  {
+   "id": "power-up.07",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "rails.01",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "rails.02",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 11.847451466552453,
+   "unit": "V",
+   "expect": {
+    "nominal": 12.0,
+    "min": 11.4,
+    "max": 12.12,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "rails.03",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "rails.04",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 12.25647592063906,
+   "unit": "V",
+   "expect": {
+    "nominal": 12.0,
+    "min": 11.04,
+    "max": 12.96,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "rails.05",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "rails.06",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 5.060214118641722,
+   "unit": "V",
+   "expect": {
+    "nominal": 5.0,
+    "min": 4.75,
+    "max": 5.25,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "rails.07",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "rails.08",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 3.2535284083203218,
+   "unit": "V",
+   "expect": {
+    "nominal": 3.3,
+    "min": 3.135,
+    "max": 3.465,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "rails.09",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "rails.10",
+   "type": "measure",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "value": 3.2530191402383526,
+   "unit": "V",
+   "expect": {
+    "nominal": 3.3,
+    "min": 3.135,
+    "max": 3.465,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "rails.11",
+   "type": "human",
+   "t": "2026-09-30T19:48:40Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:40Z",
+   "value": null
+  },
+  {
+   "id": "rails.12",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 0.06298169804113175,
+   "unit": "V",
+   "captures": [
+    "captures/rails.12.png"
+   ],
+   "expect": {
+    "nominal": null,
+    "min": null,
+    "max": 0.24,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "rails.13",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "rails.14",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 0.038174474883355326,
+   "unit": "V",
+   "captures": [
+    "captures/rails.14.png"
+   ],
+   "expect": {
+    "nominal": null,
+    "min": null,
+    "max": 0.1,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "programming.01",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "programming.02",
+   "type": "flash",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "log": "sim: flashed and verified",
+   "artifact_sha256": "360ed127fec7b60c142b5e237aac7baf81c4468b73b1686257bd478952650c2b"
+  },
+  {
+   "id": "programming.03",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "programming.04",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "fwe PCB-0018-A sim"
+  },
+  {
+   "id": "programming.05",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"board\":\"PCB-0018-A\"}"
+  },
+  {
+   "id": "blocks.01",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"board\":\"PCB-0018-A\"}"
+  },
+  {
+   "id": "blocks.02",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true,\"armed\":false,\"vbus_v\":11.971}"
+  },
+  {
+   "id": "blocks.03",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "blocks.04",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "blocks.05",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true,\"armed\":false,\"vbus_v\":11.932}",
+   "fields": {
+    "vbus_v": 11.932
+   }
+  },
+  {
+   "id": "blocks.06",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.07",
+   "type": "measure",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 1.6476634972674815,
+   "unit": "V",
+   "expect": {
+    "nominal": 1.65,
+    "min": 1.6,
+    "max": 1.7,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "blocks.08",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.09",
+   "type": "measure",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 1.635871223627246,
+   "unit": "V",
+   "expect": {
+    "nominal": 1.65,
+    "min": 1.6,
+    "max": 1.7,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "blocks.10",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.11",
+   "type": "measure",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 1.641650749988191,
+   "unit": "V",
+   "expect": {
+    "nominal": 1.65,
+    "min": 1.6,
+    "max": 1.7,
+    "unit": "V"
+   }
+  },
+  {
+   "id": "blocks.12",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": "sim"
+  },
+  {
+   "id": "blocks.13",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.14",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "fwe PCB-0018-A sim"
+  },
+  {
+   "id": "blocks.15",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.16",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "EVT {\"boot\":\"power\"}"
+  },
+  {
+   "id": "blocks.17",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.18",
+   "type": "logic",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": {
+    "HALL_A": 12,
+    "HALL_B": 12,
+    "HALL_C": 12
+   },
+   "expect": {
+    "edges_min": 2
+   }
+  },
+  {
+   "id": "blocks.19",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.20",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "blocks.21",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "blocks.22",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.23",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 0.49875775187301147,
+   "unit": "",
+   "captures": [
+    "captures/blocks.23.png"
+   ],
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.45,
+    "max": 0.55,
+    "unit": ""
+   }
+  },
+  {
+   "id": "blocks.24",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 19998.994937931646,
+   "unit": "Hz",
+   "captures": [],
+   "expect": {
+    "nominal": 20000.0,
+    "min": 19600.0,
+    "max": 20400.0,
+    "unit": "Hz"
+   }
+  },
+  {
+   "id": "blocks.25",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "blocks.26",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.27",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 0.49466168900515145,
+   "unit": "",
+   "captures": [
+    "captures/blocks.27.png"
+   ],
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.45,
+    "max": 0.55,
+    "unit": ""
+   }
+  },
+  {
+   "id": "blocks.28",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 19935.407969969838,
+   "unit": "Hz",
+   "captures": [],
+   "expect": {
+    "nominal": 20000.0,
+    "min": 19600.0,
+    "max": 20400.0,
+    "unit": "Hz"
+   }
+  },
+  {
+   "id": "blocks.29",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "blocks.30",
+   "type": "human",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "confirmed_by": "sim",
+   "confirmed_at": "2026-09-30T19:48:43Z",
+   "value": null
+  },
+  {
+   "id": "blocks.31",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 0.4943756207467538,
+   "unit": "",
+   "captures": [
+    "captures/blocks.31.png"
+   ],
+   "expect": {
+    "nominal": 0.5,
+    "min": 0.45,
+    "max": 0.55,
+    "unit": ""
+   }
+  },
+  {
+   "id": "blocks.32",
+   "type": "scope",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 19990.304831777055,
+   "unit": "Hz",
+   "captures": [],
+   "expect": {
+    "nominal": 20000.0,
+    "min": 19600.0,
+    "max": 20400.0,
+    "unit": "Hz"
+   }
+  },
+  {
+   "id": "blocks.33",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "limits.01",
+   "type": "supply",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "set": {
+    "v": 10.0,
+    "i_limit": 0.2,
+    "output": true
+   }
+  },
+  {
+   "id": "limits.02",
+   "type": "wait",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass"
+  },
+  {
+   "id": "limits.03",
+   "type": "measure",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 0.039159126458361934,
+   "unit": "A",
+   "expect": {
+    "nominal": null,
+    "min": 0.002,
+    "max": 0.18,
+    "unit": "A"
+   }
+  },
+  {
+   "id": "limits.04",
+   "type": "supply",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "set": {
+    "v": 28.0,
+    "i_limit": 0.2,
+    "output": true
+   }
+  },
+  {
+   "id": "limits.05",
+   "type": "wait",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass"
+  },
+  {
+   "id": "limits.06",
+   "type": "measure",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": 0.016050511217448243,
+   "unit": "A",
+   "expect": {
+    "nominal": null,
+    "min": 0.002,
+    "max": 0.18,
+    "unit": "A"
+   }
+  },
+  {
+   "id": "limits.07",
+   "type": "supply",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "set": {
+    "v": 8.5,
+    "i_limit": 0.2,
+    "output": true
+   }
+  },
+  {
+   "id": "limits.08",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "EVT {\"fault\":\"uv\",\"vbus_v\":8.50}"
+  },
+  {
+   "id": "limits.09",
+   "type": "supply",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "set": {
+    "v": 12.0,
+    "i_limit": 0.2,
+    "output": true
+   }
+  },
+  {
+   "id": "limits.10",
+   "type": "console",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "value": "OK {\"sim\":true}"
+  },
+  {
+   "id": "limits.11",
+   "type": "supply",
+   "t": "2026-09-30T19:48:43Z",
+   "verdict": "pass",
+   "set": {
+    "v": 12.0,
+    "i_limit": 0.2,
+    "output": false
+   }
+  }
+ ],
+ "safe_state": null,
+ "faults": [],
+ "seed": 1,
+ "hold": false
+}

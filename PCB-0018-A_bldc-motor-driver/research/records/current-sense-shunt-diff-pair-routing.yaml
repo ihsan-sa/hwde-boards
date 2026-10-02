@@ -1,0 +1,45 @@
+id: current-sense-shunt-diff-pair-routing
+classes:
+- diff-pair
+- emi
+applies:
+  topologies:
+  - current-sense-shunt
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  routing: tightly coupled differential pair, parallel from shunt to CSA
+  keep_away: switching nodes (SW/phase, gate)
+  tool: net ties at the shunt
+prose: 'Route each shunt''s sense signals as a differential pair: tightly coupled, parallel from the shunt
+  to the CSA input, so common-mode noise couples equally into both and is rejected. Do not run the pair
+  parallel to noisy switching traces. SLVA959B Fig 7-5 shows two thin parallel traces on the top layer
+  running the length of a board edge from the shunt to the amplifier, alongside but separated from wide
+  power pours. Put a net tie between the shunt and each sense net in the schematic (Fig 7-6: SNS1_P /
+  SNS1_N each through a net-tie to a 5 mOhm R7 whose low end is GND) so the CAD tool cannot let the negative
+  sense input route straight to the ground pour or the positive to the FET source pad - the ratsnest otherwise
+  invites exactly the non-Kelvin routing.'
+sources:
+- file: research/sources/slva959b.pdf
+  page: 32
+  note: 'sec 7.6: sense signals must be routed as a differential pair, tightly coupled and parallel from
+    shunt to CSA'
+- file: research/sources/slva959b.pdf
+  page: 33
+  note: 'Fig 7-5 sense-amplifier routing: parallel coupled pair; Fig 7-6 net-tie placement on SNS1_P/SNS1_N
+    at a 5 mOhm shunt; text: do not route parallel to switching signals'
+status: active
+origin: research:block-current-sense-shunt-1
+level: topology
+envelope:
+  bw_khz:
+    min: 0
+    max: 1000
+envelope_note: Scales with the signal bandwidth vs the switching-edge content it must reject; up to ~1
+  MHz sense bandwidth the pair behaves as a lumped coupled pair on any board, so the rule holds; it is
+  not an impedance-controlled pair. Beyond that, treat as a controlled-impedance interface.
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p32-33 SLVA959B sec 7.6/7.7 + Fig 7-5/7-6 match diff pair routing and net-tie at 5mOhm R7 shunt"}

@@ -1,0 +1,47 @@
+id: linear-charger-thermal-dissipation-and-pad
+classes:
+- thermal
+- thermal-via
+applies:
+  topologies:
+  - linear-charger-power-path
+  packages: []
+  interfaces: []
+  parts:
+  - BQ24074
+rule:
+  enforced_by: null
+  pd_eq: (VIN-VOUT)*(IOUT+IBAT)+(VOUT-VBAT)*IBAT
+  vbat_worst_v: 3.4
+  tj_reg_c: 125
+prose: 'Dissipation P=[VIN-VOUT]*[IOUT+IBAT]+[VOUT-VBAT]*IBAT (Eq 11). Worst case is the start of charge
+  with a discharged cell; TI says the pack rises to about 3.4 V in the first 2 minutes and the thermal
+  time constant is minutes, so evaluate at 3.4 V. The thermal loop at 125 C cuts charge current; TI advises
+  not running in thermal regulation at nominal input and ambient. The thermally enhanced MLP/QFN pad is
+  also the main ground: connect it to PCB ground with multiple vias (Fig 12-1 shows a 6-via pattern in
+  the pad and large red copper pours on both layers for IN, OUT, BAT and VSS). Verify by plotting bottom-of-board
+  temperature, charge current and VBAT over time with a flat cell.'
+sources:
+- file: research/sources/bq24074.pdf
+  page: 42
+  note: 12.3 Eq 11 and 3.4 V rule, multiple vias under pad, thermal loop advice
+- file: research/sources/bq24074.pdf
+  page: 41
+  note: 'Fig 12-1 layout: pad with via cluster, big copper fills on IN, OUT, BAT, VSS with via groups
+    near each VSS pad'
+status: draft
+origin: research:block-linear-charger-power-path-1
+level: part
+maturity: draft
+envelope:
+  vin_v:
+    min: 4.35
+    max: 6.4
+  iout_a:
+    max: 1.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: 'Scales with input current: ILIM tops out at 1.5 A and dissipation grows with (VIN-VOUT)*I;
+  VIN window is VIN-DPM 4.35 V to VOVP; read for BQ24074 (OUT 4.4 V), not other family members whose OUT
+  differs.'

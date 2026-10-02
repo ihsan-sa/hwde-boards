@@ -1,0 +1,43 @@
+id: linear-charger-pin-caps-ts-and-leds
+classes:
+- decoupling
+applies:
+  topologies:
+  - linear-charger-power-path
+  packages: []
+  interfaces: []
+  parts:
+  - BQ24074
+rule:
+  enforced_by: null
+  ts_nofit: 10 kohm TS to VSS
+  led_series_kohm: 1.5
+prose: 'A high-frequency ceramic on each of IN, OUT and BAT, close to the pin with short traces to the
+  pad ground, using the values on the application diagram; later adjust toward minimum for DC loads or
+  higher for pulsed loads. Rate the IN cap for bad adapters: ceramics are tested to 2x their rating, so
+  16 V may do for a 30 V transient (confirm with the maker). TS: 10 kohm NTC in the pack, or a fixed 10
+  kohm TS to VSS when no NTC exists (charging stays valid but cell over-temperature protection is lost).
+  CHG and PGOOD are open drain: LED with 1.5 kohm to OUT, or about 100 kohm pull-up to a processor rail.'
+sources:
+- file: research/sources/bq24074.pdf
+  page: 35
+  note: 10.2.2.3-10.2.2.5 TS 10 kohm, LED 1.5 kohm to OUT, pin cap guidance, 2x tested voltage
+- file: research/sources/bq24074.pdf
+  page: 40
+  note: 12.1 decoupling at IN/OUT close to pad ground
+status: draft
+origin: research:block-linear-charger-power-path-1
+level: part
+maturity: draft
+envelope:
+  vin_v:
+    min: 4.35
+    max: 6.4
+  iout_a:
+    max: 1.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: 'Scales with input current: ILIM tops out at 1.5 A and dissipation grows with (VIN-VOUT)*I;
+  VIN window is VIN-DPM 4.35 V to VOVP; read for BQ24074 (OUT 4.4 V), not other family members whose OUT
+  differs.'

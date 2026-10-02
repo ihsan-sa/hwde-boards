@@ -1,0 +1,248 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "S2B-PH-SM4-TB",
+ "total": 5,
+ "count": 2,
+ "results": [
+  {
+   "lcsc": "C295747",
+   "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+   "brand": "JST",
+   "description": "-25\u2103~+85\u2103 1 100V 1x2P 2 2A 2P 2mm 5.5mm 7.9mm 8.6mm Auxiliary Solder Pin Beige Copper alloy PA PH Surface Mount, Right Angle Tin UL94V-0 SMD,P=2mm,\u5367\u8d34 Wire To Board Connector ROHS",
+   "package": "SMD,P=2mm,Surface Mount\uff0cRight Angle",
+   "category": "Wire To Board Connector",
+   "type": "Extended",
+   "basic": false,
+   "stock": 21059,
+   "price": 0.2364,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2364
+    },
+    {
+     "qty": 50,
+     "price": 0.1904
+    },
+    {
+     "qty": 150,
+     "price": 0.1708
+    },
+    {
+     "qty": 1000,
+     "price": 0.1462
+    },
+    {
+     "qty": 2000,
+     "price": 0.1351
+    },
+    {
+     "qty": 5000,
+     "price": 0.1286
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2102031704_JST-S2B-PH-SM4-TB-LF-SN_C295747.pdf",
+   "url": "https://www.lcsc.com/product-detail/wire-to-board-connector_jst-s2b-ph-sm4-tb-lf-sn_C295747.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+85\u2103"
+    },
+    {
+     "name": "Number of Rows",
+     "value": "1"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "100V"
+    },
+    {
+     "name": "Color",
+     "value": "Beige"
+    },
+    {
+     "name": "Current Rating",
+     "value": "2A"
+    },
+    {
+     "name": "Pins Structure",
+     "value": "1x2P"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Surface Mount, Right Angle"
+    },
+    {
+     "name": "Flame Retardant Rating",
+     "value": "UL94V-0"
+    },
+    {
+     "name": "Y-Width of Bottom Edge on Board",
+     "value": "8.6mm"
+    },
+    {
+     "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+     "value": "7.9mm"
+    },
+    {
+     "name": "Reference Series",
+     "value": "PH"
+    },
+    {
+     "name": "Contact Plating",
+     "value": "Tin"
+    },
+    {
+     "name": "Number of Pins",
+     "value": "2P"
+    },
+    {
+     "name": "Pitch",
+     "value": "2mm"
+    },
+    {
+     "name": "Contact Material",
+     "value": "Copper alloy"
+    },
+    {
+     "name": "Supplementary Features",
+     "value": "Auxiliary Solder Pin"
+    },
+    {
+     "name": "Z-Height of the Board",
+     "value": "5.5mm"
+    },
+    {
+     "name": "Plastic Material",
+     "value": "PA"
+    },
+    {
+     "name": "Number of PINs Per Row",
+     "value": "2"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C54582899",
+   "mpn": "XY-S2B-PH-SM4-TB",
+   "brand": "XYECONN",
+   "description": "SMD,P=2mm,\u5367\u8d34 Wire To Board Connector ROHS",
+   "package": "SMD,P=2mm,Surface Mount\uff0cRight Angle",
+   "category": "Wire To Board Connector",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2013,
+   "price": 0.0465,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0465
+    },
+    {
+     "qty": 100,
+     "price": 0.0371
+    },
+    {
+     "qty": 300,
+     "price": 0.0322
+    },
+    {
+     "qty": 1000,
+     "price": 0.0287
+    },
+    {
+     "qty": 5000,
+     "price": 0.0259
+    },
+    {
+     "qty": 10000,
+     "price": 0.0244
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-25\u2103~+85\u2103"
+    },
+    {
+     "name": "Number of Rows",
+     "value": "1"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "250V"
+    },
+    {
+     "name": "Color",
+     "value": "Beige"
+    },
+    {
+     "name": "Current Rating",
+     "value": "2A"
+    },
+    {
+     "name": "Pins Structure",
+     "value": "1x2P"
+    },
+    {
+     "name": "Mounting Type",
+     "value": "Surface Mount, Right Angle"
+    },
+    {
+     "name": "Y-Width of Bottom Edge on Board",
+     "value": "7.59mm"
+    },
+    {
+     "name": "X-Length of Bottom Edge on Board (Spacing Line)",
+     "value": "8mm"
+    },
+    {
+     "name": "Reference Series",
+     "value": "PH"
+    },
+    {
+     "name": "Contact Plating",
+     "value": "Tin"
+    },
+    {
+     "name": "Number of Pins",
+     "value": "2P"
+    },
+    {
+     "name": "Contact Material",
+     "value": "Brass"
+    },
+    {
+     "name": "Pitch",
+     "value": "2mm"
+    },
+    {
+     "name": "Supplementary Features",
+     "value": "Auxiliary Solder Pin"
+    },
+    {
+     "name": "Z-Height of the Board",
+     "value": "5.6mm"
+    },
+    {
+     "name": "Plastic Material",
+     "value": "LCP"
+    },
+    {
+     "name": "Number of PINs Per Row",
+     "value": "2"
+    }
+   ],
+   "rank": 1
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 3
+}

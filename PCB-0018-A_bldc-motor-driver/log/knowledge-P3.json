@@ -1,0 +1,1629 @@
+{
+ "script": "knowledge",
+ "status": "pass",
+ "keys": {
+  "topologies": [
+   "boost",
+   "buck",
+   "current-sense-shunt",
+   "gate-driver-bootstrap",
+   "half-bridge-inverter",
+   "ldo",
+   "mcu",
+   "reverse-polarity-fet",
+   "tvs-clamp"
+  ],
+  "packages": [],
+  "interfaces": [
+   "isns_a",
+   "isns_b",
+   "isns_c"
+  ],
+  "parts": [],
+  "sources": {
+   "constraints": "PCB-0018-A_bldc-motor-driver/architecture/constraints.json"
+  }
+ },
+ "count": 34,
+ "records": [
+  {
+   "id": "buck-bst-fb-output-caps",
+   "classes": [
+    "feedback",
+    "decoupling"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "bst_cap_nf": 100,
+    "fb_divider_at": "FB pin, sense point AFTER the output caps"
+   },
+   "prose": "BST: integrated-FET parts need the 100 nF BST-SW cap - it is required, not optional (DS41326 s13); confirm value/rating in the family datasheet. FB TRAP (cost a near-miss once): FIXED-output family members tie FB straight to the output sense point - do NOT copy the ADJUSTABLE variant's divider from the shared datasheet figure (AP63203 vs AP63200/1, DS41326 fig 20/21). Adjustable parts: divider AT the FB pin, short FB trace routed away from SW and L, sense point AFTER the output caps. OUTPUT CAPS: ceramic, inside the datasheet's stated C/ESR window - internal compensation assumes it (DS41326 s12); count DC-bias derating (a \"22 uF\" X5R at bias is ~12-15 uF). When the part has EXTERNAL compensation, the vendor's table values are quoted for a specific C_OUT - a different bank means re-deriving the network, not copying the row (sbuck D-item: 5x 22 uF vs the table's 2x 22 uF moved the crossover by 2.5x).\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/parts/C5248536.pdf",
+     "section": "DS41326 s12-13, fig 20/21"
+    },
+    {
+     "file": "boards/sbuck-5v3a/architecture/blocks.md",
+     "section": "s3 (compensation re-derive)"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "family",
+   "maturity": "approved",
+   "envelope": {
+    "integration_kind": {
+     "in": [
+      "integrated-fet"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/buck-bst-fb-output-caps.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-cin-co-ground-separation",
+   "classes": [
+    "power-loop",
+    "emi"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "cin_co_gnd_separation_cm": "1 to 2",
+    "bypass_same_surface_as_ic": true
+   },
+   "prose": "Two ROHM measurements the generic hot-loop rule does not carry: (1) shortening the CBYPASS wiring EVEN BY 1 mm is worth it - the HF bypass supplies the steepest edge of the switch current, and its loop inductance sets the VIN-pin voltage noise directly; (2) even with CBYPASS tight to the IC, several hundred MHz rides on the INPUT capacitor's ground, so the grounds of C_IN and C_OUT must sit 1-2 cm APART - placed close together the input HF noise couples straight into the output through C_OUT. C_IN placed on the bottom layer through vias is explicitly unsuitable (via inductance); input cap and (for async) the free-wheel diode go on the SAME surface layer as the IC terminals. This refines, not replaces, the shortest-loop rule in buck-input-hot-loop.\n",
+   "sources": [
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 3,
+     "section": "s3, fig 3-a..3-d"
+    },
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 7,
+     "section": "s6 (output cap)"
+    }
+   ],
+   "origin": "app-note:rohm-buck-pcb-layout-an (ROHM 60AN066E Rev.004, 2024-01)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "switching_kind": {
+     "in": [
+      "hard"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/buck-cin-co-ground-separation.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-constraints-emission",
+   "classes": [
+    "constraints-emission"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "thermal_entry_above_w": 0.5
+   },
+   "prose": "What a buck block must emit into constraints.json for the pipeline: (1) power entries with current_a from the RAIL BUDGET (consumer sum + ~30% headroom, rounded to a design ceiling) and dt_c from ambient; (2) a thermal entry when regulator dissipation > ~0.5 W - for async parts add the Schottky's Vf * I * (1-D), the diode often out-heats the IC; (3) layout_notes for P6/P7: hot-loop grouping, SW containment/separation, FB routing - these become placement groups and route_critical facts; (4) a blocks entry ({topology: buck}) so knowledge retrieval keys on it.\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/research/power.md",
+     "section": "s7-9 (emitted constraints)"
+    },
+    {
+     "file": ".claude/skills/hwde/reference/constraints_schema.md",
+     "section": "power / thermal / blocks"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "principle",
+   "maturity": "approved",
+   "envelope": null,
+   "_path": "reference/knowledge/records/buck-constraints-emission.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-en-softstart-sequencing",
+   "classes": [
+    "sequencing"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": null,
+   "prose": "Check the EN pin's OWN behavior before adding parts: many parts auto-start (AP63203: internal 1.5 uA pull-up - tie to VIN or float; adding a divider is wasted parts). When EN is used as a UVLO divider, mind the two traps the sbuck run hit: a narrow hysteresis gap can force a divider into the mA-burn regime via the part's own equations, and hysteresis smaller than the input CABLE DROP at full load motorboats (start -> sag -> stop -> recover). Soft-start time sets the output-cap inrush as seen by the source. Single-rail boards rarely need sequencing; multi-rail: state the order requirement or \"none\" explicitly in power.md.\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/research/power.md",
+     "section": "s6 (EN/soft-start)"
+    },
+    {
+     "file": "boards/sbuck-5v3a/architecture/blocks.md",
+     "section": "s4 (UVLO divider pathology)"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "principle",
+   "maturity": "approved",
+   "envelope": null,
+   "_path": "reference/knowledge/records/buck-en-softstart-sequencing.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-fb-route-rules",
+   "classes": [
+    "feedback"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "divider_at_fb_pin": "short wire, resistors adjacent and parallel",
+    "sense_point": "after or at both ends of the output capacitor",
+    "keep_away_from": "SW node, inductor, diode; never under L or D; not parallel to power lines"
+   },
+   "prose": "The feedback route needs the most attention of any signal wire - noise here becomes output-voltage error and instability. ROHM's four rules (fig 7-a): (a) the FB pin is high impedance - connect the divider network with a SHORT wire at the pin; (b) sense AFTER the output capacitor or at its terminals; (c) wire the two divider resistors adjacent and parallel for noise tolerance; (d) route far from the switching node, never directly under the inductor or diode, and never parallel to a power line - on multilayer boards the same rules apply layer-to-layer, and the worked example drops the FB route to the bottom layer through a via to get away from the SW region. A feedback trace laid parallel beside the inductor picks up its magnetic field (fig 7-d). Matches and extends the FB half of buck-bst-fb-output-caps.\n",
+   "sources": [
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 7,
+     "section": "s7, fig 7-a/7-b"
+    },
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 8,
+     "section": "fig 7-c/7-d"
+    }
+   ],
+   "origin": "app-note:rohm-buck-pcb-layout-an (ROHM 60AN066E Rev.004, 2024-01)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "switching_kind": {
+     "in": [
+      "hard"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/buck-fb-route-rules.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-freewheel-diode-snubber-placement",
+   "classes": [
+    "power-loop",
+    "emi"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "diode_surface": "same layer as IC terminals, never via-dropped to bottom",
+    "snubber_at": "IC SW + GND terminals, NOT across the diode ends"
+   },
+   "prose": "Async buck (free-wheel diode) placement rules: the diode must sit CLOSE and on the SAME surface as the IC terminals, wired short and wide, connected directly to the IC's GND and SW terminals - distance adds wiring inductance whose spike noise piles onto the output, and dropping the diode to the bottom layer through vias makes it worse (via inductance). If spike noise still needs an RC snubber, place it CLOSE TO THE IC's SW and GND terminals; a snubber across the diode's own ends does NOT absorb the spike generated by the wiring inductance (ROHM fig 3-g vs 3-h). Sync bucks lose the diode but keep the rule's core: the LS-FET return corner of the hot loop stays tight to the IC.\n",
+   "sources": [
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 3,
+     "section": "s3, fig 3-e..3-h"
+    },
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 5,
+     "section": "fig 3-g/3-h placement"
+    }
+   ],
+   "origin": "app-note:rohm-buck-pcb-layout-an (ROHM 60AN066E Rev.004, 2024-01)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "rectifier_kind": {
+     "in": [
+      "async"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/buck-freewheel-diode-snubber-placement.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-inductor-copper-and-gnd-void",
+   "classes": [
+    "emi"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "width_per_amp_1oz_mm": 1.0,
+    "width_per_amp_2oz_mm": 0.7,
+    "gnd_plane_under_inductor": "avoid (eddy current derates L, couples noise)"
+   },
+   "prose": "Inductor region rules (ROHM s5): place L close to the IC but NOT as close as the input cap; do NOT expand the SW/inductor copper beyond what current needs - enlarged copper works as an antenna (EMI), even though instinct says more copper = cooler. Practical width floors with margin: 1 mm per A at 1 oz, 0.7 mm per A at 2 oz. Do not put a ground plane DIRECTLY UNDER the inductor: eddy currents derate the inductance and Q, and any signal line under it picks up switching noise - keep wiring out from under L, or use a closed-magnetic-circuit (shielded) inductor when routing there is unavoidable. Keep the two inductor terminals' wiring apart: close spacing couples the SW edge to the output through stray capacitance (fig 6-d).\n",
+   "sources": [
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 5,
+     "section": "s5"
+    },
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 6,
+     "section": "fig 6-a..6-d"
+    }
+   ],
+   "origin": "app-note:rohm-buck-pcb-layout-an (ROHM 60AN066E Rev.004, 2024-01)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "switching_kind": {
+     "in": [
+      "hard"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/buck-inductor-copper-and-gnd-void.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-inductor-selection",
+   "classes": [
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "dcr_mohm_max_a_class_rail": 30,
+    "isat_must_beat": "peak current limit / PFM clamp, not load current"
+   },
+   "prose": "The three inductor rules every run re-derived from scratch. L VALUE: start from the vendor's recommended-components table row for your Vout; the next STANDARD value up is usually right - light-load efficiency improves with larger L (DS41326 s10 says so explicitly; usb-buck: table said 3.9 uH, chosen 4.7 uH). ISAT: must beat the part's PEAK CURRENT LIMIT / PFM clamp, not the load current (usb-buck: 450 mA clamp meant a 1 A-rated part was ample at a 57 mA load). DCR: budget it as real dissipation - target < 30 mohm for A-class rails (usb-buck P3 rule, waived at 60 mohm with math); ~0.1 ohm cost 0.29 W at 2 A on the carrier. DCR losses scale I^2 - cheap inductors tax high-current rails hard. Derate Isat/Irms/DCR to the real ambient before comparing (sbuck: 18.5 mohm at 20 C -> 24 mohm hot).\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/parts/C5248536.pdf",
+     "section": "DS41326 s10 (inductor selection)"
+    },
+    {
+     "file": "boards/usb-buck/research/power.md",
+     "section": "s5 (L/Isat/DCR derivation)"
+    },
+    {
+     "file": "boards/lumina-carrier/research/poe-power.md",
+     "section": "DCR dissipation at 2 A"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "iout_a": {
+     "min": 0.01,
+     "max": 5
+    }
+   },
+   "_path": "reference/knowledge/records/buck-inductor-selection.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-input-hot-loop",
+   "classes": [
+    "power-loop",
+    "emi"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "hf_bypass_nf": 100,
+    "hf_bypass_at": "VIN pin, same layer as the IC",
+    "loop": "C_IN -> VIN -> GND -> C_IN shortest on the board"
+   },
+   "prose": "Layout rule #1 for every buck: the input cap carries the DISCONTINUOUS switch current. C_IN plus a 100 nF HF bypass AT the VIN pin, on the SAME layer as the IC; the C_IN -> VIN -> GND -> C_IN loop must be the shortest loop on the board; SW-node copper minimal. At ~1 MHz switching this matters more than copper weight (usb-buck power.md s7-9; every vendor layout section says the same). Solid GND pour + vias under the IC. At P6 this is a placement GROUP (constraints placement.groups) anchored on the IC with the input ceramics + HF bypass as members, placed and locked BEFORE the annealer runs - the cost function does not know the loop exists.\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/research/power.md",
+     "section": "s7-9 (hot loop)"
+    },
+    {
+     "file": "boards/usb-buck/parts/C5248536.pdf",
+     "section": "DS41326 layout section"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "principle",
+   "maturity": "approved",
+   "envelope": null,
+   "_path": "reference/knowledge/records/buck-input-hot-loop.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-power-ground-isolation",
+   "classes": [
+    "return-path",
+    "power-loop"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "pgnd_agnd": "isolate; join only at the LOW-noise point (output cap ground)",
+    "never_join_at": "free-wheel diode / input capacitor ground (highest HF noise)"
+   },
+   "prose": "Ground strategy (ROHM s8): analog small-signal ground and power ground must be ISOLATED, and power ground laid on the TOP layer without splitting is the ideal - dropping an isolated power ground to the bottom layer through vias adds via R and L and worsens noise. Inner/bottom ground planes are SUPPLEMENTARY (DC loss, shielding, heat), not the return path design. Multilayer recipe (fig 9): power-ground plane on L2 stitched to top with MANY vias; common ground L3, signal ground L4; connect the ground families together ONLY at the output capacitor's power ground (the low-HF-noise point) - NEVER at the free-wheel diode or input-capacitor ground, which carry the highest switching noise. This is the class-level reason the pipeline's In1-GND-under-the-IC default works, and where to join AGND islands when a board has them.\n",
+   "sources": [
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 8,
+     "section": "s8, fig 8/9"
+    }
+   ],
+   "origin": "app-note:rohm-buck-pcb-layout-an (ROHM 60AN066E Rev.004, 2024-01)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "board_layers": {
+     "min": 2,
+     "max": 4
+    }
+   },
+   "_path": "reference/knowledge/records/buck-power-ground-isolation.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-selection-ladder",
+   "classes": [
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": null,
+   "prose": "Regulator-type ladder, one line of tradeoff each; if the brief names a part the named part stands (record the alternative as an override option). (1) Integrated synchronous buck is the DEFAULT at <= ~60 V input and <= ~3 A: no catch diode, best efficiency/heat (usb-buck AP63203). (2) Asynchronous + Schottky when the V/I corner has no stocked sync part (lumina-carrier: the only 100 V-rated 2 A part was async COT); the Schottky must be rated >= Vin (SS510 class). (3) Controller + external FETs is the efficiency/current escape hatch (~2-3 pts over async, any current) at the cost of 2 FETs + gate/sense network + layout area (carrier LM5146 fallback). (4) An LDO is the honest option at light load - 3 parts vs 6 and no switch node near analog/RF, at the cost of (Vin-Vout)*I heat; do the comparison table before assuming the buck.\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/research/power.md",
+     "section": "s4 (LDO-vs-buck table)"
+    },
+    {
+     "file": "boards/lumina-carrier/research/poe-power.md",
+     "section": "s4 (async choice, LM5146 fallback)"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "vin_v": {
+     "max": 100
+    },
+    "iout_a": {
+     "max": 10
+    }
+   },
+   "_path": "reference/knowledge/records/buck-selection-ladder.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-switch-node-containment",
+   "classes": [
+    "emi"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "sw_copper": "smallest electrically possible",
+    "victims": "antenna, high-Z analog, diff pairs -> separation/keepout entry"
+   },
+   "prose": "Keep SW copper as small as electrically possible and treat SW + L as an AGGRESSOR: lumina-par's 2.4 GHz antenna 11 mm from a switch node drove a 4-layer stackup + containment plan; usb-buck keeps the USB pair away from SW/L per ST AN4879 3.3. Hand P6 a separation/keepout entry (constraints placement.separation / placement.keepouts) whenever any antenna, high-Z analog node, or diff pair shares the board; the switch node is also why high_speed references demand an UNBROKEN plane under victims (check_return_path enforces the plane; the separation entry is what keeps the aggressor out of the corridor in the first place). A /SW test-point tap must be a short stub that does not extend the SW pour - it counts against the SW copper budget.\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/research/interface-usb.md",
+     "section": "AN4879 3.3 (USB vs switcher)"
+    },
+    {
+     "file": "boards/sbuck-5v3a/architecture/blocks.md",
+     "section": "s8 (/SW tap stub rule)"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "switching_kind": {
+     "in": [
+      "hard"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/buck-switch-node-containment.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-thermal-via-and-via-current",
+   "classes": [
+    "thermal-via"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [
+     "HTSOP-J8",
+     "SO-8-EP",
+     "SO-8EP"
+    ],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "thermal_via_drill_mm": 0.3,
+    "thermal_via_pitch_mm": 1.2,
+    "via_width_per_amp_mm": 2.0
+   },
+   "prose": "Thermal vias under an exposed-pad regulator (ROHM s4, HTSOP-J8 numbers generalize to EP packages): small drill - 0.3 mm inner diameter - so the via can FILL with solder; larger drills suck solder away from the joint at reflow (solder-wicking). Pitch ~1.2 mm, directly below the reverse- side thermal pad; add a ring of extra vias around the IC when the pad area alone is not enough. Copper area helps but the base material is the real radiator - vias carry the heat to the far layers. For CURRENT via sizing (s10-3): a via's equivalent conductor width is pi x diameter but its wall is only ~18 um plating, so use 2 mm of equivalent width per amp - about double the 1 oz surface-trace rule; measured table: 0.3 mm via 0.4 A, 0.6 mm 0.9 A, 1.0 mm 1.5 A. Count vias against that, not against the drill area.\n",
+   "sources": [
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 3,
+     "section": "s4 (thermal via)"
+    },
+    {
+     "file": "reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf",
+     "page": 10,
+     "section": "s10-3 (via current)"
+    }
+   ],
+   "origin": "app-note:rohm-buck-pcb-layout-an (ROHM 60AN066E Rev.004, 2024-01)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "pdiss_w": {
+     "max": 5
+    }
+   },
+   "_path": "reference/knowledge/records/buck-thermal-via-and-via-current.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "buck-upstream-inrush-limit",
+   "classes": [
+    "inrush",
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "interfaces": [
+     "usb",
+     "usb-pd",
+     "poe"
+    ],
+    "packages": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "usb2_attach_limit": "10 uF or 44 ohm-limited at attach (s7.2.4.1)",
+    "usbpd_sink_bulk_uf_max": 100
+   },
+   "prose": "Upstream bulk limit trap: a buck's input capacitance is bounded by the SOURCE, not by the buck. USB 2.0 allows 10 uF || 44 ohm at attach (spec s7.2.4.1); a USB-PD sink is allowed 100 uF under contract (cSnkBulkPd); PoE has its own inrush envelope. Check the source's rule BEFORE sizing C_IN. Soft-start makes OUTPUT caps invisible to the source's inrush test (usb-buck power.md s6) - so the output bank is sized by load step, not by the source rule.\n",
+   "sources": [
+    {
+     "file": "boards/usb-buck/research/power.md",
+     "section": "s6-7 (inrush vs source rules)"
+    },
+    {
+     "file": "boards/usb-buck/research/interface-usb.md",
+     "section": "attach capacitance"
+    }
+   ],
+   "origin": "migration:topologies/buck (T6 2026-08-06, three shipped runs)",
+   "level": "topology",
+   "maturity": "approved",
+   "envelope": {
+    "source_kind": {
+     "in": [
+      "usb",
+      "usb-pd",
+      "poe"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/buck-upstream-inrush-limit.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "cot-ripple-injection-raises-vout",
+   "classes": [
+    "feedback"
+   ],
+   "applies": {
+    "topologies": [
+     "buck"
+    ],
+    "packages": [],
+    "interfaces": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "applies_when": "constant-on-time regulator with Type 3 (AC-coupled) ripple injection",
+    "vout": "(1 + R_top/R_bot) * (VREF + Vramp_pkpk/2)",
+    "solve_against": "union of [VREF_min, VREF_max + Vramp_max/2] - check both corners",
+    "fb_overvoltage": "compare against FB PEAK (VREF + full Vramp), not its average"
+   },
+   "prose": "A constant-on-time regulator ends its off-time when FB falls back through VREF, so it regulates the VALLEY of FB, not its average. With Type 3 injection the ramp is AC-coupled into FB and its mean is genuinely zero, so FB_dc = VREF + Vramp/2 and VOUT = (1 + R_top/R_bot) x (VREF + Vramp_pkpk/2) - NOT VREF times the divider ratio. On an LM5017 at 78.6 mV of injected ripple that is +3.2 %: 5.06 V where a valley calculation says 4.90 V, which is enough to put a 5 V rail over a downstream driver's recommended VDD max. A P4 reviewer computed the rail min/nom/max without the term and concluded the nominal was 100 mV low. Both readings matter in practice because Vramp carries Rr, Cr and K tolerance, so solve the divider against the UNION - effective reference in [VREF_min, VREF_max + Vramp_max/2] - and check both corners rather than picking one model. Also check the FB overvoltage comparator against FB's PEAK (VREF + full Vramp): the LM5017 trips at 1.62 V and terminates the on-time pulse.\n",
+   "sources": [
+    {
+     "file": "boards/rf-de-20m/LEARNINGS.md",
+     "section": "2026-08-08 Type 3 ripple injection RAISES the DC output"
+    },
+    {
+     "file": "boards/rf-de-20m/parts/C34355.pdf",
+     "section": "LM5017 (the part this was measured on)"
+    }
+   ],
+   "origin": "promotion:boards/rf-de-20m (U6 2026-08-14)",
+   "level": "family",
+   "maturity": "approved",
+   "envelope": {
+    "control_kind": {
+     "in": [
+      "cot"
+     ]
+    },
+    "injection_kind": {
+     "in": [
+      "type3"
+     ]
+    }
+   },
+   "_path": "reference/knowledge/records/cot-ripple-injection-raises-vout.yaml",
+   "_workspace": null
+  },
+  {
+   "id": "current-sense-shunt-constraints-emission",
+   "classes": [
+    "constraints-emission"
+   ],
+   "applies": {
+    "topologies": [
+     "current-sense-shunt"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "emit": "net ties at each shunt sense pair; SNSx_P/N as a diff-pair net class; placement group {LS FET, shunt, GND vias}; CSA+filter+bypass group near the shunt"
+   },
+   "prose": "What the block must hand to constraints: (1) a net tie per sense net at each shunt so the router cannot take the sense nets from the pour (SLVA959B sec 7.7, Fig 7-6); (2) the SNSx_P/SNSx_N pairs as a differential-pair class, since TI recommends differential-pair routing tools for them; (3) a placement group per phase anchoring the shunt between the low-side FET source and the ground stitching (sec 7.5), and (4) a group holding the CSA with its filter and bypass close to it (sec 7.8). SLVA959B's point is that the route restriction must be placed during placement, not discovered during routing.",
+   "sources": [
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 33,
+     "note": "sec 7.7: net ties so the restriction is set at placement; Fig 7-6 net-tie example; recommendation to use differential-pair routing"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 34,
+     "note": "sec 7.8 filters close to the CSA; 7.9 do's incl. net ties and differential routing tools"
+    }
+   ],
+   "origin": "research:block-current-sense-shunt-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/current-sense-shunt-constraints-emission.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "current-sense-shunt-csa-bypass",
+   "classes": [
+    "decoupling"
+   ],
+   "applies": {
+    "topologies": [
+     "current-sense-shunt"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "bypass_uf": 0.1,
+    "at": "VS pin, returned to the CSA GND pin/via"
+   },
+   "prose": "Bypass the CSA supply with 0.1 uF placed as close as possible to its VS and GND pins; add more capacitance for a noisy or high-impedance supply. INA240 Fig 11-1 (TSSOP) shows C_BYPASS directly beside pins 4 (GND) and 5 (VS), with GND and REF pins dropping to vias into the ground plane; Fig 11-2 (SOIC) puts C_BYPASS between GND pin 2 and VS pin 6 under the package body.",
+   "sources": [
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 23,
+     "note": "sec 10.1: bypass as close as possible to supply and ground pins, 0.1 uF recommended, more for noisy supplies"
+    },
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 24,
+     "note": "Fig 11-1 TSSOP layout: C_BYPASS beside VS/GND, vias to ground plane on GND/REF/NC"
+    },
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 25,
+     "note": "Fig 11-2 SOIC layout: C_BYPASS between GND(2) and VS(6), vias to ground/power"
+    }
+   ],
+   "origin": "research:block-current-sense-shunt-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "bw_khz": {
+     "min": 0,
+     "max": 1000
+    }
+   },
+   "_path": "research/records/current-sense-shunt-csa-bypass.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "current-sense-shunt-diff-pair-routing",
+   "classes": [
+    "diff-pair",
+    "emi"
+   ],
+   "applies": {
+    "topologies": [
+     "current-sense-shunt"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "routing": "tightly coupled differential pair, parallel from shunt to CSA",
+    "keep_away": "switching nodes (SW/phase, gate)",
+    "tool": "net ties at the shunt"
+   },
+   "prose": "Route each shunt's sense signals as a differential pair: tightly coupled, parallel from the shunt to the CSA input, so common-mode noise couples equally into both and is rejected. Do not run the pair parallel to noisy switching traces. SLVA959B Fig 7-5 shows two thin parallel traces on the top layer running the length of a board edge from the shunt to the amplifier, alongside but separated from wide power pours. Put a net tie between the shunt and each sense net in the schematic (Fig 7-6: SNS1_P / SNS1_N each through a net-tie to a 5 mOhm R7 whose low end is GND) so the CAD tool cannot let the negative sense input route straight to the ground pour or the positive to the FET source pad - the ratsnest otherwise invites exactly the non-Kelvin routing.",
+   "sources": [
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 32,
+     "note": "sec 7.6: sense signals must be routed as a differential pair, tightly coupled and parallel from shunt to CSA"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 33,
+     "note": "Fig 7-5 sense-amplifier routing: parallel coupled pair; Fig 7-6 net-tie placement on SNS1_P/SNS1_N at a 5 mOhm shunt; text: do not route parallel to switching signals"
+    }
+   ],
+   "origin": "research:block-current-sense-shunt-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "bw_khz": {
+     "min": 0,
+     "max": 1000
+    }
+   },
+   "_path": "research/records/current-sense-shunt-diff-pair-routing.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "current-sense-shunt-filter-series-r",
+   "classes": [
+    "emi",
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "current-sense-shunt"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "filter_location": "at the CSA pins",
+    "series_r_max_ohm_ina240": 10,
+    "preferred": "filter at the output if possible"
+   },
+   "prose": "If the sense signal is filtered, place the filter parts as close to the CSA as possible (SLVA959B sec 7.8, Fig 7-7/7-8: R30/R31 1 k + C40 100 pF differential RC at the DRV CSA pins, via net ties to the 10 mOhm shunts). For an INA240-class amplifier the datasheet does not recommend an input filter at all; if one is used, keep each series resistor <= 10 ohm, because the internal bias network draws unequal input bias currents (Fig 9-2: IB+ rises ~90 -> 240 uA and IB- falls ~90 -> -60 uA over 0-1 V differential) and the drop across R_S becomes a gain error: factor 3000/(R_S+3000), i.e. 0.17% at 5 ohm, 0.33% at 10 ohm, 3.23% at 100 ohm (Table 9-1). The two sources disagree only because the amps differ: the 1 k value belongs to the DRV integrated CSA; for INA240 the datasheet value governs. Check the chosen CSA's own input structure before copying a filter.",
+   "sources": [
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 18,
+     "note": "sec 9.1.1 note: input filter not recommended; Fig 9-1 filter at input pins; keep series R <= 10 ohm, bias-current mismatch creates differential error"
+    },
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 19,
+     "note": "Fig 9-2 input bias current vs differential voltage; Eq 1-2 gain error factor 3000/(Rs+3000); Table 9-1: 5/10/100 ohm -> 0.17/0.33/3.23 %"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 34,
+     "note": "sec 7.8: filters as close to the CSA as possible; Fig 7-7 1k/100pF/1k input RC with net ties to 10 mOhm shunts; Fig 7-8 its layout"
+    }
+   ],
+   "origin": "research:block-current-sense-shunt-1",
+   "level": "family",
+   "maturity": "verified",
+   "envelope": {
+    "bw_khz": {
+     "min": 0,
+     "max": 400
+    }
+   },
+   "_path": "research/records/current-sense-shunt-filter-series-r.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "current-sense-shunt-kelvin-taps",
+   "classes": [
+    "return-path"
+   ],
+   "applies": {
+    "topologies": [
+     "current-sense-shunt"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "sense_taps": "from the shunt pads themselves (inner edge), never from the power copper or pour",
+    "in_path": "only R_shunt between IN+ and IN-"
+   },
+   "prose": "Connect the CSA inputs to the shunt with a Kelvin (4-wire) connection: two dedicated sense traces leave the shunt's own pads and carry no load current, so the only impedance between IN+ and IN- is the shunt. Any high-current copper inside the sense path adds its IR drop to a signal that is only tens of mV across a milliohm resistor, a large error. INA240 Fig 9-7 shows the DO case (two thin traces leaving the shunt pads straight to IN+/IN-) and the crossed-out DON'T case (sense traces tapped off the wide power copper beyond the pads). Fig 11-1/11-2 show the same taps on both packages. SLVA959B lists Kelvin connections first in its motor-driver do's.",
+   "sources": [
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 23,
+     "note": "sec 9.3.2 + Fig 9-7: DO Kelvin taps from the shunt pads vs DONT non-Kelvin taps from the power copper (crossed out)"
+    },
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 24,
+     "note": "sec 11.1.1: poor routing adds high-current impedance between the inputs; use Kelvin/4-wire so only the shunt impedance is sensed"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 34,
+     "note": "sec 7.9 do's: use Kelvin connections, symmetrical layout, net ties + differential routing"
+    }
+   ],
+   "origin": "research:block-current-sense-shunt-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/current-sense-shunt-kelvin-taps.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "current-sense-shunt-lowside-placement",
+   "classes": [
+    "power-loop",
+    "return-path"
+   ],
+   "applies": {
+    "topologies": [
+     "current-sense-shunt"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "position": "between low-side FET source and the star-point ground, one per phase",
+    "placement": "in line with the power stage, close to the CSA",
+    "gnd_connection": "multiple vias"
+   },
+   "prose": "Low-side shunts sit between the source of each phase's low-side MOSFET and the star-point ground connection (one shunt per phase for two/three-phase sensing), placed in line with the power-stage parts to keep power-trace impedance low, and close to the CSA to limit coupling onto other traces. The ground end is stitched with many vias: SLVA959B Fig 3-3 shows three 2512-class shunts (R10/R8/R6) whose GND ends each carry a 3x3-ish via array into the ground plane, adjacent to the low-side gate pins. Low-side sensing needs little common-mode range but is more susceptible to ground noise and cannot see a short to ground (sec 7.2, 7.3) - which is why the ground end and the star point matter.",
+   "sources": [
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 32,
+     "note": "sec 7.5 placement text: in line with power stage, close to CSA; low-side shunt between LS source and star-point ground, per phase"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 13,
+     "note": "Fig 3-3 layout+3D: three current-sense shunts R10/R8/R6 each with a multi-via array on the GND end"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 31,
+     "note": "sec 7.2 / Fig 7-3: low-side shunt current path; tradeoff: ground-noise susceptibility, cannot detect ground shorts; Fig 7-4 three-phase CSA arrangement"
+    }
+   ],
+   "origin": "research:block-current-sense-shunt-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "ipeak_a": {
+     "min": 0,
+     "max": 30
+    },
+    "board_layers": {
+     "min": 2,
+     "max": 6
+    }
+   },
+   "_path": "research/records/current-sense-shunt-lowside-placement.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "current-sense-shunt-selection-ladder",
+   "classes": [
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "current-sense-shunt"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "p_shunt": "I_rms^2 x R",
+    "v_signal": "I_peak x R, within CSA differential range at worst case",
+    "csa_for_pwm_node": "wide negative CMR + enhanced PWM rejection"
+   },
+   "prose": "Shunt value is a trade between dissipation and signal: SLVA959B's example, 20 A through 1 mOhm, dissipates 400 mW yet gives the CSA only 20 mV; raising R improves SNR and raises loss. Size it so the worst-case current keeps the input inside the CSA's differential range and abs max. At this board's point (3 mOhm, 10 A RMS, 20 A peak) that is 0.3 W continuous and 60 mV peak, 1.2 V out at 20 V/V. Choose a CSA whose input survives the switched node: INA240 spans -4 V to 80 V common mode (the negative end covers the node dipping below ground), has 132 dB DC / 93 dB at 50 kHz CMRR and 'enhanced PWM rejection' (its front-page plot shows the output barely moving under a 0-to-~65 V common-mode step at 2 us/div), and offset <= 25 uV, so full-scale shunt drops as low as 10 mV stay accurate. Two/three-phase low-side CSAs need little CMR but see ground noise (SLVA959B sec 7.3).",
+   "sources": [
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 32,
+     "note": "sec 7.4 component selection: 20 A x 1 mOhm = 400 mW, 20 mV signal; stay inside CSA abs max and differential range"
+    },
+    {
+     "file": "research/sources/ina240.pdf",
+     "page": 1,
+     "note": "features: -4..80 V CMR, 132 dB DC / 93 dB AC CMRR at 50 kHz, 25 uV offset, gains 20/50/100/200; Enhanced PWM Rejection figure (output steady through a common-mode step); 10 mV full-scale note"
+    }
+   ],
+   "origin": "research:block-current-sense-shunt-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "rshunt_mohm": {
+     "min": 0.5,
+     "max": 10
+    },
+    "ipeak_a": {
+     "min": 0,
+     "max": 50
+    }
+   },
+   "_path": "research/records/current-sense-shunt-selection-ladder.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "gate-driver-bootstrap-cboot-sizing",
+   "classes": [
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "gate-driver-bootstrap"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "cboot_min": "Qtot / dV_BST, Qtot = Qg + I_leak/fsw (+ I_HBS*Dmax/fsw)",
+    "dv_bst_ripple_v": "0.5-1",
+    "cboot_vs_cg": ">= 10x",
+    "cboot_rating": ">= 2x bias voltage, low-ESR/ESL MLCC",
+    "cboot_max_integrated_diode_uf": 1
+   },
+   "prose": "Size the bootstrap cap from charge, not habit. SLUA887A p3 (Eq 1-3): Cboot >= 10x Cg (Cg = Qg/(VDD - Vdiode)) as a rule of thumb, or the detailed form Cboot >= Qtotal/dV_HB, Qtotal = Qg + I_HBS*Dmax/fsw + I_HB/fsw, dV_HB = VDD - Vdiode - V_HB_UVLO. Too small trips the high-side UVLO; too large raises boot-diode peak current (Ipeak = Cboot*dv/dt, Eq 4) and lengthens first charge. p4: use low-ESR/ESL MLCC rated >= 2x VDD. DRV8300 datasheet p19 worked example (Eq 2-4): dV = 12 - 0.85 - 4.5 = 6.65 V allowed, but ripple of 0.5-1 V is recommended; Qtot = 48 nC + 220 uA/20 kHz = 59 nC -> Cmin 59 nF at 1 V -> choose 100 nF for skipped-pulse margin. The leakage term grows as fsw falls, so low-fsw / high-duty operation needs more Cboot (or a trickle pump). For the integrated-diode variants DRV8300D/DI, p6 Recommended Operating Conditions caps CBOOT at 1 uF.\n",
+   "sources": [
+    {
+     "file": "research/sources/slua887a.pdf",
+     "page": 3,
+     "note": "Section 3.1, Eq 1-4: Cg=Qg/VQ1g, Cboot>=10xCg, Cboot>=Qtotal/dVHB with leakage/duty terms, Ipeak=Cboot*dv/dt; UVLO risk if undersized"
+    },
+    {
+     "file": "research/sources/slua887a.pdf",
+     "page": 4,
+     "note": "top paragraph: low ESR/ESL MLCC, voltage rating 2xVDD"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 19,
+     "note": "Section 9.2.2 Eq 2-5 worked example: dV 6.65 V, ripple 0.5-1 V recommended, Qtot 59 nC at 20 kHz, Cmin 59 nF, choose 100 nF, CGVDD >= 10x CBST"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 6,
+     "note": "Table 7.3 Recommended Operating Conditions: CBOOT max 1 uF for DRV8300D/DI; fPWM max 200 kHz"
+    }
+   ],
+   "origin": "research:block-gate-driver-bootstrap-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "fsw_khz": {
+     "min": 5,
+     "max": 200
+    }
+   },
+   "_path": "research/records/gate-driver-bootstrap-cboot-sizing.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "gate-driver-bootstrap-charge-loop",
+   "classes": [
+    "power-loop",
+    "decoupling"
+   ],
+   "applies": {
+    "topologies": [
+     "gate-driver-bootstrap"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "cboot_at": "BSTx and SHx pins, as close as possible",
+    "cvdd_at": "GVDD/VDD and GND pins",
+    "loop": "Cvdd -> boot diode (-> Rboot) -> Cboot -> SW -> LS FET -> GND -> Cvdd, minimal",
+    "separate": "high-voltage power traces from low-voltage signal traces"
+   },
+   "prose": "The bootstrap charge path is a pulsed high-current loop: SLUA887A p2 Fig 2-1 traces it from the VDD bypass cap through Rboot and Dboot into Cboot, out HS to the switch node and down through the low-side FET to ground; Fig 2-2 shows the discharge path Cboot -> HO -> high-side gate. p7 Section 4: this loop (Cboot, boot diode, ground-referenced VDD bypass, LS switch) must be as small as possible, Cboot and Cvdd as close as possible to the driver supply pins, and HV power traces kept apart from LV signal traces; Fig 4-1 (UCC27710) shows RBOOT and DBOOT directly above the IC, CBOOT beside HB/HS and CVDD on the bottom side under VDD/COM. DRV8300 p22 Section 11.1: low-ESR/ESL caps close to the device between GVDD-GND and BSTx-SHx for the turn-on peak current; the Layout Example figure shows the BSTA/SHA cap pads right at the pins and the GVDD cap beside the GVDD pin with ground vias. SLUA887A p5 Fig 3-3 shows HB-HS ringing appearing with switch-node disturbances. At P6 treat driver + 3x Cboot + Cgvdd as a locked placement group.\n",
+   "sources": [
+    {
+     "file": "research/sources/slua887a.pdf",
+     "page": 2,
+     "note": "Fig 2-1 bootstrap charging path (VDD cap-Rboot-Dboot-Cboot-HS-LS FET-GND) and Fig 2-2 discharge path to HS FET"
+    },
+    {
+     "file": "research/sources/slua887a.pdf",
+     "page": 5,
+     "note": "Fig 3-3: HB_HS ringing effects on switch node (scope capture)"
+    },
+    {
+     "file": "research/sources/slua887a.pdf",
+     "page": 7,
+     "note": "Section 4 text + Fig 4-1 UCC27710 layout: RBOOT/DBOOT/CBOOT next to IC, CVDD bottom side under VDD/COM; loop minimal; HV/LV separation"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 22,
+     "note": "Section 11.1 bullet 1 + 11.2 Layout Example figure: BSTx cap and GVDD cap close to device, DT resistor close"
+    }
+   ],
+   "origin": "research:block-gate-driver-bootstrap-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/gate-driver-bootstrap-charge-loop.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "gate-driver-bootstrap-gate-routing",
+   "classes": [
+    "emi",
+    "power-loop"
+   ],
+   "applies": {
+    "topologies": [
+     "gate-driver-bootstrap"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": [
+     "DRV8300D"
+    ]
+   },
+   "rule": {
+    "enforced_by": null,
+    "gate_trace_width_mil": "min 10, typ 15",
+    "gate_routing": "GHx/SHx/GLx short, fewest vias; driver as close to FETs as possible",
+    "shx_neg_transient": "minimise HS-source to LS-source inductance; SHx >= -22 V for 2 us (ROC)",
+    "shx_slew_v_per_ns_max": 2
+   },
+   "prose": "DRV8300 datasheet p22 Section 11.1: minimise parasitic inductance of the GHx, SHx and GLx connections (short, fewest vias, min 10 mil / typ 15 mil width); place the driver as close to the MOSFETs as possible so the gate charge and discharge current loops occupy a minimal area; minimise the inductance between the high-side source and the low-side source to limit negative SHx transients; put a low-ESR electrolytic plus a ceramic between high-side drain and ground to stop drain transients. p6 Recommended Operating Conditions bound the switch node the driver tolerates: SHx -2..85 V (-22 V for 2 us transients) and SHx slew <= 2 V/ns for the integrated-diode D/DI variants (50 V/ns for N/NI). At 28 V and ~50 ns edges the node slews ~0.6 V/ns, inside the D limit; a smaller Rg that pushed edges below ~14 ns at 28 V would break it. p20 Fig 9-2/9-3 show GHA/SHA/GLA edges with 15 ohm gate resistors on CSD19532Q5B.\n",
+   "sources": [
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 22,
+     "note": "Section 11.1 bullets 2-6: HS drain bulk+ceramic, HS-source/LS-source inductance, GHx/SHx/GLx min 10 mil typ 15 mil, driver close to FETs"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 6,
+     "note": "Table 7.3: VSHx -2..85 V, -22 V 2 us transient; SHx slew max 2 V/ns (D/DI), 50 V/ns (N/NI)"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 20,
+     "note": "Fig 9-2/9-3 scope shots: GHA/SHA/GLA rising and falling with 15 ohm gate resistor, CSD19532Q5B"
+    }
+   ],
+   "origin": "research:block-gate-driver-bootstrap-1",
+   "level": "family",
+   "maturity": "verified",
+   "envelope": {
+    "vin_v": {
+     "min": 5,
+     "max": 85
+    },
+    "edge_ns": {
+     "min": 14,
+     "max": 1000
+    }
+   },
+   "_path": "research/records/gate-driver-bootstrap-gate-routing.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "gate-driver-bootstrap-gvdd-bypass-ratio",
+   "classes": [
+    "decoupling"
+   ],
+   "applies": {
+    "topologies": [
+     "gate-driver-bootstrap"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "cvdd_vs_cboot": ">= 10x",
+    "cvdd_pair": "small HF ceramic at the GVDD/GND pins + larger bulk ceramic",
+    "cvdd_rating": ">= 2x max applied voltage"
+   },
+   "prose": "The bootstrap cap is recharged from the gate-driver supply cap, so that cap must be at least 10x Cboot (SLUA887A p4 Eq 5), which keeps worst-case droop on VDD to ~10% during the refresh. DRV8300 datasheet p19 Eq 5 uses the same ratio (CGVDD >= 10 x 100 nF = 1 uF) and p20 adds: rate the cap >= 2x the voltage it sees because MLCCs lose capacitance under bias. p21 (Power Supply Recommendations): use TWO caps across GVDD-GND, a low-value ceramic very close to the pins for HF and a larger one for bias current; likewise a cap across BSTx-SHx large enough to deliver the GHx pulses. With three half-bridges sharing one GVDD, count all three Cboot in the ratio (inference from the per-cap ratio, not stated by either source).\n",
+   "sources": [
+    {
+     "file": "research/sources/slua887a.pdf",
+     "page": 4,
+     "note": "Section 3.2 Eq 5: CVDD >= 10x Cboot, 10% max ripple on VDD cap"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 19,
+     "note": "Eq 5: CGVDD >= 10 x CBSTX = 1 uF"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 20,
+     "note": "text above Fig 9-2: choose 1 uF CGVDD rated >= 2x max voltage due to DC-bias loss"
+    },
+    {
+     "file": "research/sources/drv8300.pdf",
+     "page": 21,
+     "note": "Section 10: two caps GVDD-GND (small HF close, larger bulk), BSTx-SHx cap sized for GHx pulses"
+    }
+   ],
+   "origin": "research:block-gate-driver-bootstrap-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/gate-driver-bootstrap-gvdd-bypass-ratio.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "half-bridge-inverter-leg-hot-loop",
+   "classes": [
+    "power-loop",
+    "decoupling"
+   ],
+   "applies": {
+    "topologies": [
+     "half-bridge-inverter"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "bulk": ">10 uF low-ESR at the power entry, multiple vias per pad",
+    "leg_bypass": "<10 uF ceramic per leg, from HS drain to LS source, as close to the FETs as possible",
+    "placement": "HS and LS FET side-by-side / stacked so VM, SW and GND copper are short and wide",
+    "layer_jumps": "minimise in the high-current path; size and count vias when jumping"
+   },
+   "prose": "SLVA959B p19 Section 5.1 + Fig 5-1/5-2: bulk (>10 uF, low ESR) near the power entry, each pad with multiple vias to its plane, sources the low-frequency winding current. p21 Section 5.3.2 + Fig 5-6: small ceramics (<10 uF) across each half-bridge absorb the HF switching current; 5.3.3 says any inductance between these caps and the switching FETs cuts their effect, so place them at the FETs. p22 Fig 5-7 shows CCRM right beside each leg's HS drain / LS source pair and CBULK at BAT+/BAT-. p25 Fig 6-6/6-7: stacked and side-by-side half-bridge placements for SON-8, VM and GND pours on either side of the SW pour, repeatable for 3 legs. p27-28 Section 6.3.2 + Fig 6-11/6-12: the high current loop runs supply+ -> HS FET -> winding -> opposite LS FET -> supply-; minimise it with wide traces, tight placement and few layer jumps (correctly sized via counts where it must jump). TIDA-010251 p5 Fig 3-1 does exactly this: C30/C31/C32 (10 uF 100 V) between VDC and each bottom FET's source, which the text says reduces supply-line ringing from the sense resistor and power track inductance.\n",
+   "sources": [
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 19,
+     "note": "Section 5.1 + Fig 5-1 bulk cap multi-via, Fig 5-2 bulk vs IC bypass placement"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 21,
+     "note": "Section 5.3.2-5.3.3 + Fig 5-6: <10 uF ceramics per bridge leg, >10 uF bulk; place at the switching FETs"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 22,
+     "note": "Fig 5-7 bypass layout example: CCRM beside each leg, CBULK at BAT+/-"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 27,
+     "note": "Section 6.3.2 + Fig 6-11: high-current loop path; bullet: correct trace widths"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 28,
+     "note": "bullets: tight placement, minimise layer jumps; Fig 6-12 optimised H-bridge loop layout"
+    },
+    {
+     "file": "research/sources/tiduf36a.pdf",
+     "page": 5,
+     "note": "Fig 3-1 + text: C30-C32 10 uF 100 V per leg from VDC to bottom FET source, reduce supply ringing"
+    }
+   ],
+   "origin": "research:block-half-bridge-inverter-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/half-bridge-inverter-leg-hot-loop.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "half-bridge-inverter-thermal-copper-vias",
+   "classes": [
+    "thermal",
+    "thermal-via"
+   ],
+   "applies": {
+    "topologies": [
+     "half-bridge-inverter"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "copper_oz": "1.5-2 where possible",
+    "pours": "continuous from the thermal pad out to wide planes; do not break them",
+    "via_drill_mil": 8,
+    "via_diameter_mil": 20,
+    "via_connect": "direct connect (no thermal relief), not tented/masked, grouped in arrays"
+   },
+   "prose": "SLVA959B p8 Fig 2-1: the exposed pad is the dominant heat path; bond the pour under it to the inner/bottom planes with vias directly under the pad. p9 Fig 2-2: a broken ground pour visibly heats the area around the part versus a continuous one; Eq 1-3: a 1 cm x 1 cm plane goes from 71.4 C/W at 1 oz to 35.7 C/W at 2 oz. p9 Section 2.4 + p10 Fig 2-3: thermal-relief spokes raise the temperature versus direct-connect vias; do not cover thermal vias with mask. p10 Section 2.5: 8 mil drill / 20 mil diameter vias (5.73 C/W each through 1.56 mm FR-4) limit solder wicking; p11 Fig 2-4 shows a pad-via array plus layer-bond arrays; Section 2.6 summarises: continuous pours, 1.5-2 oz, direct connect, arrays. The pages speak of a driver IC's pad; the same via and pour rules apply to a power FET's drain pad (inference). TIDA-010251 p2 table: 60 x 60 mm, 4-layer, 2 oz, 20 kHz, 0.79 mOhm SON5x6 FETs; p18 Fig 4-9/4-10: 18 V, 10 A RMS winding, 15% duty gives a hottest-FET reading of 49.3 C; Fig 4-11/4-12: 33 A RMS gives 97.1 C. Scale by the chosen FET's Rds(on).\n",
+   "sources": [
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 8,
+     "note": "Section 2.1-2.2 + Fig 2-1 cross-section: thermal pad -> vias -> internal planes"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 9,
+     "note": "Fig 2-2 broken vs continuous pour heat map; Eq 1-3 copper thickness 71.4 vs 35.7 C/W; Section 2.4 direct-connect vias"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 10,
+     "note": "Fig 2-3 thermal relief vs direct-connect heat map; Section 2.5 8 mil hole / 20 mil via, Eq 4 5.73 C/W"
+    },
+    {
+     "file": "research/sources/slva959b.pdf",
+     "page": 11,
+     "note": "Fig 2-4 thermal pad via array + layer bond arrays; Section 2.6 summary bullets"
+    },
+    {
+     "file": "research/sources/tiduf36a.pdf",
+     "page": 2,
+     "note": "Table 1.1 key specs: 60 x 60 mm 4-layer 2-oz board, 33 A RMS, 20 kHz; text: CSD18510Q5B 0.79 mOhm SON5x6"
+    },
+    {
+     "file": "research/sources/tiduf36a.pdf",
+     "page": 18,
+     "note": "Section 4.4.4 + Fig 4-10/4-12 thermal images: 10 A RMS -> 49.3 C max FET, 33 A RMS -> 97.1 C at 18 V, 15% duty"
+    }
+   ],
+   "origin": "research:block-half-bridge-inverter-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "iout_a": {
+     "min": 0,
+     "max": 33
+    },
+    "board_layers": {
+     "min": 4,
+     "max": 4
+    }
+   },
+   "_path": "research/records/half-bridge-inverter-thermal-copper-vias.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "reverse-polarity-fet-conduction-thermal-budget",
+   "classes": [
+    "thermal"
+   ],
+   "applies": {
+    "topologies": [
+     "reverse-polarity-fet"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "pd": "I^2 x RDS(on) at hot RDS, sized to ~0.5 W",
+    "tj": "TA + PD x R_thetaJA",
+    "package": "5x6 exposed pad preferred over 3x3 as current rises"
+   },
+   "prose": "The RP FET is always on, so its loss is I^2 x RDS(on); onsemi sized each FET so losses stay near 500 mW and measured them on a 4-layer board at 24 C ambient (AND90146 Table 3/4, Fig 13-18 thermal images): 6 A through 14 mOhm (504 mW) -> 47.3 C case; 10 A through 4.8 mOhm LFPAK8 (480 mW) -> 52.8 C, through 4.5 mOhm LFPAK4 (450 mW) -> 47.5 C in Table 3 (Fig 18's caption table says 45.3 C; the note keeps the Table 3 value). Junction estimate TJ = TCASE + PD x R_thetaJT (R_thetaJT ~1 C/W assumed for 3x3/5x6) matched the datasheet route TJ = TA + PD x R_thetaJA within ~5 C, so the datasheet R_thetaJA is usable for sizing on a well-spread 4-layer board. At equal loss the 5x6 package runs cooler and leaves more headroom than 3x3 (Table 4 bullets). TI adds: consider the FET's thermal resistance against its maximum dissipation (LM74500-Q1 p17).",
+   "sources": [
+    {
+     "file": "research/sources/and90146-d.pdf",
+     "page": 7,
+     "note": "Table 3: MOSFETs at 6/8/10 A, RDS(on), losses ~450-504 mW, R_thetaJA, TCASE; Fig 13-16 thermal images"
+    },
+    {
+     "file": "research/sources/and90146-d.pdf",
+     "page": 8,
+     "note": "Fig 17/18 10 A LFPAK8 52.8 C, LFPAK4 45.3 C max; eq 1 TJ = TCASE + PD x R_thetaJT; Fig 19 thermal path mostly through PCB"
+    },
+    {
+     "file": "research/sources/and90146-d.pdf",
+     "page": 9,
+     "note": "eq 2-4 worked example; Table 4 calculated TJ vs load; bullets: 5x6 more headroom, datasheet R_thetaJA matches 4-layer board"
+    },
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 17,
+     "note": "text: consider MOSFET thermal resistance against expected maximum power dissipation"
+    }
+   ],
+   "origin": "research:block-reverse-polarity-fet-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "pdiss_w": {
+     "min": 0,
+     "max": 0.6
+    },
+    "board_layers": {
+     "min": 4,
+     "max": 6
+    }
+   },
+   "_path": "research/records/reverse-polarity-fet-conduction-thermal-budget.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "reverse-polarity-fet-constraints-emission",
+   "classes": [
+    "constraints-emission"
+   ],
+   "applies": {
+    "topologies": [
+     "reverse-polarity-fet"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "emit": "placement group {RP FET, controller, VCAP, CIN, input TVS} at the VIN entry; VIN/VOUT as wide power nets with via arrays on >= 3 layers; gate net short, keep VCAP out of the FET heat zone"
+   },
+   "prose": "What the block must hand to constraints: a placement group anchored on the RP FET with the controller, its VCAP and C_IN, and the input TVS as members, next to the input connector (LM74500-Q1 Fig 11-1 has them all within the FET's footprint area); VIN and VOUT marked as high-current nets needing wide pours and via arrays on several layers (AND90146 layout); a short-route requirement on the GATE net; and a keep-away between VCAP and the FET's hot copper (sec 11.1).",
+   "sources": [
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 20,
+     "note": "sec 11.1 bullets + Fig 11-1: FET, controller, CVCAP, CIN, TVS grouped; gate short; VCAP away from FET"
+    },
+    {
+     "file": "research/sources/and90146-d.pdf",
+     "page": 6,
+     "note": "Fig 9-12: input/output current spread over top/inner1/inner2 with via arrays"
+    }
+   ],
+   "origin": "research:block-reverse-polarity-fet-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/reverse-polarity-fet-constraints-emission.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "reverse-polarity-fet-controller-gate-vcap-placement",
+   "classes": [
+    "decoupling"
+   ],
+   "applies": {
+    "topologies": [
+     "reverse-polarity-fet"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "gate_source": "controller GATE/SOURCE close to FET gate/source, short gate trace",
+    "vcap": ">= 0.1 uF and >= 10 x Ciss(FET); placed away from the FET (heat)",
+    "cin": "0.1 uF; > 22 nF ceramic at the controller if the supply is inches away"
+   },
+   "prose": "LM74500-class controller placement (sec 11.1, Fig 11-1): connect the controller's SOURCE and GATE pins close to the FET's source and gate, and route GATE with a short trace - no thin, long gate runs. Keep the charge-pump capacitor (VCAP to SOURCE) AWAY from the FET, because the FET's heat shifts the capacitance value. Size VCAP >= 0.1 uF and >= 10 x the FET's Ciss (sec 9.3.1.2.3), C_IN 0.1 uF typical, C_OUT 220 uF typical in TI's example, and if the source is more than a few inches away add a ceramic bypass > 22 nF at the input (sec 10). In Fig 11-1 the SOT package sits between the FET source pads and the GND plane, GATE (pin 6) runs by a signal via to the FET's G pad, C_VCAP hangs off pins 4-5 on the side away from the FET, and C_IN plus the TVS sit on the VIN pour.",
+   "sources": [
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 17,
+     "note": "sec 9.3.1.2.3: VCAP min 0.1 uF, >= 10 x Ciss; CIN 0.1 uF; COUT 220 uF"
+    },
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 20,
+     "note": "sec 10: >22 nF input bypass if supply is inches away; sec 11.1 bullets on GATE/SOURCE, VCAP away from FET, short gate trace; Fig 11-1 layout example"
+    }
+   ],
+   "origin": "research:block-reverse-polarity-fet-1",
+   "level": "family",
+   "maturity": "verified",
+   "envelope": {
+    "vin_v": {
+     "min": 3.2,
+     "max": 65
+    }
+   },
+   "_path": "research/records/reverse-polarity-fet-controller-gate-vcap-placement.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "reverse-polarity-fet-current-path-copper",
+   "classes": [
+    "power-loop",
+    "thermal"
+   ],
+   "applies": {
+    "topologies": [
+     "reverse-polarity-fet"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "source_drain": "thick/wide copper, the full load current path",
+    "multilayer": "spread VIN/VOUT across several layers with via arrays",
+    "gnd": "solid plane layer"
+   },
+   "prose": "All load current passes through the RP FET, so its source and drain copper must be thick to cut resistive loss (LM74500-Q1 sec 11.1). Fig 11-1 shows the FET drain pad as a large top-layer VOUT pour with a grid of power vias, the source pads on a wide VIN pour, C_IN and the input TVS straddling VIN to the GND plane next to the FET, and C_OUT from VOUT to GND. onsemi's 4-layer test board (AND90146 Fig 9-12) carries input and output currents on top, inner1 and inner2 together, stitched by dense via arrays at the connectors and FET, with inner2 also carrying the gate/enable traces and the bottom layer a solid GND plane - spreading current over several layers is what lowered loss and temperature in its measurements.",
+   "sources": [
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 20,
+     "note": "sec 11.1: thick traces for source and drain; Fig 11-1 layout: VIN/VOUT pours, drain power vias, CIN + TVS at VIN, COUT at VOUT, GND plane"
+    },
+    {
+     "file": "research/sources/and90146-d.pdf",
+     "page": 6,
+     "note": "Layout text + Fig 9-12: 4-layer board, current on top/inner1/inner2, gate traces on inner2, bottom solid GND; via arrays at FETs and terminals"
+    }
+   ],
+   "origin": "research:block-reverse-polarity-fet-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "pdiss_w": {
+     "min": 0,
+     "max": 0.6
+    },
+    "board_layers": {
+     "min": 4,
+     "max": 6
+    }
+   },
+   "_path": "research/records/reverse-polarity-fet-current-path-copper.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "reverse-polarity-fet-nfet-and-tvs-selection",
+   "classes": [
+    "selection",
+    "inrush"
+   ],
+   "applies": {
+    "topologies": [
+     "reverse-polarity-fet"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "vds": ">= highest differential voltage incl. faults; 60 V class for a 65 V-max controller and 24 V-class nets",
+    "vgs": "rated >= 15 V for a 13 V charge-pump drive, else zener-clamp",
+    "body_diode": "source current rating > start-up inrush into the bulk",
+    "rds_on": "lowest practical",
+    "tvs": "breakdown above worst steady-state input, below controller abs max"
+   },
+   "prose": "N-FET ratings for a charge-pump RP stage (LM74500-Q1 sec 9.3.1.2.2): ID above the maximum continuous load; VDS(max) above the highest differential voltage including faults - TI recommends up to 60 V FETs because the SOURCE pin is rated 65 V; the controller drives VGS to 13 V, so pick a 15 V (TI's example: +/-20 V) VGS rating or clamp with a zener; lowest RDS(on). Start-up inrush flows through the BODY DIODE to charge the output bulk before the FET is enhanced, so its maximum source current must exceed that inrush. onsemi AND90146 agrees: 40 V FETs for 12 V nets, 60 V for 24 V nets, logic-level gates, 3x3 or 5x6 exposed-pad packages. TVS (bidirectional in TI's example): breakdown above the worst steady-state input and below the 65 V controller maximum; clamping voltage is far above breakdown and only matters under the pulse. For an input that can reach 28 V plus transients this lands on 60 V FETs and a TVS whose clamp stays under 60-65 V.",
+   "sources": [
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 16,
+     "note": "sec 9.3.1.2.2 MOSFET selection: ID, VDS(max) incl faults, body-diode current, RDS(on); 60 V FET (SOURCE 65 V); 13 V VGS drive -> 15 V VGS rating or zener"
+    },
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 17,
+     "note": "body diode carries start-up inrush into bulk; 60 V / +/-20 V preferred; sec 9.3.1.3 TVS breakdown vs 65 V max, clamp vs breakdown"
+    },
+    {
+     "file": "research/sources/and90146-d.pdf",
+     "page": 4,
+     "note": "MOSFET selection bullets: 40 V for 12 V net, 60 V for 24 V net; 175 C TJmax; logic level; 3x3 and 5x6 packages; Qg; RDS(on) sized for ~500 mW"
+    }
+   ],
+   "origin": "research:block-reverse-polarity-fet-1",
+   "level": "topology",
+   "maturity": "verified",
+   "envelope": {
+    "vin_v": {
+     "min": 3.2,
+     "max": 36
+    }
+   },
+   "_path": "research/records/reverse-polarity-fet-nfet-and-tvs-selection.yaml",
+   "_workspace": true
+  },
+  {
+   "id": "reverse-polarity-fet-no-blocking-for-regen-load",
+   "classes": [
+    "selection"
+   ],
+   "applies": {
+    "topologies": [
+     "reverse-polarity-fet"
+    ],
+    "packages": [],
+    "interfaces": [],
+    "parts": []
+   },
+   "rule": {
+    "enforced_by": null,
+    "regenerating_or_inductive_load": "reverse polarity protection only - do NOT block reverse current (LM74500-class)",
+    "logic_or_holdup_path": "ideal diode with reverse-current blocking (LM74700-class)"
+   },
+   "prose": "Choose the controller by what the load does, not only by the input. A protection device that blocks reverse current is wrong for loads that push energy back - inductive kickback at turn-off or a motor's regenerative action: with the return path blocked, that energy has nowhere to go and the protected rail overshoots, damaging other loads on it. LM74500-Q1 Fig 9-1 splits an automotive body-control supply into a load-driving path (wiper, relays, horn: reverse polarity protection required, reverse current blocking NOT required, LM74500) and a logic path (regulators, DC/DC, supervisors: both required, LM74700). Fig 9-2 marks the output side 'reverse current blocking is not preferred'. The same N-FET in the reverse-polarity-only mode (AND90146 Fig 7: controller drain pin to GND) lets the bulk discharge back into a falling input, while the ideal-diode mode (Fig 6) holds the bulk up and blocks reverse current.",
+   "sources": [
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 13,
+     "note": "Fig 9-1 block diagram: load-driving path (reverse blocking not required, LM74500) vs logic path (required, LM74700); text: blocking reverse current causes overshoot from inductive kickback or motor regenerative action"
+    },
+    {
+     "file": "research/sources/lm74500-q1.pdf",
+     "page": 14,
+     "note": "Fig 9-2 BCM load-path circuit: input TVS, CIN, LM74500 driving Q1, COUT; annotation 'reverse current blocking is not preferred'"
+    },
+    {
+     "file": "research/sources/and90146-d.pdf",
+     "page": 5,
+     "note": "Fig 6 ideal-diode mode vs Fig 7 reverse-polarity mode (drain pin to GND); text: in RP mode Cbulk is discharged by a falling input"
+    }
+   ],
+   "origin": "research:block-reverse-polarity-fet-1",
+   "level": "principle",
+   "maturity": "verified",
+   "envelope": null,
+   "_path": "research/records/reverse-polarity-fet-no-blocking-for-regen-load.yaml",
+   "_workspace": true
+  }
+ ],
+ "workspace_records": [
+  "current-sense-shunt-constraints-emission",
+  "current-sense-shunt-csa-bypass",
+  "current-sense-shunt-diff-pair-routing",
+  "current-sense-shunt-filter-series-r",
+  "current-sense-shunt-kelvin-taps",
+  "current-sense-shunt-lowside-placement",
+  "current-sense-shunt-selection-ladder",
+  "gate-driver-bootstrap-cboot-sizing",
+  "gate-driver-bootstrap-charge-loop",
+  "gate-driver-bootstrap-gate-routing",
+  "gate-driver-bootstrap-gvdd-bypass-ratio",
+  "half-bridge-inverter-leg-hot-loop",
+  "half-bridge-inverter-switch-node-damping",
+  "half-bridge-inverter-thermal-copper-vias",
+  "reverse-polarity-fet-conduction-thermal-budget",
+  "reverse-polarity-fet-constraints-emission",
+  "reverse-polarity-fet-controller-gate-vcap-placement",
+  "reverse-polarity-fet-current-path-copper",
+  "reverse-polarity-fet-nfet-and-tvs-selection",
+  "reverse-polarity-fet-no-blocking-for-regen-load"
+ ],
+ "prompt_block": "KNOWLEDGE RECORDS (deterministic retrieval; keys: {\"interfaces\": [\"isns_a\", \"isns_b\", \"isns_c\"], \"topologies\": [\"boost\", \"buck\", \"current-sense-shunt\", \"gate-driver-bootstrap\", \"half-bridge-inverter\", \"ldo\", \"mcu\", \"reverse-polarity-fet\", \"tvs-clamp\"]}). Treat rules as constraints; cite the record id when you apply or overrule one; the tag is level/maturity (draft = unreviewed):\n- buck-bst-fb-output-caps [feedback, decoupling] (family/approved)\n  BST: integrated-FET parts need the 100 nF BST-SW cap - it is required, not optional (DS41326 s13); confirm value/rating in the family datasheet. FB TRAP (cost a near-miss once): FIXED-output family members tie FB straight to the output sense point - do NOT copy the ADJUSTABLE variant's divider from the shared datasheet figure (AP63203 vs AP63200/1, DS41326 fig 20/21). Adjustable parts: divider AT the FB pin, short FB trace routed away from SW and L, sense point AFTER the output caps. OUTPUT CAPS: ceramic, inside the datasheet's stated C/ESR window - internal compensation assumes it (DS41326 s12); count DC-bias derating (a \"22 uF\" X5R at bias is ~12-15 uF). When the part has EXTERNAL compensation, the vendor's table values are quoted for a specific C_OUT - a different bank means re-deriving the network, not copying the row (sbuck D-item: 5x 22 uF vs the table's 2x 22 uF moved the crossover by 2.5x).\n  rule: bst_cap_nf=100 fb_divider_at=FB pin, sense point AFTER the output caps\n  source: boards/usb-buck/parts/C5248536.pdf DS41326 s12-13, fig 20/21; boards/sbuck-5v3a/architecture/blocks.md s3 (compensation re-derive)\n- buck-cin-co-ground-separation [power-loop, emi] (topology/approved)\n  Two ROHM measurements the generic hot-loop rule does not carry: (1) shortening the CBYPASS wiring EVEN BY 1 mm is worth it - the HF bypass supplies the steepest edge of the switch current, and its loop inductance sets the VIN-pin voltage noise directly; (2) even with CBYPASS tight to the IC, several hundred MHz rides on the INPUT capacitor's ground, so the grounds of C_IN and C_OUT must sit 1-2 cm APART - placed close together the input HF noise couples straight into the output through C_OUT. C_IN placed on the bottom layer through vias is explicitly unsuitable (via inductance); input cap and (for async) the free-wheel diode go on the SAME surface layer as the IC terminals. This refines, not replaces, the shortest-loop rule in buck-input-hot-loop.\n  rule: bypass_same_surface_as_ic=True cin_co_gnd_separation_cm=1 to 2\n  source: reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.3 s3, fig 3-a..3-d; reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.7 s6 (output cap)\n- buck-constraints-emission [constraints-emission] (principle/approved)\n  What a buck block must emit into constraints.json for the pipeline: (1) power entries with current_a from the RAIL BUDGET (consumer sum + ~30% headroom, rounded to a design ceiling) and dt_c from ambient; (2) a thermal entry when regulator dissipation > ~0.5 W - for async parts add the Schottky's Vf * I * (1-D), the diode often out-heats the IC; (3) layout_notes for P6/P7: hot-loop grouping, SW containment/separation, FB routing - these become placement groups and route_critical facts; (4) a blocks entry ({topology: buck}) so knowledge retrieval keys on it.\n  rule: thermal_entry_above_w=0.5\n  source: boards/usb-buck/research/power.md s7-9 (emitted constraints); .claude/skills/hwde/reference/constraints_schema.md power / thermal / blocks\n- buck-en-softstart-sequencing [sequencing] (principle/approved)\n  Check the EN pin's OWN behavior before adding parts: many parts auto-start (AP63203: internal 1.5 uA pull-up - tie to VIN or float; adding a divider is wasted parts). When EN is used as a UVLO divider, mind the two traps the sbuck run hit: a narrow hysteresis gap can force a divider into the mA-burn regime via the part's own equations, and hysteresis smaller than the input CABLE DROP at full load motorboats (start -> sag -> stop -> recover). Soft-start time sets the output-cap inrush as seen by the source. Single-rail boards rarely need sequencing; multi-rail: state the order requirement or \"none\" explicitly in power.md.\n  source: boards/usb-buck/research/power.md s6 (EN/soft-start); boards/sbuck-5v3a/architecture/blocks.md s4 (UVLO divider pathology)\n- buck-fb-route-rules [feedback] (topology/approved)\n  The feedback route needs the most attention of any signal wire - noise here becomes output-voltage error and instability. ROHM's four rules (fig 7-a): (a) the FB pin is high impedance - connect the divider network with a SHORT wire at the pin; (b) sense AFTER the output capacitor or at its terminals; (c) wire the two divider resistors adjacent and parallel for noise tolerance; (d) route far from the switching node, never directly under the inductor or diode, and never parallel to a power line - on multilayer boards the same rules apply layer-to-layer, and the worked example drops the FB route to the bottom layer through a via to get away from the SW region. A feedback trace laid parallel beside the inductor picks up its magnetic field (fig 7-d). Matches and extends the FB half of buck-bst-fb-output-caps.\n  rule: divider_at_fb_pin=short wire, resistors adjacent and parallel keep_away_from=SW node, inductor, diode; never under L or D; not parallel to power lines sense_point=after or at both ends of the output capacitor\n  source: reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.7 s7, fig 7-a/7-b; reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.8 fig 7-c/7-d\n- buck-freewheel-diode-snubber-placement [power-loop, emi] (topology/approved)\n  Async buck (free-wheel diode) placement rules: the diode must sit CLOSE and on the SAME surface as the IC terminals, wired short and wide, connected directly to the IC's GND and SW terminals - distance adds wiring inductance whose spike noise piles onto the output, and dropping the diode to the bottom layer through vias makes it worse (via inductance). If spike noise still needs an RC snubber, place it CLOSE TO THE IC's SW and GND terminals; a snubber across the diode's own ends does NOT absorb the spike generated by the wiring inductance (ROHM fig 3-g vs 3-h). Sync bucks lose the diode but keep the rule's core: the LS-FET return corner of the hot loop stays tight to the IC.\n  rule: diode_surface=same layer as IC terminals, never via-dropped to bottom snubber_at=IC SW + GND terminals, NOT across the diode ends\n  source: reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.3 s3, fig 3-e..3-h; reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.5 fig 3-g/3-h placement\n- buck-inductor-copper-and-gnd-void [emi] (topology/approved)\n  Inductor region rules (ROHM s5): place L close to the IC but NOT as close as the input cap; do NOT expand the SW/inductor copper beyond what current needs - enlarged copper works as an antenna (EMI), even though instinct says more copper = cooler. Practical width floors with margin: 1 mm per A at 1 oz, 0.7 mm per A at 2 oz. Do not put a ground plane DIRECTLY UNDER the inductor: eddy currents derate the inductance and Q, and any signal line under it picks up switching noise - keep wiring out from under L, or use a closed-magnetic-circuit (shielded) inductor when routing there is unavoidable. Keep the two inductor terminals' wiring apart: close spacing couples the SW edge to the output through stray capacitance (fig 6-d).\n  rule: gnd_plane_under_inductor=avoid (eddy current derates L, couples noise) width_per_amp_1oz_mm=1.0 width_per_amp_2oz_mm=0.7\n  source: reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.5 s5; reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.6 fig 6-a..6-d\n- buck-inductor-selection [selection] (topology/approved)\n  The three inductor rules every run re-derived from scratch. L VALUE: start from the vendor's recommended-components table row for your Vout; the next STANDARD value up is usually right - light-load efficiency improves with larger L (DS41326 s10 says so explicitly; usb-buck: table said 3.9 uH, chosen 4.7 uH). ISAT: must beat the part's PEAK CURRENT LIMIT / PFM clamp, not the load current (usb-buck: 450 mA clamp meant a 1 A-rated part was ample at a 57 mA load). DCR: budget it as real dissipation - target < 30 mohm for A-class rails (usb-buck P3 rule, waived at 60 mohm with math); ~0.1 ohm cost 0.29 W at 2 A on the carrier. DCR losses scale I^2 - cheap inductors tax high-current rails hard. Derate Isat/Irms/DCR to the real ambient before comparing (sbuck: 18.5 mohm at 20 C -> 24 mohm hot).\n  rule: dcr_mohm_max_a_class_rail=30 isat_must_beat=peak current limit / PFM clamp, not load current\n  source: boards/usb-buck/parts/C5248536.pdf DS41326 s10 (inductor selection); boards/usb-buck/research/power.md s5 (L/Isat/DCR derivation); boards/lumina-carrier/research/poe-power.md DCR dissipation at 2 A\n- buck-input-hot-loop [power-loop, emi] (principle/approved)\n  Layout rule #1 for every buck: the input cap carries the DISCONTINUOUS switch current. C_IN plus a 100 nF HF bypass AT the VIN pin, on the SAME layer as the IC; the C_IN -> VIN -> GND -> C_IN loop must be the shortest loop on the board; SW-node copper minimal. At ~1 MHz switching this matters more than copper weight (usb-buck power.md s7-9; every vendor layout section says the same). Solid GND pour + vias under the IC. At P6 this is a placement GROUP (constraints placement.groups) anchored on the IC with the input ceramics + HF bypass as members, placed and locked BEFORE the annealer runs - the cost function does not know the loop exists.\n  rule: hf_bypass_at=VIN pin, same layer as the IC hf_bypass_nf=100 loop=C_IN -> VIN -> GND -> C_IN shortest on the board\n  source: boards/usb-buck/research/power.md s7-9 (hot loop); boards/usb-buck/parts/C5248536.pdf DS41326 layout section\n- buck-power-ground-isolation [return-path, power-loop] (topology/approved)\n  Ground strategy (ROHM s8): analog small-signal ground and power ground must be ISOLATED, and power ground laid on the TOP layer without splitting is the ideal - dropping an isolated power ground to the bottom layer through vias adds via R and L and worsens noise. Inner/bottom ground planes are SUPPLEMENTARY (DC loss, shielding, heat), not the return path design. Multilayer recipe (fig 9): power-ground plane on L2 stitched to top with MANY vias; common ground L3, signal ground L4; connect the ground families together ONLY at the output capacitor's power ground (the low-HF-noise point) - NEVER at the free-wheel diode or input-capacitor ground, which carry the highest switching noise. This is the class-level reason the pipeline's In1-GND-under-the-IC default works, and where to join AGND islands when a board has them.\n  rule: never_join_at=free-wheel diode / input capacitor ground (highest HF noise) pgnd_agnd=isolate; join only at the LOW-noise point (output cap ground)\n  source: reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.8 s8, fig 8/9\n- buck-selection-ladder [selection] (topology/approved)\n  Regulator-type ladder, one line of tradeoff each; if the brief names a part the named part stands (record the alternative as an override option). (1) Integrated synchronous buck is the DEFAULT at <= ~60 V input and <= ~3 A: no catch diode, best efficiency/heat (usb-buck AP63203). (2) Asynchronous + Schottky when the V/I corner has no stocked sync part (lumina-carrier: the only 100 V-rated 2 A part was async COT); the Schottky must be rated >= Vin (SS510 class). (3) Controller + external FETs is the efficiency/current escape hatch (~2-3 pts over async, any current) at the cost of 2 FETs + gate/sense network + layout area (carrier LM5146 fallback). (4) An LDO is the honest option at light load - 3 parts vs 6 and no switch node near analog/RF, at the cost of (Vin-Vout)*I heat; do the comparison table before assuming the buck.\n  source: boards/usb-buck/research/power.md s4 (LDO-vs-buck table); boards/lumina-carrier/research/poe-power.md s4 (async choice, LM5146 fallback)\n- buck-switch-node-containment [emi] (topology/approved)\n  Keep SW copper as small as electrically possible and treat SW + L as an AGGRESSOR: lumina-par's 2.4 GHz antenna 11 mm from a switch node drove a 4-layer stackup + containment plan; usb-buck keeps the USB pair away from SW/L per ST AN4879 3.3. Hand P6 a separation/keepout entry (constraints placement.separation / placement.keepouts) whenever any antenna, high-Z analog node, or diff pair shares the board; the switch node is also why high_speed references demand an UNBROKEN plane under victims (check_return_path enforces the plane; the separation entry is what keeps the aggressor out of the corridor in the first place). A /SW test-point tap must be a short stub that does not extend the SW pour - it counts against the SW copper budget.\n  rule: sw_copper=smallest electrically possible victims=antenna, high-Z analog, diff pairs -> separation/keepout entry\n  source: boards/usb-buck/research/interface-usb.md AN4879 3.3 (USB vs switcher); boards/sbuck-5v3a/architecture/blocks.md s8 (/SW tap stub rule)\n- buck-thermal-via-and-via-current [thermal-via] (topology/approved)\n  Thermal vias under an exposed-pad regulator (ROHM s4, HTSOP-J8 numbers generalize to EP packages): small drill - 0.3 mm inner diameter - so the via can FILL with solder; larger drills suck solder away from the joint at reflow (solder-wicking). Pitch ~1.2 mm, directly below the reverse- side thermal pad; add a ring of extra vias around the IC when the pad area alone is not enough. Copper area helps but the base material is the real radiator - vias carry the heat to the far layers. For CURRENT via sizing (s10-3): a via's equivalent conductor width is pi x diameter but its wall is only ~18 um plating, so use 2 mm of equivalent width per amp - about double the 1 oz surface-trace rule; measured table: 0.3 mm via 0.4 A, 0.6 mm 0.9 A, 1.0 mm 1.5 A. Count vias against that, not against the drill area.\n  rule: thermal_via_drill_mm=0.3 thermal_via_pitch_mm=1.2 via_width_per_amp_mm=2.0\n  source: reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.3 s4 (thermal via); reference/knowledge/sources/rohm-buck-pcb-layout-an.pdf p.10 s10-3 (via current)\n- buck-upstream-inrush-limit [inrush, selection] (topology/approved)\n  Upstream bulk limit trap: a buck's input capacitance is bounded by the SOURCE, not by the buck. USB 2.0 allows 10 uF || 44 ohm at attach (spec s7.2.4.1); a USB-PD sink is allowed 100 uF under contract (cSnkBulkPd); PoE has its own inrush envelope. Check the source's rule BEFORE sizing C_IN. Soft-start makes OUTPUT caps invisible to the source's inrush test (usb-buck power.md s6) - so the output bank is sized by load step, not by the source rule.\n  rule: usb2_attach_limit=10 uF or 44 ohm-limited at attach (s7.2.4.1) usbpd_sink_bulk_uf_max=100\n  source: boards/usb-buck/research/power.md s6-7 (inrush vs source rules); boards/usb-buck/research/interface-usb.md attach capacitance\n- cot-ripple-injection-raises-vout [feedback] (family/approved)\n  A constant-on-time regulator ends its off-time when FB falls back through VREF, so it regulates the VALLEY of FB, not its average. With Type 3 injection the ramp is AC-coupled into FB and its mean is genuinely zero, so FB_dc = VREF + Vramp/2 and VOUT = (1 + R_top/R_bot) x (VREF + Vramp_pkpk/2) - NOT VREF times the divider ratio. On an LM5017 at 78.6 mV of injected ripple that is +3.2 %: 5.06 V where a valley calculation says 4.90 V, which is enough to put a 5 V rail over a downstream driver's recommended VDD max. A P4 reviewer computed the rail min/nom/max without the term and concluded the nominal was 100 mV low. Both readings matter in practice because Vramp carries Rr, Cr and K tolerance, so solve the divider against the UNION - effective reference in [VREF_min, VREF_max + Vramp_max/2] - and check both corners rather than picking one model. Also check the FB overvoltage comparator against FB's PEAK (VREF + full Vramp): the LM5017 trips at 1.62 V and terminates the on-time pulse.\n  rule: applies_when=constant-on-time regulator with Type 3 (AC-coupled) ripple injection fb_overvoltage=compare against FB PEAK (VREF + full Vramp), not its average solve_against=union of [VREF_min, VREF_max + Vramp_max/2] - check both corners vout=(1 + R_top/R_bot) * (VREF + Vramp_pkpk/2)\n  source: boards/rf-de-20m/LEARNINGS.md 2026-08-08 Type 3 ripple injection RAISES the DC output; boards/rf-de-20m/parts/C34355.pdf LM5017 (the part this was measured on)\n- current-sense-shunt-constraints-emission [constraints-emission] (principle/verified, workspace)\n  What the block must hand to constraints: (1) a net tie per sense net at each shunt so the router cannot take the sense nets from the pour (SLVA959B sec 7.7, Fig 7-6); (2) the SNSx_P/SNSx_N pairs as a differential-pair class, since TI recommends differential-pair routing tools for them; (3) a placement group per phase anchoring the shunt between the low-side FET source and the ground stitching (sec 7.5), and (4) a group holding the CSA with its filter and bypass close to it (sec 7.8). SLVA959B's point is that the route restriction must be placed during placement, not discovered during routing.\n  rule: emit=net ties at each shunt sense pair; SNSx_P/N as a diff-pair net class; placement group {LS FET, shunt, GND vias}; CSA+filter+bypass group near the shunt\n  source: research/sources/slva959b.pdf p.33; research/sources/slva959b.pdf p.34\n- current-sense-shunt-csa-bypass [decoupling] (topology/verified, workspace)\n  Bypass the CSA supply with 0.1 uF placed as close as possible to its VS and GND pins; add more capacitance for a noisy or high-impedance supply. INA240 Fig 11-1 (TSSOP) shows C_BYPASS directly beside pins 4 (GND) and 5 (VS), with GND and REF pins dropping to vias into the ground plane; Fig 11-2 (SOIC) puts C_BYPASS between GND pin 2 and VS pin 6 under the package body.\n  rule: at=VS pin, returned to the CSA GND pin/via bypass_uf=0.1\n  source: research/sources/ina240.pdf p.23; research/sources/ina240.pdf p.24; research/sources/ina240.pdf p.25\n- current-sense-shunt-diff-pair-routing [diff-pair, emi] (topology/verified, workspace)\n  Route each shunt's sense signals as a differential pair: tightly coupled, parallel from the shunt to the CSA input, so common-mode noise couples equally into both and is rejected. Do not run the pair parallel to noisy switching traces. SLVA959B Fig 7-5 shows two thin parallel traces on the top layer running the length of a board edge from the shunt to the amplifier, alongside but separated from wide power pours. Put a net tie between the shunt and each sense net in the schematic (Fig 7-6: SNS1_P / SNS1_N each through a net-tie to a 5 mOhm R7 whose low end is GND) so the CAD tool cannot let the negative sense input route straight to the ground pour or the positive to the FET source pad - the ratsnest otherwise invites exactly the non-Kelvin routing.\n  rule: keep_away=switching nodes (SW/phase, gate) routing=tightly coupled differential pair, parallel from shunt to CSA tool=net ties at the shunt\n  source: research/sources/slva959b.pdf p.32; research/sources/slva959b.pdf p.33\n- current-sense-shunt-filter-series-r [emi, selection] (family/verified, workspace)\n  If the sense signal is filtered, place the filter parts as close to the CSA as possible (SLVA959B sec 7.8, Fig 7-7/7-8: R30/R31 1 k + C40 100 pF differential RC at the DRV CSA pins, via net ties to the 10 mOhm shunts). For an INA240-class amplifier the datasheet does not recommend an input filter at all; if one is used, keep each series resistor <= 10 ohm, because the internal bias network draws unequal input bias currents (Fig 9-2: IB+ rises ~90 -> 240 uA and IB- falls ~90 -> -60 uA over 0-1 V differential) and the drop across R_S becomes a gain error: factor 3000/(R_S+3000), i.e. 0.17% at 5 ohm, 0.33% at 10 ohm, 3.23% at 100 ohm (Table 9-1). The two sources disagree only because the amps differ: the 1 k value belongs to the DRV integrated CSA; for INA240 the datasheet value governs. Check the chosen CSA's own input structure before copying a filter.\n  rule: filter_location=at the CSA pins preferred=filter at the output if possible series_r_max_ohm_ina240=10\n  source: research/sources/ina240.pdf p.18; research/sources/ina240.pdf p.19; research/sources/slva959b.pdf p.34\n- current-sense-shunt-kelvin-taps [return-path] (principle/verified, workspace)\n  Connect the CSA inputs to the shunt with a Kelvin (4-wire) connection: two dedicated sense traces leave the shunt's own pads and carry no load current, so the only impedance between IN+ and IN- is the shunt. Any high-current copper inside the sense path adds its IR drop to a signal that is only tens of mV across a milliohm resistor, a large error. INA240 Fig 9-7 shows the DO case (two thin traces leaving the shunt pads straight to IN+/IN-) and the crossed-out DON'T case (sense traces tapped off the wide power copper beyond the pads). Fig 11-1/11-2 show the same taps on both packages. SLVA959B lists Kelvin connections first in its motor-driver do's.\n  rule: in_path=only R_shunt between IN+ and IN- sense_taps=from the shunt pads themselves (inner edge), never from the power copper or pour\n  source: research/sources/ina240.pdf p.23; research/sources/ina240.pdf p.24; research/sources/slva959b.pdf p.34\n- current-sense-shunt-lowside-placement [power-loop, return-path] (topology/verified, workspace)\n  Low-side shunts sit between the source of each phase's low-side MOSFET and the star-point ground connection (one shunt per phase for two/three-phase sensing), placed in line with the power-stage parts to keep power-trace impedance low, and close to the CSA to limit coupling onto other traces. The ground end is stitched with many vias: SLVA959B Fig 3-3 shows three 2512-class shunts (R10/R8/R6) whose GND ends each carry a 3x3-ish via array into the ground plane, adjacent to the low-side gate pins. Low-side sensing needs little common-mode range but is more susceptible to ground noise and cannot see a short to ground (sec 7.2, 7.3) - which is why the ground end and the star point matter.\n  rule: gnd_connection=multiple vias placement=in line with the power stage, close to the CSA position=between low-side FET source and the star-point ground, one per phase\n  source: research/sources/slva959b.pdf p.32; research/sources/slva959b.pdf p.13; research/sources/slva959b.pdf p.31\n- current-sense-shunt-selection-ladder [selection] (topology/verified, workspace)\n  Shunt value is a trade between dissipation and signal: SLVA959B's example, 20 A through 1 mOhm, dissipates 400 mW yet gives the CSA only 20 mV; raising R improves SNR and raises loss. Size it so the worst-case current keeps the input inside the CSA's differential range and abs max. At this board's point (3 mOhm, 10 A RMS, 20 A peak) that is 0.3 W continuous and 60 mV peak, 1.2 V out at 20 V/V. Choose a CSA whose input survives the switched node: INA240 spans -4 V to 80 V common mode (the negative end covers the node dipping below ground), has 132 dB DC / 93 dB at 50 kHz CMRR and 'enhanced PWM rejection' (its front-page plot shows the output barely moving under a 0-to-~65 V common-mode step at 2 us/div), and offset <= 25 uV, so full-scale shunt drops as low as 10 mV stay accurate. Two/three-phase low-side CSAs need little CMR but see ground noise (SLVA959B sec 7.3).\n  rule: csa_for_pwm_node=wide negative CMR + enhanced PWM rejection p_shunt=I_rms^2 x R v_signal=I_peak x R, within CSA differential range at worst case\n  source: research/sources/slva959b.pdf p.32; research/sources/ina240.pdf p.1\n- gate-driver-bootstrap-cboot-sizing [selection] (topology/verified, workspace)\n  Size the bootstrap cap from charge, not habit. SLUA887A p3 (Eq 1-3): Cboot >= 10x Cg (Cg = Qg/(VDD - Vdiode)) as a rule of thumb, or the detailed form Cboot >= Qtotal/dV_HB, Qtotal = Qg + I_HBS*Dmax/fsw + I_HB/fsw, dV_HB = VDD - Vdiode - V_HB_UVLO. Too small trips the high-side UVLO; too large raises boot-diode peak current (Ipeak = Cboot*dv/dt, Eq 4) and lengthens first charge. p4: use low-ESR/ESL MLCC rated >= 2x VDD. DRV8300 datasheet p19 worked example (Eq 2-4): dV = 12 - 0.85 - 4.5 = 6.65 V allowed, but ripple of 0.5-1 V is recommended; Qtot = 48 nC + 220 uA/20 kHz = 59 nC -> Cmin 59 nF at 1 V -> choose 100 nF for skipped-pulse margin. The leakage term grows as fsw falls, so low-fsw / high-duty operation needs more Cboot (or a trickle pump). For the integrated-diode variants DRV8300D/DI, p6 Recommended Operating Conditions caps CBOOT at 1 uF.\n  rule: cboot_max_integrated_diode_uf=1 cboot_min=Qtot / dV_BST, Qtot = Qg + I_leak/fsw (+ I_HBS*Dmax/fsw) cboot_rating=>= 2x bias voltage, low-ESR/ESL MLCC cboot_vs_cg=>= 10x dv_bst_ripple_v=0.5-1\n  source: research/sources/slua887a.pdf p.3; research/sources/slua887a.pdf p.4; research/sources/drv8300.pdf p.19; research/sources/drv8300.pdf p.6\n- gate-driver-bootstrap-charge-loop [power-loop, decoupling] (principle/verified, workspace)\n  The bootstrap charge path is a pulsed high-current loop: SLUA887A p2 Fig 2-1 traces it from the VDD bypass cap through Rboot and Dboot into Cboot, out HS to the switch node and down through the low-side FET to ground; Fig 2-2 shows the discharge path Cboot -> HO -> high-side gate. p7 Section 4: this loop (Cboot, boot diode, ground-referenced VDD bypass, LS switch) must be as small as possible, Cboot and Cvdd as close as possible to the driver supply pins, and HV power traces kept apart from LV signal traces; Fig 4-1 (UCC27710) shows RBOOT and DBOOT directly above the IC, CBOOT beside HB/HS and CVDD on the bottom side under VDD/COM. DRV8300 p22 Section 11.1: low-ESR/ESL caps close to the device between GVDD-GND and BSTx-SHx for the turn-on peak current; the Layout Example figure shows the BSTA/SHA cap pads right at the pins and the GVDD cap beside the GVDD pin with ground vias. SLUA887A p5 Fig 3-3 shows HB-HS ringing appearing with switch-node disturbances. At P6 treat driver + 3x Cboot + Cgvdd as a locked placement group.\n  rule: cboot_at=BSTx and SHx pins, as close as possible cvdd_at=GVDD/VDD and GND pins loop=Cvdd -> boot diode (-> Rboot) -> Cboot -> SW -> LS FET -> GND -> Cvdd, minimal separate=high-voltage power traces from low-voltage signal traces\n  source: research/sources/slua887a.pdf p.2; research/sources/slua887a.pdf p.5; research/sources/slua887a.pdf p.7; research/sources/drv8300.pdf p.22\n- gate-driver-bootstrap-gate-routing [emi, power-loop] (family/verified, workspace)\n  DRV8300 datasheet p22 Section 11.1: minimise parasitic inductance of the GHx, SHx and GLx connections (short, fewest vias, min 10 mil / typ 15 mil width); place the driver as close to the MOSFETs as possible so the gate charge and discharge current loops occupy a minimal area; minimise the inductance between the high-side source and the low-side source to limit negative SHx transients; put a low-ESR electrolytic plus a ceramic between high-side drain and ground to stop drain transients. p6 Recommended Operating Conditions bound the switch node the driver tolerates: SHx -2..85 V (-22 V for 2 us transients) and SHx slew <= 2 V/ns for the integrated-diode D/DI variants (50 V/ns for N/NI). At 28 V and ~50 ns edges the node slews ~0.6 V/ns, inside the D limit; a smaller Rg that pushed edges below ~14 ns at 28 V would break it. p20 Fig 9-2/9-3 show GHA/SHA/GLA edges with 15 ohm gate resistors on CSD19532Q5B.\n  rule: gate_routing=GHx/SHx/GLx short, fewest vias; driver as close to FETs as possible gate_trace_width_mil=min 10, typ 15 shx_neg_transient=minimise HS-source to LS-source inductance; SHx >= -22 V for 2 us (ROC) shx_slew_v_per_ns_max=2\n  source: research/sources/drv8300.pdf p.22; research/sources/drv8300.pdf p.6; research/sources/drv8300.pdf p.20\n- gate-driver-bootstrap-gvdd-bypass-ratio [decoupling] (principle/verified, workspace)\n  The bootstrap cap is recharged from the gate-driver supply cap, so that cap must be at least 10x Cboot (SLUA887A p4 Eq 5), which keeps worst-case droop on VDD to ~10% during the refresh. DRV8300 datasheet p19 Eq 5 uses the same ratio (CGVDD >= 10 x 100 nF = 1 uF) and p20 adds: rate the cap >= 2x the voltage it sees because MLCCs lose capacitance under bias. p21 (Power Supply Recommendations): use TWO caps across GVDD-GND, a low-value ceramic very close to the pins for HF and a larger one for bias current; likewise a cap across BSTx-SHx large enough to deliver the GHx pulses. With three half-bridges sharing one GVDD, count all three Cboot in the ratio (inference from the per-cap ratio, not stated by either source).\n  rule: cvdd_pair=small HF ceramic at the GVDD/GND pins + larger bulk ceramic cvdd_rating=>= 2x max applied voltage cvdd_vs_cboot=>= 10x\n  source: research/sources/slua887a.pdf p.4; research/sources/drv8300.pdf p.19; research/sources/drv8300.pdf p.20; research/sources/drv8300.pdf p.21\n- half-bridge-inverter-leg-hot-loop [power-loop, decoupling] (principle/verified, workspace)\n  SLVA959B p19 Section 5.1 + Fig 5-1/5-2: bulk (>10 uF, low ESR) near the power entry, each pad with multiple vias to its plane, sources the low-frequency winding current. p21 Section 5.3.2 + Fig 5-6: small ceramics (<10 uF) across each half-bridge absorb the HF switching current; 5.3.3 says any inductance between these caps and the switching FETs cuts their effect, so place them at the FETs. p22 Fig 5-7 shows CCRM right beside each leg's HS drain / LS source pair and CBULK at BAT+/BAT-. p25 Fig 6-6/6-7: stacked and side-by-side half-bridge placements for SON-8, VM and GND pours on either side of the SW pour, repeatable for 3 legs. p27-28 Section 6.3.2 + Fig 6-11/6-12: the high current loop runs supply+ -> HS FET -> winding -> opposite LS FET -> supply-; minimise it with wide traces, tight placement and few layer jumps (correctly sized via counts where it must jump). TIDA-010251 p5 Fig 3-1 does exactly this: C30/C31/C32 (10 uF 100 V) between VDC and each bottom FET's source, which the text says reduces supply-line ringing from the sense resistor and power track inductance.\n  rule: bulk=>10 uF low-ESR at the power entry, multiple vias per pad layer_jumps=minimise in the high-current path; size and count vias when jumping leg_bypass=<10 uF ceramic per leg, from HS drain to LS source, as close to the FETs as possible placement=HS and LS FET side-by-side / stacked so VM, SW and GND copper are short and wide\n  source: research/sources/slva959b.pdf p.19; research/sources/slva959b.pdf p.21; research/sources/slva959b.pdf p.22; research/sources/slva959b.pdf p.27; research/sources/slva959b.pdf p.28; research/sources/tiduf36a.pdf p.5\n- half-bridge-inverter-thermal-copper-vias [thermal, thermal-via] (topology/verified, workspace)\n  SLVA959B p8 Fig 2-1: the exposed pad is the dominant heat path; bond the pour under it to the inner/bottom planes with vias directly under the pad. p9 Fig 2-2: a broken ground pour visibly heats the area around the part versus a continuous one; Eq 1-3: a 1 cm x 1 cm plane goes from 71.4 C/W at 1 oz to 35.7 C/W at 2 oz. p9 Section 2.4 + p10 Fig 2-3: thermal-relief spokes raise the temperature versus direct-connect vias; do not cover thermal vias with mask. p10 Section 2.5: 8 mil drill / 20 mil diameter vias (5.73 C/W each through 1.56 mm FR-4) limit solder wicking; p11 Fig 2-4 shows a pad-via array plus layer-bond arrays; Section 2.6 summarises: continuous pours, 1.5-2 oz, direct connect, arrays. The pages speak of a driver IC's pad; the same via and pour rules apply to a power FET's drain pad (inference). TIDA-010251 p2 table: 60 x 60 mm, 4-layer, 2 oz, 20 kHz, 0.79 mOhm SON5x6 FETs; p18 Fig 4-9/4-10: 18 V, 10 A RMS winding, 15% duty gives a hottest-FET reading of 49.3 C; Fig 4-11/4-12: 33 A RMS gives 97.1 C. Scale by the chosen FET's Rds(on).\n  rule: copper_oz=1.5-2 where possible pours=continuous from the thermal pad out to wide planes; do not break them via_connect=direct connect (no thermal relief), not tented/masked, grouped in arrays via_diameter_mil=20 via_drill_mil=8\n  source: research/sources/slva959b.pdf p.8; research/sources/slva959b.pdf p.9; research/sources/slva959b.pdf p.10; research/sources/slva959b.pdf p.11; research/sources/tiduf36a.pdf p.2; research/sources/tiduf36a.pdf p.18\n- reverse-polarity-fet-conduction-thermal-budget [thermal] (topology/verified, workspace)\n  The RP FET is always on, so its loss is I^2 x RDS(on); onsemi sized each FET so losses stay near 500 mW and measured them on a 4-layer board at 24 C ambient (AND90146 Table 3/4, Fig 13-18 thermal images): 6 A through 14 mOhm (504 mW) -> 47.3 C case; 10 A through 4.8 mOhm LFPAK8 (480 mW) -> 52.8 C, through 4.5 mOhm LFPAK4 (450 mW) -> 47.5 C in Table 3 (Fig 18's caption table says 45.3 C; the note keeps the Table 3 value). Junction estimate TJ = TCASE + PD x R_thetaJT (R_thetaJT ~1 C/W assumed for 3x3/5x6) matched the datasheet route TJ = TA + PD x R_thetaJA within ~5 C, so the datasheet R_thetaJA is usable for sizing on a well-spread 4-layer board. At equal loss the 5x6 package runs cooler and leaves more headroom than 3x3 (Table 4 bullets). TI adds: consider the FET's thermal resistance against its maximum dissipation (LM74500-Q1 p17).\n  rule: package=5x6 exposed pad preferred over 3x3 as current rises pd=I^2 x RDS(on) at hot RDS, sized to ~0.5 W tj=TA + PD x R_thetaJA\n  source: research/sources/and90146-d.pdf p.7; research/sources/and90146-d.pdf p.8; research/sources/and90146-d.pdf p.9; research/sources/lm74500-q1.pdf p.17\n- reverse-polarity-fet-constraints-emission [constraints-emission] (principle/verified, workspace)\n  What the block must hand to constraints: a placement group anchored on the RP FET with the controller, its VCAP and C_IN, and the input TVS as members, next to the input connector (LM74500-Q1 Fig 11-1 has them all within the FET's footprint area); VIN and VOUT marked as high-current nets needing wide pours and via arrays on several layers (AND90146 layout); a short-route requirement on the GATE net; and a keep-away between VCAP and the FET's hot copper (sec 11.1).\n  rule: emit=placement group {RP FET, controller, VCAP, CIN, input TVS} at the VIN entry; VIN/VOUT as wide power nets with via arrays on >= 3 layers; gate net short, keep VCAP out of the FET heat zone\n  source: research/sources/lm74500-q1.pdf p.20; research/sources/and90146-d.pdf p.6\n- reverse-polarity-fet-controller-gate-vcap-placement [decoupling] (family/verified, workspace)\n  LM74500-class controller placement (sec 11.1, Fig 11-1): connect the controller's SOURCE and GATE pins close to the FET's source and gate, and route GATE with a short trace - no thin, long gate runs. Keep the charge-pump capacitor (VCAP to SOURCE) AWAY from the FET, because the FET's heat shifts the capacitance value. Size VCAP >= 0.1 uF and >= 10 x the FET's Ciss (sec 9.3.1.2.3), C_IN 0.1 uF typical, C_OUT 220 uF typical in TI's example, and if the source is more than a few inches away add a ceramic bypass > 22 nF at the input (sec 10). In Fig 11-1 the SOT package sits between the FET source pads and the GND plane, GATE (pin 6) runs by a signal via to the FET's G pad, C_VCAP hangs off pins 4-5 on the side away from the FET, and C_IN plus the TVS sit on the VIN pour.\n  rule: cin=0.1 uF; > 22 nF ceramic at the controller if the supply is inches away gate_source=controller GATE/SOURCE close to FET gate/source, short gate trace vcap=>= 0.1 uF and >= 10 x Ciss(FET); placed away from the FET (heat)\n  source: research/sources/lm74500-q1.pdf p.17; research/sources/lm74500-q1.pdf p.20\n- reverse-polarity-fet-current-path-copper [power-loop, thermal] (topology/verified, workspace)\n  All load current passes through the RP FET, so its source and drain copper must be thick to cut resistive loss (LM74500-Q1 sec 11.1). Fig 11-1 shows the FET drain pad as a large top-layer VOUT pour with a grid of power vias, the source pads on a wide VIN pour, C_IN and the input TVS straddling VIN to the GND plane next to the FET, and C_OUT from VOUT to GND. onsemi's 4-layer test board (AND90146 Fig 9-12) carries input and output currents on top, inner1 and inner2 together, stitched by dense via arrays at the connectors and FET, with inner2 also carrying the gate/enable traces and the bottom layer a solid GND plane - spreading current over several layers is what lowered loss and temperature in its measurements.\n  rule: gnd=solid plane layer multilayer=spread VIN/VOUT across several layers with via arrays source_drain=thick/wide copper, the full load current path\n  source: research/sources/lm74500-q1.pdf p.20; research/sources/and90146-d.pdf p.6\n- reverse-polarity-fet-nfet-and-tvs-selection [selection, inrush] (topology/verified, workspace)\n  N-FET ratings for a charge-pump RP stage (LM74500-Q1 sec 9.3.1.2.2): ID above the maximum continuous load; VDS(max) above the highest differential voltage including faults - TI recommends up to 60 V FETs because the SOURCE pin is rated 65 V; the controller drives VGS to 13 V, so pick a 15 V (TI's example: +/-20 V) VGS rating or clamp with a zener; lowest RDS(on). Start-up inrush flows through the BODY DIODE to charge the output bulk before the FET is enhanced, so its maximum source current must exceed that inrush. onsemi AND90146 agrees: 40 V FETs for 12 V nets, 60 V for 24 V nets, logic-level gates, 3x3 or 5x6 exposed-pad packages. TVS (bidirectional in TI's example): breakdown above the worst steady-state input and below the 65 V controller maximum; clamping voltage is far above breakdown and only matters under the pulse. For an input that can reach 28 V plus transients this lands on 60 V FETs and a TVS whose clamp stays under 60-65 V.\n  rule: body_diode=source current rating > start-up inrush into the bulk rds_on=lowest practical tvs=breakdown above worst steady-state input, below controller abs max vds=>= highest differential voltage incl. faults; 60 V class for a 65 V-max controller and 24 V-class nets vgs=rated >= 15 V for a 13 V charge-pump drive, else zener-clamp\n  source: research/sources/lm74500-q1.pdf p.16; research/sources/lm74500-q1.pdf p.17; research/sources/and90146-d.pdf p.4\n- reverse-polarity-fet-no-blocking-for-regen-load [selection] (principle/verified, workspace)\n  Choose the controller by what the load does, not only by the input. A protection device that blocks reverse current is wrong for loads that push energy back - inductive kickback at turn-off or a motor's regenerative action: with the return path blocked, that energy has nowhere to go and the protected rail overshoots, damaging other loads on it. LM74500-Q1 Fig 9-1 splits an automotive body-control supply into a load-driving path (wiper, relays, horn: reverse polarity protection required, reverse current blocking NOT required, LM74500) and a logic path (regulators, DC/DC, supervisors: both required, LM74700). Fig 9-2 marks the output side 'reverse current blocking is not preferred'. The same N-FET in the reverse-polarity-only mode (AND90146 Fig 7: controller drain pin to GND) lets the bulk discharge back into a falling input, while the ideal-diode mode (Fig 6) holds the bulk up and blocks reverse current.\n  rule: logic_or_holdup_path=ideal diode with reverse-current blocking (LM74700-class) regenerating_or_inductive_load=reverse polarity protection only - do NOT block reverse current (LM74500-class)\n  source: research/sources/lm74500-q1.pdf p.13; research/sources/lm74500-q1.pdf p.14; research/sources/and90146-d.pdf p.5"
+}

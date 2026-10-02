@@ -1,0 +1,51 @@
+id: current-sense-shunt-filter-series-r
+classes:
+- emi
+- selection
+applies:
+  topologies:
+  - current-sense-shunt
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  filter_location: at the CSA pins
+  series_r_max_ohm_ina240: 10
+  preferred: filter at the output if possible
+prose: 'If the sense signal is filtered, place the filter parts as close to the CSA as possible (SLVA959B
+  sec 7.8, Fig 7-7/7-8: R30/R31 1 k + C40 100 pF differential RC at the DRV CSA pins, via net ties to
+  the 10 mOhm shunts). For an INA240-class amplifier the datasheet does not recommend an input filter
+  at all; if one is used, keep each series resistor <= 10 ohm, because the internal bias network draws
+  unequal input bias currents (Fig 9-2: IB+ rises ~90 -> 240 uA and IB- falls ~90 -> -60 uA over 0-1 V
+  differential) and the drop across R_S becomes a gain error: factor 3000/(R_S+3000), i.e. 0.17% at 5
+  ohm, 0.33% at 10 ohm, 3.23% at 100 ohm (Table 9-1). The two sources disagree only because the amps differ:
+  the 1 k value belongs to the DRV integrated CSA; for INA240 the datasheet value governs. Check the chosen
+  CSA''s own input structure before copying a filter.'
+sources:
+- file: research/sources/ina240.pdf
+  page: 18
+  note: 'sec 9.1.1 note: input filter not recommended; Fig 9-1 filter at input pins; keep series R <=
+    10 ohm, bias-current mismatch creates differential error'
+- file: research/sources/ina240.pdf
+  page: 19
+  note: 'Fig 9-2 input bias current vs differential voltage; Eq 1-2 gain error factor 3000/(Rs+3000);
+    Table 9-1: 5/10/100 ohm -> 0.17/0.33/3.23 %'
+- file: research/sources/slva959b.pdf
+  page: 34
+  note: 'sec 7.8: filters as close to the CSA as possible; Fig 7-7 1k/100pF/1k input RC with net ties
+    to 10 mOhm shunts; Fig 7-8 its layout'
+status: active
+origin: research:block-current-sense-shunt-1
+level: family
+envelope:
+  bw_khz:
+    min: 0
+    max: 400
+envelope_note: 'The 10 ohm bound scales with the CSA''s input bias network (the 3000 ohm in Eq 2 is INA240''s),
+  so it holds for INA240-class amps only. Bounded to sense bandwidths up to 400 kHz (this slot''s point):
+  with R_S capped at 10 ohm the filter corner is set by C alone, and the needed bandwidth bounds the usable
+  C. A different CSA has a different bias network and bound - re-derive from its datasheet.'
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p18-19 INA240 sec 9.1.1 states <=10 ohm directly (not derived), Table 9-1 matches 5/10/100->0.17/0.33/3.23%; p34 SLVA959B Fig7-7 R13/R14=0.01ohm matches 10 mOhm claim"}

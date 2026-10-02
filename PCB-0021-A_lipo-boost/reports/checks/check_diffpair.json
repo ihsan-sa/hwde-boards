@@ -1,0 +1,17 @@
+{
+ "script": "check_diffpair",
+ "status": "pass",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "checked": [],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T13:31:31+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f"
+}

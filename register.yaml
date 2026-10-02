@@ -1,0 +1,93 @@
+# register.yaml — the one place board part numbers live.
+#
+# A board's number is PCB-NNNN-R: the product key below plus the revision letter whose `dir`
+# is the board's workspace directory (pd-trigger-lite-dip is PCB-0016-B).
+# Revision letters run A, B, C, ... and skip I and O. Products are numbered in the order their
+# first board was committed; a new product takes the next free number, a new revision of an
+# existing product takes that product's next letter. `bom` is the board's fab BOM, left out
+# while the board has none. `change` says what a revision changed from the one before it.
+# hwde only reads this file.
+
+products:
+  PCB-0001:
+    title: STM32F103 2-layer blinky dev board
+    revs:
+      A: {dir: PCB-0001-A_stm32-blinky, date: 2026-07-27, bom: PCB-0001-A_stm32-blinky/fab/BOM.csv}
+  PCB-0002:
+    title: STM32F103 4-layer USB device board with 3.3 V buck
+    revs:
+      A: {dir: PCB-0002-A_usb-buck, date: 2026-07-28, bom: PCB-0002-A_usb-buck/fab/BOM.csv}
+  PCB-0003:
+    title: USB-C PD trigger, 5 A / 100 W bench board
+    revs:
+      A: {dir: PCB-0003-A_pd-trigger, date: 2026-07-28, bom: PCB-0003-A_pd-trigger/fab/BOM.csv}
+  PCB-0004:
+    title: LUMINA PoE ESP32 carrier, 4-layer
+    revs:
+      A: {dir: PCB-0004-A_lumina-carrier, date: 2026-07-28, bom: PCB-0004-A_lumina-carrier/fab/BOM.csv}
+  PCB-0005:
+    title: LUMINA RGB+W par light daughter board
+    revs:
+      A: {dir: PCB-0005-A_lumina-par, date: 2026-07-28}
+  PCB-0006:
+    title: LUMINA strobe daughter board
+    revs:
+      A: {dir: PCB-0006-A_lumina-strobe, date: 2026-07-28}
+  PCB-0007:
+    title: 20 MHz Class E GaN RF power stage, 200 W
+    revs:
+      A: {dir: PCB-0007-A_rf-de-20m, date: 2026-08-08, bom: PCB-0007-A_rf-de-20m/fab/BOM.csv}
+  PCB-0008:
+    title: 12 V to 5 V / 3 A synchronous buck
+    revs:
+      A: {dir: PCB-0008-A_buck-5v3a, date: 2026-08-08}
+      B: {dir: PCB-0008-B_sbuck-5v3a, date: 2026-08-08, bom: PCB-0008-B_sbuck-5v3a/fab/BOM.csv, change: "restarted from the full spec, 4-layer; A was closed unbuilt at P3"}
+  PCB-0009:
+    title: 50 ohm / 150 W RF termination
+    revs:
+      A: {dir: PCB-0009-A_rf-term-150w, date: 2026-08-09, bom: PCB-0009-A_rf-term-150w/fab/BOM.csv}
+  PCB-0010:
+    title: bare-bones 24 V to 5 V / 2 A buck
+    revs:
+      A: {dir: PCB-0010-A_bb-buck, date: 2026-08-15, bom: PCB-0010-A_bb-buck/fab/BOM.csv}
+  PCB-0011:
+    title: block-basics microcontroller board
+    revs:
+      A: {dir: PCB-0011-A_bb-mcu, date: 2026-08-16, bom: PCB-0011-A_bb-mcu/fab/BOM.csv}
+  PCB-0012:
+    title: block-basics 5 V to 3.3 V / 500 mA LDO
+    revs:
+      A: {dir: PCB-0012-A_bb-ldo, date: 2026-08-16, bom: PCB-0012-A_bb-ldo/fab/BOM.csv}
+  PCB-0013:
+    title: block-basics bridge-sensor amplifier
+    revs:
+      A: {dir: PCB-0013-A_bb-amp, date: 2026-08-16, bom: PCB-0013-A_bb-amp/fab/BOM.csv}
+  PCB-0014:
+    title: block-basics 12-bit single-channel ADC
+    revs:
+      A: {dir: PCB-0014-A_bb-adc, date: 2026-08-17, bom: PCB-0014-A_bb-adc/fab/BOM.csv}
+  PCB-0015:
+    title: USB-C STM32G0 temperature/humidity sensor node
+    revs:
+      A: {dir: PCB-0015-A_g0-sense, date: 2026-09-05, bom: PCB-0015-A_g0-sense/fab/BOM.csv}
+  PCB-0016:
+    title: low-cost USB-C PD trigger (CH224K)
+    revs:
+      A: {dir: PCB-0016-A_pd-trigger-lite, date: 2026-09-24, bom: PCB-0016-A_pd-trigger-lite/fab/BOM.csv}
+      B: {dir: PCB-0016-B_pd-trigger-lite-dip, date: 2026-09-24, bom: PCB-0016-B_pd-trigger-lite-dip/fab/BOM.csv, change: "voltage picked with a DIP switch"}
+  PCB-0017:
+    title: TPA3118D2 stereo class-D amplifier, 12 V
+    revs:
+      A: {dir: PCB-0017-A_stereo-class-d-amp, date: 2026-09-27, bom: PCB-0017-A_stereo-class-d-amp/fab/BOM.csv}
+  PCB-0018:
+    title: 3-phase BLDC motor driver, 10-28 V (10 A RMS/phase, STM32G4 FOC)
+    revs:
+      A: {dir: PCB-0018-A_bldc-motor-driver, date: 2026-09-27, bom: PCB-0018-A_bldc-motor-driver/fab/BOM.csv}
+  PCB-0020:
+    title: ESP32-C3 WiFi/BLE sensor node, USB-C, 1S LiPo, BME280
+    revs:
+      A: {dir: PCB-0020-A_esp32c3-node, date: 2026-10-01, bom: PCB-0020-A_esp32c3-node/fab/BOM.csv}
+  PCB-0021:
+    title: single-cell LiPo charger + 5 V / 1 A boost with load sharing
+    revs:
+      A: {dir: PCB-0021-A_lipo-boost, date: 2026-10-01, bom: PCB-0021-A_lipo-boost/fab/BOM.csv}

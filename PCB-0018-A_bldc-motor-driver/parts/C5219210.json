@@ -1,0 +1,58 @@
+{
+  "mpn": "LM74500QDDFRQ1",
+  "lcsc": "C5219210",
+  "package": "SOT-23-THIN-8 (DDF0008A)",
+  "description": "Automotive, ideal-diode reverse-polarity-protection controller for an external N-channel MOSFET.",
+  "pinout": [
+    {"pin": "1", "name": "EN", "type": "input", "notes": "Enable pin. Can be connected to SOURCE for always-ON operation."},
+    {"pin": "2", "name": "GND", "type": "ground", "notes": "Ground pin."},
+    {"pin": "3", "name": "N.C", "type": "nc", "notes": "No connection."},
+    {"pin": "4", "name": "VCAP", "type": "output", "notes": "Charge pump output. Connect to external charge pump capacitor (to SOURCE)."},
+    {"pin": "5", "name": "SOURCE", "type": "power_in", "notes": "Input supply pin to the controller. Connect to the source of the external N-channel MOSFET."},
+    {"pin": "6", "name": "GATE", "type": "output", "notes": "Gate drive output. Connect to gate of the external N-channel MOSFET."},
+    {"pin": "7", "name": "N.C", "type": "nc", "notes": "No connection."},
+    {"pin": "8", "name": "N.C", "type": "nc", "notes": "No connection."}
+  ],
+  "decoupling": [
+    {
+      "pins": ["VCAP", "SOURCE"],
+      "value": "0.1uF (recommended operating condition, VCAP to SOURCE external capacitance)",
+      "placement": "kept away from the MOSFET to lower thermal effects on the capacitance value",
+      "notes": "Charge pump capacitor; sized per recommended operating conditions table."
+    },
+    {
+      "pins": ["SOURCE", "GND"],
+      "value": ">22nF (recommended operating condition, SOURCE external capacitance); higher than 22nF ceramic bypass recommended if input supply is more than a few inches from the device",
+      "placement": "local bypass at SOURCE",
+      "notes": "Power Supply Recommendations section: device operates 3.2V <= VSOURCE <= 65V; use a supply with overload/short-circuit protection."
+    }
+  ],
+  "land_pattern": {
+    "package": "DDF0008A, SOT-23-THIN 8-pin, 1.1mm max height",
+    "pad_count": 8,
+    "pitch_mm": 0.65,
+    "pad_size_mm": [0.45, 1.05],
+    "row_spacing_mm": 2.6,
+    "pin1": "1",
+    "notes": "IPC land pattern from TI's example board layout: 8x pads 0.45mm x 1.05mm at 0.65mm pitch, non-solder-mask-defined preferred. No exposed pad on this package."
+  },
+  "exposed_pad": {
+    "present": false
+  },
+  "layout_notes": [
+    "Connect SOURCE and GATE pins of the LM74500-Q1 close to the MOSFET's SOURCE and GATE pins.",
+    "The high-current path runs through the external MOSFET; use thick traces for the MOSFET source and drain to minimize resistive losses.",
+    "Keep the charge-pump capacitor (across VCAP and SOURCE) away from the MOSFET to limit thermal effects on its capacitance value.",
+    "Connect GATE to the MOSFET gate with a short trace; avoid excessively thin or long gate-drive traces.",
+    "If the input supply is more than a few inches from the device, add an input ceramic bypass capacitor larger than 22nF at SOURCE."
+  ],
+  "abs_max": [
+    {"param": "SOURCE to GND", "value": "-65 to 65", "unit": "V"},
+    {"param": "EN to GND, V(SOURCE) > 0V", "value": "-0.3 to 65", "unit": "V"},
+    {"param": "EN to GND, V(SOURCE) <= 0V", "value": "V(SOURCE) to (65 + V(SOURCE))", "unit": "V"},
+    {"param": "GATE to SOURCE", "value": "-0.3 to 15", "unit": "V"},
+    {"param": "VCAP to SOURCE", "value": "-0.3 to 15", "unit": "V"},
+    {"param": "Operating junction temperature", "value": "-40 to 150", "unit": "C"},
+    {"param": "Storage temperature (Tstg)", "value": "-40 to 150", "unit": "C"}
+  ]
+}

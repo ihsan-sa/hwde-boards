@@ -1,0 +1,53 @@
+id: boost-input-output-caps
+classes:
+- decoupling
+applies:
+  topologies:
+  - boost
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  cin_eff_min_uf: 1.0
+  cin_typ_uf: 10
+  cout_eff_min_uf: 4
+  cout_eff_max_uf: 1000
+  dielectric: X5R or X7R
+prose: 'Cin: X5R/X7R ceramic, as close to the device as possible; 10 uF is sufficient for most applications
+  and the effective range starts at 1 uF. If the source arrives through long leads, add bulk (tantalum
+  or electrolytic) between the ceramic and the source, otherwise a load step can ring the VIN pin and
+  be mistaken for instability or damage the part. Cout: X5R/X7R, 4-1000 uF EFFECTIVE; below that the loop
+  can go unstable. Ceramics lose more than 50% of capacitance at rated voltage, so derate: use a voltage
+  rating well above the 5 V output and size on effective C at bias. COUT >= Iout*Dmax/(fsw*Vripple) for
+  ripple. SLVA372D agrees (X5R or better, low ESR, keep the data-sheet L x C pairing on internally compensated
+  parts). A battery/charger SYS rail is a short, low-impedance source, but a LiPo on a JST lead is a long-lead
+  source: consider bulk.'
+sources:
+- file: research/sources/tps61023.pdf
+  page: 15
+  note: '8.2.2.5 input cap: close to device, 10 uF, bulk if long wires, ringing warning'
+- file: research/sources/tps61023.pdf
+  page: 14
+  note: 8.2.2.3 Eq 8-9, 4-1000 uF effective, >50% derating at rated V
+- file: research/sources/tps61023.pdf
+  page: 4
+  note: '6.3 recommended operating: CIN 1.0 eff min, COUT range'
+- file: research/sources/slva372d.pdf
+  page: 6
+  note: Sec 6-7 input/output capacitor selection, X5R or better
+status: active
+origin: research:block-boost-1
+level: topology
+maturity: verified
+envelope:
+  vout_v:
+    min: 2.2
+    max: 5.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: Scales with integration (hot loop is inside the IC only when both FETs are integrated)
+  and with the part Vout range 2.2-5.5 V read from TPS61023 sec 6.3; discrete-FET boosts have a bigger
+  external loop. Not verified for other integrated boosts.
+verification: {by: "second-reader", date: "2026-10-01", note: "p14-15 text: Cout 4-1000 uF effective, >50% DC-bias loss, 10 uF Cin sufficient, long-wire ringing warning; SLVA372D p6 X5R or better. Note table CIN typ is 4.7 uF vs prose 10 uF (text says 10 uF sufficient) - consistent."}

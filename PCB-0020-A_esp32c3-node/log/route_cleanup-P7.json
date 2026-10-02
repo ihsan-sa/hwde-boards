@@ -1,0 +1,65 @@
+{
+ "script": "route_cleanup",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "dry_run": false,
+ "ops_applied": 6,
+ "refilled": true,
+ "drc_before": {
+  "unconnected": 0,
+  "errors": 0,
+  "warnings": 75,
+  "dangling_flagged": 0
+ },
+ "drc_after": {
+  "unconnected": 0,
+  "errors": 0,
+  "warnings": 75,
+  "dangling_flagged": 0
+ },
+ "ops": [
+  {
+   "op": "remove",
+   "uuid": "2faf5bc8-e0be-435a-ae2a-e52865c68b64"
+  },
+  {
+   "op": "remove",
+   "uuid": "48079cd8-892c-4a17-bb52-729599490fa2"
+  },
+  {
+   "op": "remove",
+   "uuid": "991812f7-0313-4ed7-8829-1d64981f433c"
+  },
+  {
+   "op": "remove",
+   "uuid": "99b86d9d-01f9-46f2-b2ef-a0bc54408335"
+  },
+  {
+   "op": "remove",
+   "uuid": "c2be99ad-bf9e-4634-bc07-cb21ef877b9d"
+  },
+  {
+   "op": "remove",
+   "uuid": "e65313c2-e679-45b2-be23-a3e5e8ee15b7"
+  }
+ ],
+ "dangling_removed": 0,
+ "dangling_segments": 0,
+ "dangling_vias": 0,
+ "loops_broken": 6,
+ "loop_bridge_vetoed": 0,
+ "orphaned_after_loops": 0,
+ "corners_smoothed": 0,
+ "corners": [],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T11:21:27+00:00",
+ "input": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:414374ee168ffcb374c7023536dc977718333f577b2b70433bf94cbfd25df15a"
+}

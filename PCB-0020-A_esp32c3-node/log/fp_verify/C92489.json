@@ -1,0 +1,74 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "LGA-8_BME280_BL.kicad_mod",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "LGA-8_BME280_BL"
+   ],
+   "msg": "pad size(s) [[0.364, 0.767]] mm != datasheet [0.35, 0.5] mm (tol 0.1; min/max of 1 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.364, 0.767]] mm != datasheet [0.35, 0.5] mm (tol 0.1; min/max of 1 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.35,
+    0.5
+   ],
+   "measured_mm": [
+    [
+     0.364,
+     0.767
+    ]
+   ]
+  }
+ ],
+ "footprint": "LGA-8_BME280_BL",
+ "footprint_file": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/LGA-8_BME280_BL.kicad_mod",
+ "copper_pads": 8,
+ "total_pads": 8,
+ "measured_pitch_mm": 0.65,
+ "measured_pad_size_mm": [
+  0.364,
+  0.767
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "LGA-8, 2.5 x 2.5 mm body; recommended landing pattern Fig. 21 (p.43)",
+  "pad_count": 8,
+  "pitch_mm": 0.65,
+  "pad_size_mm": [
+   0.5,
+   0.35
+  ],
+  "row_spacing_mm": 2.05,
+  "pin1": "1",
+  "notes": "Fig. 21 (top view): two columns of 4 pads, pitch 0.65 mm, pad 0.5 mm (x) by 0.35 mm (y), inner pad edge 0.775 mm from the package centre line (so pad-centre column spacing 2.05 mm, derived), pad rows symmetric about the centre line (0.325 mm from centre line to first pad edge); overall 2.50 x 2.50 mm. Pin 1 at top right, pins 1-4 on the right column top to bottom, 5-8 on the left column bottom to top. SMD (solder-mask-defined): land defined by mask openings with larger underlying metal; NSMD: land defined by the metal, with larger mask openings. Courtyard and a paste-mask rule are not given. The datasheet does not state a copper keep-out under the body."
+ },
+ "svg": "PCB-0020-A_esp32c3-node/log/fp_verify/C92489.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:10:09+00:00",
+ "input": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/LGA-8_BME280_BL.kicad_mod",
+ "input_digest": "sexpr_no_uuid:552dba8b57991086549d68efa53a9d81fb3e6d63b6bb140c9ad87bcd076338a2"
+}

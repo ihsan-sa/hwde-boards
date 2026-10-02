@@ -1,0 +1,19 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "move_text",
+   "ref": "C11",
+   "field": "reference",
+   "x": 34.6,
+   "y": 39.75
+  },
+  {
+   "op": "move_text",
+   "ref": "C24",
+   "field": "reference",
+   "x": 55.2,
+   "y": 43.0
+  }
+ ]
+}

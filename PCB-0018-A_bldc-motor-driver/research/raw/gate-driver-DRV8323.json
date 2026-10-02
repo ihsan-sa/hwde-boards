@@ -1,0 +1,324 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "DRV8323",
+ "total": 9,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C701783",
+   "mpn": "DRV8323HRTAR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 12uA 3 No SPI Three Phase WQFN-40-EP(6x6) Brushless DC (BLDC) Motor Driver ROHS",
+   "package": "WQFN-40-EP(6x6)",
+   "category": "Brushless DC (BLDC) Motor Driver",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7773,
+   "price": 2.2492,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.2492
+    },
+    {
+     "qty": 10,
+     "price": 1.939
+    },
+    {
+     "qty": 30,
+     "price": 1.7458
+    },
+    {
+     "qty": 100,
+     "price": 1.3723
+    },
+    {
+     "qty": 500,
+     "price": 1.283
+    },
+    {
+     "qty": 1000,
+     "price": 1.244
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121606_Texas-Instruments-DRV8323HRTAR_C701783.pdf",
+   "url": "https://www.lcsc.com/product-detail/brushless-dc-bldc-motor-driver_texas-instruments-drv8323hrtar_C701783.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Integrated FETs",
+     "value": "No"
+    },
+    {
+     "name": "Number of Half Bridges",
+     "value": "3"
+    },
+    {
+     "name": "Drive Type",
+     "value": "Three Phase"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Interface",
+     "value": "SPI"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C701784",
+   "mpn": "DRV8323SRTAR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 12uA 1A 3 6V~60V SPI Three Phase WQFN-40-EP(6x6) Brushless DC (BLDC) Motor Driver ROHS",
+   "package": "WQFN-40-EP(6x6)",
+   "category": "Brushless DC (BLDC) Motor Driver",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2386,
+   "price": 4.1021,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.1021
+    },
+    {
+     "qty": 10,
+     "price": 3.4931
+    },
+    {
+     "qty": 30,
+     "price": 3.1294
+    },
+    {
+     "qty": 100,
+     "price": 2.764
+    },
+    {
+     "qty": 500,
+     "price": 2.5935
+    },
+    {
+     "qty": 1000,
+     "price": 2.5188
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://datasheet.lcsc.com/lcsc/2303021100_Texas-Instruments-DRV8323SRTAR_C701784.pdf",
+   "url": "https://www.lcsc.com/product-detail/motor driver ics_texas instruments_drv8323srtar_C701784.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V~60V"
+    },
+    {
+     "name": "Number of Half Bridges",
+     "value": "3"
+    },
+    {
+     "name": "Drive Type",
+     "value": "Three Phase"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Interface",
+     "value": "SPI"
+    },
+    {
+     "name": "Peak Current",
+     "value": "1A"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C543035",
+   "mpn": "DRV8323RHRGZR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 12uA 1A 2A 6V~60V Half-Bridge\u3001Three Phase MOSFET Under Voltage Protection\u3001Over Current Protection\u3001Short Circuit Protection\u3001Overtemperature protection (OTP) VQFN-48-EP(7x7) Gate Drivers ROHS",
+   "package": "VQFN-48-EP(7x7)",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 797,
+   "price": 3.472,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.472
+    },
+    {
+     "qty": 10,
+     "price": 3.0027
+    },
+    {
+     "qty": 30,
+     "price": 2.7088
+    },
+    {
+     "qty": 100,
+     "price": 2.4067
+    },
+    {
+     "qty": 500,
+     "price": 2.2719
+    },
+    {
+     "qty": 1000,
+     "price": 2.2118
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303021130_Texas-Instruments-DRV8323RHRGZR_C543035.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_texas-instruments-drv8323rhrgzr_C543035.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge\u3001Three Phase"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.5V~5.5V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V~60V"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "1A"
+    },
+    {
+     "name": "Features",
+     "value": "Enable shutdown\u3001Dead-time control\u3001Charge pump boost"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "0V~800mV"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "2A"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2653553",
+   "mpn": "DRV8323RSRGZT",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 1A\u30012A SPI VQFN-48-EP(7x7) Gate Drivers ROHS",
+   "package": "VQFN-48-EP(7x7)",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 103,
+   "price": 9.3328,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 9.3328
+    },
+    {
+     "qty": 10,
+     "price": 8.1311
+    },
+    {
+     "qty": 30,
+     "price": 7.3987
+    },
+    {
+     "qty": 100,
+     "price": 6.7848
+    },
+    {
+     "qty": 102,
+     "price": 6.7848
+    },
+    {
+     "qty": 104,
+     "price": 6.7848
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302221130_Texas-Instruments-DRV8323RSRGZT_C2653553.pdf",
+   "url": "https://www.lcsc.com/product-detail/brushless-dc-bldc-motor-driver_texas-instruments-drv8323rsrgzt_C2653553.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Three Phase"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.5V~5.5V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V~60V"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "1A"
+    },
+    {
+     "name": "Features",
+     "value": "Enable shutdown\u3001Interleaved conduction protection\u3001Dead-time control\u3001Charge pump boost"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "6"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "0V~800mV"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "2A"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 1
+}

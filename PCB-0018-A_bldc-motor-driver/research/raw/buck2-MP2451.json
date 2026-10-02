@@ -1,0 +1,476 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "MP2451",
+ "total": 15,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C1975086",
+   "mpn": "RCLAMP2451ZATFT",
+   "brand": "SEMTECH",
+   "description": "0.35pF 1 24V 31V 32W@8/20us 4A@8/20us 50nA 8V Bidirectional IEC 61000-4-2 TVS 0201 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "0201",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7373,
+   "price": 0.1962,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1962
+    },
+    {
+     "qty": 50,
+     "price": 0.1594
+    },
+    {
+     "qty": 150,
+     "price": 0.1436
+    },
+    {
+     "qty": 500,
+     "price": 0.124
+    },
+    {
+     "qty": 2500,
+     "price": 0.1152
+    },
+    {
+     "qty": 5000,
+     "price": 0.11
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_semtech-rclamp2451zatft_C1975086.html",
+   "attributes": [
+    {
+     "name": "Type",
+     "value": "TVS"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.35pF"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "32W@8/20us"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "8V"
+    },
+    {
+     "name": "Polarity",
+     "value": "Bidirectional"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "4A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "31V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "24V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "50nA"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C49375219",
+   "mpn": "MSMP2451DJ-LF-Z",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+85\u2103 4.5V~60V 600mA 700uA Adjustable Buck Buck Built-in SOT-23-6 DC-DC Converters ROHS",
+   "package": "SOT-23-6",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2395,
+   "price": 0.2622,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2622
+    },
+    {
+     "qty": 50,
+     "price": 0.2073
+    },
+    {
+     "qty": 150,
+     "price": 0.1827
+    },
+    {
+     "qty": 500,
+     "price": 0.1533
+    },
+    {
+     "qty": 3000,
+     "price": 0.1404
+    },
+    {
+     "qty": 6000,
+     "price": 0.1326
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "No"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "2MHz"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.5V~60V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "700uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C3019810",
+   "mpn": "MP2451DJ-LF-Z",
+   "brand": "Monolithic Power Systems",
+   "description": "-40\u2103~+125\u2103@(TJ) 1 130uA 2MHz 3.3V~36V 600mA 800mV~28.8V Adjustable Buck Built-in No Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Built-in LDO regulator Step-down type TSOT-23-6 DC-DC Converters ROHS",
+   "package": "TSOT-23-6",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1879,
+   "price": 2.2961,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.2961
+    },
+    {
+     "qty": 50,
+     "price": 2.1037
+    },
+    {
+     "qty": 100,
+     "price": 1.8856
+    },
+    {
+     "qty": 500,
+     "price": 1.7316
+    },
+    {
+     "qty": 1000,
+     "price": 1.6162
+    },
+    {
+     "qty": 3000,
+     "price": 1.5905
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403151709_Monolithic-Power-Systems-MP2451DJ-LF-Z_C3019810.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_monolithic-power-systems-mp2451dj-lf-z_C3019810.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(TJ)"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "No"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "2MHz"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.3V~36V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "130uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Built-in LDO regulator"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "800mV~28.8V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2936988",
+   "mpn": "TPRCLAMP2451ZA",
+   "brand": "TECH PUBLIC",
+   "description": "-55\u2103~+125\u2103 0.3pF 100nA 24V 26.4V 2A@8/20us 55V 90W@8/20us IEC 61000-4-2\u3001IEC 61000-4-5 DFN0603-2 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "DFN0603-2",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1365,
+   "price": 0.0759,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0759
+    },
+    {
+     "qty": 100,
+     "price": 0.0603
+    },
+    {
+     "qty": 300,
+     "price": 0.0525
+    },
+    {
+     "qty": 1000,
+     "price": 0.0467
+    },
+    {
+     "qty": 5000,
+     "price": 0.0402
+    },
+    {
+     "qty": 10000,
+     "price": 0.0377
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204181745_TECH-PUBLIC-TPRCLAMP2451ZA_C2936988.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_tech-public-tprclamp2451za_C2936988.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "TVS"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.3pF"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "90W@8/20us"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2\u3001IEC 61000-4-5"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "55V"
+    },
+    {
+     "name": "Polarity",
+     "value": "Bidirectional"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "26.4V"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "2A@8/20us"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "24V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "100nA"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C14123",
+   "mpn": "MP2451DT-LF-Z",
+   "brand": "Monolithic Power Systems",
+   "description": "-40\u2103~+125\u2103 1 130uA 2MHz 3.3V~36V 600mA 800mV~28.8V Adjustable Buck Buck Built-in No SOT-23-6 DC-DC Converters ROHS",
+   "package": "SOT-23-6",
+   "category": "DC-DC Converters",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1011,
+   "price": 2.9668,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.9668
+    },
+    {
+     "qty": 50,
+     "price": 2.8246
+    },
+    {
+     "qty": 100,
+     "price": 2.4879
+    },
+    {
+     "qty": 500,
+     "price": 2.0754
+    },
+    {
+     "qty": 1000,
+     "price": 1.5433
+    },
+    {
+     "qty": 3000,
+     "price": 1.4635
+    }
+   ],
+   "min_qty": 4,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403151708_Monolithic-Power-Systems-MP2451DT-LF-Z_C14123.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_monolithic-power-systems-mp2451dt-lf-z_C14123.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Function",
+     "value": "Step-down type"
+    },
+    {
+     "name": "Synchronous Rectifier",
+     "value": "No"
+    },
+    {
+     "name": "Frequency - Switching",
+     "value": "2MHz"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.3V~36V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Adjustable"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "130uA"
+    },
+    {
+     "name": "Features",
+     "value": "Overcurrent Protection\u3001Light load efficient mode\u3001Cycle-by-cycle current limiting\u3001Built-in LDO regulator"
+    },
+    {
+     "name": "Switch tube (built-in/external)",
+     "value": "Built-in"
+    },
+    {
+     "name": "Topology",
+     "value": "Buck"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "800mV~28.8V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 4
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 5
+}

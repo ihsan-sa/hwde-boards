@@ -1,0 +1,150 @@
+{
+  "script": "gate",
+  "gate": "place",
+  "phase": "P6",
+  "tool": "place",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:4f1f5a2e4fcfe8de39116b8a15dc339e272f74f3d2ee851e1dec2aa2dcabd547",
+  "status": "fail",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 3,
+    "by_severity": {
+      "error": 3
+    },
+    "by_source": {
+      "check.place": 3
+    }
+  },
+  "failing_count": 3,
+  "failing": [
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        36.2815,
+        34.7425
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C11",
+        "L1"
+      ],
+      "msg": "courtyard overlap C11/L1 (1.00 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C11/L1 (1.00 mm2)",
+          "pos": [
+            36.2815,
+            34.7425
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.9972
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.2,
+        22.5225
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C18",
+        "C8"
+      ],
+      "msg": "courtyard overlap C18/C8 (0.27 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C18/C8 (0.27 mm2)",
+          "pos": [
+            32.2,
+            22.5225
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.2712
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        36.129,
+        33.2
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C9",
+        "L1"
+      ],
+      "msg": "courtyard overlap C9/L1 (0.62 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C9/L1 (0.62 mm2)",
+          "pos": [
+            36.129,
+            33.2
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.6188
+    }
+  ],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "ran": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "passed": [
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "failed": [
+      "courtyard"
+    ],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0017-A_astra-amp",
+    "gate": "place",
+    "status": "fail",
+    "attempts": 5,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:4f1f5a2e4fcfe8de39116b8a15dc339e272f74f3d2ee851e1dec2aa2dcabd547",
+      "constraints": "json_canonical:010a016dfd4c5decbd308b548830a8f178c121a4d4078e5556153e1278bda1ed",
+      "decoupling": "json_canonical:aca94291a3791b958b2be40d518c04b5903398300f1e8824edf99426099dcada"
+    }
+  }
+}

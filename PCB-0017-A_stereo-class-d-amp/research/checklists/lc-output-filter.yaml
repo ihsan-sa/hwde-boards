@@ -1,0 +1,39 @@
+# Coverage checklist for block 'lc-output-filter' (class-D BTL second-order
+# LC reconstruction filter, cap-to-ground per leg). Drafted from TI's LC
+# filter app note (SLAA701B), the TPA31xxD2 datasheet layout/filter sections
+# (SLOS708G), the TPA3116D2EVM guide (SLOU336B) and Coilcraft doc 1404. The
+# owner approves it; a research pass fills the classes it lists.
+id: lc-output-filter
+kind: coverage-checklist
+applies:
+  topologies: [lc-output-filter]
+requires:
+  - {class: selection, min_level: topology, note: "L/C pairing from the single-ended equivalent (Butterworth Q at the design load), Q drift across the load range, inductor Isat vs peak current and minimum L at the overcurrent trip, cap voltage/DC-bias derating"}
+  - {class: emi, min_level: topology, note: "filter placed at the output pins with the smallest pin->L->C->GND loop; switch-node RC snubber and post-filter RC/1 nF network as the family's EMI parts"}
+  - {class: return-path, min_level: topology, note: "filter cap and snubber grounds return to the IC GND star through solid GND copper, both layers filled and stitched on a 2-layer board"}
+  - {class: thermal, min_level: topology, note: "I^2 x DCR is paid twice per BTL channel plus idle core loss - a real dissipation line, not a footnote"}
+  - {class: constraints-emission, min_level: principle, note: "what the block must emit into constraints.json (proximity, loop, output net width) - an emission contract, not physics"}
+maturity: draft
+sources:
+  - {file: research/sources/slaa701b.pdf, page: 7, note: "Fig 1-6 effect of Q: TI recommends Butterworth (Q 0.707); underdamped peaking is harsh and can trip overcurrent, overdamped loses HF audio"}
+  - {file: research/sources/slaa701b.pdf, page: 8, note: "Table 1-2 filter types: Type-1 differential C_BTL (AD only), Type-2 C_g to ground (BD or AD), hybrid; SE equivalents used for the maths"}
+  - {file: research/sources/slaa701b.pdf, page: 19, note: "1.4.1 inductor linearity: Isat definitions differ by vendor (some at 30% drop); running to Isat gives very poor audio"}
+  - {file: research/sources/slaa701b.pdf, page: 22, note: "eq 12 idle ripple peak PVDD/(8 L fpwm); 1.4.3 minimum inductance keeps the OC protection ahead of a shorted output"}
+  - {file: research/sources/slaa701b.pdf, page: 32, note: "cap voltage: DC at PVDD/2 plus AC plus overshoot; ceramic derating guideline C x (1 - Vapplied/Vrated); ESR < 1 ohm"}
+  - {file: research/sources/tpa3116d2.pdf, page: 28, note: "10.1 layout guidelines: smallest output->filter->GND loop, star ground at IC GND, LC close to the outputs, filter caps grounded"}
+  - {file: research/sources/tpa3116d2.pdf, page: 26, note: "Fig 37 typical schematic: OUTPUT LC FILTER 10 uH + 680 nF per leg to GND, then EMI C-RC SNUBBER 3.3R+10nF and 1 nF per leg"}
+  - {file: research/sources/slou336b.pdf, page: 6, note: "Fig 3 EVM top: L1-L4 immediately at the output pins, 0.68 uF caps at the inductor outputs, top filled with GND"}
+prose: >
+  Before designing a class-D BTL LC output filter a designer must hold: how
+  the L/C pair is chosen from the single-ended equivalent (Type-2, cap to
+  ground: C = C_g, R_L = R_BTL/2) so that Q sits near 0.707 at the design
+  load and how Q moves with load impedance (Q = R_L sqrt(C/L)); that the
+  post-filter 3.3R+10nF network is an EMI snubber, not audio-band damping;
+  that the inductor is judged on its L-vs-I curve at the peak current and must
+  keep the vendor's minimum inductance at the overcurrent trip; that the
+  filter cap sees PVDD/2 DC plus the full swing and is derated for DC bias;
+  that the pin->L->C->GND loop is the antenna and is kept smallest with a star
+  return at the IC GND on solid copper; and that I^2 DCR is paid twice per
+  channel. Part-level coverage (each IC's own filter recommendation) is
+  checked per part slot, not here.
+origin: research:block-lc-output-filter-1

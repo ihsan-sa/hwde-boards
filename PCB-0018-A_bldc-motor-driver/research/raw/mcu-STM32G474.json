@@ -1,0 +1,472 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "STM32G474",
+ "total": 46,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C1235414",
+   "mpn": "STM32G474RBT3",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+125\u2103 1.71V~3.6V 128KB 128KB 12bit 12bit 170MHz 32 Bit 52 ARM Cortex-M4F Built-in FLASH LQFP-64(10x10) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-64(10x10)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2082,
+   "price": 4.0242,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.0242
+    },
+    {
+     "qty": 10,
+     "price": 3.5873
+    },
+    {
+     "qty": 30,
+     "price": 3.3291
+    },
+    {
+     "qty": 160,
+     "price": 3.066
+    },
+    {
+     "qty": 480,
+     "price": 2.9459
+    },
+    {
+     "qty": 960,
+     "price": 2.8907
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G474RBT3_C1235414.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g474rbt3_C1235414.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "128KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "128KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "52"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2970837",
+   "mpn": "STM32G474VET3",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+125\u2103 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 512KB 86 ARM Cortex-M4F Built-in FLASH LQFP-100(14x14) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-100(14x14)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 749,
+   "price": 9.8573,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 9.8573
+    },
+    {
+     "qty": 10,
+     "price": 8.6199
+    },
+    {
+     "qty": 30,
+     "price": 7.8664
+    },
+    {
+     "qty": 90,
+     "price": 7.2347
+    },
+    {
+     "qty": 92,
+     "price": 7.2347
+    },
+    {
+     "qty": 94,
+     "price": 7.2347
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211080700_STMicroelectronics-STM32G474VET3_C2970837.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g474vet3_C2970837.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "512KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "128KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "86"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C730123",
+   "mpn": "STM32G474CBT6",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+85\u2103 1.71V~3.6V 128KB 128KB 12bit 12bit 170MHz 32 Bit 38 ARM Cortex-M4F Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-48_7x7",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 730,
+   "price": 4.2824,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.2824
+    },
+    {
+     "qty": 10,
+     "price": 3.766
+    },
+    {
+     "qty": 30,
+     "price": 3.5029
+    },
+    {
+     "qty": 250,
+     "price": 3.1505
+    },
+    {
+     "qty": 500,
+     "price": 3.0222
+    },
+    {
+     "qty": 1000,
+     "price": 2.9686
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G474CBT6_C730123.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g474cbt6_C730123.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "128KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "128KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "38"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C730129",
+   "mpn": "STM32G474QET6",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+85\u2103 1.71V~3.6V 107 128KB 12bit 12bit 170MHz 32 Bit 512KB ARM Cortex-M4F Built-in FLASH LQFP-128(14x14) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-128(14x14)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 690,
+   "price": 13.9967,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 13.9967
+    },
+    {
+     "qty": 10,
+     "price": 12.4345
+    },
+    {
+     "qty": 30,
+     "price": 11.4813
+    },
+    {
+     "qty": 100,
+     "price": 10.6823
+    },
+    {
+     "qty": 102,
+     "price": 10.6823
+    },
+    {
+     "qty": 104,
+     "price": 10.6823
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G474QET6_C730129.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g474qet6_C730129.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "512KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "128KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "107"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C730124",
+   "mpn": "STM32G474CCT6",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+85\u2103 1.71V~3.6V 128KB 12bit 12bit 170MHz 256KB 32 Bit 38 ARM Cortex-M4 Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-48(7x7)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 573,
+   "price": 6.8709,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 6.8709
+    },
+    {
+     "qty": 10,
+     "price": 6.0086
+    },
+    {
+     "qty": 30,
+     "price": 5.4841
+    },
+    {
+     "qty": 100,
+     "price": 5.0424
+    },
+    {
+     "qty": 102,
+     "price": 5.0424
+    },
+    {
+     "qty": 104,
+     "price": 5.0424
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G474CCT6_C730124.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g474cct6_C730124.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "256KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "128KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "38"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 4
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

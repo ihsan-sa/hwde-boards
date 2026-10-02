@@ -1,0 +1,4 @@
+{"version":1,"ops":[
+{"op":"move_text","ref":"C18","field":"reference","x":34.7,"y":21.9,"deg":0},
+{"op":"move_text","ref":"C9","field":"reference","x":29.9,"y":34.8,"deg":0}
+]}

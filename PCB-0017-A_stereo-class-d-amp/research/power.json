@@ -1,0 +1,33 @@
+{
+  "rails": [
+    {"net": "+12V", "vin": "10.8-13.2 V external adapter via J1 wire pads", "topology": "direct",
+     "current_a": 4.0,
+     "consumers": ["U1 PVCC 31/32 + 18/19: 2 x 4 ohm BTL, 3.6 A at 12 V / 10 % THD, 4.0 A at 13.2 V (power.md table 3)",
+                   "U1 AVCC 17: 20 mA typ, 35 mA max quiescent (SLOS708G 6.5)",
+                   "SDZ/FAULTZ/MUTE 100k pull-ups: <0.5 mA"],
+     "dissipation_w": 0.0,
+     "note": "no regulator; U1 loss is listed under thermal_constraints"},
+    {"net": "/GVDD", "vin": "U1 internal LDO from AVCC", "topology": "ldo",
+     "current_a": 0.0002,
+     "consumers": ["PLIMIT tie (no limit)", "GAIN/SLV divider (5.6k to GND, R2 open: 20 dB master)", "1 uF decoupling"],
+     "dissipation_w": 0.0,
+     "note": "internal to U1, not a board regulator; IGVDD < 200 uA (SLOS708G 6.5)"}
+  ],
+  "power_constraints": [
+    {"net": "+12V", "current_a": 4.0, "dt_c": 20, "via_amps": 0.5},
+    {"net": "/OUTPL", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/OUTNL", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/OUTPR", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/OUTNR", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false}
+  ],
+  "thermal_constraints": [
+    {"ref": "U1", "power_w": 1.5, "net": "GND", "dt_c": 85, "min_vias": 15}
+  ],
+  "notes": [
+    "output_net_names: provisional, from the TPA31xxD2 pin names; P2 must rename to its schematic nets and add the post-inductor speaker nets at the same 3 A",
+    "thermal_design_point: 1.5 W covers 8 ohm full power at 13.2 V (1.5 W) and 4 ohm music (0.8 W); 4 ohm continuous full-power sine is 3.0-4.2 W and is outside a 44x34 mm no-heatsink board (power.md section 4)",
+    "min_vias: applies to the pad-down TPA3118D2 (DAP); the TPA3116D2 (DAD) has no bottom pad",
+    "copper: 2 oz outer recommended",
+    "inductor: Isat >= 4 A, >= 1 uH at 7.5 A OC trip, DCR <= 30 mOhm"
+  ]
+}

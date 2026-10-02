@@ -1,0 +1,58 @@
+{
+ "waivers": [
+  {
+   "check": "check_current",
+   "kind": "pour_neckdown",
+   "net": "+SYS",
+   "pos": [
+    48.25,
+    54.8686
+   ],
+   "reason": "Spot is the DONE-LED branch (R6, a few mA) on a 0.6 mm B.Cu strip, not the 2.2 A boost-input path; the 2.2 A budget is net-wide.",
+   "approved": "PROVISIONAL (agent-proposed 2026-10-01, pending owner approval)"
+  },
+  {
+   "check": "check_current",
+   "kind": "insufficient_transition_vias",
+   "net": "+SYS",
+   "pos": [
+    48.25,
+    55.875
+   ],
+   "reason": "Two vias feed R6/LED (a few mA); the net-wide 2.2 A budget does not apply to this branch.",
+   "approved": "PROVISIONAL (agent-proposed 2026-10-01, pending owner approval)"
+  },
+  {
+   "check": "check_current",
+   "kind": "pour_neckdown",
+   "net": "GND",
+   "pos": [
+    63.4637,
+    51.2574
+   ],
+   "reason": "F.Cu GND sliver beside the USB-A J4 THT pads; GND return from J4 goes through its THT pads into the B.Cu GND plane, which is the parallel full-width path.",
+   "approved": "PROVISIONAL (agent-proposed 2026-10-01, pending owner approval)"
+  },
+  {
+   "check": "check_current",
+   "kind": "insufficient_transition_vias",
+   "net": "GND",
+   "pos": [
+    41.25,
+    51.22
+   ],
+   "reason": "U1 exposed pad fits 4 thermal vias (0.5 mm pitch limit with pad pitch), the fifth does not fit; 4 vias carry the charger return (<=1.5 A worst case) at 0.5 A each=2 A.",
+   "approved": "PROVISIONAL (agent-proposed 2026-10-01, pending owner approval)"
+  },
+  {
+   "check": "check_thermal",
+   "kind": "thermal_area",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "reason": "Model floor for a 2-layer board is ~55 C/W so 1.1 W worst case (5 V in, 3 V cell, 1.5 A) cannot reach 40 C rise; GND copper already saturates the model (645 mm2). BQ24074 has internal 125 C thermal regulation that folds back charge current; typical dissipation is lower.",
+   "approved": "PROVISIONAL (agent-proposed 2026-10-01, pending owner approval)"
+  }
+ ]
+}

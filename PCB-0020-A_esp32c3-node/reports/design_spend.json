@@ -1,0 +1,6 @@
+{
+  "actual_usd": 27.19,
+  "cap_usd": 48.0,
+  "source": "the track loop of esp32c3-node (6 iterations), subagents inside those iterations included; not included: landing reviews, planning-seat turns, and renders or report builds after the track ended",
+  "as_of": "2026-10-01"
+}

@@ -1,0 +1,48 @@
+id: class-d-amp-output-loop-star-ground
+classes:
+- power-loop
+- return-path
+applies:
+  topologies:
+  - class-d-amp
+  packages: []
+  interfaces: []
+  parts: []
+rule: null
+prose: 'Principle for any switching audio output stage: the loop from each output pin through its filter
+  (ferrite or LC) and the small filter cap back to GND is the board''s antenna, so its area sets the EMI;
+  make it as small and tight as possible, and bring every ground - PVCC decoupling, filter caps, snubbers
+  - to the IC''s GND/thermal pad as a central (star) ground. SLOS708 p28 (10.1): ''keep the current loop
+  from each of the outputs through the ferrite bead and the small filter cap and back to GND as small
+  and tight as possible. The size of this current loop determines its effectiveness as an antenna''; ''all
+  ground should be connected at the IC GND, which should be used as a central ground connection or star
+  ground''; the filter should be placed as close to the output terminals/outputs as possible. p29 Fig
+  40 annotations: ''output filters placed close to the output pins to minimize return loop'', ''direct
+  low impedance traces for PVCC and output traces''. SLOU342A p7 Fig 4: L1-L4 sit one part-length from
+  OUTxx pins on wide traces, the filter caps between the inductors and the terminals with their GND ends
+  on the top pour; p9 Fig 6 x-ray: the bottom-side routes are the wide PVCC feed from the binding post
+  to the two PVCC pin groups plus about nine short small-signal jumpers left of U1 - nothing bottom-side
+  under the output loops on the right. The mechanism is loop area x di/dt, which bounds nothing about
+  the operating point, so this is a principle; the class-D wording keys retrieval.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 28
+  note: '10.1 bullets: output loop small and tight (antenna), grounding at IC GND star, output filter
+    close to outputs'
+- file: research/sources/tpa3116d2.pdf
+  page: 29
+  note: 'Fig 40 annotations: filters close to output pins to minimise return loop; direct low-impedance
+    PVCC/output traces'
+- file: research/sources/slou342a.pdf
+  page: 7
+  note: 'Fig 4: inductors adjacent to output pins, filter caps between L and terminals, GND to top pour'
+- file: research/sources/slou342a.pdf
+  page: 9
+  note: 'Fig 6 x-ray: bottom routes are the PVCC feed (red) and ~9 short small-signal jumpers left of
+    U1; none under the output loops'
+status: active
+origin: research:block-class-d-amp-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "research-second-reader", date: "2026-09-27", note: "Pass 2: SLOU342A p9 Fig 6 / p8 Fig 5 bottom = PVCC-only feed plus short jumpers, none inside the U1-L-C output loops - load-bearing claim holds. Nit: 8 jumpers are left of U1; 2 more are crossovers at the R+ and L- test-point runs by the output posts, outside the loops."}

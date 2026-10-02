@@ -1,0 +1,364 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "XC6220B331MR",
+ "total": 4,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C86534",
+   "mpn": "XC6220B331MR-G",
+   "brand": "Torex Semicon",
+   "description": "-40\u2103~+85\u2103 1 1A 3.3V 50dB@(1kHz) 655mV@(1A) 6V 8uA Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable\u3001Short Circuit Protection Positive SOT-25 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-25",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 29561,
+   "price": 0.4731,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.4731
+    },
+    {
+     "qty": 10,
+     "price": 0.3707
+    },
+    {
+     "qty": 30,
+     "price": 0.3284
+    },
+    {
+     "qty": 100,
+     "price": 0.2748
+    },
+    {
+     "qty": 500,
+     "price": 0.2358
+    },
+    {
+     "qty": 1000,
+     "price": 0.2211
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810010324_Torex-Semicon-XC6220B331MR-G_C86534.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_torex-semicon-xc6220b331mr-g_C86534.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "50dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "8uA"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "1A"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control\u3001Output discharge"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "655mV@(1A)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C22466451",
+   "mpn": "XC6220B331MR",
+   "brand": "TDSEMIC",
+   "description": "-20\u2103~+60\u2103@(Ta) 1 25uA 280mV@(100mA) 3.3V 300mA 75dB@(1kHz) 7V Enable Fixed Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 15833,
+   "price": 0.042,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.042
+    },
+    {
+     "qty": 200,
+     "price": 0.0326
+    },
+    {
+     "qty": 600,
+     "price": 0.0274
+    },
+    {
+     "qty": 3000,
+     "price": 0.0241
+    },
+    {
+     "qty": 9000,
+     "price": 0.0215
+    },
+    {
+     "qty": 21000,
+     "price": 0.02
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2407051524_TDSEMIC-XC6220B331MR_C22466451.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tdsemic-xc6220b331mr_C22466451.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-20\u2103~+60\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "25uA"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "7V"
+    },
+    {
+     "name": "Output Current",
+     "value": "300mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "280mV@(100mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C3040644",
+   "mpn": "XC6220B331MR",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 25uA 3.3V 400mV@(800mA) 5.5V 50dB@(10kHz) 900mA Fixed Over Current Protection\u3001Over Temperature Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7579,
+   "price": 0.2003,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2003
+    },
+    {
+     "qty": 50,
+     "price": 0.1599
+    },
+    {
+     "qty": 150,
+     "price": 0.1425
+    },
+    {
+     "qty": 500,
+     "price": 0.1207
+    },
+    {
+     "qty": 3000,
+     "price": 0.1049
+    },
+    {
+     "qty": 6000,
+     "price": 0.0991
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206301715_TECH-PUBLIC-XC6220B331MR_C3040644.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-xc6220b331mr_C3040644.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "50dB@(10kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "25uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "900mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "400mV@(800mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C54539941",
+   "mpn": "XC6220B331MR-MS",
+   "brand": "MSKSEMI",
+   "description": "SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2137,
+   "price": 0.1774,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1774
+    },
+    {
+     "qty": 50,
+     "price": 0.1405
+    },
+    {
+     "qty": 150,
+     "price": 0.1247
+    },
+    {
+     "qty": 500,
+     "price": 0.1051
+    },
+    {
+     "qty": 3000,
+     "price": 0.0963
+    },
+    {
+     "qty": 6000,
+     "price": 0.0909
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "80dB@(100Hz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Features",
+     "value": "Thermal shutdown\u3001Enable control\u3001Current limit protection"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

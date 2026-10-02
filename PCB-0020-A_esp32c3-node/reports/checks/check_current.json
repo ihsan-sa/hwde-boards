@@ -1,0 +1,1319 @@
+{
+ "script": "check_current",
+ "status": "violations",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 47,
+  "by_severity": {
+   "error": 2,
+   "warning": 45
+  },
+  "by_source": {
+   "check_current": 47
+  }
+ },
+ "violations": [
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    17.5489,
+    38.252
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+     "pos": [
+      17.5489,
+      38.252
+     ]
+    }
+   ],
+   "kind": "pour_neckdown",
+   "neck_mm": 0.0,
+   "required_mm": 0.35,
+   "current_a": 0.7
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    11.8878,
+    33.4506
+   ],
+   "layer": "B.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "GND pour on B.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND pour on B.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+     "pos": [
+      11.8878,
+      33.4506
+     ]
+    }
+   ],
+   "kind": "pour_neckdown",
+   "neck_mm": 0.0,
+   "required_mm": 0.35,
+   "current_a": 0.7
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.054,
+    36.5038
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.05, 36.50) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.05, 36.50) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.054,
+      36.5038
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    33.25,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (33.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (33.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      33.25,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    35.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      35.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    30.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (30.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (30.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      30.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    15.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      15.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    28.25,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (28.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (28.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      28.25,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    16.0,
+    26.6608
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (16.00, 26.66) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (16.00, 26.66) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      16.0,
+      26.6608
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.75,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.75,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    21.5647,
+    24.7013
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (21.56, 24.70) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (21.56, 24.70) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      21.5647,
+      24.7013
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    25.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 25.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 25.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      25.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    18.25,
+    35.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (18.25, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (18.25, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      18.25,
+      35.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    40.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      40.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    15.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      15.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    18.25,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (18.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (18.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      18.25,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    40.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      40.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    33.25,
+    40.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (33.25, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (33.25, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      33.25,
+      40.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.4004,
+    40.9408
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.40, 40.94) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.40, 40.94) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.4004,
+      40.9408
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    38.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      38.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    18.25,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (18.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (18.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      18.25,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    33.25,
+    38.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (33.25, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (33.25, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      33.25,
+      38.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    26.283,
+    17.5587
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (26.28, 17.56) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (26.28, 17.56) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      26.283,
+      17.5587
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    33.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      33.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    26.6836,
+    10.9691
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (26.68, 10.97) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (26.68, 10.97) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      26.6836,
+      10.9691
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    13.5299
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (14.60, 13.53) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (14.60, 13.53) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      14.6,
+      13.5299
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    26.0297,
+    15.4814
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (26.03, 15.48) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (26.03, 15.48) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      26.0297,
+      15.4814
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    35.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      35.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    33.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      33.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.75,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.75,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.0675,
+    20.7119
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.07, 20.71) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.07, 20.71) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.0675,
+      20.7119
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  }
+ ],
+ "checked": [
+  {
+   "net": "VBUS",
+   "current_a": 0.5,
+   "dt_c": 10.0,
+   "required_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "min_track_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "via_clusters": 5
+  },
+  {
+   "net": "VSYS",
+   "current_a": 0.5,
+   "dt_c": 10.0,
+   "required_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "min_track_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "via_clusters": 2
+  },
+  {
+   "net": "VBAT",
+   "current_a": 0.5,
+   "dt_c": 10.0,
+   "required_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "min_track_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "via_clusters": 3
+  },
+  {
+   "net": "+3V3",
+   "current_a": 0.5,
+   "dt_c": 10.0,
+   "required_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "min_track_mm_by_layer": {
+    "F.Cu": 0.25,
+    "B.Cu": 0.25
+   },
+   "via_clusters": 4
+  },
+  {
+   "net": "GND",
+   "current_a": 0.7,
+   "dt_c": 10.0,
+   "required_mm_by_layer": {
+    "F.Cu": 0.35,
+    "B.Cu": 0.35
+   },
+   "min_track_mm_by_layer": {
+    "F.Cu": 0.35,
+    "B.Cu": 0.35
+   },
+   "via_clusters": 48,
+   "plane_fed": true,
+   "advisory_violations": 45
+  }
+ ],
+ "stackup_assumed": false,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T12:52:43+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695"
+}

@@ -1,0 +1,11 @@
+{
+ "block": "decoupling-caps",
+ "candidates": [
+  {"mpn": "CL21A225KBQNNNE", "lcsc": "C377773", "package": "0805", "basic": true, "stock": 682011, "price": 0.053, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21A225KBQNNNE_C377773.pdf", "rank": 1, "fit": "2.2uF X7R 50V input coupling, the reference design's value, Basic"},
+  {"mpn": "CL10A105KB8NNNC", "lcsc": "C15849", "package": "0603", "basic": true, "stock": 6785078, "price": 0.0752, "datasheet": "", "rank": 2, "fit": "GVDD decoupling, 1uF X7R 50V, Basic, smallest footprint at value (one per IC)"},
+  {"mpn": "CL21B224KBFNNNE", "lcsc": "C5378", "package": "0805", "basic": true, "stock": 671741, "price": 0.0187, "datasheet": "", "rank": 3, "fit": "bootstrap cap, 0.22uF/220nF X7R 50V, Basic, x4 per board (one per half-bridge FET)"},
+  {"mpn": "CL10B102KB8NNNC", "lcsc": "C1588", "package": "0603", "basic": true, "stock": 8224224, "price": 0.0089, "datasheet": "", "rank": 4, "fit": "1nF C0G per PVCC pair, Basic, best stock"},
+  {"mpn": "CC0603KRX7R9BB104", "lcsc": "C14663", "package": "0603", "basic": true, "stock": 51362410, "price": 0.0122, "datasheet": "", "rank": 5, "fit": "100nF X7R 50V per PVCC pair, Basic, huge stock"},
+  {"mpn": "CL21A106KAYNNNE", "lcsc": "C15850", "package": "0805", "basic": true, "stock": 5536330, "price": 0.0788, "datasheet": "", "rank": 6, "fit": "10uF X7R 25V per PVCC pair; Basic 0805 alternate to the specified 1206 (no Basic 1206 hit at this value)"}
+ ]
+}

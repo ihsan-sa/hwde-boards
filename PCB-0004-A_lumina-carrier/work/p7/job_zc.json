@@ -1,0 +1,4 @@
+{"board": "lumina-carrier/kicad/lumina-carrier.kicad_pcb",
+ "out": "lumina-carrier/kicad/lumina-carrier.kicad_pcb",
+ "result": "lumina-carrier/work/p7/result_zc.json",
+ "layers": ["In1.Cu", "In2.Cu"], "mode": "full"}

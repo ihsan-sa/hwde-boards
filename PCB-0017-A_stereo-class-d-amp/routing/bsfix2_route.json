@@ -1,0 +1,413 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "add_track",
+   "start": [
+    30.9,
+    26.02
+   ],
+   "end": [
+    32.2,
+    26.02
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSNR"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    32.2,
+    26.02
+   ],
+   "end": [
+    32.9,
+    26.72
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSNR"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    32.9,
+    26.72
+   ],
+   "end": [
+    32.9,
+    27.85
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSNR"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    32.9,
+    27.85
+   ],
+   "end": [
+    33.9,
+    27.85
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSNR"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    30.9,
+    27.33
+   ],
+   "end": [
+    31.35,
+    27.2
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSPL"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    31.35,
+    27.2
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/BSPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    31.35,
+    27.2
+   ],
+   "end": [
+    34.9,
+    29.8
+   ],
+   "width": 0.2,
+   "layer": "B.Cu",
+   "net": "/BSPL"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    34.9,
+    29.8
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/BSPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    34.9,
+    29.8
+   ],
+   "end": [
+    33.7,
+    29.8
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    30.9,
+    27.98
+   ],
+   "end": [
+    31.9,
+    27.98
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    31.9,
+    27.98
+   ],
+   "end": [
+    32.55,
+    28.63
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    32.55,
+    28.63
+   ],
+   "end": [
+    32.55,
+    31.5
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    32.55,
+    31.5
+   ],
+   "end": [
+    32.85,
+    31.8
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    32.85,
+    31.8
+   ],
+   "end": [
+    33.7,
+    31.8
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    33.7,
+    31.8
+   ],
+   "end": [
+    35.48,
+    31.8
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    35.48,
+    31.8
+   ],
+   "end": [
+    36.33,
+    32.65
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTPL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    30.9,
+    29.28
+   ],
+   "end": [
+    31.7,
+    29.28
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    31.7,
+    29.28
+   ],
+   "end": [
+    31.7,
+    33.0
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    31.7,
+    33.0
+   ],
+   "end": [
+    35.5,
+    33.0
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    35.5,
+    33.0
+   ],
+   "end": [
+    35.5,
+    39.9
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    33.4,
+    33.0
+   ],
+   "end": [
+    33.4,
+    34.15
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/OUTNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    30.9,
+    29.93
+   ],
+   "end": [
+    30.85,
+    30.3
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    30.85,
+    30.3
+   ],
+   "end": [
+    30.85,
+    34.15
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    30.85,
+    34.15
+   ],
+   "end": [
+    31.4,
+    34.15
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/BSNL"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    29.72,
+    32.736
+   ],
+   "end": [
+    29.9,
+    32.916
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    29.9,
+    32.916
+   ],
+   "end": [
+    29.9,
+    35.109
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    27.5,
+    32.736
+   ],
+   "end": [
+    27.5,
+    33.95
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    27.5,
+    33.95
+   ],
+   "end": [
+    27.15,
+    34.3
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    27.15,
+    34.3
+   ],
+   "end": [
+    27.15,
+    35.4
+   ],
+   "width": 0.882,
+   "layer": "F.Cu",
+   "net": "+12V"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    32.9,
+    36.7
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  }
+ ]
+}

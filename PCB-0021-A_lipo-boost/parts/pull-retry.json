@@ -1,0 +1,66 @@
+{
+ "script": "lib_pull",
+ "status": "fail",
+ "lib_name": "aiee",
+ "parts_file": null,
+ "paced_s": 10.0,
+ "retried": 0,
+ "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+ "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+ "results": [
+  {
+   "lcsc": "C18077685",
+   "status": "error",
+   "symbol_verified": false,
+   "footprint_verified": false,
+   "detail": "no symbol carrying (property \"LCSC Part\" \"C18077685\") in aiee.kicad_sym | log: -- easyeda2kicad.py v1.0.1 --\n[ERROR] Failed to fetch data from EasyEDA API for part C18077685"
+  },
+  {
+   "lcsc": "C25803",
+   "status": "pulled",
+   "symbol": "0603WAF1003T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0021-A_lipo-boost/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0021-A_lipo-boost/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0021-A_lipo-boost/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "symbol_dedup": {
+  "removed": 0,
+  "names": []
+ },
+ "registered": {
+  "fp": "present",
+  "sym": "present"
+ },
+ "autofix": {
+  "footprints": 1,
+  "changed": 0,
+  "actions": 0,
+  "residue": 0,
+  "results": []
+ },
+ "refdes_norm": {
+  "footprints": 13,
+  "changed": 0,
+  "unchanged": 13,
+  "skipped": 0,
+  "results": []
+ },
+ "load_check": {
+  "ok": true,
+  "svgs": 13,
+  "detail": "ok"
+ },
+ "drc_check": null
+}

@@ -1,0 +1,30 @@
+id: boost-passthrough-enable-sequencing
+classes:
+- sequencing
+applies:
+  topologies:
+  - boost
+  packages: []
+  interfaces: []
+  parts: []
+rule: null
+prose: 'A boost does not isolate input from output. When Vin exceeds the set Vout the TPS61023 turns the
+  high-side FET fully on at 101% of target and passes Vin to Vout (resumes switching below 97%): the load
+  sees Vin minus inductor DCR and FET drop, so cap the input below the load''s maximum. EN below 0.4 V
+  is true shutdown (output disconnected from input, 0.1 uA); EN above 1.2 V with VIN above UVLO 1.8 V
+  starts soft-start. Output short to ground is current-limited (about 350 mA below 0.4 V) and restarts
+  by soft-start; OVP at about 5.7 V is the protection if the FB divider is mis-populated. On a charger-fed
+  SYS rail, check the rail maximum is below the set Vout so the part stays in boost and never in pass-through.'
+sources:
+- file: research/sources/tps61023.pdf
+  page: 10
+  note: 7.3.5 pass-through 101%/97%, 7.3.6 OVP 5.7 V, 7.3.7 short-circuit 350 mA
+- file: research/sources/tps61023.pdf
+  page: 8
+  note: 7.3.1-7.3.2 UVLO 1.8 V, EN 1.2 V/0.4 V thresholds, shutdown disconnect (text read, not visual)
+status: active
+origin: research:block-boost-1
+level: principle
+maturity: verified
+envelope: null
+verification: {by: "second-reader", date: "2026-10-01", note: "p8-10 text: UVLO 1.8 V, EN 1.2 V high, 0.4 V low shutdown, 101%/97% pass-through, OVP 5.7 V typ, short <0.4 V about 350 mA, soft start restart; all match."}

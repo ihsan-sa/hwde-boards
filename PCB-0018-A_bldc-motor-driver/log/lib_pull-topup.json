@@ -1,0 +1,650 @@
+{
+ "script": "lib_pull",
+ "status": "pass",
+ "lib_name": "aiee",
+ "parts_file": null,
+ "paced_s": 15.0,
+ "retried": 0,
+ "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+ "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+ "results": [
+  {
+   "lcsc": "C2849539",
+   "status": "pulled",
+   "symbol": "PNLS6045-220M22UH",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "IND-SMD_L6.0-W6.0",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/IND-SMD_L6.0-W6.0.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C25967",
+   "status": "pulled",
+   "symbol": "0603WAF3162T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C23003",
+   "status": "pulled",
+   "symbol": "0603WAF3322T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C1604",
+   "status": "pulled",
+   "symbol": "0603B222K500NT",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/C0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C45783",
+   "status": "pulled",
+   "symbol": "CL21A226MAQNNNE",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C135264",
+   "status": "pulled",
+   "symbol": "SMNR4020-22UH",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "IND-SMD_L4.0-W4.0_LQH44PN2R2MP0L",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/IND-SMD_L4.0-W4.0_LQH44PN2R2MP0L.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C5563735",
+   "status": "pulled",
+   "symbol": "MBR0520L_C5563735",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "SOD-123_L2.7-W1.6-LS3.7-RD-1",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/SOD-123_L2.7-W1.6-LS3.7-RD-1.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C23121",
+   "status": "pulled",
+   "symbol": "0603WAF8662T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C69680",
+   "status": "pulled",
+   "symbol": "nSMD020-30V",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "F1206",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/F1206.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C5180216",
+   "status": "pulled",
+   "symbol": "PESD5V0S1BA-ES",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "SOD-323_L1.7-W1.3-LS2.6-BI",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/SOD-323_L1.7-W1.3-LS2.6-BI.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C12447",
+   "status": "pulled",
+   "symbol": "0603WAF4022T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C21190",
+   "status": "pulled",
+   "symbol": "0603WAF1001T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C1779",
+   "status": "pulled",
+   "symbol": "CL21A475KAQNNNE",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0805",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/C0805.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "symbol_dedup": {
+  "removed": 0,
+  "names": []
+ },
+ "registered": null,
+ "autofix": {
+  "footprints": 8,
+  "changed": 5,
+  "actions": 23,
+  "residue": 12,
+  "results": [
+   {
+    "footprint": "F1206",
+    "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/F1206.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     },
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_arc",
+      "from_mm": 0.08,
+      "to_mm": 0.15,
+      "gap_mm": 0.6678
+     },
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_arc",
+      "from_mm": 0.08,
+      "to_mm": 0.15,
+      "gap_mm": 0.6678
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 3,
+     "under_gap_silk": 1,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.15,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "IND-SMD_L4.0-W4.0_LQH44PN2R2MP0L",
+    "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/IND-SMD_L4.0-W4.0_LQH44PN2R2MP0L.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": -0.03
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.125,
+      "new_gap_mm": 0.15
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.2,
+      "gap_mm": 0.125,
+      "new_gap_mm": 0.15
+     }
+    ],
+    "residue": 0,
+    "before": {
+     "worst_gap_mm": -0.03,
+     "unprintable_silk": 1,
+     "under_gap_silk": 3,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.15,
+     "unprintable_silk": 0,
+     "under_gap_silk": 0,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "IND-SMD_L6.0-W6.0",
+    "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/IND-SMD_L6.0-W6.0.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "delete_unprintable_silk",
+      "kind": "fp_circle",
+      "width_mm": 0.06,
+      "gap_mm": 0.08
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.075,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 4,
+    "before": {
+     "worst_gap_mm": 0.075,
+     "unprintable_silk": 1,
+     "under_gap_silk": 5,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.075,
+     "unprintable_silk": 0,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "SOD-123_L2.7-W1.6-LS3.7-RD-1",
+    "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/SOD-123_L2.7-W1.6-LS3.7-RD-1.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 0.22
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_poly",
+      "width_mm": 0.0,
+      "gap_mm": 0.132,
+      "detail": "filled or stroke-less graphic: only a coordinate change could open this gap"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_poly",
+      "width_mm": 0.0,
+      "gap_mm": 0.132,
+      "detail": "filled or stroke-less graphic: only a coordinate change could open this gap"
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.15,
+      "gap_mm": 0.11,
+      "new_gap_mm": 0.16
+     },
+     {
+      "rule": "B",
+      "action": "narrow_silk_stroke",
+      "kind": "fp_line",
+      "from_mm": 0.25,
+      "to_mm": 0.15,
+      "gap_mm": 0.11,
+      "new_gap_mm": 0.16
+     }
+    ],
+    "residue": 2,
+    "before": {
+     "worst_gap_mm": 0.11,
+     "unprintable_silk": 1,
+     "under_gap_silk": 4,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.132,
+     "unprintable_silk": 0,
+     "under_gap_silk": 2,
+     "plated_pegs": 0
+    }
+   },
+   {
+    "footprint": "SOD-323_L1.7-W1.3-LS2.6-BI",
+    "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/SOD-323_L1.7-W1.3-LS2.6-BI.kicad_mod",
+    "changed": true,
+    "actions": [
+     {
+      "rule": "A",
+      "action": "promote_silk_width",
+      "kind": "fp_circle",
+      "from_mm": 0.06,
+      "to_mm": 0.15,
+      "gap_mm": 0.23
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.11,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.11,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.11,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.11,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.14,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     },
+     {
+      "rule": "B",
+      "action": "residue_silk_gap",
+      "kind": "fp_line",
+      "width_mm": 0.15,
+      "gap_mm": 0.14,
+      "detail": "cannot reach the gap by narrowing to the 0.15 mm line-width floor"
+     }
+    ],
+    "residue": 6,
+    "before": {
+     "worst_gap_mm": 0.11,
+     "unprintable_silk": 1,
+     "under_gap_silk": 6,
+     "plated_pegs": 0
+    },
+    "after": {
+     "worst_gap_mm": 0.11,
+     "unprintable_silk": 0,
+     "under_gap_silk": 6,
+     "plated_pegs": 0
+    }
+   }
+  ]
+ },
+ "refdes_norm": {
+  "footprints": 28,
+  "changed": 5,
+  "unchanged": 23,
+  "skipped": 0,
+  "results": [
+   {
+    "footprint": "F1206",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.915
+    ],
+    "pad_top": -0.864,
+    "silk_top": -1.09,
+    "clear_of": -1.09,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "IND-SMD_L4.0-W4.0_LQH44PN2R2MP0L",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -3.075
+    ],
+    "pad_top": -2.0,
+    "silk_top": -2.25,
+    "clear_of": -2.25,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "IND-SMD_L6.0-W6.0",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -4.005
+    ],
+    "pad_top": -2.86,
+    "silk_top": -3.18,
+    "clear_of": -3.18,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "SOD-123_L2.7-W1.6-LS3.7-RD-1",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.802
+    ],
+    "pad_top": -0.475,
+    "silk_top": -0.977,
+    "clear_of": -0.977,
+    "inked_half_h": 0.575
+   },
+   {
+    "footprint": "SOD-323_L1.7-W1.3-LS2.6-BI",
+    "status": "changed",
+    "from": [
+     0.0,
+     -4.0
+    ],
+    "to": [
+     0.0,
+     -1.465
+    ],
+    "pad_top": -0.415,
+    "silk_top": -0.64,
+    "clear_of": -0.64,
+    "inked_half_h": 0.575
+   }
+  ]
+ },
+ "load_check": {
+  "ok": false,
+  "detail": "no kicad-cli found"
+ },
+ "drc_check": null
+}

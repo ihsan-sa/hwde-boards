@@ -1,0 +1,55 @@
+
+# Coverage checklist for a "dc-input" block: an unregulated wire-pad DC entry
+# (bench supply / wall adapter, no upstream regulator, no attach-capacitance
+# contract the way USB/PD/PoE give one) feeding board bulk capacitance
+# directly. First research pass on this topology - the library holds zero
+# records for it today (stereo-class-d-amp block:B1, 12 V/4 A into a TPA3118D2 class-D
+# amp). Rows are scoped to what a bare two-wire dc-input actually decides:
+# no sequencing (one rail, nothing to sequence against), no thermal-via/
+# creepage/diff-pair/feedback (those belong to the load IC's own part-level
+# checklist, not this source-interface slot).
+id: dc-input
+kind: coverage-checklist
+applies:
+  topologies: [dc-input]
+requires:
+  - class: inrush
+    min_level: topology
+    note: "hot-plug LC ring at the input bulk caps (lead R/L into C_bulk) vs the board's abs-max voltage, and what bulk ESR actually damps it"
+  - class: selection
+    min_level: topology
+    note: "bulk capacitor technology/count/ESR and ripple-current rating with no upstream regulator or attach-capacitance limit to lean on"
+  - class: power-loop
+    min_level: topology
+    note: "input pad -> bulk cap -> load current path: bulk caps sit in the path before the load's power pins, loop area and lead length back to the source"
+  - class: esd
+    min_level: topology
+    note: "reverse-polarity and transient (TVS) protection posture on a bare wire-pad input when none is fitted"
+  - class: sourcing
+    min_level: topology
+    note: "bare-wire/wire-pad connector current rating, pad size and wire gauge for the design current"
+  - class: constraints-emission
+    min_level: principle
+    note: "what a dc-input block must emit into constraints.json - abs-max voltage and bulk ESR/ripple envelope for downstream parts to check against - principle: an emission contract, not physics"
+maturity: draft
+sources:
+  - file: research/sources/sluaal8.pdf
+    page: 2
+    note: "root-cause RLC model for adapter/cable hot-plug into board input capacitance"
+  - file: research/sources/ssztda5.pdf
+    page: 1
+    note: "real electrolytic ESR is often well below its published max, so assumed damping is unreliable"
+prose: >
+  Before laying out a dc-input block: (1) the hot-plug ring at the bulk caps
+  is bounded by lead R/L and total C, not by any source-side capacitance
+  contract - work it against the board's abs-max rating, not just nominal
+  Vin; (2) do not assume an electrolytic's ESR provides the damping its
+  datasheet max would suggest - measure or derate it, or add a real series
+  R; (3) the bulk caps sit electrically between the input pads and the
+  load, so their placement and pad current rating are part of the input
+  current path, not a separate decoupling afterthought; (4) with
+  protection_kind none, the reverse-polarity/TVS posture is a one-line risk
+  statement at minimum, even when no part is fitted; (5) a bare wire-pad
+  input has no connector current rating of its own - the pad and wire gauge
+  carry the design current and need explicit sizing.
+origin: research:block-dc-input-1

@@ -1,0 +1,11 @@
+{
+ "block": "output-filter-cap",
+ "candidates": [
+  {"mpn": "CC0805KKX7R9BB684", "lcsc": "C107133", "package": "0805", "basic": false, "stock": 15895, "price": 0.0389, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805KKX7R9BB684_C107133.pdf", "rank": 1, "fit": "680nF X7R 50V LC-filter cap; best stock at this value, YAGEO"},
+  {"mpn": "TCC0805X7R684K500DT", "lcsc": "C282780", "package": "0805", "basic": false, "stock": 10944, "price": 0.0174, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_CCTC-TCC0805X7R684K500DT_C282780.pdf", "rank": 2, "fit": "680nF X7R 50V, cheapest of the group"},
+  {"mpn": "RC0603FR-073R3L", "lcsc": "C137725", "package": "0603", "basic": false, "stock": 159062, "price": 0.0072, "datasheet": "", "rank": 3, "fit": "3.3 ohm Zobel/damping resistor (reference design/EVM value, at filter output, not the switch-node snubber); no Basic 3.3ohm exists at any package"},
+  {"mpn": "CL05B103KB5NNNC", "lcsc": "C15195", "package": "0402", "basic": true, "stock": 4457219, "price": 0.005, "datasheet": "", "rank": 4, "fit": "10nF X7R 50V Zobel/damping cap (reference design/EVM value); Basic, smallest footprint"},
+  {"mpn": "0603WAF100JT5E", "lcsc": "C22859", "package": "0603", "basic": true, "stock": 8506972, "price": 0.0032, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf", "rank": 5, "fit": "10 ohm, optional switch-node EMI snubber (TI EVM value, not in the reference design's reported BOM); Basic"},
+  {"mpn": "CL10C331JB8NNNC", "lcsc": "C1664", "package": "0603", "basic": true, "stock": 914400, "price": 0.0179, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL10C331JB8NNNC_C1664.pdf", "rank": 6, "fit": "330pF C0G 50V, optional switch-node EMI snubber partner to #5; Basic"}
+ ]
+}

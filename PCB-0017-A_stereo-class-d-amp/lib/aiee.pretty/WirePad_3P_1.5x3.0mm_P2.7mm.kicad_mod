@@ -1,0 +1,82 @@
+(footprint "WirePad_3P_1.5x3.0mm_P2.7mm"
+	(version 20260206)
+	(generator "hwde-librarian")
+	(layer "F.Cu")
+	(descr "Board-local: 3x bare SMD wire pads, 1.5x3.0mm each, 1.2mm edge gap (2.7mm pitch), for signal-level (line-in) leads soldered by hand; no orderable part (PCB-0017-A stereo-class-d-amp J2, R/GND/L)")
+	(tags "wire pad bare copper hand-solder board-local no-lcsc")
+	(property "Reference" "REF**"
+		(at 0 -2.675 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WirePad_3P_1.5x3.0mm_P2.7mm"
+		(at 0 2.6 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(fp_rect
+		(start -3.35 -2.1)
+		(end 3.35 2.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_rect
+		(start -2.85 -1.6)
+		(end 2.85 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -3.80 -1.85)
+		(end -2.25 -1.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -3.80 -1.85)
+		(end -3.80 -0.30)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(pad "1" smd rect
+		(at -2.7 0)
+		(size 1.5 3.0)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at 0 0)
+		(size 1.5 3.0)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "3" smd rect
+		(at 2.7 0)
+		(size 1.5 3.0)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(embedded_fonts no)
+)

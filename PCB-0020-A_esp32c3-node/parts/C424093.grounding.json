@@ -1,0 +1,442 @@
+{
+ "script": "datasheet_extract",
+ "status": "extracted",
+ "source_pdf": "PCB-0020-A_esp32c3-node/parts/U2_MCP73831T-2ACI-OT_C424093.pdf",
+ "lcsc": "",
+ "n_pages": 28,
+ "text_chars": 53805,
+ "pages_trimmed": 15,
+ "text_by_page": [
+  {
+   "page": 0,
+   "text": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 1\nMCP73831/2\nFeatures:\n\u2022 Linear Charge Management Controller:\n- Integrated Pass Transistor\n- Integrated Current Sense\n- Reverse Discharge Protection\n\u2022 High Accuracy Preset Voltage Regulation: +\n 0.75% \n\u2022 Four Voltage Regulation Options:\n- 4.20V, 4.35V, 4.40V, 4.50V\n\u2022 Programmable Charge Current: 15 mA to 500 mA\n\u2022 Selectable Preconditioning:\n- 10%, 20%, 40%, or Disable\n\u2022 Selectable End-of-Charge Control:\n- 5%, 7.5%, 10%, or 20%\n\u2022 Charge Status Output\n- Tri-State Output - MCP73831\n- Open-Drain Output - MCP73832\n\u2022 Automatic Power-Down\n\u2022 Thermal Regulation\n\u2022 Temperature Range: -40\u00b0C to +85\u00b0C\n\u2022 Packaging:\n- 8-Lead, 2 mm x 3 mm DFN\n- 5-Lead, SOT-23\nApplications:\n\u2022 Lithium-Ion/Lithium-Polymer Battery Chargers\n\u2022 Personal Data Assistants\n\u2022 Cellular Telephones\n\u2022D i g i t a l  C a m e r a s\n\u2022 MP3 Players\n\u2022 Bluetooth Headsets\n\u2022 USB Chargers\nTypical Application\nDescription:\nThe MCP73831/2 devices are highly advanced linear\ncharge management controllers for use in space-\nlimited, cost-sensitive applications. The MCP73831/2\nare available in an 8-Lead, 2 mm x 3 mm DFN package\nor a 5-Lead, SOT-23 package. Along with their small\nphysical size, the low number of external components\nrequired make the MCP73831/2 ideally suited for\nportable applications. For applications charging from a\nUSB port, the MCP73831/2 adhere to all the\nspecifications governing the USB power bus.\nThe MCP73831/2 employ a constant-current/constant-\nvoltage charge algorithm with selectable\npreconditioning and charge termination. The constant\nvoltage regulation is fixed with four available options:\n4.20V, 4.35V, 4.40V or 4.50V, to accommodate new,\nemerging battery charging requirements. The constant\ncurrent value is set with one external resistor. The\nMCP73831/2 devices limit the charge current based on\ndie temperature during high power or high ambient\nconditions. This thermal regulation optimizes the\ncharge cycle time while maintaining device reliability.\nSeveral options are available for the preconditioning\nthreshold, preconditioning current value, charge\ntermination value and automatic recharge threshold.\nThe preconditioning value and charge termination\nvalue are set as a ratio or percentage of the\nprogrammed constant current value. Preconditioning\ncan be disabled. Refer to Section 1.0 \u201cElectrical\nCharacteristics\u201d for available options and the\nProduct Identification System for standard options.\nThe MCP73831/2 devices are fully specified over the\nambient temperature range of -40\u00b0C to +85\u00b0C.\nPackage Types\nSTAT\nVDD\nVSS\nPROG\nVBAT +\n-\nSingle\nLi-Ion\nCell\n4\nMCP73831\n5\n3\n1\n500 mA Li-Ion Battery Charger\n2\nVIN\n4.7 \uf06dF\n470\uf057 2k \uf057\n4.7 \uf06dF\nVBAT\nVSS\nVDD\n1\n2\n3\n5\n4\nPROGSTAT\nMCP73831/2\n2\u00d73 DFN*\nVBAT\nVDD\nVBAT\nNC\nVSS\n1\n2\n3\n4\n8\n7\n6\n5 STAT\nPROGVDD\n* Includes Exposed Thermal Pad (EP); see Table 3-1.\nEP\n9\nMCP73831/2\nSOT-23-5\nMiniature Single-Cell, Fully Integrated Li-Ion,\nLi-Polymer Charge Management Controllers"
+  },
+  {
+   "page": 1,
+   "text": "MCP73831/2\nDS20001984G-page 2 \uf0e3 2005-2014 Microchip Technology Inc.\nFunctional Block Diagram\n+\n-\nREFERENCE\nGENERATOR\nVREF(1.22V)\nVBAT\nVDD\nSTAT\nPROG\nVBAT\nG=0.001\nVSS\nDIRECTION\n CONTROL\n477 k\uf057\n255 k\uf057\nUVLO\n+\n-\n+\n-\nSHDN\nDIRECTION \nCONTROL\n0.5 \u00b5A\nPRECONDITION\n6\u00b5 A\n6\u00b5 A\n+\n-\nTERMINATION\n+\n-\n43.6 k\uf057\n+\n-\nCA\n3.9 k\uf057\n111 k\uf057\n190 k\uf057\n7k \uf057\n15 k\uf057\n182.3 k\uf057\n111 k\uf057\nCHARGE\n+\n-\n+\n-\nVA\n89 k\uf057\n361 k\uf057\n100 k\uf057\n0.5 \u00b5A\nVDD\nMCP73831 \nONLY"
+  },
+  {
+   "page": 2,
+   "text": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 3\nMCP73831/2\n1.0 ELECTRICAL \nCHARACTERISTICS\nAbsolute Maximum Ratings\u2020\nVDD...................................................................................7.0V\nAll Inputs and Outputs w.r.t. VSS ............... -0.3 to (VDD+0.3)V\nMaximum Junction Temperature, TJ ............Internally Limited\nStorage temperature .....................................-65\u00b0C to +150\u00b0C\nESD protection on all pins:\nHuman Body Model (1.5 k \uf057 in Series with 100 pF) \uf02e\uf02e\uf02e\uf02e\uf02e\uf02e\uf02e\uf0b3\uf0204k V\nMachine Model (200 pF, No Series Resistance) .............400V\n\u2020 Notice: Stresses above those listed under \u201cMaximum\nRatings\u201d may cause permanent damage to the device.\nThis is a stress rating only and functional operation of\nthe device at those or any other conditions above those\nindicated in the operational listings of this specification\nis not implied. Exposure to maximum rating conditions\nfor extended periods may affect device reliability.DC CHARACTERISTICS\nElectrical Specifications: Unless otherwise indicated, all limits apply for V DD= [VREG(typical) + 0.3V] to 6V, TA = -40\u00b0C to +85\u00b0C. \nTypical values are at +25\u00b0C, VDD = [VREG (typical) + 1.0V] \nParameters Sym. Min. Typ. Max. Units Conditions\nSupply Input\nSupply Voltage V DD 3.75 \u2014 6 V\nSupply Current I SS \u2014 510 1500 \u00b5A Charging\n\u2014 53 200 \u00b5A Charge Complete,\nNo Battery\n\u2014 25 50 \u00b5A PROG Floating\n\u20141 5 \u00b5 A V\nDD < (VBAT - 50 mV)\n\u20140 . 1 2 \u00b5 A V DD < VSTOP\nUVLO Start Threshold V START 3.3 3.45 3.6 V V DD Low-to-High\nUVLO Stop Threshold V STOP 3.2 3.38 3.5 V V DD High-to-Low\nUVLO Hysteresis V HYS \u20147 0\u2014 m V\nVoltage Regulation (Constant-Voltage Mode)\nRegulated Output Voltage V\nREG 4.168 4.20 4.232 V MCP7383X-2\n4.317 4.35 4.383 V MCP7383X-3\n4.367 4.40 4.433 V MCP7383X-4\n4.466 4.50 4.534 V MCP7383X-5\nV\nDD = [VREG(typical)+1V]\nIOUT = 10 mA \nTA = -5\u00b0C to +55\u00b0C\nLine Regulation \uf07c\uf028\uf044VBAT/\nVBAT)/\uf044VDD|\n\u2014 0.09 0.30 %/V V DD = [VREG(typical)+1V] to \n6V, IOUT = 10 mA\nLoad Regulation \uf07c\uf044VBAT/VBAT| \u2014 0.05 0.30 % I OUT = 10 mA to 50 mA\nVDD = [VREG(typical)+1V]\nSupply Ripple Attenuation PSRR \u2014 52 \u2014- dB I OUT=10 mA, 10Hz to 1 kHz\n\u20144 7\u2014 d B I OUT=10 mA, 10Hz to 10 kHz\n\u20142 2\u2014 d B I OUT=10 mA, 10Hz to 1 MHz\nCurrent Regulation (Fast Charge Constant-Current Mode)\nFast Charge Current \nRegulation \nIREG 90 100 110 mA PROG = 10 k \uf057\n450 505 550 mA PROG = 2.0 k \uf057\uf02c\uf020Note 1\n12.5 14.5 16.5 mA PROG = 67 k \uf057\nTA = -5\u00b0C to +55\u00b0C\nNote 1: Not production tested. Ensured by design."
+  },
+  {
+   "page": 3,
+   "first_line": "MCP73831/2",
+   "chars": 2268
+  },
+  {
+   "page": 4,
+   "first_line": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 5",
+   "chars": 2228
+  },
+  {
+   "page": 5,
+   "first_line": "MCP73831/2",
+   "chars": 74
+  },
+  {
+   "page": 6,
+   "first_line": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 7",
+   "chars": 1991
+  },
+  {
+   "page": 7,
+   "first_line": "MCP73831/2",
+   "chars": 1404
+  },
+  {
+   "page": 8,
+   "first_line": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 9",
+   "chars": 1671
+  },
+  {
+   "page": 9,
+   "first_line": "MCP73831/2",
+   "chars": 75
+  },
+  {
+   "page": 10,
+   "text": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 11\nMCP73831/2\n3.0 PIN DESCRIPTION\nThe descriptions of the pins are listed in Table 3-1.\nTABLE 3-1: PIN FUNCTION TABLES\n3.1 Battery Management Input Supply \n(VDD)\nA supply voltage of [V REG (typical) + 0.3V] to 6V is\nrecommended. Bypass to V SS with a minimum of\n4.7 \u00b5F.\n3.2 Battery Charge Control Output \n(VBAT)\nConnect to positive terminal of battery. Drain terminal\nof internal P-channel MOSFET pass transistor. Bypass\nto V\nSS with a minimum of 4.7 \u00b5F to ensure loop stability\nwhen the battery is disconnected.\n3.3 Charge Status Output (STAT)\nSTAT is an output for connection to an LED for charge\nstatus indication. Alternatively, a pull-up resistor can be\napplied for interfacing to a host microcontroller.\nSTAT is a tri-state logic output on the MCP73831 and\nan open-drain output on the MCP73832.\n3.4 Battery Management 0V Reference \n(VSS)\nConnect to negative terminal of battery and input\nsupply.\n3.5 Current Regulation Set (PROG)\nPreconditioning, fast charge and termination currents\nare scaled by placing a resistor from PROG to VSS.\nThe charge management controller can be disabled by\nallowing the PROG input to float.\n3.6 Exposed Thermal Pad (EP)\nAn internal electrical connection exists between the\nExposed Thermal Pad (EP) and the VSS pin. They must\nbe connected to the same potential on the Printed\nCircuit Board (PCB).\nFor better thermal performance, it is recommended to\nadd vias from the land area of EP to a copper layer on\nthe other side of the PCB. \nPin No.\nSymbol Function\nDFN SOT-23-5\n14 V\nDD Battery Management Input Supply\n2\u2014 V DD Battery Management Input Supply\n33 V BAT Battery Charge Control Output\n4\u2014 V BAT Battery Charge Control Output\n5 1 STAT Charge Status Output\n62 V SS Battery Management 0V Reference\n7 \u2014 NC No Connection\n8 5 PROG Current Regulation Set and Charge Control Enable\n9\u2014 E P Exposed Thermal Pad (EP); must be connected to V SS."
+  },
+  {
+   "page": 11,
+   "first_line": "MCP73831/2",
+   "chars": 75
+  },
+  {
+   "page": 12,
+   "text": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 13\nMCP73831/2\n4.0 DEVICE OVERVIEW\nThe MCP73831/2 are highly advanced linear charge\nmanagement controllers. Figure 4-1 depicts the\noperational flow algorithm from charge initiation to\ncompletion and automatic recharge.\nFIGURE 4-1: Flowchart.\n4.1 Undervoltage Lockout (UVLO)\nAn internal UVLO circuit monitors the input voltage and\nkeeps the charger in Shutdown mode until the input\nsupply rises above the UVLO threshold. The UVLO\ncircuitry has a built in hysteresis of 100 mV.\nIn the event a battery is present when the input power\nis applied, the input supply must rise to a level 150 mV\nabove the battery voltage before the MCP73831/2\nbecome operational. \nThe UVLO circuit places the device in Shutdown mode\nif the input supply falls to within +50 mV of the battery\nvoltage. Again, the input supply must rise to a level\n150 mV above the battery voltage before the\nMCP73831/2 become operational.\nThe UVLO circuit is always active. Whenever the input\nsupply is below the UVLO threshold or within +50 mV\nof the voltage at the V\nBAT pin, the MCP73831/2 are\nplaced in Shutdown mode.\nDuring any UVLO condition, the battery reverse\ndischarge current is less than 2 \u00b5A.\n4.2 Battery Detection\nA 6 \u00b5A (typical) current is sourced by the V BAT pin to\ndetermine if a battery is present or not. If the voltage at\nV\nBAT rises to V REG + 100 mV (typical), the device\nassumes that a battery is not present. If the voltage\nstays below V REG + 100 mV (typical), the device\nassumes that a battery is detected. In order to correctly\ndetect a battery insertion, the impedance seen by the\nVBAT pin before the battery is connected must be\ngreater than 2 M\u2126.\n4.3 Charge Qualification\nFor a charge cycle to begin, all UVLO conditions must\nbe met and a battery or output load must be present. A\ncharge current programming resistor must be\nconnected from PROG to V\nSS. If the PROG pin is open\nor floating, the MCP73831/2 are disabled and the\nbattery reverse discharge current is less than 2 \u00b5A. In\nthis manner, the PROG pin acts as a charge enable\nand can be used as a manual shutdown.\n4.4 Preconditioning\nIf the voltage at the V BAT pin is less than the\npreconditioning threshold, the MCP73831/2 enter a\npreconditioning or Trickle Charge mode. The\npreconditioning threshold is factory set. Refer to\nSection 1.0 \u201cElectrical Characteristics\u201d  for\npreconditioning threshold options and the Product\nIdentification System for standard options.\nIn this mode, the MCP73831/2 supply a percentage of\nthe charge current (established with the value of the\nresistor connected to the PROG pin) to the battery. The\npercentage or ratio of the current is factory set. Refer to\nSection 1.0 \u201cElectrical Characteristics\u201d  for\npreconditioning current options and the Product Iden-\ntification System for standard options.\nWhen the voltage at the V\nBAT pin rises above the\npreconditioning threshold, the MCP73831/2 enter the\nConstant-Current or Fast Charge mode.\nSHUTDOWN MODE\nVDD < VUVLO\nVDD < VBAT\nor\nPROG > 200 k\uf057 \nSTAT = High Z\nPRECONDITIONING \nMODE \nCharge Current = IPREG\nSTAT = LOW\nFAST CHARGE \nMODE \nCharge Current = IREG\nSTAT = LOW\nCONSTANT VOLTAGE \nMODE \nCharge Voltage = VREG\nSTAT = LOW\nVBAT < VPTH\nVBAT > VPTH\nVBAT = VREG\nVBAT < VRTH\nVBAT > VPTH\nIBAT < ITERM\nCHARGE COMPLETE \nMODE \nNo Charge Current\nSTAT = HIGH (MCP73831)\nSTAT = High Z (MCP73832)"
+  },
+  {
+   "page": 13,
+   "text": "MCP73831/2\nDS20001984G-page 14 \uf0e3 2005-2014 Microchip Technology Inc.\n4.5 Fast Charge Constant-Current \nMode\nDuring the Constant-Current mode, the programmed\ncharge current is supplied to the battery or load. The\ncharge current is established using a single resistor\nfrom PROG to V\nSS. Constant-Current mode is\nmaintained until the voltage at the VBAT pin reaches the\nregulation voltage, VREG.\n4.6 Constant-Voltage Mode\nWhen the voltage at the V BAT pin reaches the\nregulation voltage, V REG, constant voltage regulation\nbegins. The regulation voltage is factory set to 4.2V,\n4.35V, 4.40V or 4.50V with a tolerance of \u00b10.75%.\n4.7 Charge Termination\nThe charge cycle is terminated when, during Constant-\nVoltage mode, the average charge current diminishes\nbelow a percentage of the programmed charge current\n(established with the value of the resistor connected to\nthe PROG pin). A 1 ms filter time on the termination\ncomparator ensures that transient load conditions do\nnot result in premature charge cycle termination. The\npercentage or ratio of the current is factory set. Refer to\nSection 1.0 \u201cElectrical Characteristics\u201d  for charge\ntermination current options and the Product\nIdentification System for standard options.\nThe charge current is latched off and the MCP73831/2\nenter a Charge Complete mode.\n4.8 Automatic Recharge\nThe MCP73831/2 continuously monitor the voltage at\nthe V BAT pin in the Charge Complete mode. If the\nvoltage drops below the recharge threshold, another\ncharge cycle begins and current is once again supplied\nto the battery or load. The recharge threshold is factory\nset. Refer to Section 1.0 \u201cElectrical Characteristics\u201d\nfor recharge threshold options and the Product\nIdentification System for standard options.\n4.9 Thermal Regulation\nThe MCP73831/2 limit the charge current based on the\ndie temperature. The thermal regulation optimizes the\ncharge cycle time while maintaining device reliability.\nFigure 4-2 depicts the thermal regulation for the\nMCP73831/2.\nFIGURE 4-2: Thermal Regulation.\n4.10 Thermal Shutdown\nThe MCP73831/2 suspend charge if the die tempera-\nture exceeds 150\u00b0C. Charging will resume when the\ndie temperature has cooled by approximately 10\u00b0C.\n0\n75\n150\n225\n300\n375\n450\n525\n25\n35\n45\n55\n65\n75\n85\n95\n105\n115\n125\n135\n145\n155\nJunction Temperature (\u00b0C)\nCharge Current (mA)\nRPROG = 2 k\uf057"
+  },
+  {
+   "page": 14,
+   "text": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 15\nMCP73831/2\n5.0 DETAILED DESCRIPTION\n5.1 Analog Circuitry\n5.1.1 BATTERY MANAGEMENT INPUT \nSUPPLY (VDD)\nThe VDD pin is the input supply pin for the MCP73831/\n2 devices. The MCP73831/2 automatically enter a\nPower-Down mode if the voltage on the V\nDD input falls\nbelow the UVLO voltage (VSTOP). This feature prevents\ndraining the battery pack when the V DD supply is not\npresent.\n5.1.2 CURRENT REGULATION SET \n(PROG)\nFast charge current regulation can be scaled by placing\na programming resistor (RPROG) from the PROG input\nto VSS. The program resistor and the charge current\nare calculated using the following equation:\nThe preconditioning trickle charge current and the\ncharge termination current are ratiometric to the fast\ncharge current based on the selected device options.\n5.1.3 BATTERY CHARGE CONTROL \nOUTPUT (VBAT)\nThe battery charge control output is the drain terminal\nof an internal P-channel MOSFET. The MCP73831/2\nprovide constant current and voltage regulation to the\nbattery pack by controlling this MOSFET in the linear\nregion. The battery charge control output should be\nconnected to the positive terminal of the battery pack.\n5.2 Digital Circuitry\n5.2.1 STATUS INDICATOR (STAT)\nThe charge status output of the MCP73831 has three\ndifferent states: High (H), Low (L), and High-\nImpedance (High Z). The charge status output of the\nMCP73832 is open-drain. It has two different states:\nLow (L) and High-Impedance (High Z). The charge sta-\ntus output can be used to illuminate one, two or tri-color\nLEDs. Optionally, the charge status output can be used\nas an interface to a host microcontroller.\nTable 5-1 summarizes the state of the status output\nduring a charge cycle.\n5.2.2 DEVICE DISABLE (PROG)\nThe current regulation set input pin (PROG) can be\nused to terminate a charge at any time during the\ncharge cycle, as well as to initiate a charge cycle or\ninitiate a recharge cycle.\nPlacing a programming resistor from the PROG input to\nV\nSS enables the device. Allowing the PROG input to\nfloat or by applying a logic-high input signal, disables\nthe device and terminates a charge cycle. When\ndisabled, the device\u2019s supply current is reduced to\n25 \u00b5A, typically.\nIREG\n1000V\nRPROG\n-----------------=\nWhere:\nRPROG =k O h m s\nIREG = milliampere\nTABLE 5-1: STATUS OUTPUT \nCharge Cycle State \nSTAT1\nMCP73831 MCP73832\nShutdown High Z High Z\nNo Battery Present High Z High Z\nPreconditioning L L\nConstant-Current Fast \nCharge\nLL\nConstant Voltage L L\nCharge Complete \u2013 \nStandby\nHH i g h  Z"
+  },
+  {
+   "page": 15,
+   "first_line": "MCP73831/2",
+   "chars": 75
+  },
+  {
+   "page": 16,
+   "text": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 17\nMCP73831/2\n6.0 APPLICATIONS\nThe MCP73831/2 are designed to operate in\nconjunction with a host microcontroller or in a stand-\nalone application. The MCP73831/2 provide the\npreferred charge algorithm for Lithium-Ion and Lithium-\nPolymer cells. The algorithm uses a constant current\nfollowed by a constant voltage charging method.\nFigure 6-1 depicts a typical stand-alone application\ncircuit, while Figure 6-2 and Figure 6-3 depict the\naccompanying charge profile.\nFIGURE 6-1: Typical Application Circuit.\nFIGURE 6-2: Typical Charge Profile \n(180 mAh Battery).\nFIGURE 6-3: Typical Charge Profile in \nThermal Regulation (1000 mAh Battery).\n6.1 Application Circuit Design \nDue to the low efficiency of linear charging, the most\nimportant factors are thermal design and cost, which\nare a direct function of the input voltage, output current\nand thermal impedance between the battery charger\nand the ambient cooling air. The worst-case situation is\nwhen the device has transitioned from the\nPreconditioning mode to the Constant-Current mode.\nIn this situation, the battery charger has to dissipate the\nmaximum power. A trade-off must be made between\nthe charge current, cost and thermal requirements of\nthe charger.\n6.1.1 COMPONENT SELECTION\nSelection of the external components in Figure 6-1 is\ncrucial to the integrity and reliability of the charging\nsystem. The following discussion is intended as a guide\nfor the component selection process.\n6.1.1.1 Current Programming Resistor \n(RPROG)\nThe preferred fast charge current for Lithium-Ion cells\nis at the 1C rate, with an absolute maximum current at\nthe 2C rate. For example, a 500 mAh battery pack has\na preferred fast charge current of 500 mA. Charging at\nthis rate provides the shortest charge cycle times\nwithout degradation to the battery pack performance or\nlife.\nSTAT\nVDD\nVSS\nPROG\nVBAT +\n-\nSingle \nLi-Ion \nCell\n4\nMCP73831\n5\n3\n1\nCIN\nLi-Ion Battery Charger\n2\nRPROG\nRLED COUT\n \nREGULATED \nWALL CUBE LED\n0.0\n1.0\n2.0\n3.0\n4.0\n5.0\n6.0\n0\n20\n40\n60\n80\n100\n120\n140\n160\n180\nTime (minutes)\nBattery Voltage (V)\n0\n20\n40\n60\n80\n100\n120\nCharge Current (mA)\nMCP73831-2AC/IOT\nVDD = 5.2V\nRPROG = 10 k\u2126\n0.0\n1.0\n2.0\n3.0\n4.0\n5.0\n6.0\n0\n30\n60\n90\n120\n150\n180\n210\n240\nTime (minutes)\nBattery Voltage (V)\n0\n100\n200\n300\n400\n500\n600\nCharge Current (mA)\nMCP73831-2AC/IOT\nVDD = 5.2V\nRPROG = 2 k\u2126"
+  },
+  {
+   "page": 17,
+   "text": "MCP73831/2\nDS20001984G-page 18 \uf0e3 2005-2014 Microchip Technology Inc.\n6.1.1.2 Input Overvoltage Protection (IOVP) \nInput overvoltage protection must be used when the\ninput power source is hot-pluggable. This includes USB\ncables and Wall-type power supplies. The cabling of\nthese supplies acts as an inductor. When the supplies\nare connected/disconnected from the system, large\nvoltage transients are created which may damage the\nsystem circuitry. These transients should be snubbed\nout. A transzorb connected from the V+ input supply\nconnector to the 0V ground reference will snub the\ntransients.\n6.1.1.3 Thermal Considerations\nThe worst-case power dissipation in the battery\ncharger occurs when the input voltage is at the\nmaximum and the device has transitioned from the\nPreconditioning mode to the Constant-Current mode.\nIn this case, the power dissipation is:\nPower dissipation with a 5V, \u00b110% input voltage source\nis:\nThis power dissipation with the battery charger in the\nSOT-23-5 package will cause thermal regulation to be\nentered as depicted in Figure 6-3. Alternatively, the\n2mm x 3mm DFN package could be utilized to reduce\ncharge cycle times.\n6.1.1.4 External Capacitors\nThe MCP73831/2 are stable with or without a battery\nload. In order to maintain good AC stability in the\nConstant-Voltage mode, a minimum capacitance of\n4.7 \u00b5F is recommended to bypass the V\nBAT pin to VSS.\nThis capacitance provides compensation when there is\nno battery load. In addition, the battery and\ninterconnections appear inductive at high frequencies.\nThese elements are in the control feedback loop during\nConstant-Voltage mode. Therefore, the bypass\ncapacitance may be necessary to compensate for the\ninductive nature of the battery pack. \nVirtually any good quality output filter capacitor can be\nused, independent of the capacitor\u2019s minimum\nEffective Series Resistance (ESR) value. The actual\nvalue of the capacitor (and its associated ESR)\ndepends on the output load current. A 4.7 \u00b5F ceramic,\ntantalum or aluminum electrolytic capacitor at the\noutput is usually sufficient to ensure stability for output\ncurrents up to a 500 mA.\n6.1.1.5 Reverse-Blocking Protection\nThe MCP73831/2 provide protection from a faulted or\nshorted input. Without the protection, a faulted or\nshorted input would discharge the battery pack through\nthe body diode of the internal pass transistor.\n6.1.1.6 Charge Inhibit\nThe current regulation set input pin (PROG) can be\nused to terminate a charge at any time during the\ncharge cycle, as well as to initiate a charge cycle or\ninitiate a recharge cycle.\nPlacing a programming resistor from the PROG input to\nV\nSS enables the device. Allowing the PROG input to\nfloat or by applying a logic-high input signal, disables\nthe device and terminates a charge cycle. When\ndisabled, the device\u2019s supply current is reduced to\n25 \u00b5A, typically.\n6.1.1.7 Charge Status Interface\nA status output provides information on the state of\ncharge. The output can be used to illuminate external\nLEDs or interface to a host microcontroller. Refer to\nTable 5-1 for a summary of the state of the status\noutput during a charge cycle.\n6.2 PCB Layout Issues\nFor optimum voltage regulation, place the battery pack\nas close as possible to the device\u2019s VBAT and VSS pins.\nThis is recommended to minimize voltage drops along\nthe high current-carrying PCB traces.\nIf the PCB layout is used as a heat sink, adding many\nvias in the heat sink pad can help conduct more heat to\nthe PCB backplane, thus reducing the maximum\njunction temperature. Figure 6-4 and Figure 6-5 depict\na typical layout with PCB heatsinking.\nFIGURE 6-4: Typical Layout (Top).\nFIGURE 6-5: Typical Layout (Bottom).\nPowerDissipation V DDMAX VPTHMIN\u2013\uf028\uf029 IREGMAX\uf0b4=\nWhere:\nVDDMAX = the maximum input voltage\nIREGMAX = the maximum fast charge current\nVPTHMIN = the minimum transition threshold \nvoltage\nPowerDissipation 5.5V 2.7V \u2013\uf028\uf029 550mA\uf0b4 1.54W==\nCOUT\nLED\nRPROG\nCINMCP73831\nRLED\nVBAT VDD\nVSS\nVBAT\nVSS\nVDD"
+  },
+  {
+   "page": 18,
+   "first_line": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 19",
+   "chars": 1449
+  },
+  {
+   "page": 19,
+   "text": "MCP73831/2\nDS20001984G-page 20 \uf0e3 2005-2014 Microchip Technology Inc.\n/g27/g16/g47/g72/g68/g71/g3/g51/g79/g68/g86/g87/g76/g70/g3/g39/g88/g68/g79/g3/g41/g79/g68/g87/g15/g3/g49/g82/g3/g47/g72/g68/g71/g3/g51/g68/g70/g78/g68/g74/g72/g3/g11/g48/g38/g12/g3/g177/g3/g21/g91/g22/g91/g19/g17/g28/g3/g80/g80/g3/g37/g82/g71/g92/g3/g62/g39/g41/g49/g64\n/g49/g82/g87/g72/g86/g29\n/g20/g17 /g51/g76/g81/g3/g20/g3/g89/g76/g86/g88/g68/g79/g3/g76/g81/g71/g72/g91/g3/g73/g72/g68/g87/g88/g85/g72/g3/g80/g68/g92/g3/g89/g68/g85/g92/g15/g3/g69/g88/g87/g3/g80/g88/g86/g87/g3/g69/g72/g3/g79/g82/g70/g68/g87/g72/g71/g3/g90/g76/g87/g75/g76/g81/g3/g87/g75/g72/g3/g75/g68/g87/g70/g75/g72/g71/g3/g68/g85/g72/g68/g17\n/g21/g17 /g51/g68/g70/g78/g68/g74/g72/g3/g80/g68/g92/g3/g75/g68/g89/g72/g3/g82/g81/g72/g3/g82/g85/g3/g80/g82/g85/g72/g3/g72/g91/g83/g82/g86/g72/g71/g3/g87/g76/g72/g3/g69/g68/g85/g86/g3/g68/g87/g3/g72/g81/g71/g86/g17\n/g22/g17 /g51/g68/g70/g78/g68/g74/g72/g3/g76/g86/g3/g86/g68/g90/g3/g86/g76/g81/g74/g88/g79/g68/g87/g72/g71/g17\n/g23/g17 /g39/g76/g80/g72/g81/g86/g76/g82/g81/g76/g81/g74/g3/g68/g81/g71/g3/g87/g82/g79/g72/g85/g68/g81/g70/g76/g81/g74/g3/g83/g72/g85/g3/g36/g54/g48/g40/g3/g60/g20/g23/g17/g24/g48/g17\n/g37/g54/g38/g29 /g37/g68/g86/g76/g70/g3/g39/g76/g80/g72/g81/g86/g76/g82/g81/g17/g3/g55/g75/g72/g82/g85/g72/g87/g76/g70/g68/g79/g79/g92/g3/g72/g91/g68/g70/g87/g3/g89/g68/g79/g88/g72/g3/g86/g75/g82/g90/g81/g3/g90/g76/g87/g75/g82/g88/g87/g3/g87/g82/g79/g72/g85/g68/g81/g70/g72/g86/g17\n/g53/g40/g41/g29 /g53/g72/g73/g72/g85/g72/g81/g70/g72/g3/g39/g76/g80/g72/g81/g86/g76/g82/g81/g15/g3/g88/g86/g88/g68/g79/g79/g92/g3/g90/g76/g87/g75/g82/g88/g87/g3/g87/g82/g79/g72/g85/g68/g81/g70/g72/g15/g3/g73/g82/g85/g3/g76/g81/g73/g82/g85/g80/g68/g87/g76/g82/g81/g3/g83/g88/g85/g83/g82/g86/g72/g86/g3/g82/g81/g79/g92/g17\n/g49/g82/g87/g72/g29/g41/g82/g85/g3/g87/g75/g72/g3/g80/g82/g86/g87/g3/g70/g88/g85/g85/g72/g81/g87/g3/g83/g68/g70/g78/g68/g74/g72/g3/g71/g85/g68/g90/g76/g81/g74/g86/g15/g3/g83/g79/g72/g68/g86/g72/g3/g86/g72/g72/g3/g87/g75/g72/g3/g48/g76/g70/g85/g82/g70/g75/g76/g83/g3/g51/g68/g70/g78/g68/g74/g76/g81/g74/g3/g54/g83/g72/g70/g76/g73/g76/g70/g68/g87/g76/g82/g81/g3/g79/g82/g70/g68/g87/g72/g71/g3/g68/g87/g3\n/g75/g87/g87/g83/g29/g18/g18/g90/g90/g90/g17/g80/g76/g70/g85/g82/g70/g75/g76/g83/g17/g70/g82/g80/g18/g83/g68/g70/g78/g68/g74/g76/g81/g74\n/g56/g81/g76/g87/g86/g48/g44/g47/g47/g44/g48/g40/g55/g40/g53/g54\n/g39/g76/g80/g72/g81/g86/g76/g82/g81/g3/g47/g76/g80/g76/g87/g86 /g48/g44/g49 /g49/g50/g48 /g48/g36/g59\n/g49/g88/g80/g69/g72/g85/g3/g82/g73/g3/g51/g76/g81/g86/g49 /g27\n/g51/g76/g87/g70/g75 /g72 /g19/g17/g24/g19/g3/g37/g54/g38\n/g50/g89/g72/g85/g68/g79/g79/g3/g43/g72/g76/g74/g75/g87 /g36 /g19/g17/g27/g19 /g19/g17/g28/g19 /g20/g17/g19/g19\n/g54/g87/g68/g81/g71/g82/g73/g73/g3 /g36/g20 /g19/g17/g19/g19 /g19/g17/g19/g21 /g19/g17/g19/g24\n/g38/g82/g81/g87/g68/g70/g87/g3/g55/g75/g76/g70/g78/g81/g72/g86/g86 /g36/g22 /g19/g17/g21/g19/g3/g53/g40/g41\n/g50/g89/g72/g85/g68/g79/g79/g3/g47/g72/g81/g74/g87/g75 /g39 /g21/g17/g19/g19/g3/g37/g54/g38\n/g50/g89/g72/g85/g68/g79/g79/g3/g58/g76/g71/g87/g75 /g40 /g22/g17/g19/g19/g3/g37/g54/g38\n/g40/g91/g83/g82/g86/g72/g71/g3/g51/g68/g71/g3/g47/g72/g81/g74/g87/g75 /g39/g21 /g20/g17/g22/g19 /g177 /g20/g17/g24/g24\n/g40/g91/g83/g82/g86/g72/g71/g3/g51/g68/g71/g3/g58/g76/g71/g87/g75 /g40/g21 /g20/g17/g24/g19 /g177 /g20/g17/g26/g24\n/g38/g82/g81/g87/g68/g70/g87/g3/g58/g76/g71/g87/g75 /g69 /g19/g17/g21/g19 /g19/g17/g21/g24 /g19/g17/g22/g19\n/g38/g82/g81/g87/g68/g70/g87/g3/g47/g72/g81/g74/g87/g75 /g47 /g19/g17/g22/g19 /g19/g17/g23/g19 /g19/g17/g24/g19\n/g38/g82/g81/g87/g68/g70/g87/g16/g87/g82/g16/g40/g91/g83/g82/g86/g72/g71/g3/g51/g68/g71 /g46 /g19/g17/g21/g19 /g177 /g177\nD\nN\nE\nNOTE 1\n1 2\nEXPOSED PAD\nNOTE 1\n2 1\nD2\nK\nL\nE2\nN\ne\nb\nA3 A1\nA\nNOTE 2\nBOTTOM VIEWTOP VIEW\n/g48/g76/g70/g85/g82/g70/g75/g76/g83 /g55/g72/g70/g75/g81/g82/g79/g82/g74/g92 /g39/g85/g68/g90/g76/g81/g74 /g38/g19/g23/g16/g20/g21/g22/g38"
+  },
+  {
+   "page": 20,
+   "first_line": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 21",
+   "chars": 209
+  },
+  {
+   "page": 21,
+   "first_line": "MCP73831/2",
+   "chars": 3477
+  },
+  {
+   "page": 22,
+   "first_line": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 23",
+   "chars": 209
+  },
+  {
+   "page": 23,
+   "text": "MCP73831/2\nDS20001984G-page 24 \uf0e3 2005-2014 Microchip Technology Inc.\nAPPENDIX A: REVISION HISTORY\nRevision G (July 2014)\nThe following is the list of modifications:\n1. Updated the \u201cDC Characteristics\u201d table.\n2. Added Section 6.1.1.2 \u201cInput Overvoltage\nProtection (IOVP)\u201d.\nRevision F (June 2013)\nThe following is the list of modifications:\n3. Updated the Functional Block Diagram.\n4. Added the Battery Detection parameter and\nrelated information in the\u201cDC Characteristics\u201d\ntable.\n5. Added new section Section 4.2 \u201cBattery\nDetection\u201d.\n6. Minor grammatical and spelling corrections.\nRevision E (September 2008)\nThe following is the list of modifications:\n1. Package Types: Changed DFN pinout diagram.\n2. Section 1.0 \u201cElectrical Characteristics\u201d :\nChanged \u201cCharge Impedance Range from\n20 k\uf057 to 67 k\uf057\uf02e\n3. Section 1.0 \u201cElectrical Characteristics\u201d :\nMisc. Formatting changes.\n4. Section 2.0 \u201cTypical Performance Curves\u201d :\nUpdated Figure 2-4.\n5. Section 3.0 \u201cPin Description\u201d : Added\nExposed Pad pin to table and added\nSection 3.6 \u201cExposed Thermal Pad (EP)\u201d.\n6. Updated Appendix A: \u201cRevision History\u201d\n7. Added Land Pattern Package Outline Drawing\nfor 2x3 DFN package.\nRevision D (April 2008)\nThe following is the list of modifications:\n1. Changed Charge Termination Current Ratio to\n8.5% minimum and 11.5% maximum.\nRevision C (October 2007)\nThe following is the list of modifications:\n1. Numerous edits throughout document.\n2. Added note to the Temperature Specifications\ntable.\n3. Updated Figure 2-4.\nRevision B (March 2006)\nThe following is the list of modifications:\n1. Added MCP73832 through document.\nRevision A (November 2005)\nOriginal Release of this Document."
+  },
+  {
+   "page": 24,
+   "first_line": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 25",
+   "chars": 2587
+  },
+  {
+   "page": 25,
+   "first_line": "MCP73831/2",
+   "chars": 75
+  },
+  {
+   "page": 26,
+   "text": "\uf0e3 2005-2014 Microchip Technology Inc. DS20001984G-page 27\nInformation contained in this publication regarding device\napplications and the like is provided only for your convenience\nand may be superseded by updates. It is your responsibility to\nensure that your application meets with your specifications.\nMICROCHIP MAKES NO REPRESENTATIONS OR\nWARRANTIES OF ANY KIND WHETHER EXPRESS OR\nIMPLIED, WRITTEN OR ORAL, STATUTORY OR\nOTHERWISE, RELATED TO THE INFORMATION,\nINCLUDING BUT NOT LIMITED TO ITS CONDITION,\nQUALITY , PERFORMANCE, MERCHANTABILITY OR\nFITNESS FOR PURPOSE . Microchip disclaims all liability\narising from this information and its use. Use of Microchip\ndevices in life support and/or safety applications is entirely at\nthe buyer\u2019s risk, and the buyer agrees to defend, indemnify and\nhold harmless Microchip from any and all damages, claims,\nsuits, or expenses resulting from such use. No licenses are\nconveyed, implicitly or otherwise, under any Microchip\nintellectual property rights.\nTrademarks\nThe Microchip name and logo, the Microchip logo, dsPIC, \nFlashFlex, flexPWR, JukeBlox, KEELOQ, KEELOQ logo, Kleer, \nLANCheck, MediaLB, MOST, MOST logo, MPLAB, \nOptoLyzer, PIC, PICSTART, PIC\n32 logo, RightTouch, SpyNIC, \nSST, SST Logo, SuperFlash and UNI/O are registered \ntrademarks of Microchip Technology Incorporated in the \nU.S.A. and other countries.\nThe Embedded Control Solutions Company and mTouch are \nregistered trademarks of Microchip Technology Incorporated \nin the U.S.A.\nAnalog-for-the-Digital Age, BodyCom, chipKIT, chipKIT logo, \nCodeGuard, dsPICDEM, dsPICDEM.net, ECAN, In-Circuit \nSerial Programming, ICSP, Inter-Chip Connectivity, KleerNet, \nKleerNet logo, MiWi, MPASM, MPF, MPLAB Certified logo, \nMPLIB, MPLINK, MultiTRAK, NetDetach, Omniscient Code \nGeneration, PICDEM, PICDEM.net, PICkit, PICtail, \nRightTouch logo, REAL ICE, SQI, Serial Quad I/O, Total \nEndurance, TSHARC, USBCheck, VariSense, ViewSpan, \nWiperLock, Wireless DNA, and ZENA are trademarks of \nMicrochip Technology Incorporated in the U.S.A. and other \ncountries.\nSQTP is a service mark of Microchip Technology Incorporated \nin the U.S.A.\nSilicon Storage Technology is a registered trademark of \nMicrochip Technology Inc. in other countries.\nGestIC is a registered trademarks of Microchip Technology \nGermany II GmbH & Co. KG, a subsidiary of Microchip \nTechnology Inc., in other countries. \nAll other trademarks mentioned herein are property of their \nrespective companies.\n\u00a9 2005-2014, Microchip Technology Incorporated, Printed in \nthe U.S.A., All Rights Reserved. \nISBN: 978-1-63276-375-4\nNote the following details of the code protection feature on Microchip devices:\n\u2022 Microchip products meet the specification cont ained in their particular Microchip Data Sheet.\n\u2022 Microchip believes that its family of products is one of the most secure families of its kind on the market today, when used i n the \nintended manner and under normal conditions.\n\u2022 There are dishonest and possibly illegal methods used to breach the code protection feature. All of these methods, to our \nknowledge, require using the Microchip products in a manner outside the operating specifications contained in Microchip\u2019s Data \nSheets. Most likely, the person doing so is engaged in theft of intellectual property.\n\u2022 Microchip is willing to work with the customer who is concerned about the integrity of their code.\n\u2022 Neither Microchip nor any other semiconduc tor manufacturer can guarantee the security of their code. Code protection does not \nmean that we are guaranteeing the product as \u201cunbreakable.\u201d\nCode protection is constantly evolving. We at Microchip are co mmitted to continuously improvin g the code protection features of  our\nproducts. Attempts to break Microchip\u2019s code protection feature may be a violation of the Digital Millennium Copyright Act. If such acts\nallow unauthorized access to your software or other copyrighted work, you may have a right to sue for relief under that Act.\nMicrochip received ISO/TS-16949:2009 certification for its worldwide \nheadquarters, design and wafer fabrication facilities in Chandler and \nTempe, Arizona; Gresham, Oregon and design centers in California \nand India. The Company\u2019s quality system processes and procedures \nare for its PIC\u00ae MCUs and dsPIC\u00ae DSCs, KEELOQ\u00ae code hopping \ndevices, Serial EEPROMs, microperipherals, nonvolatile memory and \nanalog products. In addition, Microchip\u2019s quality system for the design \nand manufacture of development systems is ISO 9001:2000 certified.\nQUALITY MANAGEMENT  S YSTEM \nCERTIFIED BY DNV \n== ISO/TS 16949 == "
+  },
+  {
+   "page": 27,
+   "text": "DS20001984G-page 28 \uf0e3 2005-2014 Microchip Technology Inc.\nAMERICAS\nCorporate Office\n2355 West Chandler Blvd.\nChandler, AZ 85224-6199\nTel: [phone removed] \nFax: [phone removed]\nTechnical Support: \nhttp://www.microchip.com/\nsupport\nWeb Address: \nwww.microchip.com\nAtlanta\nDuluth, GA \nTel: [phone removed] \nFax: [phone removed]\nAustin, TX\nTel: [phone removed] \nBoston\nWestborough, MA \nTel: [phone removed] \nFax: [phone removed]\nChicago\nItasca, IL \nTel: [phone removed] \nFax: [phone removed]\nCleveland\nIndependence, OH \nTel: [phone removed] \nFax: [phone removed]\nDallas\nAddison, TX \nTel: [phone removed] \nFax: [phone removed]\nDetroit\nNovi, MI \nTel: [phone removed]\nHouston, TX \nTel: [phone removed]\nIndianapolis\nNoblesville, IN \nTel: [phone removed]\nFax: [phone removed]\nLos Angeles\nMission Viejo, CA \nTel: [phone removed] \nFax: [phone removed]\nNew York, NY \nTel: [phone removed]\nSan Jose, CA \nTel: [phone removed]\nCanada - Toronto\nTel: [phone removed] \nFax: [phone removed]\nASIA/PACIFIC\nAsia Pacific Office\nSuites 3707-14, 37th Floor\nTower 6, The Gateway\nHarbour City, Kowloon\nHong Kong\nTel: 852-2943-5100\nFax: 852-2401-3431\nAustralia - Sydney\nTel: 61-2-9868-6733\nFax: 61-2-9868-6755\nChina - Beijing\nTel: 86-10-8569-7000 \nFax: 86-10-8528-2104\nChina - Chengdu\nTel: 86-28-8665-5511\nFax: 86-28-8665-7889\nChina - Chongqing\nTel: 86-23-8980-9588\nFax: 86-23-8980-9500\nChina - Hangzhou\nTel: 86-571-8792-8115 \nFax: 86-571-8792-8116\nChina - Hong Kong SAR\nTel: 852-2943-5100 \nFax: 852-2401-3431\nChina - Nanjing\nTel: 86-25-8473-2460\nFax: 86-25-8473-2470\nChina - Qingdao\nTel: 86-532-8502-7355\nFax: 86-532-8502-7205\nChina - Shanghai\nTel: 86-21-5407-5533 \nFax: 86-21-5407-5066\nChina - Shenyang\nTel: 86-24-2334-2829\nFax: 86-24-2334-2393\nChina - Shenzhen\nTel: 86-755-8864-2200 \nFax: 86-755-8203-1760\nChina - Wuhan\nTel: 86-27-5980-5300\nFax: 86-27-5980-5118\nChina - Xian\nTel: 86-29-8833-7252\nFax: 86-29-8833-7256\nChina - Xiamen\nTel: 86-592-2388138 \nFax: 86-592-2388130\nChina - Zhuhai\nTel: 86-756-3210040 \nFax: 86-756-3210049\nASIA/PACIFIC\nIndia - Bangalore\nTel: 91-80-3090-4444 \nFax: 91-80-3090-4123\nIndia - New Delhi\nTel: 91-11-4160-8631\nFax: 91-11-4160-8632\nIndia - Pune\nTel: 91-20-3019-1500\nJapan - Osaka\nTel: 81-6-6152-7160 \nFax: 81-6-6152-9310\nJapan - Tokyo\nTel: 81-3-6880- 3770 \nFax: 81-3-6880-3771\nKorea - Daegu\nTel: 82-53-744-4301\nFax: 82-53-744-4302\nKorea - Seoul\nTel: 82-2-554-7200\nFax: 82-2-558-5932 or \n82-2-558-5934\nMalaysia - Kuala Lumpur\nTel: 60-3-6201-9857\nFax: 60-3-6201-9859\nMalaysia - Penang\nTel: 60-4-227-8870\nFax: 60-4-227-4068\nPhilippines - Manila\nTel: 63-2-634-9065\nFax: 63-2-634-9069\nSingapore\nTel: 65-6334-8870\nFax: 65-6334-8850\nTaiwan - Hsin Chu\nTel: 886-3-5778-366\nFax: 886-3-5770-955\nTaiwan - Kaohsiung\nTel: 886-7-213-7830\nTaiwan - Taipei\nTel: 886-2-2508-8600 \nFax: 886-2-2508-0102\nThailand - Bangkok\nTel: 66-2-694-1351\nFax: 66-2-694-1350\nEUROPE\nAustria - Wels\nTel: 43-7242-2244-39\nFax: 43-7242-2244-393\nDenmark - Copenhagen\nTel: 45-4450-2828 \nFax: 45-4485-2829\nFrance - Paris\nTel: 33-1-69-53-63-20 \nFax: 33-1-69-30-90-79\nGermany - Dusseldorf\nTel: 49-2129-3766400\nGermany - Munich\nTel: 49-89-627-144-0 \nFax: 49-89-627-144-44\nGermany - Pforzheim\nTel: 49-7231-424750\nItaly - Milan \nTel: 39-0331-742611 \nFax: 39-0331-466781\nItaly - Venice\nTel: 39-049-7625286 \nNetherlands - Drunen\nTel: 31-416-690399 \nFax: 31-416-690340\nPoland - Warsaw\nTel: 48-22-3325737 \nSpain - Madrid\nTel: 34-91-708-08-90\nFax: 34-91-708-08-91\nSweden - Stockholm\nTel: 46-8-5090-4654\nUK - Wokingham\nTel: 44-[phone removed]\nFax: 44-[phone removed]\nWorldwide Sales and Service\n03/25/14"
+  }
+ ],
+ "schema": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hwde datasheet extraction",
+  "type": "object",
+  "required": [
+   "mpn",
+   "pinout"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "mpn": {
+    "type": "string",
+    "minLength": 1
+   },
+   "lcsc": {
+    "type": "string"
+   },
+   "package": {
+    "type": "string"
+   },
+   "description": {
+    "type": "string"
+   },
+   "pinout": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pin",
+      "name",
+      "type"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pin": {
+       "type": "string",
+       "minLength": 1
+      },
+      "name": {
+       "type": "string",
+       "minLength": 1
+      },
+      "type": {
+       "type": "string",
+       "enum": [
+        "power_in",
+        "power_out",
+        "ground",
+        "input",
+        "output",
+        "bidirectional",
+        "passive",
+        "analog",
+        "clock",
+        "nc",
+        "open_collector",
+        "tristate",
+        "unspecified"
+       ]
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "decoupling": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "value": {
+       "type": "string",
+       "minLength": 1
+      },
+      "placement": {
+       "type": "string"
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "land_pattern": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "pad_count"
+    ],
+    "properties": {
+     "package": {
+      "type": "string"
+     },
+     "pad_count": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "pitch_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "pad_size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "row_spacing_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "drill_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "annulus_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "courtyard_excess_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "courtyard_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "wire_entry_local": {
+      "type": "string",
+      "enum": [
+       "+X",
+       "-X",
+       "+Y",
+       "-Y"
+      ],
+      "description": "connector wire/cable entry direction in footprint-local coords (KiCad y down)"
+     },
+     "pin1": {
+      "type": "string",
+      "description": "pad number that is pin 1 (default '1')"
+     },
+     "notes": {
+      "type": "string"
+     }
+    }
+   },
+   "exposed_pad": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "present": {
+      "type": "boolean"
+     },
+     "connect_to": {
+      "type": "string"
+     },
+     "thermal_vias": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "present"
+    ]
+   },
+   "layout_notes": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "abs_max": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "param",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "param": {
+       "type": "string"
+      },
+      "value": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "unit": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "pin_ratings": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "kind": {
+       "type": "string",
+       "enum": [
+        "voltage",
+        "current"
+       ]
+      },
+      "level": {
+       "type": "string",
+       "enum": [
+        "abs_max",
+        "recommended"
+       ]
+      },
+      "min": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "max": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "ref": {
+       "type": "string"
+      },
+      "source": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "source_pdf": {
+    "type": "string"
+   },
+   "layout_implications": {
+    "type": "object"
+   }
+  }
+ },
+ "template": {
+  "mpn": "",
+  "lcsc": "",
+  "package": "",
+  "pinout": [
+   {
+    "pin": "1",
+    "name": "",
+    "type": "unspecified"
+   }
+  ],
+  "decoupling": [],
+  "land_pattern": {
+   "pad_count": 0
+  },
+  "layout_notes": [],
+  "abs_max": []
+ },
+ "note": "Fill the template from text_by_page and the PDF pages, then re-run with --validate. Pages without schema-relevant keywords are stubs {page, first_line, chars} - read those PDF pages directly if needed, or re-run with --full-text. If text_chars is ~0 the PDF is image-only; read the rendered pages directly."
+}

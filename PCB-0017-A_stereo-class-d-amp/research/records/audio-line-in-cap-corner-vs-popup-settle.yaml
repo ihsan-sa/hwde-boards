@@ -1,0 +1,64 @@
+id: audio-line-in-cap-corner-vs-popup-settle
+classes: [selection]
+applies:
+  topologies: [audio-line-in]
+  packages: []
+  interfaces: []
+  parts: [TPA3116D2, TPA3118D2, TPA3130D2]
+rule:
+  enforced_by: null
+  bass_corner: "f_corner = 1/(2*pi*Zin*Cin) - larger Cin extends bass response"
+  popup_guideline: "keep Zin*Cin (the input RC time constant) <= 1 ms if possible, so the coupling caps fully charge inside the device's ~10 ms power-up window"
+  failure_mode: "an under-charged, mismatched-pair of coupling caps at SDZ/mute release is a pop, not just a slow bass roll-in"
+prose: >
+  The same Cin that sets the bass corner (f=1/(2*pi*Zin*Cin)) also sets, with
+  Zin, the RC time constant the coupling caps charge through at power-up.
+  SLOS708 sec 7.3.7 recommends keeping that RC <= 1 ms "if possible", tied
+  explicitly to its own ~10 ms power-up window (DS elec-char turn-on time) -
+  "if the input capacitors are not allowed to completely charge, there will
+  be some additional sensitivity to component matching which can result in
+  pop if the input components are not well matched." At Zin=60 kOhm/20 dB
+  this board's 2.2 uF gives ~132 ms, well past both the 1 ms guideline and
+  the 10 ms window - a deliberate bass-extension choice (vs. the datasheet's
+  own 1.5 uF/1.8 Hz recommendation) that trades some margin against
+  mismatch-driven pop for deeper bass. This is a real tradeoff to state
+  explicitly at review, not an oversight: it raises sensitivity to the two
+  coupling caps (signal leg + AC-grounded leg) being well matched in value,
+  not just individually correct.
+sources:
+  - file: research/sources/tpa3116d2.pdf
+    page: 14
+    section: "7.3.2 Input Impedance, Table 2"
+    note: >
+      Table 2 "Recommended Input AC-Coupling Capacitors": at 20 dB gain
+      (Zin=60 kOhm) the recommended cap for a flat-to-20-Hz bass response is
+      1.5 uF, giving a 1.8 Hz high-pass corner (f=1/(2*pi*Zi*Ci), eq 1 on
+      this page) - the datasheet's own reference point this board's 2.2 uF
+      choice is compared against.
+  - file: research/sources/tpa3116d2.pdf
+    page: 16
+    section: "7.3.7 Differential Inputs (continued)"
+    note: >
+      "The impedance seen at the inputs should be limited to an RC time
+      constant of 1 ms or less if possible. This is to allow the input dc
+      blocking capacitors to become completely charged during the 10 ms
+      power-up time. If the input capacitors are not allowed to completely
+      charge, there will be some additional sensitivity to component
+      matching which can result in pop if the input components are not well
+      matched."
+status: active
+origin: research:block-audio-line-in-1
+level: family
+maturity: verified
+generalizes: []
+envelope:
+  cin_uf: {min: 0.1, max: 10}
+envelope_note: >
+  Scales with Cin against Zin and the family's ~10 ms power-up window (DS
+  6.5 turn-on time): the guideline and its pop-risk consequence are
+  calibrated to the SLOS708 family's numeric spec (1 ms RC target, 10 ms
+  window), so this record is family-level, not a universal principle. Bound
+  to the Cin range actually used at the family's usual gain-set Zin values
+  (tens of kOhm); well outside it (e.g. Cin far below 0.1 uF) the RC easily
+  clears 1 ms and the tradeoff described here does not bind.
+verification: {by: "second-reader", date: "2026-09-27", note: "Re-read after fix: p14 Table 2 now cited, matches page exactly (20dB/60kOhm/1.5uF/1.8Hz). Earlier citation gap closed; p16 quote still exact."}

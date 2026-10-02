@@ -1,0 +1,384 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "IR2101",
+ "total": 5,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C2956",
+   "mpn": "IR2101STRPBF",
+   "brand": "Infineon Technologies",
+   "description": "-40\u2103~+150\u2103 100ns 10V~20V 130mA 150ns 150uA 160ns 2 270mA 50ns Half-Bridge IGBT\u3001MOSFET Under Voltage Protection SOIC-8 Gate Drivers ROHS",
+   "package": "SOIC-8",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 18253,
+   "price": 0.6464,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.6464
+    },
+    {
+     "qty": 10,
+     "price": 0.5246
+    },
+    {
+     "qty": 30,
+     "price": 0.4629
+    },
+    {
+     "qty": 100,
+     "price": 0.4028
+    },
+    {
+     "qty": 500,
+     "price": 0.3297
+    },
+    {
+     "qty": 1000,
+     "price": 0.3118
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Infineon-Technologies-IR2101STRPBF_C2956.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_infineon-technologies-ir2101strpbf_C2956.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+150\u2103"
+    },
+    {
+     "name": "Propagation Delay tpHL",
+     "value": "150ns"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "130mA"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "IGBT\u3001MOSFET"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "150uA"
+    },
+    {
+     "name": "Fall Time",
+     "value": "50ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "100ns"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "10V~20V"
+    },
+    {
+     "name": "Features",
+     "value": "Interleaved conduction protection"
+    },
+    {
+     "name": "Propagation Delay tpLH",
+     "value": "160ns"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "270mA"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C5804627",
+   "mpn": "IR2101STRPBF-JSM",
+   "brand": "JSMSEMI",
+   "description": "-40\u2103~+125\u2103 10V~20V 120uA 2 300mA 35ns 600mA 75ns Low Side\u3001High Side MOSFET Undervoltage Protection SOP-8 Gate Drivers ROHS",
+   "package": "SOP-8",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 9264,
+   "price": 0.4336,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.4336
+    },
+    {
+     "qty": 10,
+     "price": 0.3378
+    },
+    {
+     "qty": 30,
+     "price": 0.2956
+    },
+    {
+     "qty": 100,
+     "price": 0.2453
+    },
+    {
+     "qty": 500,
+     "price": 0.2225
+    },
+    {
+     "qty": 1000,
+     "price": 0.2079
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2307270936_JSMSEMI-IR2101STRPBF-JSM_C5804627.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_jsmsemi-ir2101strpbf-jsm_C5804627.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Low Side\u3001High Side"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "300mA"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "120uA"
+    },
+    {
+     "name": "Fall Time",
+     "value": "35ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "75ns"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "10V~20V"
+    },
+    {
+     "name": "Features",
+     "value": "Undervoltage Protection"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "600mA"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C42395630",
+   "mpn": "IR2101STRPBF(XBLW)",
+   "brand": "XBLW",
+   "description": "-40\u2103~+125\u2103 13V~17.5V 2 220mA 380mA 420ns 450ns 46ns 82ns Half-Bridge IGBT\u3001MOSFET Interleaved conduction protection\u3001Dead-time control SOP-8 Gate Drivers ROHS",
+   "package": "SOP-8",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5070,
+   "price": 0.3898,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3898
+    },
+    {
+     "qty": 50,
+     "price": 0.307
+    },
+    {
+     "qty": 150,
+     "price": 0.2729
+    },
+    {
+     "qty": 500,
+     "price": 0.229
+    },
+    {
+     "qty": 3000,
+     "price": 0.2095
+    },
+    {
+     "qty": 6000,
+     "price": 0.1965
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Propagation Delay tpHL",
+     "value": "420ns"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "220mA"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "IGBT\u3001MOSFET"
+    },
+    {
+     "name": "Fall Time",
+     "value": "46ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "82ns"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "13V~17.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Interleaved conduction protection\u3001Dead-time control"
+    },
+    {
+     "name": "Propagation Delay tpLH",
+     "value": "450ns"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "380mA"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2955",
+   "mpn": "IR2101PBF",
+   "brand": "Infineon Technologies",
+   "description": "-40\u2103~+125\u2103 100ns 10V~20V 130mA 150ns 150uA 160ns 2 270mA 50ns Half-Bridge IGBT\u3001MOSFET Under Voltage Protection PDIP-8 Gate Drivers ROHS",
+   "package": "PDIP-8",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 55,
+   "price": 3.2447,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.2447
+    },
+    {
+     "qty": 10,
+     "price": 2.7737
+    },
+    {
+     "qty": 50,
+     "price": 2.4944
+    },
+    {
+     "qty": 100,
+     "price": 2.2118
+    },
+    {
+     "qty": 500,
+     "price": 2.0803
+    },
+    {
+     "qty": 1000,
+     "price": 2.0218
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Infineon-Technologies-IR2101PBF_C2955.pdf",
+   "url": "https://www.lcsc.com/product-detail/gate-drivers_infineon-technologies-ir2101pbf_C2955.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Propagation Delay tpHL",
+     "value": "150ns"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Half-Bridge"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "130mA"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "2"
+    },
+    {
+     "name": "Load Type",
+     "value": "IGBT\u3001MOSFET"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "150uA"
+    },
+    {
+     "name": "Fall Time",
+     "value": "50ns"
+    },
+    {
+     "name": "Rise Time",
+     "value": "100ns"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "10V~20V"
+    },
+    {
+     "name": "Features",
+     "value": "Interleaved conduction protection"
+    },
+    {
+     "name": "Propagation Delay tpLH",
+     "value": "160ns"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "270mA"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

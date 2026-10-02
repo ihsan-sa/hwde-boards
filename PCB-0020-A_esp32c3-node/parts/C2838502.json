@@ -1,0 +1,386 @@
+{
+ "mpn": "ESP32-C3-MINI-1-N4",
+ "lcsc": "C2838502",
+ "package": "Module, 53 pads (LGA-style castellated-less pads), 13.2 x 16.6 x 2.4 mm",
+ "description": "Espressif ESP32-C3-MINI-1 & MINI-1U Datasheet v2.2: 2.4 GHz Wi-Fi + Bluetooth LE module with on-board PCB antenna (MINI-1), ESP32-C3FH4 chip, 4 MB flash in package. Module size 13.2 x 16.6 x 2.4 mm. VDD33 3.0-3.6V. 53 pads incl. 22 ground pads (1,2,11,14,36-53).",
+ "pinout": [
+  {
+   "pin": "1",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "2",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "3",
+   "name": "3V3",
+   "type": "power_in",
+   "notes": "Power supply, VDD33 3.0-3.6V, typ 3.3V (Table 6-2); supply must deliver >=0.5A."
+  },
+  {
+   "pin": "4",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "5",
+   "name": "IO2",
+   "type": "bidirectional",
+   "notes": "GPIO2, ADC1_CH2, FSPIQ. STRAP: Table 4-1 default floating; GPIO2 does not determine SPI boot/Joint Download but should be pulled up (high) due to glitches (Table 4-3 note 2)."
+  },
+  {
+   "pin": "6",
+   "name": "IO3",
+   "type": "bidirectional",
+   "notes": "GPIO3, ADC1_CH3"
+  },
+  {
+   "pin": "7",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "8",
+   "name": "EN",
+   "type": "input",
+   "notes": "High: on, enables chip. Low: off, chip powers off. Do not leave EN floating (Table 3-1). Chip reset release VIH_nRST = 0.75*VDD1 min. Strapping setup tSU=0ms min before EN high; hold tH=3ms min (Table 4-2)."
+  },
+  {
+   "pin": "9",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "10",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "11",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "12",
+   "name": "IO0",
+   "type": "bidirectional",
+   "notes": "GPIO0, ADC1_CH0, XTAL_32K_P"
+  },
+  {
+   "pin": "13",
+   "name": "IO1",
+   "type": "bidirectional",
+   "notes": "GPIO1, ADC1_CH1, XTAL_32K_N"
+  },
+  {
+   "pin": "14",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "15",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "16",
+   "name": "IO10",
+   "type": "bidirectional",
+   "notes": "GPIO10, FSPICS0"
+  },
+  {
+   "pin": "17",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "18",
+   "name": "IO4",
+   "type": "bidirectional",
+   "notes": "GPIO4, ADC1_CH4, FSPIHD, MTMS"
+  },
+  {
+   "pin": "19",
+   "name": "IO5",
+   "type": "bidirectional",
+   "notes": "GPIO5, ADC2_CH0, FSPIWP, MTDI"
+  },
+  {
+   "pin": "20",
+   "name": "IO6",
+   "type": "bidirectional",
+   "notes": "GPIO6, FSPICLK, MTCK"
+  },
+  {
+   "pin": "21",
+   "name": "IO7",
+   "type": "bidirectional",
+   "notes": "GPIO7, FSPID, MTDO"
+  },
+  {
+   "pin": "22",
+   "name": "IO8",
+   "type": "bidirectional",
+   "notes": "GPIO8. STRAP: Table 4-1 default floating; boot mode: SPI boot = any value, Joint Download boot = 1 (Table 4-3); also ROM message printing strap."
+  },
+  {
+   "pin": "23",
+   "name": "IO9",
+   "type": "bidirectional",
+   "notes": "GPIO9. STRAP: Table 4-1 default weak pull-up = 1. SPI boot mode requires 1; Joint Download boot (USB-Serial-JTAG or UART download) requires 0 (Table 4-3)."
+  },
+  {
+   "pin": "24",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "25",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "26",
+   "name": "IO18",
+   "type": "bidirectional",
+   "notes": "GPIO18, USB_D- (USB D-)"
+  },
+  {
+   "pin": "27",
+   "name": "IO19",
+   "type": "bidirectional",
+   "notes": "GPIO19, USB_D+ (USB D+)"
+  },
+  {
+   "pin": "28",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "29",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "30",
+   "name": "RXD0",
+   "type": "bidirectional",
+   "notes": "GPIO20, U0RXD"
+  },
+  {
+   "pin": "31",
+   "name": "TXD0",
+   "type": "bidirectional",
+   "notes": "GPIO21, U0TXD"
+  },
+  {
+   "pin": "32",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "33",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "34",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "35",
+   "name": "NC",
+   "type": "nc",
+   "notes": "Not connected (Table 3-1)."
+  },
+  {
+   "pin": "36",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "37",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "38",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "39",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "40",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "41",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "42",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "43",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "44",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "45",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "46",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "47",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "48",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Ground (Table 3-1: GND 1,2,11,14,36-53)."
+  },
+  {
+   "pin": "49",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Central thermal/exposed pad (EPAD), drawn as 3x3 array of GND pads in Fig 3-1/11-1. Soldering to base-board ground is optional but improves thermal performance (Sec 9, p34)."
+  },
+  {
+   "pin": "50",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Corner GND pad (0.7x0.7 mm per Fig 11-1)."
+  },
+  {
+   "pin": "51",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Corner GND pad (0.7x0.7 mm per Fig 11-1)."
+  },
+  {
+   "pin": "52",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Corner GND pad (0.7x0.7 mm per Fig 11-1)."
+  },
+  {
+   "pin": "53",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Corner GND pad (0.7x0.7 mm per Fig 11-1)."
+  }
+ ],
+ "decoupling": [
+  {
+   "pins": [
+    "3"
+   ],
+   "value": "C1 10uF + C2 0.1uF on VDD33 (3V3 rail at module pin 3)",
+   "placement": "at the 3V3 supply entry to the module, to GND (Fig 9-1 Peripheral Schematics, p34)",
+   "notes": "Datasheet reference schematic shows 10uF and 0.1uF in parallel on VDD33; no further placement text in the datasheet."
+  },
+  {
+   "pins": [
+    "8"
+   ],
+   "value": "EN: R=10 kOhm pull-up to VDD33 (R9) + C=1 uF to GND (C3, shown TBD in Fig 9-1; 1uF per text); 0 ohm series R2 to reset button SW1 with 0.1uF C4 to GND on button side",
+   "placement": "RC delay at EN pin to keep chip supply stable during power-up",
+   "notes": "Sec 9 p34: 'recommended setting for the RC delay circuit is usually R = 10 kOhm and C = 1 uF. However, specific parameters should be adjusted based on the power-up timing of the module and the power-up and reset sequence timing of the chip.' Do not leave EN floating."
+  }
+ ],
+ "land_pattern": {
+  "package": "ESP32-C3-MINI-1 module land pattern (Fig 11-1, p38)",
+  "pad_count": 53,
+  "pad_size_mm": [
+   0.4,
+   0.8
+  ],
+  "courtyard_mm": [
+   13.2,
+   16.6
+  ],
+  "pin1": "1",
+  "notes": "From Fig 11-1 (p38, read visually; unit mm): 48 edge pads 0.4 wide x 0.8 long; 4 corner pads (50-53) 0.7 x 0.7; central EPAD (pin 49, GND) is a 3x3 array of 1.45 x 1.45 square pads with 0.6 gaps (5.4 x 5.4 total, thermal vias shown; pin-1 corner chamfered). Pad-row extents: 11.9 / 11.8 across the bottom/top rows, 9.9 / 9.8 and 11.2 along side columns, 1.6 dimension at pad rows, 0.8 pad length. Overall land+antenna area 13.2 wide x 16.6 tall, of which antenna area is 13.2 x 5.4 (16.6 - 11.2) at the top, plus 0.8 below the pad rows. Pin numbering (Fig 3-1 top view, p10): pins 1-11 left column top to bottom, 12-24 bottom row left to right, 25-35 right column bottom to top, 36-48 top row right to left, 49 center, 50 top-right, 51 bottom-right, 52 bottom-left, 53 top-left corner. Pad pitch is not dimensioned in the figure text; take from the STEP/source file (see OPEN)."
+ },
+ "exposed_pad": {
+  "present": true,
+  "connect_to": "GND",
+  "size_mm": [
+   5.4,
+   5.4
+  ]
+ },
+ "layout_notes": [
+  "ANTENNA KEEP-OUT (Fig 3-1 p10, Note A; Fig 11-1 p38): the module's on-board PCB antenna is at one end (top in Fig 3-1) of the 13.2 x 16.6 mm module. The dotted-line antenna keepout zone covers the antenna end of the module outline: full module width 13.2 mm x about 5.4 mm (16.6 - 11.2 mm, Fig 11-1 'Antenna Area'), drawn slightly beyond the module outline. Base-board rule: no copper on any layer, no parts, in this zone. Keep it free of copper (traces, pours, ground, vias) and components on ALL layers.",
+  "Placement: datasheet p39 Sec 11.2 says the base board's interference with the antenna must be minimised, and defers exact placement and any base-board keep-out beyond the module-outline zone to ESP32-C3 Hardware Design Guidelines > 'General Principles of PCB Layout for Modules' (NOT in this PDF). Figs 3-1/11-1 show the antenna at the end of the module beyond the top GND pad row (pads 36-48), i.e. the end away from pins 12-24; no numeric board-edge overhang distance is stated.",
+  "ESP32-C3-MINI-1U (external antenna connector) has no antenna keepout; this part (MINI-1) does.",
+  "EPAD (pin 49): soldering to base-board ground is not a must but optimises thermal performance; apply the correct amount of solder paste - too much paste raises the module-to-board gap and weakens adhesion of the other pads (Sec 9 p34). Figure 11-1 shows thermal vias in the EPAD land.",
+  "EN: add RC delay (R=10k, C=1uF) for stable power-up; do not float EN (p34, Table 3-1).",
+  "Strapping pins GPIO2, GPIO8, GPIO9 (Table 4-1/4-3): GPIO2 floating default, pull high recommended (glitches); GPIO8 floating default, SPI boot any value, Joint Download needs 1; GPIO9 weak pull-up default=1: 1 = SPI boot (normal), 0 = Joint Download boot (USB-Serial-JTAG / UART download). Strapping is sampled at EN rising; setup tSU >=0 ms, hold tH >=3 ms. Fig 9-1 uses R8 10k pull-up on IO9 with JP2 boot-option jumper to GND.",
+  "USB: IO18 = USB_D- (pin 26), IO19 = USB_D+ (pin 27); Fig 9-1 routes them through 0 ohm R6 (D-) and R4 (D+) to USB connector JP3, with TBD caps C5/C6 to GND.",
+  "UART0 (RXD0 pin 30 = GPIO20 U0RXD, TXD0 pin 31 = GPIO21 U0TXD) is used to download firmware and log output (p34).",
+  "IO0/IO1 can carry a 32.768 kHz crystal (XTAL_32K_P/N); Fig 9-1 shows it as no-component option with 12pF caps.",
+  "Recommended operating: VDD33 3.0-3.6V, supply capable of 0.5 A (Table 6-2)."
+ ],
+ "abs_max": [
+  {
+   "param": "VDD33 power supply voltage",
+   "value": "-0.3 to 3.6",
+   "unit": "V"
+  }
+ ],
+ "source_pdf": "parts/U1_esp32-c3-mini-1_datasheet_en.pdf"
+}

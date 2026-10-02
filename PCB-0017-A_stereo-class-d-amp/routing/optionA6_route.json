@@ -1,0 +1,163 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "add_via",
+   "at": [
+    39.6,
+    36.9
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    40.45,
+    36.9
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    41.3,
+    36.9
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    39.6,
+    37.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    40.45,
+    37.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    41.3,
+    37.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    39.6,
+    36.9
+   ],
+   "end": [
+    43.0,
+    36.9
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    39.6,
+    37.75
+   ],
+   "end": [
+    43.0,
+    37.75
+   ],
+   "width": 0.624,
+   "layer": "F.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    39.6,
+    36.9
+   ],
+   "end": [
+    41.3,
+    36.9
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    39.6,
+    37.75
+   ],
+   "end": [
+    41.3,
+    37.75
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    41.3,
+    36.9
+   ],
+   "end": [
+    41.3,
+    43.5
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    41.3,
+    43.5
+   ],
+   "end": [
+    41.75,
+    43.95
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    41.75,
+    43.95
+   ],
+   "end": [
+    44.0,
+    43.95
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  }
+ ]
+}

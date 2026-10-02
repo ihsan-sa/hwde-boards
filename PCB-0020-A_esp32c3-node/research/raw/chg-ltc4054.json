@@ -1,0 +1,531 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "LTC4054",
+ "total": 11,
+ "count": 7,
+ "results": [
+  {
+   "lcsc": "C462648",
+   "mpn": "LTC4054ES5-4.2#TRPBF",
+   "brand": "Analog Devices",
+   "description": "-40\u2103~+85\u2103 1 25uA 4.25V~6.5V 4.2V 800mA Charging IC Lithium Battery TSOT-23-5 Battery Management ROHS",
+   "package": "TSOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 45,
+   "price": 7.244,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 7.244
+    },
+    {
+     "qty": 10,
+     "price": 6.3222
+    },
+    {
+     "qty": 30,
+     "price": 5.3826
+    },
+    {
+     "qty": 100,
+     "price": 4.9111
+    },
+    {
+     "qty": 102,
+     "price": 4.9111
+    },
+    {
+     "qty": 104,
+     "price": 4.9111
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2105241237_Analog-Devices-LTC4054ES5-4-2-TRPBF_C462648.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_analog-devices-ltc4054es5-4-2-trpbf_C462648.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "25uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.25V~6.5V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "800mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C462691",
+   "mpn": "LTC4054LES5-4.2#TRPBF",
+   "brand": "Analog Devices",
+   "description": "-40\u2103~+85\u2103 1 157.5mA 200uA 4.25V~6.5V 4.2V Charging IC Lithium Battery Not supported TSOT-23-5 Battery Management ROHS",
+   "package": "TSOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 16,
+   "price": 6.9643,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 6.9643
+    },
+    {
+     "qty": 10,
+     "price": 5.989
+    },
+    {
+     "qty": 30,
+     "price": 5.3956
+    },
+    {
+     "qty": 100,
+     "price": 4.8965
+    },
+    {
+     "qty": 102,
+     "price": 4.8965
+    },
+    {
+     "qty": 104,
+     "price": 4.8965
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111533_Analog-Devices-LTC4054LES5-4-2-TRPBF_C462691.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_analog-devices-ltc4054les5-4-2-trpbf_C462691.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "200uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "157.5mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.25V~6.5V"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C50393975",
+   "mpn": "LTC4054ES5-4.2#TRMPBF",
+   "brand": "Analog Devices",
+   "description": "SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10,
+   "price": 7.1155,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 7.1155
+    },
+    {
+     "qty": 10,
+     "price": 6.9367
+    },
+    {
+     "qty": 30,
+     "price": 6.818
+    },
+    {
+     "qty": 100,
+     "price": 6.6994
+    },
+    {
+     "qty": 102,
+     "price": 6.6994
+    },
+    {
+     "qty": 104,
+     "price": 6.6994
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 2
+  },
+  {
+   "lcsc": "C687179",
+   "mpn": "LTC4054XES5-4.2#TRPBF",
+   "brand": "Analog Devices",
+   "description": "-40\u2103~+85\u2103 1 25uA 4.25V~6.5V 4.2V 535mA Charging IC Lithium Battery TSOT-23-5 Battery Management ROHS",
+   "package": "TSOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 2.7848,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.7848
+    },
+    {
+     "qty": 10,
+     "price": 2.7848
+    },
+    {
+     "qty": 12,
+     "price": 2.7848
+    },
+    {
+     "qty": 200,
+     "price": 1.0779
+    },
+    {
+     "qty": 500,
+     "price": 1.0405
+    },
+    {
+     "qty": 1000,
+     "price": 1.021
+    }
+   ],
+   "min_qty": 4,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310091152_Analog-Devices-LTC4054XES5-4-2-TRPBF_C687179.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_analog-devices-ltc4054xes5-4-2-trpbf_C687179.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "25uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "535mA"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.25V~6.5V"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C687178",
+   "mpn": "LTC4054XES5-4.2#TRMPBF",
+   "brand": "Analog Devices",
+   "description": "-40\u2103~+85\u2103 1 4.25V~6.5V 4.2V TSOT-23-5 Battery Management ROHS",
+   "package": "TSOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 2.7848,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.7848
+    },
+    {
+     "qty": 10,
+     "price": 2.7848
+    },
+    {
+     "qty": 12,
+     "price": 2.7848
+    },
+    {
+     "qty": 200,
+     "price": 1.0779
+    },
+    {
+     "qty": 500,
+     "price": 1.0405
+    },
+    {
+     "qty": 1000,
+     "price": 1.021
+    }
+   ],
+   "min_qty": 4,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310091152_Analog-Devices-LTC4054XES5-4-2-TRMPBF_C687178.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_analog-devices-ltc4054xes5-4-2-trmpbf_C687178.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.25V~6.5V"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C687176",
+   "mpn": "LTC4054LES5-4.2#TRMPBF",
+   "brand": "Analog Devices",
+   "description": "-40\u2103~+85\u2103 1 150mA 4.25V~6.5V 4.2V TSOT-23-5 Battery Management ROHS",
+   "package": "TSOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 2.9847,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.9847
+    },
+    {
+     "qty": 10,
+     "price": 2.9116
+    },
+    {
+     "qty": 30,
+     "price": 2.8612
+    },
+    {
+     "qty": 100,
+     "price": 2.8124
+    },
+    {
+     "qty": 102,
+     "price": 2.8124
+    },
+    {
+     "qty": 104,
+     "price": 2.8124
+    }
+   ],
+   "min_qty": 4,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310091152_Analog-Devices-LTC4054LES5-4-2-TRMPBF_C687176.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_analog-devices-ltc4054les5-4-2-trmpbf_C687176.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "25uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "150mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.25V~6.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft start\u3001Undervoltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C117064",
+   "mpn": "LTC4054ES5-4.2#PBF",
+   "brand": "Analog Devices",
+   "description": "-40\u2103~+85\u2103 1 200uA 4.25V~6.5V 4.2V 800mA Charging IC Lithium Battery Not supported Not supported SOT-23-5 Battery Management ROHS",
+   "package": "SOT-23-5",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 5.6866,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 5.6866
+    },
+    {
+     "qty": 10,
+     "price": 5.5598
+    },
+    {
+     "qty": 30,
+     "price": 5.4752
+    },
+    {
+     "qty": 100,
+     "price": 4.9534
+    },
+    {
+     "qty": 102,
+     "price": 4.9534
+    },
+    {
+     "qty": 104,
+     "price": 4.9534
+    }
+   ],
+   "min_qty": 2,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Analog-Devices-LTC4054ES5-4-2-PBF_C117064.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_analog-devices-ltc4054es5-4-2-pbf_C117064.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "200uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.25V~6.5V"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "800mA"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Not supported"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Soft-start\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Not supported"
+    }
+   ],
+   "rank": 6
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 4
+}

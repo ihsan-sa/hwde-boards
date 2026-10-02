@@ -1,0 +1,38 @@
+id: boost-sw-node-containment
+classes:
+- emi
+applies:
+  topologies:
+  - boost
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  sw_copper: minimal
+  gnd_plane_under_ic: true
+prose: Keep the length and area of every trace on the SW pin minimal and keep an unbroken ground plane
+  under the regulator to limit interplane coupling; fast switch edges are the radiation source. TI Fig
+  10-1 routes SW as a short stub straight from the SW pin to the inductor pad with no pour on it, in contrast
+  to the large VIN, VOUT and GND pours. On a 2-layer board this means the plane under the IC and inductor
+  is the bottom-layer GND, and signals (FB, EN) are not routed under the inductor or SW stub.
+sources:
+- file: research/sources/tps61023.pdf
+  page: 18
+  note: '10.1: minimize length/area of all SW traces, always a ground plane under the regulator; Fig 10-1
+    shows SW as a short trace to the inductor with big pours only on VIN/VOUT/GND.'
+status: active
+origin: research:block-boost-1
+level: topology
+maturity: verified
+envelope:
+  vout_v:
+    min: 2.2
+    max: 5.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: Scales with integration (hot loop is inside the IC only when both FETs are integrated)
+  and with the part Vout range 2.2-5.5 V read from TPS61023 sec 6.3; discrete-FET boosts have a bigger
+  external loop. Not verified for other integrated boosts.
+verification: {by: "second-reader", date: "2026-10-01", note: "p18 s10.1 and Fig 10-1 visual: minimize SW trace length/area, ground plane under regulator; SW is a short stub to the inductor pad, big pours only VIN/VOUT/GND."}

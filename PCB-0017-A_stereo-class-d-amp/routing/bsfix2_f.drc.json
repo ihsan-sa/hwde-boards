@@ -1,0 +1,63 @@
+{
+  "script": "kc",
+  "tool": "drc",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "units": "mm",
+  "kicad_version": "10.0.6",
+  "options": {
+    "parity": true,
+    "all_track_errors": true,
+    "refill": true,
+    "save_board": true
+  },
+  "counts": {
+    "total": 1,
+    "by_severity": {
+      "warning": 1
+    },
+    "by_source": {
+      "drc": 1
+    }
+  },
+  "status": "violations",
+  "violations": [
+    {
+      "check": "silk_overlap",
+      "severity": "warning",
+      "pos": [
+        26.5,
+        33.95
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C7",
+        "C9"
+      ],
+      "msg": "Silkscreen clearance",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C7",
+          "pos": [
+            26.5,
+            33.95
+          ],
+          "uuid": "31345a73-7f4d-4b27-afd9-c01617eb86e2"
+        },
+        {
+          "msg": "Reference field of C9",
+          "pos": [
+            26.15,
+            35.6
+          ],
+          "uuid": "736fe727-aee6-41bd-ac40-33d3d9e65395"
+        }
+      ]
+    }
+  ],
+  "report_schema": 1,
+  "checker_version": 1,
+  "generated_at": "2026-09-27T12:54:46+00:00",
+  "input_digest": "sexpr_no_uuid:73ef92995bcf0f1de913c936edd4821501f7ae895033d1cae6195d05680cc6ba"
+}

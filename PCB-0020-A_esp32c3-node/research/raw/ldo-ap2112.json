@@ -1,0 +1,368 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "AP2112K-3.3",
+ "total": 5,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C51118",
+   "mpn": "AP2112K-3.3TRG1",
+   "brand": "Diodes Incorporated",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 250mV@(600mA) 3.3V 50uVrms 55uA 600mA 65dB@(1kHz) 6V Fixed Over Current Protection\u3001Thermal Shutdown\u3001Enable control Positive SOT-25-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-25-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 39133,
+   "price": 0.171,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.171
+    },
+    {
+     "qty": 50,
+     "price": 0.1356
+    },
+    {
+     "qty": 150,
+     "price": 0.1182
+    },
+    {
+     "qty": 500,
+     "price": 0.1028
+    },
+    {
+     "qty": 3000,
+     "price": 0.094
+    },
+    {
+     "qty": 6000,
+     "price": 0.0916
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Diodes-Incorporated-AP2112K-3-3TRG1_C51118.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_diodes-incorporated-ap2112k-3-3trg1_C51118.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "65dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "55uA"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control\u3001Output discharge"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "250mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C22365427",
+   "mpn": "AP2112K-3.3TRG1(MS)",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+125\u2103@(Tj) 1 2uA 3.3V 320mV@(600mA) 600mA 6V 75dB@(1kHz) Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 11046,
+   "price": 0.0791,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0791
+    },
+    {
+     "qty": 50,
+     "price": 0.0626
+    },
+    {
+     "qty": 150,
+     "price": 0.0545
+    },
+    {
+     "qty": 500,
+     "price": 0.0483
+    },
+    {
+     "qty": 3000,
+     "price": 0.0418
+    },
+    {
+     "qty": 6000,
+     "price": 0.0392
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404151058_MSKSEMI-AP2112K-3-3TRG1-MS_C22365427.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_msksemi-ap2112k-3-3trg1-ms_C22365427.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(Tj)"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C23380830",
+   "mpn": "AP2112K-3.3TRG1",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 10uA 3.3V 320mV@(600mA) 5.5V 600mA 75dB@(1kHz) Fixed Over Temperature Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 9554,
+   "price": 0.1104,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1104
+    },
+    {
+     "qty": 50,
+     "price": 0.089
+    },
+    {
+     "qty": 150,
+     "price": 0.0782
+    },
+    {
+     "qty": 500,
+     "price": 0.0703
+    },
+    {
+     "qty": 3000,
+     "price": 0.0586
+    },
+    {
+     "qty": 6000,
+     "price": 0.0555
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406281355_TECH-PUBLIC-AP2112K-3-3TRG1_C23380830.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-ap2112k-3-3trg1_C23380830.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "10uA"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown\u3001Enable control\u3001Output discharge"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C3021085",
+   "mpn": "TPAP2112K-3.3TRG1",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 10uA 3.3V 320mV@(600mA) 5.5V 600mA 80dB@(100Hz) Fixed Over Current Protection\u3001Over Temperature Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8897,
+   "price": 0.0945,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0945
+    },
+    {
+     "qty": 50,
+     "price": 0.0828
+    },
+    {
+     "qty": 150,
+     "price": 0.0769
+    },
+    {
+     "qty": 500,
+     "price": 0.0726
+    },
+    {
+     "qty": 3000,
+     "price": 0.0636
+    },
+    {
+     "qty": 6000,
+     "price": 0.0618
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2205241716_TECH-PUBLIC-TPAP2112K-3-3TRG1_C3021085.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-tpap2112k-3-3trg1_C3021085.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "80dB@(100Hz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "10uA"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown\u3001Enable control\u3001Output discharge"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 1
+}

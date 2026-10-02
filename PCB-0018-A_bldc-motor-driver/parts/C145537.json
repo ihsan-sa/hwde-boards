@@ -1,0 +1,53 @@
+{
+  "mpn": "NTMFS5C628NLT1G",
+  "lcsc": "C145537",
+  "package": "DFN5 5x6, 1.27P (SO-8FL), Case 488AA",
+  "description": "60V, 2.4mOhm typ RDS(on) @10V, 150A single N-channel power MOSFET",
+  "pinout": [
+    {"pin": "1", "name": "S", "type": "passive", "notes": "Source"},
+    {"pin": "2", "name": "S", "type": "passive", "notes": "Source"},
+    {"pin": "3", "name": "S", "type": "passive", "notes": "Source"},
+    {"pin": "4", "name": "G", "type": "input", "notes": "Gate"},
+    {"pin": "5", "name": "D", "type": "passive", "notes": "Drain. Also the exposed pad on the package bottom (Pin 5 / exposed pad, electrically Drain)."}
+  ],
+  "decoupling": [],
+  "land_pattern": {
+    "package": "DFN5 5x6, 1.27P (SO-8FL), Case 488AA, Issue L",
+    "pad_count": 5,
+    "pitch_mm": 1.27,
+    "pad_size_mm": [1.0, 0.75],
+    "row_spacing_mm": 5.8,
+    "pin1": "1",
+    "notes": "Body D1 4.70-4.90mm x E1 5.70-5.90mm, overall D 5.15mm x E 6.15mm, lead pitch e=1.27mm BSC. Recommended soldering footprint (from datasheet drawing dims): source/gate lead pads approx 1.0mm x 0.75mm at 1.27mm pitch; exposed drain pad (Pin 5) approx 3.2mm x 4.56mm centered on the package. Exact pad geometry read from the footprint drawing's dimension callouts (1.270, 0.750, 1.000, 0.905, 4.530, 1.530, 4.560, 0.495, 3.200, 1.330, 0.965mm); verify against the vendor land-pattern drawing before finalizing the footprint, since the numeric labels could not be matched one-to-one to specific pad edges from text extraction alone."
+  },
+  "exposed_pad": {
+    "present": true,
+    "connect_to": "Drain (Pin 5)",
+    "thermal_vias": 0
+  },
+  "layout_notes": [
+    "Exposed pad (bottom) is electrically Drain (Pin 5); it is not a floating thermal-only pad - it carries the drain current and must be treated as a power node, not tied to a ground/thermal plane directly.",
+    "Junction-to-case thermal resistance RthJC = 1.3 C/W (steady state); junction-to-ambient RthJA = 40 C/W when surface-mounted on FR4 with a 650 mm^2, 2 oz Cu pad (Note 2 of the thermal ratings table) - size the drain copper pour accordingly for thermal performance.",
+    "Datasheet gives no dedicated 'Layout' section text (power MOSFET datasheet, not a controller IC); layout guidance above is derived from the thermal test-condition footnote and the exposed-pad/pinout assignment, not a vendor layout narrative.",
+    "CONFIRMED from ELECTRICAL CHARACTERISTICS table: Total Gate Charge QG(TOT) at VGS=10V, VDS=48V, ID=50A = 52 nC (typ) - matches LCSC attribute and blocks.md figure.",
+    "CONFIRMED from ELECTRICAL CHARACTERISTICS table: RDS(on) at VGS=10V, ID=50A = 2.0 mOhm typ / 2.4 mOhm max - matches abbreviated header spec (2.4 mOhm @10V) and blocks.md figure."
+  ],
+  "abs_max": [
+    {"param": "Drain-to-Source Voltage VDSS", "value": 60, "unit": "V"},
+    {"param": "Gate-to-Source Voltage VGS", "value": "-20 to 20", "unit": "V"},
+    {"param": "Continuous Drain Current ID (TC=25C, steady state, RthJC)", "value": 150, "unit": "A"},
+    {"param": "Continuous Drain Current ID (TC=100C, steady state, RthJC)", "value": 110, "unit": "A"},
+    {"param": "Power Dissipation PD (TC=25C, RthJC)", "value": 110, "unit": "W"},
+    {"param": "Power Dissipation PD (TC=100C, RthJC)", "value": 56, "unit": "W"},
+    {"param": "Continuous Drain Current ID (TA=25C, steady state, RthJA)", "value": 28, "unit": "A"},
+    {"param": "Continuous Drain Current ID (TA=100C, steady state, RthJA)", "value": 20, "unit": "A"},
+    {"param": "Power Dissipation PD (TA=25C, RthJA)", "value": 3.7, "unit": "W"},
+    {"param": "Power Dissipation PD (TA=100C, RthJA)", "value": 1.9, "unit": "W"},
+    {"param": "Pulsed Drain Current IDM (TA=25C, tp=10us)", "value": 900, "unit": "A"},
+    {"param": "Operating Junction and Storage Temperature TJ, Tstg", "value": "-55 to 175", "unit": "C"},
+    {"param": "Source Current (Body Diode) IS", "value": 120, "unit": "A"},
+    {"param": "Single Pulse Drain-to-Source Avalanche Energy EAS (IL(pk)=9A)", "value": 565, "unit": "mJ"},
+    {"param": "Lead Temperature for Soldering (1/8 in from case, 10s)", "value": 260, "unit": "C"}
+  ],
+  "source_pdf": "parts/C145537.pdf"
+}

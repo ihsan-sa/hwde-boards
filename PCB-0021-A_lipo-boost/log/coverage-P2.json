@@ -1,0 +1,988 @@
+{
+ "script": "knowledge",
+ "status": "gaps",
+ "schema_version": 2,
+ "workspace": "PCB-0021-A_lipo-boost",
+ "board": "lipo-boost",
+ "phase": "P2",
+ "maturity_floor": "approved",
+ "keys": {
+  "topologies": [
+   "boost",
+   "linear-charger-power-path"
+  ],
+  "packages": [],
+  "interfaces": [],
+  "parts": [],
+  "sources": {
+   "constraints": "PCB-0021-A_lipo-boost/architecture/constraints.json"
+  }
+ },
+ "sources": {
+  "constraints": "PCB-0021-A_lipo-boost/architecture/constraints.json",
+  "parts": null
+ },
+ "summary": {
+  "slots": 2,
+  "covered": 0,
+  "provisional": 0,
+  "gap": 2,
+  "draft_unverified": 2
+ },
+ "slots": [
+  {
+   "id": "block:B1",
+   "kind": "block",
+   "topology": "linear-charger-power-path",
+   "label": "B1",
+   "operating_point": {
+    "vin_v": 5,
+    "vout_v": 4.4,
+    "iout_a": 1.5,
+    "pdiss_w": 1.1,
+    "board_layers": 2,
+    "integration_kind": "integrated-fet",
+    "source_kind": "usb",
+    "control_kind": "linear"
+   },
+   "classes": [
+    {
+     "class": "selection",
+     "min_level": "part",
+     "verdict": "gap",
+     "records": [
+      {
+       "id": "linear-charger-ilim-iset-programming",
+       "level": "part",
+       "maturity": "draft",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "draft-unverified"
+      }
+     ]
+    },
+    {
+     "class": "decoupling",
+     "min_level": "part",
+     "verdict": "gap",
+     "records": [
+      {
+       "id": "linear-charger-pin-caps-ts-and-leds",
+       "level": "part",
+       "maturity": "draft",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "draft-unverified"
+      }
+     ]
+    },
+    {
+     "class": "thermal",
+     "min_level": "part",
+     "verdict": "gap",
+     "records": [
+      {
+       "id": "linear-charger-thermal-dissipation-and-pad",
+       "level": "part",
+       "maturity": "draft",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "draft-unverified"
+      }
+     ]
+    },
+    {
+     "class": "thermal-via",
+     "min_level": "part",
+     "verdict": "gap",
+     "records": [
+      {
+       "id": "linear-charger-thermal-dissipation-and-pad",
+       "level": "part",
+       "maturity": "draft",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "draft-unverified"
+      }
+     ]
+    },
+    {
+     "class": "return-path",
+     "min_level": "part",
+     "verdict": "gap",
+     "records": [
+      {
+       "id": "linear-charger-single-point-ground-and-current-paths",
+       "level": "part",
+       "maturity": "draft",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "draft-unverified"
+      }
+     ]
+    },
+    {
+     "class": "sequencing",
+     "min_level": "principle",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "linear-charger-input-dpm-and-startup-behaviour",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "linear-charger-power-path",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "gap"
+  },
+  {
+   "id": "block:B2",
+   "kind": "block",
+   "topology": "boost",
+   "label": "B2",
+   "operating_point": {
+    "vin_v": 3.6,
+    "vout_v": 5,
+    "iout_a": 1.0,
+    "fsw_khz": 1000,
+    "pdiss_w": 0.45,
+    "board_layers": 2,
+    "switching_kind": "hard",
+    "rectifier_kind": "sync",
+    "integration_kind": "integrated-fet",
+    "source_kind": "battery",
+    "control_kind": "cot"
+   },
+   "classes": [
+    {
+     "class": "selection",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "boost-inductor-and-peak-current",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "power-loop",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "boost-hot-loop-vout-cap-to-gnd",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "emi",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "boost-sw-node-containment",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "feedback",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": [
+      {
+       "id": "boost-fb-divider-and-feedforward",
+       "level": "topology",
+       "maturity": "draft",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "draft-unverified"
+      }
+     ]
+    },
+    {
+     "class": "decoupling",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "boost-input-output-caps",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "thermal-via",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": [
+      {
+       "id": "boost-thermal-copper-and-vias",
+       "level": "topology",
+       "maturity": "draft",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "draft-unverified"
+      }
+     ]
+    },
+    {
+     "class": "sequencing",
+     "min_level": "principle",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "boost-passthrough-enable-sequencing",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "boost",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "gap"
+  }
+ ],
+ "gaps": [
+  {
+   "slot": "block:B1",
+   "kind": "block",
+   "topology": "linear-charger-power-path",
+   "operating_point": {
+    "vin_v": 5,
+    "vout_v": 4.4,
+    "iout_a": 1.5,
+    "pdiss_w": 1.1,
+    "board_layers": 2,
+    "integration_kind": "integrated-fet",
+    "source_kind": "usb",
+    "control_kind": "linear"
+   },
+   "missing": [
+    {
+     "class": "selection",
+     "min_level": "part"
+    },
+    {
+     "class": "decoupling",
+     "min_level": "part"
+    },
+    {
+     "class": "thermal",
+     "min_level": "part"
+    },
+    {
+     "class": "thermal-via",
+     "min_level": "part"
+    },
+    {
+     "class": "return-path",
+     "min_level": "part"
+    }
+   ],
+   "reasons": [
+    "no record satisfies the class at this operating point and maturity floor"
+   ],
+   "related_records": [
+    "linear-charger-ilim-iset-programming",
+    "linear-charger-input-dpm-and-startup-behaviour",
+    "linear-charger-pin-caps-ts-and-leds",
+    "linear-charger-single-point-ground-and-current-paths",
+    "linear-charger-thermal-dissipation-and-pad"
+   ],
+   "principle_parents": [],
+   "task": "research block 'linear-charger-power-path': populate selection, decoupling, thermal, thermal-via, return-path"
+  },
+  {
+   "slot": "block:B2",
+   "kind": "block",
+   "topology": "boost",
+   "operating_point": {
+    "vin_v": 3.6,
+    "vout_v": 5,
+    "iout_a": 1.0,
+    "fsw_khz": 1000,
+    "pdiss_w": 0.45,
+    "board_layers": 2,
+    "switching_kind": "hard",
+    "rectifier_kind": "sync",
+    "integration_kind": "integrated-fet",
+    "source_kind": "battery",
+    "control_kind": "cot"
+   },
+   "missing": [
+    {
+     "class": "feedback",
+     "min_level": "topology"
+    },
+    {
+     "class": "thermal-via",
+     "min_level": "topology"
+    }
+   ],
+   "reasons": [
+    "no record satisfies the class at this operating point and maturity floor"
+   ],
+   "related_records": [
+    "boost-fb-divider-and-feedforward",
+    "boost-hot-loop-vout-cap-to-gnd",
+    "boost-inductor-and-peak-current",
+    "boost-input-output-caps",
+    "boost-passthrough-enable-sequencing",
+    "boost-sw-node-containment",
+    "boost-thermal-copper-and-vias"
+   ],
+   "principle_parents": [],
+   "task": "research block 'boost': populate feedback, thermal-via"
+  }
+ ],
+ "warnings": [
+  "6 research record(s) never verified - unverified research never injects, so these classes are NOT covered by them: boost-fb-divider-and-feedforward, boost-thermal-copper-and-vias, linear-charger-ilim-iset-programming, linear-charger-pin-caps-ts-and-leds, linear-charger-single-point-ground-and-current-paths, linear-charger-thermal-dissipation-and-pad"
+ ],
+ "workspace_records": [
+  "boost-fb-divider-and-feedforward",
+  "boost-hot-loop-vout-cap-to-gnd",
+  "boost-inductor-and-peak-current",
+  "boost-input-output-caps",
+  "boost-passthrough-enable-sequencing",
+  "boost-sw-node-containment",
+  "boost-thermal-copper-and-vias",
+  "linear-charger-ilim-iset-programming",
+  "linear-charger-input-dpm-and-startup-behaviour",
+  "linear-charger-pin-caps-ts-and-leds",
+  "linear-charger-single-point-ground-and-current-paths",
+  "linear-charger-thermal-dissipation-and-pad"
+ ],
+ "workspace_checklists": [
+  "boost",
+  "linear-charger-power-path"
+ ],
+ "draft_unverified": [
+  {
+   "slot": "block:B1",
+   "class": "selection",
+   "verdict": "gap",
+   "records": [
+    "linear-charger-ilim-iset-programming"
+   ]
+  },
+  {
+   "slot": "block:B1",
+   "class": "decoupling",
+   "verdict": "gap",
+   "records": [
+    "linear-charger-pin-caps-ts-and-leds"
+   ]
+  },
+  {
+   "slot": "block:B1",
+   "class": "thermal",
+   "verdict": "gap",
+   "records": [
+    "linear-charger-thermal-dissipation-and-pad"
+   ]
+  },
+  {
+   "slot": "block:B1",
+   "class": "thermal-via",
+   "verdict": "gap",
+   "records": [
+    "linear-charger-thermal-dissipation-and-pad"
+   ]
+  },
+  {
+   "slot": "block:B1",
+   "class": "return-path",
+   "verdict": "gap",
+   "records": [
+    "linear-charger-single-point-ground-and-current-paths"
+   ]
+  },
+  {
+   "slot": "block:B2",
+   "class": "feedback",
+   "verdict": "gap",
+   "records": [
+    "boost-fb-divider-and-feedforward"
+   ]
+  },
+  {
+   "slot": "block:B2",
+   "class": "thermal-via",
+   "verdict": "gap",
+   "records": [
+    "boost-thermal-copper-and-vias"
+   ]
+  }
+ ],
+ "mapping_applied": null,
+ "mapping_request": {
+  "schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "title": "hwde coverage mapping (agent output)",
+   "type": "object",
+   "required": [
+    "mappings"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "mappings": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "record",
+       "slot",
+       "class",
+       "why"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "record": {
+        "type": "string",
+        "minLength": 1
+       },
+       "slot": {
+        "type": "string",
+        "minLength": 1
+       },
+       "class": {
+        "type": "string",
+        "minLength": 1
+       },
+       "why": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+       }
+      }
+     }
+    },
+    "note": {
+     "type": "string",
+     "maxLength": 600
+    }
+   }
+  },
+  "instructions": "Map records to slots for ONE class each - only edges you can justify from the record's prose. You classify; you do NOT decide sufficiency, coverage or maturity. Output the JSON shape in `schema`; the coverage run validates it and refuses unknown records/slots or classes the record does not carry.",
+  "slots": [
+   {
+    "id": "block:B1",
+    "kind": "block",
+    "topology": "linear-charger-power-path",
+    "operating_point": {
+     "vin_v": 5,
+     "vout_v": 4.4,
+     "iout_a": 1.5,
+     "pdiss_w": 1.1,
+     "board_layers": 2,
+     "integration_kind": "integrated-fet",
+     "source_kind": "usb",
+     "control_kind": "linear"
+    },
+    "required_classes": [
+     "selection",
+     "decoupling",
+     "thermal",
+     "thermal-via",
+     "return-path",
+     "sequencing"
+    ],
+    "unmet_classes": [
+     "selection",
+     "decoupling",
+     "thermal",
+     "thermal-via",
+     "return-path",
+     "sequencing"
+    ]
+   },
+   {
+    "id": "block:B2",
+    "kind": "block",
+    "topology": "boost",
+    "operating_point": {
+     "vin_v": 3.6,
+     "vout_v": 5,
+     "iout_a": 1.0,
+     "fsw_khz": 1000,
+     "pdiss_w": 0.45,
+     "board_layers": 2,
+     "switching_kind": "hard",
+     "rectifier_kind": "sync",
+     "integration_kind": "integrated-fet",
+     "source_kind": "battery",
+     "control_kind": "cot"
+    },
+    "required_classes": [
+     "selection",
+     "power-loop",
+     "emi",
+     "feedback",
+     "decoupling",
+     "thermal-via",
+     "sequencing"
+    ],
+    "unmet_classes": [
+     "selection",
+     "power-loop",
+     "emi",
+     "feedback",
+     "decoupling",
+     "thermal-via",
+     "sequencing"
+    ]
+   }
+  ],
+  "candidates": [
+   {
+    "id": "boost-hot-loop-vout-cap-to-gnd",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "power-loop"
+    ],
+    "applies": {
+     "topologies": [
+      "boost"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Boost hot loop is the OUTPUT side: low-side FET, then rectifier FET, then Cout, back to the GND pin of the switch. It carries ns edges and must be shortest on the board, so each Cout sits next to BOTH the VOUT and the GND pin (reduces SW an"
+   },
+   {
+    "id": "boost-inductor-and-peak-current",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "boost"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Stay inside the part inductance window (TPS61023 0.37-2.9 uH, 1 uH nominal) and set Isat above the peak: IL(DC)=Vout*Iout/(Vin*eta), dI(pp)=Vin*D/(L*fsw), IL(P)=IL(DC)+dI/2, evaluated at minimum Vin, maximum Iout, L at -30% tolerance and lo"
+   },
+   {
+    "id": "boost-input-output-caps",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "boost"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Cin: X5R/X7R ceramic, as close to the device as possible; 10 uF is sufficient for most applications and the effective range starts at 1 uF. If the source arrives through long leads, add bulk (tantalum or electrolytic) between the ceramic an"
+   },
+   {
+    "id": "boost-passthrough-enable-sequencing",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "sequencing"
+    ],
+    "applies": {
+     "topologies": [
+      "boost"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "A boost does not isolate input from output. When Vin exceeds the set Vout the TPS61023 turns the high-side FET fully on at 101% of target and passes Vin to Vout (resumes switching below 97%): the load sees Vin minus inductor DCR and FET dro"
+   },
+   {
+    "id": "boost-sw-node-containment",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "boost"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Keep the length and area of every trace on the SW pin minimal and keep an unbroken ground plane under the regulator to limit interplane coupling; fast switch edges are the radiation source. TI Fig 10-1 routes SW as a short stub straight fro"
+   },
+   {
+    "id": "buck-bst-fb-output-caps",
+    "level": "family",
+    "maturity": "approved",
+    "classes": [
+     "feedback",
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "BST: integrated-FET parts need the 100 nF BST-SW cap - it is required, not optional (DS41326 s13); confirm value/rating in the family datasheet. FB TRAP (cost a near-miss once): FIXED-output family members tie FB straight to the output sens"
+   },
+   {
+    "id": "buck-cin-co-ground-separation",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Two ROHM measurements the generic hot-loop rule does not carry: (1) shortening the CBYPASS wiring EVEN BY 1 mm is worth it - the HF bypass supplies the steepest edge of the switch current, and its loop inductance sets the VIN-pin voltage no"
+   },
+   {
+    "id": "buck-constraints-emission",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "constraints-emission"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "What a buck block must emit into constraints.json for the pipeline: (1) power entries with current_a from the RAIL BUDGET (consumer sum + ~30% headroom, rounded to a design ceiling) and dt_c from ambient; (2) a thermal entry when regulator "
+   },
+   {
+    "id": "buck-en-softstart-sequencing",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "sequencing"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Check the EN pin's OWN behavior before adding parts: many parts auto-start (AP63203: internal 1.5 uA pull-up - tie to VIN or float; adding a divider is wasted parts). When EN is used as a UVLO divider, mind the two traps the sbuck run hit: "
+   },
+   {
+    "id": "buck-fb-route-rules",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "feedback"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "The feedback route needs the most attention of any signal wire - noise here becomes output-voltage error and instability. ROHM's four rules (fig 7-a): (a) the FB pin is high impedance - connect the divider network with a SHORT wire at the p"
+   },
+   {
+    "id": "buck-freewheel-diode-snubber-placement",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Async buck (free-wheel diode) placement rules: the diode must sit CLOSE and on the SAME surface as the IC terminals, wired short and wide, connected directly to the IC's GND and SW terminals - distance adds wiring inductance whose spike noi"
+   },
+   {
+    "id": "buck-inductor-copper-and-gnd-void",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Inductor region rules (ROHM s5): place L close to the IC but NOT as close as the input cap; do NOT expand the SW/inductor copper beyond what current needs - enlarged copper works as an antenna (EMI), even though instinct says more copper = "
+   },
+   {
+    "id": "buck-inductor-selection",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "The three inductor rules every run re-derived from scratch. L VALUE: start from the vendor's recommended-components table row for your Vout; the next STANDARD value up is usually right - light-load efficiency improves with larger L (DS41326"
+   },
+   {
+    "id": "buck-input-hot-loop",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Layout rule #1 for every buck: the input cap carries the DISCONTINUOUS switch current. C_IN plus a 100 nF HF bypass AT the VIN pin, on the SAME layer as the IC; the C_IN -> VIN -> GND -> C_IN loop must be the shortest loop on the board; SW-"
+   },
+   {
+    "id": "buck-power-ground-isolation",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "return-path",
+     "power-loop"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Ground strategy (ROHM s8): analog small-signal ground and power ground must be ISOLATED, and power ground laid on the TOP layer without splitting is the ideal - dropping an isolated power ground to the bottom layer through vias adds via R a"
+   },
+   {
+    "id": "buck-selection-ladder",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Regulator-type ladder, one line of tradeoff each; if the brief names a part the named part stands (record the alternative as an override option). (1) Integrated synchronous buck is the DEFAULT at <= ~60 V input and <= ~3 A: no catch diode, "
+   },
+   {
+    "id": "buck-switch-node-containment",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Keep SW copper as small as electrically possible and treat SW + L as an AGGRESSOR: lumina-par's 2.4 GHz antenna 11 mm from a switch node drove a 4-layer stackup + containment plan; usb-buck keeps the USB pair away from SW/L per ST AN4879 3."
+   },
+   {
+    "id": "buck-thermal-via-and-via-current",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "thermal-via"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [
+      "HTSOP-J8",
+      "SO-8-EP",
+      "SO-8EP"
+     ],
+     "interfaces": []
+    },
+    "prose_head": "Thermal vias under an exposed-pad regulator (ROHM s4, HTSOP-J8 numbers generalize to EP packages): small drill - 0.3 mm inner diameter - so the via can FILL with solder; larger drills suck solder away from the joint at reflow (solder-wickin"
+   },
+   {
+    "id": "buck-upstream-inrush-limit",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "inrush",
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "interfaces": [
+      "usb",
+      "usb-pd",
+      "poe"
+     ],
+     "packages": []
+    },
+    "prose_head": "Upstream bulk limit trap: a buck's input capacitance is bounded by the SOURCE, not by the buck. USB 2.0 allows 10 uF || 44 ohm at attach (spec s7.2.4.1); a USB-PD sink is allowed 100 uF under contract (cSnkBulkPd); PoE has its own inrush en"
+   },
+   {
+    "id": "cot-ripple-injection-raises-vout",
+    "level": "family",
+    "maturity": "approved",
+    "classes": [
+     "feedback"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "A constant-on-time regulator ends its off-time when FB falls back through VREF, so it regulates the VALLEY of FB, not its average. With Type 3 injection the ramp is AC-coupled into FB and its mean is genuinely zero, so FB_dc = VREF + Vramp/"
+   },
+   {
+    "id": "linear-charger-input-dpm-and-startup-behaviour",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "sequencing"
+    ],
+    "applies": {
+     "topologies": [
+      "linear-charger-power-path"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Power-path states to design around: valid input needs UVLO < VIN < VOVP and VIN > VBAT + VIN(DT); OUT then regulates (4.4 V for BQ24074) with system priority. VIN-DPM (4.5 V typ, 4.35-4.63) reduces input current in USB100/USB500 modes when "
+   },
+   {
+    "id": "spiral-inductor-plane-and-heatsink-keepout",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi",
+     "thermal"
+    ],
+    "applies": {
+     "topologies": [
+      "class-e"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "An etched PCB spiral (air-core inductor, coupled pair, antenna) is destroyed by solid metal parallel to it: a ground plane under the winding is a shorted turn and collapses Q, and so is a bottom-side metal heatsink. Two independently-correc"
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "bb-buck\\kicad\\bb-buck.kicad_pcb",
+ "applied": 1,
+ "verified": true,
+ "by_status": {
+  "removed": 1
+ },
+ "results": [
+  {
+   "op": "remove",
+   "status": "removed"
+  }
+ ]
+}

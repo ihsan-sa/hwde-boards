@@ -1,0 +1,892 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "AO3401A",
+ "total": 34,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C15127",
+   "mpn": "AO3401A",
+   "brand": "Alpha & Omega Semicon",
+   "description": "1 P-Channel 14nC@10V 30V 47m\u03a9@10V\u300160m\u03a9@4.5V\u300185m\u03a9@2.5V 4A 55pF 645pF 80pF 900mV SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Basic",
+   "basic": true,
+   "stock": 783212,
+   "price": 0.1017,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1017
+    },
+    {
+     "qty": 50,
+     "price": 0.0821
+    },
+    {
+     "qty": 150,
+     "price": 0.0721
+    },
+    {
+     "qty": 500,
+     "price": 0.0638
+    },
+    {
+     "qty": 3000,
+     "price": 0.0608
+    },
+    {
+     "qty": 6000,
+     "price": 0.0589
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_alpha-omega-semicon-ao3401a_C15127.html",
+   "attributes": [
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "645pF"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "900mV"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "14nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "55pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "80pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "47m\u03a9@10V\u300160m\u03a9@4.5V\u300185m\u03a9@2.5V"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C347476",
+   "mpn": "AO3401A",
+   "brand": "UMW(Youtai Semiconductor Co., Ltd.)",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.3V 1.4W 115pF 30V 4.2A 50m\u03a9@10V 77pF 9.4nC@4.5V 954pF P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 567623,
+   "price": 0.0366,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0366
+    },
+    {
+     "qty": 200,
+     "price": 0.027
+    },
+    {
+     "qty": 600,
+     "price": 0.0226
+    },
+    {
+     "qty": 3000,
+     "price": 0.0196
+    },
+    {
+     "qty": 9000,
+     "price": 0.0183
+    },
+    {
+     "qty": 21000,
+     "price": 0.0173
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2411121106_UMW-Youtai-Semiconductor-Co---Ltd--AO3401A_C347476.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_umw-youtai-semiconductor-co-ltd-ao3401a_C347476.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "954pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1.3V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "9.4nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "77pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "115pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.4W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "50m\u03a9@10V"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C727156",
+   "mpn": "AO3401",
+   "brand": "TWGMC",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.3V 115pF 30V 350mW 4.2A 65m\u03a9@10V 77pF 954pF P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 541434,
+   "price": 0.0426,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0426
+    },
+    {
+     "qty": 200,
+     "price": 0.0348
+    },
+    {
+     "qty": 600,
+     "price": 0.0313
+    },
+    {
+     "qty": 3000,
+     "price": 0.0215
+    },
+    {
+     "qty": 9000,
+     "price": 0.0205
+    },
+    {
+     "qty": 21000,
+     "price": 0.0197
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2008301206_TWGMC-AO3401_C727156.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_twgmc-ao3401_C727156.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b112V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "77pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "115pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "65m\u03a9@10V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "954pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1.3V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "350mW"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2938368",
+   "mpn": "AO3401A",
+   "brand": "GOODWORK",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.05nF 1.2W 1.3V 30V 4.2A 85m\u03a9@2.5V 85pF P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 230838,
+   "price": 0.0366,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0366
+    },
+    {
+     "qty": 200,
+     "price": 0.0296
+    },
+    {
+     "qty": 600,
+     "price": 0.0257
+    },
+    {
+     "qty": 3000,
+     "price": 0.0197
+    },
+    {
+     "qty": 9000,
+     "price": 0.0176
+    },
+    {
+     "qty": 30000,
+     "price": 0.0166
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_GOODWORK-AO3401A_C2938368.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_goodwork-ao3401a_C2938368.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "1.05nF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1.3V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "85pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "127pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.2W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "41m\u03a9@2.5V"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C5224202",
+   "mpn": "AO3401A",
+   "brand": "ElecSuper",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.4W 30V 4.2A 44m\u03a9@10V 54pF 77pF 800mV 9.4nC@4.5V 954pF P-Channel SOT-23-3L MOSFETs ROHS",
+   "package": "SOT-23-3L",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 118533,
+   "price": 0.036,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.036
+    },
+    {
+     "qty": 200,
+     "price": 0.0282
+    },
+    {
+     "qty": 600,
+     "price": 0.0239
+    },
+    {
+     "qty": 3000,
+     "price": 0.0213
+    },
+    {
+     "qty": 9000,
+     "price": 0.0191
+    },
+    {
+     "qty": 21000,
+     "price": 0.0179
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210271630_ElecSuper-AO3401A_C5224202.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_elecsuper-ao3401a_C5224202.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "954pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "800mV"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "9.4nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "77pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "54pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.4W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "44m\u03a9@10V"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C5296722",
+   "mpn": "AO3401",
+   "brand": "JSMSEMI",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.3V 10nC@4.5V 30V 350mW 4.2A 75m\u03a9@4.5V 77pF 954pF SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 91144,
+   "price": 0.0391,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0391
+    },
+    {
+     "qty": 200,
+     "price": 0.0311
+    },
+    {
+     "qty": 600,
+     "price": 0.0267
+    },
+    {
+     "qty": 3000,
+     "price": 0.0231
+    },
+    {
+     "qty": 9000,
+     "price": 0.0209
+    },
+    {
+     "qty": 21000,
+     "price": 0.0196
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401050929_JSMSEMI-AO3401_C5296722.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_jsmsemi-ao3401_C5296722.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "954pF"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1.3V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "77pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "350mW"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "75m\u03a9@4.5V"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C700954",
+   "mpn": "AO3401A",
+   "brand": "HUASHUO",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 10.9nC@4.5V 1W 30V 4.2A 500mV 54m\u03a9@4.5V 58pF 670pF SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 71095,
+   "price": 0.0449,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0449
+    },
+    {
+     "qty": 200,
+     "price": 0.0365
+    },
+    {
+     "qty": 600,
+     "price": 0.0322
+    },
+    {
+     "qty": 3000,
+     "price": 0.0261
+    },
+    {
+     "qty": 9000,
+     "price": 0.0235
+    },
+    {
+     "qty": 21000,
+     "price": 0.0223
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2007171935_HUASHUO-AO3401A_C700954.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_huashuo-ao3401a_C700954.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b112V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10.9nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "58pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "65pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "54m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "670pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "500mV"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1W"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C2936839",
+   "mpn": "FS3401M",
+   "brand": "FOSAN",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.4W 2V 30V 4.1A 50m\u03a9@10V 954pF P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 67362,
+   "price": 0.029,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.029
+    },
+    {
+     "qty": 200,
+     "price": 0.0226
+    },
+    {
+     "qty": 600,
+     "price": 0.0192
+    },
+    {
+     "qty": 3000,
+     "price": 0.0171
+    },
+    {
+     "qty": 9000,
+     "price": 0.0153
+    },
+    {
+     "qty": 21000,
+     "price": 0.0143
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121800_FOSAN-FS3401M_C2936839.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_fosan-fs3401m_C2936839.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "954pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.1A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.4W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "50m\u03a9@10V"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C306862",
+   "mpn": "AO3401A",
+   "brand": "BORN",
+   "description": "1 P-Channel 1.4W 115pF 2V 30V 4.2A 85m\u03a9@2.5V 954pF P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 64295,
+   "price": 0.0597,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0597
+    },
+    {
+     "qty": 200,
+     "price": 0.0504
+    },
+    {
+     "qty": 600,
+     "price": 0.0456
+    },
+    {
+     "qty": 3000,
+     "price": 0.0311
+    },
+    {
+     "qty": 9000,
+     "price": 0.0298
+    },
+    {
+     "qty": 21000,
+     "price": 0.0288
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_BORN-AO3401A_C306862.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_born-ao3401a_C306862.html",
+   "attributes": [
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "954pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "115pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.4W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "85m\u03a9@2.5V"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C5122001",
+   "mpn": "AO3401A",
+   "brand": "TECH PUBLIC",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.2W 30V 4.2A 55m\u03a9@10V 65pF 8.5nC 880pF SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 50301,
+   "price": 0.0457,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0457
+    },
+    {
+     "qty": 200,
+     "price": 0.0357
+    },
+    {
+     "qty": 600,
+     "price": 0.0301
+    },
+    {
+     "qty": 3000,
+     "price": 0.0249
+    },
+    {
+     "qty": 9000,
+     "price": 0.022
+    },
+    {
+     "qty": 21000,
+     "price": 0.0204
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208111730_TECH-PUBLIC-AO3401A_C5122001.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_tech-public-ao3401a_C5122001.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b112V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "8.5nC"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "65pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "30V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "105pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "55m\u03a9@10V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "880pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.2W"
+    }
+   ],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 7
+}

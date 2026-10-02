@@ -1,0 +1,138 @@
+{
+ "id": "block-dc-input-1",
+ "slot": "block:B1",
+ "kind": "block",
+ "token": "dc-input",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified",
+ "opened": "2026-09-27T01:37:11",
+ "closed": "2026-09-27T02:03:32",
+ "coverage_report": "PCB-0017-A_stereo-class-d-amp/log/coverage-P2.json",
+ "gap": {
+  "slot": "block:B1",
+  "kind": "block",
+  "topology": "dc-input",
+  "operating_point": {
+   "vin_v": 12,
+   "vin_min_v": 10.8,
+   "vin_max_v": 13.2,
+   "iin_a": 4.0,
+   "cbulk_uf": 200,
+   "esr_bulk_mohm": 30,
+   "hotplug_ring_v_max": 26,
+   "vabs_max_v": 30,
+   "board_layers": 2,
+   "copper_oz": 2,
+   "source_kind": "dc-input",
+   "connector_kind": "wire-pad",
+   "protection_kind": "none",
+   "bulk_kind": "polymer-plus-electrolytic"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'dc-input' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'dc-input': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/pdf/sluaal8",
+   "final_url": "https://www.ti.com/lit/an/sluaal8/sluaal8.pdf?ts=1790472196102",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": "dc-input hot-plug overshoot",
+   "file": "research/sources/sluaal8.pdf",
+   "sha256": "05ba68c6736a8a34174ea6ea6614814b4a3d3a9ddec3ade2de6f93ea615d56a9",
+   "bytes": 587906,
+   "content_type": "application/pdf",
+   "pages": 8,
+   "fetched": "2026-09-27T01:45:27",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/pdf/slyt199",
+   "final_url": "https://www.ti.com/lit/an/slyt199/slyt199.pdf?ts=1790487950601",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": "TPA31xx class-D power supply decoupling",
+   "file": "research/sources/slyt199.pdf",
+   "sha256": "44015908ed38bc5bde5bdf4d29c07f877591e36c277dd141820813fce42f25c5",
+   "bytes": 264560,
+   "content_type": "application/pdf",
+   "pages": 5,
+   "fetched": "2026-09-27T01:45:54",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 3,
+   "url": "https://www.ti.com/lit/pdf/ssztda5",
+   "final_url": "https://www.ti.com/lit/ta/ssztda5/ssztda5.pdf?ts=1790401660222&ref_url=https%253A%252F%252Fwww.google.com%252F",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": "hot-plug bulk cap effective ESR reality check",
+   "file": "research/sources/ssztda5.pdf",
+   "sha256": "6caca6c0033476c8d0b324f33f826656fdf92b25ef3dc251922221aab8eb63f1",
+   "bytes": 934889,
+   "content_type": "application/pdf",
+   "pages": 6,
+   "fetched": "2026-09-27T01:46:27",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "dc-input-hotplug-ring-physics": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "All 5 citations re-read on cited pages match: sluaal8 p2 eq1-3/Fig2-1 Vi(1-cos wt) 2x-peak and intro damage warning confirmed; p3 Fig2-2/2-3/2-4 peak/ESR trends confirmed; p4 eq4 damping criterion and Fig3-1 2ohm+2.2uF snubber confirmed; ssztda5 p1 ESR-below-max text confirmed verbatim; p3 Fig2 under-damped(Rd=0,Resr=20m) vs properly-damped(Rd=0.5) at 54V and eq3 2900W/1ohm resistor confirmed.",
+   "ts": "2026-09-27T01:59:56"
+  },
+  "dc-input-bulk-esr-damping-budget": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Corrected citation re-read: slyt199 p2 confirms C15/C16 as per-channel bulk caps, eq2 Ipeak=sqrt(Ppeak/RL), eq4 ESR<=Vripple/Ipeak, and the 30-50% derating text verbatim. Page now matches; all 4 sources check out.",
+   "ts": "2026-09-27T02:02:42"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-dc-input-1-2",
+ "updated": "2026-09-27T02:03:32",
+ "accepted_drafts": null,
+ "summary": {
+  "verified": 2,
+  "refuted": 0,
+  "checklists": 1,
+  "sources": 3
+ }
+}

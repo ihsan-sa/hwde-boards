@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="195" height="361" viewBox="0 0 195 361">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10.0" y="16" font-family="monospace" font-size="12" fill="black">SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL: 8 pads (datasheet 8), pitch/size from datasheet 1.27mm</text>
+<text x="10.0" y="32" font-family="monospace" font-size="11" fill="#b00">red = geometry mismatch</text>
+<polygon points="10.0,272.8 32.7,272.8 32.7,350.8 10.0,350.8" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="21.4" y="311.8" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="21.4" y="322.8" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+<polygon points="60.8,272.8 83.5,272.8 83.5,350.8 60.8,350.8" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="72.2" y="311.8" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="72.2" y="322.8" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+<polygon points="111.2,272.8 133.9,272.8 133.9,350.8 111.2,350.8" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="122.6" y="311.8" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="122.6" y="322.8" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+<polygon points="162.0,272.8 184.7,272.8 184.7,350.8 162.0,350.8" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="173.4" y="311.8" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="173.4" y="322.8" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+<polygon points="10.0,56.0 32.7,56.0 32.7,134.0 10.0,134.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="21.4" y="95.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="21.4" y="106.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+<polygon points="60.8,56.0 83.5,56.0 83.5,134.0 60.8,134.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="72.2" y="95.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="72.2" y="106.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+<polygon points="111.2,56.0 133.9,56.0 133.9,134.0 111.2,134.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="122.6" y="95.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="122.6" y="106.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+<polygon points="162.0,56.0 184.7,56.0 184.7,134.0 162.0,134.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="173.4" y="95.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="173.4" y="106.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.568x1.95</text>
+</svg>

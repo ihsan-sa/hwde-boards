@@ -1,0 +1,31 @@
+version: 1
+board: PCB-0021-A_lipo-boost
+source: LEARNINGS.md
+compiled: '2026-10-01'
+entries:
+- entry: 2026-10-01-research-task-block-boost-1-5-verified
+  line: 8
+  date: '2026-10-01'
+  title: 'research task block-boost-1: 5 verified record(s) for block:B2'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:B2
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending
+- entry: 2026-10-01-research-task-block-linear-charger-power-path
+  line: 29
+  date: '2026-10-01'
+  title: 'research task block-linear-charger-power-path-1: 1 verified record(s) for block:B1'
+  tags:
+  - P2
+  - research
+  - knowledge
+  - block:B1
+  stage: P2
+  proposed_level: null
+  targets: []
+  status: pending

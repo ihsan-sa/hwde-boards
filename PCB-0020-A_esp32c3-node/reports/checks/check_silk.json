@@ -1,0 +1,609 @@
+{
+ "script": "check_silk",
+ "status": "violations",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 20,
+  "by_severity": {
+   "warning": 20
+  },
+  "by_source": {
+   "check_silk": 20
+  }
+ },
+ "violations": [
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    20.525,
+    42.33
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "J2"
+   ],
+   "msg": "refdes \"J2\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"J2\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      20.525,
+      42.33
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "J2",
+   "offset_mm": 1.8,
+   "nearest_ref": "J1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    19.4,
+    18.125
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C4"
+   ],
+   "msg": "refdes \"C4\" sits 2.35 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C4\" sits 2.35 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      19.4,
+      18.125
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C4",
+   "offset_mm": 2.3485,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    20.8,
+    23.325
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C2"
+   ],
+   "msg": "refdes \"C2\" sits 1.30 mm beyond its own pads and 0.23 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C2\" sits 1.30 mm beyond its own pads and 0.23 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      20.8,
+      23.325
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C2",
+   "offset_mm": 1.3,
+   "nearest_ref": "SW2",
+   "nearest_mm": 0.225
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    17.25,
+    11.6
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C10"
+   ],
+   "msg": "refdes \"C10\" sits 2.80 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C10\" sits 2.80 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      17.25,
+      11.6
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C10",
+   "offset_mm": 2.8,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    26.543,
+    12.0
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R12"
+   ],
+   "msg": "refdes \"R12\" sits 2.05 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R12\" sits 2.05 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      26.543,
+      12.0
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R12",
+   "offset_mm": 2.05,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    32.0,
+    41.275
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C14"
+   ],
+   "msg": "refdes \"C14\" sits 2.05 mm beyond its own pads and 0.00 mm from J3 - reads as J3's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C14\" sits 2.05 mm beyond its own pads and 0.00 mm from J3 - reads as J3's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      32.0,
+      41.275
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C14",
+   "offset_mm": 2.05,
+   "nearest_ref": "J3",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    10.5,
+    36.828
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R16"
+   ],
+   "msg": "refdes \"R16\" sits 1.80 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R16\" sits 1.80 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      10.5,
+      36.828
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R16",
+   "offset_mm": 1.8,
+   "nearest_ref": "J2",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    26.21,
+    42.5
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "refdes \"J3\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"J3\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      26.21,
+      42.5
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "J3",
+   "offset_mm": 1.8,
+   "nearest_ref": "J1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    17.457,
+    17.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R10"
+   ],
+   "msg": "refdes \"R10\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R10\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      17.457,
+      17.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R10",
+   "offset_mm": 1.55,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    21.975,
+    25.1
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C1"
+   ],
+   "msg": "refdes \"C1\" sits 2.05 mm beyond its own pads and 0.00 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C1\" sits 2.05 mm beyond its own pads and 0.00 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      21.975,
+      25.1
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C1",
+   "offset_mm": 2.05,
+   "nearest_ref": "SW2",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    22.2,
+    33.578
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R4"
+   ],
+   "msg": "refdes \"R4\" sits 1.63 mm beyond its own pads and 0.18 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R4\" sits 1.63 mm beyond its own pads and 0.18 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      22.2,
+      33.578
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R4",
+   "offset_mm": 1.6265,
+   "nearest_ref": "SW1",
+   "nearest_mm": 0.178
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    10.5,
+    12.175
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C5"
+   ],
+   "msg": "refdes \"C5\" sits 1.05 mm beyond its own pads and 0.65 mm from C10 - reads as C10's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C5\" sits 1.05 mm beyond its own pads and 0.65 mm from C10 - reads as C10's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      10.5,
+      12.175
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C5",
+   "offset_mm": 1.05,
+   "nearest_ref": "C10",
+   "nearest_mm": 0.65
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    9.643,
+    14.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R6"
+   ],
+   "msg": "refdes \"R6\" sits 2.05 mm beyond its own pads and 0.53 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R6\" sits 2.05 mm beyond its own pads and 0.53 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      9.643,
+      14.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R6",
+   "offset_mm": 2.05,
+   "nearest_ref": "C5",
+   "nearest_mm": 0.532
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    29.828,
+    21.1
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R11"
+   ],
+   "msg": "refdes \"R11\" sits 1.80 mm beyond its own pads and 0.10 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R11\" sits 1.80 mm beyond its own pads and 0.10 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      29.828,
+      21.1
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R11",
+   "offset_mm": 1.8,
+   "nearest_ref": "SW2",
+   "nearest_mm": 0.1
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    21.925,
+    30.5
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "D3"
+   ],
+   "msg": "refdes \"D3\" sits 2.38 mm beyond its own pads and 0.00 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"D3\" sits 2.38 mm beyond its own pads and 0.00 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      21.925,
+      30.5
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "D3",
+   "offset_mm": 2.375,
+   "nearest_ref": "SW1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    18.759,
+    37.4
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "U4"
+   ],
+   "msg": "refdes \"U4\" sits 2.55 mm beyond its own pads and 0.03 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"U4\" sits 2.55 mm beyond its own pads and 0.03 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      18.759,
+      37.4
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "U4",
+   "offset_mm": 2.55,
+   "nearest_ref": "J2",
+   "nearest_mm": 0.034
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    17.457,
+    14.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R7"
+   ],
+   "msg": "refdes \"R7\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R7\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      17.457,
+      14.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R7",
+   "offset_mm": 1.55,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    9.625,
+    17.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C12"
+   ],
+   "msg": "refdes \"C12\" sits 2.05 mm beyond its own pads and 0.55 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C12\" sits 2.05 mm beyond its own pads and 0.55 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      9.625,
+      17.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C12",
+   "offset_mm": 2.05,
+   "nearest_ref": "C5",
+   "nearest_mm": 0.55
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    22.6,
+    40.978
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R1"
+   ],
+   "msg": "refdes \"R1\" sits 2.11 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R1\" sits 2.11 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      22.6,
+      40.978
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R1",
+   "offset_mm": 2.1084,
+   "nearest_ref": "J1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    16.545,
+    41.72
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "refdes \"J1\" sits 1.05 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"J1\" sits 1.05 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      16.545,
+      41.72
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "J1",
+   "offset_mm": 1.05,
+   "nearest_ref": "J2",
+   "nearest_mm": 0.0
+  }
+ ],
+ "checked": [
+  {
+   "silk_items": 165,
+   "texts": 42,
+   "graphics": 123,
+   "refdes_checked": 41
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T12:52:35+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695"
+}

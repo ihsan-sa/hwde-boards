@@ -1,0 +1,64 @@
+id: class-d-amp-fault-latch-self-clear
+classes:
+- sequencing
+applies:
+  topologies:
+  - class-d-amp
+  packages: []
+  interfaces: []
+  parts:
+  - TPA3116D2
+  - TPA3118D2
+  - TPA3130D2
+rule:
+  enforced_by: null
+  thermal_trip_c: 150
+  sdz_low_clear_s: 1.4
+  self_clear: FAULTZ tied to SDZ, one pull-up
+prose: 'Thermal and short-circuit faults on the TPA31xxD2 latch. p18 (7.3.11): the die trips at 150 C
+  +/-15 C, enters shutdown with outputs disabled, and stays there (''this is a latched fault''); the fault
+  is reported on FAULTZ as a low. To recover without a microcontroller, ''connect the FAULTZ pin directly
+  to the SDZ pin'' - FAULTZ pulls SDZ low, which clears the latch, and the part restarts when the die
+  cools. p18 Fig 31 gives the alternative for a uP: SDZ must be held low for more than 1.4 s to clear
+  the latch. p4: FAULTZ is open drain (needs a pull-up), SDZ high = outputs enabled. p17 (7.3.8 Table
+  4): over-current (output short to PVCC or GND), over-temperature and DC offset are LATCHED with FAULTZ
+  low; PVCC under/over-voltage are self-clearing. p17 (7.3.10): the short-circuit latch is cleared by
+  cycling SDZ low, and the same FAULTZ-to-SDZ tie gives automatic recovery. p26 Fig 37 shows the tie:
+  R13 100k pull-up on SDZ with FAULTZ wired to the same node. Design consequence for a copper-only 2-layer
+  board: sustained overload past the thermal budget is survivable - the part cycles on thermal shutdown
+  - but audible; the self-clearing tie is the right default when no host exists, and the latched form
+  (FAULTZ to a host, SDZ from the host) when one does. The 10 ms input-cap charging window (p16 7.3.7,
+  RC <= 1 ms) applies at every restart, so a self-clearing design must also keep the input RC small or
+  it pops on each recovery.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 18
+  note: '7.3.11 Thermal protection: 150 C +/-15 C trip, latched, FAULTZ low; tie FAULTZ to SDZ for automatic
+    recovery; Fig 31 SDZ low > 1.4 s'
+- file: research/sources/tpa3116d2.pdf
+  page: 4
+  note: 'Pin functions: FAULTZ open drain, SDZ low = outputs Hi-Z, high = enabled'
+- file: research/sources/tpa3116d2.pdf
+  page: 17
+  note: '7.3.8 Table 4 fault reporting: over-current/over-temp/DC-offset latched, UV/OV self-clearing;
+    7.3.10 short-circuit latch cleared by SDZ low, FAULTZ-to-SDZ tie for auto recovery'
+- file: research/sources/tpa3116d2.pdf
+  page: 26
+  note: 'Fig 37: R13 100k SDZ pull-up with FAULTZ on the same node (R11 is the GAIN/SLV divider)'
+- file: research/sources/tpa3116d2.pdf
+  page: 16
+  note: '7.3.7: input RC <= 1 ms so the input caps charge in the 10 ms power-up window (pop)'
+status: active
+origin: research:block-class-d-amp-1
+level: family
+maturity: verified
+generalizes: []
+envelope:
+  fault_kind:
+    in:
+    - self-clearing
+    - latched
+envelope_note: 'Scales with how faults are meant to clear: the FAULTZ-to-SDZ tie is the self-clearing
+  form, the host-driven SDZ pulse (>1.4 s) the latched form; both are this family''s mechanism, not a
+  general class-D sequencing rule, hence family level.'
+verification: {by: "research-second-reader", date: "2026-09-27", note: "Pass 2: p26 Fig 37 SDZ pull-up is R13 100k with FAULTZ on the node (R11 = GAIN/SLV divider) - correct. p17 added: Table 4 OC/OT/DC latched, UV/OV self-clearing; 7.3.10 short latch cleared by SDZ low, FAULTZ-SDZ tie auto-recovers - matches page."}

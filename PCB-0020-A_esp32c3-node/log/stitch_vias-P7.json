@@ -1,0 +1,447 @@
+{
+ "script": "stitch_vias",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "requested": 0,
+ "placed": 39,
+ "skipped": [],
+ "via_size": 0.6,
+ "via_drill": 0.3,
+ "clearance_mm": 0.127,
+ "dry_run": false,
+ "applied": true,
+ "refilled": true,
+ "apply_by_status": {
+  "added": 39
+ },
+ "ops": [
+  {
+   "op": "add_via",
+   "at": [
+    10.75,
+    10.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    10.75,
+    13.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    10.75,
+    35.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    10.75,
+    38.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    10.75,
+    40.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    13.25,
+    10.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    13.25,
+    25.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    13.25,
+    33.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    13.25,
+    43.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    13.25,
+    45.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.75,
+    10.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.75,
+    33.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.75,
+    35.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.75,
+    38.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.75,
+    40.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.75,
+    43.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    15.75,
+    45.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    18.25,
+    10.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    18.25,
+    13.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    18.25,
+    35.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    18.25,
+    38.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    20.75,
+    10.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    20.75,
+    15.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    20.75,
+    35.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    20.75,
+    43.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    20.75,
+    45.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    23.25,
+    10.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    23.25,
+    13.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    23.25,
+    15.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    23.25,
+    43.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    23.25,
+    45.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    25.75,
+    13.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    25.75,
+    43.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    25.75,
+    45.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    28.25,
+    45.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    30.75,
+    45.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    33.25,
+    38.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    33.25,
+    40.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    33.25,
+    43.25
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "GND"
+  }
+ ],
+ "mode": "stitch",
+ "pitch_mm": 2.5,
+ "t_rise_ns": null,
+ "nets": {
+  "GND": {
+   "plane_layers": [
+    "F.Cu",
+    "B.Cu"
+   ],
+   "pads": {
+    "requested": 0,
+    "placed": 0,
+    "skipped": 0
+   },
+   "area": {
+    "candidates": 113,
+    "placed": 39,
+    "rejected": {
+     "foreign_copper": 31,
+     "single_layer_contact": 18,
+     "fill_edge": 21,
+     "near_same_net_via": 4
+    },
+    "capped": false
+   }
+  }
+ },
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T11:18:17+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:5fc6886f7992475065a673b57fbde956544dda6b9471cd8f1e401bfdce3b86af"
+}

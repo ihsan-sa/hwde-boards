@@ -1,0 +1,560 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "40V N-channel mosfet DFN5x6",
+ "total": 4225,
+ "count": 6,
+ "results": [
+  {
+   "lcsc": "C67273",
+   "mpn": "IRLML0040TRPBF",
+   "brand": "Infineon Technologies",
+   "description": "-55\u2103~+150\u2103 1 N-channel 1.3W 2.5V 266pF 29pF 3.6A 3.9nC@10V 40V 56m\u03a9@10V SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 15000,
+   "price": 0.2099,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2099
+    },
+    {
+     "qty": 50,
+     "price": 0.1637
+    },
+    {
+     "qty": 150,
+     "price": 0.1439
+    },
+    {
+     "qty": 500,
+     "price": 0.1191
+    },
+    {
+     "qty": 3000,
+     "price": 0.1082
+    },
+    {
+     "qty": 6000,
+     "price": 0.1015
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809192016_Infineon-Technologies-IRLML0040TRPBF_C67273.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_infineon-technologies-irlml0040trpbf_C67273.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b116V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "3.9nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "29pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "3.6A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "49pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "56m\u03a9@10V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "266pF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2.5V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.3W"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C9204",
+   "mpn": "IRF1404PBF",
+   "brand": "Infineon Technologies",
+   "description": "-55\u2103~+175\u2103 1 N-channel 196nC@10V 202A 223pF 333W 40V 4V 4m\u03a9@10V 5.669nF TO-220AB MOSFETs ROHS",
+   "package": "TO-220AB",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 13397,
+   "price": 0.8575,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.8575
+    },
+    {
+     "qty": 10,
+     "price": 0.6918
+    },
+    {
+     "qty": 50,
+     "price": 0.5619
+    },
+    {
+     "qty": 100,
+     "price": 0.4791
+    },
+    {
+     "qty": 500,
+     "price": 0.4304
+    },
+    {
+     "qty": 1000,
+     "price": 0.406
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Infineon-Technologies-IRF1404PBF_C9204.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_infineon-technologies-irf1404pbf_C9204.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+175\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "196nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "223pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "202A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "1.659nF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "4m\u03a9@10V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "5.669nF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "4V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "333W"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C79993",
+   "mpn": "IRFB7437PBF",
+   "brand": "Infineon Technologies",
+   "description": "-55\u2103~+175\u2103 1 N-channel 1.5m\u03a9@10V 150nC@10V 2.2V 230W 250A 40V 7.33nF 745pF TO-220AB MOSFETs ROHS",
+   "package": "TO-220AB",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10496,
+   "price": 0.7519,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.7519
+    },
+    {
+     "qty": 10,
+     "price": 0.6123
+    },
+    {
+     "qty": 50,
+     "price": 0.5424
+    },
+    {
+     "qty": 100,
+     "price": 0.4726
+    },
+    {
+     "qty": 500,
+     "price": 0.4304
+    },
+    {
+     "qty": 1000,
+     "price": 0.4093
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Infineon-Technologies-IRFB7437PBF_C79993.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_infineon-technologies-irfb7437pbf_C79993.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+175\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "7.33nF"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2.2V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "150nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "745pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "250A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "230W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "1.5m\u03a9@10V"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C48044",
+   "mpn": "IRFB7440PBF",
+   "brand": "Infineon Technologies",
+   "description": "-55\u2103~+175\u2103 1 N-channel 135nC@10V 143W 172A 2.5m\u03a9@10V 3.9V 4.73nF 40V 460pF TO-220AB MOSFETs ROHS",
+   "package": "TO-220AB",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8628,
+   "price": 0.635,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.635
+    },
+    {
+     "qty": 10,
+     "price": 0.5148
+    },
+    {
+     "qty": 50,
+     "price": 0.4304
+    },
+    {
+     "qty": 100,
+     "price": 0.3703
+    },
+    {
+     "qty": 500,
+     "price": 0.3346
+    },
+    {
+     "qty": 1100,
+     "price": 0.3167
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1808041445_Infineon-Technologies-IRFB7440PBF_C48044.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_infineon-technologies-irfb7440pbf_C48044.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+175\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "135nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "460pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "172A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "680pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "2.5m\u03a9@10V"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "4.73nF"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "3.9V"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "143W"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C74127",
+   "mpn": "SI2356DS-T1-GE3",
+   "brand": "Vishay Intertech",
+   "description": "-55\u2103~+150\u2103 1 N-channel 1.5V 3.8nC@4.5V 370pF 4.3A 40V 70m\u03a9@2.5V 960mW SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5102,
+   "price": 0.3497,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3497
+    },
+    {
+     "qty": 50,
+     "price": 0.2773
+    },
+    {
+     "qty": 150,
+     "price": 0.2461
+    },
+    {
+     "qty": 500,
+     "price": 0.2074
+    },
+    {
+     "qty": 3000,
+     "price": 0.1902
+    },
+    {
+     "qty": 6000,
+     "price": 0.1798
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1808292040_Vishay-Intertech-SI2356DS-T1-GE3_C74127.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_vishay-intertech-si2356ds-t1-ge3_C74127.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "370pF"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1.5V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "3.8nC@4.5V"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.3A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "960mW"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "70m\u03a9@2.5V"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C5122059",
+   "mpn": "TPM40V5NS3",
+   "brand": "TECH PUBLIC",
+   "description": "-55\u2103~+150\u2103 1 N-channel 1.25W 10nC 3.9A 3V 40V 45pF 540pF 62.5m\u03a9@4.5V SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3824,
+   "price": 0.0902,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0902
+    },
+    {
+     "qty": 50,
+     "price": 0.0795
+    },
+    {
+     "qty": 150,
+     "price": 0.0741
+    },
+    {
+     "qty": 500,
+     "price": 0.07
+    },
+    {
+     "qty": 3000,
+     "price": 0.0647
+    },
+    {
+     "qty": 6000,
+     "price": 0.0631
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208100930_TECH-PUBLIC-TPM40V5NS3_C5122059.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_tech-public-tpm40v5ns3_C5122059.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10nC"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "45pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "3.9A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "80pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "62.5m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "540pF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "3V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.25W"
+    }
+   ],
+   "rank": 5
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

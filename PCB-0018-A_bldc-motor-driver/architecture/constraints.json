@@ -1,0 +1,140 @@
+{
+  "power": [
+    {"net": "/power_in/VM_IN", "current_a": 13, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "VM", "current_a": 13, "dt_c": 20, "via_amps": 1.0},
+    {"net": "GND", "current_a": 13, "dt_c": 20, "via_amps": 1.0},
+    {"net": "/PHASE_A", "current_a": 10, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "/PHASE_B", "current_a": 10, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "/PHASE_C", "current_a": 10, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "/power_stage/LS_SRC_A", "current_a": 10, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "/power_stage/LS_SRC_B", "current_a": 10, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "/power_stage/LS_SRC_C", "current_a": 10, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "+5V", "current_a": 0.65, "dt_c": 10, "via_amps": 0.5},
+    {"net": "/regulators/BUCK_SW", "current_a": 0.9, "dt_c": 10, "pdn": false},
+    {"net": "+12V", "current_a": 0.1, "dt_c": 10, "via_amps": 0.5},
+    {"net": "/regulators/BOOST_SW", "current_a": 0.4, "dt_c": 10, "pdn": false},
+    {"net": "+3V3", "current_a": 0.2, "dt_c": 10, "via_amps": 0.5},
+    {"net": "/io/CTL_5V", "current_a": 0.2, "dt_c": 10, "pdn": false},
+    {"net": "/io/SEN_5V", "current_a": 0.2, "dt_c": 10, "pdn": false}
+  ],
+  "diff_pairs": [
+    {"p": "/ISNS_A_P", "n": "/ISNS_A_N", "base": "ISNS_A", "gap_mm": 0.2, "max_skew_mm": 3, "max_uncoupled_mm": 3},
+    {"p": "/ISNS_B_P", "n": "/ISNS_B_N", "base": "ISNS_B", "gap_mm": 0.2, "max_skew_mm": 3, "max_uncoupled_mm": 3},
+    {"p": "/ISNS_C_P", "n": "/ISNS_C_N", "base": "ISNS_C", "gap_mm": 0.2, "max_skew_mm": 3, "max_uncoupled_mm": 3}
+  ],
+  "voltages": [
+    {"net": "/power_in/VM_IN", "voltage": 45},
+    {"net": "VM", "voltage": 45},
+    {"net": "/PHASE_A", "voltage": 45},
+    {"net": "/PHASE_B", "voltage": 45},
+    {"net": "/PHASE_C", "voltage": 45},
+    {"net": "/gate_driver/BSTA", "voltage": 57},
+    {"net": "/gate_driver/BSTB", "voltage": 57},
+    {"net": "/gate_driver/BSTC", "voltage": 57},
+    {"net": "/GHA", "voltage": 57},
+    {"net": "/GHB", "voltage": 57},
+    {"net": "/GHC", "voltage": 57},
+    {"net": "/regulators/BUCK_SW", "voltage": 45},
+    {"net": "+12V", "voltage": 12},
+    {"net": "+5V", "voltage": 5},
+    {"net": "+3V3", "voltage": 3.3},
+    {"net": "GND", "voltage": 0},
+    {"net": "/VDDA", "voltage": 3.3},
+    {"net": "/regulators/BST5V", "voltage": 50}
+  ],
+  "coating": "soldermask",
+  "thermal": [
+    {"ref": "Q401", "power_w": 0.4, "net": "VM", "dt_c": 50, "min_vias": 9},
+    {"ref": "Q403", "power_w": 0.4, "net": "VM", "dt_c": 50, "min_vias": 9},
+    {"ref": "Q405", "power_w": 0.4, "net": "VM", "dt_c": 50, "min_vias": 9},
+    {"ref": "Q402", "power_w": 0.4, "net": "/PHASE_A", "dt_c": 50, "min_vias": 9},
+    {"ref": "Q404", "power_w": 0.4, "net": "/PHASE_B", "dt_c": 50, "min_vias": 9},
+    {"ref": "Q406", "power_w": 0.4, "net": "/PHASE_C", "dt_c": 50, "min_vias": 9},
+    {"ref": "Q101", "power_w": 0.4, "net": "VM", "dt_c": 50, "min_vias": 9},
+    {"ref": "R401", "power_w": 0.15, "net": "GND", "dt_c": 40, "min_vias": 4},
+    {"ref": "R402", "power_w": 0.15, "net": "GND", "dt_c": 40, "min_vias": 4},
+    {"ref": "R403", "power_w": 0.15, "net": "GND", "dt_c": 40, "min_vias": 4},
+    {"ref": "U201", "power_w": 0.45, "net": "GND", "dt_c": 40, "min_vias": 6},
+    {"ref": "U203", "power_w": 0.17, "net": "GND", "dt_c": 40, "min_vias": 2}
+  ],
+  "placement": {
+    "edges": [
+      {"ref": "TP101", "edge": "bottom", "pos": 0.1},
+      {"ref": "TP102", "edge": "bottom", "pos": 0.28},
+      {"ref": "TP401", "edge": "bottom", "pos": 0.5},
+      {"ref": "TP402", "edge": "bottom", "pos": 0.7},
+      {"ref": "TP403", "edge": "bottom", "pos": 0.9},
+      {"ref": "J701", "edge": "top", "pos": 0.25},
+      {"ref": "J702", "edge": "top", "pos": 0.65},
+      {"ref": "SW601", "edge": "left", "pos": 0.3},
+      {"ref": "SW602", "edge": "left", "pos": 0.5}
+    ],
+    "groups": [
+      {"name": "leg_a", "anchor": "Q402", "members": ["Q401", "R401", "C401", "C402", "C403", "C404", "R411", "R412", "R421", "R422", "NT401", "NT402"]},
+      {"name": "leg_b", "anchor": "Q404", "members": ["Q403", "R402", "C405", "C406", "C407", "C408", "R413", "R414", "R423", "R424", "NT403", "NT404"]},
+      {"name": "leg_c", "anchor": "Q406", "members": ["Q405", "R403", "C409", "C410", "C411", "C412", "R415", "R416", "R425", "R426", "NT405", "NT406"]},
+      {"name": "gate_driver", "anchor": "U301", "members": ["C301", "C302", "C303"]},
+      {"name": "input", "anchor": "Q101", "members": ["U101", "D101", "C101", "C102", "C103", "C104"]},
+      {"name": "csa", "anchor": "U502", "members": ["U501", "U503"]}
+    ],
+    "fixed": ["H1", "H2", "H3", "H4"],
+    "separation": [
+      {"a": ["U201", "L201"], "b": ["U501", "U502", "U503"], "min_mm": 8},
+      {"a": ["U202", "L202"], "b": ["U501", "U502", "U503"], "min_mm": 8}
+    ],
+    "corridors": [
+      {"a": "TP101", "b": "Q101", "width_mm": 5, "net": "/power_in/VM_IN"}
+    ],
+    "sides": [
+      {"ref": "C101", "side": "front", "reason": "THT electrolytic, single-sided assembly"},
+      {"ref": "C104", "side": "front", "reason": "THT electrolytic, single-sided assembly"},
+      {"ref": "J701", "side": "front", "reason": "single-sided SMD assembly"},
+      {"ref": "J702", "side": "front", "reason": "single-sided SMD assembly"},
+      {"ref": "U301", "side": "front", "reason": "single-sided SMD assembly"},
+      {"ref": "U601", "side": "front", "reason": "single-sided SMD assembly"}
+    ]
+  },
+  "planes": [
+    {"layer": "In1.Cu", "net": "GND"},
+    {"layer": "In2.Cu", "net": "VM"},
+    {"layer": "B.Cu", "net": "GND"},
+    {"layer": "F.Cu", "net": "/PHASE_A", "region": [39.9, 55.0, 44.2, 61.5], "connect": "solid"},
+    {"layer": "B.Cu", "net": "/PHASE_A", "region": [40.2, 56.0, 45.8, 86.4], "connect": "solid"},
+    {"layer": "F.Cu", "net": "/power_stage/LS_SRC_A", "region": [40.2, 62.0, 44.2, 68.4], "connect": "solid"},
+    {"layer": "F.Cu", "net": "/PHASE_B", "region": [55.9, 55.0, 60.2, 61.5], "connect": "solid"},
+    {"layer": "B.Cu", "net": "/PHASE_B", "region": [56.2, 56.0, 61.8, 86.4], "connect": "solid"},
+    {"layer": "F.Cu", "net": "/power_stage/LS_SRC_B", "region": [56.2, 62.0, 60.2, 68.4], "connect": "solid"},
+    {"layer": "F.Cu", "net": "/PHASE_C", "region": [71.9, 55.0, 76.2, 61.5], "connect": "solid"},
+    {"layer": "B.Cu", "net": "/PHASE_C", "region": [72.2, 56.0, 77.8, 86.4], "connect": "solid"},
+    {"layer": "F.Cu", "net": "/power_stage/LS_SRC_C", "region": [72.2, 62.0, 76.2, 68.4], "connect": "solid"},
+    {"layer": "F.Cu", "net": "/power_in/VM_IN", "region": [18.4, 76.0, 22.2, 86.4], "connect": "solid"},
+    {"layer": "B.Cu", "net": "/power_in/VM_IN", "region": [18.0, 76.0, 22.2, 86.4], "connect": "solid"}
+  ],
+  "blocks": [
+    {"topology": "reverse-polarity-fet", "block": "power_in", "name": "Q101 NTMFS5C628NL + U101 LM74500",
+     "operating_point": {"vin_v": 28, "iout_a": 12.2, "pdiss_w": 0.4, "board_layers": 4, "source_kind": "dc-input", "integration_kind": "controller"}},
+    {"topology": "tvs-clamp", "block": "power_in", "name": "D101 SMCJ28A",
+     "operating_point": {"vin_v": 28, "vclamp_v": 45.4, "board_layers": 4, "source_kind": "dc-input"}},
+    {"topology": "buck", "block": "regulators", "name": "U201 LM5164 VM->+5V",
+     "operating_point": {"vin_v": 28, "vout_v": 5, "iout_a": 0.65, "fsw_khz": 400, "pdiss_w": 0.45, "board_layers": 4,
+                         "switching_kind": "hard", "rectifier_kind": "sync", "integration_kind": "integrated-fet",
+                         "source_kind": "dc-input", "control_kind": "cot"}},
+    {"topology": "boost", "block": "regulators", "name": "U202 TPS61040 +5V->+12V",
+     "operating_point": {"vin_v": 5, "vout_v": 12, "iout_a": 0.05, "fsw_khz": 1000, "pdiss_w": 0.1, "board_layers": 4,
+                         "switching_kind": "hard", "rectifier_kind": "async", "integration_kind": "integrated-fet",
+                         "source_kind": "dc-input"}},
+    {"topology": "ldo", "block": "regulators", "name": "U203 TLV75733 +5V->+3V3",
+     "operating_point": {"vin_v": 5, "vout_v": 3.3, "iout_a": 0.1, "pdiss_w": 0.17, "board_layers": 4}},
+    {"topology": "gate-driver-bootstrap", "block": "gate_driver", "name": "U301 DRV8300D",
+     "operating_point": {"vin_v": 28, "vout_v": 12, "fsw_khz": 25, "edge_ns": 50, "pdiss_w": 0.1, "board_layers": 4,
+                         "switching_kind": "hard", "source_kind": "dc-input"}},
+    {"topology": "half-bridge-inverter", "block": "power_stage", "name": "3 legs NTMFS5C628NL 60 V",
+     "operating_point": {"vin_v": 28, "iout_a": 10, "ipeak_a": 20, "fsw_khz": 25, "edge_ns": 50, "pdiss_w": 2.3,
+                         "board_layers": 4, "switching_kind": "hard", "rectifier_kind": "sync",
+                         "integration_kind": "controller", "source_kind": "dc-input"}},
+    {"topology": "current-sense-shunt", "block": "sensing", "name": "3 mOhm Kelvin + INA240A1 G=20",
+     "operating_point": {"iout_a": 10, "ipeak_a": 20, "rshunt_mohm": 3, "gain_vv": 20, "bw_khz": 400, "board_layers": 4}},
+    {"topology": "mcu", "block": "mcu", "name": "U601 STM32G431CBT6",
+     "operating_point": {"vin_v": 3.3, "iout_a": 0.06, "board_layers": 4}}
+  ]
+}

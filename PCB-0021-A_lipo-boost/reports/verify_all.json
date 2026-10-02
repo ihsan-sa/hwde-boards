@@ -1,0 +1,800 @@
+{
+ "script": "verify_all",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "status": "violations",
+ "counts": {
+  "total": 18,
+  "by_severity": {
+   "error": 5,
+   "warning": 13
+  },
+  "by_source": {
+   "check_current": 4,
+   "check_decoupling": 4,
+   "check_thermal": 2,
+   "check_silk": 2,
+   "check_route_style": 2,
+   "check_ratings": 4
+  },
+  "by_check": {
+   "check_return_path": 0,
+   "check_current": 4,
+   "check_decoupling": 4,
+   "check_diffpair": 0,
+   "check_creepage": 0,
+   "check_thermal": 2,
+   "check_silk": 2,
+   "check_route_style": 2,
+   "check_pdn": 0,
+   "check_ratings": 4
+  }
+ },
+ "checks": {
+  "check_return_path": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_return_path.json"
+  },
+  "check_current": {
+   "status": "violations",
+   "counts": {
+    "total": 4,
+    "by_severity": {
+     "error": 4
+    },
+    "by_source": {
+     "check_current": 4
+    }
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_current.json"
+  },
+  "check_decoupling": {
+   "status": "violations",
+   "counts": {
+    "total": 4,
+    "by_severity": {
+     "warning": 4
+    },
+    "by_source": {
+     "check_decoupling": 4
+    }
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_decoupling.json"
+  },
+  "check_diffpair": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_diffpair.json"
+  },
+  "check_creepage": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_creepage.json"
+  },
+  "check_thermal": {
+   "status": "violations",
+   "counts": {
+    "total": 2,
+    "by_severity": {
+     "error": 1,
+     "warning": 1
+    },
+    "by_source": {
+     "check_thermal": 2
+    }
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_thermal.json"
+  },
+  "check_silk": {
+   "status": "violations",
+   "counts": {
+    "total": 2,
+    "by_severity": {
+     "warning": 2
+    },
+    "by_source": {
+     "check_silk": 2
+    }
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_silk.json"
+  },
+  "check_route_style": {
+   "status": "violations",
+   "counts": {
+    "total": 2,
+    "by_severity": {
+     "warning": 2
+    },
+    "by_source": {
+     "check_route_style": 2
+    }
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_route_style.json"
+  },
+  "check_pdn": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_pdn.json"
+  },
+  "check_ratings": {
+   "status": "violations",
+   "counts": {
+    "total": 4,
+    "by_severity": {
+     "warning": 4
+    },
+    "by_source": {
+     "check_ratings": 4
+    }
+   },
+   "report": "PCB-0021-A_lipo-boost/reports/checks/check_ratings.json"
+  }
+ },
+ "coverage": {
+  "strict": false,
+  "required": [
+   "check_return_path",
+   "check_current",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_thermal",
+   "check_silk",
+   "check_route_style",
+   "check_pdn",
+   "check_ratings"
+  ],
+  "ran": [
+   "check_return_path",
+   "check_current",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_thermal",
+   "check_silk",
+   "check_route_style",
+   "check_pdn",
+   "check_ratings"
+  ],
+  "passed": [
+   "check_return_path",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_silk",
+   "check_route_style",
+   "check_pdn",
+   "check_ratings"
+  ],
+  "failed": [
+   "check_current",
+   "check_thermal"
+  ],
+  "waived": [],
+  "not_applicable": {},
+  "skipped_error": {}
+ },
+ "violations": [
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    48.25,
+    54.8686
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "+SYS pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 1.240 mm for 2.20 A at dT=10C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "+SYS pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 1.240 mm for 2.20 A at dT=10C",
+     "pos": [
+      48.25,
+      54.8686
+     ]
+    }
+   ],
+   "kind": "pour_neckdown",
+   "neck_mm": 0.0,
+   "required_mm": 1.24,
+   "current_a": 2.2
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    48.25,
+    55.875
+   ],
+   "layer": null,
+   "net": "+SYS",
+   "refs": [],
+   "msg": "+SYS layer transition at (48.25, 55.88) has 2 via(s); 2.20 A needs 5 (>= 1 via per 0.5 A)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "+SYS layer transition at (48.25, 55.88) has 2 via(s); 2.20 A needs 5 (>= 1 via per 0.5 A)",
+     "pos": [
+      48.25,
+      55.875
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 2,
+   "required": 5
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    63.4637,
+    51.2574
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 1.240 mm for 2.20 A at dT=10C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 1.240 mm for 2.20 A at dT=10C",
+     "pos": [
+      63.4637,
+      51.2574
+     ]
+    }
+   ],
+   "kind": "pour_neckdown",
+   "neck_mm": 0.0,
+   "required_mm": 1.24,
+   "current_a": 2.2
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    41.25,
+    51.22
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (41.25, 51.22) has 4 via(s); 2.20 A needs 5 (>= 1 via per 0.5 A)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (41.25, 51.22) has 4 via(s); 2.20 A needs 5 (>= 1 via per 0.5 A)",
+     "pos": [
+      41.25,
+      51.22
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 4,
+   "required": 5
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    52.7,
+    40.7
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C11"
+   ],
+   "msg": "C11 ground pad is 6.6 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C11 ground pad is 6.6 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      52.7,
+      40.7
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 2.75,
+   "euclid_mm": 2.1077,
+   "loop_nh": 7.5453,
+   "vias_in_loop": 1,
+   "pin": "U2.6"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    54.8,
+    40.7
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C12"
+   ],
+   "msg": "C12 ground pad is 7.6 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C12 ground pad is 7.6 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      54.8,
+      40.7
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 4.85,
+   "euclid_mm": 4.1283,
+   "loop_nh": 9.686,
+   "vias_in_loop": 1,
+   "pin": "U2.6"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    56.7,
+    42.7
+   ],
+   "layer": "F.Cu",
+   "net": "+5V",
+   "refs": [
+    "C13",
+    "U2"
+   ],
+   "msg": "C13 decoupling loop ~11.4 nH for U2 pin 6 (mid class limit 10.0 nH: 6.8 mm rail + 8.2 mm gnd + 1 via)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C13 decoupling loop ~11.4 nH for U2 pin 6 (mid class limit 10.0 nH: 6.8 mm rail + 8.2 mm gnd + 1 via)",
+     "pos": [
+      56.7,
+      42.7
+     ]
+    }
+   ],
+   "kind": "decoupler_loop",
+   "cap_class": "mid",
+   "manhattan_mm": 6.75,
+   "euclid_mm": 6.0035,
+   "loop_nh": 11.4387,
+   "vias_in_loop": 1,
+   "pin": "U2.6",
+   "limit_nh": 10.0
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    56.7,
+    41.3
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C13"
+   ],
+   "msg": "C13 ground pad is 8.2 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C13 ground pad is 8.2 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      56.7,
+      41.3
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "mid",
+   "manhattan_mm": 6.75,
+   "euclid_mm": 6.0035,
+   "loop_nh": 11.4387,
+   "vias_in_loop": 1,
+   "pin": "U2.6"
+  },
+  {
+   "check": "check_thermal",
+   "severity": "error",
+   "pos": [
+    41.25,
+    51.224
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 dissipates 1.10 W into 645 mm2 of GND copper: ~81 C rise (theta_JA ~74 C/W) > 40 C allowed; add thermal vias to an inner/back plane",
+   "source": "check_thermal",
+   "items": [
+    {
+     "msg": "U1 dissipates 1.10 W into 645 mm2 of GND copper: ~81 C rise (theta_JA ~74 C/W) > 40 C allowed; add thermal vias to an inner/back plane",
+     "pos": [
+      41.25,
+      51.224
+     ]
+    }
+   ],
+   "kind": "thermal_area",
+   "power_w": 1.1,
+   "area_mm2": 645.0,
+   "theta_ja": 73.8454,
+   "rise_c": 81.2299,
+   "dt_allowed_c": 40.0
+  },
+  {
+   "check": "check_thermal",
+   "severity": "warning",
+   "pos": [
+    41.25,
+    51.224
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 (1.10 W) needs a thermal-via array to GND (copper alone tops out ~74 C/W); found 4 via(s), want >= 5",
+   "source": "check_thermal",
+   "items": [
+    {
+     "msg": "U1 (1.10 W) needs a thermal-via array to GND (copper alone tops out ~74 C/W); found 4 via(s), want >= 5",
+     "pos": [
+      41.25,
+      51.224
+     ]
+    }
+   ],
+   "kind": "thermal_vias",
+   "vias": 4,
+   "required": 5,
+   "power_w": 1.1
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    50.0,
+    40.175
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "U2"
+   ],
+   "msg": "refdes \"U2\" sits 2.30 mm beyond its own pads and 0.52 mm from R10 - reads as R10's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"U2\" sits 2.30 mm beyond its own pads and 0.52 mm from R10 - reads as R10's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      50.0,
+      40.175
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "U2",
+   "offset_mm": 2.3,
+   "nearest_ref": "R10",
+   "nearest_mm": 0.518
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    45.922,
+    40.0
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R10"
+   ],
+   "msg": "refdes \"R10\" sits 2.05 mm beyond its own pads and 0.47 mm from R11 - reads as R11's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R10\" sits 2.05 mm beyond its own pads and 0.47 mm from R11 - reads as R11's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      45.922,
+      40.0
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R10",
+   "offset_mm": 2.05,
+   "nearest_ref": "R11",
+   "nearest_mm": 0.471
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    57.5,
+    35.3
+   ],
+   "layer": "F.Cu",
+   "net": "+5V",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on +5V F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.600 mm",
+     "pos": [
+      57.5,
+      35.3
+     ],
+     "uuid": "3847725b-fabb-483c-a5cf-79ed4afbd221"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    36.9,
+    42.0
+   ],
+   "layer": "F.Cu",
+   "net": "/LBO",
+   "refs": [],
+   "msg": "12 needless jog(s): a sidestep smaller than the track clears nothing on /LBO F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      36.9,
+      42.0
+     ],
+     "uuid": "f83fde52-6746-43f5-9da5-49cfae585492"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      36.925,
+      42.075
+     ],
+     "uuid": "a5ad8ef7-5d4f-4c61-943e-0e5c11a82d47"
+    },
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      52.95,
+      37.25
+     ],
+     "uuid": "bc399645-7e99-4354-9dbc-9eb1dd212824"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      52.975,
+      37.175
+     ],
+     "uuid": "6b24610f-83d2-4094-b12d-65b3f98e8078"
+    },
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      53.25,
+      34.5
+     ],
+     "uuid": "c95bbade-2bc8-49db-9b02-a12ca915d8d9"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      53.275,
+      34.425
+     ],
+     "uuid": "32cfd1c3-2860-4990-8f45-9d0f7a6d4d94"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      61.125,
+      32.475
+     ],
+     "uuid": "ad348f86-ea2d-4ed1-bb23-ef381b8cbb97"
+    },
+    {
+     "msg": "sidestep 0.106 mm",
+     "pos": [
+      61.225,
+      32.5
+     ],
+     "uuid": "d2dbff27-0268-430b-8f6c-8bc3fe6c0d00"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      62.525,
+      32.925
+     ],
+     "uuid": "b3dd3b3a-c872-4302-ba2f-8b2a4af8ea06"
+    },
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      62.6,
+      32.95
+     ],
+     "uuid": "7871057a-921e-4126-a5ea-bc6a3ba89d70"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      62.675,
+      32.975
+     ],
+     "uuid": "56a79736-7b22-496c-989c-6c563f489e83"
+    },
+    {
+     "msg": "sidestep 0.106 mm",
+     "pos": [
+      62.775,
+      33.0
+     ],
+     "uuid": "d36b643c-f425-467e-9838-5b3ef86ca4ab"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "J3 (C32713273): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J3 (C32713273): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J4"
+   ],
+   "msg": "J4 (C53207796): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J4 (C53207796): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "Q1"
+   ],
+   "msg": "Q1 (C8545): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "Q1 (C8545): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D1",
+    "D2",
+    "D3",
+    "L1",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9"
+   ],
+   "msg": "16 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D2, D3, L1, R1, R10, R11, R12, R2, R3, R4, R5, R6, R7, R8, R9",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "16 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D2, D3, L1, R1, R10, R11, R12, R2, R3, R4, R5, R6, R7, R8, R9",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "D1",
+    "D2",
+    "D3",
+    "L1",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9"
+   ]
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T13:31:33+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f"
+}

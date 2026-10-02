@@ -1,0 +1,86 @@
+{
+ "associations": [
+  {
+   "cap": "C5",
+   "ic": "U1",
+   "pin": "7",
+   "rail": "/GVDD",
+   "value": "1uF 25V X7R",
+   "max_dist_mm": 8.0
+  },
+  {
+   "cap": "C6",
+   "ic": "U1",
+   "pin": "17",
+   "rail": "+12V",
+   "value": "100nF 50V X7R",
+   "max_dist_mm": 7.5
+  },
+  {
+   "cap": "C7",
+   "ic": "U1",
+   "pin": "18",
+   "rail": "+12V",
+   "value": "1nF 50V NP0",
+   "role": "reg_input"
+  },
+  {
+   "cap": "C9",
+   "ic": "U1",
+   "pin": "18",
+   "rail": "+12V",
+   "value": "100nF 50V X7R",
+   "role": "reg_input"
+  },
+  {
+   "cap": "C11",
+   "ic": "U1",
+   "pin": "18",
+   "rail": "+12V",
+   "value": "10uF 25V X5R",
+   "max_dist_mm": 15.0,
+   "role": "reg_input"
+  },
+  {
+   "cap": "C14",
+   "ic": "U1",
+   "pin": "18",
+   "rail": "+12V",
+   "value": "100uF 35V elec",
+   "role": "reg_input"
+  },
+  {
+   "cap": "C8",
+   "ic": "U1",
+   "pin": "31",
+   "rail": "+12V",
+   "value": "1nF 50V NP0",
+   "role": "reg_input"
+  },
+  {
+   "cap": "C10",
+   "ic": "U1",
+   "pin": "31",
+   "rail": "+12V",
+   "value": "100nF 50V X7R",
+   "role": "reg_input"
+  },
+  {
+   "cap": "C12",
+   "ic": "U1",
+   "pin": "31",
+   "rail": "+12V",
+   "value": "10uF 25V X5R",
+   "max_dist_mm": 15.0,
+   "role": "reg_input"
+  },
+  {
+   "cap": "C13",
+   "ic": "U1",
+   "pin": "31",
+   "rail": "+12V",
+   "value": "100uF 35V polymer",
+   "role": "reg_input"
+  }
+ ]
+}

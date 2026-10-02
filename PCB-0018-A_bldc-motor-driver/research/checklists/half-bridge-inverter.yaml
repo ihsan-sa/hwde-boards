@@ -1,0 +1,23 @@
+id: half-bridge-inverter
+kind: coverage-checklist
+applies:
+  topologies: [half-bridge-inverter]
+requires:
+  - {class: power-loop, min_level: principle, note: "per-leg commutation loop (bypass ceramic -> HS FET -> LS FET -> return) and the supply-to-motor high-current loop kept minimal"}
+  - {class: decoupling, min_level: principle, note: "bulk (>10 uF) at power entry with multi-vias; small ceramics (<10 uF) at each leg's HS drain / LS source"}
+  - {class: emi, min_level: topology, note: "switch-node copper short/wide, HS source to LS drain inductance minimal, snubber and Cgs provisions"}
+  - {class: thermal, min_level: topology, note: "continuous pours, copper weight, no-heatsink evidence at the current level"}
+  - {class: thermal-via, min_level: topology, note: "direct-connect via arrays under power pads, drill/diameter, no thermal relief"}
+maturity: draft
+sources:
+  - {file: research/sources/slva959b.pdf, page: 27, note: "Section 6.3.1-6.3.2 + Fig 6-10/6-11: switch-node inductance and high-current loop minimisation"}
+  - {file: research/sources/slva959b.pdf, page: 11, note: "Section 2.6 summary of thermal design bullets"}
+  - {file: research/sources/tiduf36a.pdf, page: 5, note: "Section 3.1 + Fig 3-1: three-leg inverter with per-leg decoupling C30-C32, RC snubber provisions across every FET, optional Cgs"}
+prose: >
+  A three-leg N-FET inverter needs, before layout: where each leg's commutation
+  loop closes and how the bypass caps are split between bulk at the entry and
+  small ceramics at each leg; how the switch node is kept short and what
+  damping provisions (RC snubber, Cgs) to leave; how the copper and via fabric
+  carry the FET heat without a heatsink. Seeded from TI SLVA959B (motor-driver
+  layout best practices) and TI TIDA-010251 (18 V 600 W 4-layer 2 oz inverter).
+origin: research:block-half-bridge-inverter-1

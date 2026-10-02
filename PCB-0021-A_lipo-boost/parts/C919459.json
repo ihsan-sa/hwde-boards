@@ -1,0 +1,86 @@
+{
+ "mpn": "TPS61023DRLR",
+ "lcsc": "C919459",
+ "package": "SOT-563 (DRL) 6-pin",
+ "description": "TI TPS61023 0.5-5.5 V in, 1 MHz synchronous boost, adjustable output 2.2-5.5 V, 3 A switch",
+ "pinout": [
+  {
+   "pin": "1",
+   "name": "FB",
+   "type": "input"
+  },
+  {
+   "pin": "2",
+   "name": "EN",
+   "type": "input"
+  },
+  {
+   "pin": "3",
+   "name": "VIN",
+   "type": "power_in"
+  },
+  {
+   "pin": "4",
+   "name": "GND",
+   "type": "ground"
+  },
+  {
+   "pin": "5",
+   "name": "SW",
+   "type": "passive"
+  },
+  {
+   "pin": "6",
+   "name": "VOUT",
+   "type": "power_out"
+  }
+ ],
+ "decoupling": [
+  {
+   "pins": [
+    "3"
+   ],
+   "value": "4.7 uF effective ceramic CIN min 1 uF",
+   "placement": "close to VIN and GND"
+  },
+  {
+   "pins": [
+    "6"
+   ],
+   "value": "COUT effective 4-1000 uF, 10 uF nominal",
+   "placement": "close to VOUT and GND"
+  }
+ ],
+ "land_pattern": {
+  "package": "DRL0006A",
+  "pad_count": 6,
+  "pitch_mm": 0.5,
+  "pad_size_mm": [
+   0.67,
+   0.3
+  ],
+  "pin1": "1"
+ },
+ "exposed_pad": {
+  "present": false
+ },
+ "layout_notes": [
+  "Minimise length and area of SW trace; ground plane under regulator",
+  "Input cap close to VIN and GND pin",
+  "Output cap close to VOUT and GND; SW-FET to rectifier to COUT loop as short as possible",
+  "Make copper polygon on each pin larger for thermal performance",
+  "Feedback divider R1 (top) R2 (bottom), VOUT = 0.6 V x (1 + R1/R2) per datasheet equation; inductor effective 0.37-2.9 uH, 1 uH nominal"
+ ],
+ "abs_max": [
+  {
+   "param": "VIN, EN, FB, SW, VOUT",
+   "value": 7,
+   "unit": "V"
+  },
+  {
+   "param": "TJ",
+   "value": 150,
+   "unit": "C"
+  }
+ ]
+}

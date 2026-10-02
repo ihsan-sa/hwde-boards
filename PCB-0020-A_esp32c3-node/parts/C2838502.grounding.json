@@ -1,0 +1,523 @@
+{
+ "script": "datasheet_extract",
+ "status": "extracted",
+ "source_pdf": "PCB-0020-A_esp32c3-node/parts/U1_esp32-c3-mini-1_datasheet_en.pdf",
+ "lcsc": "",
+ "n_pages": 48,
+ "text_chars": 64670,
+ "pages_trimmed": 16,
+ "text_by_page": [
+  {
+   "page": 0,
+   "first_line": "ESP32-C3-MINI-1",
+   "chars": 337
+  },
+  {
+   "page": 1,
+   "text": "1 Module Overview\n1 Module Overview\nNote:\nCheck the link or the QR code to make sure that you use the latest version of this document:\nhttps://www.espressif.com/documentation/esp32-c3-mini-1_datasheet_en.pdf\n1. 1 Features\nCPU and On-Chip Memory\n\u2022 ESP32-C3FH4, ESP32-C3FH4X,\nESP32-C3FH8X, or ESP32-C3FH4AZ\nembedded, 32-bit RISC-V single-core\nprocessor, up to 160 MHz\n\u2022 384 KB ROM\n\u2022 400 KB SRAM (16 KB for cache)\n\u2022 8 KB SRAM in RTC\n\u2022 Up to 8 MB flash in chip package\nWi-Fi\n\u2022 IEEE 802.11 b/g/n-compliant\n\u2022 Center frequency range of operating channel:\n2412 ~2484 MHz\n\u2022 Supports 20 MHz, 40 MHz bandwidth in 2.4\nGHz band\n\u2022 1T1R mode with data rate up to 150 Mbps\n\u2022 Wi-Fi Multimedia (WMM)\n\u2022 TX/RX A-MPDU, TX/RX A-MSDU\n\u2022 Immediate Block ACK\n\u2022 Fragmentation and defragmentation\n\u2022 Transmit opportunity (TXOP)\n\u2022 Automatic Beacon monitoring (hardware TSF)\n\u2022 4 \u00d7 virtual Wi-Fi interfaces\n\u2022 Simultaneous support for Infrastructure BSS in\nStation mode, SoftAP mode, Station + SoftAP\nmode, and promiscuous mode\nNote that when the chip scans in Station mode,\nthe SoftAP channel will change along with the\nStation channel\n\u2022 802.11mc FTM\nBluetooth\u00ae\n\u2022 Bluetooth LE: Bluetooth 5, Bluetooth mesh\n\u2022 Speed: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps\n\u2022 Advertising extensions\n\u2022 Multiple advertisement sets\n\u2022 Channel selection algorithm #2\n\u2022 Internal co-existence mechanism between Wi-Fi\nand Bluetooth to share the same antenna\nPeripherals\n\u2022 Up to 15 GPIOs\n\u2013 3 strapping GPIOs\n\u2022 SPI, UART, I2C, I2S, remote control peripheral,\nLED PWM controller, general DMA controller,\nTWAI\u00ae controller (compatible with ISO 11898-1,\ni.e. CAN Specification 2.0), USB Serial/JTAG\ncontroller, temperature sensor, SAR ADC,\ngeneral-purpose timers, watchdog timers\nNote:\n* Please refer toESP32-C3 Series Datasheetfor\ndetailed information about the module peripher-\nals.\nIntegrated Components on Module\n\u2022 40 MHz crystal oscillator\nEspressif Systems 2\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 2,
+   "text": "1 Module Overview\nAntenna Options\n\u2022 ESP32-C3-MINI-1: On-board PCB antenna\n\u2022 ESP32-C3-MINI-1U: External antenna via a\nconnector\nOperating Conditions\n\u2022 Operating voltage/Power supply: 3.0~3.6 V\n\u2022 Operating ambient temperature:\n\u2013 85 \u00b0C version module: \u201340 ~ 85 \u00b0C\n\u2013 105 \u00b0C version module: \u201340 ~ 105 \u00b0C\nCertification\n\u2022 RF certification: Seecertificates\n\u2022 Green certification: RoHS/REACH\nT est\n\u2022 HTOL/HTSL/uHAST/TCT/ESD/Latch-up\n1.2 Series Comparison\nESP32-C3-MINI-1 and ESP32-C3-MINI-1U are two general-purpose Wi-Fi and Bluetooth LE modules. The rich\nset of peripherals and a small size make the two modules an ideal choice for smart homes, industrial\nautomation, health care, consumer electronics, etc.\nESP32-C3-MINI-1 comes with a PCB antenna. ESP32-C3-MINI-1U comes with an external antenna connector.\nA wide selection of module variants are available as shown in Table1-1and1-2.\nThe series comparison for the two modules is as follows:\nT able 1-1. ESP32-C3-MINI-1 (ANT) Series Comparison1\nAmbient T emp.2 Embedded Size3\nPart Number5 Flash4\n(\u00b0C) Chip Revision6 (mm)\nESP32-C3-MINI-1-N4X\n(Recommended) 4 MB (Quad SPI) \u201340 \u223c85 v1.1\n13.2 \u00d7 16.6 \u00d7 2.4\nESP32-C3-MINI-1-H4X\n(Recommended) \u201340 \u223c105 v1.1\nESP32-C3-MINI-1-H8X 8 MB (Quad SPI) \u201340 \u223c105 v1.1\nESP32-C3-MINI-1-N4 (NRND)\n4 MB (Quad SPI)\n\u201340 \u223c85 v0.4\nESP32-C3-MINI-1-H4 (NRND) \u201340 \u223c105 v0.4\nESP32-C3-MINI-1-H4-AZ (NRND) \u201340 \u223c105 v0.4\n1 This table shares the same notes presented in Table1-2below.\nEspressif Systems 3\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 3,
+   "text": "1 Module Overview\nT able 1-2. ESP32-C3-MINI-1U (CONN) Series Comparison\nAmbient T emp.2 Embedded Size3\nPart Number5 Flash4, 7\n(\u00b0C) Chip Revision 6 (mm)\nESP32-C3-MINI-1U-N4X\n(Recommended)\n4 MB (Quad SPI)\n\u201340 \u223c85 v1.1\n13.2 \u00d7 12.5 \u00d7 2.4ESP32-C3-MINI-1U-H4X\n(Recommended) \u201340 \u223c105 v1.1\nESP32-C3-MINI-1U-N4 (NRND) \u201340 \u223c85 v0.4\nESP32-C3-MINI-1U-H4 (NRND) \u201340 \u223c105 v0.4\n2Ambient temperature specifies the recommended temperature range of the environment immediately outside the\nEspressif module.\n3For details, refer to Section10.1 Module Dimensions.\n4The flash is integrated in the chip\u2019s package. For specifications, refer to Section6.5 Memory Specifications.\n5Allmodulescanbepre-programmedwith AWSIoTExpressLinkfirmware. Moduleswithsuchfirmwarehavesuffix\u201d-A\u201d\nin their part numbers, e.g. ESP32-C3-MINI-1-N4-A. Since AWS IoT ExpressLink firmware enables flash encryption\nand secure boot, joint download boot mode will be disabled, and it will no longer be possible to program firmware\nthrough the UART or USB port into the modules.\n6All chip revisions have the same SRAM size, but chip revision v1.1 has around 10 KB more available space for users\nthanchiprevisionv0.4. Chiprevisionv1.1dependsonspecificESP-IDFversions,asdetailedin CompatibilityAdvisory\nforESP32-C3ChipRevisionv1.1. For how to identify chip revisions, please refer toESP32-C3 Series SoC Errata.\n7By default, the SPI flash on the module operates at a maximum clock frequency of 80 MHz and does not support\nthe auto suspend feature. If you have a requirement for a higher flash clock frequency of 120 MHz or if you need\nthe flash auto suspend feature, pleasecontactus.\nBoth ESP32-C3-MINI-1 and ESP32-C3-MINI-1U has two operating ambient temperature options: \u201340\u223c85 \u00b0C\nvariants and \u201340\u223c105 \u00b0C variants. These modules can be embedded with the following chips:\n\u2022 ESP32-C3FH4: chip revision v0.4, 4 MB flash\n\u2022 ESP32-C3FH4X: chip revision v1.1, 4 MB flash\n\u2022 ESP32-C3FH8X: chip reivision v1.1, 8 MB\nESP32-C3-MINI-1 has one more variant: ESP32-C3-MINI-1-H4-AZ embedded with the ESP32-C3FH4AZ chip.\nFor this chip, SPI0/SPI1 pins for flash connection are not bonded.\nFor more information about the differences between chips embedded, please refer to SectionChip Series\nComparisonin ESP32-C3 Series Datasheet.\n1.3 Applications\n\u2022 Smart Home\n\u2022 Industrial Automation\n\u2022 Health Care\n\u2022 Consumer Electronics\n\u2022 Smart Agriculture\n\u2022 POS Machines\n\u2022 Service Robot\n\u2022 Audio Devices\n\u2022 Generic Low-power IoT Sensor Hubs\n\u2022 Generic Low-power IoT Data Loggers\nEspressif Systems 4\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 4,
+   "text": "Contents\nContents\n1 Module Overview 2\n1.1 Features 2\n1.2 Series Comparison 3\n1.3 Applications 4\n2 Block Diagram 9\n3 Pin Definitions 10\n3.1 Pin Layout 10\n3.2 Pin Description 10\n4 Boot Configurations 12\n4.1 Chip Boot Mode Control 13\n4.2 ROM Messages Printing Control 14\n4.3 Chip Power-up and Reset 14\n5 Peripherals 16\n5.1 Peripheral Overview 16\n5.2 Peripheral Description 16\n5.2.1 Connectivity Interface 16\n5.2.1.1 UART Controller 16\n5.2.1.2 SPI Controller 16\n5.2.1.3 I2C Controller 17\n5.2.1.4 I2S Controller 18\n5.2.1.5 USB Serial/JTAG Controller 18\n5.2.1.6 Two-wire Automotive Interface 18\n5.2.1.7 LED PWM Controller 19\n5.2.1.8 Remote Control Peripheral 19\n5.2.2 Analog Signal Processing 19\n5.2.2.1 SAR ADC 20\n5.2.2.2 Temperature Sensor 20\n6 Electrical Characteristics 21\n6.1 Absolute Maximum Ratings 21\n6.2 Recommended Operating Conditions 21\n6.3 DC Characteristics (3.3 V, 25 \u00b0C) 21\n6.4 Current Consumption Characteristics 22\n6.4.1 Current Consumption in Active Mode 22\n6.4.2 Current Consumption in Other Modes 23\n6.5 Memory Specifications 23\n7 RF Characteristics 25\n7.1 Wi-Fi Radio 25\nEspressif Systems 5\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 5,
+   "text": "Contents\n7.1.1 Wi-Fi RF Transmitter (TX) Characteristics 25\n7.1.2 Wi-Fi RF Receiver (RX) Characteristics 26\n7.2 Bluetooth 5 (LE) Radio 27\n7.2.1 Bluetooth LE RF Transmitter (TX) Characteristics 27\n7.2.2 Bluetooth LE RF Receiver (RX) Characteristics 29\n8 Module Schematics 32\n9 Peripheral Schematics 34\n10 Physical Dimensions 35\n10.1 Module Dimensions 35\n10.2 Dimensions of External Antenna Connector 36\n11 PCB Layout Recommendations 38\n11.1 PCB Land Pattern 38\n11.2 Module Placement for PCB Design 39\n12 Product Handling 40\n12.1 Storage Conditions 40\n12.2 Electrostatic Discharge (ESD) 40\n12.3 Reflow Profile 40\n12.4 Ultrasonic Vibration 41\nDatasheet Versioning 42\nRelated Documentation and Resources 43\nRevision History 45\nEspressif Systems 6\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 6,
+   "text": "List of Tables\nList of T ables\n1-1 ESP32-C3-MINI-1 (ANT) Series Comparison1 3\n1-2 ESP32-C3-MINI-1U (CONN) Series Comparison 4\n3-1 Pin Definitions 11\n4-1 Default Configuration of Strapping Pins 12\n4-2 Description of Timing Parameters for the Strapping Pins 13\n4-3 Chip Boot Mode Control 13\n4-4 UART0 ROM Message Printing Control 14\n4-5 USB Serial/JTAG ROM Message Printing Control 14\n4-6 Description of Timing Parameters for Power-up and Reset 15\n6-1 Absolute Maximum Ratings 21\n6-2 Recommended Operating Conditions 21\n6-3 DC Characteristics (3.3 V, 25 \u00b0C) 21\n6-4 Current Consumption for Wi-Fi (2.4 GHz) in Active Mode 22\n6-5 Current Consumption for Bluetooth LE in Active Mode 22\n6-6 Current Consumption in Modem-sleep Mode 23\n6-7 Current Consumption in Low-Power Modes 23\n6-8 Flash Specifications 23\n7-1 Wi-Fi RF Characteristics 25\n7-2 TX Power with Spectral Mask and EVM Meeting 802.11 Standards 25\n7-3 TX EVM Test1 25\n7-4 RX Sensitivity 26\n7-5 Maximum RX Level 27\n7-6 RX Adjacent Channel Rejection 27\n7-7 Bluetooth LE RF Characteristics 27\n7-8 Bluetooth LE - Transmitter Characteristics - 1 Mbps 28\n7-9 Bluetooth LE - Transmitter Characteristics - 2 Mbps 28\n7-10 Bluetooth LE - Transmitter Characteristics - 125 Kbps 28\n7-11 Bluetooth LE - Transmitter Characteristics - 500 Kbps 29\n7-12 Bluetooth LE - Receiver Characteristics - 1 Mbps 29\n7-13 Bluetooth LE - Receiver Characteristics - 2 Mbps 30\n7-14 Bluetooth LE - Receiver Characteristics - 125 Kbps 30\n7-15 Bluetooth LE - Receiver Characteristics - 500 Kbps 31\nEspressif Systems 7\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 7,
+   "text": "List of Figures\nList of Figures\n2-1 ESP32-C3-MINI-1 Block Diagram 9\n2-2 ESP32-C3-MINI-1U Block Diagram 9\n3-1 Pin Layout (Top View) 10\n4-1 Visualization of Timing Parameters for the Strapping Pins 13\n4-2 Visualization of Timing Parameters for Power-up and Reset 15\n8-1 ESP32-C3-MINI-1 Schematics 32\n8-2 ESP32-C3-MINI-1U Schematics 33\n9-1 Peripheral Schematics 34\n10-1 ESP32-C3-MINI-1 Physical Dimensions 35\n10-2 ESP32-C3-MINI-1U Physical Dimensions 35\n10-3 Dimensions of External Antenna Connector 36\n11-1 ESP32-C3-MINI-1 Recommended PCB Land Pattern 38\n11-2 ESP32-C3-MINI-1U Recommended PCB Land Pattern 39\n12-1 Reflow Profile 40\nEspressif Systems 8\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 8,
+   "text": "2 Block Diagram\n2 Block Diagram\nSPI FlashRF Matching40 MHzCrystal3V3ESP32-C3-MINI-1ENGPIOsAntennaESP32-C3FH4SPI Flash40 MHzCrystal3V3ESP32-C3-MINI-1UENGPIOsESP32-C3FH4RF MatchingAntenna\nFigure 2-1. ESP32-C3-MINI-1 Block Diagram\nSPI FlashRF Matching40 MHzCrystal3V3ESP32-C3-MINI-1ENGPIOsAntennaESP32-C3FH4SPI Flash40 MHzCrystal3V3ESP32-C3-MINI-1UENGPIOsESP32-C3FH4RF MatchingAntenna\nFigure 2-2. ESP32-C3-MINI-1U Block Diagram\nNote:\nFor the pin mapping between the chip and the in-package flash, please refer toESP32-C3 Series Datasheet > Table\nPin Mapping Between Chip and In-package Flash .\nEspressif Systems 9\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 9,
+   "text": "3 Pin Definitions\n3 Pin Definitions\n3. 1 Pin Layout\nThepindiagrambelowshowstheapproximatelocationofpinsonthemodule. Fortheactualdiagramdrawnto\nscale, please refer to Figure10.1 Module Dimensions.\nPin 49GNDGNDGNDGNDGNDGNDGNDGNDGNDPin 1Pin 2Pin 3Pin 4Pin 6Pin 5Pin 7Pin 8Pin 9Pin 10Pin 11\nPin 53GND\nPin 52GNDPin 12Pin 13Pin 14Pin 15Pin 16Pin 17Pin 18Pin 19Pin 20Pin 21Pin 22Pin 23Pin 24Pin 25Pin 51GNDPin 26Pin 27Pin 28Pin 29Pin 30Pin 31Pin 32Pin 33Pin 34Pin 35Pin 50GNDPin 36Pin 37Pin 38Pin 39Pin 40Pin 41Pin 42Pin 43Pin 44Pin 45Pin 46Pin 47Pin 48GNDGND3V3NCIO2IO3NCENNCNCGNDIO0IO1GNDNCIO10NCIO4IO5IO6IO7IO8IO9NCNCIO18IO19NCNCRXD0TXD0NCNCNCNCGNDGNDGNDGNDGNDGNDGNDGNDGNDGNDGNDGNDGNDKeepout Zone\nA\nFigure 3-1. Pin Layout (T op View)\nNote A:\nThe zone marked with dotted lines is the antenna keepout zone. The pin diagram is applicable to ESP32-C3-MINI-1\nand ESP32-C3-MINI-1U, but the latter has no antenna keepout zone.\nTo learn more about the keepout zone for module\u2019s antenna on the base board, please refer to\nESP32-C3 Hardware Design Guidelines > SectionGeneral Principles of PCB Layout for Modules.\n3.2 Pin Description\nThe module has 53 pins. See pin definitions in Table3-1 Pin Definitions.\nFor peripheral pin configurations, please refer to Section5.2 Peripheral Description.\nEspressif Systems 10\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 10,
+   "text": "3 Pin Definitions\nT able 3-1. Pin Definitions\nName No. T ype1 Function\nGND 1, 2, 11, 14,\n36-53 P Ground\n3V3 3 P Power supply\nNC\n4, 7, 9, 10,\n15, 17, 24,\n25, 28, 29,\n32-35\n\u2014 NC\nIO2 5 I/O/T GPIO2, ADC1_CH2, FSPIQ\nIO3 6 I/O/T GPIO3, ADC1_CH3\nEN 8 I High: on, enables the chip.\nLow: off, the chip powers off.\nNote: Do not leave the EN pin floating.\nIO0 12 I/O/T GPIO0, ADC1_CH0, XTAL_32K_P\nIO1 13 I/O/T GPIO1, ADC1_CH1, XTAL_32K_N\nIO10 16 I/O/T GPIO10, FSPICS0\nIO4 18 I/O/T GPIO4, ADC1_CH4, FSPIHD, MTMS\nIO5 19 I/O/T GPIO5, ADC2_CH0, FSPIWP, MTDI\nIO6 20 I/O/T GPIO6, FSPICLK, MTCK\nIO7 21 I/O/T GPIO7, FSPID, MTDO\nIO8 22 I/O/T GPIO8\nIO9 23 I/O/T GPIO9\nIO18 26 I/O/T GPIO18, USB_D-\nIO19 27 I/O/T GPIO19, USB_D+\nRXD0 30 I/O/T GPIO20, U0RXD\nTXD0 31 I/O/T GPIO21, U0TXD\n1 P: power supply; I: input; O: output; T: high impedance.\nEspressif Systems 11\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 11,
+   "text": "4 Boot Configurations\n4 Boot Configurations\nNote:\nThe content below is excerpted fromESP32-C3 Series Datasheet > ChapterBoot Configurations. For the strapping\npin mapping between the chip and modules, please refer to Chapter8 Module Schematics.\nThe chip allows for configuring the following boot parameters through strapping pins and eFuse parameters at\npower-up or a hardware reset, without microcontroller interaction.\n\u2022 Chip boot mode\n\u2013 Strapping pins: GPIO2, GPIO8, and GPIO9\n\u2022 ROM message printing\n\u2013 Strapping pin: GPIO8\n\u2013 eFuse parameters: EFUSE_UART_PRINT_CONTROL and EFUSE_USB_PRINT_CHANNEL\nThe default values of all the above eFuse parameters are 0, which means that they are not burnt. Given that\neFuse is one-time programmable, once programmed to 1, it can never be reverted to 0. For how to program\neFuse parameters, please refer toESP32-C3 T echnical Reference Manual> ChaptereFuse Controller.\nThe default values of the strapping pins, namely the logic levels, are determined by pins\u2019 internal weak\npull-up/pull-down resistors at reset if the pins are not connected to any circuit, or connected to an external\nhigh-impedance circuit.\nT able 4-1. Default Configuration of Strapping Pins\nStrapping Pin Default Configuration Bit Value\nGPIO2 Floating \u2013\nGPIO8 Floating \u2013\nGPIO9 Weak pull-up 1\nTo change the bit values, the strapping pins should be connected to external pull-down/pull-up resistances. If\nthe ESP32-C3 is used as a device by a host MCU, the strapping pin voltage levels can also be controlled by\nthe host MCU.\nAll strapping pins have latches. At Chip Reset, the latches sample the bit values of their respective strapping\npins and store them until the chip is powered down or shut down. The states of latches cannot be changed in\nany other way. It makes the strapping pin values available during the entire chip operation, and the pins are\nfreed up to be used as regular IO pins after reset. For details on Chip Reset, see\nESP32-C3 T echnical Reference Manual> ChapterReset and Clock.\nThe timing of signals connected to the strapping pins should adhere to thesetup time and hold time\nspecifications in Table4-2and Figure4-1.\nEspressif Systems 12\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 12,
+   "text": "4 Boot Configurations\nT able 4-2. Description of Timing Parameters for the Strapping Pins\nParameter Description Min (ms)\ntSU\nSetup time isthetimereservedforthepowerrailstostabilizebe-\nfore the CHIP_EN pin is pulled high to activate the chip. 0\ntH\nHold time is the time reserved for the chip to read the strapping\npin values after CHIP_EN is already high and before these pins\nstart operating as regular IO pins.\n3\nStrapping pin\nVIH_nRST\nVIH\ntSU tH\nCHIP_EN\nFigure 4-1. Visualization of Timing Parameters for the Strapping Pins\n4. 1 Chip Boot Mode Control\nGPIO2, GPIO8, and GPIO9 control the boot mode after the reset is released. See Table4-3 Chip Boot Mode\nControl.\nT able 4-3. Chip Boot Mode Control\nBoot Mode GPIO22 GPIO8 GPIO9\nSPI boot mode 1 Any value 1\nJoint download boot mode3 1 1 0\n1 Boldmarks the default value and configuration.\n2GPIO2 actually does not determine SPI Boot and Joint Down-\nloadBootmode,butitisrecommendedtopullthispinupdue\nto glitches.\n3Joint Download Boot mode supports the following download\nmethods:\n\u2022USB-Serial-JTAG Download Boot\n\u2022UART Download Boot\nIn SPI Boot mode, the ROM bootloader loads and executes the program from SPI flash to boot the\nsystem.\nEspressif Systems 13\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 13,
+   "text": "4 Boot Configurations\nIn Joint Download Boot mode, users can download binary files into flash using UART0 or USB interface. It is\nalso possible to download binary files into SRAM and execute it from SRAM.\nIn addition to SPI Boot and Joint Download Boot modes, ESP32-C3 also supports SPI Download Boot mode.\nFor details, please seeESP32-C3 T echnical Reference Manual> ChapterChip Boot Control.\n4.2 ROM Messages Printing Control\nDuring the boot process, the messages by the ROM code can be printed to:\n\u2022 (Default) UART0 and USB Serial/ JT AG controller\n\u2022 UART0\n\u2022 USB Serial/JTAG controller\nEFUSE_UART_PRINT_CONTROL and GPIO8 control ROM messages printing toUART0as shown in Table4-4\nUART0 ROM Message Printing Control.\nT able 4-4. UART0 ROM Message Printing Control\nUART0 ROM Code Printing EFUSE_UART _PRINT _CONTROL GPIO8\nEnabled\n0 Ignored\n1 0\n2 1\nDisabled\n1 1\n2 0\n3 Ignored\n1 Boldmarks the default value and configuration.\nEFUSE_USB_PRINT_CHANNEL controls the printing toUSB Serial/ JT AG controlleras shown in Table4-5 USB\nSerial/JTAG ROM Message Printing Control.\nT able 4-5. USB Serial/ JT AG ROM Message Printing Control\nUSB Serial/ JT AG\nROM Code Printing EFUSE_DIS_USB_SERIAL_JT AG2 EFUSE_USB_PRINT _CHANNEL\nEnabled 0 0\nDisabled 0 1\n1 Ignored\n1 Boldmarks the default value and configuration.\n2EFUSE_DIS_USB_SERIAL_JTAG controls whether to disable USB Serial/JTAG.\n4.3 Chip Power-up and Reset\nOnce the power is supplied to the chip, its power rails need a short time to stabilize. After that, CHIP_EN \u2013 the\npin used for power-up and reset \u2013 is pulled high to activate the chip. For information on CHIP_EN as well as\npower-up and reset timing, see Figure4-2and Table4-6.\nEspressif Systems 14\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 14,
+   "text": "4 Boot Configurations\nVIL_nRST\ntST BL tRST\n2.8 V\nVDDA,\nVDD3P3,\nVDD3P3_RTC,\nVDD3P3_CPU\nCHIP_EN\nFigure 4-2. Visualization of Timing Parameters for Power-up and Reset\nT able 4-6. Description of Timing Parameters for Power-up and Reset\nParameter Description Min (\u00b5s)\ntST BL\nTime reserved for the power rails of VDDA, VDD3P3,\nVDD3P3_RTC, and VDD3P3_CPU to stabilize before the CHIP_EN\npin is pulled high to activate the chip\n50\ntRST\nTime reserved for CHIP_EN to stay below VIL_nRST to reset the\nchip (see Table6-3) 50\nEspressif Systems 15\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 15,
+   "text": "5 Peripherals\n5 Peripherals\n5. 1 Peripheral Overview\nESP32-C3FH4 integrates a rich set of peripherals including SPI, UART, I2C, I2S, remote control peripheral, LED\nPWM controller, TWAI\u00ae controller, USB Serial/JTAG controller, temperature sensor, SAR ADC.\nTo learn more about on-chip components, please refer toESP32-C3 Series Datasheet> SectionFunctional\nDescription.\nNote:\nThe content below is sourced fromESP32-C3 Series Datasheet> SectionPeripherals. Some information may not be\napplicable to ESP32-C3-MINI-1 and ESP32-C3-MINI-1U as not all the IO signals are exposed on the module.\nTo learn more about peripheral signals, please refer toESP32-C3 T echnical Reference Manual> Section Peripheral\nSignal List.\n5.2 Peripheral Description\nThis section describes the chip\u2019s peripheral capabilities, covering connectivity interfaces and on-chip sensors\nthat extend its functionality.\n5.2. 1 Connectivity Interface\nThis subsection describes the connectivity interfaces on the chip that enable communication and interaction\nwith external devices and networks.\n5.2. 1. 1 UART Controller\nESP32-C3 has two UART interfaces, i.e. UART0 and UART1, which support IrDA and asynchronous\ncommunication (RS232 and RS485) at a speed of up to 5 Mbps. The UART controller provides hardware flow\ncontrol (CTS and RTS signals) and software flow control (XON and XOFF). Both UART interfaces connect to\nGDMA via UHCI0, and can be accessed by the GDMA controller or directly by the CPU.\nFor details, seeESP32-C3 T echnical Reference Manual> ChapterUART Controller (UART , LP _UART).\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2. 1.2 SPI Controller\nESP32-C3 has the following SPI interfaces:\n\u2022 SPI0used by ESP32-C3\u2019s GDMA controller and cache to access in-package or off-package flash\n\u2022 SPI1used by the CPU to access in-package or off-package flash\n\u2022 SPI2is a general purpose SPI controller with access to a DMA channel allocated by the GDMA controller\nEspressif Systems 16\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 16,
+   "text": "5 Peripherals\nFeatures of SPI0 and SPI1\n\u2022 Supports Single SPI, Dual SPI, and Quad SPI, QPI modes\n\u2022 Configurable clock frequency with a maximum of 120 MHz in Single Transfer Rate (STR) mode\n\u2022 Data transmission is in bytes\nFeatures of SPI2\n\u2022 Supports operation as a master or slave\n\u2022 Connects to a DMA channel allocated by the GDMA controller\n\u2022 Supports Single SPI, Dual SPI, and Quad SPI, QPI\n\u2022 Configurable clock polarity (CPOL) and phase (CPHA)\n\u2022 Configurable clock frequency\n\u2022 Data transmission is in bytes\n\u2022 Configurable read and write data bit order: most-significant bit (MSB) first, or least-significant bit (LSB)\nfirst\n\u2022 As a master\n\u2013 Supports 2-line full-duplex communication with clock frequency up to 80 MHz\n\u2013 Supports 1-, 2-, 4-line half-duplex communication with clock frequency up to 80 MHz\n\u2013 Provides six SPI_CS pins for connection with six independent SPI slaves\n\u2013 Configurable CS setup time and hold time\n\u2022 As a slave\n\u2013 Supports 2-line full-duplex communication with clock frequency up to 60 MHz\n\u2013 Supports 1-, 2-, 4-line half-duplex communication with clock frequency up to 60 MHz\nFor details, seeESP32-C3 T echnical Reference Manual> ChapterSPI Controller (SPI).\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2. 1.3 I2C Controller\nESP32-C3 has an I2C bus interface which is used for I2C master mode or slave mode, depending on your\nconfiguration. The I2C interface supports:\n\u2022 Standard mode (100 Kbit/s)\n\u2022 Fast mode (400 Kbit/s)\n\u2022 Up to 800 Kbit/s (constrained by SCL and SDA pull-up strength)\n\u2022 7-bit and 10-bit addressing mode\n\u2022 Double addressing mode\nEspressif Systems 17\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 17,
+   "text": "5 Peripherals\n\u2022 7-bit broadcast address\nFor details, seeESP32-C3 T echnical Reference Manual> ChapterI2C Controller (I2C).\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2. 1.4 I2S Controller\nESP32-C3 includes a standard I2S interface. This interface can operate as a master or a slave in full-duplex\nmode or half-duplexmode, and canbeconfiguredfor8-bit, 16-bit, 24-bit, or 32-bitserial communication. BCK\nclock frequency, from 10 kHz up to 40 MHz, is supported.\nThe I2S interface connects to the GDMA controller. The interface supports TDM PCM, TDM MSB alignment,\nTDM standard, and PDM standard.\nFor details, seeESP32-C3 T echnical Reference Manual> ChapterI2S Controller (I2S).\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2. 1.5 USB Serial/ JT AG Controller\nESP32-C3 integrates a USB Serial/JTAG controller. This controller has the following features:\n\u2022 CDC-ACM virtual serial port and JTAG adapter functionality\n\u2022 USB 2.0 full speed compliant, capable of up to 12 Mbit/s transfer speed (Note that this controller does\nnot support the faster 480 Mbit/s high-speed transfer mode)\n\u2022 Programming in-package/off-package flash\n\u2022 CPU debugging with compact JTAG instructions\n\u2022 A full-speed USB PHY integrated in the chip\nFor details, seeESP32-C3 T echnical Reference Manual> ChapterUSB Serial/JTAG Controller\n(USB_SERIAL_JTAG).\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2. 1.6 T wo-wire Automotive Interface\nESP32-C3 has a TWAI\u00ae controller with the following features:\n\u2022 Compatible with ISO 11898-1 protocol (CAN Specification 2.0)\n\u2022 Standard frame format (11-bit ID) and extended frame format (29-bit ID)\n\u2022 Bit rates from 1 Kbit/s to 1 Mbit/s\n\u2022 Multiple modes of operation: Normal, Listen Only, and Self-Test (no acknowledgment required)\nEspressif Systems 18\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 18,
+   "text": "5 Peripherals\n\u2022 64-byte receive FIFO\n\u2022 Acceptance filter (single and dual filter modes)\n\u2022 Error detection and handling: error counters, configurable error interrupt threshold, error code capture,\narbitration lost capture\nFor details, seeESP32-C3 T echnical Reference Manual> ChapterT wo-wire Automotive Interface.\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2. 1.7 LED PWM Controller\nThe LED PWM controller can generate independent digital waveform on six channels. The LED PWM\ncontroller:\n\u2022 Can generate digital waveform with configurable periods and duty cycle. The resolution of duty cycle\ncan be up to 14 bits.\n\u2022 Has multiple clock sources, including APB clock and external main crystal clock.\n\u2022 Can operate when the CPU is in Light-sleep mode.\n\u2022 Supports gradual increase or decrease of duty cycle, which is useful for the LED RGB color-gradient\ngenerator.\nFor details, seeESP32-C3 T echnical Reference Manual> ChapterLED PWM Controller.\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2. 1.8 Remote Control Peripheral\nThe Remote Control Peripheral (RMT) supports two channels of infrared remote transmission and two\nchannels of infrared remote reception. By controlling pulse waveform through software, it supports various\ninfrared and other single wire protocols. All four channels share a 192 \u00d7 32-bit memory block to store transmit\nor receive waveform.\nFor more details, seeESP32-C3 T echnical Reference Manual> ChapterRemote Control Peripheral (RMT).\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2.2 Analog Signal Processing\nThis subsection describes components on the chip that sense and process real-world data.\nEspressif Systems 19\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 19,
+   "text": "5 Peripherals\n5.2.2. 1 SAR ADC\nESP32-C3 integrates two 12-bit SAR ADCs.\n\u2022 ADC1 supports measurements on 5 channels, and is factory-calibrated.\n\u2022 ADC2 supports measurements on 1 channel, and is not factory-calibrated.\nNote:\nADC2 of some chip revisions is not operable. For details, please refer toESP32-C3SeriesSoCErrata.\nFor more details, seeESP32-C3 T echnical Reference Manual> ChapterOn-Chip Sensors and Analog Signal\nProcessing.\nPin Assignment\nFor details, seeESP32-C3 Series Datasheet> SectionPeripheral Pin Assignment.\n5.2.2.2 T emperature Sensor\nThe temperature sensor generates a voltage that varies with temperature. The voltage is internally converted\nvia an ADC into a digital value.\nThe temperature sensor has a range of \u201340 \u00b0C to 125 \u00b0C. It is designed primarily to sense the temperature\nchanges inside the chip. The temperature value depends on factors like microcontroller clock frequency or\nI/O load. Generally, the chip\u2019s internal temperature is higher than the operating ambient temperature.\nFor more details, seeESP32-C3 T echnical Reference Manual> ChapterOn-Chip Sensors and Analog Signal\nProcessing.\nEspressif Systems 20\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 20,
+   "text": "6 Electrical Characteristics\n6 Electrical Characteristics\n6. 1 Absolute Maximum Ratings\nStresses above those listed in Table6-1 Absolute Maximum Ratings may cause permanent damage to the\ndevice. These are stress ratings only and functional operation of the device at these or any other conditions\nbeyond those indicated under Table6-2 Recommended Operating Conditions is not implied. Exposure to\nabsolute-maximum-rated conditions for extended periods may affect device reliability.\nT able 6-1. Absolute Maximum Ratings\nSymbol Parameter Min Max Unit\nVDD33 Power supply voltage \u20130.3 3.6 V\n6.2 Recommended Operating Conditions\nT able 6-2. Recommended Operating Conditions\nSymbol Parameter Min T yp Max Unit\nVDD33 Power supply voltage 3.0 3.3 3.6 V\nIV DD Current delivered by external power supply 0.5 \u2014 \u2014 A\nTA Operating ambient temperature 85 \u00b0C version \u201340 \u2014 85 \u00b0C105 \u00b0C version 105\n6.3 DC Characteristics (3.3 V , 25 \u00b0C)\nT able 6-3. DC Characteristics (3.3 V , 25 \u00b0C)\nParameter Description Min T yp Max Unit\nCIN Pin capacitance \u2014 2 \u2014 pF\nVIH High-level input voltage 0.75 \u00d7 VDD1 \u2014 VDD1 + 0.3 V\nVIL Low-level input voltage \u20130.3 \u2014 0.25 \u00d7 VDD1 V\nIIH High-level input current \u2014 \u2014 50 nA\nIIL Low-level input current \u2014 \u2014 50 nA\nVOH 2 High-level output voltage 0.8 \u00d7 VDD1 \u2014 \u2014 V\nVOL 2 Low-level output voltage \u2014 \u2014 0.1 \u00d7 VDD1 V\nIOH\nHigh-level source current (VDD1 = 3.3 V,\nVOH >= 2.64 V, PAD_DRIVER = 3) \u2014 40 \u2014 mA\nIOL\nLow-level sink current (VDD1 = 3.3 V, VOL =\n0.495 V, PAD_DRIVER = 3) \u2014 28 \u2014 mA\nRP U Internal weak pull-up resistor \u2014 45 \u2014 k\u2126\nRP D Internal weak pull-down resistor \u2014 45 \u2014 k\u2126\nVIH_nRST\nChip reset release voltage (CHIP_EN voltage\nis within the specified range) 0.75 \u00d7 VDD1 \u2014 VDD1 + 0.3 V\nCont\u2019d on next page\nEspressif Systems 21\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 21,
+   "text": "6 Electrical Characteristics\nT able 6-3 \u2013 cont\u2019d from previous page\nParameter Description Min T yp Max Unit\nVIL_nRST\nChip reset voltage (CHIP_EN voltage is within\nthe specified range) \u20130.3 \u2014 0.25 \u00d7 VDD1 V\n1 VDD \u2013 voltage from a power pin of a respective power domain.\n2VOH and VOL are measured using high-impedance load.\n6.4 Current Consumption Characteristics\n6.4. 1 Current Consumption in Active Mode\nThe current consumption measurements are taken with a 3.3 V supply at 25 \u00b0C ambient temperature.\nTX current consumption is rated at a 100% duty cycle.\nRX current consumption is rated when the peripherals are disabled and the CPU idle.\nT able 6-4. Current Consumption for Wi-Fi (2.4 GHz) in Active Mode\nWork mode Description Peak (mA)\nActive (RF working)\nTX\n802.11b, 1 Mbps, @20.5 dBm 350\n802.11g, 54 Mbps, @18 dBm 295\n802.11n, HT20, MCS7, @17.5 dBm 290\n802.11n, HT40, MCS7, @17 dBm 290\nRX 802.11b/g/n, HT20 82\n802.11n, HT40 84\nT able 6-5. Current Consumption for Bluetooth LE in Active Mode\nWork Mode RF Condition Description Peak (mA)\nActive (RF working)\nTX\nBluetooth LE @ 20.0 dBm 340\nBluetooth LE @ 9.0 dBm 190\nBluetooth LE @ 0 dBm 170\nBluetooth LE @ \u201315.0 dBm 100\nRX Bluetooth LE 86\nEspressif Systems 22\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 22,
+   "first_line": "6 Electrical Characteristics",
+   "chars": 1791
+  },
+  {
+   "page": 23,
+   "first_line": "6 Electrical Characteristics",
+   "chars": 377
+  },
+  {
+   "page": 24,
+   "first_line": "7 RF Characteristics",
+   "chars": 1562
+  },
+  {
+   "page": 25,
+   "first_line": "7 RF Characteristics",
+   "chars": 1456
+  },
+  {
+   "page": 26,
+   "first_line": "7 RF Characteristics",
+   "chars": 1025
+  },
+  {
+   "page": 27,
+   "first_line": "7 RF Characteristics",
+   "chars": 1536
+  },
+  {
+   "page": 28,
+   "first_line": "7 RF Characteristics",
+   "chars": 1408
+  },
+  {
+   "page": 29,
+   "first_line": "7 RF Characteristics",
+   "chars": 1541
+  },
+  {
+   "page": 30,
+   "first_line": "7 RF Characteristics",
+   "chars": 719
+  },
+  {
+   "page": 31,
+   "text": "8 Module Schematics\n8 Module Schematics\nThis is the reference design of the module.\n5\n5\n4\n4\n3\n3\n2\n2\n1\n1\nD D\nC C\nB B\nA A\nThe values of C8, L2 and C9\nvary with the actual PCB board.\nThe values of C1 and C2 vary with\nthe selection of the crystal.\nThe value of R1 varies with the\nactual PCB board. R1 could be a\nresistor or inductor, the initial\nvalue is suggested to be 24 nH.\nESP32-C3-MINI-1(pin-out)\nNC: No component.\n50 ohm Impedance Control\nGNDVDD33\nGND\nGND\nGNDGND GND\nGND GND\nGND\nVDD33\nGND GNDGND\nVDD33\nVDD33\nGND\nGND\nGND GND\nVDD_SPI\nVDD33\nGND\nGND\nGND\nVDD33\nTitle\nSize Page Name Rev\nDate: Sheet\nof\nConfidential and Proprietary<02_ESP32-C3-MINI-1> V1.1\nESP32-C3-MINI-1\nA4\n2 2Thursday, January 23, 2025\nTitle\nSize Page Name Rev\nDate: Sheet\nof\nConfidential and Proprietary<02_ESP32-C3-MINI-1> V1.1\nESP32-C3-MINI-1\nA4\n2 2Thursday, January 23, 2025\nTitle\nSize Page Name Rev\nDate: Sheet\nof\nConfidential and Proprietary<02_ESP32-C3-MINI-1> V1.1\nESP32-C3-MINI-1\nA4\n2 2Thursday, January 23, 2025\nU2 ESP32-C3FH4\nLNA_IN1\nVDD3P32\nVDD3P33\nXTAL_32K_P4\nXTAL_32K_N5\nGPIO26\nCHIP_EN7\nMTMS 9\nMTDI 10 \nVDD3P3_RTC 11 \nMTCK 12 \nMTDO 13 \nGPIO8 14 \nGPIO9 15 \nGPIO10 16 \nVDD3P3_CPU 17VDD_SPI 18SPIHD 19SPIWP 20SPICS0 21SPICLK 22SPID 23SPIQ 24\nU0RXD 27 U0TXD 28 XTAL_N 29 XTAL_P 30 \nGND 33 \nGPIO38\nVDDA 32 \nVDDA 31 \nGPIO19 26 \nGPIO18 25 \nESP32-C3-MINI-1\nGND1\n3V33\nIO9 23 \nNC4\nIO25\nIO36\nNC7\nNC9\nNC10\nNC 15 \nIO10 16 \nNC 17 \nIO4 18 \nIO5 19 \nNC 32\nTXD0 31\nRXD0 30\nNC 34\nNC 33\nIO18 26\nNC 29\nNC 28\nIO19 27\nIO7 21 \nIO8 22 \nIO0 12 \nIO1 13 \nGND52\nIO6 20 \nNC 35\nNC 24 \nEPAD 49 \nGND2\nGND53\nGND 51\nGND 50\nEN8\nGND 36 GND 37 GND 38 GND 39 GND 40 GND 41 GND 42 GND 43 GND 44 GND 45 GND 46 GND 47 GND 48 \nGND 14 \nGND11 NC 25\nC6\n0.1uF\nANT1\nPCB_ANT\n1\n2\nC8\nTBD\nU1\n40MHz(\u00b110ppm)\nXIN 1\nGND 2XOUT 3\nGND 4\nD1\nESD\nC5\n10uF\nC11\n1uF\nR1 0\nC7\n0.1uF\nC4\n10nF\nC2\nTBD\nL1 2.0nH\nC3\n1uF\nC10\n0.1uF\nR2 499\nL2 TBD\nC12\n0.1uF\nC9\nTBD\nC1\nTBD\nR8 10K(NC)\nGPIO19\nCHIP_EN\nGPIO4\nGPIO5\nGPIO6\nGPIO7\nGPIO8\nU0RXD\nGPIO18\nLNA_IN\nGPIO9\nGPIO10\nGPIO0\nGPIO1\nSPICS0\nGPIO2\nGPIO3\nRF_ANT\nU0TXD\nGPIO2\nGPIO3\nCHIP_EN\nGPIO1 \nGPIO0 \nGPIO10 \nGPIO6 \nGPIO7 \nGPIO8 \nGPIO9 \nGPIO18\nGPIO19\nU0RXD\nU0TXD\nGPIO4 \nGPIO5 \nFigure 8-1. ESP32-C3-MINI-1 Schematics\nEspressif Systems 32\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 32,
+   "text": "8 Module Schematics\n5\n5\n4\n4\n3\n3\n2\n2\n1\n1\nD D\nC C\nB B\nA A\nThe values of C8, L2 and C9\nvary with the actual PCB board.\nThe values of C1 and C2 vary with\nthe selection of the crystal.\nThe value of R1 varies with the\nactual PCB board. R1 could be a\nresistor or inductor, the initial\nvalue is suggested to be 24 nH.\nESP32-C3-MINI-1U(pin-out)\nNC: No component.\n50 ohm Impedance Control\nGNDVDD33\nGND\nGND\nGNDGND GND\nGND GND\nGND\nVDD33\nGND GND\nVDD33\nVDD33\nGND\nGND\nGND GND\nVDD_SPI\nVDD33\nGND\nGND\nGND\nGND\nVDD33\nTitle\nSize Page Name Rev\nDate: Sheet\nof\nConfidential and Proprietary<02_ESP32-C3-MINI-1U> V1.2\nESP32-C3-MINI-1U\nA4\n2 2Thursday, January 23, 2025\nTitle\nSize Page Name Rev\nDate: Sheet\nof\nConfidential and Proprietary<02_ESP32-C3-MINI-1U> V1.2\nESP32-C3-MINI-1U\nA4\n2 2Thursday, January 23, 2025\nTitle\nSize Page Name Rev\nDate: Sheet\nof\nConfidential and Proprietary<02_ESP32-C3-MINI-1U> V1.2\nESP32-C3-MINI-1U\nA4\n2 2Thursday, January 23, 2025\nC1\nTBD\nD1\nESD\nC9\nTBD\nR8 10K(NC)\nANT1\nCONN\n1\n4\n2\n3 ESP32-C3-MINI-1U\nGND1\n3V33\nIO9 23 \nNC4\nIO25\nIO36\nNC7\nNC9\nNC10\nNC 15 \nIO10 16 \nNC 17 \nIO4 18 \nIO5 19 \nNC 32\nTXD0 31\nRXD0 30\nNC 34\nNC 33\nIO18 26\nNC 29\nNC 28\nIO19 27\nIO7 21 \nIO8 22 \nIO0 12 \nIO1 13 \nGND52\nIO6 20 \nNC 35\nNC 24 \nEPAD 49 \nGND2\nGND53\nGND 51\nGND 50\nEN8\nGND 36 GND 37 GND 38 GND 39 GND 40 GND 41 GND 42 GND 43 GND 44 GND 45 GND 46 GND 47 GND 48 \nGND 14 \nGND11 NC 25\nR1 0\nC12\n0.1uF\nC3\n1uF\nC10\n0.1uF\nR2 499\nC8\nTBD\nC2\nTBD\nL1 2.0nH\nC6\n0.1uF\nC5\n10uF\nL2 TBD\nC7\n0.1uF\nC4\n10nF\nU2 ESP32-C3FH4\nLNA_IN1\nVDD3P32\nVDD3P33\nXTAL_32K_P4\nXTAL_32K_N5\nGPIO26\nCHIP_EN7\nMTMS 9\nMTDI 10 \nVDD3P3_RTC 11 \nMTCK 12 \nMTDO 13 \nGPIO8 14 \nGPIO9 15 \nGPIO10 16 \nVDD3P3_CPU 17VDD_SPI 18SPIHD 19SPIWP 20SPICS0 21SPICLK 22SPID 23SPIQ 24\nU0RXD 27 U0TXD 28 XTAL_N 29 XTAL_P 30 \nGND 33 \nGPIO38\nVDDA 32 \nVDDA 31 \nGPIO19 26 \nGPIO18 25 \nC11\n1uF\nU1\n40MHz(\u00b110ppm)\nXIN 1\nGND 2XOUT 3\nGND 4\nGPIO19\nCHIP_EN\nGPIO4\nGPIO5\nGPIO6\nGPIO7\nGPIO8\nU0RXD\nGPIO18\nLNA_IN\nGPIO9\nGPIO10\nGPIO0\nGPIO1\nSPICS0\nGPIO2\nGPIO3\nRF_ANT\nU0TXD\nGPIO2\nGPIO3\nCHIP_EN\nGPIO1 \nGPIO0 \nGPIO10 \nGPIO6 \nGPIO7 \nGPIO8 \nGPIO9 \nGPIO18\nGPIO19\nU0RXD\nU0TXD\nGPIO4 \nGPIO5 \nFigure 8-2. ESP32-C3-MINI-1U Schematics\nEspressif Systems 33\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 33,
+   "text": "9 Peripheral Schematics\n9 Peripheral Schematics\nThis is the typical application circuit of the module connected with peripheral components (for example,\npower supply, antenna, reset button, JTAG interface, and UART interface).\n5\n5\n4\n4\n3\n3\n2\n2\n1\n1\nD D\nC C\nB B\nA A\nNC: No component. \nESP32-C3-MINI-1 \nESP32-C3-MINI-1U \nIO4 \nIO5 \nIO6 \nIO7 \nIO8 \nIO2\nIO3\nEN\nIO9 \nIO0 \nIO1 \nIO10 \nRXD0\nTXD0\nEN\nTMS\nTDI\nTCK\nTDO\nIO19\nIO18 USB_D-\nUSB_D+\nGND\nVDD33\nGND\nGND\nGND GND\nGND\nVDD33GND\nGND\nGNDGND\nVDD33\nGND\nC3\nTBD\nR7 NC \nC6\nTBD\nC4 0.1uF\nR2 0\nR9 10K\nJP2\nBoot Option\n11\n22\nU1\nGND1\n3V33\nIO9 23 \nNC4\nIO25\nIO36\nNC7\nNC9\nNC10\nNC 15 \nIO10 16 \nNC 17 \nIO4 18 \nIO5 19 \nNC 32\nTXD0 31\nRXD0 30\nNC 34\nNC 33\nIO18 26\nNC 29\nNC 28\nIO19 27\nIO7 21 \nIO8 22 \nIO0 12 \nIO1 13 \nGND52\nIO6 20 \nNC 35\nNC 24 \nEPAD 49 \nGND2\nGND53\nGND 51\nGND 50\nEN8\nGND 36 GND 37 GND 38 GND 39 GND 40 GND 41 GND 42 GND 43 GND 44 GND 45 GND 46 GND 47 GND 48 \nGND 14 \nGND11 NC 25\nR6 0\nJP3\nUSB\n11\n22\nC1\n10uF\nC8 12pF(NC)\nC2\n0.1uF\nC7 12pF(NC)\nSW1\nJP4\nUART\n11\n22\n33\n44\nX1\n32.768kHz(NC)\n1 2\nJP1\nJTAG\n1 1\n2 2\n3 3\n4 4\nR6 0(NC)\nR8 10KR5 0(NC)\nR1\nTBD\nR4 0\nC5\nTBD\nFigure 9-1. Peripheral Schematics\n\u2022 Soldering the EPAD to the ground of the base board is not a must, however, it can optimize thermal\nperformance. If you choose to solder it, please apply the correct amount of soldering paste. Too much\nsolderingpastemayincreasethegapbetweenthemoduleandthebaseboard. Asaresult,theadhesion\nbetween other pins and the baseboard may be poor.\n\u2022 To ensure that the power supply to the ESP32-C3 chip is stable during power-up, it is advised to add an\nRC delay circuit at the EN pin. The recommended setting for the RC delay circuit is usually R = 10 k\u2126and\nC = 1\u00b5F. However, specific parameters should be adjusted based on the power-up timing of the module\nandthepower-upandresetsequencetimingofthechip. ForESP32-C3\u2019spower-upandresetsequence\ntiming diagram, please refer Section4.3 Chip Power-up and Reset.\n\u2022 UART0 is used to download firmware and log output. When using the AT firmware, note that the UART\nGPIO is already configured. It is recommended to use the default configuration. Please refer to\nESP-A T User Guide for ESP32-C3> SectionHardware Connection.\nEspressif Systems 34\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 34,
+   "first_line": "10 Physical Dimensions",
+   "chars": 687
+  },
+  {
+   "page": 35,
+   "first_line": "10 Physical Dimensions",
+   "chars": 1194
+  },
+  {
+   "page": 36,
+   "text": "10 Physical Dimensions\nantenna based on the product\u2019s usage environment and performance requirements.\nIt is recommended to select an antenna that meets the following requirements:\n\u2022 2.4 GHz band\n\u2022 50 \u2126impedance\n\u2022 The maximum gain does not exceed 2.33 dBi, the gain of the antenna used for certification\n\u2022 The connector matches the specifications shown in Figure10-3 Dimensions of External Antenna\nConnector\nNote:\nIfyouuseanexternalantennaofadifferenttypeorgain,additionaltesting,suchasEMC,mayberequiredbeyondthe\nexisting antenna test reports for Espressif modules. Specific requirements depend on the certification type.\nEspressif Systems 37\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 37,
+   "text": "11 PCB Layout Recommendations\n11 PCB Layout Recommendations\n11. 1 PCB Land Pattern\nThis section provides the following resources for your reference:\n\u2022 Figures for recommended PCB land patterns with all the dimensions needed for PCB design. See Figure\n11-1 ESP32-C3-MINI-1 Recommended PCB Land Pattern and Figure11-2 ESP32-C3-MINI-1U\nRecommended PCB Land Pattern.\n\u2022 Source files of recommended PCB land patterns to measure dimensions not covered in Figure11-1and\nFigure11-2. You can view the source files forESP32-C3-MINI-1andESP32-C3-MINI-1UwithAutodesk\nViewer.\n\u2022 3D models ofESP32-C3-MINI-1andESP32-C3-MINI-1U. Please make sure that you download the 3D\nmodel file in .STEP format. Beware that some browsers might add .txt.\n1.6Antenna AreaPin 111.20.69.95.411.91.613.216.61.455.41.450.611.89.8Unit: mmPad48 x 0.448 x 0.84 x 0.74 x 0.70.8Via for thermal pad\nFigure 11-1. ESP32-C3-MINI-1 Recommended PCB Land Pattern\nEspressif Systems 38\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 38,
+   "text": "11 PCB Layout Recommendations\n1.6Pin 112.50.69.95.411.91.613.21.455.41.450.611.89.848 x 0.448 x 0.84 x 0.74 x 0.70.85.6Unit: mmPadVia for thermal pad\nFigure 11-2. ESP32-C3-MINI-1U Recommended PCB Land Pattern\n11.2 Module Placement for PCB Design\nIf module-on-board design is adopted, attention should be paid while positioning the module on the base\nboard. The interference of the base board on the module\u2019s antenna performance should be minimized.\nFor details about module placement for PCB design, please refer toESP32-C3 Hardware Design Guidelines >\nSection General Principles of PCB Layout for Modules.\nEspressif Systems 39\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 39,
+   "text": "12 Product Handling\n12 Product Handling\n12. 1 Storage Conditions\nThe products sealed in moisture barrier bags (MBB) should be stored in a non-condensing atmospheric\nenvironment of < 40 \u00b0C and 90%RH. The module is rated at the moisture sensitivity level (MSL) of 3.\nAfter unpacking, the module must be soldered within 168 hours with the factory conditions 25\u00b15 \u00b0C and\n60%RH. If the above conditions are not met, the module needs to be baked.\n12.2 Electrostatic Discharge (ESD)\n\u2022 Human body model (HBM): \u00b12000 V\n\u2022 Charged-device model (CDM): \u00b1500 V\n12.3 Reflow Profile\nSolder the module in a single reflow.\n50 1000\n150\n200\n250\n200\n100\n50\n150 250\n   \nTime (s)\n217\n25\nPreheating\n150 \u2013 200 \u00b0C\n60 \u2013 120 s\nRamp-up\n25 \u2013 150 \u00b0C\n60 \u2013 90 s\n1 \u2013 3 \u00b0C/s\nSoldering\n\uff1e 217 \u00b0C\n60 \u2013 90 s\nPeak temperature: 235 \u2013 250 \u00b0C\nPeak time: 30 \u2013 70 s\nSoldering time: \uff1e 30 s\nSolder: Sn-Ag-Cu (SAC/three.case/zero.case/five.case) lead-free solder\nT emperature (\u00b0C)\n180\n230\nCooling\n\uff1c 180 \u00b0C\n\u20135 ~ \u20131 \u00b0C/s\nFigure 12-1. Reflow Profile\nEspressif Systems 40\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 40,
+   "text": "12 Product Handling\n12.4 Ultrasonic Vibration\nAvoid exposing Espressif modules to vibration from ultrasonic equipment, such as ultrasonic welders or\nultrasoniccleaners. Thisvibrationmayinduceresonanceinthein-modulecrystalandleadtoitsmalfunctionor\neven failure. As a consequence,the module may stop working or its performance may deteriorate .\nEspressif Systems 41\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 41,
+   "text": "Datasheet Versioning\nDatasheet Versioning\nDatasheet\nVersion Status Watermark Definition\nv0.1 ~ v0.5\n(excluding v0.5) Draft Confidential\nThis datasheet is under development for products\nin the design stage. Specifications may change\nwithout prior notice.\nv0.5 ~ v1.0\n(excluding v1.0)\nPreliminary\nrelease Preliminary\nThis datasheet is actively updated for products in\nthe verification stage. Specifications may change\nbefore mass production, and the changes will be\ndocumentation in the datasheet\u2019s Revision History.\nv1.0 and higher Official release \u2014\nThis datasheet is publicly released for products in\nmass production. Specifications are finalized, and\nmajor changes will be communicated viaProduct\nChangeNotifications(PCN).\nAny version \u2014\nNot\nRecommended\nfor New Design\n(NRND)1\nThis datasheet is updated less frequently for\nproducts not recommended for new designs.\nAny version \u2014 End of Life\n(EOL)2\nThis datasheet is no longer mtained for products\nthat have reached end of life.\n1 Watermark will be added to the datasheet title page only when all the product variants covered by this\ndatasheet are not recommended for new designs.\n2Watermark will be added to the datasheet title page only when all the product variants covered by this\ndatasheet have reached end of life.\nEspressif Systems 42\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 42,
+   "first_line": "Related Documentation and Resources",
+   "chars": 2294
+  },
+  {
+   "page": 43,
+   "first_line": "Related Documentation and Resources",
+   "chars": 354
+  },
+  {
+   "page": 44,
+   "text": "Revision History\nRevision History\nDate Version Release notes\n2026-05-06 v2.2\n\u2022 Added ESP32-C3-MINI-1-H8X\n\u2022 Table 1-1 ESP32-C3-MINI-1 (ANT) Series Comparison 1 and Table 1-\n2 ESP32-C3-MINI-1U (CONN) Series Comparison : Updated \u201dOrdering\nCode\u201d to \u201dPart Number\u201d\n2025-07-14 v2.1\n\u2022 Added Section4.3 Chip Power-up and Reset\n\u2022 Added Section6.5 Memory Specifications\n\u2022 Section9 Peripheral Schematics: AddedanoteaboutATcommunication\nusing UART0\n\u2022 Section10.2 Dimensions of External Antenna Connector: Added the ex-\nternal antenna information for certification\n\u2022 AddedDatasheet Versioning\n2025-04-14 v2.0\nAccordingtoupdatesin CompatibilityAdvisoryforESP32-C3ChipRevisionv1.1,\nupdated SRAM space in note 6 for TableESP32-C3-MINI-1U (CONN) Series\nComparison\n2025-01-24 v1.9 UpdatedchipinESP32-C3-MINI-1-N4andESP32-C3-MINI-1U-N4fromESP32-\nC3FN4 to ESP32-C3FH4\n2024-11-20 v1.8\n\u2022 Table1-1 ESP32-C3-MINI-1 (ANT) Series Comparison1 and1-2 ESP32-C3-\nMINI-1U (CONN) Series Comparison:\n\u2013 Added the ESP32-C3-MINI-1-N4X, ESP32-C3-MINI-1U-N4X, and\nESP32-C3-MINI-1U-H4X variants\n\u2013 Marked the ESP32-C3-MINI-1U-N4 and ESP32-C3-MINI-1U-H4 vari-\nants as Not Recommended for New Designs (NRND)\n\u2022 Added Table6-5 Current Consumption for Bluetooth LE in Active Mode\n2024-09-19 v1.7\n\u2022 Table1-2 ESP32-C3-MINI-1U (CONN) Series Comparison: Updated flash\nprogram/erase cycles, data retention time (note 4) and maximum clock\nfrequency (note 7)\n\u2022 Improved the wording and structure of following sections:\n\u2013 Updated Section \u201dStrapping Pins\u201d and renamed to4 Boot Configu-\nrations\n\u2013 Added Chapter5 Peripherals\n\u2013 UpdatedTable\u201dWi-FiRFStandards\u201dandrenamedto\u201dWi-FiRFChar-\nacteristics\u201d\n\u2013 Added Section11.2 Module Placement for PCB Design\n\u2013 Optimized Figure12-1 Reflow Profile\nCont\u2019d on next page\nEspressif Systems 45\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 45,
+   "text": "Revision History\nCont\u2019d from previous page\nDate Version Release notes\n2024-07-29 v1.6 Added Compatibility Advisory for ESP32-C3 Chip Revisionv1.1to the notes of\nTable ESP32-C3-MINI-1U (CONN) Series Comparison\n2024-06-05 v1.5\n\u2022 Added new variant ESP32-C3-MINI-1-H4X\n\u2022 Marked the ESP32-C3-MINI-1-N4, ESP32-C3-MINI-1-H4, and ESP32-C3-\nMINI-1-H4-AZ variants as Not Recommended for New Designs (NRND)\n2024-05-15 v1.4\n\u2022 Updatednote5ofTable ESP32-C3-MINI-1 (ANT) Series Comparison1and\nTable ESP32-C3-MINI-1U (CONN) Series Comparison\n\u2022 Updated the formatting of Section4 Boot Configurations\n\u2022 Updated the maximum value of \u201dRF power control range\u201d to 20 dBm in\nTable Bluetooth LE RF Characteristics\n\u2022 UpdatedthenoteaboutsolderpasteinSection 9 Peripheral Schematics\n\u2022 Updated the markings of dimensions and thermal pad vias in Section11.1\nPCB Land Pattern\n2022-11-08 v1.3\n\u2022 Added a new variant ESP32-C3-MINI-1-H4-AZ\n\u2022 ChangedTable Ordering InformationtoTable ESP32-C3-MINI-1 (ANT) Se-\nries Comparison1 and TableESP32-C3-MINI-1U (CONN) Series Compari-\nson\n\u2022 UpdatedtestconditiondescriptionsanddatainSection 6.4 Current Con-\nsumption Characteristics\n\u2022 Updated \u201dRF power control range\u201d in TableBluetooth LE RF Characteris-\ntics\n\u2022 Added descriptions in Section11.1 PCB Land Pattern\n2022-06-30 v1.2 Added Section12.4 Ultrasonic Vibration\n2022-05-16 v1.1\n\u2022 Added a note under TableOrdering Information\n\u2022 Updated Chapter8 Module Schematics\n2021-06-21 v1.0\n\u2022 Updated module description on the title page\n\u2022 Deleted Section \u201dAbout This Document\u201d\n\u2022 Restructured Section1.1 Features\n\u2022 Added ordering code in TableOrdering Information\n\u2022 AddeddescriptionsinSection 10.2 Dimensions of External Antenna Con-\nnector\n\u2022 Updated Section \u201dLearning Resources\u201d and renamed toRelated Docu-\nmentation and Resources\n\u2022 Replaced \u201dchip family\u201d with \u201dchip series\u201d following Espressif\u2019s taxonomy\n2021-04-16 v0.7 Added information about ESP32-C3-MINI-1U module\nCont\u2019d on next page\nEspressif Systems 46\nSubmit Documentation Feedback\nESP32-C3-MINI-1 & MINI-1U Datasheet v2.2"
+  },
+  {
+   "page": 46,
+   "first_line": "Revision History",
+   "chars": 276
+  },
+  {
+   "page": 47,
+   "first_line": "Disclaimer and Copyright Notice",
+   "chars": 1083
+  }
+ ],
+ "schema": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hwde datasheet extraction",
+  "type": "object",
+  "required": [
+   "mpn",
+   "pinout"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "mpn": {
+    "type": "string",
+    "minLength": 1
+   },
+   "lcsc": {
+    "type": "string"
+   },
+   "package": {
+    "type": "string"
+   },
+   "description": {
+    "type": "string"
+   },
+   "pinout": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pin",
+      "name",
+      "type"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pin": {
+       "type": "string",
+       "minLength": 1
+      },
+      "name": {
+       "type": "string",
+       "minLength": 1
+      },
+      "type": {
+       "type": "string",
+       "enum": [
+        "power_in",
+        "power_out",
+        "ground",
+        "input",
+        "output",
+        "bidirectional",
+        "passive",
+        "analog",
+        "clock",
+        "nc",
+        "open_collector",
+        "tristate",
+        "unspecified"
+       ]
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "decoupling": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "value": {
+       "type": "string",
+       "minLength": 1
+      },
+      "placement": {
+       "type": "string"
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "land_pattern": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "pad_count"
+    ],
+    "properties": {
+     "package": {
+      "type": "string"
+     },
+     "pad_count": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "pitch_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "pad_size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "row_spacing_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "drill_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "annulus_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "courtyard_excess_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "courtyard_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "wire_entry_local": {
+      "type": "string",
+      "enum": [
+       "+X",
+       "-X",
+       "+Y",
+       "-Y"
+      ],
+      "description": "connector wire/cable entry direction in footprint-local coords (KiCad y down)"
+     },
+     "pin1": {
+      "type": "string",
+      "description": "pad number that is pin 1 (default '1')"
+     },
+     "notes": {
+      "type": "string"
+     }
+    }
+   },
+   "exposed_pad": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "present": {
+      "type": "boolean"
+     },
+     "connect_to": {
+      "type": "string"
+     },
+     "thermal_vias": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "present"
+    ]
+   },
+   "layout_notes": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "abs_max": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "param",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "param": {
+       "type": "string"
+      },
+      "value": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "unit": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "pin_ratings": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "kind": {
+       "type": "string",
+       "enum": [
+        "voltage",
+        "current"
+       ]
+      },
+      "level": {
+       "type": "string",
+       "enum": [
+        "abs_max",
+        "recommended"
+       ]
+      },
+      "min": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "max": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "ref": {
+       "type": "string"
+      },
+      "source": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "source_pdf": {
+    "type": "string"
+   },
+   "layout_implications": {
+    "type": "object"
+   }
+  }
+ },
+ "template": {
+  "mpn": "",
+  "lcsc": "",
+  "package": "",
+  "pinout": [
+   {
+    "pin": "1",
+    "name": "",
+    "type": "unspecified"
+   }
+  ],
+  "decoupling": [],
+  "land_pattern": {
+   "pad_count": 0
+  },
+  "layout_notes": [],
+  "abs_max": []
+ },
+ "note": "Fill the template from text_by_page and the PDF pages, then re-run with --validate. Pages without schema-relevant keywords are stubs {page, first_line, chars} - read those PDF pages directly if needed, or re-run with --full-text. If text_chars is ~0 the PDF is image-only; read the rendered pages directly."
+}

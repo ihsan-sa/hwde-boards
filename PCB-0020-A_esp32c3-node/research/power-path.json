@@ -1,0 +1,27 @@
+{
+ "block": "power-path",
+ "candidates": [
+  {
+   "mpn": "AO3401A",
+   "lcsc": "C15127",
+   "package": "SOT-23",
+   "basic": true,
+   "stock": 783212,
+   "price": 0.1017,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf",
+   "rank": 1,
+   "fit": "AO3401A P-MOSFET (Basic): load-share switch battery->VSYS, ~50-60 mOhm at Vgs -4.5 V, Vgs(th) <= 1.3 V so fully on from a 3.0 V cell"
+  },
+  {
+   "mpn": "B5819W SL",
+   "lcsc": "C8598",
+   "package": "SOD-123",
+   "basic": true,
+   "stock": 513217,
+   "price": 0.028,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--B5819W-SL_C8598.pdf",
+   "rank": 1,
+   "fit": "B5819W SL Schottky SOD-123 (Basic): VBUS->VSYS OR diode, 1 A"
+  }
+ ]
+}

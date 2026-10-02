@@ -1,0 +1,4763 @@
+{
+ "script": "route_auto",
+ "status": "violations",
+ "board": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 158,
+  "by_severity": {
+   "warning": 157,
+   "error": 1
+  },
+  "by_source": {
+   "drc": 116,
+   "unconnected": 1,
+   "parity": 41
+  }
+ },
+ "violations": [
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    12.66,
+    34.39
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D10",
+    "R16"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R16 on F.Silkscreen",
+     "pos": [
+      12.66,
+      34.39
+     ],
+     "uuid": "b11da95a-8da2-41d1-8597-b453e89ffb0d"
+    },
+    {
+     "msg": "Segment of D10 on F.Silkscreen",
+     "pos": [
+      11.34,
+      34.14
+     ],
+     "uuid": "ccadd7b4-bb7e-4d2c-8749-02e0daa7d4a5"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    11.34,
+    34.14
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D10",
+    "R16"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D10 on F.Silkscreen",
+     "pos": [
+      11.34,
+      34.14
+     ],
+     "uuid": "ccadd7b4-bb7e-4d2c-8749-02e0daa7d4a5"
+    },
+    {
+     "msg": "Segment of R16 on F.Silkscreen",
+     "pos": [
+      11.34,
+      34.39
+     ],
+     "uuid": "f1b683d1-58d0-43d9-92a2-6b836445f5b0"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.26,
+    17.77
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R10",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R10 on F.Silkscreen",
+     "pos": [
+      15.26,
+      17.77
+     ],
+     "uuid": "aaa0befe-8411-4d21-b2e9-cb2c2d0e24de"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.26,
+    16.81
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R10",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R10 on F.Silkscreen",
+     "pos": [
+      15.26,
+      16.81
+     ],
+     "uuid": "39466237-e6d9-4696-9c08-6db1ffa03484"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.26,
+    18.63
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R10",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R10 on F.Silkscreen",
+     "pos": [
+      15.26,
+      18.63
+     ],
+     "uuid": "aaef4a41-69aa-49cc-be2f-8e01cb106800"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.4,
+    20.2
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R10",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    },
+    {
+     "msg": "Segment of R10 on F.Silkscreen",
+     "pos": [
+      15.26,
+      19.59
+     ],
+     "uuid": "fe8289b1-239e-478d-9cb6-ae11f59bad34"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.31,
+    11.52
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C11 on F.Silkscreen",
+     "pos": [
+      15.31,
+      11.52
+     ],
+     "uuid": "aadd1074-6023-44f9-a9ca-be308a263777"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    10.72
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C11 on F.Silkscreen",
+     "pos": [
+      15.0,
+      10.72
+     ],
+     "uuid": "15c7347d-b414-47b4-ae1f-131fa7002816"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.31,
+    12.08
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C11 on F.Silkscreen",
+     "pos": [
+      15.31,
+      12.08
+     ],
+     "uuid": "972984c0-2204-4a1a-874e-5614a008cc38"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    12.88
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C11 on F.Silkscreen",
+     "pos": [
+      15.0,
+      12.88
+     ],
+     "uuid": "a5789eb9-b160-40f9-ba2d-79ec8f1e7a71"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.26,
+    13.81
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R7",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R7 on F.Silkscreen",
+     "pos": [
+      15.26,
+      13.81
+     ],
+     "uuid": "194a1318-74bd-4a21-9e33-19a8481181c1"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.26,
+    15.63
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R7",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R7 on F.Silkscreen",
+     "pos": [
+      15.26,
+      15.63
+     ],
+     "uuid": "a14f693f-a999-492d-89b2-294ed151b2a5"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.26,
+    16.59
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R7",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R7 on F.Silkscreen",
+     "pos": [
+      15.26,
+      16.59
+     ],
+     "uuid": "7fb81550-afb6-49f9-83a3-780f58af06b8"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.26,
+    14.77
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R7",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R7 on F.Silkscreen",
+     "pos": [
+      15.26,
+      14.77
+     ],
+     "uuid": "c620bd5d-1f5f-4783-9e63-987871389163"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    24.32,
+    27.55
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.55
+     ],
+     "uuid": "7d4432f3-a024-4a11-9cf6-e1bb42faf5dd"
+    },
+    {
+     "msg": "Segment of SW1 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.75
+     ],
+     "uuid": "ebf1ba56-43fd-442f-9a79-c3ae390fdd90"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    24.32,
+    27.75
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW1 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.75
+     ],
+     "uuid": "1599abe9-ebad-4992-ae65-c61ae156328c"
+    },
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.55
+     ],
+     "uuid": "7d4432f3-a024-4a11-9cf6-e1bb42faf5dd"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    26.88,
+    27.75
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW1 on F.Silkscreen",
+     "pos": [
+      26.88,
+      27.75
+     ],
+     "uuid": "563cbedb-d18d-4c51-b548-3d47099ec8d4"
+    },
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.55
+     ],
+     "uuid": "7d4432f3-a024-4a11-9cf6-e1bb42faf5dd"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    27.77,
+    26.66
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      27.77,
+      26.66
+     ],
+     "uuid": "63ff08e9-3baf-4c11-98d4-71dea3776497"
+    },
+    {
+     "msg": "Segment of SW1 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.75
+     ],
+     "uuid": "ebf1ba56-43fd-442f-9a79-c3ae390fdd90"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    23.43,
+    26.66
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      23.43,
+      26.66
+     ],
+     "uuid": "e84bff0e-c358-4092-afb4-3ff9566ea5f2"
+    },
+    {
+     "msg": "Segment of SW1 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.75
+     ],
+     "uuid": "ebf1ba56-43fd-442f-9a79-c3ae390fdd90"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    26.88,
+    22.45
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R11",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      26.88,
+      22.45
+     ],
+     "uuid": "2691623a-0b1b-43e7-b26b-2cff2c27f089"
+    },
+    {
+     "msg": "Segment of R11 on F.Silkscreen",
+     "pos": [
+      26.43,
+      22.26
+     ],
+     "uuid": "a528f4e1-2b0d-4386-bc53-f3c105f234c7"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    26.43,
+    22.26
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R11",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R11 on F.Silkscreen",
+     "pos": [
+      26.43,
+      22.26
+     ],
+     "uuid": "a528f4e1-2b0d-4386-bc53-f3c105f234c7"
+    },
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      24.32,
+      22.45
+     ],
+     "uuid": "e5db025e-609a-4017-99b5-269d61c53ee7"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    26.88,
+    27.75
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW1 on F.Silkscreen",
+     "pos": [
+      26.88,
+      27.75
+     ],
+     "uuid": "563cbedb-d18d-4c51-b548-3d47099ec8d4"
+    },
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      27.77,
+      26.66
+     ],
+     "uuid": "63ff08e9-3baf-4c11-98d4-71dea3776497"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    24.32,
+    27.75
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of SW1 on F.Silkscreen",
+     "pos": [
+      24.32,
+      27.75
+     ],
+     "uuid": "1599abe9-ebad-4992-ae65-c61ae156328c"
+    },
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      23.43,
+      26.66
+     ],
+     "uuid": "e84bff0e-c358-4092-afb4-3ff9566ea5f2"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    25.57,
+    22.26
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R11",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R11 on F.Silkscreen",
+     "pos": [
+      25.57,
+      22.26
+     ],
+     "uuid": "d4e06ec7-5425-47ac-9e32-ba5426c9f64a"
+    },
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      24.32,
+      22.45
+     ],
+     "uuid": "e5db025e-609a-4017-99b5-269d61c53ee7"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    24.61,
+    22.26
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R11",
+    "SW2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R11 on F.Silkscreen",
+     "pos": [
+      24.61,
+      22.26
+     ],
+     "uuid": "217e65a8-c6ed-4ac1-99af-27bb1924a0bb"
+    },
+    {
+     "msg": "Segment of SW2 on F.Silkscreen",
+     "pos": [
+      24.32,
+      22.45
+     ],
+     "uuid": "e5db025e-609a-4017-99b5-269d61c53ee7"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    16.69,
+    22.12
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C4",
+    "U3"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C4 on F.Silkscreen",
+     "pos": [
+      16.69,
+      22.12
+     ],
+     "uuid": "53bf4996-c203-4a77-b63b-3305e7c8d873"
+    },
+    {
+     "msg": "Segment of U3 on F.Silkscreen",
+     "pos": [
+      16.55,
+      23.3
+     ],
+     "uuid": "f40d0808-4e6a-4bb9-b0a4-463b712c13a1"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    16.69,
+    22.68
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C4",
+    "U3"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C4 on F.Silkscreen",
+     "pos": [
+      16.69,
+      22.68
+     ],
+     "uuid": "8cb67ff0-d546-409d-aef2-5342361c034d"
+    },
+    {
+     "msg": "Segment of U3 on F.Silkscreen",
+     "pos": [
+      16.55,
+      23.3
+     ],
+     "uuid": "f40d0808-4e6a-4bb9-b0a4-463b712c13a1"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    12.16,
+    18.63
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C12",
+    "R13"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R13 on F.Silkscreen",
+     "pos": [
+      12.16,
+      18.63
+     ],
+     "uuid": "e122d252-ba4d-4239-bdba-813910ab477b"
+    },
+    {
+     "msg": "Segment of C12 on F.Silkscreen",
+     "pos": [
+      12.29,
+      18.48
+     ],
+     "uuid": "e7b8b457-cf03-4a37-bfa3-33150a2d37ce"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    12.6,
+    19.28
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C12",
+    "R13"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C12 on F.Silkscreen",
+     "pos": [
+      12.6,
+      19.28
+     ],
+     "uuid": "9c56da12-0b86-4438-ba56-bf5e19ef8fd1"
+    },
+    {
+     "msg": "Segment of R13 on F.Silkscreen",
+     "pos": [
+      12.16,
+      18.63
+     ],
+     "uuid": "e122d252-ba4d-4239-bdba-813910ab477b"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    34.79,
+    33.64
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      34.79,
+      33.64
+     ],
+     "uuid": "426a79f8-e1e1-4d59-ba66-ea403d454fd8"
+    },
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      33.83,
+      33.56
+     ],
+     "uuid": "ddb47e10-ba04-40ec-b140-e54cfbeae150"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    34.79,
+    34.96
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      34.79,
+      34.96
+     ],
+     "uuid": "434f8bcc-01a1-43f9-bdf0-f9ade2a9f59b"
+    },
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      33.83,
+      33.56
+     ],
+     "uuid": "ddb47e10-ba04-40ec-b140-e54cfbeae150"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    34.79,
+    33.64
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      34.79,
+      33.64
+     ],
+     "uuid": "426a79f8-e1e1-4d59-ba66-ea403d454fd8"
+    },
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      34.79,
+      33.56
+     ],
+     "uuid": "75cdafbb-8e0a-455c-a48c-5e2f0f055901"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    34.79,
+    34.96
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      34.79,
+      34.96
+     ],
+     "uuid": "434f8bcc-01a1-43f9-bdf0-f9ade2a9f59b"
+    },
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      34.79,
+      33.56
+     ],
+     "uuid": "75cdafbb-8e0a-455c-a48c-5e2f0f055901"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    32.01,
+    33.56
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      32.01,
+      33.56
+     ],
+     "uuid": "24c11e6c-109c-4004-a9ef-1827e2672d76"
+    },
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      32.01,
+      33.64
+     ],
+     "uuid": "9e1b4fd6-af96-470e-8ca8-fab3fcf09bcd"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    32.01,
+    33.56
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      32.01,
+      33.56
+     ],
+     "uuid": "24c11e6c-109c-4004-a9ef-1827e2672d76"
+    },
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      32.01,
+      34.96
+     ],
+     "uuid": "dbca213a-0044-45f0-90ee-128a91172b9c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    32.97,
+    33.56
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      32.97,
+      33.56
+     ],
+     "uuid": "85e0dc41-d156-4b61-9a0b-88990a707728"
+    },
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      32.01,
+      33.64
+     ],
+     "uuid": "9e1b4fd6-af96-470e-8ca8-fab3fcf09bcd"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    32.97,
+    33.56
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R14 on F.Silkscreen",
+     "pos": [
+      32.97,
+      33.56
+     ],
+     "uuid": "85e0dc41-d156-4b61-9a0b-88990a707728"
+    },
+    {
+     "msg": "Segment of R15 on F.Silkscreen",
+     "pos": [
+      32.01,
+      34.96
+     ],
+     "uuid": "dbca213a-0044-45f0-90ee-128a91172b9c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    13.8,
+    11.2
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "C11"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C10 on F.Silkscreen",
+     "pos": [
+      13.8,
+      11.2
+     ],
+     "uuid": "48ea15b4-804c-4fc5-a51e-52c5ff7f61fa"
+    },
+    {
+     "msg": "Segment of C11 on F.Silkscreen",
+     "pos": [
+      13.89,
+      11.52
+     ],
+     "uuid": "82385a9c-d454-4550-b5af-cfa053fbc0fb"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    13.8,
+    11.2
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "C11"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C10 on F.Silkscreen",
+     "pos": [
+      13.8,
+      11.2
+     ],
+     "uuid": "48ea15b4-804c-4fc5-a51e-52c5ff7f61fa"
+    },
+    {
+     "msg": "Arc of C11 on F.Silkscreen",
+     "pos": [
+      14.2,
+      10.72
+     ],
+     "uuid": "8184c5a9-0fac-4f88-b1a4-1a54f9699876"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    14.2,
+    10.41
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C11 on F.Silkscreen",
+     "pos": [
+      14.2,
+      10.41
+     ],
+     "uuid": "35e3c251-303c-4c67-a97f-91e0dc1b918d"
+    },
+    {
+     "msg": "Circle of U1 on F.Silkscreen",
+     "pos": [
+      15.0,
+      10.6
+     ],
+     "uuid": "f645cccb-741a-458d-b668-7e4e888198f5"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    10.72
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C11 on F.Silkscreen",
+     "pos": [
+      15.0,
+      10.72
+     ],
+     "uuid": "15c7347d-b414-47b4-ae1f-131fa7002816"
+    },
+    {
+     "msg": "Circle of U1 on F.Silkscreen",
+     "pos": [
+      15.0,
+      10.6
+     ],
+     "uuid": "f645cccb-741a-458d-b668-7e4e888198f5"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    13.89,
+    12.08
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "C11"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C11 on F.Silkscreen",
+     "pos": [
+      13.89,
+      12.08
+     ],
+     "uuid": "0b61767d-3d20-4b62-af39-ed4ae3d448ce"
+    },
+    {
+     "msg": "Segment of C10 on F.Silkscreen",
+     "pos": [
+      13.8,
+      12.0
+     ],
+     "uuid": "dcf0437e-65f1-4a89-87d6-4583d4a0835c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    14.2,
+    12.88
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "C11"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C11 on F.Silkscreen",
+     "pos": [
+      14.2,
+      12.88
+     ],
+     "uuid": "5e2c6850-a1ea-4e76-a37d-53f84268a250"
+    },
+    {
+     "msg": "Segment of C10 on F.Silkscreen",
+     "pos": [
+      13.8,
+      12.0
+     ],
+     "uuid": "dcf0437e-65f1-4a89-87d6-4583d4a0835c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    12.34,
+    16.59
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C5",
+    "R6"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R6 on F.Silkscreen",
+     "pos": [
+      12.34,
+      16.59
+     ],
+     "uuid": "9bf5b447-85ea-4478-8303-025cf65f37b6"
+    },
+    {
+     "msg": "Segment of C5 on F.Silkscreen",
+     "pos": [
+      12.21,
+      15.48
+     ],
+     "uuid": "ce55050b-f784-42c3-b007-898d77699a6d"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    11.9,
+    16.28
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C5",
+    "R6"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C5 on F.Silkscreen",
+     "pos": [
+      11.9,
+      16.28
+     ],
+     "uuid": "75122bc1-9e7f-401e-ac50-2f0009e99fe8"
+    },
+    {
+     "msg": "Segment of R6 on F.Silkscreen",
+     "pos": [
+      12.34,
+      16.59
+     ],
+     "uuid": "9bf5b447-85ea-4478-8303-025cf65f37b6"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    12.21,
+    14.92
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C5",
+    "R6"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C5 on F.Silkscreen",
+     "pos": [
+      12.21,
+      14.92
+     ],
+     "uuid": "c5826d58-19be-4246-8865-3c272f2efd7c"
+    },
+    {
+     "msg": "Segment of R6 on F.Silkscreen",
+     "pos": [
+      12.34,
+      13.81
+     ],
+     "uuid": "fe3c7700-5eb1-466e-af22-b3a465ed5c74"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    11.9,
+    14.12
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C5",
+    "R6"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C5 on F.Silkscreen",
+     "pos": [
+      11.9,
+      14.12
+     ],
+     "uuid": "b14debdf-05b7-48c6-8549-6f61ae113cd1"
+    },
+    {
+     "msg": "Segment of R6 on F.Silkscreen",
+     "pos": [
+      12.34,
+      13.81
+     ],
+     "uuid": "fe3c7700-5eb1-466e-af22-b3a465ed5c74"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    12.16,
+    17.77
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C12",
+    "R13"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R13 on F.Silkscreen",
+     "pos": [
+      12.16,
+      17.77
+     ],
+     "uuid": "c0f19023-976e-4e62-8910-0a69b85c000e"
+    },
+    {
+     "msg": "Segment of C12 on F.Silkscreen",
+     "pos": [
+      12.29,
+      17.92
+     ],
+     "uuid": "da2d5961-7b81-4677-9b03-403114d1154c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    12.6,
+    17.12
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C12",
+    "R13"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C12 on F.Silkscreen",
+     "pos": [
+      12.6,
+      17.12
+     ],
+     "uuid": "63cacf2d-31df-41d9-b27e-ac2186cf13c3"
+    },
+    {
+     "msg": "Segment of R13 on F.Silkscreen",
+     "pos": [
+      12.16,
+      17.77
+     ],
+     "uuid": "c0f19023-976e-4e62-8910-0a69b85c000e"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    18.11,
+    22.68
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C4 on F.Silkscreen",
+     "pos": [
+      18.11,
+      22.68
+     ],
+     "uuid": "065b67b0-2c86-4253-a227-33c97ea4f352"
+    },
+    {
+     "msg": "Segment of C3 on F.Silkscreen",
+     "pos": [
+      18.29,
+      22.68
+     ],
+     "uuid": "510503d4-897d-4d84-bae8-264aa49d824b"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    18.29,
+    22.68
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C3 on F.Silkscreen",
+     "pos": [
+      18.29,
+      22.68
+     ],
+     "uuid": "510503d4-897d-4d84-bae8-264aa49d824b"
+    },
+    {
+     "msg": "Arc of C4 on F.Silkscreen",
+     "pos": [
+      17.8,
+      23.48
+     ],
+     "uuid": "ff29eda6-226e-485e-91b5-9e9f22db6717"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    18.11,
+    22.68
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C4 on F.Silkscreen",
+     "pos": [
+      18.11,
+      22.68
+     ],
+     "uuid": "065b67b0-2c86-4253-a227-33c97ea4f352"
+    },
+    {
+     "msg": "Arc of C3 on F.Silkscreen",
+     "pos": [
+      18.6,
+      23.48
+     ],
+     "uuid": "f7095245-93ab-424d-81e1-b03fe5e4c3a6"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    18.6,
+    23.48
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C3 on F.Silkscreen",
+     "pos": [
+      18.6,
+      23.48
+     ],
+     "uuid": "f7095245-93ab-424d-81e1-b03fe5e4c3a6"
+    },
+    {
+     "msg": "Arc of C4 on F.Silkscreen",
+     "pos": [
+      17.8,
+      23.48
+     ],
+     "uuid": "ff29eda6-226e-485e-91b5-9e9f22db6717"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    18.11,
+    22.12
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of C4 on F.Silkscreen",
+     "pos": [
+      18.11,
+      22.12
+     ],
+     "uuid": "aae4327c-3ec8-4689-83ac-8cb49a60c78e"
+    },
+    {
+     "msg": "Segment of C3 on F.Silkscreen",
+     "pos": [
+      18.29,
+      22.12
+     ],
+     "uuid": "c5e24dcf-b407-4e34-a8a3-e2b16a66e70c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    17.8,
+    21.32
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C4 on F.Silkscreen",
+     "pos": [
+      17.8,
+      21.32
+     ],
+     "uuid": "80b90f1c-0862-4930-9a76-5ee7f8ddc6d1"
+    },
+    {
+     "msg": "Segment of C3 on F.Silkscreen",
+     "pos": [
+      18.29,
+      22.12
+     ],
+     "uuid": "c5e24dcf-b407-4e34-a8a3-e2b16a66e70c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    18.6,
+    21.32
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C3 on F.Silkscreen",
+     "pos": [
+      18.6,
+      21.32
+     ],
+     "uuid": "1f078102-4a78-4caf-beba-96051fd65601"
+    },
+    {
+     "msg": "Segment of C4 on F.Silkscreen",
+     "pos": [
+      18.11,
+      22.12
+     ],
+     "uuid": "aae4327c-3ec8-4689-83ac-8cb49a60c78e"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    18.6,
+    21.32
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C3",
+    "C4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C3 on F.Silkscreen",
+     "pos": [
+      18.6,
+      21.32
+     ],
+     "uuid": "1f078102-4a78-4caf-beba-96051fd65601"
+    },
+    {
+     "msg": "Arc of C4 on F.Silkscreen",
+     "pos": [
+      17.8,
+      21.32
+     ],
+     "uuid": "80b90f1c-0862-4930-9a76-5ee7f8ddc6d1"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    11.32,
+    33.36
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D10",
+    "R16"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D10 on F.Silkscreen",
+     "pos": [
+      11.32,
+      33.36
+     ],
+     "uuid": "2f262183-3355-4e24-b3be-1c0b3e943e92"
+    },
+    {
+     "msg": "Segment of R16 on F.Silkscreen",
+     "pos": [
+      11.34,
+      31.61
+     ],
+     "uuid": "8afb4615-dba6-45f3-beda-bf73976bad5f"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    11.32,
+    31.81
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D10",
+    "R16"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D10 on F.Silkscreen",
+     "pos": [
+      11.32,
+      31.81
+     ],
+     "uuid": "7377ae02-e3b0-4f17-a290-d9170c9fdec4"
+    },
+    {
+     "msg": "Segment of R16 on F.Silkscreen",
+     "pos": [
+      11.34,
+      31.61
+     ],
+     "uuid": "8afb4615-dba6-45f3-beda-bf73976bad5f"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    11.32,
+    33.36
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D10",
+    "R16"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D10 on F.Silkscreen",
+     "pos": [
+      11.32,
+      33.36
+     ],
+     "uuid": "2f262183-3355-4e24-b3be-1c0b3e943e92"
+    },
+    {
+     "msg": "Segment of R16 on F.Silkscreen",
+     "pos": [
+      11.34,
+      34.39
+     ],
+     "uuid": "f1b683d1-58d0-43d9-92a2-6b836445f5b0"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    19.5,
+    31.53
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D2",
+    "R4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D2 on F.Silkscreen",
+     "pos": [
+      19.5,
+      31.53
+     ],
+     "uuid": "011fcc62-c012-40b5-943c-409058b5b9f1"
+    },
+    {
+     "msg": "Segment of R4 on F.Silkscreen",
+     "pos": [
+      20.86,
+      31.39
+     ],
+     "uuid": "5cf3305b-3117-459a-972f-27c0ae7548ca"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    20.86,
+    31.39
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D2",
+    "R4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R4 on F.Silkscreen",
+     "pos": [
+      20.86,
+      31.39
+     ],
+     "uuid": "5cf3305b-3117-459a-972f-27c0ae7548ca"
+    },
+    {
+     "msg": "Segment of D2 on F.Silkscreen",
+     "pos": [
+      19.5,
+      32.8
+     ],
+     "uuid": "633cd4a5-7838-433d-bc49-b566da4cbeff"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    20.9,
+    31.53
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D2",
+    "R4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D2 on F.Silkscreen",
+     "pos": [
+      20.9,
+      31.53
+     ],
+     "uuid": "2e19c319-1ce7-4d84-8746-f78a8e9702d8"
+    },
+    {
+     "msg": "Segment of R4 on F.Silkscreen",
+     "pos": [
+      20.86,
+      31.39
+     ],
+     "uuid": "5cf3305b-3117-459a-972f-27c0ae7548ca"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    19.5,
+    31.53
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D2",
+    "R4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D2 on F.Silkscreen",
+     "pos": [
+      19.5,
+      31.53
+     ],
+     "uuid": "011fcc62-c012-40b5-943c-409058b5b9f1"
+    },
+    {
+     "msg": "Segment of R4 on F.Silkscreen",
+     "pos": [
+      19.54,
+      31.39
+     ],
+     "uuid": "0faaa068-060f-41b6-8c9c-d02171898c9f"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    19.5,
+    31.53
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D2",
+    "R4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D2 on F.Silkscreen",
+     "pos": [
+      19.5,
+      31.53
+     ],
+     "uuid": "011fcc62-c012-40b5-943c-409058b5b9f1"
+    },
+    {
+     "msg": "Segment of R4 on F.Silkscreen",
+     "pos": [
+      20.86,
+      30.43
+     ],
+     "uuid": "47d53c94-351e-4f52-a882-828a200766ad"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    19.54,
+    31.39
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D2",
+    "R4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of R4 on F.Silkscreen",
+     "pos": [
+      19.54,
+      31.39
+     ],
+     "uuid": "0faaa068-060f-41b6-8c9c-d02171898c9f"
+    },
+    {
+     "msg": "Segment of D2 on F.Silkscreen",
+     "pos": [
+      19.5,
+      32.8
+     ],
+     "uuid": "633cd4a5-7838-433d-bc49-b566da4cbeff"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    20.9,
+    31.53
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "D2",
+    "R4"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment of D2 on F.Silkscreen",
+     "pos": [
+      20.9,
+      31.53
+     ],
+     "uuid": "2e19c319-1ce7-4d84-8746-f78a8e9702d8"
+    },
+    {
+     "msg": "Segment of R4 on F.Silkscreen",
+     "pos": [
+      20.86,
+      30.43
+     ],
+     "uuid": "47d53c94-351e-4f52-a882-828a200766ad"
+    }
+   ]
+  },
+  {
+   "check": "silk_over_copper",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    10.6
+   ],
+   "layer": "F.Silkscreen",
+   "net": "GND",
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clipped by solder mask",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Circle of U1 on F.Silkscreen",
+     "pos": [
+      15.0,
+      10.6
+     ],
+     "uuid": "f645cccb-741a-458d-b668-7e4e888198f5"
+    },
+    {
+     "msg": "Pad 2 [GND] of C11 on F.Cu",
+     "pos": [
+      14.6,
+      11.1
+     ],
+     "uuid": "f808c78d-afb2-49c9-837f-8e68b96841ab"
+    }
+   ]
+  },
+  {
+   "check": "silk_over_copper",
+   "severity": "warning",
+   "pos": [
+    18.975,
+    11.8
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C11",
+    "U1"
+   ],
+   "msg": "Silkscreen clipped by solder mask",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of C11",
+     "pos": [
+      18.975,
+      11.8
+     ],
+     "uuid": "77f5daa8-acf9-4d34-a944-fc44aad10fbe"
+    },
+    {
+     "msg": "Pad 49 [GND] of U1 on F.Cu",
+     "pos": [
+      20.02,
+      12.62
+     ],
+     "uuid": "d838cbe6-73c5-46c1-b260-aa4f2fcdbde9"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    13.75,
+    41.93
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J2"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint J2",
+     "pos": [
+      13.75,
+      41.93
+     ],
+     "uuid": "027eb3ad-c6a3-4061-8b7a-f9ba9bf7f0ba"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    19.0,
+    22.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C3"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C3",
+     "pos": [
+      19.0,
+      22.4
+     ],
+     "uuid": "07b7d2d5-770d-4e94-9a26-9742d21cbbb3"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    15.2,
+    35.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D1"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint D1",
+     "pos": [
+      15.2,
+      35.0
+     ],
+     "uuid": "0a03fbdf-fb8b-4628-9adc-ff8f5938a52e"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    17.4,
+    22.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C4"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C4",
+     "pos": [
+      17.4,
+      22.4
+     ],
+     "uuid": "0e6b35e3-6505-4900-bae4-dd7e56783f6f"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    25.6,
+    25.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "SW2"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint SW2",
+     "pos": [
+      25.6,
+      25.0
+     ],
+     "uuid": "108cec70-1210-43c2-8a5a-9175d4c628b2"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    20.3,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C2"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C2",
+     "pos": [
+      20.3,
+      26.6
+     ],
+     "uuid": "24634588-e940-4954-bfef-7032fc8977e3"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    12.9,
+    11.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C10"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C10",
+     "pos": [
+      12.9,
+      11.6
+     ],
+     "uuid": "26a4c44b-4c3a-4f51-a36f-08d097973acd"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    29.9,
+    11.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R12"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R12",
+     "pos": [
+      29.9,
+      11.5
+     ],
+     "uuid": "276739bc-3a9b-4c2c-8627-8f2ed9da2333"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    22.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U3"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint U3",
+     "pos": [
+      15.0,
+      22.4
+     ],
+     "uuid": "2f50139b-b76d-412e-8881-d4516f8fe746"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    30.0,
+    37.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C14"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C14",
+     "pos": [
+      30.0,
+      37.9
+     ],
+     "uuid": "38b99af5-4522-4030-86f4-f22f58dd5c32"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    13.4,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R3"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R3",
+     "pos": [
+      13.4,
+      26.6
+     ],
+     "uuid": "3aa11f91-01f2-488d-a666-a9efaf6d6b4c"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    12.0,
+    33.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R16"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R16",
+     "pos": [
+      12.0,
+      33.0
+     ],
+     "uuid": "3bf3e31f-be55-44de-8c7a-0de06fdb6102"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    33.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R5"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R5",
+     "pos": [
+      15.0,
+      33.0
+     ],
+     "uuid": "3ee466e7-d125-4f13-98af-cb93f9540301"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    31.6,
+    42.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint J3",
+     "pos": [
+      31.6,
+      42.5
+     ],
+     "uuid": "43c55082-06de-4383-b669-68c8fbbbd273"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    18.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R10"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R10",
+     "pos": [
+      14.6,
+      18.2
+     ],
+     "uuid": "51f3072e-de2a-4ddf-85cc-867ce536055c"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    18.6,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C1"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C1",
+     "pos": [
+      18.6,
+      26.6
+     ],
+     "uuid": "57b4a511-af83-4e7d-863a-510da4ff7fca"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    20.2,
+    30.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R4"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R4",
+     "pos": [
+      20.2,
+      30.0
+     ],
+     "uuid": "639179f6-9c10-4007-b7e5-afa839621582"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    33.1,
+    30.38
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J4"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint J4",
+     "pos": [
+      33.1,
+      30.38
+     ],
+     "uuid": "6707ac7a-a8c0-4c1f-8212-d04f2a25e0fc"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    33.4,
+    36.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C13"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C13",
+     "pos": [
+      33.4,
+      36.4
+     ],
+     "uuid": "72e0f7e9-719d-485d-967c-2b8c0401de38"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    16.0,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U2"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint U2",
+     "pos": [
+      16.0,
+      26.6
+     ],
+     "uuid": "75c2ebd6-2afe-4509-92f1-a7eafb425569"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    11.8
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C11"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C11",
+     "pos": [
+      14.6,
+      11.8
+     ],
+     "uuid": "7e146a9c-9770-4b79-98e7-3a576c05fecb"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    11.5,
+    15.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C5"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C5",
+     "pos": [
+      11.5,
+      15.2
+     ],
+     "uuid": "832a4123-eee2-490c-bb4c-f40e184428bc"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    20.2,
+    33.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D2"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint D2",
+     "pos": [
+      20.2,
+      33.0
+     ],
+     "uuid": "8725182f-0554-4520-b03e-5c4ff239de76"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    30.0,
+    35.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U5"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint U5",
+     "pos": [
+      30.0,
+      35.5
+     ],
+     "uuid": "8d66fa16-3559-44f6-b7a2-be8d66c1ed6d"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    25.6,
+    30.3
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "SW1"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint SW1",
+     "pos": [
+      25.6,
+      30.3
+     ],
+     "uuid": "94a5f520-18a2-400e-ac54-e4d6d7bba1d8"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    13.0,
+    15.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R6"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R6",
+     "pos": [
+      13.0,
+      15.2
+     ],
+     "uuid": "9d75415f-eba9-4d44-b10a-dc9192aa2bcf"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    10.9,
+    22.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J5"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint J5",
+     "pos": [
+      10.9,
+      22.0
+     ],
+     "uuid": "9d8728c2-6fdd-4ee8-ad5d-f2e17fa235dc"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    33.4,
+    32.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R14"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R14",
+     "pos": [
+      33.4,
+      32.9
+     ],
+     "uuid": "9ff5bcf5-bcc0-4683-b762-ccf7c34e7ec8"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    26.0,
+    21.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R11"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R11",
+     "pos": [
+      26.0,
+      21.6
+     ],
+     "uuid": "b45dae45-9087-4441-8bdd-14a30e38ed9b"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    22.0,
+    14.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U1"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint U1",
+     "pos": [
+      22.0,
+      14.6
+     ],
+     "uuid": "b97c2f2f-5d68-43a3-895c-805fdfc3d717"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    18.2,
+    31.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D3"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint D3",
+     "pos": [
+      18.2,
+      31.0
+     ],
+     "uuid": "b993cd6f-53ef-41cc-b2fe-02ee43e60af9"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    33.4,
+    34.3
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R15"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R15",
+     "pos": [
+      33.4,
+      34.3
+     ],
+     "uuid": "c4cd3b1b-c4d3-409d-9a0e-55fc592b9c76"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    23.4,
+    36.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U4"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint U4",
+     "pos": [
+      23.4,
+      36.4
+     ],
+     "uuid": "cc09e155-b2fc-4ce3-b7ff-0a7e77c38d4a"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    15.2,
+    30.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "Q1"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint Q1",
+     "pos": [
+      15.2,
+      30.5
+     ],
+     "uuid": "d6c3b52d-af6b-451b-95af-f771151e7b80"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    15.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R7"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R7",
+     "pos": [
+      14.6,
+      15.2
+     ],
+     "uuid": "e3799d47-739e-4943-b3ae-40639b81f3fe"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    26.4,
+    36.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R2"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R2",
+     "pos": [
+      26.4,
+      36.9
+     ],
+     "uuid": "e40e468f-1863-4918-9970-338e150cee77"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    13.0,
+    18.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C12"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint C12",
+     "pos": [
+      13.0,
+      18.2
+     ],
+     "uuid": "e6b55bbb-4ca1-4eef-81fd-2919cbcf4669"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    10.3,
+    33.8
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D10"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint D10",
+     "pos": [
+      10.3,
+      33.8
+     ],
+     "uuid": "e8a01e6a-97d0-4156-9b6a-0ac4ba877d72"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    20.6,
+    36.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R1"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R1",
+     "pos": [
+      20.6,
+      36.9
+     ],
+     "uuid": "ea6cccf0-c308-4e1f-b676-9c29efa4bc8c"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    11.5,
+    18.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R13"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint R13",
+     "pos": [
+      11.5,
+      18.2
+     ],
+     "uuid": "ed41ab21-15f3-4bde-9b8d-6be1551e68bb"
+    }
+   ]
+  },
+  {
+   "check": "lib_footprint_issues",
+   "severity": "warning",
+   "pos": [
+    23.4,
+    41.86
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "The current configuration does not include the footprint library 'aiee'",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Footprint J1",
+     "pos": [
+      23.4,
+      41.86
+     ],
+     "uuid": "f4f1c1ec-d000-4cde-9a63-dd89ab139fe1"
+    }
+   ]
+  },
+  {
+   "check": "silk_edge_clearance",
+   "severity": "warning",
+   "pos": [
+    10.0,
+    9.0
+   ],
+   "layer": "Edge.Cuts",
+   "net": null,
+   "refs": [
+    "U1"
+   ],
+   "msg": "Silkscreen clipped by board edge",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment on Edge.Cuts",
+     "pos": [
+      10.0,
+      9.0
+     ],
+     "uuid": "21d70c96-18b6-455f-9a6c-0298fd4283a2"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      15.4,
+      20.2
+     ],
+     "uuid": "faee58f9-b643-437b-b363-fbc982f7c20d"
+    }
+   ]
+  },
+  {
+   "check": "silk_edge_clearance",
+   "severity": "warning",
+   "pos": [
+    10.0,
+    9.0
+   ],
+   "layer": "Edge.Cuts",
+   "net": null,
+   "refs": [
+    "U1"
+   ],
+   "msg": "Silkscreen clipped by board edge",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment on Edge.Cuts",
+     "pos": [
+      10.0,
+      9.0
+     ],
+     "uuid": "21d70c96-18b6-455f-9a6c-0298fd4283a2"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      28.6,
+      9.0
+     ],
+     "uuid": "ea0e4aa1-29f8-44dc-9ac7-1f1dae1f055c"
+    }
+   ]
+  },
+  {
+   "check": "silk_edge_clearance",
+   "severity": "warning",
+   "pos": [
+    10.0,
+    9.0
+   ],
+   "layer": "Edge.Cuts",
+   "net": null,
+   "refs": [
+    "U1"
+   ],
+   "msg": "Silkscreen clipped by board edge",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment on Edge.Cuts",
+     "pos": [
+      10.0,
+      9.0
+     ],
+     "uuid": "21d70c96-18b6-455f-9a6c-0298fd4283a2"
+    },
+    {
+     "msg": "Segment of U1 on F.Silkscreen",
+     "pos": [
+      28.6,
+      20.2
+     ],
+     "uuid": "117a0b74-910b-46fe-a18f-039acb05949c"
+    }
+   ]
+  },
+  {
+   "check": "silk_edge_clearance",
+   "severity": "warning",
+   "pos": [
+    34.0,
+    47.0
+   ],
+   "layer": "Edge.Cuts",
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "Silkscreen clipped by board edge",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment on Edge.Cuts",
+     "pos": [
+      34.0,
+      47.0
+     ],
+     "uuid": "95ca1b54-22f5-4760-9084-f81b463fcc26"
+    },
+    {
+     "msg": "Segment of J1 on F.Silkscreen",
+     "pos": [
+      18.93,
+      46.95
+     ],
+     "uuid": "0fd96c61-33aa-4a90-8e7e-891a64a67763"
+    }
+   ]
+  },
+  {
+   "check": "silk_edge_clearance",
+   "severity": "warning",
+   "pos": [
+    34.0,
+    47.0
+   ],
+   "layer": "Edge.Cuts",
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "Silkscreen clipped by board edge",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment on Edge.Cuts",
+     "pos": [
+      34.0,
+      47.0
+     ],
+     "uuid": "95ca1b54-22f5-4760-9084-f81b463fcc26"
+    },
+    {
+     "msg": "Segment of J1 on F.Silkscreen",
+     "pos": [
+      27.87,
+      46.95
+     ],
+     "uuid": "9ca48c52-f658-4145-b8be-276e77505588"
+    }
+   ]
+  },
+  {
+   "check": "silk_edge_clearance",
+   "severity": "warning",
+   "pos": [
+    34.0,
+    47.0
+   ],
+   "layer": "Edge.Cuts",
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "Silkscreen clipped by board edge",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment on Edge.Cuts",
+     "pos": [
+      34.0,
+      47.0
+     ],
+     "uuid": "95ca1b54-22f5-4760-9084-f81b463fcc26"
+    },
+    {
+     "msg": "Segment of J1 on F.Silkscreen",
+     "pos": [
+      27.87,
+      46.95
+     ],
+     "uuid": "00a56ab0-a651-4e62-bda4-5313c9f9eb42"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    13.0,
+    17.5
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C12"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Pad 2 [GND] of C12 on F.Cu",
+     "pos": [
+      13.0,
+      17.5
+     ],
+     "uuid": "90b81437-5772-4300-82b4-f4abf8467376"
+    },
+    {
+     "msg": "Track [GND] on F.Cu, length 0.1733 mm",
+     "pos": [
+      16.1,
+      18.7733
+     ],
+     "uuid": "acbc517a-c08d-4c23-bfb9-4953d6586f4b"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    13.75,
+    41.93
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J2"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint J2",
+     "pos": [
+      13.75,
+      41.93
+     ],
+     "uuid": "027eb3ad-c6a3-4061-8b7a-f9ba9bf7f0ba"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    19.0,
+    22.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C3"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C3",
+     "pos": [
+      19.0,
+      22.4
+     ],
+     "uuid": "07b7d2d5-770d-4e94-9a26-9742d21cbbb3"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    15.2,
+    35.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D1"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint D1",
+     "pos": [
+      15.2,
+      35.0
+     ],
+     "uuid": "0a03fbdf-fb8b-4628-9adc-ff8f5938a52e"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    17.4,
+    22.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C4"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C4",
+     "pos": [
+      17.4,
+      22.4
+     ],
+     "uuid": "0e6b35e3-6505-4900-bae4-dd7e56783f6f"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    25.6,
+    25.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "SW2"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint SW2",
+     "pos": [
+      25.6,
+      25.0
+     ],
+     "uuid": "108cec70-1210-43c2-8a5a-9175d4c628b2"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    20.3,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C2"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C2",
+     "pos": [
+      20.3,
+      26.6
+     ],
+     "uuid": "24634588-e940-4954-bfef-7032fc8977e3"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    12.9,
+    11.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C10"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C10",
+     "pos": [
+      12.9,
+      11.6
+     ],
+     "uuid": "26a4c44b-4c3a-4f51-a36f-08d097973acd"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    29.9,
+    11.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R12"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R12",
+     "pos": [
+      29.9,
+      11.5
+     ],
+     "uuid": "276739bc-3a9b-4c2c-8627-8f2ed9da2333"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    22.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U3"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint U3",
+     "pos": [
+      15.0,
+      22.4
+     ],
+     "uuid": "2f50139b-b76d-412e-8881-d4516f8fe746"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    30.0,
+    37.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C14"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C14",
+     "pos": [
+      30.0,
+      37.9
+     ],
+     "uuid": "38b99af5-4522-4030-86f4-f22f58dd5c32"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    13.4,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R3"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R3",
+     "pos": [
+      13.4,
+      26.6
+     ],
+     "uuid": "3aa11f91-01f2-488d-a666-a9efaf6d6b4c"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    12.0,
+    33.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R16"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R16",
+     "pos": [
+      12.0,
+      33.0
+     ],
+     "uuid": "3bf3e31f-be55-44de-8c7a-0de06fdb6102"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    15.0,
+    33.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R5"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R5",
+     "pos": [
+      15.0,
+      33.0
+     ],
+     "uuid": "3ee466e7-d125-4f13-98af-cb93f9540301"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    31.6,
+    42.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint J3",
+     "pos": [
+      31.6,
+      42.5
+     ],
+     "uuid": "43c55082-06de-4383-b669-68c8fbbbd273"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    18.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R10"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R10",
+     "pos": [
+      14.6,
+      18.2
+     ],
+     "uuid": "51f3072e-de2a-4ddf-85cc-867ce536055c"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    18.6,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C1"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C1",
+     "pos": [
+      18.6,
+      26.6
+     ],
+     "uuid": "57b4a511-af83-4e7d-863a-510da4ff7fca"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    20.2,
+    30.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R4"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R4",
+     "pos": [
+      20.2,
+      30.0
+     ],
+     "uuid": "639179f6-9c10-4007-b7e5-afa839621582"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    33.1,
+    30.38
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J4"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint J4",
+     "pos": [
+      33.1,
+      30.38
+     ],
+     "uuid": "6707ac7a-a8c0-4c1f-8212-d04f2a25e0fc"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    33.4,
+    36.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C13"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C13",
+     "pos": [
+      33.4,
+      36.4
+     ],
+     "uuid": "72e0f7e9-719d-485d-967c-2b8c0401de38"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    16.0,
+    26.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U2"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint U2",
+     "pos": [
+      16.0,
+      26.6
+     ],
+     "uuid": "75c2ebd6-2afe-4509-92f1-a7eafb425569"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    11.8
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C11"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C11",
+     "pos": [
+      14.6,
+      11.8
+     ],
+     "uuid": "7e146a9c-9770-4b79-98e7-3a576c05fecb"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    11.5,
+    15.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C5"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C5",
+     "pos": [
+      11.5,
+      15.2
+     ],
+     "uuid": "832a4123-eee2-490c-bb4c-f40e184428bc"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    20.2,
+    33.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D2"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint D2",
+     "pos": [
+      20.2,
+      33.0
+     ],
+     "uuid": "8725182f-0554-4520-b03e-5c4ff239de76"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    30.0,
+    35.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U5"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint U5",
+     "pos": [
+      30.0,
+      35.5
+     ],
+     "uuid": "8d66fa16-3559-44f6-b7a2-be8d66c1ed6d"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    25.6,
+    30.3
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "SW1"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint SW1",
+     "pos": [
+      25.6,
+      30.3
+     ],
+     "uuid": "94a5f520-18a2-400e-ac54-e4d6d7bba1d8"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    13.0,
+    15.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R6"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R6",
+     "pos": [
+      13.0,
+      15.2
+     ],
+     "uuid": "9d75415f-eba9-4d44-b10a-dc9192aa2bcf"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    10.9,
+    22.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J5"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint J5",
+     "pos": [
+      10.9,
+      22.0
+     ],
+     "uuid": "9d8728c2-6fdd-4ee8-ad5d-f2e17fa235dc"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    33.4,
+    32.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R14"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R14",
+     "pos": [
+      33.4,
+      32.9
+     ],
+     "uuid": "9ff5bcf5-bcc0-4683-b762-ccf7c34e7ec8"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    26.0,
+    21.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R11"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R11",
+     "pos": [
+      26.0,
+      21.6
+     ],
+     "uuid": "b45dae45-9087-4441-8bdd-14a30e38ed9b"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    22.0,
+    14.6
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U1"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint U1",
+     "pos": [
+      22.0,
+      14.6
+     ],
+     "uuid": "b97c2f2f-5d68-43a3-895c-805fdfc3d717"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    18.2,
+    31.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D3"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint D3",
+     "pos": [
+      18.2,
+      31.0
+     ],
+     "uuid": "b993cd6f-53ef-41cc-b2fe-02ee43e60af9"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    33.4,
+    34.3
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R15"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R15",
+     "pos": [
+      33.4,
+      34.3
+     ],
+     "uuid": "c4cd3b1b-c4d3-409d-9a0e-55fc592b9c76"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    23.4,
+    36.4
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U4"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint U4",
+     "pos": [
+      23.4,
+      36.4
+     ],
+     "uuid": "cc09e155-b2fc-4ce3-b7ff-0a7e77c38d4a"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    15.2,
+    30.5
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "Q1"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint Q1",
+     "pos": [
+      15.2,
+      30.5
+     ],
+     "uuid": "d6c3b52d-af6b-451b-95af-f771151e7b80"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    15.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R7"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R7",
+     "pos": [
+      14.6,
+      15.2
+     ],
+     "uuid": "e3799d47-739e-4943-b3ae-40639b81f3fe"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    26.4,
+    36.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R2"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R2",
+     "pos": [
+      26.4,
+      36.9
+     ],
+     "uuid": "e40e468f-1863-4918-9970-338e150cee77"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    13.0,
+    18.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C12"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint C12",
+     "pos": [
+      13.0,
+      18.2
+     ],
+     "uuid": "e6b55bbb-4ca1-4eef-81fd-2919cbcf4669"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    10.3,
+    33.8
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D10"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint D10",
+     "pos": [
+      10.3,
+      33.8
+     ],
+     "uuid": "e8a01e6a-97d0-4156-9b6a-0ac4ba877d72"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    20.6,
+    36.9
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R1"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R1",
+     "pos": [
+      20.6,
+      36.9
+     ],
+     "uuid": "ea6cccf0-c308-4e1f-b676-9c29efa4bc8c"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    11.5,
+    18.2
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R13"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint R13",
+     "pos": [
+      11.5,
+      18.2
+     ],
+     "uuid": "ed41ab21-15f3-4bde-9b8d-6be1551e68bb"
+    }
+   ]
+  },
+  {
+   "check": "extra_footprint",
+   "severity": "warning",
+   "pos": [
+    23.4,
+    41.86
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "Extra footprint",
+   "source": "parity",
+   "items": [
+    {
+     "msg": "Footprint J1",
+     "pos": [
+      23.4,
+      41.86
+     ],
+     "uuid": "f4f1c1ec-d000-4cde-9a63-dd89ab139fe1"
+    }
+   ]
+  }
+ ],
+ "facts": {
+  "completion": 0.963,
+  "routable_nets": 27,
+  "unrouted_nets": [
+   "GND"
+  ],
+  "tracks_before": 0,
+  "tracks_after": 615,
+  "ses_items_added": 666,
+  "best_rung": 1,
+  "rungs": [
+   {
+    "rung": 1,
+    "options": {
+     "mp": 20
+    },
+    "unrouted": 1,
+    "started_unrouted": 142,
+    "final_score": 995.21,
+    "passes": 20,
+    "timed_out": false,
+    "ses_written": true
+   },
+   {
+    "rung": 2,
+    "options": {
+     "mp": 60,
+     "oit": 0.05
+    },
+    "unrouted": 1,
+    "started_unrouted": 142,
+    "final_score": 995.21,
+    "passes": 22,
+    "timed_out": false,
+    "ses_written": true
+   },
+   {
+    "rung": 3,
+    "options": {
+     "mp": 100,
+     "us": "global"
+    },
+    "unrouted": 1,
+    "started_unrouted": 142,
+    "final_score": 995.21,
+    "passes": 22,
+    "timed_out": false,
+    "ses_written": true
+   }
+  ],
+  "fr_completion": 0.9929577464788732,
+  "power_layers": [],
+  "dsn_net_rules": [],
+  "krt_finish": {
+   "kept": false,
+   "nets": [
+    "GND"
+   ],
+   "ripped_vias": 0,
+   "errors_before": {
+    "unconnected:unconnected_items": 1
+   },
+   "errors_after": {
+    "drc:track_width": 8
+   }
+  },
+  "ses_echo_dups_removed": 0,
+  "work_dir": "auto",
+  "placement_adjust_request": {
+   "request": "placement_adjust",
+   "nets": [
+    "GND"
+   ],
+   "refs": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "D1",
+    "D10",
+    "J1",
+    "J2",
+    "J3",
+    "J5",
+    "R1",
+    "R2",
+    "R3",
+    "R5",
+    "R7",
+    "SW1",
+    "SW2",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5"
+   ],
+   "region": [
+    10.3,
+    9.65,
+    34.1,
+    44.33
+   ],
+   "reason": "unrouted after 3 freerouting rungs",
+   "suggestions": [
+    "spread the named clusters apart / off the congested region",
+    "clear a ~3 mm escape ring around the anchor IC",
+    "consider more board area or more layers if congestion persists"
+   ]
+  }
+ }
+}

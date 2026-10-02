@@ -1,0 +1,43 @@
+id: linear-charger-single-point-ground-and-current-paths
+classes:
+- return-path
+- power-loop
+applies:
+  topologies:
+  - linear-charger-power-path
+  packages: []
+  interfaces: []
+  parts:
+  - BQ24074
+rule:
+  enforced_by: null
+  ground: single point, small-signal vs power
+prose: Keep low-current grounds (ILIM, ISET, TS, TMR resistors, LED returns) separate from the high-current
+  charge and discharge paths of the battery, then join once at the pad (single-point ground incorporating
+  small-signal and power ground). Size the IN and OUT copper for the maximum charge/system current so
+  trace drop does not distort OUT or the sense. IN and OUT decoupling caps go between each pin and the
+  thermal pad with short runs. Fig 12-1 shows the resistor pads for ILIM, ISET and TS clustered near the
+  IC, each with its own via to the VSS plane, while IN, OUT and BAT have wide dedicated fills.
+sources:
+- file: research/sources/bq24074.pdf
+  page: 40
+  note: '12.1 guidelines: single-point ground, high-current path sizing, thermal pad as ground'
+- file: research/sources/bq24074.pdf
+  page: 41
+  note: 'Fig 12-1: small resistor pads with own vias vs wide IN/OUT/BAT fills'
+status: draft
+origin: research:block-linear-charger-power-path-1
+level: part
+maturity: draft
+envelope:
+  vin_v:
+    min: 4.35
+    max: 6.4
+  iout_a:
+    max: 1.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: 'Scales with input current: ILIM tops out at 1.5 A and dissipation grows with (VIN-VOUT)*I;
+  VIN window is VIN-DPM 4.35 V to VOVP; read for BQ24074 (OUT 4.4 V), not other family members whose OUT
+  differs.'

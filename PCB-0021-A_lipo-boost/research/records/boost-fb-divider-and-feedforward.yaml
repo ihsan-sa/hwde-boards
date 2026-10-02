@@ -1,0 +1,46 @@
+id: boost-fb-divider-and-feedforward
+classes:
+- feedback
+applies:
+  topologies:
+  - boost
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  r2_max_kohm: 300
+  vref_mv: 595
+  ff_zero_khz: 1
+prose: Vout=Vref*(1+R1/R2) (Vref 595 mV typ, 585-601 mV). Keep R2 under 300 kohm so its current is at
+  least 100x the FB pin leakage; lower R2 improves noise immunity, higher R2 lowers Iq at light load.
+  Place the divider away from SW/inductor (Fig 10-1 puts it above the IC, on the far side from the inductor).
+  A feedforward cap C3 across R1 (C3=1/(2*pi*1kHz*R1)) is recommended when Cout effective exceeds 40 uF;
+  if the SW waveform shows duty jitter or Vout oscillates, treat it as a loop-stability sign.
+sources:
+- file: research/sources/tps61023.pdf
+  page: 13
+  note: 8.2.2.1 Eq 4 and R2 < 300 kohm rationale
+- file: research/sources/tps61023.pdf
+  page: 15
+  note: 8.2.2.4 feedforward cap Eq 10, >40 uF rule; Fig 8-2
+- file: research/sources/tps61023.pdf
+  page: 18
+  note: Fig 10-1 divider resistors above IC, away from inductor
+- file: research/sources/tps61023.pdf
+  page: 5
+  note: EC table VREF 585-601 mV in PFM (line read in text, not visual)
+status: draft
+origin: research:block-boost-1
+level: topology
+maturity: draft
+envelope:
+  vout_v:
+    min: 2.2
+    max: 5.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: Scales with integration (hot loop is inside the IC only when both FETs are integrated)
+  and with the part Vout range 2.2-5.5 V read from TPS61023 sec 6.3; discrete-FET boosts have a bigger
+  external loop. Not verified for other integrated boosts.

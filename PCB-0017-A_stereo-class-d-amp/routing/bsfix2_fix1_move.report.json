@@ -1,0 +1,37 @@
+{
+ "script": "place_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 4,
+ "verified": true,
+ "results": [
+  {
+   "ref": "C18",
+   "field": "reference",
+   "x": 35.7,
+   "y": 24.9,
+   "deg": 0.0
+  },
+  {
+   "ref": "C15",
+   "field": "reference",
+   "x": 35.65,
+   "y": 34.6,
+   "deg": 90.0
+  },
+  {
+   "ref": "C9",
+   "field": "reference",
+   "x": 30.4,
+   "y": 34.8,
+   "deg": 0.0
+  },
+  {
+   "ref": "C7",
+   "field": "reference",
+   "x": 30.4,
+   "y": 33.55,
+   "deg": 0.0
+  }
+ ]
+}

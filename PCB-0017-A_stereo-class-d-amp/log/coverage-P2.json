@@ -1,0 +1,1811 @@
+{
+ "script": "knowledge",
+ "status": "gaps",
+ "schema_version": 2,
+ "workspace": "PCB-0017-A_astra-amp",
+ "board": "astra-amp",
+ "phase": "P2",
+ "maturity_floor": "approved",
+ "keys": {
+  "topologies": [
+   "audio-line-in",
+   "class-d-amp",
+   "dc-input",
+   "lc-output-filter"
+  ],
+  "packages": [
+   "0402",
+   "0603",
+   "0805",
+   "1x SMD pad, no connector body",
+   "2x SMD pad, approx 3.0x6.0mm each, >=1.5mm apart, no connector body",
+   "2x SMD pad, no connector body",
+   "3x SMD pad, no connector body",
+   "HTSSOP-32-EP-6.1mm",
+   "SMD 7.3x6.6mm",
+   "SMD D6.3xL5.4mm",
+   "SMD D6.3xL6mm"
+  ],
+  "interfaces": [],
+  "parts": [
+   "0603WAF1003T5E",
+   "0603WAF5601T5E",
+   "C106246",
+   "C106858",
+   "C107133",
+   "C137725",
+   "C14663",
+   "C15195",
+   "C15850",
+   "C207842",
+   "C23189",
+   "C23692980",
+   "C25803",
+   "C46497",
+   "C46550465",
+   "C5138965",
+   "C5378",
+   "CC0603JRNPO9BN102",
+   "CC0603KRX7R8BB105",
+   "CC0603KRX7R9BB104",
+   "CC0805KKX7R9BB684",
+   "CGA0805X7R225M500MT",
+   "CL05B103KB5NNNC",
+   "CL21A106KAYNNNE",
+   "CL21B224KBFNNNE",
+   "MA25V100M6x6",
+   "RC0603FR-073R3L",
+   "RVT100UF35V167RV0082",
+   "SLO0630H100MTT",
+   "TPA3118D2DAPR"
+  ],
+  "sources": {
+   "constraints": "PCB-0017-A_astra-amp/architecture/constraints.json",
+   "parts": "PCB-0017-A_astra-amp/parts/parts.json"
+  }
+ },
+ "sources": {
+  "constraints": "PCB-0017-A_astra-amp/architecture/constraints.json",
+  "parts": "PCB-0017-A_astra-amp/parts/parts.json"
+ },
+ "summary": {
+  "slots": 5,
+  "covered": 1,
+  "provisional": 3,
+  "gap": 1,
+  "draft_unverified": 0
+ },
+ "slots": [
+  {
+   "id": "block:B1",
+   "kind": "block",
+   "topology": "dc-input",
+   "label": "B1",
+   "operating_point": {
+    "vin_v": 12,
+    "vin_min_v": 10.8,
+    "vin_max_v": 13.2,
+    "iin_a": 4.0,
+    "cbulk_uf": 200,
+    "esr_bulk_mohm": 30,
+    "hotplug_ring_v_max": 26,
+    "vabs_max_v": 30,
+    "board_layers": 2,
+    "copper_oz": 2,
+    "source_kind": "dc-input",
+    "connector_kind": "wire-pad",
+    "protection_kind": "none",
+    "bulk_kind": "polymer-plus-electrolytic"
+   },
+   "classes": [
+    {
+     "class": "inrush",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "dc-input-bulk-esr-damping-budget",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "dc-input-hotplug-ring-physics",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "level-below-min"
+      }
+     ]
+    },
+    {
+     "class": "selection",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "dc-input-bulk-esr-damping-budget",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "power-loop",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "esd",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "sourcing",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "constraints-emission",
+     "min_level": "principle",
+     "verdict": "gap",
+     "records": []
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "dc-input",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "gap"
+  },
+  {
+   "id": "block:B2",
+   "kind": "block",
+   "topology": "audio-line-in",
+   "label": "B2",
+   "operating_point": {
+    "vin_vrms": 1.0,
+    "zin_kohm": 60,
+    "cin_uf": 2.2,
+    "f_corner_hz": 1.2,
+    "vbias_v": 3.0,
+    "board_layers": 2,
+    "input_kind": "single-ended",
+    "coupling_kind": "ac-ceramic",
+    "source_kind": "line-level"
+   },
+   "classes": [
+    {
+     "class": "diff-pair",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "audio-line-in-single-ended-unused-leg-ac-ground",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "selection",
+     "min_level": "family",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "audio-line-in-cap-corner-vs-popup-settle",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "return-path",
+     "min_level": "principle",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "audio-line-in-analog-input-star-ground",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "emi",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "audio-line-in-2layer-switch-node-keepaway",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "audio-line-in",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "provisional"
+  },
+  {
+   "id": "block:B3",
+   "kind": "block",
+   "topology": "class-d-amp",
+   "label": "B3",
+   "operating_point": {
+    "vin_v": 12,
+    "vin_min_v": 10.8,
+    "vin_max_v": 13.2,
+    "iin_a": 4.0,
+    "iout_a": 3.0,
+    "pout_w_per_ch_4ohm": 15.6,
+    "pout_w_per_ch_8ohm": 8.4,
+    "rload_ohm_min": 4,
+    "rload_ohm_typ": 8,
+    "fsw_khz": 400,
+    "edge_ns": 15,
+    "gain_db": 20,
+    "pdiss_w": 1.5,
+    "pdiss_max_w": 4.2,
+    "ta_c": 40,
+    "tj_max_c": 125,
+    "rth_ja_target_cw": 56.7,
+    "rds_on_mohm": 120,
+    "channels": 2,
+    "board_layers": 2,
+    "copper_oz": 2,
+    "switching_kind": "hard",
+    "integration_kind": "integrated-fet",
+    "output_kind": "btl",
+    "modulation_kind": "bd",
+    "package_kind": "powerpad-down",
+    "cooling_kind": "natural-convection",
+    "source_kind": "dc-input",
+    "limit_kind": "none",
+    "fault_kind": "self-clearing"
+   },
+   "classes": [
+    {
+     "class": "selection",
+     "min_level": "family",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-family-pad-orientation-selection",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "thermal-via",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-powerpad-thermal-via-array",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "thermal",
+     "min_level": "family",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-2layer-pour-heat-spreader",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "class-d-amp-family-pad-orientation-selection",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "decoupling",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-bootstrap-cap-per-output",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "class-d-amp-pvcc-three-tier-decoupling",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "feedback",
+     "min_level": "family",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-bootstrap-cap-per-output",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "power-loop",
+     "min_level": "principle",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-output-loop-star-ground",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "return-path",
+     "min_level": "family",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-output-loop-star-ground",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "level-below-min"
+      },
+      {
+       "id": "class-d-amp-single-gnd-two-layer-pour",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "emi",
+     "min_level": "family",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-emi-filter-and-snubber",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "sequencing",
+     "min_level": "family",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-fault-latch-self-clear",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "constraints-emission",
+     "min_level": "principle",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "class-d-amp-constraints-emission",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "class-d-amp",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "provisional"
+  },
+  {
+   "id": "block:B4",
+   "kind": "block",
+   "topology": "lc-output-filter",
+   "label": "B4",
+   "operating_point": {
+    "l_uh": 10,
+    "c_nf": 680,
+    "f0_khz": 61,
+    "fsw_khz": 400,
+    "rload_ohm_min": 4,
+    "rload_ohm_typ": 8,
+    "iout_a": 3.0,
+    "il_pk_a": 3.5,
+    "isat_min_a": 4.0,
+    "ioc_trip_a": 7.5,
+    "l_min_at_trip_uh": 1.0,
+    "dcr_mohm": 66,
+    "damping_r_ohm": 3.3,
+    "damping_c_nf": 10,
+    "inductor_body_mm": 7.3,
+    "board_layers": 2,
+    "copper_oz": 2,
+    "filter_kind": "lc-second-order",
+    "damping_kind": "zobel-rc",
+    "inductor_kind": "shielded-power",
+    "output_kind": "btl"
+   },
+   "classes": [
+    {
+     "class": "selection",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "lc-output-filter-butterworth-pairing",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "lc-output-filter-cap-voltage-dc-bias",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "level-below-min"
+      },
+      {
+       "id": "lc-output-filter-inductor-isat-and-min-l",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "lc-output-filter-q-tracks-load",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "unknown",
+       "unknown_dims": [
+        "rload_ohm"
+       ],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "envelope-unknown"
+      }
+     ]
+    },
+    {
+     "class": "emi",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "lc-output-filter-placement-and-loop",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "lc-output-filter-snubber-networks",
+       "level": "family",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "return-path",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "lc-output-filter-ground-return-2layer",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "thermal",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "lc-output-filter-dcr-dissipation",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "constraints-emission",
+     "min_level": "principle",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "lc-output-filter-constraints-emission",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "lc-output-filter",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "provisional"
+  },
+  {
+   "id": "part:C46497",
+   "kind": "part",
+   "lcsc": "C46497",
+   "mpn": "TPA3118D2DAPR",
+   "package": "HTSSOP-32-EP-6.1mm",
+   "block": "class-d-amp",
+   "ref_prefix_hint": "U",
+   "operating_point": {},
+   "extraction": {
+    "file": "PCB-0017-A_astra-amp/parts/C46497.json",
+    "layout_notes": 14,
+    "layout_chars": 2702,
+    "error": null
+   },
+   "classes": [
+    {
+     "class": "datasheet-layout",
+     "min_level": "part",
+     "verdict": "covered",
+     "records": []
+    }
+   ],
+   "gap_reasons": [],
+   "datasheet_layout": "present",
+   "verdict": "covered"
+  }
+ ],
+ "gaps": [
+  {
+   "slot": "block:B1",
+   "kind": "block",
+   "topology": "dc-input",
+   "operating_point": {
+    "vin_v": 12,
+    "vin_min_v": 10.8,
+    "vin_max_v": 13.2,
+    "iin_a": 4.0,
+    "cbulk_uf": 200,
+    "esr_bulk_mohm": 30,
+    "hotplug_ring_v_max": 26,
+    "vabs_max_v": 30,
+    "board_layers": 2,
+    "copper_oz": 2,
+    "source_kind": "dc-input",
+    "connector_kind": "wire-pad",
+    "protection_kind": "none",
+    "bulk_kind": "polymer-plus-electrolytic"
+   },
+   "missing": [
+    {
+     "class": "power-loop",
+     "min_level": "topology"
+    },
+    {
+     "class": "esd",
+     "min_level": "topology"
+    },
+    {
+     "class": "sourcing",
+     "min_level": "topology"
+    },
+    {
+     "class": "constraints-emission",
+     "min_level": "principle"
+    }
+   ],
+   "reasons": [
+    "no record satisfies the class at this operating point and maturity floor"
+   ],
+   "related_records": [
+    "dc-input-bulk-esr-damping-budget",
+    "dc-input-hotplug-ring-physics"
+   ],
+   "principle_parents": [
+    "buck-constraints-emission",
+    "buck-input-hot-loop",
+    "class-d-amp-constraints-emission",
+    "class-d-amp-output-loop-star-ground",
+    "lc-output-filter-constraints-emission"
+   ],
+   "task": "research block 'dc-input': populate power-loop, esd, sourcing, constraints-emission (application delta only - principle parents exist)"
+  }
+ ],
+ "warnings": [
+  "blocks[0].operating_point.hotplug_ring_v_max: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[1].operating_point.vin_vrms: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[2].operating_point.pout_w_per_ch_4ohm: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[2].operating_point.pout_w_per_ch_8ohm: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[2].operating_point.rload_ohm_min: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[2].operating_point.rload_ohm_typ: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[2].operating_point.gain_db: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[2].operating_point.rth_ja_target_cw: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[2].operating_point.channels: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[3].operating_point.rload_ohm_min: not a unit-suffixed or *_kind dim - no envelope can ever test it",
+  "blocks[3].operating_point.rload_ohm_typ: not a unit-suffixed or *_kind dim - no envelope can ever test it"
+ ],
+ "workspace_records": [
+  "audio-line-in-2layer-switch-node-keepaway",
+  "audio-line-in-analog-input-star-ground",
+  "audio-line-in-cap-corner-vs-popup-settle",
+  "audio-line-in-single-ended-unused-leg-ac-ground",
+  "class-d-amp-2layer-pour-heat-spreader",
+  "class-d-amp-bootstrap-cap-per-output",
+  "class-d-amp-constraints-emission",
+  "class-d-amp-emi-filter-and-snubber",
+  "class-d-amp-family-pad-orientation-selection",
+  "class-d-amp-fault-latch-self-clear",
+  "class-d-amp-output-loop-star-ground",
+  "class-d-amp-powerpad-thermal-via-array",
+  "class-d-amp-pvcc-three-tier-decoupling",
+  "class-d-amp-single-gnd-two-layer-pour",
+  "dc-input-bulk-esr-damping-budget",
+  "dc-input-hotplug-ring-physics",
+  "lc-output-filter-butterworth-pairing",
+  "lc-output-filter-cap-voltage-dc-bias",
+  "lc-output-filter-constraints-emission",
+  "lc-output-filter-dcr-dissipation",
+  "lc-output-filter-ground-return-2layer",
+  "lc-output-filter-inductor-isat-and-min-l",
+  "lc-output-filter-placement-and-loop",
+  "lc-output-filter-q-tracks-load",
+  "lc-output-filter-snubber-networks"
+ ],
+ "workspace_checklists": [
+  "audio-line-in",
+  "class-d-amp",
+  "dc-input",
+  "lc-output-filter"
+ ],
+ "draft_unverified": [],
+ "mapping_applied": null,
+ "mapping_request": {
+  "schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "title": "hwde coverage mapping (agent output)",
+   "type": "object",
+   "required": [
+    "mappings"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "mappings": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "record",
+       "slot",
+       "class",
+       "why"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "record": {
+        "type": "string",
+        "minLength": 1
+       },
+       "slot": {
+        "type": "string",
+        "minLength": 1
+       },
+       "class": {
+        "type": "string",
+        "minLength": 1
+       },
+       "why": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+       }
+      }
+     }
+    },
+    "note": {
+     "type": "string",
+     "maxLength": 600
+    }
+   }
+  },
+  "instructions": "Map records to slots for ONE class each - only edges you can justify from the record's prose. You classify; you do NOT decide sufficiency, coverage or maturity. Output the JSON shape in `schema`; the coverage run validates it and refuses unknown records/slots or classes the record does not carry.",
+  "slots": [
+   {
+    "id": "block:B1",
+    "kind": "block",
+    "topology": "dc-input",
+    "operating_point": {
+     "vin_v": 12,
+     "vin_min_v": 10.8,
+     "vin_max_v": 13.2,
+     "iin_a": 4.0,
+     "cbulk_uf": 200,
+     "esr_bulk_mohm": 30,
+     "hotplug_ring_v_max": 26,
+     "vabs_max_v": 30,
+     "board_layers": 2,
+     "copper_oz": 2,
+     "source_kind": "dc-input",
+     "connector_kind": "wire-pad",
+     "protection_kind": "none",
+     "bulk_kind": "polymer-plus-electrolytic"
+    },
+    "required_classes": [
+     "inrush",
+     "selection",
+     "power-loop",
+     "esd",
+     "sourcing",
+     "constraints-emission"
+    ],
+    "unmet_classes": [
+     "inrush",
+     "selection",
+     "power-loop",
+     "esd",
+     "sourcing",
+     "constraints-emission"
+    ]
+   },
+   {
+    "id": "block:B2",
+    "kind": "block",
+    "topology": "audio-line-in",
+    "operating_point": {
+     "vin_vrms": 1.0,
+     "zin_kohm": 60,
+     "cin_uf": 2.2,
+     "f_corner_hz": 1.2,
+     "vbias_v": 3.0,
+     "board_layers": 2,
+     "input_kind": "single-ended",
+     "coupling_kind": "ac-ceramic",
+     "source_kind": "line-level"
+    },
+    "required_classes": [
+     "diff-pair",
+     "selection",
+     "return-path",
+     "emi"
+    ],
+    "unmet_classes": [
+     "diff-pair",
+     "selection",
+     "return-path",
+     "emi"
+    ]
+   },
+   {
+    "id": "block:B3",
+    "kind": "block",
+    "topology": "class-d-amp",
+    "operating_point": {
+     "vin_v": 12,
+     "vin_min_v": 10.8,
+     "vin_max_v": 13.2,
+     "iin_a": 4.0,
+     "iout_a": 3.0,
+     "pout_w_per_ch_4ohm": 15.6,
+     "pout_w_per_ch_8ohm": 8.4,
+     "rload_ohm_min": 4,
+     "rload_ohm_typ": 8,
+     "fsw_khz": 400,
+     "edge_ns": 15,
+     "gain_db": 20,
+     "pdiss_w": 1.5,
+     "pdiss_max_w": 4.2,
+     "ta_c": 40,
+     "tj_max_c": 125,
+     "rth_ja_target_cw": 56.7,
+     "rds_on_mohm": 120,
+     "channels": 2,
+     "board_layers": 2,
+     "copper_oz": 2,
+     "switching_kind": "hard",
+     "integration_kind": "integrated-fet",
+     "output_kind": "btl",
+     "modulation_kind": "bd",
+     "package_kind": "powerpad-down",
+     "cooling_kind": "natural-convection",
+     "source_kind": "dc-input",
+     "limit_kind": "none",
+     "fault_kind": "self-clearing"
+    },
+    "required_classes": [
+     "selection",
+     "thermal-via",
+     "thermal",
+     "decoupling",
+     "feedback",
+     "power-loop",
+     "return-path",
+     "emi",
+     "sequencing",
+     "constraints-emission"
+    ],
+    "unmet_classes": [
+     "selection",
+     "thermal-via",
+     "thermal",
+     "decoupling",
+     "feedback",
+     "power-loop",
+     "return-path",
+     "emi",
+     "sequencing",
+     "constraints-emission"
+    ]
+   },
+   {
+    "id": "block:B4",
+    "kind": "block",
+    "topology": "lc-output-filter",
+    "operating_point": {
+     "l_uh": 10,
+     "c_nf": 680,
+     "f0_khz": 61,
+     "fsw_khz": 400,
+     "rload_ohm_min": 4,
+     "rload_ohm_typ": 8,
+     "iout_a": 3.0,
+     "il_pk_a": 3.5,
+     "isat_min_a": 4.0,
+     "ioc_trip_a": 7.5,
+     "l_min_at_trip_uh": 1.0,
+     "dcr_mohm": 66,
+     "damping_r_ohm": 3.3,
+     "damping_c_nf": 10,
+     "inductor_body_mm": 7.3,
+     "board_layers": 2,
+     "copper_oz": 2,
+     "filter_kind": "lc-second-order",
+     "damping_kind": "zobel-rc",
+     "inductor_kind": "shielded-power",
+     "output_kind": "btl"
+    },
+    "required_classes": [
+     "selection",
+     "emi",
+     "return-path",
+     "thermal",
+     "constraints-emission"
+    ],
+    "unmet_classes": [
+     "selection",
+     "emi",
+     "return-path",
+     "thermal",
+     "constraints-emission"
+    ]
+   }
+  ],
+  "candidates": [
+   {
+    "id": "audio-line-in-2layer-switch-node-keepaway",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "audio-line-in"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Two sources combine into one 2-layer-specific rule. The amp's own layout section calls the output/filter current loop an aggressor in EMI terms (\"the size of this current loop determines its effectiveness as an antenna\", SLOS708 10.1) and t"
+   },
+   {
+    "id": "audio-line-in-analog-input-star-ground",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "return-path"
+    ],
+    "applies": {
+     "topologies": [
+      "audio-line-in"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "A low-level single-ended audio input's ground node(s) (the AC-grounded unused leg, any input-stage reference) must reference the amplifier's own quiet ground point by a dedicated trace, not the shared power-return pour. Concept (SLAA719 Fig"
+   },
+   {
+    "id": "audio-line-in-cap-corner-vs-popup-settle",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "audio-line-in"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "The same Cin that sets the bass corner (f=1/(2*pi*Zin*Cin)) also sets, with Zin, the RC time constant the coupling caps charge through at power-up. SLOS708 sec 7.3.7 recommends keeping that RC <= 1 ms \"if possible\", tied explicitly to its o"
+   },
+   {
+    "id": "audio-line-in-single-ended-unused-leg-ac-ground",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "diff-pair"
+    ],
+    "applies": {
+     "topologies": [
+      "audio-line-in"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "The amp's input stage is truly differential and cancels common-mode noise between its two input pins; a single-ended source only drives one of them. The datasheet's own single-ended recipe (SLOS708 sec 7.3.7) is: apply the source to either "
+   },
+   {
+    "id": "buck-bst-fb-output-caps",
+    "level": "family",
+    "maturity": "approved",
+    "classes": [
+     "feedback",
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "BST: integrated-FET parts need the 100 nF BST-SW cap - it is required, not optional (DS41326 s13); confirm value/rating in the family datasheet. FB TRAP (cost a near-miss once): FIXED-output family members tie FB straight to the output sens"
+   },
+   {
+    "id": "buck-cin-co-ground-separation",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Two ROHM measurements the generic hot-loop rule does not carry: (1) shortening the CBYPASS wiring EVEN BY 1 mm is worth it - the HF bypass supplies the steepest edge of the switch current, and its loop inductance sets the VIN-pin voltage no"
+   },
+   {
+    "id": "buck-constraints-emission",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "constraints-emission"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "What a buck block must emit into constraints.json for the pipeline: (1) power entries with current_a from the RAIL BUDGET (consumer sum + ~30% headroom, rounded to a design ceiling) and dt_c from ambient; (2) a thermal entry when regulator "
+   },
+   {
+    "id": "buck-en-softstart-sequencing",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "sequencing"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Check the EN pin's OWN behavior before adding parts: many parts auto-start (AP63203: internal 1.5 uA pull-up - tie to VIN or float; adding a divider is wasted parts). When EN is used as a UVLO divider, mind the two traps the sbuck run hit: "
+   },
+   {
+    "id": "buck-fb-route-rules",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "feedback"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "The feedback route needs the most attention of any signal wire - noise here becomes output-voltage error and instability. ROHM's four rules (fig 7-a): (a) the FB pin is high impedance - connect the divider network with a SHORT wire at the p"
+   },
+   {
+    "id": "buck-freewheel-diode-snubber-placement",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Async buck (free-wheel diode) placement rules: the diode must sit CLOSE and on the SAME surface as the IC terminals, wired short and wide, connected directly to the IC's GND and SW terminals - distance adds wiring inductance whose spike noi"
+   },
+   {
+    "id": "buck-inductor-copper-and-gnd-void",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Inductor region rules (ROHM s5): place L close to the IC but NOT as close as the input cap; do NOT expand the SW/inductor copper beyond what current needs - enlarged copper works as an antenna (EMI), even though instinct says more copper = "
+   },
+   {
+    "id": "buck-inductor-selection",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "The three inductor rules every run re-derived from scratch. L VALUE: start from the vendor's recommended-components table row for your Vout; the next STANDARD value up is usually right - light-load efficiency improves with larger L (DS41326"
+   },
+   {
+    "id": "buck-input-hot-loop",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Layout rule #1 for every buck: the input cap carries the DISCONTINUOUS switch current. C_IN plus a 100 nF HF bypass AT the VIN pin, on the SAME layer as the IC; the C_IN -> VIN -> GND -> C_IN loop must be the shortest loop on the board; SW-"
+   },
+   {
+    "id": "buck-power-ground-isolation",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "return-path",
+     "power-loop"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Ground strategy (ROHM s8): analog small-signal ground and power ground must be ISOLATED, and power ground laid on the TOP layer without splitting is the ideal - dropping an isolated power ground to the bottom layer through vias adds via R a"
+   },
+   {
+    "id": "buck-selection-ladder",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Regulator-type ladder, one line of tradeoff each; if the brief names a part the named part stands (record the alternative as an override option). (1) Integrated synchronous buck is the DEFAULT at <= ~60 V input and <= ~3 A: no catch diode, "
+   },
+   {
+    "id": "buck-switch-node-containment",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Keep SW copper as small as electrically possible and treat SW + L as an AGGRESSOR: lumina-par's 2.4 GHz antenna 11 mm from a switch node drove a 4-layer stackup + containment plan; usb-buck keeps the USB pair away from SW/L per ST AN4879 3."
+   },
+   {
+    "id": "buck-thermal-via-and-via-current",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "thermal-via"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [
+      "HTSOP-J8",
+      "SO-8-EP",
+      "SO-8EP"
+     ],
+     "interfaces": []
+    },
+    "prose_head": "Thermal vias under an exposed-pad regulator (ROHM s4, HTSOP-J8 numbers generalize to EP packages): small drill - 0.3 mm inner diameter - so the via can FILL with solder; larger drills suck solder away from the joint at reflow (solder-wickin"
+   },
+   {
+    "id": "buck-upstream-inrush-limit",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "inrush",
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "interfaces": [
+      "usb",
+      "usb-pd",
+      "poe"
+     ],
+     "packages": []
+    },
+    "prose_head": "Upstream bulk limit trap: a buck's input capacitance is bounded by the SOURCE, not by the buck. USB 2.0 allows 10 uF || 44 ohm at attach (spec s7.2.4.1); a USB-PD sink is allowed 100 uF under contract (cSnkBulkPd); PoE has its own inrush en"
+   },
+   {
+    "id": "class-d-amp-2layer-pour-heat-spreader",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "thermal"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [
+      "HTSSOP-32-DAP"
+     ],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "On a 2-layer board the copper pour IS the heatsink for a pad-down class-D amp: fill the top layer with GND around the IC with wide open areas and no traces cutting the GND under/around the package, fill the bottom layer with GND, and stitch"
+   },
+   {
+    "id": "class-d-amp-bootstrap-cap-per-output",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "feedback",
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "An integrated class-D bridge with NMOS high-side FETs needs one bootstrap capacitor per output, connected from the BSxx pin to ITS OWN OUTxx pin and never shared or returned elsewhere. SLOS708 p16 (7.3.6): the full H-bridge uses only NMOS t"
+   },
+   {
+    "id": "class-d-amp-constraints-emission",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "constraints-emission"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "What a class-D amp block must emit into constraints.json so P6/P7 and the checkers can act on it: (1) a power entry for the PVCC rail sized to the clipping worst case at Vin max (SLOS708 p27: output power is set by rail and load, so the inp"
+   },
+   {
+    "id": "class-d-amp-emi-filter-and-snubber",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "EMI on a class-D output is handled at two places, both grounded at the IC star point. (1) Output filter: SLOS708 p28 (10.1): a ferrite bead filter placed as close to the output terminals as possible, or an LC filter placed close to the outp"
+   },
+   {
+    "id": "class-d-amp-family-pad-orientation-selection",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "selection",
+     "thermal"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [
+      "HTSSOP-32-DAP",
+      "HTSSOP-32-DAD"
+     ],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "Selecting inside a class-D family: the PowerPAD orientation decides the cooling path before the wattage does. SLOS708 p1: three parts share one footprint - TPA3130D2 (2 x 15 W/8 ohm at 15 V), TPA3118D2 (2 x 30 W/8 ohm at 24 V) and TPA3116D2"
+   },
+   {
+    "id": "class-d-amp-fault-latch-self-clear",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "sequencing"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "Thermal and short-circuit faults on the TPA31xxD2 latch. p18 (7.3.11): the die trips at 150 C +/-15 C, enters shutdown with outputs disabled, and stays there ('this is a latched fault'); the fault is reported on FAULTZ as a low. To recover "
+   },
+   {
+    "id": "class-d-amp-output-loop-star-ground",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "power-loop",
+     "return-path"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Principle for any switching audio output stage: the loop from each output pin through its filter (ferrite or LC) and the small filter cap back to GND is the board's antenna, so its area sets the EMI; make it as small and tight as possible, "
+   },
+   {
+    "id": "class-d-amp-powerpad-thermal-via-array",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "thermal-via"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [
+      "HTSSOP-32-DAP",
+      "PowerPAD-down"
+     ],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "A pad-down PowerPAD class-D amp is cooled through a plated via array under the exposed pad into the far-side copper. Rule: solder-mask-defined pad sized to the datasheet's maximum exposed-pad dimension; drill 0.33 mm (13 mil) or smaller, 1 "
+   },
+   {
+    "id": "class-d-amp-pvcc-three-tier-decoupling",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Each PVCC pin group of a class-D output stage gets three tiers of capacitance, and there is one group per bridge at opposite ends of the package. SLOS708 p28 (10.1): a small low-ESR ceramic 220 pF-1 nF plus a mid-frequency 100 nF-1 uF at th"
+   },
+   {
+    "id": "class-d-amp-single-gnd-two-layer-pour",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "return-path"
+    ],
+    "applies": {
+     "topologies": [
+      "class-d-amp"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "The TPA31xxD2 has no analog ground pin: p4 lists GND at pins 9, 22, 25, 28 and the PowerPAD (pin 33) to GND; AVCC (17) is the analog supply. On 2 layers the return is ONE net: pad + GND pins are the star point (p28 10.1), top filled with GN"
+   },
+   {
+    "id": "cot-ripple-injection-raises-vout",
+    "level": "family",
+    "maturity": "approved",
+    "classes": [
+     "feedback"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "A constant-on-time regulator ends its off-time when FB falls back through VREF, so it regulates the VALLEY of FB, not its average. With Type 3 injection the ramp is AC-coupled into FB and its mean is genuinely zero, so FB_dc = VREF + Vramp/"
+   },
+   {
+    "id": "dc-input-bulk-esr-damping-budget",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "inrush",
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "dc-input"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Applying the dc-input hot-plug principle here (10.8-13.2 V, 200 uF total bulk = 100 uF polymer + 100 uF electrolytic, no TVS, hotplug_ring_v_max 26 V vs vabs_max_v 30 V): 26 V is essentially SLUAAL8's undamped 2x-Vin estimate (2*13.2=26.4 V"
+   },
+   {
+    "id": "dc-input-hotplug-ring-physics",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "inrush"
+    ],
+    "applies": {
+     "topologies": [
+      "dc-input"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "A bare dc-input (bench supply, adapter, or battery on wire leads, no upstream regulator, no attach-capacitance contract the way USB/PD/PoE give one) hands the board an unmanaged voltage step into whatever capacitance sits at the input. Lead"
+   },
+   {
+    "id": "lc-output-filter-butterworth-pairing",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Pick L and C from the single-ended equivalent, targeting Butterworth Q = 1/sqrt(2) at the DESIGN load. For a cap-to-ground (Type-2) BTL filter the SE circuit is L in series, C = C_g to ground, R_L = R_BTL/2 (Fig 1-14, p13); for a differenti"
+   },
+   {
+    "id": "lc-output-filter-cap-voltage-dc-bias",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "The filter cap of a single-supply class-D stage sits at PVDD/2 DC with the audio swing on top, and on the switching edges sees the pulse plus its overshoot (Fig on p32: DC, DC+AC, AC and pulse+overshoot panels); the rated voltage must cover"
+   },
+   {
+    "id": "lc-output-filter-constraints-emission",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "constraints-emission"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "What the block must write into constraints.json so P6 can enforce the layout rules the sources state in prose. From the datasheet's layout guidelines (p28) and example (p29-30): a proximity entry per output inductor and per filter cap to it"
+   },
+   {
+    "id": "lc-output-filter-dcr-dissipation",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "thermal"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "DCR is a real dissipation line: P = I_out^2 x DCR (eq 14, p24), and \"for a BTL amplifier ... there are two inductors in series with the load, so the DCR power loss for a single BTL channel is 2x the loss of just one inductor\". Fig 1-27 (p24"
+   },
+   {
+    "id": "lc-output-filter-ground-return-2layer",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "return-path"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "The filter caps and snubbers return switching current, so where their GND goes is a return-path decision. The datasheet makes the IC GND the star: \"All ground should be connected at the IC GND ... star ground\" (10.1, p28), with PVCC decoupl"
+   },
+   {
+    "id": "lc-output-filter-inductor-isat-and-min-l",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Three current checks on the filter inductor. (1) Peak current is the audio peak into the lowest load plus the switching ripple; at idle the ripple peak is PVDD/(8 L fpwm) (eq 12, p22, from Fig 1-25's triangle at 50 % duty), which is 0.38 A "
+   },
+   {
+    "id": "lc-output-filter-placement-and-loop",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "The switching edges are fast, so the current loop from each output pin through the inductor and the filter cap back to GND is the radiator: \"the size of this current loop determines its effectiveness as an antenna\" (10.1, p28). Place the LC"
+   },
+   {
+    "id": "lc-output-filter-q-tracks-load",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "A fixed L/C is critically damped at one load only. Q = R_L sqrt(C/L) (eq 7, p11) rises linearly with R_L, so the check is at the highest impedance the board must drive, and the 20 kHz peaking must stay small there. For 10 uH + 0.68 uF to gr"
+   },
+   {
+    "id": "lc-output-filter-snubber-networks",
+    "level": "family",
+    "maturity": "verified",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "lc-output-filter"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": [
+      "TPA3116D2",
+      "TPA3118D2",
+      "TPA3130D2"
+     ]
+    },
+    "prose_head": "The TPA31xxD2 family carries two distinct RC networks per output and a third option. (1) At the switch node: \"adding snubber networks from each of the class-D outputs to ground ... 18 ohm in series with a 330 pF capacitor\", application-spec"
+   },
+   {
+    "id": "spiral-inductor-plane-and-heatsink-keepout",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi",
+     "thermal"
+    ],
+    "applies": {
+     "topologies": [
+      "class-e"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "An etched PCB spiral (air-core inductor, coupled pair, antenna) is destroyed by solid metal parallel to it: a ground plane under the winding is a shorted turn and collapses Q, and so is a bottom-side metal heatsink. Two independently-correc"
+   }
+  ]
+ }
+}

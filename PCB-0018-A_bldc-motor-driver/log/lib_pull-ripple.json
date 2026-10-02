@@ -1,0 +1,74 @@
+{
+ "script": "lib_pull",
+ "status": "pass",
+ "lib_name": "aiee",
+ "parts_file": null,
+ "paced_s": 0.0,
+ "retried": 0,
+ "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+ "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+ "results": [
+  {
+   "lcsc": "C25803",
+   "status": "pulled",
+   "symbol": "0603WAF1003T5E",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "R0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/R0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "lcsc": "C1588",
+   "status": "pulled",
+   "symbol": "CL10B102KB8NNNC",
+   "symbol_verified": true,
+   "footprint_verified": true,
+   "symbol_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.kicad_sym",
+   "footprint_lib": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty",
+   "footprints": [
+    {
+     "name": "C0603",
+     "file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/C0603.kicad_mod",
+     "copper_pads": 2,
+     "courtyard": true,
+     "silk": true
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "symbol_dedup": {
+  "removed": 0,
+  "names": []
+ },
+ "registered": {
+  "fp": "present",
+  "sym": "present"
+ },
+ "autofix": {
+  "footprints": 2,
+  "changed": 0,
+  "actions": 0,
+  "residue": 0,
+  "results": []
+ },
+ "refdes_norm": {
+  "footprints": 28,
+  "changed": 0,
+  "unchanged": 28,
+  "skipped": 0,
+  "results": []
+ },
+ "load_check": null,
+ "drc_check": null
+}

@@ -1,0 +1,63 @@
+id: class-d-amp-pvcc-three-tier-decoupling
+classes:
+- decoupling
+applies:
+  topologies:
+  - class-d-amp
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  hf_cap_pf_min: 220
+  hf_cap_nf_max: 1
+  mid_cap_nf_min: 100
+  mid_cap_uf_max: 1
+  bulk_uf_min: 100
+  placement: per PVCC group at each end of the package, into IC GND pad
+prose: 'Each PVCC pin group of a class-D output stage gets three tiers of capacitance, and there is one
+  group per bridge at opposite ends of the package. SLOS708 p28 (10.1): a small low-ESR ceramic 220 pF-1
+  nF plus a mid-frequency 100 nF-1 uF at the PVCC connections at EACH end of the chip, placed as close
+  to the PVCC pins as possible and connected to the IC GND pad directly; a 100 uF or greater bulk cap
+  near the IC on the PVCC supply; decoupling at AVCC too. p27 (8.2.2.3/4): two 100 uF 50 V bulk caps,
+  one at each side of the device, low ESR because it is a high-speed switching application; decoupling
+  X5R or better, rated for temperature, ripple and overshoot, near PVCC and GND to minimise series inductance.
+  p26 Fig 37 schematic draws each ''PVCC DECOUPLING'' box as 1 nF + 100 nF + 220 uF: C20/C21/C22 at pins
+  31/32 and C23/C24/C25 at pins 18/19; AVCC pin 17 is tied to the pin 18/19 node and shares C23-C25 (no
+  separate AVCC cap), and at the PVCC input C57 10 nF to GND plus C58 100 nF in series with R10 3.3 ohm
+  across PVCC. SLOU342A p10 BOM: C9/C20 1000 pF COG, C8/C19 0.1 uF, C7/C18 220 uF 35 V electrolytic (EVM,
+  same pattern); p7 Fig 4 shows the small caps hugging the right-hand pin row of U1 with the electrolytics
+  just outboard. Why: the output bridges draw discontinuous current at fsw and its harmonics; the small
+  caps carry the edge current with a short loop into the pad, the mid cap the fsw ripple, the bulk the
+  audio-rate envelope.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 28
+  note: '10.1 Layout Guidelines bullets: 220 pF-1 nF + 100 nF-1 uF at each end of chip, to IC GND pad
+    directly, bulk >= 100 uF near device'
+- file: research/sources/tpa3116d2.pdf
+  page: 27
+  note: 8.2.2.3 two 100 uF 50 V bulk, one each side, low ESR; 8.2.2.4 X5R+ decoupling near PVCC and GND
+- file: research/sources/tpa3116d2.pdf
+  page: 26
+  note: 'Fig 37: C20-C22 at pins 31/32, C23-C25 at 18/19 (1 nF + 100 nF + 220 uF); AVCC 17 on the 18/19
+    node sharing C23-C25; C57 10 nF and C58 100 nF + R10 3.3R across PVCC input'
+- file: research/sources/slou342a.pdf
+  page: 10
+  note: 'Table 2 BOM: C9/C20 1000 pF, C8/C19 0.1 uF, C7/C18 220 uF 35 V per PVCC group'
+- file: research/sources/slou342a.pdf
+  page: 7
+  note: 'Fig 4 top layout: decoupling caps against the PVCC pin row, electrolytics adjacent'
+status: active
+origin: research:block-class-d-amp-1
+level: topology
+maturity: verified
+generalizes: []
+envelope:
+  vin_v:
+    min: 4.5
+    max: 26
+envelope_note: 'Scales with the PVCC rail: the cap values and 50 V rating are stated for the family''s
+  4.5-26 V range; above that the ratings and the bulk sizing change, below it nothing here is limiting.
+  Cap placement (one group per bridge, into the pad) does not scale.'
+verification: {by: "research-second-reader", date: "2026-09-27", note: "Pass 2: p26 Fig 37 re-read at 500 dpi - AVCC pin 17 joins the 18/19 node and shares C23/C24/C25; C57 10 nF PVCC-GND at the input; C58 100 nF in series with R10 3.3R across PVCC. Note and prose now match."}

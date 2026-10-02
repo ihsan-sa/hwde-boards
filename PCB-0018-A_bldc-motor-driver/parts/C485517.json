@@ -1,0 +1,46 @@
+{
+  "mpn": "TLV75733PDBVR",
+  "lcsc": "C485517",
+  "package": "DBV0005A, SOT-23-5, 1.45mm max height",
+  "description": "TLV757P 1A, low-IQ, low-dropout LDO, fixed 3.3V output, active output discharge",
+  "pinout": [
+    {"pin": "1", "name": "IN", "type": "power_in", "notes": "Input pin. A capacitor with a value of 1uF or larger is required from this pin to ground."},
+    {"pin": "2", "name": "GND", "type": "ground", "notes": "Ground pin."},
+    {"pin": "3", "name": "EN", "type": "input", "notes": "Enable pin. Drive EN greater than VHI to turn on the regulator; drive below VLO for shutdown."},
+    {"pin": "4", "name": "NC", "type": "nc", "notes": "No internal connection (DBV package)."},
+    {"pin": "5", "name": "OUT", "type": "power_out", "notes": "Regulated output voltage pin (3.3V fixed). A capacitor with a value of 1uF or larger is required from this pin to ground."}
+  ],
+  "decoupling": [
+    {"pins": ["IN"], "value": "1uF or larger (nominal >=0.47uF effective after derating)", "placement": "as close as possible to the device", "notes": "Datasheet: nominal input/output capacitance derating is 50%; effective capacitance at the pin must be greater than 0.47uF."},
+    {"pins": ["OUT"], "value": "1uF to 200uF", "placement": "as close as possible to the device", "notes": "Recommended operating condition range for COUT; same 0.47uF effective-capacitance floor after derating applies."}
+  ],
+  "land_pattern": {
+    "package": "DBV0005A SOT-23-5",
+    "pad_count": 5,
+    "pitch_mm": 0.95,
+    "pad_size_mm": [1.1, 0.6],
+    "row_spacing_mm": 2.6,
+    "pin1": "1",
+    "notes": "From TI DBV0005A example board layout, 4214839/K 08/2024 (same package drawing as TPS61040 DBV land pattern)."
+  },
+  "exposed_pad": {
+    "present": false
+  },
+  "layout_notes": [
+    "Place input and output capacitors as close as possible to the device.",
+    "Use copper planes for device connections to optimize thermal performance.",
+    "Place thermal vias around the device to distribute heat.",
+    "DBV package has no thermal pad (NC on pin 4); the thermal-pad soldering guidance applies only to the DYD/DRV package variants, not this DBV part.",
+    "Datasheet layout example (Figure 7-7, DBV package): VIN and CIN on one side, VOUT and COUT on the other, EN routed to pin 3, with a ground plane underneath and vias for application-specific connections."
+  ],
+  "abs_max": [
+    {"param": "Supply voltage VIN", "value": "-0.3 to 6.0", "unit": "V"},
+    {"param": "Enable voltage VEN", "value": "-0.3 to 6.0", "unit": "V"},
+    {"param": "Output voltage VOUT", "value": "-0.3 to VIN+0.3 (or 6.0, whichever smaller)", "unit": "V"},
+    {"param": "Operating junction temperature TJ", "value": "-40 to 150", "unit": "C"},
+    {"param": "Storage temperature Tstg", "value": "-65 to 150", "unit": "C"},
+    {"param": "ESD HBM", "value": 1000, "unit": "V"},
+    {"param": "ESD CDM", "value": 500, "unit": "V"}
+  ],
+  "source_pdf": "parts/C485517.pdf"
+}

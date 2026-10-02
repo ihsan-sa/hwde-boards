@@ -1,0 +1,291 @@
+{
+ "script": "silk_place",
+ "status": "pass",
+ "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "targets": 44,
+ "moved": 44,
+ "residual": [],
+ "skipped": [],
+ "min_silk_clearance": 0.0,
+ "median_beyond_extent_mm_before": 0.478,
+ "median_beyond_extent_mm": 0.85,
+ "ops_out": "kicad/silk_ops.json",
+ "results": [
+  {
+   "ref": "U1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.2004
+  },
+  {
+   "ref": "L3",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.9322
+  },
+  {
+   "ref": "L1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.9322
+  },
+  {
+   "ref": "L2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.9322
+  },
+  {
+   "ref": "C15",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "L4",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.9322
+  },
+  {
+   "ref": "C1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.6
+  },
+  {
+   "ref": "C17",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "C4",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.6
+  },
+  {
+   "ref": "C7",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "C11",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.1
+  },
+  {
+   "ref": "C16",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 3.35
+  },
+  {
+   "ref": "C18",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.35
+  },
+  {
+   "ref": "C21",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "C5",
+   "moved": true,
+   "clearance_mm": 0.25,
+   "beyond_extent_mm": 3.1634
+  },
+  {
+   "ref": "C9",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "R1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 3.1
+  },
+  {
+   "ref": "C10",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "C12",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.1
+  },
+  {
+   "ref": "C2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.7239
+  },
+  {
+   "ref": "C3",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "C6",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "C8",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.433
+  },
+  {
+   "ref": "J1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "C13",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "C14",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "C19",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "C22",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "C23",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "C26",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.1355
+  },
+  {
+   "ref": "R2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "R3",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "R7",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "C25",
+   "moved": true,
+   "clearance_mm": 0.203,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "R4",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.7365
+  },
+  {
+   "ref": "R5",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.7365
+  },
+  {
+   "ref": "R6",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "C24",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.1
+  },
+  {
+   "ref": "J2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "D1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.3689
+  },
+  {
+   "ref": "J3",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.7
+  },
+  {
+   "ref": "C20",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "J4",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "TP1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.45
+  }
+ ],
+ "applied": true,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T08:17:54+00:00",
+ "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:53544cd34d146471eb25f1122b9fbcfa1263554c03bbe472ccb916979be22eb9"
+}

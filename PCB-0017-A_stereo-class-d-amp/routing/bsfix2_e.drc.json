@@ -1,0 +1,131 @@
+{
+  "script": "kc",
+  "tool": "drc",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "units": "mm",
+  "kicad_version": "10.0.6",
+  "options": {
+    "parity": true,
+    "all_track_errors": true,
+    "refill": true,
+    "save_board": true
+  },
+  "counts": {
+    "total": 3,
+    "by_severity": {
+      "warning": 3
+    },
+    "by_source": {
+      "drc": 3
+    }
+  },
+  "status": "violations",
+  "violations": [
+    {
+      "check": "silk_overlap",
+      "severity": "warning",
+      "pos": [
+        26.5,
+        33.95
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C7",
+        "C9"
+      ],
+      "msg": "Silkscreen clearance",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C7",
+          "pos": [
+            26.5,
+            33.95
+          ],
+          "uuid": "31345a73-7f4d-4b27-afd9-c01617eb86e2"
+        },
+        {
+          "msg": "Reference field of C9",
+          "pos": [
+            26.15,
+            35.4
+          ],
+          "uuid": "736fe727-aee6-41bd-ac40-33d3d9e65395"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        28.075,
+        36.2
+      ],
+      "layer": "F.Cu",
+      "net": "+12V",
+      "refs": [
+        "C6",
+        "C9"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C6",
+          "pos": [
+            28.075,
+            36.2
+          ],
+          "uuid": "a7849fe5-7070-4724-8c4a-7b43a8896bc1"
+        },
+        {
+          "msg": "Pad 1 [+12V] of C9 on F.Cu",
+          "pos": [
+            27.15,
+            35.4
+          ],
+          "uuid": "3f9956b9-ef84-4c43-9a36-e985337181ff"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        28.075,
+        36.2
+      ],
+      "layer": "F.Cu",
+      "net": "GND",
+      "refs": [
+        "C6",
+        "C9"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C6",
+          "pos": [
+            28.075,
+            36.2
+          ],
+          "uuid": "a7849fe5-7070-4724-8c4a-7b43a8896bc1"
+        },
+        {
+          "msg": "Pad 2 [GND] of C9 on F.Cu",
+          "pos": [
+            28.55,
+            35.4
+          ],
+          "uuid": "6dd7d0c4-6a01-47d2-b77f-4b9aecbcdae1"
+        }
+      ]
+    }
+  ],
+  "report_schema": 1,
+  "checker_version": 1,
+  "generated_at": "2026-09-27T12:54:09+00:00",
+  "input_digest": "sexpr_no_uuid:a95bc6db70454fb55e71dd9fa854eb216f01949d6b198071caeaf607ea566c4f"
+}

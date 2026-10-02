@@ -1,0 +1,526 @@
+{
+ "script": "route_auto",
+ "status": "violations",
+ "board": "PCB-0017-A_astra-amp/kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "counts": {
+  "total": 16,
+  "by_severity": {
+   "error": 16
+  },
+  "by_source": {
+   "drc": 11,
+   "unconnected": 5
+  }
+ },
+ "violations": [
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    29.9,
+    35.1088
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_12V' min width 0.8820 mm; actual 0.7998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+12V] on F.Cu, length 0.0896 mm",
+     "pos": [
+      29.9,
+      35.1088
+     ],
+     "uuid": "09a392f4-839f-4704-a87c-2ab8652883a5"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    31.5,
+    34.6
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_12V' min width 0.8820 mm; actual 0.7998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+12V] on F.Cu, length 1.0016 mm",
+     "pos": [
+      31.5,
+      34.6
+     ],
+     "uuid": "44d3db22-e19b-40a7-b671-e0783947f8db"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    29.72,
+    31.23
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_12V' min width 0.8820 mm; actual 0.3428 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+12V] on F.Cu, length 0.6500 mm",
+     "pos": [
+      29.72,
+      31.23
+     ],
+     "uuid": "8525ff3e-5dc6-43e4-bd19-d65ca93eef80"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    29.9896,
+    35.1088
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_12V' min width 0.8820 mm; actual 0.7998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+12V] on F.Cu, length 0.7196 mm",
+     "pos": [
+      29.9896,
+      35.1088
+     ],
+     "uuid": "86a4620e-568a-4de3-9eb1-09f8a34204a4"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    29.72,
+    22.77
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_12V' min width 0.8820 mm; actual 0.3428 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+12V] on F.Cu, length 0.6500 mm",
+     "pos": [
+      29.72,
+      22.77
+     ],
+     "uuid": "fedd5312-17a6-4918-a472-cea5e1041423"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    28.4296,
+    24.0182
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPR",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_OUTPR' min width 0.6240 mm; actual 0.3428 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [/OUTPR] on F.Cu, length 0.0733 mm",
+     "pos": [
+      28.4296,
+      24.0182
+     ],
+     "uuid": "64aae95b-f87e-4e82-924c-9035d3daf558"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    29.72,
+    24.07
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPR",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_OUTPR' min width 0.6240 mm; actual 0.3428 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [/OUTPR] on F.Cu, length 1.2386 mm",
+     "pos": [
+      29.72,
+      24.07
+     ],
+     "uuid": "652907f1-69fd-48d1-bd47-a8364e2a31c3"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    27.8859,
+    24.0182
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPR",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_OUTPR' min width 0.6240 mm; actual 0.3428 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [/OUTPR] on F.Cu, length 0.5437 mm",
+     "pos": [
+      27.8859,
+      24.0182
+     ],
+     "uuid": "7f099fc2-e6fc-48ec-b805-7af64aae836e"
+    }
+   ]
+  },
+  {
+   "check": "copper_edge_clearance",
+   "severity": "error",
+   "pos": [
+    9.1,
+    8.298999
+   ],
+   "layer": "Edge.Cuts",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Board edge clearance violation (rule 'aiee_edge_clearance_floor' clearance 0.3000 mm; actual 0.2655 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Rectangle on Edge.Cuts",
+     "pos": [
+      9.1,
+      8.298999
+     ],
+     "uuid": "270a16f2-1b0c-4357-bf30-a3a684290d3d"
+    },
+    {
+     "msg": "Track [+12V] on F.Cu, length 7.4473 mm",
+     "pos": [
+      9.8065,
+      29.7316
+     ],
+     "uuid": "06c8231c-4f2b-46d7-94bd-4558df691494"
+    }
+   ]
+  },
+  {
+   "check": "copper_edge_clearance",
+   "severity": "error",
+   "pos": [
+    9.1,
+    8.298999
+   ],
+   "layer": "Edge.Cuts",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Board edge clearance violation (rule 'aiee_edge_clearance_floor' clearance 0.3000 mm; actual 0.2655 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Rectangle on Edge.Cuts",
+     "pos": [
+      9.1,
+      8.298999
+     ],
+     "uuid": "270a16f2-1b0c-4357-bf30-a3a684290d3d"
+    },
+    {
+     "msg": "Track [+12V] on F.Cu, length 4.2493 mm",
+     "pos": [
+      12.8112,
+      32.7363
+     ],
+     "uuid": "5e665b38-2e76-4cf8-b5f4-8f2557f5b030"
+    }
+   ]
+  },
+  {
+   "check": "copper_edge_clearance",
+   "severity": "error",
+   "pos": [
+    9.1,
+    8.298999
+   ],
+   "layer": "Edge.Cuts",
+   "net": "+12V",
+   "refs": [],
+   "msg": "Board edge clearance violation (rule 'aiee_edge_clearance_floor' clearance 0.3000 mm; actual 0.2655 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Rectangle on Edge.Cuts",
+     "pos": [
+      9.1,
+      8.298999
+     ],
+     "uuid": "270a16f2-1b0c-4357-bf30-a3a684290d3d"
+    },
+    {
+     "msg": "Track [+12V] on F.Cu, length 0.8514 mm",
+     "pos": [
+      9.8065,
+      22.2843
+     ],
+     "uuid": "aebbdb61-84c7-44df-87f8-39d711cc4799"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    34.4,
+    29.5
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTNL",
+   "refs": [
+    "U1"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [/OUTNL] on F.Cu, length 1.1887 mm",
+     "pos": [
+      34.4,
+      29.5
+     ],
+     "uuid": "58ec09ef-2eaa-4737-bbf8-e4336e69583c"
+    },
+    {
+     "msg": "Pad 21 [/OUTNL] of U1 on F.Cu",
+     "pos": [
+      29.72,
+      29.28
+     ],
+     "uuid": "2f805ab3-0b05-4423-83bc-38459ac91047"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    32.2,
+    29.6
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPL",
+   "refs": [
+    "C16",
+    "U1"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Pad 2 [/OUTPL] of C16 on F.Cu",
+     "pos": [
+      32.2,
+      29.6
+     ],
+     "uuid": "0805182d-c972-4ff2-b5de-683fc213589e"
+    },
+    {
+     "msg": "Pad 23 [/OUTPL] of U1 on F.Cu",
+     "pos": [
+      29.72,
+      27.98
+     ],
+     "uuid": "3f30c18e-b5f4-4e90-ab73-6b6893687ef0"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    37.42,
+    33.6
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPL",
+   "refs": [
+    "C16",
+    "L1"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Pad 1 [/OUTPL] of L1 on F.Cu",
+     "pos": [
+      37.42,
+      33.6
+     ],
+     "uuid": "c67d4512-1d70-4859-9e4e-7daf872223cd"
+    },
+    {
+     "msg": "Pad 2 [/OUTPL] of C16 on F.Cu",
+     "pos": [
+      32.2,
+      29.6
+     ],
+     "uuid": "0805182d-c972-4ff2-b5de-683fc213589e"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    29.72,
+    25.37
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTNR",
+   "refs": [
+    "U1"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Pad 27 [/OUTNR] of U1 on F.Cu",
+     "pos": [
+      29.72,
+      25.37
+     ],
+     "uuid": "b9385b32-e149-4d24-bb6f-9db6d8eeb0c8"
+    },
+    {
+     "msg": "Track [/OUTNR] on F.Cu, length 1.1887 mm",
+     "pos": [
+      34.2,
+      25.5
+     ],
+     "uuid": "2c9ef5dc-e63d-4d25-a041-d5f4467df65b"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    29.72,
+    24.07
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPR",
+   "refs": [
+    "C18"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [/OUTPR] on F.Cu, length 1.2386 mm",
+     "pos": [
+      29.72,
+      24.07
+     ],
+     "uuid": "652907f1-69fd-48d1-bd47-a8364e2a31c3"
+    },
+    {
+     "msg": "Pad 2 [/OUTPR] of C18 on F.Cu",
+     "pos": [
+      32.2,
+      25.4
+     ],
+     "uuid": "305d15e4-8abe-495e-a27b-2bc81ee40214"
+    }
+   ]
+  }
+ ],
+ "facts": {
+  "completion": 0.8571,
+  "routable_nets": 28,
+  "unrouted_nets": [
+   "/OUTNL",
+   "/OUTNR",
+   "/OUTPL",
+   "/OUTPR"
+  ],
+  "tracks_before": 0,
+  "tracks_after": 170,
+  "ses_items_added": 172,
+  "best_rung": 1,
+  "rungs": [
+   {
+    "rung": 1,
+    "options": {
+     "mp": 20
+    },
+    "unrouted": 5,
+    "started_unrouted": 56,
+    "final_score": 976.18,
+    "passes": 18,
+    "timed_out": false,
+    "ses_written": true
+   }
+  ],
+  "fr_completion": 0.9107142857142857,
+  "power_layers": [],
+  "krt_finish": null,
+  "ses_echo_dups_removed": 0,
+  "work_dir": "PCB-0017-A_astra-amp/route",
+  "placement_adjust_request": {
+   "request": "placement_adjust",
+   "nets": [
+    "/OUTNL",
+    "/OUTNR",
+    "/OUTPL",
+    "/OUTPR"
+   ],
+   "refs": [
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "U1"
+   ],
+   "region": [
+    29.72,
+    22.4,
+    47.02,
+    33.6
+   ],
+   "reason": "unrouted after 1 freerouting rungs",
+   "suggestions": [
+    "spread the named clusters apart / off the congested region",
+    "clear a ~3 mm escape ring around the anchor IC",
+    "consider more board area or more layers if congestion persists"
+   ]
+  }
+ }
+}

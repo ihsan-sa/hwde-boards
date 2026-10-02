@@ -1,0 +1,85 @@
+id: dc-input-bulk-esr-damping-budget
+classes: [inrush, selection]
+applies:
+  topologies: [dc-input]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  headroom_check: "hotplug_ring_v_max 26 V vs vabs_max_v 30 V = 1.15x margin only; 2*Vin_max (13.2 V) = 26.4 V, i.e. the declared ring ceiling already sits at the SLUAAL8 zero-series-R (fully undamped) estimate, not a damped one"
+  esr_sizing_method: "class-D bulk cap ESR floor from ripple: I_peak = sqrt(P_peak/RL), ESR <= V_ripple/I_peak for the same ripple the capacitance alone gives at ESR=0, then derate 30-50% below that for temperature/ESL/aging margin (SLYT199 eq 2-4 + derating note)"
+  two_esr_duties_conflict: "ripple/distortion duty wants bulk ESR LOW (derated per SLYT199); hot-plug damping wants total series R (lead + cap ESR) HIGH enough to beat 2*sqrt(L_lead/C_bulk) (SLUAAL8 eq 4) - the same node cannot satisfy both with one low-ESR cap alone"
+  esr_verification: "do not size the damping side off a datasheet ESR max - SSZTDA5 measured real electrolytic ESR well below published max; verify or add explicit series R"
+  fallback: "if the electrolytic's real ESR cannot be confirmed against the damping criterion, fit a small dedicated RC snubber (SLUAAL8 Fig 3-1 style: few ohms anti-surge + few uF) rather than assume the bulk bank damps itself"
+prose: >
+  Applying the dc-input hot-plug principle here (10.8-13.2 V, 200 uF total
+  bulk = 100 uF polymer + 100 uF electrolytic, no TVS, hotplug_ring_v_max
+  26 V vs vabs_max_v 30 V): 26 V is essentially SLUAAL8's undamped
+  2x-Vin estimate (2*13.2=26.4 V) - the op point already assumes NO
+  damping, matching SSZTDA5's finding that real electrolytic ESR is
+  usually below datasheet max, so treating the 200 uF bank as self-damping
+  is optimistic. Margin to 30 V abs-max is only 1.15x, tighter than TI's
+  own plotted cases (~1.5-1.6x Vi off a damped 0.15-0.21 ohm lead).
+  Splitting 200 uF into low-ESR polymer (<=30 mOhm) plus higher-ESR
+  electrolytic is the right shape - the polymer serves SLYT199's
+  ripple/distortion duty (ESR sized low, then derated 30-50% below the
+  ripple ceiling, eq 2-4), the electrolytic is meant to serve hot-plug
+  damping - but the two duties pull ESR opposite ways, so only the
+  electrolytic side may run higher. Given the tight 1.15x margin and
+  SSZTDA5's caution that assumed electrolytic ESR underdelivers, do not
+  accept the electrolytic's damping on datasheet-ESR faith alone: confirm
+  it against R_lead+R_cap > 2*sqrt(L_lead/C_bulk) for the actual lead
+  length, or add a small dedicated series-R snubber as the SLUAAL8
+  fallback when the cap side "cannot have a large series resistance". A
+  snap-back TVS, if ever added, is never appropriate: it collapses below
+  the rail and discharges the bulk bank back through it.
+sources:
+  - file: research/sources/sluaal8.pdf
+    page: 2
+    section: "2 Root Cause, eq 1-3, Fig 2-1"
+    note: "RLC hot-plug model and the Vi*(1-cos wt), 2x-peak zero-R reduction used for the 26.4 V headroom check against this board's 13.2 V max"
+  - file: research/sources/sluaal8.pdf
+    page: 4
+    section: "3 RC Snubber, eq 4"
+    note: "damping criterion R_lead+R_cap > 2*sqrt(L_lead/C_in) and the recommendation to snub with a small separate RC branch rather than rely on the pin capacitor's own series R"
+  - file: research/sources/ssztda5.pdf
+    page: 1
+    section: "intro text"
+    note: "real aluminium electrolytic ESR is generally well below the published max, undercutting assumed hot-plug damping - basis for not trusting the electrolytic's ESR at face value here"
+  - file: research/sources/slyt199.pdf
+    page: 2
+    section: "Bulk capacitance, eq 1-4 and derating text"
+    note: >
+      For a Class-D amp (TPA005D14, same TI PowerPAD H-bridge family
+      lineage as this board's TPA3118D2), Fig 2 shows C15/C16 as the
+      per-channel bulk caps; text gives I_peak=sqrt(P_peak/RL) (eq 2) and
+      ESR<=V_ripple/I_peak at C>=10x the eq-3 minimum (eq 4), then states
+      "capacitor ESR should be 30 to 50% lower than Equation 4 to allow
+      for increases due to temperature, ESL and aging" and that caps can
+      be paralleled to reduce ESR and power dissipation - the sizing
+      method behind the low-ESR (polymer) side of the split bulk bank.
+status: active
+origin: research:block-dc-input-1
+level: topology
+envelope:
+  vin_v: {min: 10.8, max: 13.2}
+  cbulk_uf: {min: 100, max: 400}
+  esr_bulk_mohm: {min: 15, max: 60}
+  vabs_max_v: {min: 25, max: 40}
+  source_kind: {in: [dc-input]}
+  connector_kind: {in: [wire-pad]}
+  protection_kind: {in: [none]}
+maturity: verified
+generalizes: [dc-input-hotplug-ring-physics]
+envelope_note: >
+  Scales with how close nominal Vin sits to abs-max and with the bulk
+  bank's total C and series R at the actual lead length - not load
+  current, since the ring is a connect-time transient. Holds for
+  10.8-13.2 V wire-pad dc-input, 100-400 uF split bulk at 15-60 mOhm
+  blended ESR, vabs_max 25-40 V (a 2x-Vin ring is plausible, not
+  automatically fatal). Below ~25 V a 2x ring at 12 V already exceeds the
+  rating; above ~40 V margin stops being safety-critical. Breaks down for
+  a source with its own attach-capacitance contract (USB/PD/PoE - see the
+  principle record) or a non-wire-pad connector.
+verification: {by: "second-reader", date: "2026-09-27", note: "Corrected citation re-read: slyt199 p2 confirms C15/C16 as per-channel bulk caps, eq2 Ipeak=sqrt(Ppeak/RL), eq4 ESR<=Vripple/Ipeak, and the 30-50% derating text verbatim. Page now matches; all 4 sources check out."}

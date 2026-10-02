@@ -1,0 +1,34 @@
+2026-09-27 04:55:16.559 INFO   Freerouting v2.2.4 (build-date: 2026-05-13)
+2026-09-27 04:55:27.603 INFO   [CBAC3D\942CC3] Job 'CBAC3D\942CC3' started at 2026-09-27T08:55:27.603514522Z.
+2026-09-27 04:55:36.836 INFO   New version available: v2.4.1
+2026-09-27 04:56:46.797 INFO   [CBAC3D\942CC3] Auto-router pass #1 on board '5172dc736fb970a1841b8fe7888a494a' was completed in 1 minute 14.50 seconds with the score of 971.40 (6 unrouted), using 3.28 CPU seconds and the job allocated 1.03 GB of memory so far.
+2026-09-27 04:57:09.287 INFO   [CBAC3D\942CC3] Auto-router pass #2 on board '8f527260afb5ce51de8e87d2106cf0b9' was completed in 21.82 seconds with the score of 976.18 (5 unrouted), using 4.38 CPU seconds and the job allocated 1.50 GB of memory so far.
+2026-09-27 04:57:31.014 INFO   [CBAC3D\942CC3] Auto-router pass #3 on board '84fbc0ebf77f363c47df303412b86c2e' was completed in 21.00 seconds with the score of 976.18 (5 unrouted), using 5.40 CPU seconds and the job allocated 1.95 GB of memory so far.
+2026-09-27 04:57:52.486 INFO   [CBAC3D\942CC3] Auto-router pass #4 on board 'd761fca11b08fecdcea29d20f1433086' was completed in 21.28 seconds with the score of 976.18 (5 unrouted), using 6.36 CPU seconds and the job allocated 2.39 GB of memory so far.
+2026-09-27 04:58:10.140 INFO   [CBAC3D\942CC3] Auto-router pass #5 on board '073388efbb3b7e384a414bc0289d75e3' was completed in 17.37 seconds with the score of 976.18 (5 unrouted), using 7.32 CPU seconds and the job allocated 2.85 GB of memory so far.
+2026-09-27 04:58:29.979 INFO   [CBAC3D\942CC3] Auto-router pass #6 on board '700c397ab7484d07ed18d46636ac0f6e' was completed in 19.34 seconds with the score of 976.18 (5 unrouted), using 8.21 CPU seconds and the job allocated 3.31 GB of memory so far.
+2026-09-27 04:58:48.106 INFO   [CBAC3D\942CC3] Auto-router pass #7 on board '837bf49c91e7fe18032d9c54917f5a41' was completed in 17.75 seconds with the score of 976.18 (5 unrouted), using 9.04 CPU seconds and the job allocated 3.73 GB of memory so far.
+2026-09-27 04:59:01.814 INFO   [CBAC3D\942CC3] Auto-router pass #8 on board '9ac7ffe775b7f0da31a3ef71d1f35966' was completed in 13.32 seconds with the score of 976.18 (5 unrouted), using 9.92 CPU seconds and the job allocated 4.19 GB of memory so far.
+2026-09-27 04:59:16.610 INFO   [CBAC3D\942CC3] Auto-router pass #9 on board 'bdeafd4d636ca8d429ce4e528fc2b82a' was completed in 14.41 seconds with the score of 976.18 (5 unrouted), using 10.76 CPU seconds and the job allocated 4.63 GB of memory so far.
+2026-09-27 04:59:32.632 INFO   [CBAC3D\942CC3] Auto-router pass #10 on board 'f991fe541f17639a71da035f58a27c0c' was completed in 15.99 seconds with the score of 976.18 (5 unrouted), using 11.55 CPU seconds and the job allocated 5.05 GB of memory so far.
+2026-09-27 04:59:47.569 INFO   [CBAC3D\942CC3] Auto-router pass #11 on board '915358d99be42b97bc119a102afb2920' was completed in 14.61 seconds with the score of 976.18 (5 unrouted), using 12.30 CPU seconds and the job allocated 5.46 GB of memory so far.
+2026-09-27 04:59:59.169 INFO   [CBAC3D\942CC3] Auto-router pass #12 on board '2ade83a250c073ba358506b6a0a94279' was completed in 11.49 seconds with the score of 976.18 (5 unrouted), using 13.15 CPU seconds and the job allocated 5.93 GB of memory so far.
+2026-09-27 05:00:13.109 INFO   [CBAC3D\942CC3] Auto-router pass #13 on board 'd86da38e2a0b9af065df1365c5155270' was completed in 13.52 seconds with the score of 976.18 (5 unrouted), using 13.90 CPU seconds and the job allocated 6.35 GB of memory so far.
+2026-09-27 05:00:25.465 INFO   [CBAC3D\942CC3] Auto-router pass #14 on board '3a20d76b9a813da017d1b1c23dc91579' was completed in 11.97 seconds with the score of 976.18 (5 unrouted), using 14.68 CPU seconds and the job allocated 6.78 GB of memory so far.
+2026-09-27 05:00:36.700 INFO   [CBAC3D\942CC3] Auto-router pass #15 on board '95d4f8e7f6b86eb5063305445104bd4b' was completed in 11.15 seconds with the score of 976.18 (5 unrouted), using 15.50 CPU seconds and the job allocated 7.23 GB of memory so far.
+2026-09-27 05:00:47.412 INFO   [CBAC3D\942CC3] Auto-router pass #16 on board 'a5615531560bdd9f8ee4d47b0d49793a' was completed in 10.47 seconds with the score of 976.18 (5 unrouted), using 16.29 CPU seconds and the job allocated 7.68 GB of memory so far.
+2026-09-27 05:00:59.431 INFO   [CBAC3D\942CC3] Auto-router pass #17 on board 'c8b03a2ea34bc7f86f8c7f918d337f5b' was completed in 11.78 seconds with the score of 976.18 (5 unrouted), using 17.07 CPU seconds and the job allocated 8.10 GB of memory so far.
+2026-09-27 05:01:12.459 INFO   [CBAC3D\942CC3] Auto-router pass #18 on board '1ddb374b2e8cf20044c004b8dece7204' was completed in 12.81 seconds with the score of 976.18 (5 unrouted), using 17.89 CPU seconds and the job allocated 8.55 GB of memory so far.
+2026-09-27 05:01:12.673 INFO   [CBAC3D\942CC3] The router's score (976.18) has not improved by more than 0.5 points in the last 10 passes (5 items still unconnected). Stopping the auto-router.
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/OUTNL' (1 unrouted connection):
+    - U1-21  ->  C15-2
+  Net '/OUTPL' (2 unrouted connections):
+    - C16-2  ->  U1-23
+    - C16-2  ->  L1-1
+  Net '/OUTNR' (1 unrouted connection):
+    - U1-27  ->  C17-2
+  Net '/OUTPR' (1 unrouted connection):
+    - C18-2  ->  U1-29
+2026-09-27 05:01:12.983 INFO   [CBAC3D\942CC3] Auto-router session completed: started with 56 unrouted nets, completed in 5 minutes 43.46 seconds, final score: 976.18 (5 unrouted), using 17.89 total CPU seconds, 8.55 GB total allocated, and 468.18 MB peak heap usage.
+

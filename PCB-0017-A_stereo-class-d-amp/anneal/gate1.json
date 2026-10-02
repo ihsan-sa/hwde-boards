@@ -1,0 +1,1392 @@
+{
+  "script": "gate",
+  "gate": "place",
+  "phase": "P6",
+  "tool": "place",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:da2501cd8830cbb7431e5467ed6ddc3865a5068c762b40371125252b51a28ff8",
+  "status": "fail",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 49,
+    "by_severity": {
+      "error": 49
+    },
+    "by_source": {
+      "check.place": 49
+    }
+  },
+  "failing_count": 49,
+  "failing": [
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        17.0,
+        28.75
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C1",
+        "C2"
+      ],
+      "msg": "courtyard overlap C1/C2 (1.34 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C1/C2 (1.34 mm2)",
+          "pos": [
+            17.0,
+            28.75
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.337
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        18.876,
+        27.3785
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C1",
+        "R1"
+      ],
+      "msg": "courtyard overlap C1/R1 (0.10 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C1/R1 (0.10 mm2)",
+          "pos": [
+            18.876,
+            27.3785
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.0959
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        18.876,
+        28.7715
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C1",
+        "R3"
+      ],
+      "msg": "courtyard overlap C1/R3 (0.05 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C1/R3 (0.05 mm2)",
+          "pos": [
+            18.876,
+            28.7715
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.0485
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.4975,
+        21.0375
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C10",
+        "C12"
+      ],
+      "msg": "courtyard overlap C10/C12 (1.24 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C10/C12 (1.24 mm2)",
+          "pos": [
+            32.4975,
+            21.0375
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.2431
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        31.7,
+        21.4
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C10",
+        "C8"
+      ],
+      "msg": "courtyard overlap C10/C8 (1.04 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C10/C8 (1.04 mm2)",
+          "pos": [
+            31.7,
+            21.4
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.04
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.2986,
+        33.4
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C11",
+        "C6"
+      ],
+      "msg": "courtyard overlap C11/C6 (1.82 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C11/C6 (1.82 mm2)",
+          "pos": [
+            32.2986,
+            33.4
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.824
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.3818,
+        32.6842
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C11",
+        "C7"
+      ],
+      "msg": "courtyard overlap C11/C7 (0.57 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C11/C7 (0.57 mm2)",
+          "pos": [
+            32.3818,
+            32.6842
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5671
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        33.4975,
+        32.6873
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C11",
+        "C9"
+      ],
+      "msg": "courtyard overlap C11/C9 (1.09 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C11/C9 (1.09 mm2)",
+          "pos": [
+            33.4975,
+            32.6873
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.0901
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        35.4815,
+        33.2425
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C11",
+        "L1"
+      ],
+      "msg": "courtyard overlap C11/L1 (0.23 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C11/L1 (0.23 mm2)",
+          "pos": [
+            35.4815,
+            33.2425
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.2256
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.285,
+        21.985
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C12",
+        "C18"
+      ],
+      "msg": "courtyard overlap C12/C18 (0.46 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C12/C18 (0.46 mm2)",
+          "pos": [
+            32.285,
+            21.985
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.4624
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.4975,
+        21.7625
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C12",
+        "C8"
+      ],
+      "msg": "courtyard overlap C12/C8 (1.24 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C12/C8 (1.24 mm2)",
+          "pos": [
+            32.4975,
+            21.7625
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.2431
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        35.6315,
+        21.7575
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C12",
+        "L3"
+      ],
+      "msg": "courtyard overlap C12/L3 (0.51 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C12/L3 (0.51 mm2)",
+          "pos": [
+            35.6315,
+            21.7575
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5073
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        36.725,
+        35.1
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C14",
+        "L1"
+      ],
+      "msg": "courtyard overlap C14/L1 (0.12 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C14/L1 (0.12 mm2)",
+          "pos": [
+            36.725,
+            35.1
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.12
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        31.7,
+        29.025
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C15",
+        "C16"
+      ],
+      "msg": "courtyard overlap C15/C16 (2.15 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C15/C16 (2.15 mm2)",
+          "pos": [
+            31.7,
+            29.025
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 2.146
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        31.7,
+        31.9329
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C15",
+        "C7"
+      ],
+      "msg": "courtyard overlap C15/C7 (1.55 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C15/C7 (1.55 mm2)",
+          "pos": [
+            31.7,
+            31.9329
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.5517
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.3875,
+        31.9275
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C15",
+        "C9"
+      ],
+      "msg": "courtyard overlap C15/C9 (0.41 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C15/C9 (0.41 mm2)",
+          "pos": [
+            32.3875,
+            31.9275
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.4061
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        30.8052,
+        30.3726
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C15",
+        "U1"
+      ],
+      "msg": "courtyard overlap C15/U1 (0.23 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C15/U1 (0.23 mm2)",
+          "pos": [
+            30.8052,
+            30.3726
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.2279
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.55,
+        27.075
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C16",
+        "C17"
+      ],
+      "msg": "courtyard overlap C16/C17 (0.39 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C16/C17 (0.39 mm2)",
+          "pos": [
+            32.55,
+            27.075
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.387
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        30.8053,
+        27.65
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C16",
+        "U1"
+      ],
+      "msg": "courtyard overlap C16/U1 (0.23 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C16/U1 (0.23 mm2)",
+          "pos": [
+            30.8053,
+            27.65
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.2311
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.55,
+        25.05
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C17",
+        "C18"
+      ],
+      "msg": "courtyard overlap C17/C18 (0.15 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C17/C18 (0.15 mm2)",
+          "pos": [
+            32.55,
+            25.05
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.1515
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        31.7,
+        22.1168
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C18",
+        "C8"
+      ],
+      "msg": "courtyard overlap C18/C8 (1.74 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C18/C8 (1.74 mm2)",
+          "pos": [
+            31.7,
+            22.1168
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.7367
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        30.8052,
+        23.6274
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C18",
+        "U1"
+      ],
+      "msg": "courtyard overlap C18/U1 (0.23 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C18/U1 (0.23 mm2)",
+          "pos": [
+            30.8052,
+            23.6274
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.2279
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        41.976,
+        38.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C19",
+        "R4"
+      ],
+      "msg": "courtyard overlap C19/R4 (1.31 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C19/R4 (1.31 mm2)",
+          "pos": [
+            41.976,
+            38.0
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.3067
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        18.876,
+        29.3
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C2",
+        "R3"
+      ],
+      "msg": "courtyard overlap C2/R3 (0.22 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C2/R3 (0.22 mm2)",
+          "pos": [
+            18.876,
+            29.3
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.2155
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        41.976,
+        17.2
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C21",
+        "R6"
+      ],
+      "msg": "courtyard overlap C21/R6 (1.31 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C21/R6 (1.31 mm2)",
+          "pos": [
+            41.976,
+            17.2
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.3067
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        48.8,
+        29.2275
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C22",
+        "L2"
+      ],
+      "msg": "courtyard overlap C22/L2 (1.21 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C22/L2 (1.21 mm2)",
+          "pos": [
+            48.8,
+            29.2275
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.2117
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        48.8,
+        25.9725
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C22",
+        "L4"
+      ],
+      "msg": "courtyard overlap C22/L4 (1.21 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C22/L4 (1.21 mm2)",
+          "pos": [
+            48.8,
+            25.9725
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.2117
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        44.0415,
+        38.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C23",
+        "R4"
+      ],
+      "msg": "courtyard overlap C23/R4 (0.54 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C23/R4 (0.54 mm2)",
+          "pos": [
+            44.0415,
+            38.0
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5439
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        44.0415,
+        17.2
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C25",
+        "R6"
+      ],
+      "msg": "courtyard overlap C25/R6 (0.54 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C25/R6 (0.54 mm2)",
+          "pos": [
+            44.0415,
+            17.2
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5439
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        17.0,
+        24.25
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C3",
+        "C4"
+      ],
+      "msg": "courtyard overlap C3/C4 (1.34 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C3/C4 (1.34 mm2)",
+          "pos": [
+            17.0,
+            24.25
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.337
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        18.876,
+        23.1785
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C3",
+        "R2"
+      ],
+      "msg": "courtyard overlap C3/R2 (0.19 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C3/R2 (0.19 mm2)",
+          "pos": [
+            18.876,
+            23.1785
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.1907
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        18.9025,
+        25.5625
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C4",
+        "C5"
+      ],
+      "msg": "courtyard overlap C4/C5 (0.08 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C4/C5 (0.08 mm2)",
+          "pos": [
+            18.9025,
+            25.5625
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.0761
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        20.2,
+        26.459
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C5",
+        "R1"
+      ],
+      "msg": "courtyard overlap C5/R1 (0.71 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C5/R1 (0.71 mm2)",
+          "pos": [
+            20.2,
+            26.459
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.7067
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        21.3572,
+        25.9
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C5",
+        "U1"
+      ],
+      "msg": "courtyard overlap C5/U1 (0.54 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C5/U1 (0.54 mm2)",
+          "pos": [
+            21.3572,
+            25.9
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5397
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        31.65,
+        32.8
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C6",
+        "C7"
+      ],
+      "msg": "courtyard overlap C6/C7 (0.48 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C6/C7 (0.48 mm2)",
+          "pos": [
+            31.65,
+            32.8
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.48
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.55,
+        32.8
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C6",
+        "C9"
+      ],
+      "msg": "courtyard overlap C6/C9 (0.16 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C6/C9 (0.16 mm2)",
+          "pos": [
+            32.55,
+            32.8
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.16
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        32.6,
+        32.2
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C7",
+        "C9"
+      ],
+      "msg": "courtyard overlap C7/C9 (1.26 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C7/C9 (1.26 mm2)",
+          "pos": [
+            32.6,
+            32.2
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 1.26
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        30.5927,
+        31.9008
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C7",
+        "U1"
+      ],
+      "msg": "courtyard overlap C7/U1 (0.39 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C7/U1 (0.39 mm2)",
+          "pos": [
+            30.5927,
+            31.9008
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.3891
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        30.5928,
+        22.1492
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "C8",
+        "U1"
+      ],
+      "msg": "courtyard overlap C8/U1 (0.44 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap C8/U1 (0.44 mm2)",
+          "pos": [
+            30.5928,
+            22.1492
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.4377
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        44.5,
+        32.2
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "L1",
+        "L2"
+      ],
+      "msg": "courtyard overlap L1/L2 (0.67 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap L1/L2 (0.67 mm2)",
+          "pos": [
+            44.5,
+            32.2
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.6661
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        46.166,
+        28.9515
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "L2",
+        "R7"
+      ],
+      "msg": "courtyard overlap L2/R7 (0.11 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap L2/R7 (0.11 mm2)",
+          "pos": [
+            46.166,
+            28.9515
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.1063
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        44.5,
+        23.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "L3",
+        "L4"
+      ],
+      "msg": "courtyard overlap L3/L4 (0.67 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap L3/L4 (0.67 mm2)",
+          "pos": [
+            44.5,
+            23.0
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.6661
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        46.166,
+        26.2485
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "L4",
+        "R7"
+      ],
+      "msg": "courtyard overlap L4/R7 (0.11 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap L4/R7 (0.11 mm2)",
+          "pos": [
+            46.166,
+            26.2485
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.1063
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        21.3838,
+        27.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "R1",
+        "U1"
+      ],
+      "msg": "courtyard overlap R1/U1 (0.60 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap R1/U1 (0.60 mm2)",
+          "pos": [
+            21.3838,
+            27.0
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5981
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        21.3837,
+        23.1
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "R2",
+        "U1"
+      ],
+      "msg": "courtyard overlap R2/U1 (0.60 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap R2/U1 (0.60 mm2)",
+          "pos": [
+            21.3837,
+            23.1
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5981
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        21.3838,
+        29.3
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "R3",
+        "U1"
+      ],
+      "msg": "courtyard overlap R3/U1 (0.60 mm2)",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "courtyard overlap R3/U1 (0.60 mm2)",
+          "pos": [
+            21.3838,
+            29.3
+          ]
+        }
+      ],
+      "kind": "courtyard_overlap",
+      "overlap_mm2": 0.5981
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        57.0,
+        39.5
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "J3"
+      ],
+      "msg": "J3 declared on edge 'right' but is 22.8 mm away",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "J3 declared on edge 'right' but is 22.8 mm away",
+          "pos": [
+            57.0,
+            39.5
+          ]
+        }
+      ],
+      "kind": "edge_violation",
+      "edge": "right",
+      "dist_mm": 22.817
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        57.0,
+        16.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "J4"
+      ],
+      "msg": "J4 declared on edge 'right' but is 22.8 mm away",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "J4 declared on edge 'right' but is 22.8 mm away",
+          "pos": [
+            57.0,
+            16.0
+          ]
+        }
+      ],
+      "kind": "edge_violation",
+      "edge": "right",
+      "dist_mm": 22.817
+    },
+    {
+      "check": "place",
+      "severity": "error",
+      "pos": [
+        16.5,
+        42.0
+      ],
+      "layer": null,
+      "net": null,
+      "refs": [
+        "TP1"
+      ],
+      "msg": "TP1 declared on edge 'bottom' but is 62.8 mm away",
+      "source": "check.place",
+      "items": [
+        {
+          "msg": "TP1 declared on edge 'bottom' but is 62.8 mm away",
+          "pos": [
+            16.5,
+            42.0
+          ]
+        }
+      ],
+      "kind": "edge_violation",
+      "edge": "bottom",
+      "dist_mm": 62.751
+    }
+  ],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "ran": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "passed": [
+      "outline",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "failed": [
+      "courtyard",
+      "edges"
+    ],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0017-A_astra-amp",
+    "gate": "place",
+    "status": "fail",
+    "attempts": 3,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:da2501cd8830cbb7431e5467ed6ddc3865a5068c762b40371125252b51a28ff8",
+      "constraints": "json_canonical:010a016dfd4c5decbd308b548830a8f178c121a4d4078e5556153e1278bda1ed",
+      "decoupling": "json_canonical:aca94291a3791b958b2be40d518c04b5903398300f1e8824edf99426099dcada"
+    }
+  }
+}

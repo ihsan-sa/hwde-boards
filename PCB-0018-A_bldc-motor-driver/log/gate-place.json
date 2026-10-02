@@ -1,0 +1,63 @@
+{
+  "script": "gate",
+  "gate": "place",
+  "phase": "P6",
+  "tool": "place",
+  "input": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:37c8e6cb96216fc00098bc9c6c43944a5a0483b8e2e32e0ada1e41e9fe320e70",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "ran": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "passed": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "failed": [],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0018-A_bldc-motor-driver",
+    "gate": "place",
+    "status": "pass",
+    "attempts": 2,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:37c8e6cb96216fc00098bc9c6c43944a5a0483b8e2e32e0ada1e41e9fe320e70",
+      "constraints": "json_canonical:2c1f5a517b3112a3a9fa30fc60ecea83515b115835b5530b235b28af84721c4d",
+      "decoupling": "json_canonical:d988c2c3216e1f352439de3e1fd2e2f2261297b9857baf66b28e68da53b996c9"
+    }
+  }
+}

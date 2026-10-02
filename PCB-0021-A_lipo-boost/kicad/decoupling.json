@@ -1,0 +1,69 @@
+{
+ "associations": [
+  {
+   "cap": "C1",
+   "ic": "U1",
+   "pin": "13",
+   "rail": "VBUS",
+   "value": "4.7uF 25V X5R"
+  },
+  {
+   "cap": "C4",
+   "ic": "U1",
+   "pin": "13",
+   "rail": "VBUS",
+   "value": "100nF 50V X7R"
+  },
+  {
+   "cap": "C2",
+   "ic": "U1",
+   "pin": "10",
+   "rail": "+SYS",
+   "value": "10uF 25V X5R"
+  },
+  {
+   "cap": "C3",
+   "ic": "U1",
+   "pin": "2",
+   "rail": "VBAT",
+   "value": "10uF 25V X5R"
+  },
+  {
+   "cap": "C10",
+   "ic": "U2",
+   "pin": "3",
+   "rail": "+SYS",
+   "value": "10uF 25V X5R",
+   "role": "reg_input"
+  },
+  {
+   "cap": "C14",
+   "ic": "U2",
+   "pin": "3",
+   "rail": "+SYS",
+   "value": "100nF 50V X7R",
+   "role": "reg_input"
+  },
+  {
+   "cap": "C11",
+   "ic": "U2",
+   "pin": "6",
+   "rail": "+5V",
+   "value": "22uF 25V X5R"
+  },
+  {
+   "cap": "C12",
+   "ic": "U2",
+   "pin": "6",
+   "rail": "+5V",
+   "value": "22uF 25V X5R"
+  },
+  {
+   "cap": "C13",
+   "ic": "U2",
+   "pin": "6",
+   "rail": "+5V",
+   "value": "100nF 50V X7R"
+  }
+ ]
+}

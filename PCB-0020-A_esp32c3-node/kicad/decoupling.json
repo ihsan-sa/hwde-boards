@@ -1,0 +1,60 @@
+{
+ "associations": [
+  {
+   "cap": "C1",
+   "ic": "U2",
+   "pin": "4",
+   "rail": "VBUS",
+   "value": "4.7uF 16V X5R"
+  },
+  {
+   "cap": "C2",
+   "ic": "U2",
+   "pin": "3",
+   "rail": "VBAT",
+   "value": "4.7uF 16V X5R"
+  },
+  {
+   "cap": "C3",
+   "ic": "U3",
+   "pin": "1",
+   "rail": "VSYS",
+   "value": "1uF 50V X7R"
+  },
+  {
+   "cap": "C4",
+   "ic": "U3",
+   "pin": "5",
+   "rail": "+3V3",
+   "value": "1uF 50V X7R"
+  },
+  {
+   "cap": "C10",
+   "ic": "U1",
+   "pin": "3",
+   "rail": "+3V3",
+   "value": "10uF 25V X5R"
+  },
+  {
+   "cap": "C11",
+   "ic": "U1",
+   "pin": "3",
+   "rail": "+3V3",
+   "value": "100nF 50V X7R"
+  },
+  {
+   "cap": "C13",
+   "ic": "U5",
+   "pin": "8",
+   "rail": "+3V3",
+   "value": "100nF 50V X7R"
+  },
+  {
+   "cap": "C14",
+   "ic": "U5",
+   "pin": "6",
+   "rail": "+3V3",
+   "value": "100nF 50V X7R"
+  }
+ ]
+}

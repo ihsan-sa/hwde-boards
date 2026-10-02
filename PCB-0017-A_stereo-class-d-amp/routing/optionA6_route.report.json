@@ -1,0 +1,77 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 13,
+ "verified": true,
+ "by_status": {
+  "added": 13
+ },
+ "results": [
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "7ba11036-f7aa-4423-856d-ba19b30fe224"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "fe443c01-0671-4d81-a505-332fd77ac4ab"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "7b7af143-fd5d-4247-932a-bfce52ba5dc5"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "e82c53cb-ef03-4af8-9768-2bebb23bd085"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "7c450e6f-10f9-4381-aad3-ed6c9695f32c"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "89c32e52-4a8c-49ef-9d93-c354aeb45eba"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "281dcd07-1f0c-45c5-aba5-b0a498eef27c"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "e7c3d0e9-6544-47cd-a543-c71a80a0a608"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "6f25713d-c9be-4370-8356-6fff88cddb7a"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "a58c9680-79e2-4c33-903f-0a5e8965208f"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "d51487f1-ff66-4ffc-9482-872056267025"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "293cec68-93e3-4934-8d26-85ebc84cd4ba"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "612acd09-d841-4661-a95d-91cd683b1926"
+  }
+ ]
+}

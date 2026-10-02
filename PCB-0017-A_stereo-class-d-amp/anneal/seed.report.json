@@ -1,0 +1,104 @@
+{
+ "script": "place_seed",
+ "status": "pass",
+ "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "clusters": [
+  {
+   "anchor": "J1",
+   "satellites": [
+    "D1"
+   ],
+   "edge": "top"
+  },
+  {
+   "anchor": "J2",
+   "satellites": [],
+   "edge": "left"
+  },
+  {
+   "anchor": "J3",
+   "satellites": [],
+   "edge": "right"
+  },
+  {
+   "anchor": "J4",
+   "satellites": [],
+   "edge": "right"
+  },
+  {
+   "anchor": "L1",
+   "satellites": [
+    "C19",
+    "C20",
+    "C23",
+    "C24",
+    "L2",
+    "R4",
+    "R5"
+   ],
+   "edge": null
+  },
+  {
+   "anchor": "L3",
+   "satellites": [
+    "C21",
+    "C22",
+    "C25",
+    "C26",
+    "L4",
+    "R6",
+    "R7"
+   ],
+   "edge": null
+  },
+  {
+   "anchor": "TP1",
+   "satellites": [],
+   "edge": "bottom"
+  },
+  {
+   "anchor": "U1",
+   "satellites": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "R1",
+    "R2",
+    "R3"
+   ],
+   "edge": null
+  }
+ ],
+ "warnings": [],
+ "hpwl_before_mm": 2187.056,
+ "hpwl_seed_mm": 855.6613,
+ "ops_out": "anneal/seed.ops.json",
+ "applied": true,
+ "hpwl_applied_mm": 855.6613,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T07:53:12+00:00",
+ "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:6ba1ec8fea2e6af0c36c783ef3738d351248fb5b61cc01376a6bb2233576a9e7"
+}

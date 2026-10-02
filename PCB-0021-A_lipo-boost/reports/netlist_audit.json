@@ -1,0 +1,69 @@
+{
+ "script": "netlist_audit",
+ "status": "pass",
+ "board": "PCB-0021-A_lipo-boost.net",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "mode": "audit",
+ "nets": 27,
+ "components": 33,
+ "unconnected_pins": 6,
+ "constraint_nets_checked": 6,
+ "constraint_refs_checked": 13,
+ "pins_expected": 105,
+ "pins_connected": 105,
+ "decoupling_associations": 9,
+ "power": [
+  {
+   "net": "VBUS",
+   "nodes": 4,
+   "power_in": 1,
+   "power_out": 0
+  },
+  {
+   "net": "+SYS",
+   "nodes": 14,
+   "power_in": 1,
+   "power_out": 1
+  },
+  {
+   "net": "VBAT",
+   "nodes": 6,
+   "power_in": 1,
+   "power_out": 0
+  },
+  {
+   "net": "/SW",
+   "nodes": 2,
+   "power_in": 0,
+   "power_out": 0,
+   "passive_fed_via": [
+    "L1"
+   ]
+  },
+  {
+   "net": "+5V",
+   "nodes": 7,
+   "power_in": 0,
+   "power_out": 1,
+   "passive_fed_via": [
+    "R10"
+   ]
+  },
+  {
+   "net": "GND",
+   "nodes": 31,
+   "power_in": 4,
+   "power_out": 0
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:18:37+00:00",
+ "input": "PCB-0021-A_lipo-boost.net",
+ "input_digest": "netlist_canonical:979b2722cd192447215a8e1d8824d9c1addc760e7bea884b7e67c99bd960a1a9"
+}

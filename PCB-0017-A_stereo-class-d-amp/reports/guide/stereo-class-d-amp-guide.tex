@@ -1,0 +1,234 @@
+\input{preamble-template.tex}
+\hsslug{PCB-0017-A stereo-class-d-amp}
+\fancyfoot[L]{\hsrunlabel{PCB-0017-A stereo-class-d-amp}}
+\setlength{\tabcolsep}{4pt}
+\begin{document}
+
+\hstitleblock{PCB-0017 Rev A \textperiodcentered\ stereo-class-d-amp \textperiodcentered\ September 2026}%
+{Owner's guide: stereo Class-D amplifier}%
+{What the board does, how to wire and power it up, what is on it, what it
+costs, and what still has to happen before anyone orders it.}
+
+PCB-0017-A stereo-class-d-amp is a small, 2-layer stereo Class-D audio amplifier built
+around the Texas Instruments TPA3118D2, run from a single 12 V supply. It
+takes stereo line-level audio in on wire pads and drives two bridge-tied
+speaker outputs. The board reproduces, and is compared against, a published
+44 x 34 mm reference design. All four build gates -- ERC,
+placement, routed DRC and DFM -- pass. The reference board used the TPA3116D2,
+sold only in a pad-up package that needs a heatsink bolted on top; this
+board uses the TPA3118D2 instead, whose pad-down package sinks its heat
+straight into the board's own copper. That extra ground-pour area is most of
+why this board, at 53.55 x 36.8 mm, runs about 32\% larger than the
+reference's 44 x 34 mm.
+
+\begin{hsplate}{top.png}{Top side, as routed}{53.55 x 36.8 mm, 2 layers}{render}%
+{U1 (TPA3118D2) sits centre-board with ground pour on both sides for
+heat-sinking. J1 (power) and J2 (line in) are on one edge; J3 and J4
+(left/right speaker out) and TP1 (GND probe) are on the other.}
+\end{hsplate}
+
+This is a fab package, not an order: nothing has been sent to JLCPCB. Four
+proposed verification waivers on U1's power and output pins (see
+\nameref{sec:using}) need the owner's sign-off in
+\texttt{reports/verify-waivers.proposed.json} first; the ordering steps
+near the end of this guide are written for that later day.
+
+\section{Schematic}
+\hslead{One sheet: power in, line in, the amplifier, and the two LC output
+filters.}
+
+\begin{hsfigure}{Figure 1 / stereo-class-d-amp schematic}%
+{Slate wire pads carry power and audio in and out; U1 is the amplifier; the
+inductor-capacitor pairs on the right are the two output filters.}
+\hsdiagram{../schematic.pdf}
+\end{hsfigure}
+
+Power comes in at J1 and splits to two bulk capacitors, C13 and C14, one at
+each of U1's PVCC pin pairs. Line audio comes in at J2 and is AC-coupled into
+U1 through C1--C4. U1 drives four switching outputs, one pair per channel,
+each into its own 10~uH inductor (L1--L4) and a damping branch (R4--R7,
+C23--C26), which filter the switching carrier before the signal reaches the
+speaker pads J3 and J4. Every ground on the board is one net, whose
+bottom-layer pour is both the current return and U1's heat spreader.
+
+\section{Using it}
+\label{sec:using}
+\hslead{Four wire-pad groups, one probe pad, no switches.}
+
+\begin{hsblock}
+\hslabel{Table 1 / connectors}\par\vspace{8pt}
+{\small
+\begin{tabular}{L{0.08\linewidth} L{0.37\linewidth} L{0.39\linewidth}}
+\hstoprule
+\hshead{Pad} & \hshead{Carries} & \hsaccenthead{Notes} \\
+\hline
+J1 & +12V, GND & 10.8--13.2 V DC, sized for 4 A. No reverse-polarity
+  protection: wire it right. \\
+J2 & L, GND, R & Stereo line level, about 1 Vrms, AC-coupled. \\
+J3 & Left speaker +/- & Bridge-tied load: neither pad is ground. \\
+J4 & Right speaker +/- & Bridge-tied load: neither pad is ground. \\
+TP1 & GND & Probe pad for a scope or meter ground lead. \\
+\hline
+\end{tabular}}
+\end{hsblock}
+
+Gain is fixed by R1 at 20 dB; there is no volume control, mute switch or
+status LED, since R2 and R3 hold U1 always on. First power-up: connect a
+speaker to J3 and/or J4 before applying power, without tying either speaker
+pad to ground -- the output is bridge-tied. Apply 12 V at J1 watching
+polarity, then feed line audio to J2; TP1 should read J1's GND potential.
+
+Four checks in \texttt{reports/verify-waivers.proposed.json} are proposed,
+not yet approved, on this layout: the 2-layer thermal model under U1 (the
+basis instead is TI's measured 22 C/W on its 2-layer EVM; with sixteen
+thermal vias under U1's pad I estimate this board at about 30 C/W, so near
+85 C at the 1.5 W design point), two short
+pin-pitch-limited necks on the +12V and speaker-OUT nets, and one ground-pour
+check that mis-reads a deliberately split, fully-stitched fill as
+disconnected. None changes the board; all four wait on the owner's name in the
+\texttt{approved} field of each of that file's eight entries, one per finding.
+
+\section{What's on it}
+\hslead{39 fitted parts across 16 BOM lines: 7 unique Basic parts, 9 unique
+Extended. J1--J4 and TP1 are bare pads, not JLC-assembled parts.}
+
+\begin{hsblock}
+\hslabel{Table 2 / bill of materials}\par\vspace{8pt}
+{\footnotesize
+\begin{tabular}{L{0.17\linewidth} L{0.26\linewidth} L{0.15\linewidth} L{0.13\linewidth} L{0.06\linewidth}}
+\hstoprule
+\hshead{Designators} & \hshead{Value} & \hshead{LCSC} & \hsaccenthead{Class} & \hshead{Qty} \\
+\hline
+C1,C2,C3,C4 & 1uF 50V X7R & C28323 & Basic & 4 \\
+C5 & 1uF 25V X7R & C106858 & Extended & 1 \\
+C6,C9,C10 & 100nF 50V X7R & C14663 & Basic & 3 \\
+C7,C8 & 1nF 50V NP0 & C106246 & Extended & 2 \\
+C11,C12 & 10uF 25V X5R & C15850 & Basic & 2 \\
+C13 & 100uF 35V polymer & C46550467 & Extended & 1 \\
+C14 & 100uF 35V elec. & C2992596 & Extended & 1 \\
+C15,C16,C17,C18 & 220nF 50V X7R & C5378 & Basic & 4 \\
+C19,C20,C21,C22 & 680nF 50V X7R & C107133 & Extended & 4 \\
+C23,C24,C25,C26 & 10nF 50V X7R & C15195 & Basic & 4 \\
+D1 & SMBJ15A TVS & C113988 & Extended & 1 \\
+L1,L2,L3,L4 & 10uH 5.5A & C207842 & Extended & 4 \\
+R1 & 5.6k 1\% & C23189 & Basic & 1 \\
+R2,R3 & 100k 1\% & C25803 & Basic & 2 \\
+R4,R5,R6,R7 & 3.3R 1\% & C137725 & Extended & 4 \\
+U1 & TPA3118D2DAPR & C46497 & Extended & 1 \\
+\hline
+\end{tabular}}
+\end{hsblock}
+
+Each unique Extended part adds one of JLC's per-part feeder fees on top of
+the parts themselves (see the assembly line in Table 3). J1, J2, J3, J4 and
+TP1 are bare copper wire pads with no LCSC part and no connector body; hand
+wiring in solder, they are not part of JLC's assembly.
+
+\section{What it costs}
+\hslead{An estimate and a lower bound, not a quote: get the real number in
+JLC's own cart before ordering.}
+
+Every figure below comes from a reference pricing table, not JLC's live API:
+measured live prices have run 1.9--3.1x higher than this table. Treat every
+number here as a floor, and confirm at \hsurl{https://cart.jlcpcb.com/quote}
+before ordering.
+
+\begin{hsblock}
+\hslabel{Table 3 / quote matrix, HASL finish}\par\vspace{8pt}
+{\small
+\begin{tabular}{L{0.10\linewidth} L{0.18\linewidth} L{0.19\linewidth} L{0.17\linewidth} L{0.17\linewidth}}
+\hstoprule
+\hshead{Qty} & \hshead{PCB} & \hshead{Assembly} & \hshead{Board total} & \hsaccenthead{Per unit} \\
+\hline
+5  & \$2.00 & \$59.09 & \$61.09 & \$12.22 \\
+10 & \$2.09\footnotemark[1] & \$60.18\footnotemark[1] & \$62.18 & \$6.22 \\
+30 & \$8.90\footnotemark[1] & \$64.53\footnotemark[1] & \$73.43 & \$2.45 \\
+\hline
+\end{tabular}}\par\vspace{4pt}
+{\small\color{inkseventy}\footnotemark[1]\,Split between PCB and assembly
+not separately itemised at this quantity in the source data; the board
+total and per-unit figures are as quoted.}
+\end{hsblock}
+
+Assembly setup and stencil fees (\$16 flat) and per-part feeder fees dominate
+the cost at low quantity; the bare board itself is a couple of dollars. The
+parts alone (not counting the PCB or assembly line) are estimated at
+\$2.53 per board. ENIG finish prices the same as HASL in this table at every
+quantity shown.
+
+\section{Ordering at JLCPCB}
+\hslead{Written for after the owner approves the four waivers above --
+nothing here has been done yet.}
+
+Before uploading anything, buy the Extended parts into JLC's inventory for
+5 boards: its BOM review can otherwise show one as idle stock, unselected
+at qty 0, until it has been bought in and the review re-run.
+
+\begin{hsblock}
+\hslabel{Table 4 / pre-buy list, 5 boards}\par\vspace{8pt}
+{\footnotesize
+\begin{tabular}{L{0.15\linewidth} L{0.26\linewidth} L{0.18\linewidth} L{0.10\linewidth} L{0.10\linewidth}}
+\hstoprule
+\hshead{LCSC} & \hshead{Part} & \hsaccenthead{Designators} & \hshead{Per bd} & \hshead{Buy} \\
+\hline
+C106858   & 1uF 25V X7R        & C5           & 1 & 5  \\
+C106246   & 1nF 50V NP0        & C7,C8        & 2 & 10 \\
+C46550467 & 100uF 35V polymer  & C13          & 1 & 5  \\
+C2992596  & 100uF 35V elec.    & C14          & 1 & 5  \\
+C107133   & 680nF 50V X7R      & C19--C22     & 4 & 20 \\
+C113988   & SMBJ15A            & D1           & 1 & 5  \\
+C207842   & 10uH 5.5A          & L1--L4       & 4 & 20 \\
+C137725   & 3.3R 1\%           & R4--R7       & 4 & 20 \\
+C46497    & TPA3118D2DAPR      & U1           & 1 & 5  \\
+\hline
+\end{tabular}}
+\end{hsblock}
+
+Then, in order: (1) upload
+\texttt{PCB-0017-A\_stereo-class-d-amp\_gerbers.zip}; (2) check the quoted layer
+count, size and thickness (2 layers, 53.55 x 36.8 mm, 1.6 mm) match the spec
+above; (3) enable PCB Assembly, top side, for the build quantity; (4) upload
+\texttt{BOM.csv} and \texttt{CPL.csv}; (5) confirm every part matched its
+LCSC number, especially the nine Extended ones just bought in; (6) in the
+placement preview, check polarity and rotation -- no automatic rotation
+corrections were flagged for this board, but check by eye anyway: D1 (TVS
+polarity), U1 pin 1, and the C13/C14 polarised capacitors; (7) run JLCDFM as
+a second opinion; (8) pay. Payment is the owner's step, not a session's.
+
+\section{What it cost to design}
+\hslead{Model spend on generating this board -- not part of the board's own
+price.}
+
+\begin{hsblock}
+\renewcommand{\arraystretch}{1.1}
+\hslabel{Table 5 / generation cost by step}\par\vspace{8pt}
+{\small
+\begin{tabular}{L{0.55\linewidth} R{0.35\linewidth}}
+\hstoprule
+\hshead{Step} & \hsaccenthead{USD} \\
+\hline
+Before the workspace (brief and skill read) & \$0.50 \\
+Brief and intake & \$1.16 \\
+Research & \$3.84 \\
+Architecture & \$14.22 \\
+Schematic & \$3.10 \\
+Placement & \$4.88 \\
+Routing & \$0.43 \\
+Verification & \$0.51 \\
+DFM, order files and guide & \$0.11 \\
+Not in the transcript (side calls) & \$68.83 \\
+\hline
+\hshead{Total} & \hsaccenthead{\$97.57} \\
+\hline
+\end{tabular}}
+\end{hsblock}
+
+The split follows hwde's own record of when each step ran, across ten
+session transcripts. One session (\texttt{811c9ae8}) was still open when
+this was recorded, so its \$0.34 above is its priced-token estimate, not a
+final figure. About 29.1 million tokens ran on a model
+(\texttt{claude-fable-5-1}) with no listed price; that gap between the
+step-by-step transcripts and the session's own recorded total is folded into
+the "side calls" row rather than split further.
+
+\end{document}

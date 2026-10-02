@@ -1,0 +1,1482 @@
+{
+ "version": 2,
+ "board": "bldc-motor-driver",
+ "workspace": "PCB-0018-A_bldc-motor-driver",
+ "created": "2026-09-27T14:02:00",
+ "updated": "2026-10-02T03:29:10",
+ "phase": "P9",
+ "gates": {
+  "erc": {
+   "phase": "P4",
+   "status": "pass",
+   "attempts": 10,
+   "last": {
+    "ts": "2026-09-28T08:13:54",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+     "pro": "json_canonical:49e82e42fc0eeb90b133c7ca1bfc6661f812d5638ec2dcfc7eac418a126e3135"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-09-27T16:09:34",
+     "status": "fail",
+     "failing_count": 9,
+     "total": 9,
+     "inputs": {
+      "sch": "sexpr_no_uuid:afffac3215a3a079473a7f636c2dc9d188519081d3dfc2bf3d4bed4b09fb6a93",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-27T16:11:16",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:3cac2df6b2564998dc46e3617861410d36c4729313c7da391673f312b4214547",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-27T16:15:07",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:a974784863da90da924eab23e5094411452174c30d6380d5416b8571c3141fa6",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-27T16:25:32",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:5e2c130cd7bc60e8fc6ed11f29b4e94f06cbbbf5177073e33723c46fa8f79328",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-27T16:26:29",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:d303cf22a4aa485dbe4ba01107b22e4d30b9748db4a5330712b38f8f45f27264",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-27T16:28:35",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:77d49850cc655c01e0a0583984b911c844d6314eb23656c05b365de1350dccd2",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-27T16:35:46",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:8de63e15e029bf4d5936144b2f9617e011b760658c73d45171bfb34a5b3965c5",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-27T16:40:22",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+     }
+    },
+    {
+     "ts": "2026-09-28T08:11:59",
+     "status": "fail",
+     "failing_count": 60,
+     "total": 60,
+     "inputs": {
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:f402a8602b8977b82f3c8c7845cf67ab5c7d50c6d1559f9f29a0bb26c7d0f350"
+     }
+    },
+    {
+     "ts": "2026-09-28T08:13:54",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:49e82e42fc0eeb90b133c7ca1bfc6661f812d5638ec2dcfc7eac418a126e3135"
+     }
+    }
+   ]
+  },
+  "place": {
+   "phase": "P6",
+   "status": "fail",
+   "attempts": 11,
+   "last": {
+    "ts": "2026-10-02T03:20:33",
+    "status": "fail",
+    "failing_count": 14,
+    "total": 14,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:9495c688eaeeee8b039f42dadfbc3ec4547a3846040ecacebda63a808274646f",
+     "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+     "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-09-27T17:19:59",
+     "status": "fail",
+     "failing_count": 24,
+     "total": 31,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:fb035977399440adce227fdc1b1f522f8a711133d78448e0239bc73d4d25f871",
+      "constraints": "json_canonical:2c1f5a517b3112a3a9fa30fc60ecea83515b115835b5530b235b28af84721c4d",
+      "decoupling": "json_canonical:d988c2c3216e1f352439de3e1fd2e2f2261297b9857baf66b28e68da53b996c9"
+     }
+    },
+    {
+     "ts": "2026-09-27T19:15:09",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:37c8e6cb96216fc00098bc9c6c43944a5a0483b8e2e32e0ada1e41e9fe320e70",
+      "constraints": "json_canonical:2c1f5a517b3112a3a9fa30fc60ecea83515b115835b5530b235b28af84721c4d",
+      "decoupling": "json_canonical:d988c2c3216e1f352439de3e1fd2e2f2261297b9857baf66b28e68da53b996c9"
+     }
+    },
+    {
+     "ts": "2026-09-28T06:28:18",
+     "status": "fail",
+     "failing_count": 15,
+     "total": 15,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:4d8deb89c60b043420bf8dcf2f47357cad478be109278305c23ba9f5940570d5",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-09-28T06:28:30",
+     "status": "fail",
+     "failing_count": 15,
+     "total": 15,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:4d8deb89c60b043420bf8dcf2f47357cad478be109278305c23ba9f5940570d5",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-09-28T06:28:43",
+     "status": "fail",
+     "failing_count": 15,
+     "total": 15,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:4d8deb89c60b043420bf8dcf2f47357cad478be109278305c23ba9f5940570d5",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-09-28T06:54:13",
+     "status": "fail",
+     "failing_count": 14,
+     "total": 14,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:ad717f031d362c39fd59dfa443f4cfe415ae8444a8495a219b8b23df8229470f",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:03:26",
+     "status": "fail",
+     "failing_count": 14,
+     "total": 14,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7dce1fcea1dc6c0452bc04298159801f6b188f7ddcfdeb488c7461c289d8efc6",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:25:14",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 14,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:2315b80550433f21425178683d490224811ebced927a9e3bd943e22b5d98e1d6",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:31:05",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 14,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:28871090016349930b0383e006beb15bd0ffee5ac11bf9dbdbd6a504e559015b",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-09-28T08:14:07",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 14,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:b620b16a7981d37d77f14d0bc65f49b61766e7df4729442721b7bb481952e57c",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    },
+    {
+     "ts": "2026-10-02T03:20:33",
+     "status": "fail",
+     "failing_count": 14,
+     "total": 14,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:9495c688eaeeee8b039f42dadfbc3ec4547a3846040ecacebda63a808274646f",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0"
+     }
+    }
+   ]
+  },
+  "drc_routed": {
+   "phase": "P7",
+   "status": "pass",
+   "attempts": 7,
+   "last": {
+    "ts": "2026-10-02T03:27:40",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:c7c2d2c86437100fe5e063f742cfc2dfd141d4e87c67696ac24f8899892f9674",
+     "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+     "pro": "json_canonical:49e82e42fc0eeb90b133c7ca1bfc6661f812d5638ec2dcfc7eac418a126e3135",
+     "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-09-28T06:05:01",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:6d8944c4ca27f0b1f1c76870d3b7f6fe4108e4a0ee0efd8e5ae43705d7541357",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:f402a8602b8977b82f3c8c7845cf67ab5c7d50c6d1559f9f29a0bb26c7d0f350",
+      "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:25:09",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:2315b80550433f21425178683d490224811ebced927a9e3bd943e22b5d98e1d6",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:f402a8602b8977b82f3c8c7845cf67ab5c7d50c6d1559f9f29a0bb26c7d0f350",
+      "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:31:00",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:28871090016349930b0383e006beb15bd0ffee5ac11bf9dbdbd6a504e559015b",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:f402a8602b8977b82f3c8c7845cf67ab5c7d50c6d1559f9f29a0bb26c7d0f350",
+      "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+     }
+    },
+    {
+     "ts": "2026-09-28T08:12:07",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:b620b16a7981d37d77f14d0bc65f49b61766e7df4729442721b7bb481952e57c",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:f402a8602b8977b82f3c8c7845cf67ab5c7d50c6d1559f9f29a0bb26c7d0f350",
+      "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+     }
+    },
+    {
+     "ts": "2026-09-28T08:14:02",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:b620b16a7981d37d77f14d0bc65f49b61766e7df4729442721b7bb481952e57c",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:49e82e42fc0eeb90b133c7ca1bfc6661f812d5638ec2dcfc7eac418a126e3135",
+      "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+     }
+    },
+    {
+     "ts": "2026-10-02T03:20:27",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:9495c688eaeeee8b039f42dadfbc3ec4547a3846040ecacebda63a808274646f",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:49e82e42fc0eeb90b133c7ca1bfc6661f812d5638ec2dcfc7eac418a126e3135",
+      "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+     }
+    },
+    {
+     "ts": "2026-10-02T03:27:40",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:c7c2d2c86437100fe5e063f742cfc2dfd141d4e87c67696ac24f8899892f9674",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "pro": "json_canonical:49e82e42fc0eeb90b133c7ca1bfc6661f812d5638ec2dcfc7eac418a126e3135",
+      "dru": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55"
+     }
+    }
+   ]
+  },
+  "verify": {
+   "phase": "P8",
+   "status": "pass",
+   "attempts": 13,
+   "last": {
+    "ts": "2026-10-02T03:28:46",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 514,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:c7c2d2c86437100fe5e063f742cfc2dfd141d4e87c67696ac24f8899892f9674",
+     "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+     "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+     "waivers": "json_canonical:127064ccdb63ea4d8ac87b4c98a04cb16dddbe895da6c863876162a36bb649cd"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-09-28T06:06:33",
+     "status": "fail",
+     "failing_count": 401,
+     "total": 463,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:6d8944c4ca27f0b1f1c76870d3b7f6fe4108e4a0ee0efd8e5ae43705d7541357",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:d988c2c3216e1f352439de3e1fd2e2f2261297b9857baf66b28e68da53b996c9",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-09-28T06:21:24",
+     "status": "fail",
+     "failing_count": 402,
+     "total": 464,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:354d886f03cc0382cff7dd94c3a5d6e76fe0f0235c59e132222169bc942cb63c",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-09-28T06:23:51",
+     "status": "fail",
+     "failing_count": 401,
+     "total": 463,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:de211023f064110f91fe48b4a7596163cfe6e16261b38ea4fa65d180fff2baf4",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-09-28T06:27:00",
+     "status": "fail",
+     "failing_count": 402,
+     "total": 465,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:4d8deb89c60b043420bf8dcf2f47357cad478be109278305c23ba9f5940570d5",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:be08a20ce6642f8506d30307c1c597f34098fba787a0807d952200618764f541"
+     }
+    },
+    {
+     "ts": "2026-09-28T06:28:03",
+     "status": "fail",
+     "failing_count": 382,
+     "total": 465,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:4d8deb89c60b043420bf8dcf2f47357cad478be109278305c23ba9f5940570d5",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:be08a20ce6642f8506d30307c1c597f34098fba787a0807d952200618764f541"
+     }
+    },
+    {
+     "ts": "2026-09-28T06:53:50",
+     "status": "fail",
+     "failing_count": 23,
+     "total": 458,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:ad717f031d362c39fd59dfa443f4cfe415ae8444a8495a219b8b23df8229470f",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:73504497605e4dec10101569efb264f752c7ea9bcdc83a84805ab1fa15ae1af6"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:04:24",
+     "status": "fail",
+     "failing_count": 8,
+     "total": 453,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7dce1fcea1dc6c0452bc04298159801f6b188f7ddcfdeb488c7461c289d8efc6",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:608bf8ad148fee1b3cf42809f92e9ade31ca87b711d9709699641f6e32975ad1"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:26:14",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 450,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:2315b80550433f21425178683d490224811ebced927a9e3bd943e22b5d98e1d6",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:e4ad6374390d8c4ca3b5097c339c5c7a2a6e2a2fb50e11b693b909e3d63aab37"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:33:09",
+     "status": "fail",
+     "failing_count": 1,
+     "total": 450,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:28871090016349930b0383e006beb15bd0ffee5ac11bf9dbdbd6a504e559015b",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:e4ad6374390d8c4ca3b5097c339c5c7a2a6e2a2fb50e11b693b909e3d63aab37"
+     }
+    },
+    {
+     "ts": "2026-09-28T07:35:05",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 450,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:28871090016349930b0383e006beb15bd0ffee5ac11bf9dbdbd6a504e559015b",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:430cd0129fa5656f833abd019daaac8e8b9b9f9c16f5e1117b71c36e8bec59e7"
+     }
+    },
+    {
+     "ts": "2026-09-28T08:15:06",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 450,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:b620b16a7981d37d77f14d0bc65f49b61766e7df4729442721b7bb481952e57c",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:430cd0129fa5656f833abd019daaac8e8b9b9f9c16f5e1117b71c36e8bec59e7"
+     }
+    },
+    {
+     "ts": "2026-10-02T03:21:59",
+     "status": "fail",
+     "failing_count": 16,
+     "total": 526,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:9495c688eaeeee8b039f42dadfbc3ec4547a3846040ecacebda63a808274646f",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:430cd0129fa5656f833abd019daaac8e8b9b9f9c16f5e1117b71c36e8bec59e7"
+     }
+    },
+    {
+     "ts": "2026-10-02T03:28:46",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 514,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:c7c2d2c86437100fe5e063f742cfc2dfd141d4e87c67696ac24f8899892f9674",
+      "constraints": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+      "decoupling": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+      "waivers": "json_canonical:127064ccdb63ea4d8ac87b4c98a04cb16dddbe895da6c863876162a36bb649cd"
+     }
+    }
+   ]
+  },
+  "dfm": {
+   "phase": "P9",
+   "status": "pass",
+   "attempts": 5,
+   "last": {
+    "ts": "2026-10-02T03:29:10",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 4,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:c7c2d2c86437100fe5e063f742cfc2dfd141d4e87c67696ac24f8899892f9674",
+     "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+     "parts": null
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-09-28T07:33:36",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 4,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:28871090016349930b0383e006beb15bd0ffee5ac11bf9dbdbd6a504e559015b",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-09-28T08:12:26",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 4,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:b620b16a7981d37d77f14d0bc65f49b61766e7df4729442721b7bb481952e57c",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-09-28T08:15:25",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 4,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:b620b16a7981d37d77f14d0bc65f49b61766e7df4729442721b7bb481952e57c",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-10-02T03:22:19",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 4,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:9495c688eaeeee8b039f42dadfbc3ec4547a3846040ecacebda63a808274646f",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-10-02T03:29:10",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 4,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:c7c2d2c86437100fe5e063f742cfc2dfd141d4e87c67696ac24f8899892f9674",
+      "sch": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+      "parts": null
+     }
+    }
+   ]
+  }
+ },
+ "human": {
+  "1": {
+   "status": "skipped",
+   "ts": "2026-09-27T14:56:54",
+   "note": "Unattended run (owner: decide for yourself): architecture taken as PROVISIONAL delegate answer, not owner approval. 10-28 V, 10 A RMS/20 A pk, 60 V FETs, DRV8300D bootstrap, 3x Kelvin shunts + INA240, STM32G4, LM74500 RP NFET, buck 5V/LDO 3V3/12V boost, 4L. All P2 slots under coverage gap."
+  }
+ },
+ "artifacts": {
+  "sch": {
+   "path": "kicad/PCB-0018-A_bldc-motor-driver.kicad_sch",
+   "kind": "sch",
+   "sha256": "sexpr_no_uuid:190b7461c8e6e87bfdd1c55ee0f329288718d50633d888a46eb7cdecc6960298",
+   "hashed": "2026-10-02T03:29:10"
+  },
+  "pro": {
+   "path": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pro",
+   "kind": "pro",
+   "sha256": "json_canonical:49e82e42fc0eeb90b133c7ca1bfc6661f812d5638ec2dcfc7eac418a126e3135",
+   "hashed": "2026-10-02T03:27:40"
+  },
+  "gerbers": {
+   "path": "fab/PCB-0018-A_bldc-motor-driver_gerbers.zip",
+   "kind": "gerbers",
+   "sha256": "gerber_design:97bbca5e9f1ccf3d30b4c9b4f409586250bd51607adb400e8c3ebcd1ac438cdd",
+   "hashed": "2026-09-28T08:38:39"
+  },
+  "pcb": {
+   "path": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+   "kind": "pcb",
+   "sha256": "sexpr_no_uuid:c7c2d2c86437100fe5e063f742cfc2dfd141d4e87c67696ac24f8899892f9674",
+   "hashed": "2026-10-02T03:29:10"
+  },
+  "constraints": {
+   "path": "kicad/constraints.json",
+   "kind": "constraints",
+   "sha256": "json_canonical:6cbd36da6a4ef4280ce8e2d2cbb0dfd747259fbb45b9adc740c5dee7d7dd10cf",
+   "hashed": "2026-10-02T03:28:46"
+  },
+  "decoupling": {
+   "path": "kicad/decoupling.json",
+   "kind": "decoupling",
+   "sha256": "json_canonical:4632b84265f5e2a60bd34b790f1b93e93f9441808a5ea69bb5eca963f240c2c0",
+   "hashed": "2026-10-02T03:28:46"
+  },
+  "dru": {
+   "path": "kicad/PCB-0018-A_bldc-motor-driver.kicad_dru",
+   "kind": "dru",
+   "sha256": "text_eol:6e979e7dc9c6c4cc73e5322fc4547544174f63ab926caa64a7c2b133e164cf55",
+   "hashed": "2026-10-02T03:27:40"
+  },
+  "waivers": {
+   "path": "reports/verify-waivers.json",
+   "kind": "waivers",
+   "sha256": "json_canonical:127064ccdb63ea4d8ac87b4c98a04cb16dddbe895da6c863876162a36bb649cd",
+   "hashed": "2026-10-02T03:28:46"
+  },
+  "check_diffpair": {
+   "path": "reports/check_diffpair.json",
+   "kind": null,
+   "sha256": "json_canonical:19da8a7cae4fba04d71b52dbf33a24cd04fcbd3a3cbd4809002def10e2809ec5",
+   "hashed": "2026-09-28T07:26:52"
+  },
+  "parts": {
+   "path": "kicad/parts.json",
+   "kind": "parts",
+   "sha256": null,
+   "hashed": "2026-10-02T03:29:10"
+  },
+  "bom": {
+   "path": "fab/BOM.csv",
+   "kind": "bom",
+   "sha256": "text_eol:3d6110329737f32d72546443009ccfc6779a996d6a2f014dbc0f32dc46cb632f",
+   "hashed": "2026-09-28T08:38:39"
+  },
+  "cpl": {
+   "path": "fab/CPL.csv",
+   "kind": "cpl",
+   "sha256": "text_eol:714841e99f2cd1c11fb8670c9390370ee90f8725db2930868ad8b429fd7c66fb",
+   "hashed": "2026-09-28T08:38:39"
+  },
+  "place_waivers": {
+   "path": "reports/place-waivers.json",
+   "kind": null,
+   "sha256": "json_canonical:ce3dc51e83a9d8590adb442547c9efc245a45c20d90cce75eb556cc2513d591a",
+   "hashed": "2026-09-28T07:35:53"
+  }
+ },
+ "open_issues": [],
+ "next_issue_id": 1,
+ "budgets": {
+  "fix_loops": {
+   "erc": 3,
+   "place": 3,
+   "drc_routed": 3,
+   "verify": 3,
+   "dfm": 3
+  },
+  "freerouting_retries": 2,
+  "place_edit_iterations": 8,
+  "research": {
+   "per_run": 2,
+   "depth_per_gap": 4
+  }
+ },
+ "decisions": [
+  {
+   "what": "Open questions 1-8 answered as delegate (UART JST-GH 4p; 8-pin Hall+ABZ; 10 A RMS/20 A pk and 10-28 V PROVISIONAL; qty 5; top-side SMD; 4x M3)",
+   "why": "Unattended run; brief says decide and journal; safety values re-confirmed at H1",
+   "phase": "P0",
+   "ts": "2026-09-27T14:04:41"
+  },
+  {
+   "what": "Power stage uses 60 V FETs (2-3 mOhm, 5x6), not 40 V",
+   "why": "VM TVS clamps ~45 V at 28 V standoff; 40 V FETs have no margin under clamp. Correctness over the brief's 40 V guess",
+   "phase": "P1",
+   "ts": "2026-09-27T14:08:55"
+  },
+  {
+   "what": "No on-board fuse (external 20 A slow fuse required, stated in guide); no hot-swap inrush limit; no brake chopper - firmware limits regen on VM sense",
+   "why": "Bench prototype; fuse/brake sized to the user's supply; recorded as PROVISIONAL safety answers for H1",
+   "phase": "P1",
+   "ts": "2026-09-27T14:08:56"
+  },
+  {
+   "what": "Gate drive: DRV8300D on a 12 V GVDD boosted from 5 V (TPS61040), not DRV8320H's charge pump; overcurrent via CSA -> MCU comparators -> TIM1 break",
+   "why": "DRV8320H guarantees only 6.3 V high-side VGS at VM=10 V, below the 8 V requirement",
+   "phase": "P2",
+   "ts": "2026-09-27T14:26:13"
+  },
+  {
+   "what": "Key parts: NTMFS5C628NL 60 V FETs, LM5164 buck, INA240A1 G=20, STM32G431CBT6, LM74500 RP, SMCJ28A, 3 mOhm 2512 shunts, 4L JLC04162H-7628A 2 oz outer",
+   "why": "architect P2; see architecture/blocks.md",
+   "phase": "P2",
+   "ts": "2026-09-27T14:26:14"
+  },
+  {
+   "what": "Designing under coverage gap: tvs-clamp, boost, ldo, mcu, isns_a/b/c (no library checklist); buck gap is inrush only",
+   "why": "Research cap and iteration spend: 4 of 6 research slots went to the safety-critical blocks (gate drive, half-bridge, shunt sensing, reverse-polarity FET). These are covered by P1 research (power.md, mcu.md, current-sense-amp.md) and will be checked against datasheet extraction at P3; buck inrush is bounded by the buck's own soft-start behind the RP-FET/bulk-cap path",
+   "phase": "P2",
+   "ts": "2026-09-27T14:32:51"
+  },
+  {
+   "what": "Board renamed astra-motor -> bldc-motor-driver; spec is designed from a general brief; research found nothing about the reference board beyond the frame (research/reference-video.md)",
+   "why": "Owner addenda 1790532180 / 1790532487: no Astra naming; research first, fall back to the frame-derived spec if nothing usable",
+   "phase": "P0",
+   "ts": "2026-09-27T14:32:51"
+  },
+  {
+   "what": "research task block-half-bridge-inverter-1 closed over 1 unverified draft record(s): half-bridge-inverter-switch-node-damping",
+   "why": "--accept-drafts: the slot ships without this knowledge",
+   "phase": "P2",
+   "ts": "2026-09-27T14:55:35"
+  },
+  {
+   "what": "designing under coverage gap: all 12 P2 slots (power_in x2, regulators x3, gate_driver, power_stage, sensing, mcu, isns_a/b/c)",
+   "why": "maturity floor is owner-approved; 19 verified research records (4 tasks) fold in only as provisional until promoted, switch-node-damping record refuted (10-48 V envelope unsupported, source is 5-21 V) and closed as draft; regulators/mcu/isns covered by P1 research md + P3 datasheet extraction; unattended run",
+   "phase": "P2",
+   "ts": "2026-09-27T14:56:30"
+  },
+  {
+   "what": "designing under coverage gap at P3 exit: 9 topology/interface slots (tvs-clamp, buck, boost, ldo, half-bridge-inverter, mcu, isns_a/b/c) have no checklist; parts 8 covered/3 provisional",
+   "why": "No new part-level gaps vs P2; hwde has no checklists for these topologies; the verified research records + datasheet extractions (8 ICs incl. STM32G431) carry the layout rules. Unattended run.",
+   "phase": "P3",
+   "ts": "2026-09-27T15:44:13"
+  },
+  {
+   "what": "check_diffpair (ISNS_A/B/C): exit 1, 6 errors (skew 14.69/7.90/15.14 mm, N uncoupled 17.35/10.56/17.80 mm vs 3.0 mm limit) + 7 warnings (open_trunk x6: terminals are net ties; B via asymmetry). check_diffpair has no waiver input; the same 6 findings are waived in reports/verify-waivers.json and the verify gate records PASS.",
+   "why": "Owner-approved: INA240 IN+ (pin 8) and IN- (pin 1) are on opposite pad rows 5.4 mm apart and the shunt Kelvin taps 3.46 mm apart, so ~9 mm uncoupled is set by the packages; INA240 has its own PWM rejection and the signal is low-frequency sense. A/C N legs loop round C511/C513; a B.Cu underpass would cut them to ~10.5 mm but add two vias and still fail, so left.",
+   "phase": "P8",
+   "ts": "2026-09-28T07:26:52"
+  },
+  {
+   "what": "Fab package exported to fab/ (gerbers+drill zip, pos, BOM.csv, CPL.csv, prebuy.csv); BOM incomplete: 53 placed parts (sensing U501-503/C5xx/R5xx, io C70x/D70x/F70x/J70x/R70x) carry no LCSC number on the board and parts.json has no per-ref map. Not ordered.",
+   "why": "P9 export per brief; LCSC back-annotation needs schematic LCSC fields, left for the sourcing step rather than guessed.",
+   "phase": "P9",
+   "ts": "2026-09-28T07:35:53"
+  },
+  {
+   "what": "Fab package re-exported from the final board (pcb sexpr_no_uuid:b620b16a..., after the 08:12-08:15 erc/drc_routed/place/verify/dfm PASS runs): gerbers, drill, pos, BOM.csv, BOM-full.csv, CPL.csv, prebuy.csv. BOM complete: every placed part carries an LCSC number (bom_cpl pass, 0 missing). Supersedes the 07:35 P9 entry that said 53 parts had none. Not ordered.",
+   "why": "The 53 sensing/io parts had LCSC numbers only on their embedded lib symbols ('LCSC Part'); copying them to the instances and footprints as 'LCSC' changed only hidden fields, so the gerber design hash is unchanged (97bbca5e...) and the copper is the one that passed DRC.",
+   "phase": "P9",
+   "ts": "2026-09-28T08:38:51"
+  }
+ ],
+ "edits": [
+  {
+   "ts": "2026-09-27T16:45:03",
+   "class": "outline_change",
+   "refs": [],
+   "note": "outline -> 78.0x78.0 mm (fixed)",
+   "human_hold": 2,
+   "gates": [
+    "place",
+    "drc",
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "gates_marked": [],
+   "stale_artifacts": [
+    "gerbers"
+   ]
+  }
+ ],
+ "spawns": [
+  {
+   "ts": "2026-09-27T15:44:14",
+   "role": "datasheet-extractor",
+   "model": "sonnet",
+   "phase": "P3"
+  },
+  {
+   "ts": "2026-09-27T15:44:14",
+   "role": "part-sourcer",
+   "model": "sonnet",
+   "phase": "P3"
+  }
+ ],
+ "history": [
+  {
+   "ts": "2026-09-27T14:02:00",
+   "event": "init",
+   "board": "bldc-motor-driver",
+   "phase": "P0"
+  },
+  {
+   "ts": "2026-09-27T14:04:41",
+   "event": "decision",
+   "what": "Open questions 1-8 answered as delegate (UART JST-GH 4p; 8-pin Hall+ABZ; 10 A RMS/20 A pk and 10-28 V PROVISIONAL; qty 5; top-side SMD; 4x M3)"
+  },
+  {
+   "ts": "2026-09-27T14:04:54",
+   "event": "phase",
+   "phase": "P1",
+   "prev": "P0"
+  },
+  {
+   "ts": "2026-09-27T14:08:55",
+   "event": "decision",
+   "what": "Power stage uses 60 V FETs (2-3 mOhm, 5x6), not 40 V"
+  },
+  {
+   "ts": "2026-09-27T14:08:56",
+   "event": "decision",
+   "what": "No on-board fuse (external 20 A slow fuse required, stated in guide); no hot-swap inrush limit; no brake chopper - firmware limits regen on VM sense"
+  },
+  {
+   "ts": "2026-09-27T14:16:50",
+   "event": "phase",
+   "phase": "P2",
+   "prev": "P1"
+  },
+  {
+   "ts": "2026-09-27T14:26:13",
+   "event": "decision",
+   "what": "Gate drive: DRV8300D on a 12 V GVDD boosted from 5 V (TPS61040), not DRV8320H's charge pump; overcurrent via CSA -> MCU comparators -> TIM1 break"
+  },
+  {
+   "ts": "2026-09-27T14:26:14",
+   "event": "decision",
+   "what": "Key parts: NTMFS5C628NL 60 V FETs, LM5164 buck, INA240A1 G=20, STM32G431CBT6, LM74500 RP, SMCJ28A, 3 mOhm 2512 shunts, 4L JLC04162H-7628A 2 oz outer"
+  },
+  {
+   "ts": "2026-09-27T14:31:37",
+   "event": "budget",
+   "path": "research.per_run",
+   "remaining": 5
+  },
+  {
+   "ts": "2026-09-27T14:31:37",
+   "event": "research_opened",
+   "task": "block-gate-driver-bootstrap-1",
+   "slot": "block:gate_driver",
+   "phase": "P2"
+  },
+  {
+   "ts": "2026-09-27T14:31:38",
+   "event": "budget",
+   "path": "research.per_run",
+   "remaining": 4
+  },
+  {
+   "ts": "2026-09-27T14:31:38",
+   "event": "research_opened",
+   "task": "block-half-bridge-inverter-1",
+   "slot": "block:power_stage",
+   "phase": "P2"
+  },
+  {
+   "ts": "2026-09-27T14:31:39",
+   "event": "budget",
+   "path": "research.per_run",
+   "remaining": 3
+  },
+  {
+   "ts": "2026-09-27T14:31:39",
+   "event": "research_opened",
+   "task": "block-current-sense-shunt-1",
+   "slot": "block:sensing",
+   "phase": "P2"
+  },
+  {
+   "ts": "2026-09-27T14:31:40",
+   "event": "budget",
+   "path": "research.per_run",
+   "remaining": 2
+  },
+  {
+   "ts": "2026-09-27T14:31:40",
+   "event": "research_opened",
+   "task": "block-reverse-polarity-fet-1",
+   "slot": "block:power_in",
+   "phase": "P2"
+  },
+  {
+   "ts": "2026-09-27T14:32:51",
+   "event": "decision",
+   "what": "Designing under coverage gap: tvs-clamp, boost, ldo, mcu, isns_a/b/c (no library checklist); buck gap is inrush only"
+  },
+  {
+   "ts": "2026-09-27T14:32:51",
+   "event": "decision",
+   "what": "Board renamed astra-motor -> bldc-motor-driver; spec is designed from a general brief; research found nothing about the reference board beyond the frame (research/reference-video.md)"
+  },
+  {
+   "ts": "2026-09-27T14:55:27",
+   "event": "research_closed",
+   "task": "block-gate-driver-bootstrap-1",
+   "slot": "block:gate_driver",
+   "outcome": "verified",
+   "queue_entry": "2026-09-27-research-task-block-gate-driver-bootstrap-1"
+  },
+  {
+   "ts": "2026-09-27T14:55:30",
+   "event": "research_closed",
+   "task": "block-current-sense-shunt-1",
+   "slot": "block:sensing",
+   "outcome": "verified",
+   "queue_entry": "2026-09-27-research-task-block-current-sense-shunt-1"
+  },
+  {
+   "ts": "2026-09-27T14:55:32",
+   "event": "research_closed",
+   "task": "block-reverse-polarity-fet-1",
+   "slot": "block:power_in",
+   "outcome": "verified",
+   "queue_entry": "2026-09-27-research-task-block-reverse-polarity-fet-1"
+  },
+  {
+   "ts": "2026-09-27T14:55:35",
+   "event": "research_closed",
+   "task": "block-half-bridge-inverter-1",
+   "slot": "block:power_stage",
+   "outcome": "verified_with_drafts",
+   "queue_entry": "2026-09-27-research-task-block-half-bridge-inverter-1"
+  },
+  {
+   "ts": "2026-09-27T14:55:35",
+   "event": "decision",
+   "what": "research task block-half-bridge-inverter-1 closed over 1 unverified draft record(s): half-bridge-inverter-switch-node-damping"
+  },
+  {
+   "ts": "2026-09-27T14:55:35",
+   "event": "research_drafts_accepted",
+   "task": "block-half-bridge-inverter-1",
+   "slot": "block:power_stage",
+   "records": [
+    "half-bridge-inverter-switch-node-damping"
+   ]
+  },
+  {
+   "ts": "2026-09-27T14:56:30",
+   "event": "decision",
+   "what": "designing under coverage gap: all 12 P2 slots (power_in x2, regulators x3, gate_driver, power_stage, sensing, mcu, isns_a/b/c)"
+  },
+  {
+   "ts": "2026-09-27T14:56:31",
+   "event": "phase",
+   "phase": "P3",
+   "prev": "P2"
+  },
+  {
+   "ts": "2026-09-27T14:56:54",
+   "event": "human",
+   "checkpoint": "1",
+   "status": "skipped"
+  },
+  {
+   "ts": "2026-09-27T15:44:13",
+   "event": "decision",
+   "what": "designing under coverage gap at P3 exit: 9 topology/interface slots (tvs-clamp, buck, boost, ldo, half-bridge-inverter, mcu, isns_a/b/c) have no checklist; parts 8 covered/3 provisional"
+  },
+  {
+   "ts": "2026-09-27T15:44:14",
+   "event": "spawn",
+   "role": "datasheet-extractor",
+   "model": "sonnet"
+  },
+  {
+   "ts": "2026-09-27T15:44:14",
+   "event": "spawn",
+   "role": "part-sourcer",
+   "model": "sonnet"
+  },
+  {
+   "ts": "2026-09-27T15:44:14",
+   "event": "phase",
+   "phase": "P4",
+   "prev": "P3"
+  },
+  {
+   "ts": "2026-09-27T16:09:34",
+   "event": "gate",
+   "gate": "erc",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 9
+  },
+  {
+   "ts": "2026-09-27T16:11:16",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-27T16:15:07",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-27T16:25:32",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 4,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-27T16:26:29",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-27T16:28:35",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 6,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-27T16:35:46",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 7,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-27T16:40:22",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 8,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-27T16:42:29",
+   "event": "phase",
+   "phase": "P5",
+   "prev": "P4"
+  },
+  {
+   "ts": "2026-09-27T16:42:30",
+   "event": "phase",
+   "phase": "P6",
+   "prev": "P5"
+  },
+  {
+   "ts": "2026-09-27T16:45:03",
+   "event": "edit",
+   "edit_class": "outline_change",
+   "refs": [],
+   "human_hold": 2
+  },
+  {
+   "ts": "2026-09-27T17:19:59",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 24
+  },
+  {
+   "ts": "2026-09-27T19:15:09",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T06:05:01",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T06:06:33",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 401
+  },
+  {
+   "ts": "2026-09-28T06:21:24",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 2,
+   "failing_count": 402
+  },
+  {
+   "ts": "2026-09-28T06:23:51",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 3,
+   "failing_count": 401
+  },
+  {
+   "ts": "2026-09-28T06:27:00",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 4,
+   "failing_count": 402
+  },
+  {
+   "ts": "2026-09-28T06:28:04",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 5,
+   "failing_count": 382
+  },
+  {
+   "ts": "2026-09-28T06:28:18",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 3,
+   "failing_count": 15
+  },
+  {
+   "ts": "2026-09-28T06:28:30",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 4,
+   "failing_count": 15
+  },
+  {
+   "ts": "2026-09-28T06:28:43",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 5,
+   "failing_count": 15
+  },
+  {
+   "ts": "2026-09-28T06:53:50",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 6,
+   "failing_count": 23
+  },
+  {
+   "ts": "2026-09-28T06:54:13",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 6,
+   "failing_count": 14
+  },
+  {
+   "ts": "2026-09-28T07:03:26",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 7,
+   "failing_count": 14
+  },
+  {
+   "ts": "2026-09-28T07:04:24",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 7,
+   "failing_count": 8
+  },
+  {
+   "ts": "2026-09-28T07:25:09",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T07:25:14",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 8,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T07:26:14",
+   "event": "gate",
+   "gate": "verify",
+   "status": "pass",
+   "attempt": 8,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T07:26:52",
+   "event": "artifact",
+   "name": "check_diffpair",
+   "path": "reports/check_diffpair.json"
+  },
+  {
+   "ts": "2026-09-28T07:26:52",
+   "event": "decision",
+   "what": "check_diffpair (ISNS_A/B/C): exit 1, 6 errors (skew 14.69/7.90/15.14 mm, N uncoupled 17.35/10.56/17.80 mm vs 3.0 mm limit) + 7 warnings (open_trunk x6: terminals are net ties; B via asymmetry). check_diffpair has no waiver input; the same 6 findings are waived in reports/verify-waivers.json and the verify gate records PASS."
+  },
+  {
+   "ts": "2026-09-28T07:31:00",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T07:31:05",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 9,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T07:33:10",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 9,
+   "failing_count": 1
+  },
+  {
+   "ts": "2026-09-28T07:33:36",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T07:35:05",
+   "event": "gate",
+   "gate": "verify",
+   "status": "pass",
+   "attempt": 10,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T07:35:52",
+   "event": "artifact",
+   "name": "gerbers",
+   "path": "fab/PCB-0018-A_bldc-motor-driver_gerbers.zip"
+  },
+  {
+   "ts": "2026-09-28T07:35:52",
+   "event": "artifact",
+   "name": "bom",
+   "path": "fab/BOM.csv"
+  },
+  {
+   "ts": "2026-09-28T07:35:52",
+   "event": "artifact",
+   "name": "cpl",
+   "path": "fab/CPL.csv"
+  },
+  {
+   "ts": "2026-09-28T07:35:53",
+   "event": "artifact",
+   "name": "place_waivers",
+   "path": "reports/place-waivers.json"
+  },
+  {
+   "ts": "2026-09-28T07:35:53",
+   "event": "decision",
+   "what": "Fab package exported to fab/ (gerbers+drill zip, pos, BOM.csv, CPL.csv, prebuy.csv); BOM incomplete: 53 placed parts (sensing U501-503/C5xx/R5xx, io C70x/D70x/F70x/J70x/R70x) carry no LCSC number on the board and parts.json has no per-ref map. Not ordered."
+  },
+  {
+   "ts": "2026-09-28T08:11:59",
+   "event": "gate",
+   "gate": "erc",
+   "status": "fail",
+   "attempt": 9,
+   "failing_count": 60
+  },
+  {
+   "ts": "2026-09-28T08:12:07",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 4,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T08:12:26",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T08:13:54",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 10,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T08:14:02",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T08:14:07",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 10,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T08:15:06",
+   "event": "gate",
+   "gate": "verify",
+   "status": "pass",
+   "attempt": 11,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T08:15:25",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-09-28T08:38:39",
+   "event": "rehash",
+   "names": [
+    "bom",
+    "cpl",
+    "gerbers",
+    "pcb"
+   ]
+  },
+  {
+   "ts": "2026-09-28T08:38:51",
+   "event": "decision",
+   "what": "Fab package re-exported from the final board (pcb sexpr_no_uuid:b620b16a..., after the 08:12-08:15 erc/drc_routed/place/verify/dfm PASS runs): gerbers, drill, pos, BOM.csv, BOM-full.csv, CPL.csv, prebuy.csv. BOM complete: every placed part carries an LCSC number (bom_cpl pass, 0 missing). Supersedes the 07:35 P9 entry that said 53 parts had none. Not ordered."
+  },
+  {
+   "ts": "2026-09-28T08:38:51",
+   "event": "phase",
+   "phase": "P9",
+   "prev": "P6"
+  },
+  {
+   "ts": "2026-10-02T01:36:47",
+   "event": "snapshot",
+   "label": "pre-move-J701-J702",
+   "files": 1
+  },
+  {
+   "ts": "2026-10-02T03:20:27",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 6,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T03:20:33",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 11,
+   "failing_count": 14
+  },
+  {
+   "ts": "2026-10-02T03:21:59",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 12,
+   "failing_count": 16
+  },
+  {
+   "ts": "2026-10-02T03:22:19",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 4,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T03:27:40",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 7,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T03:28:46",
+   "event": "gate",
+   "gate": "verify",
+   "status": "pass",
+   "attempt": 13,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T03:29:10",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 5,
+   "failing_count": 0
+  }
+ ]
+}

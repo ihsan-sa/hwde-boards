@@ -1,0 +1,38 @@
+{
+ "block": "module",
+ "candidates": [
+  {
+   "mpn": "ESP32-C3-MINI-1-N4",
+   "lcsc": "C2838502",
+   "package": "SMD,16.6x13.2mm",
+   "basic": false,
+   "stock": 13531,
+   "price": 3.0303,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2108141930_Espressif-Systems-ESP32-C3-MINI-1-N4_C2838502.pdf",
+   "rank": 1,
+   "fit": "ESP32-C3-MINI-1-N4 PCB-antenna module, 4 MB flash, FCC/CE pre-certified; native USB on IO18/IO19; deepest stock of the family (Extended)"
+  },
+  {
+   "mpn": "ESP32-C3-MINI-1-H4X",
+   "lcsc": "C41349510",
+   "package": "SMD,16.6x13.2mm",
+   "basic": false,
+   "stock": 1348,
+   "price": 2.9474,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2412051119_Espressif-Systems-ESP32-C3-MINI-1-H4X_C41349510.pdf",
+   "rank": 2,
+   "fit": "-H4X: same footprint/pinout, 105 C rated; thinner stock - pin-compatible alternate"
+  },
+  {
+   "mpn": "ESP32-C3-MINI-1U-N4",
+   "lcsc": "C2911374",
+   "package": "SMD,13.2x12.5mm",
+   "basic": false,
+   "stock": 2117,
+   "price": 3.1311,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206021800_Espressif-Systems-ESP32-C3-MINI-1U-N4_C2911374.pdf",
+   "rank": 3,
+   "fit": "-1U (U.FL external antenna): smaller, no keep-out, but adds an antenna + cable to the BOM and the brief prefers the PCB antenna"
+  }
+ ]
+}

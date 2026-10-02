@@ -1,0 +1,415 @@
+{
+ "script": "silk_place",
+ "status": "violations",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 8,
+  "by_severity": {
+   "warning": 8
+  },
+  "by_source": {
+   "silk_place": 8
+  }
+ },
+ "violations": [
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J5"
+   ],
+   "msg": "J5: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "J5: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  },
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U2"
+   ],
+   "msg": "U2: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "U2: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  },
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "Q1"
+   ],
+   "msg": "Q1: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "Q1: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  },
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R5"
+   ],
+   "msg": "R5: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "R5: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  },
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R13"
+   ],
+   "msg": "R13: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "R13: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  },
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C3"
+   ],
+   "msg": "C3: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "C3: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  },
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "R15"
+   ],
+   "msg": "R15: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "R15: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  },
+  {
+   "check": "silk_place",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D10"
+   ],
+   "msg": "D10: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+   "source": "silk_place",
+   "items": [
+    {
+     "msg": "D10: no collision-free candidate within +3.0 mm push (channel narrower than the label)",
+     "pos": null
+    }
+   ],
+   "kind": "silk_residual"
+  }
+ ],
+ "targets": 41,
+ "moved": 33,
+ "residual": [
+  {
+   "ref": "J5",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  },
+  {
+   "ref": "U2",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  },
+  {
+   "ref": "Q1",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  },
+  {
+   "ref": "R5",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  },
+  {
+   "ref": "R13",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  },
+  {
+   "ref": "C3",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  },
+  {
+   "ref": "R15",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  },
+  {
+   "ref": "D10",
+   "reason": "no collision-free candidate within +3.0 mm push (channel narrower than the label)"
+  }
+ ],
+ "skipped": [],
+ "min_silk_clearance": 0.0,
+ "median_beyond_extent_mm_before": 0.478,
+ "median_beyond_extent_mm": 1.85,
+ "ops_out": "PCB-0020-A_esp32c3-node/kicad/silk_ops.json",
+ "results": [
+  {
+   "ref": "U1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.9
+  },
+  {
+   "ref": "D3",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.675
+  },
+  {
+   "ref": "SW1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "U3",
+   "moved": true,
+   "clearance_mm": 0.191,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "C1",
+   "moved": true,
+   "clearance_mm": 0.29,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "D2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "R10",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.85
+  },
+  {
+   "ref": "C12",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "C2",
+   "moved": true,
+   "clearance_mm": 0.07,
+   "beyond_extent_mm": 1.6
+  },
+  {
+   "ref": "D1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.675
+  },
+  {
+   "ref": "R4",
+   "moved": true,
+   "clearance_mm": 0.255,
+   "beyond_extent_mm": 1.9602
+  },
+  {
+   "ref": "U4",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.85
+  },
+  {
+   "ref": "C4",
+   "moved": true,
+   "clearance_mm": 0.245,
+   "beyond_extent_mm": 2.6752
+  },
+  {
+   "ref": "R6",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "R7",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.85
+  },
+  {
+   "ref": "SW2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.35
+  },
+  {
+   "ref": "U5",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.6
+  },
+  {
+   "ref": "C5",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.35
+  },
+  {
+   "ref": "J1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.35
+  },
+  {
+   "ref": "J2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.1
+  },
+  {
+   "ref": "J4",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 1.02
+  },
+  {
+   "ref": "C10",
+   "moved": true,
+   "clearance_mm": 0.158,
+   "beyond_extent_mm": 3.1
+  },
+  {
+   "ref": "C13",
+   "moved": true,
+   "clearance_mm": 0.25,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "C14",
+   "moved": true,
+   "clearance_mm": 0.222,
+   "beyond_extent_mm": 2.35
+  },
+  {
+   "ref": "R1",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.4377
+  },
+  {
+   "ref": "R16",
+   "moved": true,
+   "clearance_mm": 0.108,
+   "beyond_extent_mm": 2.1
+  },
+  {
+   "ref": "R3",
+   "moved": true,
+   "clearance_mm": 0.055,
+   "beyond_extent_mm": 1.1
+  },
+  {
+   "ref": "C11",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 3.35
+  },
+  {
+   "ref": "J3",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.1
+  },
+  {
+   "ref": "R14",
+   "moved": true,
+   "clearance_mm": 0.038,
+   "beyond_extent_mm": 0.4164
+  },
+  {
+   "ref": "R2",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 0.85
+  },
+  {
+   "ref": "R11",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.1
+  },
+  {
+   "ref": "R12",
+   "moved": true,
+   "clearance_mm": 0.3,
+   "beyond_extent_mm": 2.35
+  }
+ ],
+ "applied": true,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:42:18+00:00",
+ "input": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:3149dc92de9aec710c0b2a7ebdbdd4193fb076a3646aebec7b23527fe2919a3c"
+}

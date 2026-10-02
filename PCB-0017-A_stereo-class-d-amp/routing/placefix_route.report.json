@@ -1,0 +1,67 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 12,
+ "verified": true,
+ "by_status": {
+  "removed": 6,
+  "added": 6
+ },
+ "results": [
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "fc09f28d-cf00-4a0b-8d9d-da0eeb7f629b"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "14003baf-7613-4f9c-b30e-e5b9cdd932b2"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "5604f4d7-6bee-48e2-9b64-698ca86f13da"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "0bdfeac8-ef6a-44d3-95f1-8df346b77dd8"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "0c981bf1-1a1a-45a6-a4bf-7be2bd64685a"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "f6755287-b9b6-40fe-969f-dcbe8e32022b"
+  }
+ ]
+}

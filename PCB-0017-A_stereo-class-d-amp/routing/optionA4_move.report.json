@@ -1,0 +1,89 @@
+{
+ "script": "place_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 10,
+ "verified": true,
+ "results": [
+  {
+   "ref": "C18",
+   "x": 33.8,
+   "y": 23.36,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C17",
+   "x": 38.4,
+   "y": 27.7,
+   "deg": 90.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C16",
+   "x": 38.4,
+   "y": 31.65,
+   "deg": -90.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C15",
+   "x": 32.8,
+   "y": 30.4,
+   "deg": 90.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C11",
+   "x": 34.15,
+   "y": 37.3,
+   "deg": 90.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C14",
+   "x": 30.2,
+   "y": 41.0,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C18",
+   "field": "reference",
+   "x": 33.8,
+   "y": 25.05,
+   "deg": 180.0
+  },
+  {
+   "ref": "C16",
+   "field": "reference",
+   "x": 40.3,
+   "y": 31.65,
+   "deg": 90.0
+  },
+  {
+   "ref": "C24",
+   "field": "reference",
+   "x": 52.9,
+   "y": 43.0,
+   "deg": 180.0
+  },
+  {
+   "ref": "C11",
+   "field": "reference",
+   "x": 34.15,
+   "y": 39.5,
+   "deg": 0.0
+  }
+ ],
+ "routed_board": true,
+ "warnings": [
+  "footprint ops applied on a routed board (--allow-routed): re-run the drc_routed gate"
+ ]
+}

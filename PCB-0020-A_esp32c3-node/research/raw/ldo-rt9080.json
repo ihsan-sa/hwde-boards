@@ -1,0 +1,403 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "RT9080-33",
+ "total": 5,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C841192",
+   "mpn": "RT9080-33GJ5",
+   "brand": "Richtek Tech",
+   "description": "-40\u2103~+125\u2103@(Tj) 1 2uA 3.3V 360mV@(600mA) 42uVrms 5.5V 600mA 75dB@(1kHz) Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive TSOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "TSOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 40252,
+   "price": 0.12,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.12
+    },
+    {
+     "qty": 50,
+     "price": 0.0978
+    },
+    {
+     "qty": 150,
+     "price": 0.0865
+    },
+    {
+     "qty": 500,
+     "price": 0.0781
+    },
+    {
+     "qty": 3000,
+     "price": 0.061
+    },
+    {
+     "qty": 6000,
+     "price": 0.0576
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2009192305_Richtek-Tech-RT9080-33GJ5_C841192.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_richtek-tech-rt9080-33gj5_C841192.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(Tj)"
+    },
+    {
+     "name": "Noise",
+     "value": "42uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "360mV@(600mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C20617299",
+   "mpn": "RT9080-33GJ5",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 2uA 3.3V 320mV@(600mA) 5.5V 50uVrms 600mA 75dB@(1kHz) Fixed Over Temperature Protection\u3001Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7175,
+   "price": 0.1054,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1054
+    },
+    {
+     "qty": 50,
+     "price": 0.0834
+    },
+    {
+     "qty": 150,
+     "price": 0.0726
+    },
+    {
+     "qty": 500,
+     "price": 0.0644
+    },
+    {
+     "qty": 3000,
+     "price": 0.0579
+    },
+    {
+     "qty": 6000,
+     "price": 0.0547
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2402021506_TECH-PUBLIC-RT9080-33GJ5_C20617299.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-rt9080-33gj5_C20617299.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown\u3001Enable control\u3001Output discharge"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C7528830",
+   "mpn": "RT9080-33GJ5-MS",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+125\u2103 1 2uA 3.3V 320mV@(600mA) 600mA 6V 75dB@(1kHz) Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3527,
+   "price": 0.0885,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0885
+    },
+    {
+     "qty": 50,
+     "price": 0.0704
+    },
+    {
+     "qty": 150,
+     "price": 0.0615
+    },
+    {
+     "qty": 500,
+     "price": 0.0548
+    },
+    {
+     "qty": 3000,
+     "price": 0.0491
+    },
+    {
+     "qty": 6000,
+     "price": 0.0465
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401271100_MSKSEMI-RT9080-33GJ5-MS_C7528830.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_msksemi-rt9080-33gj5-ms_C7528830.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown\u3001Enable control\u3001Output discharge"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2959864",
+   "mpn": "TPRT9080-33GJ5",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 2uA 3.3V 320mV@(600mA) 5.5V 50uVrms 600mA 80dB@(100Hz) Fixed Over Temperature Protection\u3001Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2697,
+   "price": 0.1101,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1101
+    },
+    {
+     "qty": 50,
+     "price": 0.0886
+    },
+    {
+     "qty": 150,
+     "price": 0.0779
+    },
+    {
+     "qty": 500,
+     "price": 0.07
+    },
+    {
+     "qty": 3000,
+     "price": 0.0558
+    },
+    {
+     "qty": 6000,
+     "price": 0.0527
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201211530_TECH-PUBLIC-TPRT9080-33GJ5_C2959864.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-tprt9080-33gj5_C2959864.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "80dB@(100Hz)"
+    },
+    {
+     "name": "standby current",
+     "value": "2uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "600mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Thermal shutdown\u3001Enable control\u3001Output discharge"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "320mV@(600mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C22378860",
+   "mpn": "RT9080-33GQZ",
+   "brand": "Richtek Tech",
+   "description": "SMD-4P New Arrivals ROHS",
+   "package": "SMD-4P",
+   "category": "New Arrivals",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.0396,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0396
+    },
+    {
+     "qty": 100,
+     "price": 0.0204
+    }
+   ],
+   "min_qty": 443,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 4
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

@@ -1,0 +1,37 @@
+{
+  "script": "layer_views",
+  "status": "pass",
+  "input": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+  "layers": [
+    {
+      "layer": "F.Cu",
+      "path": "PCB-0020-A_esp32c3-node/reports/layers/PCB-0020-A_esp32c3-node_F_Cu.pdf",
+      "labels": 229
+    },
+    {
+      "layer": "B.Cu",
+      "path": "PCB-0020-A_esp32c3-node/reports/layers/PCB-0020-A_esp32c3-node_B_Cu.pdf",
+      "labels": 62
+    }
+  ],
+  "views": [
+    {
+      "view": "top",
+      "path": "PCB-0020-A_esp32c3-node/reports/layers/PCB-0020-A_esp32c3-node_top.png",
+      "status": "pass"
+    },
+    {
+      "view": "bottom",
+      "path": "PCB-0020-A_esp32c3-node/reports/layers/PCB-0020-A_esp32c3-node_bottom.png",
+      "status": "pass"
+    },
+    {
+      "view": "iso",
+      "path": "PCB-0020-A_esp32c3-node/reports/layers/PCB-0020-A_esp32c3-node_iso.png",
+      "status": "pass"
+    }
+  ],
+  "warnings": [
+    "2 3D model(s) missing; those parts render as bare pads"
+  ]
+}

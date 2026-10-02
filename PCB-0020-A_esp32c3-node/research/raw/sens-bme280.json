@@ -1,0 +1,211 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "BME280",
+ "total": 8,
+ "count": 3,
+ "results": [
+  {
+   "lcsc": "C92489",
+   "mpn": "BME280",
+   "brand": "Bosch Sensortec",
+   "description": "-40\u2103~+85\u2103 0%RH~100%RH 1.71V~3.6V 1.8uA 16bit I2C\u3001SPI \u00b10.5\u2103 \u00b13%RH LGA-8(2.5x2.5) Temperature and Humidity Sensor ROHS",
+   "package": "LGA-8(2.5x2.5)",
+   "category": "Temperature and Humidity Sensor",
+   "type": "Extended",
+   "basic": false,
+   "stock": 4847,
+   "price": 7.0538,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 7.0538
+    },
+    {
+     "qty": 10,
+     "price": 6.3596
+    },
+    {
+     "qty": 30,
+     "price": 6.0052
+    },
+    {
+     "qty": 100,
+     "price": 4.7957
+    },
+    {
+     "qty": 500,
+     "price": 4.625
+    },
+    {
+     "qty": 1000,
+     "price": 4.5535
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121920_Bosch-Sensortec-BME280_C92489.pdf",
+   "url": "https://www.lcsc.com/product-detail/temperature-and-humidity-sensor_bosch-sensortec-bme280_C92489.html",
+   "attributes": [
+    {
+     "name": "Temperature Tolerance",
+     "value": "\u00b10.5\u2103"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Humidity",
+     "value": "0%RH~100%RH"
+    },
+    {
+     "name": "Temperature Range",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Features",
+     "value": "Factory calibration\u3001Self-diagnosis and confidence flag\u3001Temperature compensation"
+    },
+    {
+     "name": "Current - Supply",
+     "value": "1.8uA"
+    },
+    {
+     "name": "Interface",
+     "value": "I2C\u3001SPI"
+    },
+    {
+     "name": "Resolution",
+     "value": "16bit"
+    },
+    {
+     "name": "Humidity Tolerance",
+     "value": "\u00b13%RH"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C431940",
+   "mpn": "BME280 Environmental Sensor",
+   "brand": "Waveshare",
+   "description": "-40\u2103~+85\u2103 0.93mm 1.71V~3.6V 1.8uA\u30012.8uA\u30013.6uA 2.5mm 2.5mm I2C\u3001SPI Low power mode\u3001Temperature compensation\u3001Integrated ADC - Sensor Modules ROHS",
+   "package": "-",
+   "category": "Sensor Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 13.8425,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 13.8425
+    },
+    {
+     "qty": 10,
+     "price": 13.4913
+    },
+    {
+     "qty": 30,
+     "price": 13.4913
+    },
+    {
+     "qty": 100,
+     "price": 13.4913
+    },
+    {
+     "qty": 500,
+     "price": 13.4913
+    },
+    {
+     "qty": 1000,
+     "price": 13.4913
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202140030_Waveshare-BME280-Environmental-Sensor_C431940.pdf",
+   "url": "https://www.lcsc.com/product-detail/sensor-modules_waveshare-bme280-environmental-sensor_C431940.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Length",
+     "value": "2.5mm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Features",
+     "value": "Low-power mode\u3001Temperature compensation\u3001Integrated ADC"
+    },
+    {
+     "name": "Height",
+     "value": "0.93mm"
+    },
+    {
+     "name": "Current - Supply",
+     "value": "1.8uA\u30012.8uA\u30013.6uA"
+    },
+    {
+     "name": "Width",
+     "value": "2.5mm"
+    },
+    {
+     "name": "Interface",
+     "value": "I2C\u3001SPI"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C17288892",
+   "mpn": "SHUTTLE BOARD 3.0 BME280",
+   "brand": "Bosch Sensortec",
+   "description": "- Specialized Sensors ROHS",
+   "package": "-",
+   "category": "Specialized Sensors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 16.7101,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 16.7101
+    },
+    {
+     "qty": 10,
+     "price": 16.7101
+    },
+    {
+     "qty": 30,
+     "price": 16.7101
+    },
+    {
+     "qty": 200,
+     "price": 6.6685
+    },
+    {
+     "qty": 500,
+     "price": 6.4458
+    },
+    {
+     "qty": 1000,
+     "price": 6.3352
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311140944_Bosch-Sensortec-SHUTTLE-BOARD-3-0-BME280_C17288892.pdf",
+   "url": "https://www.lcsc.com/product-detail/specialized-sensors_bosch-sensortec-shuttle-board-3-0-bme280_C17288892.html",
+   "attributes": [],
+   "rank": 2
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 5
+}

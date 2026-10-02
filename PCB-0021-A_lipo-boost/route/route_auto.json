@@ -1,0 +1,1455 @@
+{
+ "script": "route_auto",
+ "status": "violations",
+ "board": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 48,
+  "by_severity": {
+   "error": 40,
+   "warning": 8
+  },
+  "by_source": {
+   "drc": 38,
+   "unconnected": 10
+  }
+ },
+ "violations": [
+  {
+   "check": "starved_thermal",
+   "severity": "error",
+   "pos": [
+    15.647,
+    32.35
+   ],
+   "layer": "B.Cu",
+   "net": "GND",
+   "refs": [
+    "J1"
+   ],
+   "msg": "Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Zone [GND] on B.Cu, priority 0",
+     "pos": [
+      15.647,
+      32.35
+     ],
+     "uuid": "0944f0f8-9f4c-4cf2-a5b0-347fe6b888c0"
+    },
+    {
+     "msg": "PTH pad 9 [GND] of J1",
+     "pos": [
+      23.0875,
+      51.9975
+     ],
+     "uuid": "533daaf1-7157-4e4a-9339-0177ed0fdf4f"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    55.5697,
+    40.0168
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.8058 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.0734 mm",
+     "pos": [
+      55.5697,
+      40.0168
+     ],
+     "uuid": "12b2a719-e01b-42f7-932f-a89126315661"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    43.2065,
+    51.4735
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.7666 mm",
+     "pos": [
+      43.2065,
+      51.4735
+     ],
+     "uuid": "17a23af7-e432-4884-ba23-0022511036c4"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    55.568,
+    40.0687
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.8058 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.0536 mm",
+     "pos": [
+      55.568,
+      40.0687
+     ],
+     "uuid": "40ba7248-f1da-4159-92ae-1ed555eca73e"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    57.6846,
+    44.9918
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.8058 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.0734 mm",
+     "pos": [
+      57.6846,
+      44.9918
+     ],
+     "uuid": "46ac9cf5-a6ee-40ab-a915-0968c4966972"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    43.2065,
+    50.9735
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.7666 mm",
+     "pos": [
+      43.2065,
+      50.9735
+     ],
+     "uuid": "4f75d02f-eac1-4441-b9a7-0f379454ba44"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    40.9565,
+    53.9704
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 1.2469 mm",
+     "pos": [
+      40.9565,
+      53.9704
+     ],
+     "uuid": "88be73fa-5dcf-438a-aa37-e7e578357e89"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    43.9731,
+    51.4735
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.5000 mm",
+     "pos": [
+      43.9731,
+      51.4735
+     ],
+     "uuid": "9b6bf9d5-31b3-4898-8364-6a199aeed945"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    55.5697,
+    39.204
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.8058 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.8128 mm",
+     "pos": [
+      55.5697,
+      39.204
+     ],
+     "uuid": "ad4b8364-ca6b-4c0b-b372-e1617ea0a191"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    57.6846,
+    44.179
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_SYS' min width 1.2400 mm; actual 0.8058 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.8128 mm",
+     "pos": [
+      57.6846,
+      44.179
+     ],
+     "uuid": "de36dbd7-cde3-4c60-bba9-edfa0685282f"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    32.846,
+    40.1537
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.8058 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.0536 mm",
+     "pos": [
+      32.846,
+      40.1537
+     ],
+     "uuid": "011511c6-e554-4e64-b610-f66d8cd65a39"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    41.4565,
+    51.4766
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 1.2469 mm",
+     "pos": [
+      41.4565,
+      51.4766
+     ],
+     "uuid": "10d47378-a075-40a2-8630-447b9ec37c09"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    50.4616,
+    42.2384
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.7998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.2285 mm",
+     "pos": [
+      50.4616,
+      42.2384
+     ],
+     "uuid": "13fe65a6-83f4-44d1-81f7-90e6ec9164d2"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    40.2065,
+    51.9735
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.7666 mm",
+     "pos": [
+      40.2065,
+      51.9735
+     ],
+     "uuid": "1a0311b7-031e-4ae2-a831-9579aa7e1a57"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    37.0791,
+    42.8782
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.5998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.4595 mm",
+     "pos": [
+      37.0791,
+      42.8782
+     ],
+     "uuid": "2ae1e4c4-b433-4bcf-bf04-e039a3108d30"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    46.6478,
+    42.4543
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.7998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.2897 mm",
+     "pos": [
+      46.6478,
+      42.4543
+     ],
+     "uuid": "4d3bcb16-661d-4958-b994-c925840b6e5d"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    42.4565,
+    52.7235
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.9129 mm",
+     "pos": [
+      42.4565,
+      52.7235
+     ],
+     "uuid": "51f2181e-aa8a-457d-a788-844e6d6abfea"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    39.4399,
+    52.3205
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.3470 mm",
+     "pos": [
+      39.4399,
+      52.3205
+     ],
+     "uuid": "590a6bdb-f680-49de-a0ec-1d2774da83bc"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    46.8269,
+    42.2752
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.7998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.2533 mm",
+     "pos": [
+      46.8269,
+      42.2752
+     ],
+     "uuid": "6070d94c-8f3d-4dd9-a1fd-6dde53a2e756"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    45.5962,
+    42.744
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.7998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 1.0516 mm",
+     "pos": [
+      45.5962,
+      42.744
+     ],
+     "uuid": "7194fc8d-abd6-4ad1-b8c7-cf3d7429ea66"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    36.0425,
+    42.4187
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.5998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 1.0366 mm",
+     "pos": [
+      36.0425,
+      42.4187
+     ],
+     "uuid": "756a001a-2eeb-4a2a-80b8-b7850269c87b"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    42.4565,
+    53.6364
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.0332 mm",
+     "pos": [
+      42.4565,
+      53.6364
+     ],
+     "uuid": "7bdcb9a6-2c13-401e-bc24-15647c69b920"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    39.6497,
+    52.5303
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.2967 mm",
+     "pos": [
+      39.6497,
+      52.5303
+     ],
+     "uuid": "9965f92c-1d48-4dc4-90a6-a000d7f2c974"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    18.9956,
+    51.9875
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.3998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.3719 mm",
+     "pos": [
+      18.9956,
+      51.9875
+     ],
+     "uuid": "a78ba078-026d-4acd-991d-e99aa460ba38"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    37.3994,
+    43.1985
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.5998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.4530 mm",
+     "pos": [
+      37.3994,
+      43.1985
+     ],
+     "uuid": "f4fa8400-8510-4f32-845e-4596b03896bb"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    37.8991,
+    58.118
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_GND' min width 1.2400 mm; actual 0.8058 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.3079 mm",
+     "pos": [
+      37.8991,
+      58.118
+     ],
+     "uuid": "f76de6c5-5d46-45e8-8326-851e02be5b1a"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    40.2065,
+    50.9735
+   ],
+   "layer": "F.Cu",
+   "net": "VBAT",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_VBAT' min width 1.1000 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [VBAT] on F.Cu, length 0.5000 mm",
+     "pos": [
+      40.2065,
+      50.9735
+     ],
+     "uuid": "23c397e3-00ca-4a15-b148-8eda4eb8f9f6"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    21.9675,
+    50.5593
+   ],
+   "layer": "F.Cu",
+   "net": "VBUS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_VBUS' min width 0.8000 mm; actual 0.3998 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [VBUS] on F.Cu, length 1.4282 mm",
+     "pos": [
+      21.9675,
+      50.5593
+     ],
+     "uuid": "2685b66c-7585-46a8-9d50-4b64567f4b1e"
+    }
+   ]
+  },
+  {
+   "check": "track_width",
+   "severity": "error",
+   "pos": [
+    42.8736,
+    49.3064
+   ],
+   "layer": "F.Cu",
+   "net": "VBUS",
+   "refs": [],
+   "msg": "Track width (rule 'aiee_pwr_width_VBUS' min width 0.8000 mm; actual 0.2798 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Track [VBUS] on F.Cu, length 0.5899 mm",
+     "pos": [
+      42.8736,
+      49.3064
+     ],
+     "uuid": "738ec574-276f-4f46-aded-fe09a5b7f0aa"
+    }
+   ]
+  },
+  {
+   "check": "copper_edge_clearance",
+   "severity": "error",
+   "pos": [
+    17.147,
+    31.85
+   ],
+   "layer": "Edge.Cuts",
+   "net": "/LBO",
+   "refs": [],
+   "msg": "Board edge clearance violation (rule 'aiee_edge_clearance_floor' clearance 0.3000 mm; actual 0.2747 mm)",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Segment on Edge.Cuts",
+     "pos": [
+      17.147,
+      31.85
+     ],
+     "uuid": "de88cf79-4c9e-4ed5-a937-d5bb772553a9"
+    },
+    {
+     "msg": "Via [/LBO] on F.Cu - B.Cu",
+     "pos": [
+      58.0647,
+      32.4247
+     ],
+     "uuid": "49b8c51b-ff4d-4d2a-9296-16d544e6ded7"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    47.745,
+    41.1464
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C14",
+    "U2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of U2",
+     "pos": [
+      47.745,
+      41.1464
+     ],
+     "uuid": "488f97e3-36c0-44ec-947e-28fbf6b96f18"
+    },
+    {
+     "msg": "Segment of C14 on F.Silkscreen",
+     "pos": [
+      48.21,
+      42.8
+     ],
+     "uuid": "96de3941-9da8-422e-9e4f-81bb2d9bb200"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    47.745,
+    41.1464
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C14",
+    "U2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of U2",
+     "pos": [
+      47.745,
+      41.1464
+     ],
+     "uuid": "488f97e3-36c0-44ec-947e-28fbf6b96f18"
+    },
+    {
+     "msg": "Arc of C14 on F.Silkscreen",
+     "pos": [
+      48.52,
+      42.0
+     ],
+     "uuid": "93794601-5613-47f8-a448-052dd0059db5"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    47.745,
+    41.1464
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "U2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of U2",
+     "pos": [
+      47.745,
+      41.1464
+     ],
+     "uuid": "488f97e3-36c0-44ec-947e-28fbf6b96f18"
+    },
+    {
+     "msg": "Segment of C10 on F.Silkscreen",
+     "pos": [
+      46.7,
+      41.68
+     ],
+     "uuid": "b8d37cff-8da1-43b9-8584-9f4d750d300c"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    47.745,
+    41.1464
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "U2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of U2",
+     "pos": [
+      47.745,
+      41.1464
+     ],
+     "uuid": "488f97e3-36c0-44ec-947e-28fbf6b96f18"
+    },
+    {
+     "msg": "Arc of C10 on F.Silkscreen",
+     "pos": [
+      48.11,
+      41.53
+     ],
+     "uuid": "eb5f02ff-f97d-45fe-8525-98b5b95e6299"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    47.745,
+    41.1464
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "U2"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of U2",
+     "pos": [
+      47.745,
+      41.1464
+     ],
+     "uuid": "488f97e3-36c0-44ec-947e-28fbf6b96f18"
+    },
+    {
+     "msg": "Segment of C10 on F.Silkscreen",
+     "pos": [
+      48.26,
+      41.53
+     ],
+     "uuid": "e83398ea-61ac-4741-9402-bcafe0d0ee0e"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    48.52,
+    42.0
+   ],
+   "layer": "F.Silkscreen",
+   "net": null,
+   "refs": [
+    "C10",
+    "C14"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Arc of C14 on F.Silkscreen",
+     "pos": [
+      48.52,
+      42.0
+     ],
+     "uuid": "93794601-5613-47f8-a448-052dd0059db5"
+    },
+    {
+     "msg": "Arc of C10 on F.Silkscreen",
+     "pos": [
+      48.11,
+      41.53
+     ],
+     "uuid": "eb5f02ff-f97d-45fe-8525-98b5b95e6299"
+    }
+   ]
+  },
+  {
+   "check": "silk_overlap",
+   "severity": "warning",
+   "pos": [
+    48.625,
+    39.0
+   ],
+   "layer": null,
+   "net": null,
+   "refs": [
+    "C10",
+    "L1"
+   ],
+   "msg": "Silkscreen clearance",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of L1",
+     "pos": [
+      48.625,
+      39.0
+     ],
+     "uuid": "a73ccfe6-08b1-4299-8dde-5320c5c61e53"
+    },
+    {
+     "msg": "Reference field of C10",
+     "pos": [
+      49.43,
+      39.78
+     ],
+     "uuid": "c87419f7-c1b1-48e5-a5de-7cf52a6e7555"
+    }
+   ]
+  },
+  {
+   "check": "silk_over_copper",
+   "severity": "warning",
+   "pos": [
+    47.745,
+    41.1464
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C10",
+    "U2"
+   ],
+   "msg": "Silkscreen clipped by solder mask",
+   "source": "drc",
+   "items": [
+    {
+     "msg": "Reference field of U2",
+     "pos": [
+      47.745,
+      41.1464
+     ],
+     "uuid": "488f97e3-36c0-44ec-947e-28fbf6b96f18"
+    },
+    {
+     "msg": "Pad 2 [GND] of C10 on F.Cu",
+     "pos": [
+      47.3,
+      40.78
+     ],
+     "uuid": "16edc310-bf60-4c8f-9acf-8c8158d9db9f"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    44.9795,
+    52.4003
+   ],
+   "layer": "B.Cu",
+   "net": "+SYS",
+   "refs": [],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [+SYS] on B.Cu, length 3.9793 mm",
+     "pos": [
+      44.9795,
+      52.4003
+     ],
+     "uuid": "5b02d3f5-f509-4116-885e-6ac0ac12c15c"
+    },
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.5000 mm",
+     "pos": [
+      43.9731,
+      51.4735
+     ],
+     "uuid": "9b6bf9d5-31b3-4898-8364-6a199aeed945"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    45.3,
+    40.78
+   ],
+   "layer": "F.Cu",
+   "net": "+SYS",
+   "refs": [
+    "U2"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [+SYS] on F.Cu, length 0.0307 mm",
+     "pos": [
+      45.3,
+      40.78
+     ],
+     "uuid": "555a203f-f889-4f2d-be22-1e5be752cfe7"
+    },
+    {
+     "msg": "Pad 3 [+SYS] of U2 on F.Cu",
+     "pos": [
+      43.67,
+      43.3964
+     ],
+     "uuid": "b4ce97d6-18ec-4cc7-a865-8167dfc125c3"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    37.0854,
+    48.4
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 0.0200 mm",
+     "pos": [
+      37.0854,
+      48.4
+     ],
+     "uuid": "a47aa4dc-a2e5-4236-af97-4b7e5f2e6c65"
+    },
+    {
+     "msg": "Track [GND] on F.Cu, length 1.5267 mm",
+     "pos": [
+      35.6,
+      51.3
+     ],
+     "uuid": "5931a582-751e-4054-9676-77b9cb242185"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    39.0,
+    43.2571
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U2"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Via [GND] on F.Cu - B.Cu",
+     "pos": [
+      39.0,
+      43.2571
+     ],
+     "uuid": "5ad6ef08-1c8c-4517-9340-3b3c57da7be4"
+    },
+    {
+     "msg": "Pad 4 [GND] of U2 on F.Cu",
+     "pos": [
+      43.67,
+      41.8964
+     ],
+     "uuid": "798c364b-5fe9-4844-9356-9ad926e81393"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    41.4565,
+    51.4766
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 1.2469 mm",
+     "pos": [
+      41.4565,
+      51.4766
+     ],
+     "uuid": "10d47378-a075-40a2-8630-447b9ec37c09"
+    },
+    {
+     "msg": "Track [GND] on F.Cu, length 0.9129 mm",
+     "pos": [
+      42.4565,
+      52.7235
+     ],
+     "uuid": "51f2181e-aa8a-457d-a788-844e6d6abfea"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    45.5962,
+    42.744
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U2"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 1.0516 mm",
+     "pos": [
+      45.5962,
+      42.744
+     ],
+     "uuid": "7194fc8d-abd6-4ad1-b8c7-cf3d7429ea66"
+    },
+    {
+     "msg": "Pad 4 [GND] of U2 on F.Cu",
+     "pos": [
+      43.67,
+      41.8964
+     ],
+     "uuid": "798c364b-5fe9-4844-9356-9ad926e81393"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    45.5962,
+    42.744
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C1"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [GND] on F.Cu, length 1.0516 mm",
+     "pos": [
+      45.5962,
+      42.744
+     ],
+     "uuid": "7194fc8d-abd6-4ad1-b8c7-cf3d7429ea66"
+    },
+    {
+     "msg": "Pad 2 [GND] of C1 on F.Cu",
+     "pos": [
+      43.9157,
+      45.8051
+     ],
+     "uuid": "73173d53-b3cb-46fa-8843-19249884be12"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    43.17,
+    41.8964
+   ],
+   "layer": "F.Cu",
+   "net": "/SW",
+   "refs": [
+    "L1",
+    "U2"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Pad 5 [/SW] of U2 on F.Cu",
+     "pos": [
+      43.17,
+      41.8964
+     ],
+     "uuid": "4aa3f416-20aa-4fe7-a4aa-b522b771e3fe"
+    },
+    {
+     "msg": "Pad 2 [/SW] of L1 on F.Cu",
+     "pos": [
+      43.7,
+      37.5
+     ],
+     "uuid": "f004eaf1-bbc4-4597-a690-0de4fd33b1fb"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    41.0,
+    42.5564
+   ],
+   "layer": "F.Cu",
+   "net": "+5V",
+   "refs": [
+    "U2"
+   ],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [+5V] on F.Cu, length 1.9536 mm",
+     "pos": [
+      41.0,
+      42.5564
+     ],
+     "uuid": "23153dd4-30b4-4e80-98db-e37524d44c89"
+    },
+    {
+     "msg": "Pad 6 [+5V] of U2 on F.Cu",
+     "pos": [
+      42.67,
+      41.8964
+     ],
+     "uuid": "82909097-0620-4b4e-8031-1808e075e09b"
+    }
+   ]
+  },
+  {
+   "check": "unconnected_items",
+   "severity": "error",
+   "pos": [
+    37.6874,
+    51.3874
+   ],
+   "layer": "F.Cu",
+   "net": "VBAT",
+   "refs": [],
+   "msg": "Missing connection between items",
+   "source": "unconnected",
+   "items": [
+    {
+     "msg": "Track [VBAT] on F.Cu, length 0.1236 mm",
+     "pos": [
+      37.6874,
+      51.3874
+     ],
+     "uuid": "5e8e15e4-5abd-4572-9c07-a8898ff09271"
+    },
+    {
+     "msg": "Track [VBAT] on F.Cu, length 0.5000 mm",
+     "pos": [
+      40.2065,
+      50.9735
+     ],
+     "uuid": "23c397e3-00ca-4a15-b148-8eda4eb8f9f6"
+    }
+   ]
+  }
+ ],
+ "facts": {
+  "completion": 0.7619,
+  "routable_nets": 21,
+  "unrouted_nets": [
+   "+5V",
+   "+SYS",
+   "/SW",
+   "GND",
+   "VBAT"
+  ],
+  "tracks_before": 0,
+  "tracks_after": 281,
+  "ses_items_added": 311,
+  "best_rung": 1,
+  "rungs": [
+   {
+    "rung": 1,
+    "options": {
+     "mp": 20
+    },
+    "unrouted": 9,
+    "started_unrouted": 70,
+    "final_score": 960.88,
+    "passes": 20,
+    "timed_out": false,
+    "ses_written": true
+   },
+   {
+    "rung": 2,
+    "options": {
+     "mp": 60,
+     "oit": 0.05
+    },
+    "unrouted": 9,
+    "started_unrouted": 70,
+    "final_score": 960.88,
+    "passes": 21,
+    "timed_out": false,
+    "ses_written": true
+   },
+   {
+    "rung": 3,
+    "options": {
+     "mp": 100,
+     "us": "global"
+    },
+    "unrouted": 9,
+    "started_unrouted": 70,
+    "final_score": 960.88,
+    "passes": 21,
+    "timed_out": false,
+    "ses_written": true
+   }
+  ],
+  "fr_completion": 0.8714285714285714,
+  "power_layers": [],
+  "dsn_net_rules": [],
+  "krt_finish": {
+   "kept": false,
+   "nets": [
+    "+5V",
+    "+SYS",
+    "/SW",
+    "GND",
+    "VBAT"
+   ],
+   "ripped_vias": 0,
+   "errors_before": {
+    "drc:starved_thermal": 1,
+    "drc:track_width": 28,
+    "drc:copper_edge_clearance": 1,
+    "unconnected:unconnected_items": 10
+   },
+   "errors_after": {
+    "drc:starved_thermal": 1,
+    "drc:track_width": 88,
+    "drc:copper_edge_clearance": 1
+   }
+  },
+  "ses_echo_dups_removed": 0,
+  "work_dir": "/tmp/ra_lipo",
+  "placement_adjust_request": {
+   "request": "placement_adjust",
+   "nets": [
+    "+5V",
+    "+SYS",
+    "/SW",
+    "GND",
+    "VBAT"
+   ],
+   "refs": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C2",
+    "C3",
+    "C4",
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "L1",
+    "R1",
+    "R10",
+    "R11",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "U1",
+    "U2",
+    "U3"
+   ],
+   "region": [
+    17.047,
+    34.1,
+    66.797,
+    61.798
+   ],
+   "reason": "unrouted after 3 freerouting rungs",
+   "suggestions": [
+    "spread the named clusters apart / off the congested region",
+    "clear a ~3 mm escape ring around the anchor IC",
+    "consider more board area or more layers if congestion persists"
+   ]
+  }
+ }
+}

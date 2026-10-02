@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="205" viewBox="0 0 116 205">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10.0" y="16" font-family="monospace" font-size="12" fill="black">SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL: 5 pads (datasheet 5), pitch/size from datasheet 0.95mm</text>
+<text x="10.0" y="32" font-family="monospace" font-size="11" fill="#b00">red = geometry mismatch</text>
+<polygon points="10.0,148.4 29.6,148.4 29.6,194.6 10.0,194.6" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="19.8" y="171.5" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="19.8" y="182.5" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.49x1.157</text>
+<polygon points="48.0,148.4 67.6,148.4 67.6,194.6 48.0,194.6" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="57.8" y="171.5" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="57.8" y="182.5" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.49x1.157</text>
+<polygon points="86.0,148.4 105.6,148.4 105.6,194.6 86.0,194.6" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="95.8" y="171.5" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="95.8" y="182.5" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.49x1.157</text>
+<polygon points="86.0,56.0 105.6,56.0 105.6,103.0 86.0,103.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="95.8" y="79.5" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="95.8" y="90.5" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.49x1.175</text>
+<polygon points="10.0,56.0 29.6,56.0 29.6,103.0 10.0,103.0" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="19.8" y="79.5" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="19.8" y="90.5" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.49x1.175</text>
+</svg>

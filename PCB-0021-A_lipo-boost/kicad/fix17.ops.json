@@ -1,0 +1,8 @@
+{"version":1,"ops":[
+{"op":"place","ref":"J4","x":64.04,"y":52.7,"deg":-90,"side":"front"},
+{"op":"place","ref":"L1","x":46.1,"y":50.7,"deg":0,"side":"front"},
+{"op":"place","ref":"U1","x":41.25,"y":51.224,"deg":90,"side":"front"},
+{"op":"place","ref":"C1","x":37.9,"y":48.7,"deg":90,"side":"front"},
+{"op":"place","ref":"C4","x":36.1,"y":49.0,"deg":90,"side":"front"},
+{"op":"place","ref":"R2","x":40.45,"y":46.9,"deg":90,"side":"front"}
+]}

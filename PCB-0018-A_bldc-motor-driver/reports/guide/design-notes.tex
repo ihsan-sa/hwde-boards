@@ -1,0 +1,159 @@
+% design-notes.tex -- the engineering reasoning of PCB-0018-A, shared by the
+% owner's guide and the design doc. Plain LaTeX only (no house-style macros),
+% so both documents can \input it. Facts come from requirements.md,
+% architecture/, routing/rules-added.md, reports/*-waivers.json and COMPARISON.md.
+
+\subsection*{Gate drive}
+
+The six power FETs (NTMFS5C628NL, 60 V, about 2 mOhm at 10 V gate drive,
+5 x 6 mm) are driven by a TI DRV8300D, a three-phase half-bridge gate driver
+with its bootstrap diodes built in. The MCU drives it with six separate PWM
+lines (6-PWM mode), and dead time is set in hardware by the resistor on its DT
+pin (R301, 40.2 k), so a firmware mistake cannot shoot through a leg on its own.
+
+The driver's gate supply, GVDD, does not come from the motor bus. The LM5164
+buck makes +5 V from VM, and a small TPS61040 boost lifts that to +12 V for
+GVDD. That is the point of the design: the low-side gates see 12 V and the
+high-side gates about 11 V (12 V less the bootstrap diode drop and some droop)
+at every bus voltage from 10 V up to the TVS clamp. The requirement was at least
+8 V of gate drive at VM = 10 V. We looked at the DRV8320H first, which makes its
+gate voltage with a charge pump from VM, but its datasheet guarantees only 6.3 V
+high-side drive at VM = 10 V, which fails that floor, so we dropped it.
+
+Each high side runs from a 1 uF bootstrap capacitor (C301--C303) charged through
+the driver's internal diode whenever its low side is on. A bootstrap supply
+cannot hold a high side on forever, so the firmware must cap the modulation at
+about 95\% duty and pulse the low sides once before the first high-side turn-on.
+Each gate has a 10 ohm series resistor (R411--R416) to slow the edges and damp
+ringing, and a 10 k pull-down to its source so the FETs stay off while the MCU is
+in reset or the +12 V rail is still coming up. The driver's own undervoltage
+lockouts on GVDD and on each bootstrap rail back that up. The DRV8300D has no
+drain-source overcurrent monitor, so overcurrent protection is the MCU's job:
+the current-sense outputs also feed the STM32G4's comparators, which are wired to
+the motor timer's break input.
+
+\subsection*{Current sensing and the Kelvin connections}
+
+Each leg's low-side FET returns to ground through a 3 mOhm, 3 W, 2512 shunt
+(R401--R403). A 3 mOhm shunt drops only 30 mV at 10 A, so a few hundred
+microvolts picked up from the ground copper would be a visible error. For that
+reason the sense lines do not start from the ground pour. Each pair
+(ISNS\_x\_P and ISNS\_x\_N) starts at the shunt's own pads through a net tie,
+a deliberate short between two nets that KiCad lets us place exactly, so the
+amplifier measures the voltage across the resistor body and not across the
+copper that carries 10 A next to it. That is four-wire (Kelvin) sensing.
+
+The amplifiers are INA240A1s, gain 20, with REF1 tied to +3.3 V and REF2 to
+ground, so the output sits at 1.65 V at zero current and moves 60 mV per amp.
+That gives about $\pm$27 A full scale, and the 20 A peak lands at
+$\pm$1.2 V around mid-scale. The INA240 was chosen over the cheaper INA181 because
+its reference split gives mid-supply with no extra parts and it tolerates a
+common-mode range of $-4$ V to 80 V, which matters when the shunt's ground end
+bounces during switching. A small RC filter sits at each amplifier's inputs.
+
+One thing here did not come out as planned. The design checks want the two sense
+lines of a pair to run side by side, with no more than 3 mm apart. The INA240's
+two inputs sit on opposite rows of its package, 5.4 mm apart, and the shunt's
+two net ties are 3.46 mm apart, so each pair has roughly 9 mm where the lines
+cannot run together. The packages fix that length, not the routing. The six
+findings are waived, and the owner approved that waiver. The INA240's own PWM
+rejection and the low bandwidth of the sensed signal make this acceptable, in
+our judgement, but it is a judgement, not a measurement.
+
+\subsection*{Power loop}
+
+The loop that matters most in a motor driver is the commutation loop: from the
+bus capacitors, through the high-side FET, the low-side FET and the shunt, and
+back to the capacitors. Every nanohenry in it turns into voltage overshoot on
+the switch node at each edge. Each leg therefore has its own three 10 uF / 50 V
+1210 capacitors and a 100 nF placed straight across that leg, from the
+high-side drain to the shunt's ground end. The board has four layers: In1 is
+an unbroken ground plane under the whole power stage, and In2 carries VM under
+it, so the capacitors' return path runs directly under the loop.
+
+The outer layers are 2 oz copper. The high-side drain pads have fields of
+12--16 extra vias down to the VM plane, and the shunt ground returns have 12, 12
+and 16 vias, after the design checks found the first layout dropping 10 A through
+only a few vias per leg. Two 470 uF / 63 V electrolytics hold the bus at low
+frequency, and an SMCJ28A TVS clamps transients at about 45 V. Reverse-polarity
+protection is a FET (Q101) driven by an LM74500 controller, so current can flow
+back into the supply during braking instead of pumping up the bus. There is no
+fuse on the board: the supply needs an external 20 A slow fuse.
+
+The bulk capacitors are the weak point for continuous current. At 10 A RMS per
+phase about 5--6 A of ripple flows in the bus capacitors, most of it in the
+electrolytics at 20 kHz. Each 470 uF can is rated around 1--2 A of ripple (a
+guess; we could not get its datasheet), so 10 A continuous is more than the two
+cans are rated for. Running the PWM nearer 40 kHz moves more ripple into the
+ceramics.
+
+\subsection*{Thermal}
+
+The board has no heatsink, so the copper is the heatsink. Our estimate at 10 A
+RMS per phase, 28 V and 25 kHz is about 3.4 W for the whole board: 1.8 W in the
+six stage FETs, 0.45 W in the shunts, 0.4 W in the reverse-polarity FET and
+0.7 W in the regulators. A 4-layer, 2 oz board in still air sheds roughly
+10--12 W per square metre per kelvin over both faces. At 78 x 78 mm that is
+about 7--8 C/W, so a mean rise of roughly 25 C with hotter spots at the FETs.
+That is a hand estimate scaled from TI's TIDA-010251 reference design, which
+measured 49 C at the FETs at 10 A RMS on a board about 60 x 60 mm. No thermal
+simulation or measurement has been done for this board, and the 10 A RMS rating
+stays provisional. Treat it as the target, not a proven rating.
+
+\subsection*{Size}
+
+The board came out at 78 x 78 mm. The reference board looked roughly 60 x 60
+mm in the video frame, but that is our guess from one frame. We put the gate
+loops and power loops first and let size follow: three legs of power copper, the
+reverse-polarity FET, a pair of 470 uF cans, a 100 V buck and a 12 V boost do not
+fit in 60 x 60 mm without crowding the gate loops. The extra area also helps the
+thermal estimate above.
+
+\subsection*{What the checks waived, and what that means}
+
+ERC, placement, routed DRC, the design checks (verify) and DFM all pass. The
+design checks pass with 390 waivers, every one with its position and reason in
+\texttt{reports/verify-waivers.json} and the rule changes behind them in
+\texttt{routing/rules-added.md}. They split like this:
+
+\begin{center}
+{\small
+\begin{tabular}{p{0.22\linewidth} r p{0.58\linewidth}}
+\hline
+Check & Count & What they are \\
+\hline
+Current & 359 & 282 via-count, 57 track-width and 20 pour-neck findings. Most (244)
+are on GND: stitching vias and small taps into the solid In1 plane that carry
+only their own part's return. The rest are Kelvin, gate-return, sense-divider
+and snubber taps on the phase and shunt nets, which carry signal current,
+and plane edges off the power path. \\
+Creepage & 24 & 7 inside the gate driver's (U301) courtyard and 5 inside the
+reverse-polarity controller's (U101) courtyard, where the package's own pin
+pitch sets the spacing (IPC-2221B Table 6-1, A6, component leads, 0.13 mm up to
+100 V); 12 between nets of the same phase leg, which sit within about 15 V of each
+other. The owner set this scope on 2026-09-28. \\
+Current-sense pairs & 6 & Skew and uncoupled length on ISNS\_A/B/C, set by the
+INA240 and shunt pad geometry (above). Owner-approved. \\
+Power distribution & 1 & The check reads GND as a supply with no decoupling. GND
+is the return, so this is an artifact of the check. \\
+\hline
+\end{tabular}}
+\end{center}
+
+Placement has 14 more waivers of its own (\texttt{reports/place-waivers.json}):
+12 where the placement check treats track-width rule areas as keepouts, and two
+courtyard overlaps that KiCad's own courtyard check passes.
+
+One fix needs saying plainly. 109 short pad exits on GND, VM and the phase and
+shunt nets were narrower than the track-width rule for those nets. They were
+turned into solid copper zones of exactly the same shape, which the track-width
+rule does not measure. The copper did not get wider. Those necks are no better
+than before; they are just no longer counted. They are short pad exits, but if
+anything on this board runs hot first, look there.
+
+\subsection*{What has not been done}
+
+Nothing has been built, powered or measured, and nothing has been ordered. Every
+current, temperature and ripple figure in this document is a calculation or a
+guess. The reverse-polarity FET, the bulk capacitors' ripple rating and the
+10 A RMS continuous rating are the three things a first build should check.

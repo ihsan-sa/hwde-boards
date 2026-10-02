@@ -1,0 +1,533 @@
+{
+ "script": "check_diffpair",
+ "status": "violations",
+ "board": "PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "counts": {
+  "total": 13,
+  "by_severity": {
+   "warning": 7,
+   "error": 6
+  },
+  "by_source": {
+   "check_diffpair": 13
+  }
+ },
+ "violations": [
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    42.6,
+    71.1113
+   ],
+   "layer": null,
+   "net": "/ISNS_A_P",
+   "refs": [],
+   "msg": "diff pair /ISNS_A_P//ISNS_A_N: /ISNS_A_P trunk is open - cannot connect terminal(s) U501.8; its length 2.66 mm is total copper length, so the reported skew is not a trunk skew",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_A_P//ISNS_A_N: /ISNS_A_P trunk is open - cannot connect terminal(s) U501.8; its length 2.66 mm is total copper length, so the reported skew is not a trunk skew",
+     "pos": [
+      42.6,
+      71.1113
+     ]
+    }
+   ],
+   "kind": "diffpair_open_trunk",
+   "pair": [
+    "/ISNS_A_P",
+    "/ISNS_A_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.3501,
+   "branch_free": false,
+   "fallback_length_mm": 2.6604
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    42.6,
+    76.956
+   ],
+   "layer": null,
+   "net": "/ISNS_A_N",
+   "refs": [],
+   "msg": "diff pair /ISNS_A_P//ISNS_A_N: /ISNS_A_N trunk is open - cannot connect terminal(s) U501.1; its length 17.35 mm is total copper length, so the reported skew is not a trunk skew",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_A_P//ISNS_A_N: /ISNS_A_N trunk is open - cannot connect terminal(s) U501.1; its length 17.35 mm is total copper length, so the reported skew is not a trunk skew",
+     "pos": [
+      42.6,
+      76.956
+     ]
+    }
+   ],
+   "kind": "diffpair_open_trunk",
+   "pair": [
+    "/ISNS_A_P",
+    "/ISNS_A_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.3501,
+   "branch_free": false,
+   "fallback_length_mm": 17.3501
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "error",
+   "pos": [
+    42.6,
+    71.1113
+   ],
+   "layer": null,
+   "net": "/ISNS_A_P",
+   "refs": [],
+   "msg": "diff pair /ISNS_A_P//ISNS_A_N length skew 14.69 mm (~99 ps, eps_r 4.0); limit 3.0 mm",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_A_P//ISNS_A_N length skew 14.69 mm (~99 ps, eps_r 4.0); limit 3.0 mm",
+     "pos": [
+      42.6,
+      71.1113
+     ]
+    }
+   ],
+   "kind": "diffpair_skew",
+   "pair": [
+    "/ISNS_A_P",
+    "/ISNS_A_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.3501,
+   "branch_free": false,
+   "skew_mm": 14.6897,
+   "skew_ps": 98.6097,
+   "limit_mm": 3.0
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "error",
+   "pos": [
+    42.6,
+    71.1113
+   ],
+   "layer": null,
+   "net": "/ISNS_A_N",
+   "refs": [],
+   "msg": "diff pair /ISNS_A_P//ISNS_A_N has 17.35 mm of /ISNS_A_N running uncoupled (> 0.70 mm from its partner); limit 3.0 mm",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_A_P//ISNS_A_N has 17.35 mm of /ISNS_A_N running uncoupled (> 0.70 mm from its partner); limit 3.0 mm",
+     "pos": [
+      42.6,
+      71.1113
+     ]
+    }
+   ],
+   "kind": "diffpair_uncoupled",
+   "pair": [
+    "/ISNS_A_P",
+    "/ISNS_A_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.3501,
+   "branch_free": false,
+   "uncoupled_mm": 17.3501,
+   "uncoupled_p_mm": 2.6604,
+   "uncoupled_n_mm": 17.3501,
+   "coupling_max_mm": 0.7,
+   "limit_mm": 3.0
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    58.685,
+    69.285
+   ],
+   "layer": null,
+   "net": "/ISNS_B_P",
+   "refs": [],
+   "msg": "diff pair /ISNS_B_P//ISNS_B_N: /ISNS_B_P trunk is open - cannot connect terminal(s) U502.8; its length 2.66 mm is total copper length, so the reported skew is not a trunk skew",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_B_P//ISNS_B_N: /ISNS_B_P trunk is open - cannot connect terminal(s) U502.8; its length 2.66 mm is total copper length, so the reported skew is not a trunk skew",
+     "pos": [
+      58.685,
+      69.285
+     ]
+    }
+   ],
+   "kind": "diffpair_open_trunk",
+   "pair": [
+    "/ISNS_B_P",
+    "/ISNS_B_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 10.5631,
+   "branch_free": false,
+   "fallback_length_mm": 2.6604
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    61.3342,
+    69.2
+   ],
+   "layer": null,
+   "net": "/ISNS_B_N",
+   "refs": [],
+   "msg": "diff pair /ISNS_B_P//ISNS_B_N: /ISNS_B_N trunk is open - cannot connect terminal(s) U502.1; its length 10.56 mm is total copper length, so the reported skew is not a trunk skew",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_B_P//ISNS_B_N: /ISNS_B_N trunk is open - cannot connect terminal(s) U502.1; its length 10.56 mm is total copper length, so the reported skew is not a trunk skew",
+     "pos": [
+      61.3342,
+      69.2
+     ]
+    }
+   ],
+   "kind": "diffpair_open_trunk",
+   "pair": [
+    "/ISNS_B_P",
+    "/ISNS_B_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 10.5631,
+   "branch_free": false,
+   "fallback_length_mm": 10.5631
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "error",
+   "pos": [
+    58.685,
+    69.285
+   ],
+   "layer": null,
+   "net": "/ISNS_B_P",
+   "refs": [],
+   "msg": "diff pair /ISNS_B_P//ISNS_B_N length skew 7.90 mm (~53 ps, eps_r 4.0); limit 3.0 mm",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_B_P//ISNS_B_N length skew 7.90 mm (~53 ps, eps_r 4.0); limit 3.0 mm",
+     "pos": [
+      58.685,
+      69.285
+     ]
+    }
+   ],
+   "kind": "diffpair_skew",
+   "pair": [
+    "/ISNS_B_P",
+    "/ISNS_B_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 10.5631,
+   "branch_free": false,
+   "skew_mm": 7.9027,
+   "skew_ps": 53.0494,
+   "limit_mm": 3.0
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "error",
+   "pos": [
+    58.685,
+    69.285
+   ],
+   "layer": null,
+   "net": "/ISNS_B_N",
+   "refs": [],
+   "msg": "diff pair /ISNS_B_P//ISNS_B_N has 10.56 mm of /ISNS_B_N running uncoupled (> 0.70 mm from its partner); limit 3.0 mm",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_B_P//ISNS_B_N has 10.56 mm of /ISNS_B_N running uncoupled (> 0.70 mm from its partner); limit 3.0 mm",
+     "pos": [
+      58.685,
+      69.285
+     ]
+    }
+   ],
+   "kind": "diffpair_uncoupled",
+   "pair": [
+    "/ISNS_B_P",
+    "/ISNS_B_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 10.5631,
+   "branch_free": false,
+   "uncoupled_mm": 10.5631,
+   "uncoupled_p_mm": 2.6604,
+   "uncoupled_n_mm": 10.5631,
+   "coupling_max_mm": 0.7,
+   "limit_mm": 3.0
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    58.685,
+    69.285
+   ],
+   "layer": null,
+   "net": "/ISNS_B_P",
+   "refs": [],
+   "msg": "diff pair /ISNS_B_P//ISNS_B_N via count asymmetric: /ISNS_B_P has 0, /ISNS_B_N has 2",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_B_P//ISNS_B_N via count asymmetric: /ISNS_B_P has 0, /ISNS_B_N has 2",
+     "pos": [
+      58.685,
+      69.285
+     ]
+    }
+   ],
+   "kind": "diffpair_via_asymmetry",
+   "pair": [
+    "/ISNS_B_P",
+    "/ISNS_B_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 10.5631,
+   "branch_free": false,
+   "vias_p": 0,
+   "vias_n": 2
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    74.685,
+    69.285
+   ],
+   "layer": null,
+   "net": "/ISNS_C_P",
+   "refs": [],
+   "msg": "diff pair /ISNS_C_P//ISNS_C_N: /ISNS_C_P trunk is open - cannot connect terminal(s) U503.8; its length 2.66 mm is total copper length, so the reported skew is not a trunk skew",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_C_P//ISNS_C_N: /ISNS_C_P trunk is open - cannot connect terminal(s) U503.8; its length 2.66 mm is total copper length, so the reported skew is not a trunk skew",
+     "pos": [
+      74.685,
+      69.285
+     ]
+    }
+   ],
+   "kind": "diffpair_open_trunk",
+   "pair": [
+    "/ISNS_C_P",
+    "/ISNS_C_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.7986,
+   "branch_free": false,
+   "fallback_length_mm": 2.6604
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    80.6589,
+    70.43
+   ],
+   "layer": null,
+   "net": "/ISNS_C_N",
+   "refs": [],
+   "msg": "diff pair /ISNS_C_P//ISNS_C_N: /ISNS_C_N trunk is open - cannot connect terminal(s) U503.1; its length 17.80 mm is total copper length, so the reported skew is not a trunk skew",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_C_P//ISNS_C_N: /ISNS_C_N trunk is open - cannot connect terminal(s) U503.1; its length 17.80 mm is total copper length, so the reported skew is not a trunk skew",
+     "pos": [
+      80.6589,
+      70.43
+     ]
+    }
+   ],
+   "kind": "diffpair_open_trunk",
+   "pair": [
+    "/ISNS_C_P",
+    "/ISNS_C_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.7986,
+   "branch_free": false,
+   "fallback_length_mm": 17.7986
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "error",
+   "pos": [
+    74.685,
+    69.285
+   ],
+   "layer": null,
+   "net": "/ISNS_C_P",
+   "refs": [],
+   "msg": "diff pair /ISNS_C_P//ISNS_C_N length skew 15.14 mm (~102 ps, eps_r 4.0); limit 3.0 mm",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_C_P//ISNS_C_N length skew 15.14 mm (~102 ps, eps_r 4.0); limit 3.0 mm",
+     "pos": [
+      74.685,
+      69.285
+     ]
+    }
+   ],
+   "kind": "diffpair_skew",
+   "pair": [
+    "/ISNS_C_P",
+    "/ISNS_C_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.7986,
+   "branch_free": false,
+   "skew_mm": 15.1381,
+   "skew_ps": 101.62,
+   "limit_mm": 3.0
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "error",
+   "pos": [
+    74.685,
+    69.285
+   ],
+   "layer": null,
+   "net": "/ISNS_C_N",
+   "refs": [],
+   "msg": "diff pair /ISNS_C_P//ISNS_C_N has 17.80 mm of /ISNS_C_N running uncoupled (> 0.70 mm from its partner); limit 3.0 mm",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /ISNS_C_P//ISNS_C_N has 17.80 mm of /ISNS_C_N running uncoupled (> 0.70 mm from its partner); limit 3.0 mm",
+     "pos": [
+      74.685,
+      69.285
+     ]
+    }
+   ],
+   "kind": "diffpair_uncoupled",
+   "pair": [
+    "/ISNS_C_P",
+    "/ISNS_C_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.7986,
+   "branch_free": false,
+   "uncoupled_mm": 17.7986,
+   "uncoupled_p_mm": 2.6604,
+   "uncoupled_n_mm": 17.7986,
+   "coupling_max_mm": 0.7,
+   "limit_mm": 3.0
+  }
+ ],
+ "checked": [
+  {
+   "pair": [
+    "/ISNS_A_P",
+    "/ISNS_A_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.3501,
+   "skew_mm": 14.6897,
+   "skew_ps": 98.6097,
+   "branch_free": false,
+   "uncoupled_p_mm": 2.6604,
+   "uncoupled_n_mm": 17.3501,
+   "coupling_max_mm": 0.7,
+   "vias_p": 0,
+   "vias_n": 0,
+   "nominal_gap_mm": 4.9628,
+   "gap_min_mm": 3.46,
+   "gap_median_mm": 4.9628,
+   "gap_p90_mm": 7.9062,
+   "coupled_gap_max_mm": null,
+   "impedance": {
+    "signal_layer": "F.Cu",
+    "width_mm": 0.5584,
+    "gap_mm": 4.4044,
+    "zdiff_ohm": 118.6951,
+    "model": "coated microstrip",
+    "stackup_assumed": false
+   }
+  },
+  {
+   "pair": [
+    "/ISNS_B_P",
+    "/ISNS_B_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 10.5631,
+   "skew_mm": 7.9027,
+   "skew_ps": 53.0494,
+   "branch_free": false,
+   "uncoupled_p_mm": 2.6604,
+   "uncoupled_n_mm": 10.5631,
+   "coupling_max_mm": 0.7,
+   "vias_p": 0,
+   "vias_n": 2,
+   "nominal_gap_mm": 1.9172,
+   "gap_min_mm": 1.4325,
+   "gap_median_mm": 1.9172,
+   "gap_p90_mm": 4.1329,
+   "coupled_gap_max_mm": null,
+   "impedance": {
+    "signal_layer": "F.Cu",
+    "width_mm": 0.5584,
+    "gap_mm": 1.3588,
+    "zdiff_ohm": 114.4222,
+    "model": "coated microstrip",
+    "stackup_assumed": false
+   }
+  },
+  {
+   "pair": [
+    "/ISNS_C_P",
+    "/ISNS_C_N"
+   ],
+   "length_p_mm": 2.6604,
+   "length_n_mm": 17.7986,
+   "skew_mm": 15.1381,
+   "skew_ps": 101.62,
+   "branch_free": false,
+   "uncoupled_p_mm": 2.6604,
+   "uncoupled_n_mm": 17.7986,
+   "coupling_max_mm": 0.7,
+   "vias_p": 0,
+   "vias_n": 0,
+   "nominal_gap_mm": 5.0467,
+   "gap_min_mm": 3.1256,
+   "gap_median_mm": 5.0467,
+   "gap_p90_mm": 7.9443,
+   "coupled_gap_max_mm": null,
+   "impedance": {
+    "signal_layer": "F.Cu",
+    "width_mm": 0.5584,
+    "gap_mm": 4.4883,
+    "zdiff_ohm": 118.7181,
+    "model": "coated microstrip",
+    "stackup_assumed": false
+   }
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-28T11:26:24+00:00",
+ "input": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:2315b80550433f21425178683d490224811ebced927a9e3bd943e22b5d98e1d6"
+}

@@ -1,0 +1,35 @@
+{
+  "script": "gate",
+  "gate": "erc",
+  "phase": "P4",
+  "tool": "erc",
+  "input": "kicad/PCB-0018-A_bldc-motor-driver.kicad_sch",
+  "input_digest": "sexpr_no_uuid:77d49850cc655c01e0a0583984b911c844d6314eb23656c05b365de1350dccd2",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error",
+      "warning"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": ".",
+    "gate": "erc",
+    "status": "pass",
+    "attempts": 6,
+    "inputs": {
+      "sch": "sexpr_no_uuid:77d49850cc655c01e0a0583984b911c844d6314eb23656c05b365de1350dccd2",
+      "pro": "json_canonical:14c56b3cad561aa3022b5f140dfb9d76862ba189d851de54aedd91f16ad6898a"
+    }
+  }
+}

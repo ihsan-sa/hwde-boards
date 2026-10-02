@@ -1,0 +1,43 @@
+{
+  "mpn": "USBLC6-2SC6",
+  "lcsc": "C7519",
+  "package": "SOT23-6L",
+  "description": "USBLC6-2 (STMicroelectronics, Doc ID 11265 Rev 5): very low capacitance 2-line ESD protection with VBUS protection for USB 2.0 / Ethernet; USBLC6-2SC6 is the SOT23-6L variant (Fig. 1, Table 5).",
+  "pinout": [
+    {"pin": "1", "name": "I/O1", "type": "passive", "notes": "Fig. 1 functional diagram (top view): pins 1 and 6 are both I/O1 (internally common); one data line (e.g. D+) connects to pin 1 or 6 and runs straight through to the other side."},
+    {"pin": "2", "name": "GND", "type": "ground", "notes": "Connect to the PCB GND plane with a track as short as possible (Sec 2.3)."},
+    {"pin": "3", "name": "I/O2", "type": "passive", "notes": "Pins 3 and 4 are both I/O2 (internally common); second data line (e.g. D-)."},
+    {"pin": "4", "name": "I/O2", "type": "passive", "notes": "Same net as pin 3 (Fig. 1)."},
+    {"pin": "5", "name": "VBUS", "type": "passive", "notes": "VBUS protection pin: connect to the VCC/VBUS rail with a track as short as possible (Sec 2.3). Breakdown VBR >= 6 V at 1 mA between VBUS and GND (Table 2). No decoupling capacitor is specified."},
+    {"pin": "6", "name": "I/O1", "type": "passive", "notes": "Same net as pin 1 (Fig. 1)."}
+  ],
+  "decoupling": [],
+  "land_pattern": {
+    "package": "SOT23-6L recommended footprint (Fig. 22, p.12); body D 2.80-3.05 x E 1.50-1.75 mm, H 2.60-3.00 mm incl. leads, pitch e 0.95 mm (Table 4)",
+    "pad_count": 6,
+    "pitch_mm": 0.95,
+    "pad_size_mm": [0.6, 1.2],
+    "row_spacing_mm": 2.3,
+    "pin1": "1",
+    "notes": "Fig. 22 'footprint dimensions in mm': pad width 0.60, pitch 0.95, pad length 1.20 (upper row dimension line) and 1.10 (lower row dimension line - drawing shows both rows the same size, so 1.2 used for both), overall outer span 3.50, 2.30 labelled between pad rows (taken as pad-centre row spacing, consistent with 3.50-1.20). No courtyard given."
+  },
+  "layout_notes": [
+    "Place the device as close as possible to the disturbance source, i.e. the USB connector (Sec 2.3 'Important').",
+    "Rail-to-rail topology: the tracks from data lines to the I/O pins, from VCC/VBUS to the VBUS pin and from the GND plane to the GND pin must all be as short as possible to avoid overvoltage from parasitic inductance (Sec 2.3, Fig. 6/7).",
+    "Quantified: 10 mm x 0.5 mm tracks give about 6 nH each; at IEC 61000-4-2 dI/dt of 24 A/ns each adds about 144 V, so clamping rises from +31.2 V to about +319 V (Sec 2.2) - an unsuitable layout defeats the protection.",
+    "Fig. 7 optimized layout: route each data line directly through the I/O pin pair (pin 1 to 6, pin 3 to 4) rather than stubbing off the trace; do not branch the line to the device with a long stub.",
+    "GND pin 2 should go to the ground plane with a short, preferably direct via/track; VBUS pin 5 to the connector VBUS with a short track.",
+    "Capacitance is very low (Ci/o-GND 2.5 pF typ, 3.5 pF max, matching 0.015 pF) so the part suits USB 2.0 high speed (480 Mb/s); keep the D+/D- pair balanced through the device.",
+    "Crosstalk between the two lines is below -55 dB up to 240 MHz (Sec 2.4); no extra spacing rule is given."
+  ],
+  "abs_max": [
+    {"param": "Peak pulse voltage VPP, IEC 61000-4-2 air discharge", "value": 15, "unit": "kV"},
+    {"param": "Peak pulse voltage VPP, IEC 61000-4-2 contact discharge", "value": 15, "unit": "kV"},
+    {"param": "Peak pulse voltage VPP, MIL STD883G Method 3015-7", "value": 25, "unit": "kV"},
+    {"param": "Storage temperature", "value": "-55 to 150", "unit": "C"},
+    {"param": "Operating junction temperature", "value": "-40 to 125", "unit": "C"},
+    {"param": "Lead solder temperature (10 s)", "value": 260, "unit": "C"}
+  ],
+  "exposed_pad": {"present": false},
+  "source_pdf": "boards/esp32c3-node/parts/U4_USBLC6-2SC6_C7519.pdf"
+}

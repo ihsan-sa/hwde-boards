@@ -1,0 +1,28 @@
+id: current-sense-shunt
+kind: coverage-checklist
+applies:
+  topologies: [current-sense-shunt]
+requires:
+  - {class: selection, min_level: topology, note: "shunt value vs dissipation vs CSA differential range; CSA common-mode range and PWM rejection for a switched low-side node"}
+  - {class: return-path, min_level: principle, note: "Kelvin (4-wire) taps - only the shunt's own resistance may sit between IN+ and IN-; principle, bounds no operating point"}
+  - {class: power-loop, min_level: topology, note: "shunt position: in line with the power stage, between the low-side source and the star ground, multi-via to GND"}
+  - {class: diff-pair, min_level: topology, note: "sense pair routed tightly coupled from shunt to CSA, away from switching nodes"}
+  - {class: emi, min_level: topology, note: "input/output filter placement and its series-R error budget"}
+  - {class: decoupling, min_level: topology, note: "CSA supply bypass at the VS pin"}
+  - {class: constraints-emission, min_level: principle, note: "net ties + diff-pair class + shunt/low-side-FET placement group the block must emit; an emission contract, not physics"}
+maturity: draft
+sources:
+  - {file: research/sources/slva959b.pdf, page: 32, note: "sec 7.4-7.6 text: shunt selection trade (20 A in 1 mOhm = 400 mW, 20 mV signal), placement between LS source and star ground, differential-pair routing"}
+  - {file: research/sources/slva959b.pdf, page: 34, note: "sec 7.8 filter placement at the CSA; 7.9 do's list: Kelvin, symmetrical layout, close connections, net ties + differential routing"}
+  - {file: research/sources/ina240.pdf, page: 24, note: "sec 11.1.1 Kelvin/4-wire connection text; Fig 11-1 recommended TSSOP layout with C_BYPASS at VS"}
+prose: >
+  What a designer must hold before laying out a low-side (or inline) shunt
+  current-sense block: how the shunt value is chosen against dissipation
+  and the CSA's differential range, why a CSA with wide negative common-mode
+  range and PWM rejection suits a switched node, Kelvin taps, where the shunt
+  sits in the power stage and how it reaches ground, how the sense pair is
+  routed, where filters go and what their series resistance costs, the CSA's
+  own bypass, and what the block must emit into constraints (net ties,
+  diff-pair class, a placement group). Drawn from TI SLVA959B sec 7 and the
+  INA240 datasheet sec 9-11.
+origin: research:block-current-sense-shunt-1

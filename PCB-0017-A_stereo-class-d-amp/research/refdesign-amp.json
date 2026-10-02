@@ -1,0 +1,78 @@
+{
+  "block": "amp",
+  "decisions": [
+    {
+      "what": "GAIN/SLV divider: Master mode 20 dB = 5.6 kOhm to GND, GVDD leg OPEN; input impedance 60 kOhm. the reference design's reported 5.6k is this leg, not a 5.6k/100k pair.",
+      "why": "Datasheet Table 1 gain table; matches requirements Q12 default and the reference design's reported gain.",
+      "source": "TI SLOS708G datasheet, section 7.3.1 Table 1 / Figure 27; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf"
+    },
+    {
+      "what": "Input AC-coupling cap: datasheet recommends 1.5 uF at 60 kOhm Zi for 20 Hz flat bass (1.8 Hz corner); the reference design's 2.2 uF gives ~1.2 Hz corner, i.e. more bass margin than the datasheet default, not undersized.",
+      "why": "f = 1/(2*pi*Zi*Ci); low-leakage cap type recommended, positive terminal to input pin if polarized.",
+      "source": "TI SLOS708G datasheet, section 7.3.2 Table 2; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf"
+    },
+    {
+      "what": "PLIMIT: tie to GVDD directly for no power limiting (simplest default, compatible with 1SPW mode), or add a GVDD-to-GND resistor divider for a lower limit; a 1 uF cap to GND at the pin is required for stability regardless.",
+      "why": "the reference design's two cited sources report no PLIMIT value; this is an open item for the schematic phase.",
+      "source": "TI SLOS708G datasheet, section 7.3.4; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf"
+    },
+    {
+      "what": "AM0/AM1/AM2 switching-frequency select pins are simple logic-level ties to GND/PVCC (no resistor divider needed), unlike GAIN/SLV and PLIMIT.",
+      "why": "Table 6 lists 6 direct-tie combinations spanning 376-1200 kHz switching frequency.",
+      "source": "TI SLOS708G datasheet, section 7.3, Table 6; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf"
+    },
+    {
+      "what": "SDZ/FAULTZ pull-ups: 100 kOhm (matches datasheet's own VOL test condition and its '100 kOhm or more' noise-immunity guidance for these divider-class pins); SDZ must never float. This is what the reference design's reported 'R1/R3 = 100k' actually do (SDZ, FAULTZ, MUTE hold), not a second gain-divider leg.",
+      "why": "Open-drain FAULTZ needs an external pull-up; floating SDZ gives unpredictable operation.",
+      "source": "TI SLOS708G datasheet electrical characteristics (VOL, RPULL-UP=100k) and section 7.3.3/7.3.4; cross-checked against TPA3116D2EVM BOM R1,R2,R7-R10,R21,R22 = 100k; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf , https://www.ti.com/lit/ug/slou336b/slou336b.pdf"
+    },
+    {
+      "what": "Bootstrap caps: 220 nF, 25 V or better, X5R, one per output pin (BSNL/BSPL/BSNR/BSPR), not shared between channels.",
+      "why": "Matches the reference design's reported four 220 nF caps exactly.",
+      "source": "TI SLOS708G datasheet, section 8.2.2.5 and pin table; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf"
+    },
+    {
+      "what": "PVCC/AVCC/GVDD decoupling: 100 uF+ low-ESR bulk cap per PVCC group (2 groups), plus 100 nF-1 uF mid-freq and 220 pF-1 nF high-freq caps at each group's pins returned to IC GND directly; AVCC (pin 17) gets its own separate 100 nF; GVDD gets 1 uF to GND for the LDO and to filter GAIN/SLV + PLIMIT dividers.",
+      "why": "the reference design's reported 100 uF + 100 nF + 1 nF per PVCC group, plus separate AVCC 100 nF, matches the datasheet's three-tier decoupling scheme value-for-value.",
+      "source": "TI SLOS708G datasheet, sections 8.2.2.3/8.2.2.4/7.3.4 and 10.1; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf"
+    },
+    {
+      "what": "Output LC filter: 10 uH + 680 nF per channel (datasheet's own BTL test condition, and the reference design's exact values); computed corner ~61 kHz vs the app note's own tighter-tuned 73 kHz pairing (10 uH+470 nF or 7 uH+680 nF) - a deliberate choice, not an error. Inductor should be rated >=5.8 A saturation (EVM's Toko 931BS-100M) for a ~3 A-class design.",
+      "why": "Cross-checked against TI's LC filter app note's own recommended pairing table and Q=RL*sqrt(C/L) damping-ratio dependence on load.",
+      "source": "TI SLOS708G datasheet electrical characteristics (RL(BTL) row); TI SLAA701B app report section 1.3.3 and capacitor-selection table; TPA3116D2EVM BOM L1-L4; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf , https://www.ti.com/lit/an/sloa119b/sloa119b.pdf , https://www.ti.com/lit/ug/slou336b/slou336b.pdf"
+    },
+    {
+      "what": "Damping/Zobel branch at the LC filter output: 3.3 Ohm + 10 nF per channel (matches the reference design's reported values exactly, and the EVM's R15-R18/C25-C28). Separate from a switch-node EMI snubber, which the datasheet itself suggests as 18 Ohm + 330 pF but which the EVM actually implements as 10 Ohm + 330 pF (R11-R14/C11,13,15,17) - a lower value than the datasheet's own suggestion. the reference design's parts list covers only the damping branch, not this second snubber.",
+      "why": "Fixed L/C is only critically damped at one load impedance; a damping branch stabilizes response across the 4-8 Ohm range in requirements Q2.",
+      "source": "TI SLOS708G datasheet section 7.3.14 (18 Ohm/330 pF snubber suggestion); TPA3116D2EVM BOM (actual R11-R18, C11-C28 values); https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf , https://www.ti.com/lit/ug/slou336b/slou336b.pdf"
+    },
+    {
+      "what": "PowerPAD thermal vias: 0.30-0.33 mm plated drill diameter, tented/capped from the component side (not the far side), no thermal-relief (wagon-wheel) connections, full continuous copper connection to plane. 5-9 vias adequate for a small die on a 2-4 layer board, diminishing returns beyond that; no numeric pitch is given by the app note itself.",
+      "why": "Minimizes solder wicking during reflow and maximizes thermal transfer; JLCPCB's board used 51 total plated 0.30 mm vias across the whole board (not all thermal), close to but not identical to the app note's 0.33 mm figure.",
+      "source": "TI SLMA002H app report section 2.4; cross-checked against JLCPCB blog via count; https://www.ti.com/lit/an/slma002h/slma002h.pdf , https://jlcpcb.com/blog/gpt-6-astra-pcb-design-in-kicad"
+    },
+    {
+      "what": "Thermal land/copper area: size to the datasheet's max exposed-pad dimension, maximize copper connected within the 2-layer stackup. FLAG: the datasheet's own RthetaJA=14 C/W figure for this exact package, and the EVM itself, both assume an attached 14x50x25 mm aluminum heat sink, not copper-pour alone - neither cited source demonstrates copper-only cooling for this part, so requirements.md Q8's copper-only assumption is unverified by these sources and needs a thermal margin check at H-gate.",
+      "why": "Avoids carrying a heat-sink-assisted thermal number into a copper-only claim.",
+      "source": "TI SLOS708G datasheet section 6.4 (thermal table + footnote 4); TPA3116D2EVM BOM item 29 (heat sink); TI SLMA002H section 2.3; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf , https://www.ti.com/lit/ug/slou336b/slou336b.pdf , https://www.ti.com/lit/an/slma002h/slma002h.pdf"
+    },
+    {
+      "what": "Layout symmetry/grounding: route OUTP/OUTN and their LC filter parts symmetrically with minimum loop area back to a single star-ground point at the IC's GND pad; PVCC bulk caps near the device, high-freq bypass right at the pins, all grounded to IC GND directly.",
+      "why": "Loop area sets EMI antenna effectiveness; a shared, tight ground point avoids ground-bounce-driven distortion.",
+      "source": "TI SLOS708G datasheet section 10.1 Layout Guidelines; https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf"
+    }
+  ],
+  "layout_notes": [
+    "Thermal via spec (0.30-0.33mm plated, tented from component side, no thermal relief, 5-9+ vias) and thermal land sizing are interface-spec candidates; copper-alone adequacy is unverified by cited sources - carry a margin check, not just a via-count copy.",
+    "OUTP/OUTN + LC filter must be symmetric with minimum loop area, filter caps grounded at the IC star point.",
+    "Bootstrap cap loops must stay local to their own BST/OUTxx pin pair, not shared across channels.",
+    "PVCC decoupling: bulk near device, high-freq at the pins, all returned directly to IC GND, not a long trace."
+  ],
+  "errata": [
+    "SDZ must never be left floating - unpredictable operation.",
+    "Gain and Master/Slave/PBTL mode latch at end of startup and cannot change while powered - divider must be correct before first power-up.",
+    "FAULTZ is open-drain and needs an external pull-up; easy to forget.",
+    "Thermal-relief (wagon-wheel) via connections under the PowerPAD defeat its purpose - a common EDA tool default that must be disabled for this footprint.",
+    "Datasheet's headline RthetaJA=14 C/W for this package is heat-sink-assisted (EVM's aluminum heat sink), not copper-pour-only - do not reuse that number for a copper-only thermal claim."
+  ]
+}

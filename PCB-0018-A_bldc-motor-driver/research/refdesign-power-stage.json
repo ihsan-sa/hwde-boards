@@ -1,0 +1,59 @@
+{
+  "block": "power-stage: 6x N-FET half-bridge, bootstrap gate drive, 3x low-side shunt Kelvin-sensed into CSAs",
+  "decisions": [
+    {
+      "what": "Gate resistor ~10 ohm series per FET gate, single resistor by default; parallel turn-off diode only if faster sink current is needed",
+      "why": "TIDA-010251 tested with 10R gate resistors, clean switching no overvoltage ringing; VESC-class designs converge on 5-10R; DRV8300 EVM guide treats the diode+resistor combo as an add-on for stronger sink current, not default",
+      "source": "TI TIDA-010251 design guide TIDUF36A sec 3.1/4.4.2 (https://www.ti.com/lit/ug/tiduf36a/tiduf36a.pdf); TI DRV8300xxx-EVM guide SLVUBV6 (https://www.ti.com/lit/pdf/slvubv6)"
+    },
+    {
+      "what": "Bootstrap cap 1uF, 25-50V X5R/X7R ceramic per phase; rely on driver's integrated bootstrap diode if available",
+      "why": "TIDA-010251 uses 1uF/50V ceramic bootstrap caps with DRV8328 integrated bootstrap diode + trickle charge pump for 100% duty; DRV8329 datasheet independently recommends the same 1uF/25V value",
+      "source": "TI TIDA-010251 Fig 3-2 (TIDUF36A); TI DRV8329 datasheet (https://www.ti.com/lit/ds/symlink/drv8329.pdf)"
+    },
+    {
+      "what": "Gate-source pull-down ~10 kohm as a safety default even when the driver IC has one internally",
+      "why": "Holds FET off during MCU reset/power-up/fault when driver output is high-Z; without it Miller coupling from the switching node can pull gate above Vth and cause shoot-through",
+      "source": "opinion / general gate-driver design-note practice, cross-checked against two independent design-note sources but not a single vendor reference-design measurement -- confirm against chosen driver IC's own datasheet"
+    },
+    {
+      "what": "Low-side shunt with true Kelvin routing: sense traces tapped at the shunt's own pads, not board GND; shunt value ~3-5 mOhm >=1-2W for this board's 10A RMS/20A peak class",
+      "why": "DRV8300 EVM guide is explicit that CSA IN- must connect at the low side of the shunt resistor itself, not GND, for accurate measurement; shunt value scaled down from VESC (10mOhm/1W at 30A peak) and B-G431B-ESC1 (3mOhm, ~20-40A class) to this board's lower current",
+      "source": "TI DRV8300xxx-EVM guide SLVUBV6; VESC power stage schematic (https://www.vesc-project.com/sites/default/files/imce/u6405/power%20stage.pdf); ST B-G431B-ESC1 community-derived values"
+    },
+    {
+      "what": "CSA RC filter placed directly at the sense-amplifier's input pins, close to shunt/CSA, not mid-trace",
+      "why": "Rejects switching-edge coupling into the current-sense signal without adding delay that matters at 20-30kHz switching",
+      "source": "TI TIDA-010251 Fig 3-1 (TIDUF36A) -- single-source for exact placement, consistent with general CSA app-note guidance"
+    },
+    {
+      "what": "Bus/phase voltage divider ratio ~1:10 to 1:11 using high-value (100k-1M range) resistors, with a small ceramic filter cap at the ADC tap",
+      "why": "TIDA-010251 uses 1.00Mohm/100kohm (~1/11) with 0.1uF filter cap; B-G431B-ESC1 uses 18k/(18k+169k) ~= 1/10.4 -- two independent designs converge on the same ratio band",
+      "source": "TI TIDA-010251 Fig 3-5 (TIDUF36A); ST B-G431B-ESC1 community-derived gain figures"
+    },
+    {
+      "what": "Bulk cap at VM input plus separate local ceramic decoupling per half-bridge leg (VDC to bottom FET source), not just one board-level bulk cap",
+      "why": "Reduces ringing in the supply line caused by parasitic inductance added by the sense resistor and power track, called out per-leg (C30/C31/C32) in the reference design",
+      "source": "TI TIDA-010251 sec 3.1 (TIDUF36A)"
+    },
+    {
+      "what": "RC snubber footprint provided but populated conditionally, not across all six switches by default; cap sized ~several x Coss (TIDA used ~832pF), resistor tuned empirically",
+      "why": "TIDA-010251 states a snubber is not necessarily required across all FETs; need depends on current direction, PWM strategy and diode reverse-recovery ringing, worse under bipolar/complementary switching",
+      "source": "TI TIDA-010251 sec 3.1 (TIDUF36A)"
+    },
+    {
+      "what": "No-heatsink thermal reference point: at 10A RMS/phase (this board's continuous rating) on 4-layer/2oz copper, natural convection, TIDA-010251 measured max FET temp 49.3C; at 33A RMS it reached 97.1C",
+      "why": "TIDA-010251 shares this board's no-heatsink, 4-layer/2oz-copper, ~60x60mm constraints -- directly relevant data point for the thermal-derating flag on the 10A RMS/20A peak requirement (requirements.md Q3), though FET Rds(on)/package choice will shift the exact number",
+      "source": "TI TIDA-010251 sec 4.4.1/4.4.4, Fig 4-9..4-12 (TIDUF36A)"
+    }
+  ],
+  "layout_notes": [
+    "Kelvin-tap the shunt at its own pads, not board GND -- routing constraint, not just a schematic net (DRV8300 EVM guide SLVUBV6)",
+    "Per-leg local decoupling cap placed at the bottom FET's source/VDC as close as possible, to minimize shunt+track parasitic-inductance ringing loop (TIDA-010251 sec 3.1)",
+    "CSA/op-amp RC filter placed at the amplifier's sense-input pins, not mid-trace between shunt and amplifier (TIDA-010251 Fig 3-1)"
+  ],
+  "errata": [
+    "DRV8300 family: DRV8300D has integrated bootstrap diode; DRV8300N needs an external bootstrap diode -- suffix-dependent, verify at part-selection time (lower confidence, from search-result summary not independently PDF-verified this run)",
+    "TIDA-010251's snubber footprint is optional/populate-as-needed in the reference design itself, not fixed across all six switches -- don't over-fit a fixed RC snubber by default"
+  ]
+}

@@ -1,0 +1,302 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "10 ohm resistor 0603",
+ "total": 4,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C22859",
+   "mpn": "0603WAF100JT5E",
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "description": "-55\u2103~+155\u2103 100mW 10\u03a9 75V Thick Film Resistor \u00b11% \u00b1400ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+   "package": "0603",
+   "category": "Chip Resistor - Surface Mount",
+   "type": "Basic",
+   "basic": true,
+   "stock": 8506972,
+   "price": 0.0032,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0032
+    },
+    {
+     "qty": 200,
+     "price": 0.0025
+    },
+    {
+     "qty": 600,
+     "price": 0.0022
+    },
+    {
+     "qty": 5000,
+     "price": 0.002
+    },
+    {
+     "qty": 10000,
+     "price": 0.0017
+    },
+    {
+     "qty": 10040,
+     "price": 0.0017
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf",
+   "url": "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf100jt5e_C22859.html",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "10\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "100mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "75V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1400ppm/\u2103"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C17415",
+   "mpn": "0805W8F100JT5E",
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "description": "-55\u2103~+155\u2103 10\u03a9 125mW 150V Thick Film Resistor \u00b11% \u00b1200ppm/\u2103 0805 Chip Resistor - Surface Mount ROHS",
+   "package": "0805",
+   "category": "Chip Resistor - Surface Mount",
+   "type": "Basic",
+   "basic": true,
+   "stock": 7038239,
+   "price": 0.004,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.004
+    },
+    {
+     "qty": 1000,
+     "price": 0.0031
+    },
+    {
+     "qty": 5000,
+     "price": 0.0026
+    },
+    {
+     "qty": 10000,
+     "price": 0.0024
+    },
+    {
+     "qty": 50000,
+     "price": 0.0022
+    },
+    {
+     "qty": 50200,
+     "price": 0.0022
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F100JT5E_C17415.pdf",
+   "url": "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0805w8f100jt5e_C17415.html",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "10\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "125mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "150V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1200ppm/\u2103"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C25077",
+   "mpn": "0402WGF100JTCE",
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "description": "-55\u2103~+155\u2103 10\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1200ppm/\u2103 0402 Chip Resistor - Surface Mount ROHS",
+   "package": "0402",
+   "category": "Chip Resistor - Surface Mount",
+   "type": "Basic",
+   "basic": true,
+   "stock": 1974379,
+   "price": 0.0029,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0029
+    },
+    {
+     "qty": 1000,
+     "price": 0.0022
+    },
+    {
+     "qty": 3000,
+     "price": 0.0018
+    },
+    {
+     "qty": 10000,
+     "price": 0.0017
+    },
+    {
+     "qty": 50000,
+     "price": 0.0014
+    },
+    {
+     "qty": 50200,
+     "price": 0.0014
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF100JTCE_C25077.pdf",
+   "url": "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0402wgf100jtce_C25077.html",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "10\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "62.5mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1200ppm/\u2103"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C17903",
+   "mpn": "1206W4F100JT5E",
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
+   "description": "-55\u2103~+155\u2103 10\u03a9 200V 250mW Thick Film Resistor \u00b11% \u00b1400ppm/\u2103 1206 Chip Resistor - Surface Mount ROHS",
+   "package": "1206",
+   "category": "Chip Resistor - Surface Mount",
+   "type": "Basic",
+   "basic": true,
+   "stock": 966825,
+   "price": 0.0113,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0113
+    },
+    {
+     "qty": 500,
+     "price": 0.0092
+    },
+    {
+     "qty": 1500,
+     "price": 0.008
+    },
+    {
+     "qty": 5000,
+     "price": 0.0068
+    },
+    {
+     "qty": 25000,
+     "price": 0.0062
+    },
+    {
+     "qty": 50000,
+     "price": 0.0059
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010145_UNI-ROYAL-Uniroyal-Elec-1206W4F100JT5E_C17903.pdf",
+   "url": "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-1206w4f100jt5e_C17903.html",
+   "attributes": [
+    {
+     "name": "Resistance",
+     "value": "10\u03a9"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+155\u2103"
+    },
+    {
+     "name": "Power(Watts)",
+     "value": "250mW"
+    },
+    {
+     "name": "Type",
+     "value": "Thick Film Resistor"
+    },
+    {
+     "name": "Voltage-Supply(Max)",
+     "value": "200V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b11%"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "\u00b1400ppm/\u2103"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {
+  "type": "basic"
+ },
+ "placeholders_filtered": 0
+}

@@ -1,0 +1,61 @@
+id: class-d-amp
+kind: coverage-checklist
+applies:
+  topologies:
+  - class-d-amp
+requires:
+- class: selection
+  min_level: family
+  note: family ladder + pad orientation (pad-down for PCB cooling) before wattage
+- class: thermal-via
+  min_level: topology
+  note: PowerPAD land, via drill/pitch/count, tenting side, no thermal relief
+- class: thermal
+  min_level: family
+  note: '2-layer pour as heatsink: RthJA basis, top/bottom GND fill, stitching, Pdiss bound'
+- class: decoupling
+  min_level: topology
+  note: three-tier PVCC decoupling per pin group into the pad; AVCC/GVDD local caps
+- class: feedback
+  min_level: family
+  note: bootstrap cap per output across the BS/OUT pin pair (value, rating)
+- class: power-loop
+  min_level: principle
+  note: output-to-filter-to-GND loop minimal; star ground at the IC pad - principle, no bound
+- class: return-path
+  min_level: family
+  note: single GND net, no AGND island, no slots in the 2-layer pour
+- class: emi
+  min_level: family
+  note: output LC/ferrite close to outputs, switch-node snubber and post-filter Zobel placement
+- class: sequencing
+  min_level: family
+  note: latched thermal/short fault and how it clears (FAULTZ-SDZ tie vs host)
+- class: constraints-emission
+  min_level: principle
+  note: what the block emits into constraints.json - contract, not physics
+maturity: draft
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 28
+  note: '10.1 Layout Guidelines: the four rules (decoupling, output loop, grounding, output filter) that
+    seed the class list'
+- file: research/sources/tpa3116d2.pdf
+  page: 6
+  note: Table 6.4 thermal information per package - the thermal/thermal-via classes
+- file: research/sources/tpa3116d2.pdf
+  page: 18
+  note: 7.3.11 thermal protection latch - the sequencing class
+- file: research/sources/slma002h.pdf
+  page: 8
+  note: 2.4 thermal vias - the thermal-via class for pad-down packages
+- file: research/sources/slou342a.pdf
+  page: 7
+  note: Fig 4 EVM top layout - placement pattern the decoupling/emi/return-path classes describe
+prose: 'What a designer must hold before laying out an integrated-FET BTL class-D amplifier on a 2-layer
+  board: which family member and pad orientation gives a PCB cooling path; the PowerPAD via array and
+  land; that the copper pour is the heatsink and what RthJA it buys; per-pin-group PVCC decoupling into
+  the pad; a bootstrap cap per output; the output loop and star ground; a single GND net without slots;
+  where the EMI filter and snubbers sit; how a latched fault clears; and what the block emits to the pipeline.
+  Seeded from SLOS708 (datasheet layout section), SLOU342A (2-layer EVM) and SLMA002 (PowerPAD).'
+origin: research:block-class-d-amp-1

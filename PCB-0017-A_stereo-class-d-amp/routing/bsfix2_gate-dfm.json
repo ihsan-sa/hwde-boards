@@ -1,0 +1,72 @@
+{
+  "script": "gate",
+  "gate": "dfm",
+  "phase": "P9",
+  "tool": "dfm",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "copper",
+      "copper_to_edge",
+      "drill",
+      "hole_to_edge",
+      "silk",
+      "polarity",
+      "bom",
+      "release"
+    ],
+    "ran": [
+      "copper",
+      "copper_to_edge",
+      "drill",
+      "hole_to_edge",
+      "silk",
+      "polarity",
+      "bom",
+      "release"
+    ],
+    "passed": [
+      "copper",
+      "copper_to_edge",
+      "drill",
+      "hole_to_edge",
+      "silk",
+      "polarity",
+      "bom",
+      "release"
+    ],
+    "failed": [],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": ".",
+    "gate": "dfm",
+    "status": "pass",
+    "attempts": 7,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+      "sch": "sexpr_no_uuid:1a4435ad751dcf43ed543c79b2f52ed5616f30af71a336dd8242dd3163900aaf",
+      "parts": "json_canonical:fe6b633106f7d88a932884d82fcbfe88ba58c2de632577a3b8acff0b09e1be1b"
+    }
+  }
+}

@@ -1,0 +1,876 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "MCP73871",
+ "total": 21,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C511310",
+   "mpn": "MCP73871T-2CCI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 1.8A 28uA 4.2V 4.6V~6V Charging IC Support QFN-20-EP(4x4) Battery Management ROHS",
+   "package": "QFN-20-EP(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1834,
+   "price": 2.1833,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.1833
+    },
+    {
+     "qty": 10,
+     "price": 1.8663
+    },
+    {
+     "qty": 30,
+     "price": 1.668
+    },
+    {
+     "qty": 100,
+     "price": 1.4664
+    },
+    {
+     "qty": 500,
+     "price": 1.3526
+    },
+    {
+     "qty": 1000,
+     "price": 1.3136
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410010132_Microchip-Tech-MCP73871T-2CCI-ML_C511310.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871t-2cci-ml_C511310.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "28uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.8A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.6V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C5121473",
+   "mpn": "MCP73871-2CCI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 1.1A 28uA 4.1V~6V 4.2V Charging IC Support Support QFN-20(4x4) Battery Management ROHS",
+   "package": "QFN-20(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 243,
+   "price": 4.4088,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.4088
+    },
+    {
+     "qty": 10,
+     "price": 3.8203
+    },
+    {
+     "qty": 30,
+     "price": 3.3375
+    },
+    {
+     "qty": 91,
+     "price": 2.9847
+    },
+    {
+     "qty": 455,
+     "price": 2.8206
+    },
+    {
+     "qty": 1001,
+     "price": 2.7474
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212031600_Microchip-Tech-MCP73871-2CCI-ML_C5121473.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871-2cci-ml_C5121473.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "28uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.1V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcharge protection\u3001Reverse current blocking\u3001Battery temperature monitoring"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C144351",
+   "mpn": "MCP73871-2AAI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 1.1A 28uA 4.2V 6V Charging IC Support QFN-20-EP(4x4) Battery Management ROHS",
+   "package": "QFN-20-EP(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 77,
+   "price": 3.9829,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.9829
+    },
+    {
+     "qty": 10,
+     "price": 3.3717
+    },
+    {
+     "qty": 30,
+     "price": 3.0091
+    },
+    {
+     "qty": 100,
+     "price": 2.6417
+    },
+    {
+     "qty": 500,
+     "price": 2.471
+    },
+    {
+     "qty": 1000,
+     "price": 2.3946
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1806052132_Microchip-Tech-MCP73871-2AAI-ML_C144351.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871-2aai-ml_C144351.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "28uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C185603",
+   "mpn": "MCP73871-2CAI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 1.8A 28uA 4.2V 4.6V~6V Charging IC Support Support QFN-20(4x4) Battery Management ROHS",
+   "package": "QFN-20(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 17,
+   "price": 5.6752,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 5.6752
+    },
+    {
+     "qty": 10,
+     "price": 4.8851
+    },
+    {
+     "qty": 30,
+     "price": 4.4153
+    },
+    {
+     "qty": 100,
+     "price": 3.9406
+    },
+    {
+     "qty": 500,
+     "price": 3.7212
+    },
+    {
+     "qty": 1000,
+     "price": 3.622
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210181000_Microchip-Tech-MCP73871-2CAI-ML_C185603.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871-2cai-ml_C185603.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "28uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.8A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.6V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcharge protection\u3001Reverse current blocking\u3001Battery temperature monitoring"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C623871",
+   "mpn": "MCP73871T-1AAI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 180uA 1A 4.1V 4.6V~6V Charging IC Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcharge protection\u3001Reverse current blocking\u3001Battery temperature monitoring Lithium Battery Support Support QFN-20-EP(4x4) Battery Management ROHS",
+   "package": "QFN-20-EP(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10,
+   "price": 3.8366,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.8366
+    },
+    {
+     "qty": 10,
+     "price": 3.7374
+    },
+    {
+     "qty": 30,
+     "price": 3.6724
+    },
+    {
+     "qty": 100,
+     "price": 3.6074
+    },
+    {
+     "qty": 102,
+     "price": 3.6074
+    },
+    {
+     "qty": 104,
+     "price": 3.6074
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210180430_Microchip-Tech-MCP73871T-1AAI-ML_C623871.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871t-1aai-ml_C623871.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.1V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "180uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.6V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcharge protection\u3001Reverse current blocking\u3001Battery temperature monitoring"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C623873",
+   "mpn": "MCP73871T-1CCI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 4.1V 4.6V~6V QFN-20-EP(4x4) Battery Management ROHS",
+   "package": "QFN-20-EP(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10,
+   "price": 3.8366,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.8366
+    },
+    {
+     "qty": 10,
+     "price": 3.7374
+    },
+    {
+     "qty": 30,
+     "price": 3.6724
+    },
+    {
+     "qty": 100,
+     "price": 3.6074
+    },
+    {
+     "qty": 102,
+     "price": 3.6074
+    },
+    {
+     "qty": 104,
+     "price": 3.6074
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210180430_Microchip-Tech-MCP73871T-1CCI-ML_C623873.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871t-1cci-ml_C623873.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.1V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "180uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1.1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.6V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Overcharge protection\u3001Reverse current blocking\u3001Battery temperature monitoring"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C637762",
+   "mpn": "MCP73871-4CCI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 4.1V~6V 4.4V QFN-20(4x4) Battery Management ROHS",
+   "package": "QFN-20(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 9,
+   "price": 4.4576,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.4576
+    },
+    {
+     "qty": 10,
+     "price": 4.3535
+    },
+    {
+     "qty": 30,
+     "price": 4.2836
+    },
+    {
+     "qty": 100,
+     "price": 4.2154
+    },
+    {
+     "qty": 500,
+     "price": 4.2154
+    },
+    {
+     "qty": 1000,
+     "price": 4.2154
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210172000_Microchip-Tech-MCP73871-4CCI-ML_C637762.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871-4cci-ml_C637762.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.4V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "180uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.1V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking\u3001Battery temperature monitoring"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C637760",
+   "mpn": "MCP73871-3CCI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 4.35V 4.6V~6V QFN-20(4x4) Battery Management ROHS",
+   "package": "QFN-20(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2,
+   "price": 4.3796,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 4.3796
+    },
+    {
+     "qty": 10,
+     "price": 4.2771
+    },
+    {
+     "qty": 30,
+     "price": 4.2089
+    },
+    {
+     "qty": 100,
+     "price": 4.1406
+    },
+    {
+     "qty": 500,
+     "price": 4.1406
+    },
+    {
+     "qty": 1000,
+     "price": 4.1406
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210172000_Microchip-Tech-MCP73871-3CCI-ML_C637760.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871-3cci-ml_C637760.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.35V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "180uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.6V~6V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout\u3001Reverse current blocking"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C637756",
+   "mpn": "MCP73871-1AAI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 4.1V 4.1V~6V QFN-20-EP(4x4) Battery Management ROHS",
+   "package": "QFN-20-EP(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 2.0516,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.0516
+    },
+    {
+     "qty": 10,
+     "price": 2.0516
+    },
+    {
+     "qty": 30,
+     "price": 2.0516
+    },
+    {
+     "qty": 200,
+     "price": 0.795
+    },
+    {
+     "qty": 500,
+     "price": 0.7674
+    },
+    {
+     "qty": 1000,
+     "price": 0.7527
+    }
+   ],
+   "min_qty": 5,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210172000_Microchip-Tech-MCP73871-1AAI-ML_C637756.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871-1aai-ml_C637756.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.1V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "180uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.1V~6V"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C637757",
+   "mpn": "MCP73871-1CAI/ML",
+   "brand": "Microchip Tech",
+   "description": "-40\u2103~+85\u2103 1 4.1V 4.1V~6V Lithium-ion/Polymer QFN-20(4x4) Battery Management ROHS",
+   "package": "QFN-20(4x4)",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 2.0516,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.0516
+    },
+    {
+     "qty": 10,
+     "price": 2.0516
+    },
+    {
+     "qty": 30,
+     "price": 2.0516
+    },
+    {
+     "qty": 200,
+     "price": 0.795
+    },
+    {
+     "qty": 500,
+     "price": 0.7674
+    },
+    {
+     "qty": 1000,
+     "price": 0.7527
+    }
+   ],
+   "min_qty": 5,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210172000_Microchip-Tech-MCP73871-1CAI-ML_C637757.pdf",
+   "url": "https://www.lcsc.com/product-detail/battery-management_microchip-tech-mcp73871-1cai-ml_C637757.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.1V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "180uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "1A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.1V~6V"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

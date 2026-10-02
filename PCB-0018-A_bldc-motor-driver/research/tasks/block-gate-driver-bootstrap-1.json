@@ -1,0 +1,126 @@
+{
+ "id": "block-gate-driver-bootstrap-1",
+ "slot": "block:gate_driver",
+ "kind": "block",
+ "token": "gate-driver-bootstrap",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified",
+ "opened": "2026-09-27T14:31:37",
+ "closed": "2026-09-27T14:55:27",
+ "coverage_report": "log/coverage-P2.json",
+ "gap": {
+  "slot": "block:gate_driver",
+  "kind": "block",
+  "topology": "gate-driver-bootstrap",
+  "operating_point": {
+   "vin_v": 28,
+   "vout_v": 12,
+   "fsw_khz": 25,
+   "edge_ns": 50,
+   "pdiss_w": 0.1,
+   "board_layers": 4,
+   "switching_kind": "hard",
+   "source_kind": "dc-input"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'gate-driver-bootstrap' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'gate-driver-bootstrap': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/ds/symlink/drv8300.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/drv8300.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "DRV8300D",
+   "file": "research/sources/drv8300.pdf",
+   "sha256": "bb467652a531335d23ea67644db1db26ce53f149e3f889f8158a1c3ddac3e4db",
+   "bytes": 2770475,
+   "content_type": "application/pdf",
+   "pages": 35,
+   "fetched": "2026-09-27T14:33:48",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/an/slua887/slua887.pdf",
+   "final_url": "https://www.ti.com/lit/an/slua887a/slua887a.pdf?ts=1790489004911",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": null,
+   "file": "research/sources/slua887a.pdf",
+   "sha256": "2b4478dc5ce8b345cc21813b7ab5fa82492a0e3687057021652584761e482223",
+   "bytes": 948284,
+   "content_type": "application/pdf",
+   "pages": 9,
+   "fetched": "2026-09-27T14:33:51",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "gate-driver-bootstrap-cboot-sizing": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p3-4 SLUA887A Eq1-4 and 2xVDD rating match; p19,p6 DRV8300 worked example (6.65V, 59nC, 100nF) and CBOOT<=1uF cap for D/DI match exactly",
+   "ts": "2026-09-27T14:53:43"
+  },
+  "gate-driver-bootstrap-charge-loop": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p2,5,7 SLUA887A Fig2-1/2-2/3-3/4-1 match; p22 DRV8300 bullet1+layout fig match BSTx/GVDD/DT close to device",
+   "ts": "2026-09-27T14:53:44"
+  },
+  "gate-driver-bootstrap-gate-routing": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p22 DRV8300 sec11.1 bullets 2-6 match trace width/placement wording; p6 table VSHx -2..85V, -22V transient, slew 2/50 V/ns match exactly; p20 Fig9-2/9-3 15ohm Rg CSD19532Q5B match",
+   "ts": "2026-09-27T14:53:44"
+  },
+  "gate-driver-bootstrap-gvdd-bypass-ratio": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p4 SLUA887A Eq5 10x/10%ripple match; p19-21 DRV8300 Eq5 1uF, 2x voltage rating text, two-cap section10 all match exactly",
+   "ts": "2026-09-27T14:53:44"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-gate-driver-bootstrap-1",
+ "updated": "2026-09-27T14:55:27",
+ "accepted_drafts": null,
+ "summary": {
+  "verified": 4,
+  "refuted": 0,
+  "checklists": 1,
+  "sources": 2
+ }
+}

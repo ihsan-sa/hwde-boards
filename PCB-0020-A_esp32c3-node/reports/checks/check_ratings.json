@@ -1,0 +1,384 @@
+{
+ "script": "check_ratings",
+ "status": "violations",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 11,
+  "by_severity": {
+   "warning": 11
+  },
+  "by_source": {
+   "check_ratings": 11
+  }
+ },
+ "violations": [
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "J1 (C165948): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J1 (C165948): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "J3 (C160404): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J3 (C160404): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J4"
+   ],
+   "msg": "J4 (no LCSC): no LCSC part on the footprint and no extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J4 (no LCSC): no LCSC part on the footprint and no extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no LCSC part on the footprint and no extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J5"
+   ],
+   "msg": "J5 (no LCSC): no LCSC part on the footprint and no extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J5 (no LCSC): no LCSC part on the footprint and no extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no LCSC part on the footprint and no extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "Q1"
+   ],
+   "msg": "Q1 (C15127): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "Q1 (C15127): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 (ESP32-C3-MINI-1-N4): 16 connected pin(s) could not be checked - 12 IO0: no rating names it; 13 IO1: no rating names it; 16 IO10: no rating names it; 18 IO4: no rating names it; 19 IO5: no rating names it; 20 IO6: no rating names it ...",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U1 (ESP32-C3-MINI-1-N4): 16 connected pin(s) could not be checked - 12 IO0: no rating names it; 13 IO1: no rating names it; 16 IO10: no rating names it; 18 IO4: no rating names it; 19 IO5: no rating names it; 20 IO6: no rating names it ...",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "12 IO0: no rating names it",
+    "13 IO1: no rating names it",
+    "16 IO10: no rating names it",
+    "18 IO4: no rating names it",
+    "19 IO5: no rating names it",
+    "20 IO6: no rating names it",
+    "21 IO7: no rating names it",
+    "22 IO8: no rating names it",
+    "23 IO9: no rating names it",
+    "26 IO18: no rating names it",
+    "27 IO19: no rating names it",
+    "30 RXD0: no rating names it",
+    "31 TXD0: no rating names it",
+    "5 IO2: no rating names it",
+    "6 IO3: no rating names it",
+    "8 EN: no rating names it"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U2"
+   ],
+   "msg": "U2 (MCP73831T-2ACI/OT): 3 connected pin(s) could not be checked - 3 VBAT: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U2 (MCP73831T-2ACI/OT): 3 connected pin(s) could not be checked - 3 VBAT: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "3 VBAT: rated against 2, whose net has no known voltage",
+    "4 VDD: rated against 2, whose net has no known voltage",
+    "4 VDD: rated against 2, whose net has no known voltage"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U3"
+   ],
+   "msg": "U3 (RT9080-33GJ5): 2 connected pin(s) could not be checked - 1 VIN: rated against 2, whose net has no known voltage; 3 EN: rated against 2, whose net has no known voltage",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U3 (RT9080-33GJ5): 2 connected pin(s) could not be checked - 1 VIN: rated against 2, whose net has no known voltage; 3 EN: rated against 2, whose net has no known voltage",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "1 VIN: rated against 2, whose net has no known voltage",
+    "3 EN: rated against 2, whose net has no known voltage"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U4"
+   ],
+   "msg": "U4 (USBLC6-2SC6): 5 connected pin(s) could not be checked - 1 I/O1: no rating names it; 3 I/O2: no rating names it; 4 I/O2: no rating names it; 5 VBUS: no rating names it; 6 I/O1: no rating names it",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U4 (USBLC6-2SC6): 5 connected pin(s) could not be checked - 1 I/O1: no rating names it; 3 I/O2: no rating names it; 4 I/O2: no rating names it; 5 VBUS: no rating names it; 6 I/O1: no rating names it",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "1 I/O1: no rating names it",
+    "3 I/O2: no rating names it",
+    "4 I/O2: no rating names it",
+    "5 VBUS: no rating names it",
+    "6 I/O1: no rating names it"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U5"
+   ],
+   "msg": "U5 (BME280): 8 connected pin(s) could not be checked - 2 CSB: rated against 1, whose net has no known voltage; 3 SDI: rated against 1, whose net has no known voltage; 4 SCK: rated against 1, whose net has no known voltage; 5 SDO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage ...",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U5 (BME280): 8 connected pin(s) could not be checked - 2 CSB: rated against 1, whose net has no known voltage; 3 SDI: rated against 1, whose net has no known voltage; 4 SCK: rated against 1, whose net has no known voltage; 5 SDO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage ...",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "2 CSB: rated against 1, whose net has no known voltage",
+    "3 SDI: rated against 1, whose net has no known voltage",
+    "4 SCK: rated against 1, whose net has no known voltage",
+    "5 SDO: rated against 1, whose net has no known voltage",
+    "6 VDDIO: rated against 1, whose net has no known voltage",
+    "6 VDDIO: rated against 1, whose net has no known voltage",
+    "8 VDD: rated against 1, whose net has no known voltage",
+    "8 VDD: rated against 1, whose net has no known voltage"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D1",
+    "D10",
+    "D2",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+   ],
+   "msg": "17 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D10, D2, R1, R10, R11, R12, R13, R14, R15, R16, R2, R3, R4, R5, R6, R7",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "17 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D10, D2, R1, R10, R11, R12, R13, R14, R15, R16, R2, R3, R4, R5, R6, R7",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "D1",
+    "D10",
+    "D2",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+   ]
+  }
+ ],
+ "parts_on_board": 41,
+ "extractions": [
+  "C2838502",
+  "C424093",
+  "C7519",
+  "C841192",
+  "C92489"
+ ],
+ "net_volts": {
+  "+3V3": {
+   "v": 3.3,
+   "src": "constraints"
+  },
+  "/main/BOOT": {
+   "v": 3.3,
+   "src": "pull-up"
+  },
+  "/main/EN": {
+   "v": 3.3,
+   "src": "pull-up"
+  },
+  "/main/IO2": {
+   "v": 3.3,
+   "src": "pull-up"
+  },
+  "/main/IO8": {
+   "v": 3.3,
+   "src": "pull-up"
+  },
+  "/main/SCL": {
+   "v": 3.3,
+   "src": "pull-up"
+  },
+  "/main/SDA": {
+   "v": 3.3,
+   "src": "pull-up"
+  },
+  "/power/CHG_LED_A": {
+   "v": 5.0,
+   "src": "pull-up"
+  },
+  "GND": {
+   "v": 0.0,
+   "src": "net name"
+  },
+  "VBAT": {
+   "v": 4.2,
+   "src": "constraints"
+  },
+  "VBUS": {
+   "v": 5.0,
+   "src": "constraints"
+  },
+  "VSYS": {
+   "v": 5.0,
+   "src": "constraints"
+  }
+ },
+ "pins_checked": 12,
+ "pins_on_unknown_nets": 2,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T12:52:34+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695"
+}

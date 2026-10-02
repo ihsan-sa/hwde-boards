@@ -1,0 +1,104 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "ME6211C33M5G",
+ "total": 3,
+ "count": 1,
+ "results": [
+  {
+   "lcsc": "C82942",
+   "mpn": "ME6211C33M5G-N",
+   "brand": "MICRONE(Nanjing Micro One Elec)",
+   "description": "-40\u2103~+150\u2103 1 120mV@(100mA) 3.3V 500mA 50uVrms 60uA 6V 70dB@(1kHz) Fixed Over Current Protection\u3001Enable\u3001Short Circuit Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 165213,
+   "price": 0.0607,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0607
+    },
+    {
+     "qty": 100,
+     "price": 0.0493
+    },
+    {
+     "qty": 300,
+     "price": 0.0433
+    },
+    {
+     "qty": 3000,
+     "price": 0.0386
+    },
+    {
+     "qty": 6000,
+     "price": 0.0368
+    },
+    {
+     "qty": 9000,
+     "price": 0.0357
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811131510_MICRONE-Nanjing-Micro-One-Elec-ME6211C33M5G-N_C82942.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_microne-nanjing-micro-one-elec-me6211c33m5g-n_C82942.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "70dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+150\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "60uA"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "120mV@(100mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 2
+}

@@ -1,0 +1,94 @@
+id: dc-input-hotplug-ring-physics
+classes: [inrush]
+applies:
+  topologies: [dc-input]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  binding_limit: "hot-plug LC ring at the board input capacitance vs the board's abs-max voltage rating, not a source-declared capacitance budget"
+  undamped_peak: "zero series R reduces the model to Vi*(1-cos wt) - a 2x peak"
+  damping_criterion: "R_lead + R_cap > 2*sqrt(L_lead/C_in); more C damps the peak without removing it, more lead L raises the peak and lengthens ringing, only series R suppresses the ring"
+  esr_reality: "do not assume a low-cost aluminium electrolytic's ESR provides the damping its published max implies - actual effective ESR is often well below the datasheet max, giving much less damping and much more ringing than assumed"
+  damping_resistor_hazard: "an explicit series damping resistor sees the full step energy in microseconds (Ppk = Vin_max^2 / R) and must be a surge-rated part, not a general-purpose one of the same nominal power"
+prose: >
+  A bare dc-input (bench supply, adapter, or battery on wire leads, no
+  upstream regulator, no attach-capacitance contract the way USB/PD/PoE
+  give one) hands the board an unmanaged voltage step into whatever
+  capacitance sits at the input. Lead R/L in series with that capacitance
+  forms an under-damped RLC that a live connect excites. Zero series R
+  reduces the step response to Vi*(1-cos wt), a 2x peak (SLUAAL8 sec 2, eq
+  1-3, Fig 2-1). More C damps the peak without removing it; more lead L
+  raises the peak and lengthens the ring (Fig 2-2, 2-3); only series R
+  suppresses it, per R_lead+R_cap > 2*sqrt(L_lead/C_in) (sec 3 eq 4). This
+  is a PRINCIPLE, not a per-board bound: it applies to any board whose
+  input capacitance is charged through an unmanaged lead, whether that
+  capacitance feeds a regulator VIN pin or a load directly - only the
+  numbers (peak vs abs-max, actual series R present) are per-board. Two
+  traps: (1) counting on an electrolytic's ESR for damping - SSZTDA5
+  measured real ESR often well below the published max, worse at higher
+  Vin; (2) an added series damping resistor must be surge-rated: SSZTDA5
+  measured ~2900 W peak in a 1 ohm resistor at 54 V hot-plug
+  (Ppk=Vin_max^2/R) despite near-zero steady-state dissipation, destroying
+  a general-purpose part of that rating on the bench. SLUAAL8's own fix
+  is not the IC pin's own capacitance ("cannot have a large series
+  resistance") but a small RC snubber (Fig 3-1: 2 ohm 0.5 W anti-surge +
+  2.2 uF near the supply pin).
+sources:
+  - file: research/sources/sluaal8.pdf
+    page: 2
+    section: "2 Root Cause"
+    note: >
+      Figure 2-1 models adapter/cable insertion as source Vi behind lead
+      Ri/Li into board capacitance Ci with series Rc. Eq 1-3 give
+      VCi(t) at Rt=0 reducing to Vi*(1-cos wt), a 2x peak. Intro states an
+      underrated IC pin voltage rating can be permanently damaged by the
+      resulting spike/ring.
+  - file: research/sources/sluaal8.pdf
+    page: 3
+    section: "Figures 2-2, 2-3, 2-4"
+    note: >
+      Fig 2-2 (Ri=0.21 ohm, Li=9.3 uH): higher Ci (20 vs 40 uF) lowers the
+      peak (~30 V vs ~27 V off an ~18-19 V source) but does not remove the
+      ring. Fig 2-3 (Ri=0.15 ohm, Ci=40 uF): higher Li (5 vs 12 uH) raises
+      the peak and lengthens the ring. Fig 2-4 sweeps Ri and shows more
+      resistance lowering the peak.
+  - file: research/sources/sluaal8.pdf
+    page: 4
+    section: "3 RC Snubber"
+    note: >
+      States the damping factor Ri+Rc > 2*sqrt(Li/Ci) (eq 4), that the IC
+      power pin's own capacitance cannot carry much series resistance, and
+      recommends instead a small separate RC snubber: Fig 3-1 shows 2 ohm
+      (0.5 W, 1210, anti-surge) + 2.2 uF (25 V, 1210) close to the supply
+      pin, plus a 0.1 uF 50 V 0805 very close to the IC pin; notes the RC
+      values may need adjusting per application.
+  - file: research/sources/ssztda5.pdf
+    page: 1
+    section: "intro text"
+    note: >
+      States hot-plug rings the input voltage to almost twice its DC value,
+      and that "with low-cost aluminium electrolytic capacitors, the actual
+      effective ESR is generally much lower than the published maximum,
+      resulting in much less damping and much more ringing when applying
+      battery power" - worse as systems move to higher Vin (12 V to 24/48 V).
+  - file: research/sources/ssztda5.pdf
+    page: 3
+    section: "Figure 2 and following text, Equation 3"
+    note: >
+      Figure 2 compares an "Under-damped" response (Rd=0) against "Properly
+      Damped" (Rd=0.5 ohm) for the same L1/C1/Cd network at 54 V - the
+      dedicated series damping resistor is what collapses the ring, not the
+      bulk cap alone (its own modelled ESR, Resr=20 mOhm, is too low by
+      itself). Text + Eq 3 (Ppk = Vin_max^2/R): a 1 ohm damping resistor
+      hit ~2900 W peak at 54 V hot-plug even though its steady-state
+      dissipation is negligible - a general-purpose resistor of that
+      wattage was destroyed in their own bench test; a surge-rated part is
+      required.
+status: active
+origin: research:block-dc-input-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader", date: "2026-09-27", note: "All 5 citations re-read on cited pages match: sluaal8 p2 eq1-3/Fig2-1 Vi(1-cos wt) 2x-peak and intro damage warning confirmed; p3 Fig2-2/2-3/2-4 peak/ESR trends confirmed; p4 eq4 damping criterion and Fig3-1 2ohm+2.2uF snubber confirmed; ssztda5 p1 ESR-below-max text confirmed verbatim; p3 Fig2 under-damped(Rd=0,Resr=20m) vs properly-damped(Rd=0.5) at 54V and eq3 2900W/1ohm resistor confirmed."}

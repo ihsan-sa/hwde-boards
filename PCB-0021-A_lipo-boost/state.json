@@ -1,0 +1,1784 @@
+{
+ "version": 2,
+ "board": "lipo-boost",
+ "workspace": "PCB-0021-A_lipo-boost",
+ "created": "2026-10-01T05:34:53",
+ "updated": "2026-10-02T01:47:54",
+ "phase": "P9",
+ "gates": {
+  "erc": {
+   "phase": "P4",
+   "status": "pass",
+   "attempts": 3,
+   "last": {
+    "ts": "2026-10-01T09:39:05",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+     "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T06:18:25",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:a2c4eb22bb67addf45a7f08fdaab98b7cf519ca90b26e90a102bc5b6bcde8ad2"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:52:32",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:f0423776993b43a9a7568197ad616aafa4520c1040951f50c6ad06642ec1b6b2"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:39:05",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855"
+     }
+    }
+   ]
+  },
+  "place": {
+   "phase": "P6",
+   "status": "pass",
+   "attempts": 27,
+   "last": {
+    "ts": "2026-10-02T01:46:37",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+     "constraints": "json_canonical:16c042f9c6bbd20f82b7585a9a9ec4f5f369d3965a98ff7dcc97389ccee1f82a",
+     "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T06:21:19",
+     "status": "fail",
+     "failing_count": 13,
+     "total": 13,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:c7a433c40fce5be4e9b1908b4798ccb475839546374f41f3d81c77524b0f48b4",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:21:33",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7334a88ec3377463540359d54a1d36eb90cdb06f5616410b763d3c9ad60d7426",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:43:50",
+     "status": "fail",
+     "failing_count": 2,
+     "total": 2,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:06b9f0f6192842bfd725ff73e4f428a59f58662147376104d3662a5bc4f65944",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:45:46",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:81605157666affff88f443ed796e54c8a480e0c0e0ed24562077a29fa19554bf",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:46:50",
+     "status": "fail",
+     "failing_count": 1,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:580ff15bffa18cbb51331e4bfb76c92926b7d9a108c67cfc45b4ad808ef0726a",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:47:51",
+     "status": "fail",
+     "failing_count": 2,
+     "total": 2,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:62489a6e683c0f76771dea8d57315c01f439fe51fa5b9be947fb25430ea8a842",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:47:58",
+     "status": "fail",
+     "failing_count": 2,
+     "total": 2,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:62489a6e683c0f76771dea8d57315c01f439fe51fa5b9be947fb25430ea8a842",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:48:05",
+     "status": "fail",
+     "failing_count": 2,
+     "total": 2,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:62489a6e683c0f76771dea8d57315c01f439fe51fa5b9be947fb25430ea8a842",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:48:47",
+     "status": "fail",
+     "failing_count": 1,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:d2678d09ab2460910146171379ae743d32b8daa1d43642bc74a2c25a78e3192a",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:49:32",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:0db43ceb0c706fa51cde1640a45f4f2ef746f2dd5497122245f21146cce3b780",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T06:50:24",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:575ded126a4d8a57daf4728eefad93e9070a53b24a5c9f14cedd092562ece277",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T07:05:38",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7c6a483c48b2ae31545dae7fb6c527f69bf5f6e763e58a49828636f54ea5f732",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:01:02",
+     "status": "fail",
+     "failing_count": 5,
+     "total": 6,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:dd2d1a883632d6bf5a7cd7f9b23ca9a404269fea02d53e431ddd5daa94126288",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:01:21",
+     "status": "fail",
+     "failing_count": 2,
+     "total": 3,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:0f4d0c95722b781abeee3adc85c2f1911b315ceea7869cc1f25cf34c9c9ce7b0",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:01:34",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:0d4fbcb1c7c3f16c278df5cbc096b7612b8794273f48772d3f6899cbcd6cd4b9",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:29:57",
+     "status": "fail",
+     "failing_count": 4,
+     "total": 4,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:416ff316f07c4961b40e9eb97c8be45d39daac016afd80c1262a8441fa22ea62",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:33:02",
+     "status": "fail",
+     "failing_count": 1,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:63bd5ba3b0da704cfacca942a8def127c8ce59f1ddea4981710de42b3cd7e898",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:33:11",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:686af6ee622fbaf606bf56f6bb35fab5c2e5d5e52c51c5b58d6414e34fc62099",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:44:10",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:25acb28b25b05842a3a475c9bfc5157384ec67d1e47bc9191d20059bb19c65c8",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:44:38",
+     "status": "fail",
+     "failing_count": 1,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:f1836b36ffa82ceda2b3a379b1820622a017b96d825293fd0bb09734fe71145d",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T08:44:59",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:29a8f94f817e19bc795ffc906668ddaef94c8c7df77524f7673641eefc4b7f6c",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:26:36",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:05e6df16458c941235f21f943d231cbfb95f6f82ea189c641891b6d67eb9b64e",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:38:42",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:39:42",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:5d3a0c7ea160e01de0352ab0dcf6ef2c7824b6ef0fc6c60a2f479b4b68d8a3b4",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:40:31",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7bef21f4369cf8a5716ce930bde05c3f594be8302d9bd6f15f18fb8bebe447b8",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-02T01:45:58",
+     "status": "fail",
+     "failing_count": 1,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:acf64bc9ccd0defff80ccf78b15e4f23b2c05e008e8958595f58ae675b6b1a60",
+      "constraints": "json_canonical:16c042f9c6bbd20f82b7585a9a9ec4f5f369d3965a98ff7dcc97389ccee1f82a",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    },
+    {
+     "ts": "2026-10-02T01:46:37",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+      "constraints": "json_canonical:16c042f9c6bbd20f82b7585a9a9ec4f5f369d3965a98ff7dcc97389ccee1f82a",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+     }
+    }
+   ]
+  },
+  "drc_routed": {
+   "phase": "P7",
+   "status": "pass",
+   "attempts": 7,
+   "last": {
+    "ts": "2026-10-02T01:46:38",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+     "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+     "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+     "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T07:51:54",
+     "status": "fail",
+     "failing_count": 30,
+     "total": 30,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:a717ed2a82d0ea8b3c9694de063a2ef1ede11fdab9aceeca4267dc840e478aa5",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:f0423776993b43a9a7568197ad616aafa4520c1040951f50c6ad06642ec1b6b2",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:26:39",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:05e6df16458c941235f21f943d231cbfb95f6f82ea189c641891b6d67eb9b64e",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:30:50",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:39:40",
+     "status": "fail",
+     "failing_count": 1,
+     "total": 1,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:5d3a0c7ea160e01de0352ab0dcf6ef2c7824b6ef0fc6c60a2f479b4b68d8a3b4",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:40:30",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7bef21f4369cf8a5716ce930bde05c3f594be8302d9bd6f15f18fb8bebe447b8",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    },
+    {
+     "ts": "2026-10-02T01:46:00",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:acf64bc9ccd0defff80ccf78b15e4f23b2c05e008e8958595f58ae675b6b1a60",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    },
+    {
+     "ts": "2026-10-02T01:46:38",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    }
+   ]
+  },
+  "verify": {
+   "phase": "P8",
+   "status": "fail",
+   "attempts": 5,
+   "last": {
+    "ts": "2026-10-02T01:47:47",
+    "status": "fail",
+    "failing_count": 5,
+    "total": 19,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+     "constraints": "json_canonical:16c042f9c6bbd20f82b7585a9a9ec4f5f369d3965a98ff7dcc97389ccee1f82a",
+     "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d",
+     "waivers": "json_canonical:977bd151a1c3f360933b7c0a51ec5075a8af3a11664cdba31dc5e78801ec642f"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T09:28:03",
+     "status": "fail",
+     "failing_count": 7,
+     "total": 21,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:05e6df16458c941235f21f943d231cbfb95f6f82ea189c641891b6d67eb9b64e",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d",
+      "waivers": null
+     }
+    },
+    {
+     "ts": "2026-10-01T09:31:59",
+     "status": "fail",
+     "failing_count": 5,
+     "total": 18,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d",
+      "waivers": "json_canonical:977bd151a1c3f360933b7c0a51ec5075a8af3a11664cdba31dc5e78801ec642f"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:32:15",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 18,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d",
+      "waivers": "json_canonical:977bd151a1c3f360933b7c0a51ec5075a8af3a11664cdba31dc5e78801ec642f"
+     }
+    },
+    {
+     "ts": "2026-10-01T09:40:41",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 18,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7bef21f4369cf8a5716ce930bde05c3f594be8302d9bd6f15f18fb8bebe447b8",
+      "constraints": "json_canonical:535e82effa176b982f85ab788517db803be62ce130de23b1e745c957b06fe004",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d",
+      "waivers": "json_canonical:977bd151a1c3f360933b7c0a51ec5075a8af3a11664cdba31dc5e78801ec642f"
+     }
+    },
+    {
+     "ts": "2026-10-02T01:47:47",
+     "status": "fail",
+     "failing_count": 5,
+     "total": 19,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+      "constraints": "json_canonical:16c042f9c6bbd20f82b7585a9a9ec4f5f369d3965a98ff7dcc97389ccee1f82a",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d",
+      "waivers": "json_canonical:977bd151a1c3f360933b7c0a51ec5075a8af3a11664cdba31dc5e78801ec642f"
+     }
+    }
+   ]
+  },
+  "dfm": {
+   "phase": "P9",
+   "status": "pass",
+   "attempts": 4,
+   "last": {
+    "ts": "2026-10-02T01:47:54",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+     "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+     "parts": null
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-01T09:32:59",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-10-01T09:34:11",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-10-01T09:40:37",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:7bef21f4369cf8a5716ce930bde05c3f594be8302d9bd6f15f18fb8bebe447b8",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "parts": null
+     }
+    },
+    {
+     "ts": "2026-10-02T01:47:54",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "parts": null
+     }
+    }
+   ]
+  },
+  "drc": {
+   "phase": "P6",
+   "status": "pass",
+   "attempts": 1,
+   "last": {
+    "ts": "2026-10-02T01:45:57",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "pcb": "sexpr_no_uuid:acf64bc9ccd0defff80ccf78b15e4f23b2c05e008e8958595f58ae675b6b1a60",
+     "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+     "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+     "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-02T01:45:57",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "pcb": "sexpr_no_uuid:acf64bc9ccd0defff80ccf78b15e4f23b2c05e008e8958595f58ae675b6b1a60",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+     }
+    }
+   ]
+  }
+ },
+ "human": {
+  "2": {
+   "status": "approved",
+   "ts": "2026-10-01T06:20:28",
+   "note": "PROVISIONAL: owner delegated; unattended run"
+  },
+  "1": {
+   "status": "approved",
+   "ts": "2026-10-01T06:20:28",
+   "note": "PROVISIONAL: owner delegated (as P2 digest)"
+  }
+ },
+ "artifacts": {
+  "sch": {
+   "path": "kicad/PCB-0021-A_lipo-boost.kicad_sch",
+   "kind": "sch",
+   "sha256": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+   "hashed": "2026-10-02T01:47:54"
+  },
+  "pro": {
+   "path": "kicad/PCB-0021-A_lipo-boost.kicad_pro",
+   "kind": "pro",
+   "sha256": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+   "hashed": "2026-10-02T01:46:38"
+  },
+  "pcb": {
+   "path": "kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+   "kind": "pcb",
+   "sha256": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+   "hashed": "2026-10-02T01:47:54"
+  },
+  "constraints": {
+   "path": "kicad/constraints.json",
+   "kind": "constraints",
+   "sha256": "json_canonical:16c042f9c6bbd20f82b7585a9a9ec4f5f369d3965a98ff7dcc97389ccee1f82a",
+   "hashed": "2026-10-02T01:47:47"
+  },
+  "decoupling": {
+   "path": "kicad/decoupling.json",
+   "kind": "decoupling",
+   "sha256": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d",
+   "hashed": "2026-10-02T01:47:47"
+  },
+  "gerbers": {
+   "path": "PCB-0021-A_lipo-boost/fab/PCB-0021-A_lipo-boost_gerbers.zip",
+   "kind": "gerbers",
+   "sha256": "gerber_design:e112d63c08c4dd63864792ef18a13bb2314bf7d92e6b14a4d3053e2cc0544344",
+   "hashed": "2026-10-01T09:38:32",
+   "stale": [
+    {
+     "ts": "2026-10-02T01:45:47",
+     "edit_class": "move_fp",
+     "refs": [
+      "J4",
+      "R12",
+      "Q1",
+      "D1"
+     ],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-02T01:45:47",
+     "edit_class": "reroute_net",
+     "refs": [
+      "+5V",
+      "/USB_DP",
+      "/USB_DM",
+      "/CHG",
+      "/CHG_A",
+      "/PGOOD",
+      "/DONE_K",
+      "/DONE_A"
+     ],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-02T01:45:47",
+     "edit_class": "silk_edit",
+     "refs": [
+      "J4",
+      "R12",
+      "Q1",
+      "D1"
+     ],
+     "human_hold": 0
+    }
+   ]
+  },
+  "dru": {
+   "path": "kicad/PCB-0021-A_lipo-boost.kicad_dru",
+   "kind": "dru",
+   "sha256": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6",
+   "hashed": "2026-10-02T01:46:38"
+  },
+  "waivers": {
+   "path": "reports/verify-waivers.json",
+   "kind": "waivers",
+   "sha256": "json_canonical:977bd151a1c3f360933b7c0a51ec5075a8af3a11664cdba31dc5e78801ec642f",
+   "hashed": "2026-10-02T01:47:47"
+  },
+  "parts": {
+   "path": "kicad/parts.json",
+   "kind": "parts",
+   "sha256": null,
+   "hashed": "2026-10-02T01:47:54"
+  },
+  "bom": {
+   "path": "PCB-0021-A_lipo-boost/fab/BOM.csv",
+   "kind": "bom",
+   "sha256": "text_eol:7e089350618c0e9913c263b480dc526287081ec81ea87a9913dccda47615a294",
+   "hashed": "2026-10-01T09:38:33"
+  },
+  "bom_full": {
+   "path": "PCB-0021-A_lipo-boost/fab/BOM-full.csv",
+   "kind": "bom_full",
+   "sha256": "text_eol:92e15028cf6e59b086f217e3e967608b26b7316665b83ded1d8ced92d2244915",
+   "hashed": "2026-10-01T09:38:33"
+  },
+  "cpl": {
+   "path": "PCB-0021-A_lipo-boost/fab/CPL.csv",
+   "kind": "cpl",
+   "sha256": "text_eol:1e058fc17e5da5950d5ff2f1b72652280b1e0f72c5ddee73f5b974b212508f4b",
+   "hashed": "2026-10-01T09:38:33"
+  }
+ },
+ "open_issues": [],
+ "next_issue_id": 1,
+ "budgets": {
+  "fix_loops": {
+   "erc": 3,
+   "place": 3,
+   "drc_routed": 3,
+   "verify": 3,
+   "dfm": 3
+  },
+  "freerouting_retries": 2,
+  "place_edit_iterations": 8,
+  "research": {
+   "per_run": 4,
+   "depth_per_gap": 4
+  },
+  "cross_stage_spawns": {
+   "P4": 2,
+   "P5": 2,
+   "P6": 2,
+   "P7": 2,
+   "P8": 2,
+   "P9": 2
+  }
+ },
+ "decisions": [
+  {
+   "what": "PROVISIONAL: 2L JLC2313_1.6, single-sided SMT (USB-A THT); 2 oz fallback",
+   "why": "small 5 V/1 A board; unattended delegate",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:07"
+  },
+  {
+   "what": "PROVISIONAL: one schematic agent, two sheets charger + boost",
+   "why": "small board",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:07"
+  },
+  {
+   "what": "PROVISIONAL: charger BQ24074RGTR, boost TPS61023DRLR",
+   "why": "OUT regulated 4.4 V so boost never passes USB through; TPS61023 cheap, 3.7 A limit, JLC stock",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:07"
+  },
+  {
+   "what": "PROVISIONAL: USB-A D+/D- shorted by 0R (DCP)",
+   "why": "BC1.2 DCP; one part; Apple dividers fail BC1.2",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:08"
+  },
+  {
+   "what": "PROVISIONAL: Vout 4.95 V (732k/100k)",
+   "why": "stays in 4.75-5.25 V across tolerance",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:08"
+  },
+  {
+   "what": "PROVISIONAL: ICHG 1 A (RISET), ILIM 1.5 A, TS fixed 10k, no NTC",
+   "why": "brief 1 A; same as reference; cells <1000 mAh need RISET raised",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:08"
+  },
+  {
+   "what": "PROVISIONAL: DONE LED via one NMOS gate=CHG source=PGOOD; LOW-BATT 3.2 V detector drives LED + LBO pin",
+   "why": "BQ24074 has no done pin; TPS61023 has no LBO",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:08"
+  },
+  {
+   "what": "PROVISIONAL: EN 100k pull-up (on by default); header GND,BAT,VS,5V,LBO,EN,GND",
+   "why": "matches reference pinout",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:08"
+  },
+  {
+   "what": "PROVISIONAL: no PTC/eFuse on 5V, no reverse-battery FET, silk polarity warning only",
+   "why": "delegate answer Q9; same as reference; safety-relevant for owner review",
+   "phase": "P2",
+   "ts": "2026-10-01T05:43:09"
+  },
+  {
+   "what": "research task block-boost-1 closed over 2 unverified draft record(s): boost-fb-divider-and-feedforward, boost-thermal-copper-and-vias",
+   "why": "--accept-drafts: the slot ships without this knowledge",
+   "phase": "P2",
+   "ts": "2026-10-01T05:50:56"
+  },
+  {
+   "what": "research task block-linear-charger-power-path-1 closed over 4 unverified draft record(s): linear-charger-ilim-iset-programming, linear-charger-pin-caps-ts-and-leds, linear-charger-single-point-ground-and-current-paths, linear-charger-thermal-dissipation-and-pad",
+   "why": "--accept-drafts: the slot ships without this knowledge",
+   "phase": "P2",
+   "ts": "2026-10-01T05:50:57"
+  },
+  {
+   "what": "Closed both P2 research tasks --accept-drafts (6/12 verified, 6 refuted drafts stay draft and do not inject)",
+   "why": "budget; refutations are numeric corrections carried as the decision below, not wrong rules",
+   "phase": "P2",
+   "ts": "2026-10-01T05:51:15"
+  },
+  {
+   "what": "Design corrections from the second read: TPS61023 VREF 580/595/610 mV (PWM) for the FB divider tolerance; BQ24074 size ILIM/ISET with KILIM max 1720 (I = K/R); bq24074 VIN range 4.35-10.2 V (VOVP 10.2-10.8 V); TPS61023 RthJA 142.7 C/W -> ~0.3-0.55 W loss is a 43-78 C rise on 2L, so give U2 a GND pour and vias; ISET pads need no dedicated vias",
+   "why": "second reader refutations, research/records",
+   "phase": "P2",
+   "ts": "2026-10-01T05:51:16"
+  },
+  {
+   "what": "designing under coverage gap: block:B1 linear-charger-power-path and block:B2 boost (checklists + 6 records still draft after second read)",
+   "why": "first research pass on these topologies; verified records (boost hot-loop, sw-node, inductor, caps, enable; charger DPM) guide layout by judgement",
+   "phase": "P2",
+   "ts": "2026-10-01T05:51:33"
+  },
+  {
+   "what": "PROVISIONAL: low-battery detector MSXC61CN3302MR C45367187 (3.3 V, not 3.2 V; releases ~3.45 V)",
+   "why": "no stocked 3.2 V open-drain detector; 3.3 V warns a little earlier, harmless",
+   "phase": "P3",
+   "ts": "2026-10-01T06:00:11"
+  },
+  {
+   "what": "PROVISIONAL: RILIM 1.2k Basic (1.25-1.43 A) and RISET 1k Basic (~0.89 A) instead of 1.15k/910R Extended",
+   "why": "two fewer extended-part fees; lower charge current is kinder to small cells; still about 1 A",
+   "phase": "P3",
+   "ts": "2026-10-01T06:00:11"
+  },
+  {
+   "what": "bq24074 pins: no SYSOFF/TD; ITERM open (10 %); EN2->SYS, EN1 and CE->GND (never float); TS 10k to GND; RTMR 51k (6.8 h)",
+   "why": "part-sourcer read SLUS810N pin table; corrects architect's from-memory notes",
+   "phase": "P3",
+   "ts": "2026-10-01T06:00:12"
+  },
+  {
+   "what": "U1 BQ24074RGTR stock thin (417), same-die alternates RGTT C2861252 / RGTRG4",
+   "why": "recheck before any order",
+   "phase": "P3",
+   "ts": "2026-10-01T06:00:12"
+  },
+  {
+   "what": "designing under coverage gap: P3 coverage gaps=2 (blocks B1 charger, B2 boost); mapper/auto-research skipped under budget; 6 draft research records unverified",
+   "why": "budget-limited run; datasheet layout sections extracted into parts/*.json layout_notes; screen passes",
+   "phase": "P3",
+   "ts": "2026-10-01T06:15:09"
+  },
+  {
+   "what": "J4 swapped C18077685 -> C53207796 Type-A-AF90 (JXTCONN USB-A THT right angle, stock 180)",
+   "why": "C18077685 not in EasyEDA API: no pullable symbol/footprint",
+   "phase": "P3",
+   "ts": "2026-10-01T06:15:09"
+  },
+  {
+   "what": "Single flat sheet kicad/PCB-0021-A_lipo-boost.kicad_sch (gen: kicad/gen/lipo_boost.py); header J3 = GND,VBAT,+SYS,+5V,LBO,EN,GND; J2 pin1=+; ITERM open; U2 gets extra 100nF C14 (reg_input HF cap); JST tabs and J1 D+/D-/ID NC",
+   "why": "sheets.md two-sheet plan was provisional; flat is simpler and ERC/audit clean",
+   "phase": "P4",
+   "ts": "2026-10-01T06:18:51"
+  },
+  {
+   "what": "PROVISIONAL delegate: rotate U2 270, rotate L1 180, nudge C10/C11 to un-sandwich SW pin; place gate re-passed",
+   "why": "SW pin was the middle pin of its column and crossed FB on 2 layers",
+   "phase": "P7",
+   "ts": "2026-10-01T08:01:59"
+  },
+  {
+   "what": "J4 rotated 270->90 (constraints placement.edges rot updated); mouth 0.25 mm inside the right edge, not overhanging",
+   "why": "owner (JLC 3D preview): plug could not enter, mouth faced L1. Flush-but-inboard keeps J4 mouth-end silk off Edge.Cuts; plug enters above the board so 0.25 mm inset does not obstruct it",
+   "phase": "P9",
+   "ts": "2026-10-02T01:45:48"
+  }
+ ],
+ "edits": [
+  {
+   "ts": "2026-10-01T06:49:49",
+   "class": "outline_change",
+   "refs": [],
+   "note": "outline -> 53.901x38.758 mm (fit)",
+   "human_hold": 2,
+   "gates": [
+    "place",
+    "drc",
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "gates_marked": [
+    "place"
+   ],
+   "stale_artifacts": [
+    "gerbers"
+   ]
+  },
+  {
+   "ts": "2026-10-02T01:45:47",
+   "class": "move_fp",
+   "refs": [
+    "J4",
+    "R12",
+    "Q1",
+    "D1"
+   ],
+   "note": "J4 USB-A mouth faced into the board toward L1 (rot 270); rotated to 90 so it opens at the right edge, mouth 0.25 mm inboard; R12/Q1/D1 moved out of its pin field",
+   "human_hold": 1,
+   "gates": [
+    "place",
+    "drc",
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "gates_marked": [
+    "place",
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "stale_artifacts": [
+    "gerbers"
+   ]
+  },
+  {
+   "ts": "2026-10-02T01:45:47",
+   "class": "reroute_net",
+   "refs": [
+    "+5V",
+    "/USB_DP",
+    "/USB_DM",
+    "/CHG",
+    "/CHG_A",
+    "/PGOOD",
+    "/DONE_K",
+    "/DONE_A"
+   ],
+   "note": "re-routed with route_edit after the J4 rotation (kicad/route19, route20 ops)",
+   "human_hold": 1,
+   "gates": [
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "gates_marked": [
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "stale_artifacts": [
+    "gerbers"
+   ]
+  },
+  {
+   "ts": "2026-10-02T01:45:47",
+   "class": "silk_edit",
+   "refs": [
+    "J4",
+    "R12",
+    "Q1",
+    "D1"
+   ],
+   "note": "silk_place refdes labels (kicad/silk_ops2.json)",
+   "human_hold": 0,
+   "gates": [
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "gates_marked": [
+    "drc_routed",
+    "verify",
+    "dfm"
+   ],
+   "stale_artifacts": [
+    "gerbers"
+   ]
+  }
+ ],
+ "spawns": [
+  {
+   "ts": "2026-10-01T05:43:48",
+   "role": "researcher",
+   "model": "sonnet",
+   "phase": "P2"
+  }
+ ],
+ "history": [
+  {
+   "ts": "2026-10-01T05:34:53",
+   "event": "init",
+   "board": "lipo-boost",
+   "phase": "P0"
+  },
+  {
+   "ts": "2026-10-01T05:36:15",
+   "event": "phase",
+   "phase": "P1",
+   "prev": "P0"
+  },
+  {
+   "ts": "2026-10-01T05:41:00",
+   "event": "phase",
+   "phase": "P2",
+   "prev": "P1"
+  },
+  {
+   "ts": "2026-10-01T05:43:07",
+   "event": "decision",
+   "what": "PROVISIONAL: 2L JLC2313_1.6, single-sided SMT (USB-A THT); 2 oz fallback"
+  },
+  {
+   "ts": "2026-10-01T05:43:07",
+   "event": "decision",
+   "what": "PROVISIONAL: one schematic agent, two sheets charger + boost"
+  },
+  {
+   "ts": "2026-10-01T05:43:07",
+   "event": "decision",
+   "what": "PROVISIONAL: charger BQ24074RGTR, boost TPS61023DRLR"
+  },
+  {
+   "ts": "2026-10-01T05:43:08",
+   "event": "decision",
+   "what": "PROVISIONAL: USB-A D+/D- shorted by 0R (DCP)"
+  },
+  {
+   "ts": "2026-10-01T05:43:08",
+   "event": "decision",
+   "what": "PROVISIONAL: Vout 4.95 V (732k/100k)"
+  },
+  {
+   "ts": "2026-10-01T05:43:08",
+   "event": "decision",
+   "what": "PROVISIONAL: ICHG 1 A (RISET), ILIM 1.5 A, TS fixed 10k, no NTC"
+  },
+  {
+   "ts": "2026-10-01T05:43:08",
+   "event": "decision",
+   "what": "PROVISIONAL: DONE LED via one NMOS gate=CHG source=PGOOD; LOW-BATT 3.2 V detector drives LED + LBO pin"
+  },
+  {
+   "ts": "2026-10-01T05:43:08",
+   "event": "decision",
+   "what": "PROVISIONAL: EN 100k pull-up (on by default); header GND,BAT,VS,5V,LBO,EN,GND"
+  },
+  {
+   "ts": "2026-10-01T05:43:09",
+   "event": "decision",
+   "what": "PROVISIONAL: no PTC/eFuse on 5V, no reverse-battery FET, silk polarity warning only"
+  },
+  {
+   "ts": "2026-10-01T05:43:30",
+   "event": "budget",
+   "path": "research.per_run",
+   "remaining": 5
+  },
+  {
+   "ts": "2026-10-01T05:43:30",
+   "event": "research_opened",
+   "task": "block-linear-charger-power-path-1",
+   "slot": "block:B1",
+   "phase": "P2"
+  },
+  {
+   "ts": "2026-10-01T05:43:30",
+   "event": "budget",
+   "path": "research.per_run",
+   "remaining": 4
+  },
+  {
+   "ts": "2026-10-01T05:43:30",
+   "event": "research_opened",
+   "task": "block-boost-1",
+   "slot": "block:B2",
+   "phase": "P2"
+  },
+  {
+   "ts": "2026-10-01T05:43:48",
+   "event": "spawn",
+   "role": "researcher",
+   "model": "sonnet"
+  },
+  {
+   "ts": "2026-10-01T05:50:56",
+   "event": "research_closed",
+   "task": "block-boost-1",
+   "slot": "block:B2",
+   "outcome": "verified_with_drafts",
+   "queue_entry": "2026-10-01-research-task-block-boost-1-5-verified"
+  },
+  {
+   "ts": "2026-10-01T05:50:56",
+   "event": "decision",
+   "what": "research task block-boost-1 closed over 2 unverified draft record(s): boost-fb-divider-and-feedforward, boost-thermal-copper-and-vias"
+  },
+  {
+   "ts": "2026-10-01T05:50:56",
+   "event": "research_drafts_accepted",
+   "task": "block-boost-1",
+   "slot": "block:B2",
+   "records": [
+    "boost-fb-divider-and-feedforward",
+    "boost-thermal-copper-and-vias"
+   ]
+  },
+  {
+   "ts": "2026-10-01T05:50:57",
+   "event": "research_closed",
+   "task": "block-linear-charger-power-path-1",
+   "slot": "block:B1",
+   "outcome": "verified_with_drafts",
+   "queue_entry": "2026-10-01-research-task-block-linear-charger-power-path"
+  },
+  {
+   "ts": "2026-10-01T05:50:57",
+   "event": "decision",
+   "what": "research task block-linear-charger-power-path-1 closed over 4 unverified draft record(s): linear-charger-ilim-iset-programming, linear-charger-pin-caps-ts-and-leds, linear-charger-single-point-ground-and-current-paths, linear-charger-thermal-dissipation-and-pad"
+  },
+  {
+   "ts": "2026-10-01T05:50:57",
+   "event": "research_drafts_accepted",
+   "task": "block-linear-charger-power-path-1",
+   "slot": "block:B1",
+   "records": [
+    "linear-charger-ilim-iset-programming",
+    "linear-charger-pin-caps-ts-and-leds",
+    "linear-charger-single-point-ground-and-current-paths",
+    "linear-charger-thermal-dissipation-and-pad"
+   ]
+  },
+  {
+   "ts": "2026-10-01T05:51:15",
+   "event": "decision",
+   "what": "Closed both P2 research tasks --accept-drafts (6/12 verified, 6 refuted drafts stay draft and do not inject)"
+  },
+  {
+   "ts": "2026-10-01T05:51:16",
+   "event": "decision",
+   "what": "Design corrections from the second read: TPS61023 VREF 580/595/610 mV (PWM) for the FB divider tolerance; BQ24074 size ILIM/ISET with KILIM max 1720 (I = K/R); bq24074 VIN range 4.35-10.2 V (VOVP 10.2-10.8 V); TPS61023 RthJA 142.7 C/W -> ~0.3-0.55 W loss is a 43-78 C rise on 2L, so give U2 a GND pour and vias; ISET pads need no dedicated vias"
+  },
+  {
+   "ts": "2026-10-01T05:51:33",
+   "event": "decision",
+   "what": "designing under coverage gap: block:B1 linear-charger-power-path and block:B2 boost (checklists + 6 records still draft after second read)"
+  },
+  {
+   "ts": "2026-10-01T05:52:15",
+   "event": "phase",
+   "phase": "P3",
+   "prev": "P2"
+  },
+  {
+   "ts": "2026-10-01T06:00:11",
+   "event": "decision",
+   "what": "PROVISIONAL: low-battery detector MSXC61CN3302MR C45367187 (3.3 V, not 3.2 V; releases ~3.45 V)"
+  },
+  {
+   "ts": "2026-10-01T06:00:11",
+   "event": "decision",
+   "what": "PROVISIONAL: RILIM 1.2k Basic (1.25-1.43 A) and RISET 1k Basic (~0.89 A) instead of 1.15k/910R Extended"
+  },
+  {
+   "ts": "2026-10-01T06:00:12",
+   "event": "decision",
+   "what": "bq24074 pins: no SYSOFF/TD; ITERM open (10 %); EN2->SYS, EN1 and CE->GND (never float); TS 10k to GND; RTMR 51k (6.8 h)"
+  },
+  {
+   "ts": "2026-10-01T06:00:12",
+   "event": "decision",
+   "what": "U1 BQ24074RGTR stock thin (417), same-die alternates RGTT C2861252 / RGTRG4"
+  },
+  {
+   "ts": "2026-10-01T06:15:09",
+   "event": "decision",
+   "what": "designing under coverage gap: P3 coverage gaps=2 (blocks B1 charger, B2 boost); mapper/auto-research skipped under budget; 6 draft research records unverified"
+  },
+  {
+   "ts": "2026-10-01T06:15:09",
+   "event": "decision",
+   "what": "J4 swapped C18077685 -> C53207796 Type-A-AF90 (JXTCONN USB-A THT right angle, stock 180)"
+  },
+  {
+   "ts": "2026-10-01T06:15:16",
+   "event": "phase",
+   "phase": "P4",
+   "prev": "P3"
+  },
+  {
+   "ts": "2026-10-01T06:18:25",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:18:51",
+   "event": "decision",
+   "what": "Single flat sheet kicad/PCB-0021-A_lipo-boost.kicad_sch (gen: kicad/gen/lipo_boost.py); header J3 = GND,VBAT,+SYS,+5V,LBO,EN,GND; J2 pin1=+; ITERM open; U2 gets extra 100nF C14 (reg_input HF cap); JST tabs and J1 D+/D-/ID NC"
+  },
+  {
+   "ts": "2026-10-01T06:20:28",
+   "event": "human",
+   "checkpoint": "2",
+   "status": "approved"
+  },
+  {
+   "ts": "2026-10-01T06:20:28",
+   "event": "human",
+   "checkpoint": "1",
+   "status": "approved"
+  },
+  {
+   "ts": "2026-10-01T06:21:19",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 13
+  },
+  {
+   "ts": "2026-10-01T06:21:33",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:43:50",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 3,
+   "failing_count": 2
+  },
+  {
+   "ts": "2026-10-01T06:45:46",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 4,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:46:50",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 5,
+   "failing_count": 1
+  },
+  {
+   "ts": "2026-10-01T06:47:51",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 6,
+   "failing_count": 2
+  },
+  {
+   "ts": "2026-10-01T06:47:58",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 7,
+   "failing_count": 2
+  },
+  {
+   "ts": "2026-10-01T06:48:05",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 8,
+   "failing_count": 2
+  },
+  {
+   "ts": "2026-10-01T06:48:47",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 9,
+   "failing_count": 1
+  },
+  {
+   "ts": "2026-10-01T06:49:32",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 10,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:49:49",
+   "event": "edit",
+   "edit_class": "outline_change",
+   "refs": [],
+   "human_hold": 2
+  },
+  {
+   "ts": "2026-10-01T06:50:24",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 11,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T06:52:32",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T07:05:38",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 12,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T07:05:38",
+   "event": "snapshot",
+   "label": "pre-route",
+   "files": 1
+  },
+  {
+   "ts": "2026-10-01T07:05:45",
+   "event": "phase",
+   "phase": "P7",
+   "prev": "P4"
+  },
+  {
+   "ts": "2026-10-01T07:51:54",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 30
+  },
+  {
+   "ts": "2026-10-01T08:00:10",
+   "event": "restore",
+   "label": "pre-route",
+   "files": 1
+  },
+  {
+   "ts": "2026-10-01T08:01:02",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 13,
+   "failing_count": 5
+  },
+  {
+   "ts": "2026-10-01T08:01:21",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 14,
+   "failing_count": 2
+  },
+  {
+   "ts": "2026-10-01T08:01:34",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 15,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:01:59",
+   "event": "decision",
+   "what": "PROVISIONAL delegate: rotate U2 270, rotate L1 180, nudge C10/C11 to un-sandwich SW pin; place gate re-passed"
+  },
+  {
+   "ts": "2026-10-01T08:29:38",
+   "event": "restore",
+   "label": "pre-route",
+   "files": 1
+  },
+  {
+   "ts": "2026-10-01T08:29:57",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 16,
+   "failing_count": 4
+  },
+  {
+   "ts": "2026-10-01T08:33:02",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 17,
+   "failing_count": 1
+  },
+  {
+   "ts": "2026-10-01T08:33:11",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 18,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:44:10",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 19,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T08:44:23",
+   "event": "restore",
+   "label": "pre-route",
+   "files": 1
+  },
+  {
+   "ts": "2026-10-01T08:44:38",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 20,
+   "failing_count": 1
+  },
+  {
+   "ts": "2026-10-01T08:44:59",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 21,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:26:36",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 22,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:26:39",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:27:35",
+   "event": "phase",
+   "phase": "P8",
+   "prev": "P7"
+  },
+  {
+   "ts": "2026-10-01T09:27:47",
+   "event": "phase",
+   "phase": "P8",
+   "prev": "P8"
+  },
+  {
+   "ts": "2026-10-01T09:28:03",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 1,
+   "failing_count": 7
+  },
+  {
+   "ts": "2026-10-01T09:30:50",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:31:59",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 2,
+   "failing_count": 5
+  },
+  {
+   "ts": "2026-10-01T09:32:15",
+   "event": "gate",
+   "gate": "verify",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:32:30",
+   "event": "phase",
+   "phase": "P9",
+   "prev": "P8"
+  },
+  {
+   "ts": "2026-10-01T09:32:59",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:34:11",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:38:32",
+   "event": "artifact",
+   "name": "gerbers",
+   "path": "PCB-0021-A_lipo-boost/fab/PCB-0021-A_lipo-boost_gerbers.zip"
+  },
+  {
+   "ts": "2026-10-01T09:38:33",
+   "event": "artifact",
+   "name": "bom",
+   "path": "PCB-0021-A_lipo-boost/fab/BOM.csv"
+  },
+  {
+   "ts": "2026-10-01T09:38:33",
+   "event": "artifact",
+   "name": "bom_full",
+   "path": "PCB-0021-A_lipo-boost/fab/BOM-full.csv"
+  },
+  {
+   "ts": "2026-10-01T09:38:33",
+   "event": "artifact",
+   "name": "cpl",
+   "path": "PCB-0021-A_lipo-boost/fab/CPL.csv"
+  },
+  {
+   "ts": "2026-10-01T09:38:42",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 23,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:39:05",
+   "event": "gate",
+   "gate": "erc",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:39:40",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "fail",
+   "attempt": 4,
+   "failing_count": 1
+  },
+  {
+   "ts": "2026-10-01T09:39:42",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 24,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:40:30",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:40:31",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 25,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:40:37",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-01T09:40:41",
+   "event": "gate",
+   "gate": "verify",
+   "status": "pass",
+   "attempt": 4,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T01:36:34",
+   "event": "resumed",
+   "task": "J4 USB-A mouth faces inward; rotate 180 so it opens at the right edge"
+  },
+  {
+   "ts": "2026-10-02T01:36:34",
+   "event": "snapshot",
+   "label": "pre-move-J4",
+   "files": 1
+  },
+  {
+   "ts": "2026-10-02T01:45:47",
+   "event": "edit",
+   "edit_class": "move_fp",
+   "refs": [
+    "J4",
+    "R12",
+    "Q1",
+    "D1"
+   ],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-02T01:45:47",
+   "event": "edit",
+   "edit_class": "reroute_net",
+   "refs": [
+    "+5V",
+    "/USB_DP",
+    "/USB_DM",
+    "/CHG",
+    "/CHG_A",
+    "/PGOOD",
+    "/DONE_K",
+    "/DONE_A"
+   ],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-02T01:45:47",
+   "event": "edit",
+   "edit_class": "silk_edit",
+   "refs": [
+    "J4",
+    "R12",
+    "Q1",
+    "D1"
+   ],
+   "human_hold": 0
+  },
+  {
+   "ts": "2026-10-02T01:45:48",
+   "event": "decision",
+   "what": "J4 rotated 270->90 (constraints placement.edges rot updated); mouth 0.25 mm inside the right edge, not overhanging"
+  },
+  {
+   "ts": "2026-10-02T01:45:57",
+   "event": "gate",
+   "gate": "drc",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T01:45:58",
+   "event": "gate",
+   "gate": "place",
+   "status": "fail",
+   "attempt": 26,
+   "failing_count": 1
+  },
+  {
+   "ts": "2026-10-02T01:46:00",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 6,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T01:46:37",
+   "event": "gate",
+   "gate": "place",
+   "status": "pass",
+   "attempt": 27,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T01:46:38",
+   "event": "gate",
+   "gate": "drc_routed",
+   "status": "pass",
+   "attempt": 7,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-02T01:47:47",
+   "event": "gate",
+   "gate": "verify",
+   "status": "fail",
+   "attempt": 5,
+   "failing_count": 5
+  },
+  {
+   "ts": "2026-10-02T01:47:54",
+   "event": "gate",
+   "gate": "dfm",
+   "status": "pass",
+   "attempt": 4,
+   "failing_count": 0
+  }
+ ]
+}

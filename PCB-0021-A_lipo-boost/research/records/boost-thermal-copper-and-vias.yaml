@@ -1,0 +1,41 @@
+id: boost-thermal-copper-and-vias
+classes:
+- thermal-via
+- thermal
+applies:
+  topologies:
+  - boost
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  tj_max_c: 125
+  pd_max: (125 - Ta)/RthJA
+prose: 'Keep junction at or below 125 C: PD(max)=(125-TA)/RthJA, and RthJA of the SOT563 depends heavily
+  on board. Make the copper polygon on every pin (GND, SW, VOUT) as large as possible, use thicker copper
+  if available, and tie top and bottom ground with several vias around the IC with the vias NOT covered
+  by solder mask. TPS61023 has no exposed pad, so heat leaves through pin copper. Estimate loss as Pout*(1-eta)+inductor
+  DCR; at 5 V/1 A and 90-94% efficiency the total is 0.3-0.55 W of which the IC is part. Thermal shutdown
+  is at 150 C with 20 C hysteresis, a backstop not a target.'
+sources:
+- file: research/sources/tps61023.pdf
+  page: 19
+  note: 10.3 PD(max) Eq 11; larger copper for GND/SW/VOUT, more vias around IC without mask
+- file: research/sources/tps61023.pdf
+  page: 10
+  note: 7.3.8 thermal shutdown 150 C (text read)
+status: draft
+origin: research:block-boost-1
+level: topology
+maturity: draft
+envelope:
+  vout_v:
+    min: 2.2
+    max: 5.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: Scales with integration (hot loop is inside the IC only when both FETs are integrated)
+  and with the part Vout range 2.2-5.5 V read from TPS61023 sec 6.3; discrete-FET boosts have a bigger
+  external loop. Not verified for other integrated boosts.

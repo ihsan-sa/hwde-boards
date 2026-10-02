@@ -1,0 +1,60 @@
+id: class-d-amp-single-gnd-two-layer-pour
+classes:
+- return-path
+applies:
+  topologies:
+  - class-d-amp
+  packages: []
+  interfaces: []
+  parts:
+  - TPA3116D2
+  - TPA3118D2
+  - TPA3130D2
+rule: null
+prose: 'The TPA31xxD2 has no analog ground pin: p4 lists GND at pins 9, 22, 25, 28 and the PowerPAD (pin
+  33) to GND; AVCC (17) is the analog supply. On 2 layers the return is ONE net: pad + GND pins are the
+  star point (p28 10.1), top filled with GND around the IC, bottom a solid GND plane ''for low impedance
+  return path'', joined by many vias under the pad and along the edge (p29 Fig 40, p30 Fig 41). TI''s
+  EVM (SLOU342A p8 Fig 5, p9 Fig 6): bottom is a GND pour carrying the wide PVCC feed, eight short jumpers
+  on the input side and two on the output side (R+, L- runs); p7 Fig 4 keeps small-signal parts on the
+  pin-1 side away from the filters. Rule: no AGND/PGND split; small-signal parts on the input side, filters
+  on the other; bottom jumpers only short, never through the via grid or between pad and filter caps.
+  Why: the pad is both thermal path and current return; a slot in the pour lengthens both.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 4
+  note: 'Pin functions: GND pins 9/22/25/28, PowerPAD pin 33 to GND, AVCC 17 analog supply; no AGND pin'
+- file: research/sources/tpa3116d2.pdf
+  page: 28
+  note: '10.1 Grounding bullet: all ground at the IC GND as central/star ground'
+- file: research/sources/tpa3116d2.pdf
+  page: 30
+  note: 'Fig 41 bottom: solid GND plane for low impedance return path; vias along PCB edge; lots of vias
+    top-to-bottom'
+- file: research/sources/slou342a.pdf
+  page: 8
+  note: 'Fig 5 EVM bottom: GND pour with the PVCC feed, 8 short small-signal jumpers on the input side
+    (one at the pin-1 edge of the via grid) and 2 short crossover jumpers at the R+ and L- test-point
+    runs by the output posts'
+- file: research/sources/slou342a.pdf
+  page: 7
+  note: 'Fig 4 EVM top: small-signal parts on pin-1 side, filters on output side, pour elsewhere'
+status: active
+origin: research:block-class-d-amp-1
+level: family
+maturity: verified
+generalizes: []
+envelope:
+  board_layers:
+    min: 2
+    max: 2
+envelope_note: 'Bounded to 2 layers: with only two copper layers the bottom pour must be both return and
+  heat spreader, which is what forbids slots and AGND islands. On 4+ layers an inner GND plane carries
+  the return and the outer-layer rules relax to the star-point part only.'
+verification:
+  by: second-reader
+  date: '2026-09-27'
+  note: 're-read tpa3116d2 p4 (no AGND, pad to GND), p28 10.1 star ground, p30 Fig41 solid GND plane;
+    slou342a p7 Fig4 small-signal on pin-1 side, p8 Fig5 GND pour + PVCC feed, 8 input-side + 2 output-side
+    (R+/L-) bottom jumpers as stated. Minor: prose cites p29 Fig40 with no sources entry; p29 checked
+    and supports it.'

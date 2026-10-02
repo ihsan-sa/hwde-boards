@@ -1,0 +1,2 @@
+gate drc_routed: FAIL (56 failing / 56 total)
+EXIT=1

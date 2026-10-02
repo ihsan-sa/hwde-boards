@@ -1,0 +1,147 @@
+{
+ "id": "block-audio-line-in-1",
+ "slot": "block:B2",
+ "kind": "block",
+ "token": "audio-line-in",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified",
+ "opened": "2026-09-27T01:37:11",
+ "closed": "2026-09-27T02:13:07",
+ "coverage_report": "PCB-0017-A_stereo-class-d-amp/log/coverage-P2.json",
+ "gap": {
+  "slot": "block:B2",
+  "kind": "block",
+  "topology": "audio-line-in",
+  "operating_point": {
+   "vin_vrms": 1.0,
+   "zin_kohm": 60,
+   "cin_uf": 2.2,
+   "f_corner_hz": 1.2,
+   "vbias_v": 3.0,
+   "board_layers": 2,
+   "input_kind": "single-ended",
+   "coupling_kind": "ac-ceramic",
+   "source_kind": "line-level"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'audio-line-in' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'audio-line-in': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "TPA3118D2",
+   "file": "research/sources/tpa3116d2.pdf",
+   "sha256": "4339471f438d786c444b4776925e75cf3a4ceafb8d6fad5de709d080670271a0",
+   "bytes": 2662209,
+   "content_type": "application/pdf",
+   "pages": 49,
+   "fetched": "2026-09-27T01:44:06",
+   "via": "local",
+   "note": null,
+   "deduplicated": true
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/an/slaa719/slaa719.pdf",
+   "final_url": "https://www.ti.com/lit/an/slaa719/slaa719.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": "TPA32xx",
+   "file": "research/sources/slaa719.pdf",
+   "sha256": "9de0d36defac961c89341915fd58e1898a7ce4c704df6d9fefe36703b12983cf",
+   "bytes": 82211,
+   "content_type": "application/pdf",
+   "pages": 7,
+   "fetched": "2026-09-27T01:47:48",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 3,
+   "url": "https://www.ti.com/lit/an/slaa896/slaa896.pdf",
+   "final_url": "https://www.ti.com/lit/an/slaa896/slaa896.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": "TAS2xxx class-D (cross-family layout note)",
+   "file": "research/sources/slaa896.pdf",
+   "sha256": "eb3735d9a2a248d7095442f532acf685a18dede12a4b3c7cde91b94fe5df61f4",
+   "bytes": 3197450,
+   "content_type": "application/pdf",
+   "pages": 10,
+   "fetched": "2026-09-27T01:53:27",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "audio-line-in-single-ended-unused-leg-ac-ground": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "p16 sec7.3.7 quote checked verbatim: AC-ground unused input via equal-value cap, ground at source for noise, matched impedance for transient perf - matches exactly.",
+   "ts": "2026-09-27T02:04:35"
+  },
+  "audio-line-in-cap-corner-vs-popup-settle": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Re-read after fix: p14 Table 2 now cited, matches page exactly (20dB/60kOhm/1.5uF/1.8Hz). Earlier citation gap closed; p16 quote still exact.",
+   "ts": "2026-09-27T02:11:54"
+  },
+  "audio-line-in-analog-input-star-ground": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Re-read after fix: p3 correctly scoped concept-only; p4 now cited and matches verbatim (Fig3/4 TPA3244 1kHz-vs-100Hz, Fig5 TPA3245 0.013pct/0.0049pct quote exact); p5 Fig6/7 TPA3244 retest quote exact. No more misattribution.",
+   "ts": "2026-09-27T02:11:49"
+  },
+  "audio-line-in-2layer-switch-node-keepaway": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "p28 current-loop-antenna quote verbatim; slaa896 p5 Fig4/Fig5 and p6 Fig6 captions and shield-layer text match the note's characterization of valid vs invalid layer stacking exactly.",
+   "ts": "2026-09-27T02:04:53"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-audio-line-in-1",
+ "updated": "2026-09-27T02:13:07",
+ "accepted_drafts": null,
+ "summary": {
+  "verified": 4,
+  "refuted": 0,
+  "checklists": 1,
+  "sources": 3
+ }
+}

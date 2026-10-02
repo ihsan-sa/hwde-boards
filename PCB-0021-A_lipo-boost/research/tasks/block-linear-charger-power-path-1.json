@@ -1,0 +1,118 @@
+{
+ "id": "block-linear-charger-power-path-1",
+ "slot": "block:B1",
+ "kind": "block",
+ "token": "linear-charger-power-path",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified_with_drafts",
+ "opened": "2026-10-01T05:43:30",
+ "closed": "2026-10-01T05:50:57",
+ "coverage_report": "PCB-0021-A_lipo-boost/log/coverage-P2.json",
+ "gap": {
+  "slot": "block:B1",
+  "kind": "block",
+  "topology": "linear-charger-power-path",
+  "operating_point": {
+   "vin_v": 5,
+   "vout_v": 4.4,
+   "iout_a": 1.5,
+   "pdiss_w": 1.1,
+   "board_layers": 2,
+   "integration_kind": "integrated-fet",
+   "source_kind": "usb",
+   "control_kind": "linear"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'linear-charger-power-path' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'linear-charger-power-path': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "BQ24074",
+   "file": "research/sources/bq24074.pdf",
+   "sha256": "4fe4e4f9855501f83b400c6932e3098439e51c50539e40dc45b44a8d509e8db1",
+   "bytes": 3739103,
+   "content_type": "application/pdf",
+   "pages": 55,
+   "fetched": "2026-10-01T05:44:29",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "linear-charger-ilim-iset-programming": {
+   "verdict": "refuted",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p21/p12/p34 re-read: KILIM table 1500/1610/1720 vs worked example 1550 confirmed (example also mislabels RISET). Advice to size with min 1500 is backwards: actual I=K/R can reach 1720/R, so to never exceed the limit use Kmax 1720. Envelope vin max 6.4 is the VI recommended max for 72/73/75/79; for 74 it is 10.2 V (VOVP 10.5), p5/p12/p6.",
+   "ts": "2026-10-01T05:50:22"
+  },
+  "linear-charger-pin-caps-ts-and-leds": {
+   "verdict": "refuted",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p35 content correct (10k TS, 1.5k LED to OUT, ~100k pullup, 2x rating). Envelope vin 4.35-6.4 unsupported for the BQ24074-specific record: p5 recommended VI is 4.35-10.2 V for '74, VOVP 10.2-10.8 (p6 EC). Correct envelope or drop the bound.",
+   "ts": "2026-10-01T05:50:23"
+  },
+  "linear-charger-single-point-ground-and-current-paths": {
+   "verdict": "refuted",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p40 guidelines correct. Envelope vin max 6.4 wrong for BQ24074 (4.35-10.2 V per p5 EC/p6 comparison table). Also p41 Fig 12-1: ISET pads show no dedicated via (only ILIM-area/TS have one; VSS pads carry vias), so 'each with its own via' overreaches.",
+   "ts": "2026-10-01T05:50:23"
+  },
+  "linear-charger-thermal-dissipation-and-pad": {
+   "verdict": "refuted",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p42 Eq 11, 3.4 V rule and thermal-loop advice match. Envelope vin max 6.4 wrong for BQ24074 (10.2 V recommended), and dissipation grows with VIN so the bound hides the worst case. Fix envelope to 4.35-10.2 V.",
+   "ts": "2026-10-01T05:50:23"
+  },
+  "linear-charger-input-dpm-and-startup-behaviour": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-10-01",
+   "note": "p22 text: VIN-DPM 4.35/4.5/4.63 (EN2=LO), DPPM, supplement, 250 us deglitch/60 ms recovery, termination disabled in DPPM/supplement; p20 startup 100 mA after ILIM/ISET short check and VOUT>VO(SC1). Principle, no envelope.",
+   "ts": "2026-10-01T05:50:23"
+  }
+ },
+ "queue_entry": "2026-10-01-research-task-block-linear-charger-power-path",
+ "updated": "2026-10-01T05:50:57",
+ "accepted_drafts": [
+  "linear-charger-ilim-iset-programming",
+  "linear-charger-pin-caps-ts-and-leds",
+  "linear-charger-single-point-ground-and-current-paths",
+  "linear-charger-thermal-dissipation-and-pad"
+ ],
+ "summary": {
+  "verified": 1,
+  "refuted": 4,
+  "checklists": 1,
+  "sources": 1
+ }
+}

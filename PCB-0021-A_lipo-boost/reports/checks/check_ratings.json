@@ -1,0 +1,165 @@
+{
+ "script": "check_ratings",
+ "status": "violations",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 4,
+  "by_severity": {
+   "warning": 4
+  },
+  "by_source": {
+   "check_ratings": 4
+  }
+ },
+ "violations": [
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "J3 (C32713273): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J3 (C32713273): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J4"
+   ],
+   "msg": "J4 (C53207796): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J4 (C53207796): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "Q1"
+   ],
+   "msg": "Q1 (C8545): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "Q1 (C8545): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D1",
+    "D2",
+    "D3",
+    "L1",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9"
+   ],
+   "msg": "16 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D2, D3, L1, R1, R10, R11, R12, R2, R3, R4, R5, R6, R7, R8, R9",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "16 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D2, D3, L1, R1, R10, R11, R12, R2, R3, R4, R5, R6, R7, R8, R9",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "D1",
+    "D2",
+    "D3",
+    "L1",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9"
+   ]
+  }
+ ],
+ "parts_on_board": 33,
+ "extractions": [
+  "C45367187",
+  "C54313",
+  "C919459"
+ ],
+ "net_volts": {
+  "+5V": {
+   "v": 5.25,
+   "src": "constraints"
+  },
+  "GND": {
+   "v": 0.0,
+   "src": "net name"
+  },
+  "VBAT": {
+   "v": 4.2,
+   "src": "constraints"
+  },
+  "VBUS": {
+   "v": 5.5,
+   "src": "constraints"
+  }
+ },
+ "pins_checked": 7,
+ "pins_on_unknown_nets": 14,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T13:31:32+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f"
+}

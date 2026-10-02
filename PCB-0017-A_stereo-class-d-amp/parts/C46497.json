@@ -1,0 +1,118 @@
+{
+  "mpn": "TPA3118D2DAPR",
+  "lcsc": "C46497",
+  "package": "HTSSOP-32-EP-6.1mm, PowerPAD pad-down (TI package drawing DAP0032C)",
+  "description": "TPA3116D2/TPA3118D2/TPA3130D2 family: stereo filter-free Class-D amplifier with AM avoidance. TPA3118D2 variant (this part, DAP=pad-down package) does up to 2x30 W into 8 ohm BTL on a dual-layer PCB without a heat sink. 4.5V-26V single supply, differential or single-ended inputs, programmable power limit, master/slave sync, short-circuit/thermal/DC/over-under-voltage protection reported on FAULTZ.",
+  "pinout": [
+    {"pin": "1", "name": "MODSEL", "type": "input", "notes": "Mode selection logic input. LOW = BD mode, HIGH = 1SPW mode. TTL levels, compliance to AVCC."},
+    {"pin": "2", "name": "SDZ", "type": "input", "notes": "Shutdown logic input. LOW = outputs Hi-Z, HIGH = outputs enabled. TTL levels, compliance to AVCC. Hold low at power-up until inputs are stable to avoid nuisance DC-detect faults."},
+    {"pin": "3", "name": "FAULTZ", "type": "open_collector", "notes": "General fault reporting (over-temp, DC detect, over-current, over/under-voltage). Open drain. Low = fault. Can be tied directly to SDZ for automatic latch-clear recovery."},
+    {"pin": "4", "name": "RINP", "type": "analog", "notes": "Positive audio input, right channel. Biased at 3V."},
+    {"pin": "5", "name": "RINN", "type": "analog", "notes": "Negative audio input, right channel. Biased at 3V."},
+    {"pin": "6", "name": "PLIMIT", "type": "analog", "notes": "Power limit level adjust. Resistor divider from GVDD to GND sets the limit; tie directly to GVDD for no power limit."},
+    {"pin": "7", "name": "GVDD", "type": "power_out", "notes": "Internally generated gate voltage supply (LDO output, 6.4-7.4V typ). Not a supply pin - do not connect to anything other than its own 1uF X7R decoupling cap and the PLIMIT / GAIN-SLV resistor dividers. Sized for internal use only."},
+    {"pin": "8", "name": "GAIN/SLV", "type": "analog", "notes": "Selects gain and Master/Slave mode via a resistor voltage divider."},
+    {"pin": "9", "name": "GND", "type": "ground", "notes": "Ground."},
+    {"pin": "10", "name": "LINP", "type": "analog", "notes": "Positive audio input, left channel. Biased at 3V. Connect to GND for PBTL mode."},
+    {"pin": "11", "name": "LINN", "type": "analog", "notes": "Negative audio input, left channel. Biased at 3V. Connect to GND for PBTL mode."},
+    {"pin": "12", "name": "MUTE", "type": "input", "notes": "Mute, fast disable/enable of outputs. HIGH = Hi-Z, LOW = enabled. TTL levels, compliance to AVCC."},
+    {"pin": "13", "name": "AM2", "type": "input", "notes": "AM avoidance / PWM switching-frequency select bit 2 (with AM1, AM0). TTL logic level."},
+    {"pin": "14", "name": "AM1", "type": "input", "notes": "AM avoidance / PWM switching-frequency select bit 1."},
+    {"pin": "15", "name": "AM0", "type": "input", "notes": "AM avoidance / PWM switching-frequency select bit 0."},
+    {"pin": "16", "name": "SYNC", "type": "bidirectional", "notes": "Clock input/output for synchronizing multiple Class-D devices. Direction (in vs out) set by GAIN/SLV (master/slave) terminal."},
+    {"pin": "17", "name": "AVCC", "type": "power_in", "notes": "Analog supply, 4.5-26V. Feeds internal LDOs including GVDD."},
+    {"pin": "18", "name": "PVCC", "type": "power_in", "notes": "Power stage supply, 4.5-26V."},
+    {"pin": "19", "name": "PVCC", "type": "power_in", "notes": "Power stage supply, 4.5-26V. Duplicate PVCC pin - decouple individually."},
+    {"pin": "20", "name": "BSNL", "type": "passive", "notes": "Bootstrap for negative left-channel output. Connect a 220nF X5R-or-better ceramic cap to OUTNL for high-side gate drive."},
+    {"pin": "21", "name": "OUTNL", "type": "output", "notes": "Negative left-channel Class-D output (to speaker / output filter)."},
+    {"pin": "22", "name": "GND", "type": "ground", "notes": "Ground."},
+    {"pin": "23", "name": "OUTPL", "type": "output", "notes": "Positive left-channel Class-D output."},
+    {"pin": "24", "name": "BSPL", "type": "passive", "notes": "Bootstrap for positive left-channel output. Connect a 220nF X5R-or-better ceramic cap to OUTPL."},
+    {"pin": "25", "name": "GND", "type": "ground", "notes": "Ground."},
+    {"pin": "26", "name": "BSNR", "type": "passive", "notes": "Bootstrap for negative right-channel output. Connect a 220nF X5R-or-better ceramic cap to OUTNR."},
+    {"pin": "27", "name": "OUTNR", "type": "output", "notes": "Negative right-channel Class-D output."},
+    {"pin": "28", "name": "GND", "type": "ground", "notes": "Ground."},
+    {"pin": "29", "name": "OUTPR", "type": "output", "notes": "Positive right-channel Class-D output."},
+    {"pin": "30", "name": "BSPR", "type": "passive", "notes": "Bootstrap for positive right-channel output. Connect a 220nF X5R or better ceramic cap to OUTPR."},
+    {"pin": "31", "name": "PVCC", "type": "power_in", "notes": "Power stage supply, 4.5-26V. Duplicate PVCC pin - decouple individually."},
+    {"pin": "32", "name": "PVCC", "type": "power_in", "notes": "Power stage supply, 4.5-26V. Duplicate PVCC pin - decouple individually."},
+    {"pin": "33", "name": "PowerPAD", "type": "ground", "notes": "Exposed thermal pad. Connect to GND for best system performance; if not connected to GND, leave floating (do not connect to any other net)."}
+  ],
+  "decoupling": [
+    {
+      "pins": ["18", "19", "31", "32"],
+      "value": "2x 100uF, 50V, low-ESR bulk capacitor",
+      "placement": "one bulk capacitor near the PVCC pins at each end of the device (pins 18/19 side and 31/32 side)",
+      "notes": "Section 8.2.2.3: with a well-designed power supply, two 100uF/50V low-ESR caps are sufficient for input/bulk capacitance; low-ESR required for the high-speed switching application."
+    },
+    {
+      "pins": ["18", "19", "31", "32"],
+      "value": "220pF-1nF low-ESR ceramic + 100nF-1uF mid-frequency ceramic, per PVCC connection (each end of package)",
+      "placement": "as close to the PVCC pins as possible; return directly to the IC GND pad",
+      "notes": "Layout Guidelines 10.1 + Detailed Design Procedure 8.2.2.4: X5R-or-better decoupling at each PVCC pin, located near PVCC/GND to minimize series inductance; consider temperature, ripple current, voltage overshoot when selecting."
+    },
+    {
+      "pins": ["17"],
+      "value": "high-frequency decoupling capacitor (value not separately numerically stated for AVCC alone)",
+      "placement": "as close to the AVCC terminal as possible",
+      "notes": "Layout Guidelines 10.1 groups AVCC with PVCC for decoupling-capacitor placement guidance; no distinct AVCC value is given in this datasheet."
+    },
+    {
+      "pins": ["7"],
+      "value": "1uF X7R ceramic",
+      "placement": "at the GVDD pin",
+      "notes": "Pin-function table: GVDD must not be used as a supply or connected to anything other than this decoupling cap and the PLIMIT / GAIN-SLV resistor dividers."
+    },
+    {
+      "pins": ["20", "24", "26", "30"],
+      "value": "220nF (0.22uF), 25V, X5R or better ceramic",
+      "placement": "each BSxx pin to its corresponding OUTxx pin (BSNL-OUTNL, BSPL-OUTPL, BSNR-OUTNR, BSPR-OUTPR)",
+      "notes": "Pin-function table + section 8.2.2.5 (Select Bootstrap Capacitors): required to supply high-side output FET gate drive."
+    }
+  ],
+  "land_pattern": {
+    "package": "HTSSOP-32 PowerPAD pad-down, TI drawing DAP0032C (4223691/A, 05/2017)",
+    "pad_count": 32,
+    "pitch_mm": 0.65,
+    "pad_size_mm": [1.5, 0.45],
+    "row_spacing_mm": 7.5,
+    "drill_mm": 0.2,
+    "pin1": "1",
+    "notes": "From the DAP0032C recommended land pattern (package outline pages, TI lit 4223691/A + 4225303/A generic view): body 11.1/10.9mm x 6.2/6.0mm, 1.2mm max height, 30x 0.65mm lead pitch, 32x lead pads (1.5 x 0.45mm each), overall pad-row span (7.5mm) per the board-layout drawing. Exposed thermal pad land: nominal 3.04 x 3.74mm (min/max range 2.46-3.04mm x 3.16-3.74mm per the package outline); note 9 on the land-pattern drawing: 'size of metal pad may vary due to creepage requirement'. Thermal vias in the pad shown at (0.2mm TYP) diameter on a (1.2mm TYP)/(1.3mm TYP) grid - grid pitch is stated but an explicit via count is not; datasheet points to TI app notes SLMA002 and SLMA004 for the thermal-pad/via design itself. Stencil (EXAMPLE STENCIL DESIGN, note 8: 'package is designed to be soldered to a thermal pad on the board'): exposed-pad aperture options by stencil thickness - 0.175mm->2.57x3.16mm, 0.15mm->2.78x3.41mm, 0.125mm->3.04x3.74mm (shown/nominal), 0.1mm->3.40x4.18mm; 100% printed solder coverage by area recommended over the exposed pad. Signal-pad solder mask is non-solder-mask-defined per the package drawing's solder mask detail."
+  },
+  "exposed_pad": {
+    "present": true,
+    "connect_to": "GND"
+  },
+  "layout_notes": [
+    "PowerPAD (pin 33, exposed thermal pad) should be connected to GND for best system performance; if not grounded, leave floating rather than tying to another net (pin-function table).",
+    "This DAP (pad-down) package is designed to be soldered to a thermal pad on the PCB with thermal vias in the exposed pad; the datasheet defers the via-array design itself to TI app notes SLMA002 and SLMA004, it does not give a via count in-line.",
+    "High-frequency decoupling capacitors should be placed as close to the PVCC and AVCC terminals as possible.",
+    "Large bulk PVCC decoupling capacitors (100uF or greater) should be placed near the device on the PVCC supplies, one near the PVCC pins at each end of the package.",
+    "Local, high-frequency PVCC bypass capacitors should be placed as close to the PVCC pins as possible and can connect directly to the IC GND pad for a low-inductance ground return.",
+    "At each PVCC connection (each end of the chip), add a small low-ESR ceramic cap (220pF-1nF) plus a larger mid-frequency ceramic cap (100nF-1uF).",
+    "Grounding: all grounds should be connected at the IC GND pins, used as a central/star ground point for the device; PVCC decoupling caps connect to this GND.",
+    "Keep the current loop from each output through its ferrite bead (or LC filter) and its filter capacitor back to GND as small and tight as possible - loop size sets the loop's effectiveness as an EMI antenna.",
+    "The ferrite-bead or LC output filter should be placed as close to the OUTxx pins as possible for best EMI performance; filter capacitors used in either filter type must be grounded.",
+    "Bootstrap capacitors (220nF, 25V, X5R or better) connect each BSxx pin directly to its corresponding OUTxx pin (BSNL-OUTNL, BSPL-OUTPL, BSNR-OUTNR, BSPR-OUTPR) for high-side gate drive; keep these connections short.",
+    "GVDD (pin 7) must only carry its own 1uF X7R decoupling cap and the PLIMIT / GAIN-SLV resistor dividers - it is not a general-purpose supply and is sized only for internal loading.",
+    "Optional EMI improvement: RC snubber network from each Class-D output to GND, suggested 18ohm in series with 330pF; keep the snubber layout tight and return it directly to the IC's GND pins.",
+    "Thermal: RthetaJA = 22 degC/W for this device's DAP-32 package (vs 14 degC/W for the DAD/pad-up package with a top heat sink, and 36 degC/W for the DAP-32 TPA3130D2 variant); psiJT = 0.3 degC/W, psiJB = 4.7 degC/W for TPA3118D2 DAP - the exposed pad is the primary heat path in this pad-down, no-top-heat-sink configuration.",
+    "Hold SDZ low at power-up until input signals are stable, and match the impedance seen at the positive and negative inputs, to avoid nuisance DC-detect faults - relevant to the input-network component placement, not just the IC itself."
+  ],
+  "abs_max": [
+    {"param": "Supply voltage, PVCC/AVCC", "value": "-0.3 to 30", "unit": "V"},
+    {"param": "Input voltage, INPL/INNL/INPR/INNR", "value": "-0.3 to 6.3", "unit": "V"},
+    {"param": "Input voltage, PLIMIT/GAIN-SLV/SYNC", "value": "-0.3 to GVDD+0.3", "unit": "V"},
+    {"param": "Input voltage, AM0/AM1/AM2/MUTE/SDZ/MODSEL", "value": "-0.3 to PVCC+0.3", "unit": "V"},
+    {"param": "Maximum slew rate, AM0/AM1/AM2/MUTE/SDZ/MODSEL (100kOhm series resistor needed if exceeded)", "value": 10, "unit": "V/ms"},
+    {"param": "Operating free-air temperature, TA", "value": "-40 to 85", "unit": "C"},
+    {"param": "Operating junction temperature, TJ", "value": "-40 to 150", "unit": "C"},
+    {"param": "Storage temperature, Tstg", "value": "-40 to 125", "unit": "C"},
+    {"param": "ESD, Human-body model (HBM)", "value": "+/-2000", "unit": "V"},
+    {"param": "ESD, Charged-device model (CDM)", "value": "+/-500", "unit": "V"},
+    {"param": "Thermal trip point (not abs-max table, but a hard protection limit)", "value": "150+", "unit": "C"},
+    {"param": "Over-current trip point, TPA3118D2/TPA3116D2", "value": 7.5, "unit": "A"}
+  ],
+  "source_pdf": "research/sources/tpa3116d2.pdf"
+}

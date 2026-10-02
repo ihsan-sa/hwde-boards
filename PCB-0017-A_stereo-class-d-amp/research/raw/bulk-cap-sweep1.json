@@ -1,0 +1,1144 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "100uF 25V SMD electrolytic",
+ "total": 443,
+ "count": 15,
+ "results": [
+  {
+   "lcsc": "C4747964",
+   "mpn": "RST100UF25V004",
+   "brand": "KNSCHA",
+   "description": "-40\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 5.4mm 6.3mm 88mA@120Hz \u00b120% SMD,D6.3xL5.4mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL5.4mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 162793,
+   "price": 0.0411,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0411
+    },
+    {
+     "qty": 100,
+     "price": 0.0337
+    },
+    {
+     "qty": 300,
+     "price": 0.0298
+    },
+    {
+     "qty": 1000,
+     "price": 0.0244
+    },
+    {
+     "qty": 5000,
+     "price": 0.0233
+    },
+    {
+     "qty": 10000,
+     "price": 0.0226
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207221830_KNSCHA-RST100UF25V004_C4747964.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_knscha-rst100uf25v004_C4747964.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "5.4mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "88mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C47023107",
+   "mpn": "RVT25V100M6X5",
+   "brand": "jieerrui",
+   "description": "-40\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 5.4mm 6.3mm 60mA@120Hz \u00b120% SMD,D6.3xL5.4mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL5.4mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 153995,
+   "price": 0.0403,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0403
+    },
+    {
+     "qty": 100,
+     "price": 0.0319
+    },
+    {
+     "qty": 300,
+     "price": 0.0277
+    },
+    {
+     "qty": 1000,
+     "price": 0.0246
+    },
+    {
+     "qty": 5000,
+     "price": 0.022
+    },
+    {
+     "qty": 10000,
+     "price": 0.0208
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2504101957_jieerrui-RVT25V100M6X5_C47023107.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_jieerrui-rvt25v100m6x5_C47023107.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "5.4mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "60mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C46550402",
+   "mpn": "JVJ25V100M6x5",
+   "brand": "jieerrui",
+   "description": "-55\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 5.4mm 6.3mm 72mA@120Hz \u00b120% SMD,D6.3xL5.4mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL5.4mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 140834,
+   "price": 0.0419,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0419
+    },
+    {
+     "qty": 100,
+     "price": 0.0338
+    },
+    {
+     "qty": 300,
+     "price": 0.0298
+    },
+    {
+     "qty": 1000,
+     "price": 0.0264
+    },
+    {
+     "qty": 5000,
+     "price": 0.0233
+    },
+    {
+     "qty": 10000,
+     "price": 0.0225
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "5.4mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "72mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C72477",
+   "mpn": "RVT1E101M0607",
+   "brand": "ROQANG",
+   "description": "-40\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 6.3mm 7.7mm 93mA@120Hz \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 140108,
+   "price": 0.0304,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0304
+    },
+    {
+     "qty": 200,
+     "price": 0.0251
+    },
+    {
+     "qty": 1000,
+     "price": 0.0195
+    },
+    {
+     "qty": 2000,
+     "price": 0.0178
+    },
+    {
+     "qty": 10000,
+     "price": 0.0162
+    },
+    {
+     "qty": 20000,
+     "price": 0.0154
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_ROQANG-RVT1E101M0607_C72477.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_roqang-rvt1e101m0607_C72477.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "93mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C2836443",
+   "mpn": "RVT100UF25V67RV0011",
+   "brand": "KNSCHA",
+   "description": "-55\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 6.3mm 7.7mm 93mA@120Hz \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 103825,
+   "price": 0.0392,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0392
+    },
+    {
+     "qty": 200,
+     "price": 0.0316
+    },
+    {
+     "qty": 1000,
+     "price": 0.026
+    },
+    {
+     "qty": 2000,
+     "price": 0.0234
+    },
+    {
+     "qty": 10000,
+     "price": 0.0212
+    },
+    {
+     "qty": 20000,
+     "price": 0.02
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2105281608_KNSCHA-RVT100UF25V67RV0011_C2836443.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_knscha-rvt100uf25v67rv0011_C2836443.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "93mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C3338",
+   "mpn": "RVT1E101M0607",
+   "brand": "Honor Elec",
+   "description": "-55\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 6.3mm 7.7mm \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 54944,
+   "price": 0.0355,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0355
+    },
+    {
+     "qty": 200,
+     "price": 0.027
+    },
+    {
+     "qty": 1000,
+     "price": 0.0223
+    },
+    {
+     "qty": 2000,
+     "price": 0.0195
+    },
+    {
+     "qty": 10000,
+     "price": 0.0171
+    },
+    {
+     "qty": 20000,
+     "price": 0.0157
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Honor-Elec-RVT1E101M0607_C3338.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_honor-elec-rvt1e101m0607_C3338.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C51953404",
+   "mpn": "JVS25V100M6X4",
+   "brand": "jieerrui",
+   "description": "-55\u2103~+105\u2103 1000hrs@105\u2103 100uF 25V 4.5mm 54mA@120Hz 6.3mm \u00b120% SMD,D6.3xL4.5mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL4.5mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 50662,
+   "price": 0.0777,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0777
+    },
+    {
+     "qty": 50,
+     "price": 0.0619
+    },
+    {
+     "qty": 150,
+     "price": 0.054
+    },
+    {
+     "qty": 1500,
+     "price": 0.0481
+    },
+    {
+     "qty": 3000,
+     "price": 0.0434
+    },
+    {
+     "qty": 4500,
+     "price": 0.041
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "1000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "4.5mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "54mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C176675",
+   "mpn": "VES101M1ETR-0607",
+   "brand": "Lelon",
+   "description": "-45\u2103~+105\u2103 1000hrs@105\u2103 100uF 25V 6.3mm 7.7mm \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 45310,
+   "price": 0.0728,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0728
+    },
+    {
+     "qty": 100,
+     "price": 0.06
+    },
+    {
+     "qty": 300,
+     "price": 0.0535
+    },
+    {
+     "qty": 1000,
+     "price": 0.0431
+    },
+    {
+     "qty": 5000,
+     "price": 0.0392
+    },
+    {
+     "qty": 10000,
+     "price": 0.0372
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Lelon-VES101M1ETR-0607_C176675.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_lelon-ves101m1etr-0607_C176675.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-45\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "1000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C48615121",
+   "mpn": "JVE25V100M6X8",
+   "brand": "jieerrui",
+   "description": "-55\u2103~+105\u2103 100uF 2000hrs@105\u2103 230mA@100kHz 25V 6.3mm 600m\u03a9@100kHz 7.7mm \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 44879,
+   "price": 0.0574,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0574
+    },
+    {
+     "qty": 100,
+     "price": 0.0457
+    },
+    {
+     "qty": 300,
+     "price": 0.0398
+    },
+    {
+     "qty": 1000,
+     "price": 0.0355
+    },
+    {
+     "qty": 5000,
+     "price": 0.0319
+    },
+    {
+     "qty": 10000,
+     "price": 0.0303
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2505080931_jieerrui-JVE25V100M6X8_C48615121.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_jieerrui-jve25v100m6x8_C48615121.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "600m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "230mA@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C129418",
+   "mpn": "CK1E101M-CRE77",
+   "brand": "ST(Semtech)",
+   "description": "-40\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 6.3mm 7.7mm \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 33325,
+   "price": 0.0509,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0509
+    },
+    {
+     "qty": 100,
+     "price": 0.0411
+    },
+    {
+     "qty": 300,
+     "price": 0.0364
+    },
+    {
+     "qty": 1000,
+     "price": 0.0291
+    },
+    {
+     "qty": 5000,
+     "price": 0.0262
+    },
+    {
+     "qty": 10000,
+     "price": 0.0247
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_ST-Semtech-CK1E101M-CRE77_C129418.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_st-semtech-ck1e101m-cre77_C129418.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 9
+  },
+  {
+   "lcsc": "C970685",
+   "mpn": "RVT1E101M0607 100UF 25V",
+   "brand": "DMBJ",
+   "description": "-55\u2103~+105\u2103 100uF 25V 2800hrs@105\u2103 6.3mm 7.7mm 93mA@120Hz \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 26601,
+   "price": 0.0415,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0415
+    },
+    {
+     "qty": 200,
+     "price": 0.0333
+    },
+    {
+     "qty": 1000,
+     "price": 0.0259
+    },
+    {
+     "qty": 2000,
+     "price": 0.0231
+    },
+    {
+     "qty": 10000,
+     "price": 0.0208
+    },
+    {
+     "qty": 20000,
+     "price": 0.0195
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_DMBJ-RVT1E101M0607-100UF-25V_C970685.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_dmbj-rvt1e101m0607-100uf-25v_C970685.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2800hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "93mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 10
+  },
+  {
+   "lcsc": "C5246580",
+   "mpn": "VT100UF25V167RV0125",
+   "brand": "KNSCHA",
+   "description": "-55\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 6.3mm 7.7mm 91mA@120Hz \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 25248,
+   "price": 0.0431,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0431
+    },
+    {
+     "qty": 100,
+     "price": 0.0348
+    },
+    {
+     "qty": 300,
+     "price": 0.0307
+    },
+    {
+     "qty": 1000,
+     "price": 0.0255
+    },
+    {
+     "qty": 5000,
+     "price": 0.0229
+    },
+    {
+     "qty": 10000,
+     "price": 0.0218
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211031700_KNSCHA-VT100UF25V167RV0125_C5246580.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_knscha-vt100uf25v167rv0125_C5246580.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "91mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 11
+  },
+  {
+   "lcsc": "C48971003",
+   "mpn": "RVE25V100M6X8",
+   "brand": "jieerrui",
+   "description": "-40\u2103~+105\u2103 100uF 2000hrs@105\u2103 230mA@120Hz 25V 6.3mm 600m\u03a9@100kHz 7.7mm \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 20159,
+   "price": 0.0483,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0483
+    },
+    {
+     "qty": 100,
+     "price": 0.0382
+    },
+    {
+     "qty": 300,
+     "price": 0.0332
+    },
+    {
+     "qty": 1000,
+     "price": 0.0293
+    },
+    {
+     "qty": 5000,
+     "price": 0.0262
+    },
+    {
+     "qty": 10000,
+     "price": 0.0247
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_jieerrui-rve25v100m6x8_C48971003.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "600m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "230mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 12
+  },
+  {
+   "lcsc": "C240550",
+   "mpn": "VS1E101ME077000CE0",
+   "brand": "Changzhou Huawei Elec",
+   "description": "-40\u2103~+85\u2103 100uF 2000hrs@85\u2103 25V 6.3mm 7.7mm \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 17717,
+   "price": 0.0731,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0731
+    },
+    {
+     "qty": 100,
+     "price": 0.0596
+    },
+    {
+     "qty": 300,
+     "price": 0.053
+    },
+    {
+     "qty": 1000,
+     "price": 0.0467
+    },
+    {
+     "qty": 5000,
+     "price": 0.0426
+    },
+    {
+     "qty": 10000,
+     "price": 0.0405
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Changzhou-Huawei-Elec-VS1E101ME077000CE0_C240550.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_changzhou-huawei-elec-vs1e101me077000ce0_C240550.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@85\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 13
+  },
+  {
+   "lcsc": "C4747965",
+   "mpn": "RST100UF25V006",
+   "brand": "KNSCHA",
+   "description": "-40\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 6.3mm 7.7mm 91mA@120Hz \u00b120% SMD,D6.3xL7.7mm Aluminum Electrolytic Capacitors - SMD ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Aluminum Electrolytic Capacitors - SMD",
+   "type": "Extended",
+   "basic": false,
+   "stock": 16573,
+   "price": 0.0389,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0389
+    },
+    {
+     "qty": 200,
+     "price": 0.0309
+    },
+    {
+     "qty": 1000,
+     "price": 0.0257
+    },
+    {
+     "qty": 2000,
+     "price": 0.0231
+    },
+    {
+     "qty": 10000,
+     "price": 0.0207
+    },
+    {
+     "qty": 20000,
+     "price": 0.0195
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207271100_KNSCHA-RST100UF25V006_C4747965.pdf",
+   "url": "https://www.lcsc.com/product-detail/aluminum-electrolytic-capacitors-smd_knscha-rst100uf25v006_C4747965.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "91mA@120Hz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 14
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

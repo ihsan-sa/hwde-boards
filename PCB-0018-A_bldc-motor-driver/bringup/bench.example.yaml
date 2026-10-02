@@ -1,0 +1,10 @@
+# bench.yaml for PCB-0018-A_bldc-motor-driver: copy to bench.yaml on the bench host and
+# fill in each resource. The automated run never uses this file.
+bench: owner-laptop
+roles:
+  console: {driver: serial, port: /dev/ttyUSB0, baud: 115200}
+  dmm: {driver: scpi-dmm, resource: "TCPIP0::<ip>::INSTR"}
+  logic: {driver: sigrok, device: fx2lafw}
+  probe: {driver: swd, tool: probe-rs}
+  psu: {driver: scpi-psu, resource: "USB0::...::INSTR", channel: 1}
+  scope: {driver: scpi-scope, resource: "USB0::...::INSTR"}

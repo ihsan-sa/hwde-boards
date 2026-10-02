@@ -1,0 +1,76 @@
+id: audio-line-in-analog-input-star-ground
+classes: [return-path]
+applies:
+  topologies: [audio-line-in]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  reference_point: "the amplifier's own analog/quiet ground pin (or, on parts with one shared GND, the IC's GND pad/pins used as the datasheet's own 'star ground' point)"
+  routing: "a dedicated trace per input ground node back to that reference point, not a tie-in to whatever the shared power-return pour is convenient at"
+  failure_signature: "channel-to-channel THD+N mismatch that gets worse at LOW audio frequency and HIGH output power, not a broadband noise floor problem"
+prose: >
+  A low-level single-ended audio input's ground node(s) (the AC-grounded
+  unused leg, any input-stage reference) must reference the amplifier's own
+  quiet ground point by a dedicated trace, not the shared power-return pour.
+  Concept (SLAA719 Fig 2): tying input-stage ground nodes to the PCB ground
+  plane lets switching/output current develop real noise voltages across the
+  plane between those nodes and the amp's analog ground. Measured (Fig 3/4,
+  sec 2.1-2.2): a TPA3244 board wired this way matched at 1 kHz (Fig 3) but
+  was "quite different" between channels at 100 Hz (Fig 4) - low frequency
+  is where sustained current peaks are longest. A separate TPA3245 board,
+  100 Hz, was "even worse": CH1 0.013% vs CH2 0.0049% THD+N at 20 W (Fig 5) -
+  that specific pair of numbers is the TPA3245 case, not TPA3244. Star-wiring
+  those ground nodes to the analog ground reference (Fig 6) and retesting
+  the TPA3244 board (Fig 7, sec 3.1) matched the channels and improved
+  overall THD+N; the fix was not re-run on the TPA3245 board. PRINCIPLE: the
+  mechanism (shared-plane IR noise couples asymmetrically into whichever
+  ground node sits electrically closer to the noise source) applies to any
+  low-level analog input on a board that also carries switching return
+  current, independent of Zin, Cin, layer count, or part family; only the
+  measured numbers above are per-part.
+sources:
+  - file: research/sources/slaa719.pdf
+    page: 3
+    section: "2 Input Stage with Ground Plane, Fig 2"
+    note: >
+      Fig 2 (concept only, no measured data on this page): the SE-to-diff
+      input stage's ground nodes G2/G3/G4 tied to the PCB ground plane at
+      convenient points, with Ipower (heavy output/switching current)
+      developing noise voltages Vn1/Vn2/Vn3 across the plane between G1 (amp
+      analog ground) and G2/G3/G4.
+  - file: research/sources/slaa719.pdf
+    page: 4
+    section: "2.1-2.2 Testing/Results, Figs 3/4/5"
+    note: >
+      TPA3244 board: Fig 3 shows matched CH1/CH2 THD+N at 1 kHz; Fig 4 shows
+      the two channels "quite different" at 100 Hz (no numeric values given).
+      Text + Fig 5: a separate TPA3245 board at 100 Hz was "even worse" -
+      "Channel 1 has a THD+N of 0.013% whereas Channel 2 is 0.0049% at 20
+      Watts of output power" - this numeric pair is the TPA3245 case. Sec
+      2.2 attributes the mismatch to ground-plane noise injected at low
+      audio frequency/high power.
+  - file: research/sources/slaa719.pdf
+    page: 5
+    section: "3-3.1 Input Stage with Star Ground, Figs 6/7"
+    note: >
+      Fig 6 shows the fix: G2/G3/G4 connected by separate traces directly to
+      G1 (amp analog ground reference) instead of to the shared plane. Text
+      + Fig 7: the TPA3244 board (not TPA3245) was retested at 100 Hz with
+      this wiring - "not only is the amplifier channel performance now
+      matched, but the overall THD+N has improved."
+  - file: research/sources/tpa3116d2.pdf
+    page: 28
+    section: "10.1 Layout Guidelines, Grounding bullet"
+    note: >
+      This exact part's own layout section: "All ground should be connected
+      at the IC GND, which should be used as a central ground connection or
+      star ground for the TPA3116D2" - corroborates SLAA719's star-ground fix
+      from the vendor-layout tier for the specific part on this board.
+status: active
+origin: research:block-audio-line-in-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader", date: "2026-09-27", note: "Re-read after fix: p3 correctly scoped concept-only; p4 now cited and matches verbatim (Fig3/4 TPA3244 1kHz-vs-100Hz, Fig5 TPA3245 0.013pct/0.0049pct quote exact); p5 Fig6/7 TPA3244 retest quote exact. No more misattribution."}

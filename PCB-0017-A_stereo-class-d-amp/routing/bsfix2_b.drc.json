@@ -1,0 +1,196 @@
+{
+  "script": "kc",
+  "tool": "drc",
+  "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "units": "mm",
+  "kicad_version": "10.0.6",
+  "options": {
+    "parity": true,
+    "all_track_errors": true,
+    "refill": true,
+    "save_board": true
+  },
+  "counts": {
+    "total": 5,
+    "by_severity": {
+      "warning": 4,
+      "error": 1
+    },
+    "by_source": {
+      "drc": 4,
+      "unconnected": 1
+    }
+  },
+  "status": "violations",
+  "violations": [
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        33.8,
+        22.0
+      ],
+      "layer": "F.Cu",
+      "net": "GND",
+      "refs": [
+        "C18",
+        "C8"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C18",
+          "pos": [
+            33.8,
+            22.0
+          ],
+          "uuid": "c95881fa-3c49-4db6-b488-d186fa22151a"
+        },
+        {
+          "msg": "Pad 2 [GND] of C8 on F.Cu",
+          "pos": [
+            32.9,
+            21.7
+          ],
+          "uuid": "3c96ea7f-d7b8-409d-b0d6-4a374a801c9e"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        35.45,
+        34.6
+      ],
+      "layer": "F.Cu",
+      "net": "/BSNL",
+      "refs": [
+        "C15"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C15",
+          "pos": [
+            35.45,
+            34.6
+          ],
+          "uuid": "ae94d560-0413-40db-b10b-151d6fab9c3b"
+        },
+        {
+          "msg": "Pad 1 [/BSNL] of C15 on F.Cu",
+          "pos": [
+            34.3,
+            35.6
+          ],
+          "uuid": "ed525edd-c218-429a-a28e-73270bbe77df"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        32.5,
+        36.4
+      ],
+      "layer": "F.Cu",
+      "net": "GND",
+      "refs": [
+        "C6",
+        "C9"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C9",
+          "pos": [
+            32.5,
+            36.4
+          ],
+          "uuid": "736fe727-aee6-41bd-ac40-33d3d9e65395"
+        },
+        {
+          "msg": "Pad 2 [GND] of C6 on F.Cu",
+          "pos": [
+            31.3,
+            36.2
+          ],
+          "uuid": "fd918c74-1595-4bee-b0a3-833f083dd2d0"
+        }
+      ]
+    },
+    {
+      "check": "silk_over_copper",
+      "severity": "warning",
+      "pos": [
+        35.45,
+        34.6
+      ],
+      "layer": "F.Cu",
+      "net": "/OUTNL",
+      "refs": [
+        "C15"
+      ],
+      "msg": "Silkscreen clipped by solder mask",
+      "source": "drc",
+      "items": [
+        {
+          "msg": "Reference field of C15",
+          "pos": [
+            35.45,
+            34.6
+          ],
+          "uuid": "ae94d560-0413-40db-b10b-151d6fab9c3b"
+        },
+        {
+          "msg": "Pad 2 [/OUTNL] of C15 on F.Cu",
+          "pos": [
+            34.3,
+            33.6
+          ],
+          "uuid": "84a54c26-bea7-4c68-996a-fe404adf226e"
+        }
+      ]
+    },
+    {
+      "check": "unconnected_items",
+      "severity": "error",
+      "pos": [
+        9.6,
+        8.799
+      ],
+      "layer": "F.Cu",
+      "net": "GND",
+      "refs": [],
+      "msg": "Missing connection between items",
+      "source": "unconnected",
+      "items": [
+        {
+          "msg": "Zone [GND] on F.Cu, priority 0",
+          "pos": [
+            9.6,
+            8.799
+          ],
+          "uuid": "d0df800d-1478-4890-9d5a-eb6708296314"
+        },
+        {
+          "msg": "Zone [GND] on F.Cu, priority 0",
+          "pos": [
+            9.6,
+            8.799
+          ],
+          "uuid": "d0df800d-1478-4890-9d5a-eb6708296314"
+        }
+      ]
+    }
+  ],
+  "report_schema": 1,
+  "checker_version": 1,
+  "generated_at": "2026-09-27T12:49:23+00:00",
+  "input_digest": "sexpr_no_uuid:59b37c59525c6d9a980f1d6d2ed4c45f62f46334d8161c5c0ed61b1e730cb727"
+}

@@ -1,0 +1,426 @@
+{
+ "script": "datasheet_extract",
+ "mode": "screen",
+ "status": "pass",
+ "written": "PCB-0021-A_lipo-boost/parts/layout_implications.json",
+ "workspace": "PCB-0021-A_lipo-boost",
+ "cap_class": "2layer_1oz",
+ "parts": [
+  {
+   "mpn": "BQ24074RGTR",
+   "package": "QFN-16-EP(3x3)",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "thermal_vias": {
+    "ep_mm": [
+     1.66,
+     1.66
+    ],
+    "drill_mm": 0.3,
+    "land_mm": 0.6,
+    "pitch_floor_mm": 0.8,
+    "nx": 2,
+    "ny": 2,
+    "max_vias": 4,
+    "max_square": "2x2",
+    "square_4x4_fits": false
+   },
+   "lcsc": "C54313",
+   "refs": [
+    "U1"
+   ],
+   "qty": 1,
+   "extraction": "C54313.json"
+  },
+  {
+   "mpn": "TPS61023DRLR",
+   "package": "SOT-563",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "routing": {
+    "pitch_mm": 0.5,
+    "pad_w_mm": 0.3,
+    "gap_mm": 0.2,
+    "track_between_pads": false,
+    "max_stub_width_mm": 0.3,
+    "note": "a netclass width floor above max_stub_width_mm makes every stub into this pad illegal - pour that net as a zone (LEARNINGS 2026-08-09 netclass-floor vs stubs)"
+   },
+   "lcsc": "C919459",
+   "refs": [
+    "U2"
+   ],
+   "qty": 1,
+   "extraction": "C919459.json"
+  },
+  {
+   "mpn": "MSXC61CN3302MR",
+   "package": "SOT-23-3",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C45367187",
+   "refs": [
+    "U3"
+   ],
+   "qty": 1,
+   "extraction": "C45367187.json"
+  },
+  {
+   "mpn": "2N7002",
+   "package": "SOT-23",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.4,
+    "h_mm": 3.0,
+    "area_mm2": 10.2,
+    "source": "table"
+   },
+   "lcsc": "C8545",
+   "refs": [
+    "Q1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "ORH-R36A",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C205445",
+   "refs": [
+    "D1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "KT-0603G",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C12624",
+   "refs": [
+    "D2"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "KT-0603R",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C2286",
+   "refs": [
+    "D3"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "FHD4020S-1R0MT",
+   "package": "SMD,4x4mm",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C602028",
+   "refs": [
+    "L1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "MicroXNJ",
+   "package": "SMD",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C404969",
+   "refs": [
+    "J1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+   "package": "SMD,P=2mm,Surface Mount\uff0cRight Angle",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C295747",
+   "refs": [
+    "J2"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "HX PZ2.54-1x7P ZZ",
+   "package": "Plugin,P=2.54mm",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C32713273",
+   "refs": [
+    "J3"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "Type-A-AF90",
+   "package": "Plugin",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C53207796",
+   "refs": [
+    "J4"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1002T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C25804",
+   "refs": [],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1003T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C25803",
+   "refs": [
+    "Q1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF7323T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C23239",
+   "refs": [],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1001T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C21190",
+   "refs": [],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1201T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C22765",
+   "refs": [],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF5102T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C23196",
+   "refs": [],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1001T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C21190",
+   "refs": [
+    "D1",
+    "D3"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF4700T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C23179",
+   "refs": [
+    "D2"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF0000T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C21189",
+   "refs": [],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "CL21A475KAQNNNE",
+   "package": "0805",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.4,
+    "h_mm": 1.9,
+    "area_mm2": 6.46,
+    "source": "table"
+   },
+   "lcsc": "C1779",
+   "refs": [
+    "U1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "CL21A106KAYNNNE",
+   "package": "0805",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.4,
+    "h_mm": 1.9,
+    "area_mm2": 6.46,
+    "source": "table"
+   },
+   "lcsc": "C15850",
+   "refs": [
+    "U1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "CL21A226MAQNNNE",
+   "package": "0805",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.4,
+    "h_mm": 1.9,
+    "area_mm2": 6.46,
+    "source": "table"
+   },
+   "lcsc": "C45783",
+   "refs": [
+    "U2"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "CC0603KRX7R9BB104",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C14663",
+   "refs": [],
+   "qty": 1,
+   "extraction": null
+  }
+ ],
+ "board_budget": {
+  "courtyard_sum_mm2": 88.1,
+  "unknown_parts": [
+   "BQ24074RGTR",
+   "TPS61023DRLR",
+   "MSXC61CN3302MR",
+   "FHD4020S-1R0MT",
+   "MicroXNJ",
+   "S2B-PH-SM4-TB(LF)(SN)",
+   "HX PZ2.54-1x7P ZZ",
+   "Type-A-AF90"
+  ]
+ },
+ "conflicts": []
+}

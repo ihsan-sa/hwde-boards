@@ -1,0 +1,127 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "ETA6003",
+ "total": 4,
+ "count": 2,
+ "results": [
+  {
+   "lcsc": "C5455585",
+   "mpn": "ETA6003Q3Q",
+   "brand": "etasolution",
+   "description": "-40\u2103~+85\u2103 1 2A 4.2V 4.4V~5.5V 70uA Charging IC Lithium Battery Support Support QFN3X3-16 Battery Management ROHS",
+   "package": "QFN3X3-16",
+   "category": "Battery Management",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10320,
+   "price": 0.5186,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.5186
+    },
+    {
+     "qty": 10,
+     "price": 0.4211
+    },
+    {
+     "qty": 30,
+     "price": 0.3788
+    },
+    {
+     "qty": 100,
+     "price": 0.3268
+    },
+    {
+     "qty": 500,
+     "price": 0.2585
+    },
+    {
+     "qty": 1000,
+     "price": 0.2439
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304131730_etasolution-ETA6003Q3Q_C5455585.pdf",
+   "url": "https://www.lcsc.com/product-detail/dc-dc-converters_etasolution-eta6003q3q_C5455585.html",
+   "attributes": [
+    {
+     "name": "Charging Saturation Voltage",
+     "value": "4.2V"
+    },
+    {
+     "name": "Supply Current (Iq)",
+     "value": "70uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Type of Battery",
+     "value": "Lithium Battery"
+    },
+    {
+     "name": "Charge Current - Max",
+     "value": "2A"
+    },
+    {
+     "name": "Number of Cells",
+     "value": "1"
+    },
+    {
+     "name": "Battery Temperature Detection",
+     "value": "Support"
+    },
+    {
+     "name": "The Chip Type",
+     "value": "Charging IC"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "4.4V~5.5V"
+    },
+    {
+     "name": "Features",
+     "value": "Constant current charging\u3001Constant voltage charging\u3001Trickle charging\u3001Automatic recharge\u3001Charge termination\u3001Programmable charging current\u3001Under-voltage lockout"
+    },
+    {
+     "name": "0V Battery Charge",
+     "value": "Support"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2685754",
+   "mpn": "ETA6003",
+   "brand": "ETAL",
+   "description": "QFN-16-EP(3x3) New Arrivals ROHS",
+   "package": "QFN-16_EP_3.0x3.0x0.5P",
+   "category": "New Arrivals",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.0396,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0396
+    },
+    {
+     "qty": 100,
+     "price": 0.0204
+    }
+   ],
+   "min_qty": 443,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 1
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 2
+}

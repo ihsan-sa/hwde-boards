@@ -1,0 +1,1259 @@
+{
+ "script": "knowledge",
+ "status": "gaps",
+ "schema_version": 2,
+ "workspace": "PCB-0020-A_esp32c3-node",
+ "board": "esp32c3-node",
+ "phase": "P2",
+ "maturity_floor": "approved",
+ "keys": {
+  "topologies": [
+   "bme280",
+   "ldo",
+   "li-charger",
+   "mcu",
+   "usbc-sink"
+  ],
+  "packages": [],
+  "interfaces": [
+   "usb"
+  ],
+  "parts": [],
+  "sources": {
+   "constraints": "PCB-0020-A_esp32c3-node/architecture/constraints.json"
+  }
+ },
+ "sources": {
+  "constraints": "PCB-0020-A_esp32c3-node/architecture/constraints.json",
+  "parts": null
+ },
+ "summary": {
+  "slots": 6,
+  "covered": 0,
+  "provisional": 1,
+  "gap": 5,
+  "draft_unverified": 0
+ },
+ "slots": [
+  {
+   "id": "block:B1",
+   "kind": "block",
+   "topology": "usbc-sink",
+   "label": "B1",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 5.0,
+    "vout_v": 5.0,
+    "iout_a": 0.5,
+    "pdiss_w": 0.01,
+    "board_layers": 2
+   },
+   "classes": [
+    {
+     "class": "selection",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "usbc-sink-cc-independent-rd-principle",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "level-below-min"
+      },
+      {
+       "id": "usbc-sink-default-current-entitlement",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "usbc-sink-rd-5k1-per-pin",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      },
+      {
+       "id": "usbc-sink-receptacle-land-all-shell-bond",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "esd",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "usbc-sink-vbus-tvs-before-series-element",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "inrush",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "usbc-sink-attach-capacitance-10uf",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "decoupling",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "usbc-sink-attach-capacitance-10uf",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "emi",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "usbc-sink-receptacle-land-all-shell-bond",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "constraints-emission",
+     "min_level": "principle",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "usbc-sink-constraints-emission",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "usbc-sink",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "provisional"
+  },
+  {
+   "id": "block:B2",
+   "kind": "block",
+   "topology": "li-charger",
+   "label": "B2",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 5.0,
+    "vout_v": 4.2,
+    "iout_a": 0.2,
+    "pdiss_w": 0.25,
+    "board_layers": 2,
+    "integration_kind": "integrated-fet"
+   },
+   "classes": [],
+   "gap_reasons": [
+    "no coverage checklist for block 'li-charger' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+   ],
+   "checklist": null,
+   "verdict": "gap"
+  },
+  {
+   "id": "block:B3",
+   "kind": "block",
+   "topology": "ldo",
+   "label": "B3",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 4.9,
+    "vout_v": 3.3,
+    "iout_a": 0.45,
+    "pdiss_w": 0.32,
+    "board_layers": 2,
+    "integration_kind": "integrated-fet"
+   },
+   "classes": [
+    {
+     "class": "selection",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "ldo-dropout-headroom-budget",
+       "level": "topology",
+       "maturity": "verified",
+       "envelope": "inside",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "maturity-below-floor"
+      }
+     ]
+    },
+    {
+     "class": "feedback",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "ldo-output-cap-esr-window-principle",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "level-below-min"
+      }
+     ]
+    },
+    {
+     "class": "decoupling",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "thermal",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "ldo",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "gap"
+  },
+  {
+   "id": "block:B4",
+   "kind": "block",
+   "topology": "mcu",
+   "label": "B4",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 3.3,
+    "iout_a": 0.35,
+    "pdiss_w": 1.2,
+    "board_layers": 2,
+    "fsw_khz": 160000
+   },
+   "classes": [
+    {
+     "class": "decoupling",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "mcu-decoupling-per-supply-pin-pair",
+       "level": "principle",
+       "maturity": "verified",
+       "envelope": "n/a",
+       "unknown_dims": [],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "level-below-min"
+      }
+     ]
+    },
+    {
+     "class": "sequencing",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "selection",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "mcu",
+    "maturity": "draft",
+    "floor_met": false
+   },
+   "verdict": "gap"
+  },
+  {
+   "id": "block:B5",
+   "kind": "block",
+   "topology": "bme280",
+   "label": "B5",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 3.3,
+    "iout_a": 0.001,
+    "pdiss_w": 0.003,
+    "board_layers": 2
+   },
+   "classes": [],
+   "gap_reasons": [
+    "no coverage checklist for block 'bme280' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+   ],
+   "checklist": null,
+   "verdict": "gap"
+  },
+  {
+   "id": "interface:usb",
+   "kind": "interface",
+   "interface": "usb",
+   "operating_point": {
+    "max_skew_mm": 5.0,
+    "max_uncoupled_mm": 5.0
+   },
+   "classes": [
+    {
+     "class": "diff-pair",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "return-path",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "emi",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "esd",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "decoupling",
+     "min_level": "topology",
+     "verdict": "gap",
+     "records": []
+    },
+    {
+     "class": "inrush",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "buck-upstream-inrush-limit",
+       "level": "topology",
+       "maturity": "approved",
+       "envelope": "unknown",
+       "unknown_dims": [
+        "source_kind"
+       ],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "envelope-unknown"
+      }
+     ]
+    },
+    {
+     "class": "selection",
+     "min_level": "topology",
+     "verdict": "provisional",
+     "records": [
+      {
+       "id": "buck-upstream-inrush-limit",
+       "level": "topology",
+       "maturity": "approved",
+       "envelope": "unknown",
+       "unknown_dims": [
+        "source_kind"
+       ],
+       "outside_dims": [],
+       "via": "keys",
+       "satisfies": false,
+       "blocker": "envelope-unknown"
+      }
+     ]
+    },
+    {
+     "class": "constraints-emission",
+     "min_level": "principle",
+     "verdict": "gap",
+     "records": []
+    }
+   ],
+   "gap_reasons": [],
+   "checklist": {
+    "id": "usb-fs",
+    "maturity": "approved",
+    "floor_met": true
+   },
+   "verdict": "gap"
+  }
+ ],
+ "gaps": [
+  {
+   "slot": "block:B2",
+   "kind": "block",
+   "topology": "li-charger",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 5.0,
+    "vout_v": 4.2,
+    "iout_a": 0.2,
+    "pdiss_w": 0.25,
+    "board_layers": 2,
+    "integration_kind": "integrated-fet"
+   },
+   "missing": [
+    {
+     "class": "coverage-checklist",
+     "min_level": null
+    }
+   ],
+   "reasons": [
+    "no coverage checklist for block 'li-charger' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+   ],
+   "related_records": [],
+   "principle_parents": [],
+   "task": "research block 'li-charger': produce its coverage checklist, then populate it"
+  },
+  {
+   "slot": "block:B3",
+   "kind": "block",
+   "topology": "ldo",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 4.9,
+    "vout_v": 3.3,
+    "iout_a": 0.45,
+    "pdiss_w": 0.32,
+    "board_layers": 2,
+    "integration_kind": "integrated-fet"
+   },
+   "missing": [
+    {
+     "class": "decoupling",
+     "min_level": "topology"
+    },
+    {
+     "class": "thermal",
+     "min_level": "topology"
+    }
+   ],
+   "reasons": [
+    "no record satisfies the class at this operating point and maturity floor"
+   ],
+   "related_records": [
+    "ldo-dropout-headroom-budget",
+    "ldo-output-cap-esr-window-principle"
+   ],
+   "principle_parents": [
+    "mcu-decoupling-per-supply-pin-pair"
+   ],
+   "task": "research block 'ldo': populate decoupling, thermal (application delta only - principle parents exist)"
+  },
+  {
+   "slot": "block:B4",
+   "kind": "block",
+   "topology": "mcu",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 3.3,
+    "iout_a": 0.35,
+    "pdiss_w": 1.2,
+    "board_layers": 2,
+    "fsw_khz": 160000
+   },
+   "missing": [
+    {
+     "class": "sequencing",
+     "min_level": "topology"
+    },
+    {
+     "class": "selection",
+     "min_level": "topology"
+    }
+   ],
+   "reasons": [
+    "no record satisfies the class at this operating point and maturity floor"
+   ],
+   "related_records": [
+    "mcu-decoupling-per-supply-pin-pair"
+   ],
+   "principle_parents": [
+    "buck-en-softstart-sequencing",
+    "usbc-sink-cc-independent-rd-principle"
+   ],
+   "task": "research block 'mcu': populate sequencing, selection (application delta only - principle parents exist)"
+  },
+  {
+   "slot": "block:B5",
+   "kind": "block",
+   "topology": "bme280",
+   "operating_point": {
+    "source_kind": "usb",
+    "vin_v": 3.3,
+    "iout_a": 0.001,
+    "pdiss_w": 0.003,
+    "board_layers": 2
+   },
+   "missing": [
+    {
+     "class": "coverage-checklist",
+     "min_level": null
+    }
+   ],
+   "reasons": [
+    "no coverage checklist for block 'bme280' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+   ],
+   "related_records": [],
+   "principle_parents": [],
+   "task": "research block 'bme280': produce its coverage checklist, then populate it"
+  },
+  {
+   "slot": "interface:usb",
+   "kind": "interface",
+   "interface": "usb",
+   "operating_point": {
+    "max_skew_mm": 5.0,
+    "max_uncoupled_mm": 5.0
+   },
+   "missing": [
+    {
+     "class": "diff-pair",
+     "min_level": "topology"
+    },
+    {
+     "class": "return-path",
+     "min_level": "topology"
+    },
+    {
+     "class": "emi",
+     "min_level": "topology"
+    },
+    {
+     "class": "esd",
+     "min_level": "topology"
+    },
+    {
+     "class": "decoupling",
+     "min_level": "topology"
+    },
+    {
+     "class": "constraints-emission",
+     "min_level": "principle"
+    }
+   ],
+   "reasons": [
+    "no record satisfies the class at this operating point and maturity floor"
+   ],
+   "related_records": [
+    "buck-upstream-inrush-limit"
+   ],
+   "principle_parents": [
+    "buck-constraints-emission",
+    "buck-input-hot-loop",
+    "mcu-decoupling-per-supply-pin-pair",
+    "usbc-sink-constraints-emission"
+   ],
+   "task": "research interface 'usb': populate diff-pair, return-path, emi, esd, decoupling, constraints-emission (application delta only - principle parents exist)"
+  }
+ ],
+ "warnings": [],
+ "workspace_records": [
+  "ldo-dropout-headroom-budget",
+  "ldo-output-cap-esr-window-principle",
+  "mcu-decoupling-per-supply-pin-pair",
+  "usbc-sink-attach-capacitance-10uf",
+  "usbc-sink-cc-independent-rd-principle",
+  "usbc-sink-constraints-emission",
+  "usbc-sink-default-current-entitlement",
+  "usbc-sink-rd-5k1-per-pin",
+  "usbc-sink-receptacle-land-all-shell-bond",
+  "usbc-sink-vbus-tvs-before-series-element"
+ ],
+ "workspace_checklists": [
+  "ldo",
+  "mcu",
+  "usbc-sink"
+ ],
+ "draft_unverified": [],
+ "mapping_applied": {
+  "file": "PCB-0020-A_esp32c3-node/log/mapping-P2.json",
+  "edges": 0,
+  "sha256": "8564df2d4d64afeba3d42200bd5e46f6e39029ba9f03ad105aaeaa9e872fc0c9"
+ },
+ "mapping_request": {
+  "schema": {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "title": "hwde coverage mapping (agent output)",
+   "type": "object",
+   "required": [
+    "mappings"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "mappings": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "record",
+       "slot",
+       "class",
+       "why"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "record": {
+        "type": "string",
+        "minLength": 1
+       },
+       "slot": {
+        "type": "string",
+        "minLength": 1
+       },
+       "class": {
+        "type": "string",
+        "minLength": 1
+       },
+       "why": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+       }
+      }
+     }
+    },
+    "note": {
+     "type": "string",
+     "maxLength": 600
+    }
+   }
+  },
+  "instructions": "Map records to slots for ONE class each - only edges you can justify from the record's prose. You classify; you do NOT decide sufficiency, coverage or maturity. Output the JSON shape in `schema`; the coverage run validates it and refuses unknown records/slots or classes the record does not carry.",
+  "slots": [
+   {
+    "id": "block:B1",
+    "kind": "block",
+    "topology": "usbc-sink",
+    "operating_point": {
+     "source_kind": "usb",
+     "vin_v": 5.0,
+     "vout_v": 5.0,
+     "iout_a": 0.5,
+     "pdiss_w": 0.01,
+     "board_layers": 2
+    },
+    "required_classes": [
+     "selection",
+     "esd",
+     "inrush",
+     "decoupling",
+     "emi",
+     "constraints-emission"
+    ],
+    "unmet_classes": [
+     "selection",
+     "esd",
+     "inrush",
+     "decoupling",
+     "emi",
+     "constraints-emission"
+    ]
+   },
+   {
+    "id": "block:B3",
+    "kind": "block",
+    "topology": "ldo",
+    "operating_point": {
+     "source_kind": "usb",
+     "vin_v": 4.9,
+     "vout_v": 3.3,
+     "iout_a": 0.45,
+     "pdiss_w": 0.32,
+     "board_layers": 2,
+     "integration_kind": "integrated-fet"
+    },
+    "required_classes": [
+     "selection",
+     "feedback",
+     "decoupling",
+     "thermal"
+    ],
+    "unmet_classes": [
+     "selection",
+     "feedback",
+     "decoupling",
+     "thermal"
+    ]
+   },
+   {
+    "id": "block:B4",
+    "kind": "block",
+    "topology": "mcu",
+    "operating_point": {
+     "source_kind": "usb",
+     "vin_v": 3.3,
+     "iout_a": 0.35,
+     "pdiss_w": 1.2,
+     "board_layers": 2,
+     "fsw_khz": 160000
+    },
+    "required_classes": [
+     "decoupling",
+     "sequencing",
+     "selection"
+    ],
+    "unmet_classes": [
+     "decoupling",
+     "sequencing",
+     "selection"
+    ]
+   },
+   {
+    "id": "interface:usb",
+    "kind": "interface",
+    "interface": "usb",
+    "operating_point": {
+     "max_skew_mm": 5.0,
+     "max_uncoupled_mm": 5.0
+    },
+    "required_classes": [
+     "diff-pair",
+     "return-path",
+     "emi",
+     "esd",
+     "decoupling",
+     "inrush",
+     "selection",
+     "constraints-emission"
+    ],
+    "unmet_classes": [
+     "diff-pair",
+     "return-path",
+     "emi",
+     "esd",
+     "decoupling",
+     "inrush",
+     "selection",
+     "constraints-emission"
+    ]
+   }
+  ],
+  "candidates": [
+   {
+    "id": "buck-bst-fb-output-caps",
+    "level": "family",
+    "maturity": "approved",
+    "classes": [
+     "feedback",
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "BST: integrated-FET parts need the 100 nF BST-SW cap - it is required, not optional (DS41326 s13); confirm value/rating in the family datasheet. FB TRAP (cost a near-miss once): FIXED-output family members tie FB straight to the output sens"
+   },
+   {
+    "id": "buck-cin-co-ground-separation",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Two ROHM measurements the generic hot-loop rule does not carry: (1) shortening the CBYPASS wiring EVEN BY 1 mm is worth it - the HF bypass supplies the steepest edge of the switch current, and its loop inductance sets the VIN-pin voltage no"
+   },
+   {
+    "id": "buck-constraints-emission",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "constraints-emission"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "What a buck block must emit into constraints.json for the pipeline: (1) power entries with current_a from the RAIL BUDGET (consumer sum + ~30% headroom, rounded to a design ceiling) and dt_c from ambient; (2) a thermal entry when regulator "
+   },
+   {
+    "id": "buck-en-softstart-sequencing",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "sequencing"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Check the EN pin's OWN behavior before adding parts: many parts auto-start (AP63203: internal 1.5 uA pull-up - tie to VIN or float; adding a divider is wasted parts). When EN is used as a UVLO divider, mind the two traps the sbuck run hit: "
+   },
+   {
+    "id": "buck-fb-route-rules",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "feedback"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "The feedback route needs the most attention of any signal wire - noise here becomes output-voltage error and instability. ROHM's four rules (fig 7-a): (a) the FB pin is high impedance - connect the divider network with a SHORT wire at the p"
+   },
+   {
+    "id": "buck-freewheel-diode-snubber-placement",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Async buck (free-wheel diode) placement rules: the diode must sit CLOSE and on the SAME surface as the IC terminals, wired short and wide, connected directly to the IC's GND and SW terminals - distance adds wiring inductance whose spike noi"
+   },
+   {
+    "id": "buck-inductor-copper-and-gnd-void",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Inductor region rules (ROHM s5): place L close to the IC but NOT as close as the input cap; do NOT expand the SW/inductor copper beyond what current needs - enlarged copper works as an antenna (EMI), even though instinct says more copper = "
+   },
+   {
+    "id": "buck-inductor-selection",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "The three inductor rules every run re-derived from scratch. L VALUE: start from the vendor's recommended-components table row for your Vout; the next STANDARD value up is usually right - light-load efficiency improves with larger L (DS41326"
+   },
+   {
+    "id": "buck-input-hot-loop",
+    "level": "principle",
+    "maturity": "approved",
+    "classes": [
+     "power-loop",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Layout rule #1 for every buck: the input cap carries the DISCONTINUOUS switch current. C_IN plus a 100 nF HF bypass AT the VIN pin, on the SAME layer as the IC; the C_IN -> VIN -> GND -> C_IN loop must be the shortest loop on the board; SW-"
+   },
+   {
+    "id": "buck-power-ground-isolation",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "return-path",
+     "power-loop"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Ground strategy (ROHM s8): analog small-signal ground and power ground must be ISOLATED, and power ground laid on the TOP layer without splitting is the ideal - dropping an isolated power ground to the bottom layer through vias adds via R a"
+   },
+   {
+    "id": "buck-selection-ladder",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Regulator-type ladder, one line of tradeoff each; if the brief names a part the named part stands (record the alternative as an override option). (1) Integrated synchronous buck is the DEFAULT at <= ~60 V input and <= ~3 A: no catch diode, "
+   },
+   {
+    "id": "buck-switch-node-containment",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "Keep SW copper as small as electrically possible and treat SW + L as an AGGRESSOR: lumina-par's 2.4 GHz antenna 11 mm from a switch node drove a 4-layer stackup + containment plan; usb-buck keeps the USB pair away from SW/L per ST AN4879 3."
+   },
+   {
+    "id": "buck-thermal-via-and-via-current",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "thermal-via"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [
+      "HTSOP-J8",
+      "SO-8-EP",
+      "SO-8EP"
+     ],
+     "interfaces": []
+    },
+    "prose_head": "Thermal vias under an exposed-pad regulator (ROHM s4, HTSOP-J8 numbers generalize to EP packages): small drill - 0.3 mm inner diameter - so the via can FILL with solder; larger drills suck solder away from the joint at reflow (solder-wickin"
+   },
+   {
+    "id": "buck-upstream-inrush-limit",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "inrush",
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "interfaces": [
+      "usb",
+      "usb-pd",
+      "poe"
+     ],
+     "packages": []
+    },
+    "prose_head": "Upstream bulk limit trap: a buck's input capacitance is bounded by the SOURCE, not by the buck. USB 2.0 allows 10 uF || 44 ohm at attach (spec s7.2.4.1); a USB-PD sink is allowed 100 uF under contract (cSnkBulkPd); PoE has its own inrush en"
+   },
+   {
+    "id": "cot-ripple-injection-raises-vout",
+    "level": "family",
+    "maturity": "approved",
+    "classes": [
+     "feedback"
+    ],
+    "applies": {
+     "topologies": [
+      "buck"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "A constant-on-time regulator ends its off-time when FB falls back through VREF, so it regulates the VALLEY of FB, not its average. With Type 3 injection the ramp is AC-coupled into FB and its mean is genuinely zero, so FB_dc = VREF + Vramp/"
+   },
+   {
+    "id": "ldo-dropout-headroom-budget",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "ldo"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Everything in series ahead of the LDO input subtracts from dropout headroom: PTC/polyfuse resistance, connector and cable contact resistance, input filter and trace resistance, any ORing diode. The check is run at the SOURCE's worst-case lo"
+   },
+   {
+    "id": "ldo-output-cap-esr-window-principle",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "feedback"
+    ],
+    "applies": {
+     "topologies": [
+      "ldo"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "The LDO output capacitor is a loop component, not just a reservoir: its ESR forms a zero at f = 1/(2*pi*ESR*Cout). In classic LDOs the loop counts on that zero for phase lead - AN-1482 Fig 4 (gain/phase plot) shows a 10 uF / 0.5 ohm tantalu"
+   },
+   {
+    "id": "mcu-decoupling-per-supply-pin-pair",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "mcu"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Principle: an MCU draws its supply current in short spikes on clock and I/O edges; spikes cannot be delivered over long supply lines, so the decoupling capacitor is the source - one HF ceramic (100 nF is both vendors' value here) per supply"
+   },
+   {
+    "id": "spiral-inductor-plane-and-heatsink-keepout",
+    "level": "topology",
+    "maturity": "approved",
+    "classes": [
+     "emi",
+     "thermal"
+    ],
+    "applies": {
+     "topologies": [
+      "class-e"
+     ],
+     "packages": [],
+     "interfaces": []
+    },
+    "prose_head": "An etched PCB spiral (air-core inductor, coupled pair, antenna) is destroyed by solid metal parallel to it: a ground plane under the winding is a shorted turn and collapses Q, and so is a bottom-side metal heatsink. Two independently-correc"
+   },
+   {
+    "id": "usbc-sink-attach-capacitance-10uf",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "inrush",
+     "decoupling"
+    ],
+    "applies": {
+     "topologies": [
+      "usbc-sink"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Table 4-3 VBUS Sink Characteristics (read on p142): \"VBUS Capacitance, maximum 10 uF - capacitance between VBUS and GND pins on receptacle when not in Attached.SNK.\" The limit bounds the inrush charge slug a freshly attached, discharged sin"
+   },
+   {
+    "id": "usbc-sink-cc-independent-rd-principle",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "usbc-sink"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Each CC pin of a Type-C sink is an independent connection-detection line and shall be terminated on its own. Spec 4.5.2.2.3.1 (Unattached.SNK requirements): \"Both CC1 and CC2 pins shall be independently terminated to ground through Rd.\" Why"
+   },
+   {
+    "id": "usbc-sink-constraints-emission",
+    "level": "principle",
+    "maturity": "verified",
+    "classes": [
+     "constraints-emission"
+    ],
+    "applies": {
+     "topologies": [
+      "usbc-sink"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "What a CC-blind usbc-sink block must emit into constraints.json so the placer, routers and checkers see it: (1) placement - pin the receptacle to a board edge with the mating face flush or slightly proud; Fig 3-80 (p136) requires >= 0.05 mm"
+   },
+   {
+    "id": "usbc-sink-default-current-entitlement",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "usbc-sink"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "A sink that never reads CC may legally draw only default USB power. 4.5.2.3.1.1 PowerDefault.SNK requirements (read on p193): \"The port shall draw no more than the default USB power from VBUS... If the port wants to consume more than the de"
+   },
+   {
+    "id": "usbc-sink-rd-5k1-per-pin",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection"
+    ],
+    "applies": {
+     "topologies": [
+      "usbc-sink"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "Concrete Rd implementation for a CC-blind sink: two 5.1 kohm resistors, one from CC1 to GND and one from CC2 to GND. Table 4-25 Sink CC Termination (Rd) Requirements (read on p236) gives three legal implementations; the \"+/-20% resistor to "
+   },
+   {
+    "id": "usbc-sink-receptacle-land-all-shell-bond",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "selection",
+     "emi"
+    ],
+    "applies": {
+     "topologies": [
+      "usbc-sink"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "16-pin USB-C receptacle current ratings are COLLECTIVE, so land and gang every contact of a group. GCT USB4105 drawing p1 (read: pin table + Electrical spec + Recommended PCB Layout): current rating \"5.00 A collectively for VBUS pins, 6.25 "
+   },
+   {
+    "id": "usbc-sink-vbus-tvs-before-series-element",
+    "level": "topology",
+    "maturity": "verified",
+    "classes": [
+     "esd"
+    ],
+    "applies": {
+     "topologies": [
+      "usbc-sink"
+     ],
+     "packages": [],
+     "interfaces": [],
+     "parts": []
+    },
+    "prose_head": "The VBUS TVS sits AT the receptacle, on the connector side of the PTC and everything else, so a strike sees the clamp before any series impedance or downstream silicon. SLVA680A p4 (Fig 2-1 models the path as L1..L4 parasitics; summary bull"
+   }
+  ]
+ }
+}

@@ -1,0 +1,771 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "RT9013-33",
+ "total": 12,
+ "count": 9,
+ "results": [
+  {
+   "lcsc": "C47773",
+   "mpn": "RT9013-33GB",
+   "brand": "Richtek Tech",
+   "description": "-40\u2103~+125\u2103@(Tj) 1 25uA 3.3V 30uVrms 400mV@(500mA) 5.5V 500mA 50dB@(10kHz) Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 117964,
+   "price": 0.1428,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1428
+    },
+    {
+     "qty": 50,
+     "price": 0.1168
+    },
+    {
+     "qty": 150,
+     "price": 0.1033
+    },
+    {
+     "qty": 500,
+     "price": 0.0924
+    },
+    {
+     "qty": 3000,
+     "price": 0.0769
+    },
+    {
+     "qty": 6000,
+     "price": 0.0743
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809081207_Richtek-Tech-RT9013-33GB_C47773.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_richtek-tech-rt9013-33gb_C47773.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "50dB@(10kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "25uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103@(Tj)"
+    },
+    {
+     "name": "Noise",
+     "value": "30uVrms"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "400mV@(500mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C7434207",
+   "mpn": "RT9013-33GB-MS",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+85\u2103 1 100mV@(100mA)\u3001300mV@(200mA) 3.3V 5.5V 500mA 50uVrms 60uA 75dB@(1kHz) Fixed Over Current Protection\u3001Enable\u3001Short Circuit Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 101802,
+   "price": 0.0582,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0582
+    },
+    {
+     "qty": 100,
+     "price": 0.047
+    },
+    {
+     "qty": 300,
+     "price": 0.0413
+    },
+    {
+     "qty": 3000,
+     "price": 0.0329
+    },
+    {
+     "qty": 6000,
+     "price": 0.0295
+    },
+    {
+     "qty": 9000,
+     "price": 0.0278
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2307051759_MSKSEMI-RT9013-33GB-MS_C7434207.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_msksemi-rt9013-33gb-ms_C7434207.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "60uA"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "100mV@(100mA)\u3001300mV@(200mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C587158",
+   "mpn": "TPRT9013-33GB",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 3.3V 300mV@(200mA) 500mA 50uVrms 60uA 70dB@(1kHz) 7V Enable Fixed Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 76344,
+   "price": 0.0925,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0925
+    },
+    {
+     "qty": 50,
+     "price": 0.0729
+    },
+    {
+     "qty": 150,
+     "price": 0.063
+    },
+    {
+     "qty": 500,
+     "price": 0.0555
+    },
+    {
+     "qty": 3000,
+     "price": 0.0496
+    },
+    {
+     "qty": 6000,
+     "price": 0.0465
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2108131930_TECH-PUBLIC-TPRT9013-33GB_C587158.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-tprt9013-33gb_C587158.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "70dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "standby current",
+     "value": "60uA"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "7V"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Features",
+     "value": "Enable control"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "300mV@(200mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C19268157",
+   "mpn": "RT9013-33GB",
+   "brand": "TECH PUBLIC",
+   "description": "-40\u2103~+85\u2103 1 3.3V 500mA 50uVrms 60uA 70dB@(1kHz) 7V Enable Fixed Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 21609,
+   "price": 0.0817,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0817
+    },
+    {
+     "qty": 100,
+     "price": 0.0638
+    },
+    {
+     "qty": 300,
+     "price": 0.055
+    },
+    {
+     "qty": 3000,
+     "price": 0.0483
+    },
+    {
+     "qty": 6000,
+     "price": 0.043
+    },
+    {
+     "qty": 9000,
+     "price": 0.0402
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312011958_TECH-PUBLIC-RT9013-33GB_C19268157.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_tech-public-rt9013-33gb_C19268157.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "70dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "60uA"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "7V"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Features",
+     "value": "Enable control"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "100mV@(100mA)\u3001300mV@(200mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C39846929",
+   "mpn": "RT9013-33GB-JSM",
+   "brand": "JSMSEMI",
+   "description": "-40\u2103~+85\u2103 1 300mV@(100mA)\u3001500mV@(200mA) 400mA 40uA 50uVrms 70dB@(1kHz) 7V Fixed Over Current Protection\u3001Short Circuit Protection\u3001Enable control Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5157,
+   "price": 0.0649,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0649
+    },
+    {
+     "qty": 100,
+     "price": 0.0509
+    },
+    {
+     "qty": 300,
+     "price": 0.0438
+    },
+    {
+     "qty": 3000,
+     "price": 0.0404
+    },
+    {
+     "qty": 6000,
+     "price": 0.0361
+    },
+    {
+     "qty": 9000,
+     "price": 0.034
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2408121414_JSMSEMI-RT9013-33GB-JSM_C39846929.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_jsmsemi-rt9013-33gb-jsm_C39846929.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "70dB@(1kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "40uA"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "7V"
+    },
+    {
+     "name": "Output Current",
+     "value": "400mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Enable control"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "300mV@(100mA)\u3001500mV@(200mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C41381685",
+   "mpn": "HRT9013-33GB",
+   "brand": "HXY MOSFET",
+   "description": "-40\u2103~+85\u2103@(Ta) 1 100mV@(100mA) 3.3V 500mA 50uVrms 75dB@(1kHz) 75uA 7V Fixed Over Current Protection\u3001Short Circuit Protection Positive SOT-23-5L Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SOT-23-5L",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1121,
+   "price": 0.0644,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0644
+    },
+    {
+     "qty": 100,
+     "price": 0.0513
+    },
+    {
+     "qty": 300,
+     "price": 0.0446
+    },
+    {
+     "qty": 3000,
+     "price": 0.0386
+    },
+    {
+     "qty": 6000,
+     "price": 0.0345
+    },
+    {
+     "qty": 9000,
+     "price": 0.0326
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2409121548_HXY-MOSFET-HRT9013-33GB_C41381685.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_hxy-mosfet-hrt9013-33gb_C41381685.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "75dB@(1kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "75uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103@(Ta)"
+    },
+    {
+     "name": "Noise",
+     "value": "50uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "7V"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "100mV@(100mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C3034127",
+   "mpn": "RT9013-33GU5",
+   "brand": "Richtek Tech",
+   "description": "-40\u2103~+85\u2103 1 3.3V 30uVrms 400mV@(500mA) 5.5V 500mA 50dB@(10kHz) 50uA Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive SC-70-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "SC-70-5",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2,
+   "price": 0.3006,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3006
+    },
+    {
+     "qty": 10,
+     "price": 0.2366
+    },
+    {
+     "qty": 30,
+     "price": 0.2093
+    },
+    {
+     "qty": 100,
+     "price": 0.1751
+    },
+    {
+     "qty": 500,
+     "price": 0.1599
+    },
+    {
+     "qty": 1000,
+     "price": 0.1369
+    }
+   ],
+   "min_qty": 44,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206131630_Richtek-Tech-RT9013-33GU5_C3034127.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_richtek-tech-rt9013-33gu5_C3034127.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "50dB@(10kHz)"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "standby current",
+     "value": "50uA"
+    },
+    {
+     "name": "Noise",
+     "value": "30uVrms"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "400mV@(500mA)"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C35082403",
+   "mpn": "RT9013-33PU5",
+   "brand": "Richtek Tech",
+   "description": "SC-70-5 New Arrivals ROHS",
+   "package": "SC-70-5",
+   "category": "New Arrivals",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.0396,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0396
+    },
+    {
+     "qty": 100,
+     "price": 0.0204
+    }
+   ],
+   "min_qty": 443,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 7
+  },
+  {
+   "lcsc": "C3752331",
+   "mpn": "RT9013-33GQW",
+   "brand": "Richtek Tech",
+   "description": "-40\u2103~+85\u2103 1 3.3V 30uVrms 400mV@(500mA) 5.5V 500mA 50dB@(10kHz) 50uA Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive WDFN-6(2x2) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+   "package": "WDFN-6(2x2)",
+   "category": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 0.9998,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.9998
+    },
+    {
+     "qty": 10,
+     "price": 0.9998
+    },
+    {
+     "qty": 12,
+     "price": 0.9998
+    },
+    {
+     "qty": 200,
+     "price": 0.387
+    },
+    {
+     "qty": 500,
+     "price": 0.374
+    },
+    {
+     "qty": 1000,
+     "price": 0.3674
+    }
+   ],
+   "min_qty": 10,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401161504_Richtek-Tech-RT9013-33GQW_C3752331.pdf",
+   "url": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_richtek-tech-rt9013-33gqw_C3752331.html",
+   "attributes": [
+    {
+     "name": "Power Supply Rejection Ratio (PSRR)",
+     "value": "50dB@(10kHz)"
+    },
+    {
+     "name": "standby current",
+     "value": "50uA"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Noise",
+     "value": "30uVrms"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "5.5V"
+    },
+    {
+     "name": "Output Type",
+     "value": "Fixed"
+    },
+    {
+     "name": "Output Current",
+     "value": "500mA"
+    },
+    {
+     "name": "Output Configuration",
+     "value": "Positive"
+    },
+    {
+     "name": "Features",
+     "value": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control"
+    },
+    {
+     "name": "Voltage Dropout",
+     "value": "400mV@(500mA)"
+    },
+    {
+     "name": "Output Voltage",
+     "value": "3.3V"
+    },
+    {
+     "name": "Number of Outputs",
+     "value": "1"
+    }
+   ],
+   "rank": 8
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 3
+}

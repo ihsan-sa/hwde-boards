@@ -1,0 +1,165 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "add_via",
+   "at": [
+    42.7,
+    37.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    43.55,
+    37.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    44.4,
+    37.75
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    42.7,
+    37.75
+   ],
+   "end": [
+    44.4,
+    37.75
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.55,
+    37.75
+   ],
+   "end": [
+    43.55,
+    38.6
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.55,
+    38.6
+   ],
+   "end": [
+    43.55,
+    43.5
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    43.55,
+    43.5
+   ],
+   "end": [
+    44.0,
+    43.95
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    44.0,
+    43.95
+   ],
+   "end": [
+    49.55,
+    43.95
+   ],
+   "width": 0.624,
+   "layer": "B.Cu",
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    45.3,
+    43.95
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    46.15,
+    43.95
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    47.0,
+    43.95
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    47.85,
+    43.95
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    48.7,
+    43.95
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  },
+  {
+   "op": "add_via",
+   "at": [
+    49.55,
+    43.95
+   ],
+   "size": 0.6,
+   "drill": 0.3,
+   "net": "/SPK_L_P"
+  }
+ ]
+}

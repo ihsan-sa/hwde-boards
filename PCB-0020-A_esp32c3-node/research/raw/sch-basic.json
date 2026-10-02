@@ -1,0 +1,78 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "schottky SOD-123",
+ "total": 1,
+ "count": 1,
+ "results": [
+  {
+   "lcsc": "C8598",
+   "mpn": "B5819W SL",
+   "brand": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+   "description": "1A 40V 600mV@1A 9A Independent SOD-123 Schottky Diodes ROHS",
+   "package": "SOD-123",
+   "category": "Schottky Diodes",
+   "type": "Basic",
+   "basic": true,
+   "stock": 513217,
+   "price": 0.028,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.028
+    },
+    {
+     "qty": 200,
+     "price": 0.0218
+    },
+    {
+     "qty": 600,
+     "price": 0.0192
+    },
+    {
+     "qty": 3000,
+     "price": 0.0171
+    },
+    {
+     "qty": 9000,
+     "price": 0.0163
+    },
+    {
+     "qty": 21000,
+     "price": 0.0158
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--B5819W-SL_C8598.pdf",
+   "url": "https://www.lcsc.com/product-detail/schottky-diodes_jiangsu-changjing-electronics-technology-co-ltd-b5819w-sl_C8598.html",
+   "attributes": [
+    {
+     "name": "Voltage - Forward(Vf@If)",
+     "value": "600mV@1A"
+    },
+    {
+     "name": "Non-Repetitive Peak Forward Surge Current",
+     "value": "9A"
+    },
+    {
+     "name": "Voltage - DC Reverse(Vr)",
+     "value": "40V"
+    },
+    {
+     "name": "Diode Configuration",
+     "value": "Standalone"
+    },
+    {
+     "name": "Current - Rectified",
+     "value": "1A"
+    }
+   ],
+   "rank": 0
+  }
+ ],
+ "filters": {
+  "type": "basic"
+ },
+ "placeholders_filtered": 0
+}

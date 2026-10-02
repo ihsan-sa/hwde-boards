@@ -1,0 +1,57 @@
+
+# Coverage checklist for "audio-line-in": a single-ended, AC-coupled line-level
+# source (wire pads, ~1 Vrms) driving a class-D amp's differential input pair
+# through a passive coupling cap on each leg (no op-amp SE-to-diff stage, no
+# volume pot, no other in-path RC). First research pass on this topology - the
+# library holds zero records for it today (stereo-class-d-amp block:B2, TPA3118D2,
+# Zin 60 kOhm at 20 dB, Cin 2.2 uF, 2-layer). Rows are scoped to what this
+# source-interface slot itself decides: no thermal/thermal-via/creepage/
+# sequencing/inrush (those belong to the amplifier IC's own part-level
+# checklist or the power-input block, not this slot).
+id: audio-line-in
+kind: coverage-checklist
+applies:
+  topologies: [audio-line-in]
+requires:
+  - class: diff-pair
+    min_level: topology
+    note: "single-ended source into a differential input pair: which leg carries signal, how the unused leg is AC-grounded, and why both legs need matched impedance"
+  - class: selection
+    min_level: family
+    note: "AC-coupling cap value/type selection: the corner-frequency tradeoff and the RC-vs-power-up-settle tradeoff that trades bass extension for pop risk"
+  - class: return-path
+    min_level: principle
+    note: "ground reference of a low-level analog input on a board that also carries switching return current - where the input's own ground node must land"
+  - class: emi
+    min_level: topology
+    note: "keep-away separation of the high-impedance line-in signal from the class-D switch node / LC filter copper, especially with no inner shield layer to fall back on"
+maturity: draft
+sources:
+  - file: research/sources/tpa3116d2.pdf
+    page: 16
+    note: "SLOS708G sec 7.3.7 Differential Inputs: single-ended AC-ground of the unused input, matched impedance, RC<=1ms power-up guidance"
+  - file: research/sources/tpa3116d2.pdf
+    page: 28
+    note: "sec 10.1 Layout Guidelines: IC GND as central/star ground point"
+  - file: research/sources/slaa719.pdf
+    page: 5
+    note: "Fig 6/text: star-grounding a SE-to-diff input stage's ground nodes fixes channel-to-channel THD+N mismatch caused by ground-plane noise"
+  - file: research/sources/slaa896.pdf
+    page: 5
+    note: "sec 2.4 Figs 4-6: switching nets must not share a layer boundary with another signal unless a ground layer sits between them"
+prose: >
+  Before laying out an audio-line-in block: (1) a single-ended source into a
+  differential amp input needs its unused leg AC-grounded through a cap
+  matched to the signal leg's coupling cap, not left floating or tied
+  straight to ground - impedance symmetry, not just DC blocking, is the
+  point; (2) the coupling cap's value sets both the bass corner AND, via
+  Zin*Cin, a power-up settle time that competes with the amp's own DC-detect/
+  mute-release window - oversizing it for bass extension can reintroduce the
+  pop the cap was meant to avoid; (3) the input's ground reference must land
+  on the amplifier's own quiet/analog ground point by a dedicated trace, not
+  wherever is convenient on the shared power-return pour, because switching
+  current on that pour develops real low-frequency noise between ground
+  points; (4) on a 2-layer board there is no inner shield layer to separate a
+  high-impedance input net from the switch-node/LC-filter copper, so physical
+  distance is the only tool available.
+origin: research:block-audio-line-in-1

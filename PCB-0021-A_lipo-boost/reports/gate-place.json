@@ -1,0 +1,63 @@
+{
+  "script": "gate",
+  "gate": "place",
+  "phase": "P6",
+  "tool": "place",
+  "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "ran": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "passed": [
+      "courtyard",
+      "outline",
+      "edges",
+      "keepouts",
+      "decoupler_distance"
+    ],
+    "failed": [],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0021-A_lipo-boost",
+    "gate": "place",
+    "status": "pass",
+    "attempts": 27,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+      "constraints": "json_canonical:16c042f9c6bbd20f82b7585a9a9ec4f5f369d3965a98ff7dcc97389ccee1f82a",
+      "decoupling": "json_canonical:f36d7d55f7ea2a3eb94aeaf313ab3629477ac1126a051301fcc58f950498ae2d"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+ "script": "fp_verify",
+ "status": "violations",
+ "board": "WIFIM-SMD_ESP32-C3-MINI-1.kicad_mod",
+ "counts": {
+  "total": 2,
+  "by_severity": {
+   "error": 1,
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 2
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "error",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "WIFIM-SMD_ESP32-C3-MINI-1"
+   ],
+   "msg": "copper pad count 61 != datasheet 53",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "copper pad count 61 != datasheet 53",
+     "pos": null
+    }
+   ],
+   "kind": "pad_count",
+   "expected": 53,
+   "measured": 61
+  },
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "WIFIM-SMD_ESP32-C3-MINI-1"
+   ],
+   "msg": "pad size(s) [[0.005, 0.005], [1.45, 1.45]] mm != datasheet [0.4, 0.8] mm (tol 0.1; min/max of 4 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.005, 0.005], [1.45, 1.45]] mm != datasheet [0.4, 0.8] mm (tol 0.1; min/max of 4 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.4,
+    0.8
+   ],
+   "measured_mm": [
+    [
+     0.005,
+     0.005
+    ],
+    [
+     1.45,
+     1.45
+    ]
+   ]
+  }
+ ],
+ "footprint": "WIFIM-SMD_ESP32-C3-MINI-1",
+ "footprint_file": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/WIFIM-SMD_ESP32-C3-MINI-1.kicad_mod",
+ "copper_pads": 61,
+ "total_pads": 61,
+ "measured_pitch_mm": 0.8,
+ "measured_pad_size_mm": [
+  0.4,
+  0.8
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "ESP32-C3-MINI-1 module land pattern (Fig 11-1, p38)",
+  "pad_count": 53,
+  "pad_size_mm": [
+   0.4,
+   0.8
+  ],
+  "courtyard_mm": [
+   13.2,
+   16.6
+  ],
+  "pin1": "1",
+  "notes": "From Fig 11-1 (p38, read visually; unit mm): 48 edge pads 0.4 wide x 0.8 long; 4 corner pads (50-53) 0.7 x 0.7; central EPAD (pin 49, GND) is a 3x3 array of 1.45 x 1.45 square pads with 0.6 gaps (5.4 x 5.4 total, thermal vias shown; pin-1 corner chamfered). Pad-row extents: 11.9 / 11.8 across the bottom/top rows, 9.9 / 9.8 and 11.2 along side columns, 1.6 dimension at pad rows, 0.8 pad length. Overall land+antenna area 13.2 wide x 16.6 tall, of which antenna area is 13.2 x 5.4 (16.6 - 11.2) at the top, plus 0.8 below the pad rows. Pin numbering (Fig 3-1 top view, p10): pins 1-11 left column top to bottom, 12-24 bottom row left to right, 25-35 right column bottom to top, 36-48 top row right to left, 49 center, 50 top-right, 51 bottom-right, 52 bottom-left, 53 top-left corner. Pad pitch is not dimensioned in the figure text; take from the STEP/source file (see OPEN)."
+ },
+ "svg": "PCB-0020-A_esp32c3-node/log/fp_verify/C2838502.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:10:08+00:00",
+ "input": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/WIFIM-SMD_ESP32-C3-MINI-1.kicad_mod",
+ "input_digest": "sexpr_no_uuid:35f7ddcde53275a726776ae366c9b610739798ac8e123a248e1d34d0d54e9b3e"
+}

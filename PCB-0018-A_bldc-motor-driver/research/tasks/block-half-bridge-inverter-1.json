@@ -1,0 +1,124 @@
+{
+ "id": "block-half-bridge-inverter-1",
+ "slot": "block:power_stage",
+ "kind": "block",
+ "token": "half-bridge-inverter",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified_with_drafts",
+ "opened": "2026-09-27T14:31:38",
+ "closed": "2026-09-27T14:55:35",
+ "coverage_report": "log/coverage-P2.json",
+ "gap": {
+  "slot": "block:power_stage",
+  "kind": "block",
+  "topology": "half-bridge-inverter",
+  "operating_point": {
+   "vin_v": 28,
+   "iout_a": 10,
+   "ipeak_a": 20,
+   "fsw_khz": 25,
+   "edge_ns": 50,
+   "pdiss_w": 2.3,
+   "board_layers": 4,
+   "switching_kind": "hard",
+   "rectifier_kind": "sync",
+   "integration_kind": "controller",
+   "source_kind": "dc-input"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'half-bridge-inverter' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'half-bridge-inverter': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/an/slva959b/slva959b.pdf",
+   "final_url": "https://www.ti.com/lit/an/slva959b/slva959b.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": null,
+   "file": "research/sources/slva959b.pdf",
+   "sha256": "89adbce11092779a4c024ea5832c3b3f62ff9c2a153646530dc8847f89c45eb9",
+   "bytes": 2866380,
+   "content_type": "application/pdf",
+   "pages": 36,
+   "fetched": "2026-09-27T14:33:52",
+   "via": "http",
+   "note": null,
+   "deduplicated": true
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/ug/tiduf36a/tiduf36a.pdf",
+   "final_url": "https://www.ti.com/lit/ug/tiduf36a/tiduf36a.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": null,
+   "file": "research/sources/tiduf36a.pdf",
+   "sha256": "1855b9a45799314e6a129bd052f15ff117120628becfa6d66d8969b3adc0210c",
+   "bytes": 1864891,
+   "content_type": "application/pdf",
+   "pages": 21,
+   "fetched": "2026-09-27T14:33:54",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "half-bridge-inverter-leg-hot-loop": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p19,21,22,27,28 SLVA959B text/figs match exactly; p5 TIDUF36A text on C30-C32 10uF/100V decoupling reducing supply-line ringing from sense resistor and power track inductance matches verbatim",
+   "ts": "2026-09-27T14:53:59"
+  },
+  "half-bridge-inverter-switch-node-damping": {
+   "verdict": "refuted",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "envelope vin_v 10-48V is unsupported: tiduf36a.pdf p1/p2 state the design operates 5V to 21V (18V nominal) with 40V-rated FETs (p5); no cited page mentions 48V or a 60V FET class, so the upper bound is an invented extrapolation, not a source-derived scaling limit. Rule content itself (snubber/Rg/loop) matches p26-27 SLVA959B and p5/p17 TIDUF36A verbatim.",
+   "ts": "2026-09-27T14:54:00"
+  },
+  "half-bridge-inverter-thermal-copper-vias": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p8-11 SLVA959B thermal pad/via text and figures match exactly incl 71.4/35.7 C/W and 5.73 C/W via calc; p2,18 TIDUF36A key-spec table and 49.3C/97.1C thermal readings at 10A/33A match exactly",
+   "ts": "2026-09-27T14:54:00"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-half-bridge-inverter-1",
+ "updated": "2026-09-27T14:55:35",
+ "accepted_drafts": [
+  "half-bridge-inverter-switch-node-damping"
+ ],
+ "summary": {
+  "verified": 2,
+  "refuted": 1,
+  "checklists": 1,
+  "sources": 2
+ }
+}

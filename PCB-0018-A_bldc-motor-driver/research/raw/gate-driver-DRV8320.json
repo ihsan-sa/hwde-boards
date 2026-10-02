@@ -1,0 +1,364 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "DRV8320",
+ "total": 8,
+ "count": 4,
+ "results": [
+  {
+   "lcsc": "C701782",
+   "mpn": "DRV8320HRTVR",
+   "brand": "Texas Instruments",
+   "description": "WQFN-32-EP(5x5) Gate Drivers ROHS",
+   "package": "WQFN-32-EP(5x5)",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2714,
+   "price": 2.7559,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.7559
+    },
+    {
+     "qty": 10,
+     "price": 2.4343
+    },
+    {
+     "qty": 30,
+     "price": 2.2703
+    },
+    {
+     "qty": 100,
+     "price": 2.0511
+    },
+    {
+     "qty": 500,
+     "price": 1.9715
+    },
+    {
+     "qty": 1000,
+     "price": 1.939
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121828_Texas-Instruments-DRV8320HRTVR_C701782.pdf",
+   "url": "https://www.lcsc.com/product-detail/brushless-dc-bldc-motor-driver_texas-instruments-drv8320hrtvr_C701782.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Three Phase"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.5V~5.5V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V~60V"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "1A"
+    },
+    {
+     "name": "Features",
+     "value": "Enable shutdown\u3001Interleaved conduction protection\u3001Dead-time control"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "6"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "0V~800mV"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "2A"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2653535",
+   "mpn": "DRV8320SRTVR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 12uA 3 SPI Three Phase WQFN-32-EP(5x5) Gate Drivers ROHS",
+   "package": "WQFN-32-EP(5x5)",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 239,
+   "price": 2.7591,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.7591
+    },
+    {
+     "qty": 10,
+     "price": 2.4376
+    },
+    {
+     "qty": 30,
+     "price": 2.2736
+    },
+    {
+     "qty": 100,
+     "price": 2.0527
+    },
+    {
+     "qty": 500,
+     "price": 1.9748
+    },
+    {
+     "qty": 1000,
+     "price": 1.9406
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://datasheet.lcsc.com/lcsc/2303011630_Texas-Instruments-DRV8320SRTVR_C2653535.pdf",
+   "url": "https://www.lcsc.com/product-detail/motor driver ics_texas instruments_drv8320srtvr_C2653535.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Three Phase"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.5V~5.5V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V~60V"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "1A"
+    },
+    {
+     "name": "Features",
+     "value": "Enable shutdown\u3001Dead-time control\u3001Overcurrent Protection\u3001Charge pump boost"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "6"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "0V~800mV"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "2A"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C2864967",
+   "mpn": "DRV8320HRTVT",
+   "brand": "Texas Instruments",
+   "description": "WQFN-32-EP(5x5) Gate Drivers ROHS",
+   "package": "WQFN-32-EP(5x5)",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 52,
+   "price": 6.6955,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 6.6955
+    },
+    {
+     "qty": 10,
+     "price": 5.9907
+    },
+    {
+     "qty": 30,
+     "price": 5.5409
+    },
+    {
+     "qty": 100,
+     "price": 5.1057
+    },
+    {
+     "qty": 102,
+     "price": 5.1057
+    },
+    {
+     "qty": 104,
+     "price": 5.1057
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010630_Texas-Instruments-DRV8320HRTVT_C2864967.pdf",
+   "url": "https://www.lcsc.com/product-detail/brushless-dc-bldc-motor-driver_texas-instruments-drv8320hrtvt_C2864967.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Three Phase"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.5V~5.5V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V~60V"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "1A"
+    },
+    {
+     "name": "Features",
+     "value": "Enable shutdown\u3001Interleaved conduction protection\u3001Dead-time control\u3001Charge pump boost"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "6"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "0V~800mV"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "2A"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2150620",
+   "mpn": "DRV8320RSRHAR",
+   "brand": "Texas Instruments",
+   "description": "VQFN-40-EP(6x6) Gate Drivers ROHS",
+   "package": "VQFN-40-EP(6x6)",
+   "category": "Gate Drivers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 42,
+   "price": 3.9024,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.9024
+    },
+    {
+     "qty": 10,
+     "price": 3.3616
+    },
+    {
+     "qty": 30,
+     "price": 3.0384
+    },
+    {
+     "qty": 100,
+     "price": 2.7136
+    },
+    {
+     "qty": 500,
+     "price": 2.5626
+    },
+    {
+     "qty": 1000,
+     "price": 2.4944
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302281030_Texas-Instruments-DRV8320RSRHAR_C2150620.pdf",
+   "url": "https://www.lcsc.com/product-detail/brushless-dc-bldc-motor-driver_texas-instruments-drv8320rsrhar_C2150620.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Driven Configuration",
+     "value": "Three Phase"
+    },
+    {
+     "name": "Input Logic Level - High",
+     "value": "1.5V~5.5V"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "6V~60V"
+    },
+    {
+     "name": "Current - Output High(IOH)",
+     "value": "1A"
+    },
+    {
+     "name": "Features",
+     "value": "Enable shutdown\u3001Dead-time control\u3001Overcurrent Protection"
+    },
+    {
+     "name": "Number of Drivers",
+     "value": "6"
+    },
+    {
+     "name": "Load Type",
+     "value": "MOSFET"
+    },
+    {
+     "name": "Input Logic Level - Low",
+     "value": "0V~800mV"
+    },
+    {
+     "name": "Quiescent Current(Iq)",
+     "value": "12uA"
+    },
+    {
+     "name": "Current - Output Low(IOL)",
+     "value": "2A"
+    }
+   ],
+   "rank": 3
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

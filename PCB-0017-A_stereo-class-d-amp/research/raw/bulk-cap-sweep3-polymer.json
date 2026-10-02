@@ -1,0 +1,1020 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "100uF polymer capacitor",
+ "total": 890,
+ "count": 12,
+ "results": [
+  {
+   "lcsc": "C122240",
+   "mpn": "SPZ1VM101E08O00RAXXX",
+   "brand": "AISHI(Aihua Group)",
+   "description": "-55\u2103~+105\u2103 100uF 2.35A@100kHz 2.5mm 2000hrs@105\u2103 35V 50m\u03a9@100kHz 6.3mm 8mm Polarized \u00b120% Plugin,D6.3xL8mm Polymer Aluminum Capacitors ROHS",
+   "package": "Plugin,D6.3xL8mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 174595,
+   "price": 0.1093,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1093
+    },
+    {
+     "qty": 50,
+     "price": 0.0877
+    },
+    {
+     "qty": 150,
+     "price": 0.0765
+    },
+    {
+     "qty": 1000,
+     "price": 0.0674
+    },
+    {
+     "qty": 2000,
+     "price": 0.0642
+    },
+    {
+     "qty": 5000,
+     "price": 0.0621
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151538_AISHI-Aihua-Group-SPZ1VM101E08O00RAXXX_C122240.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_aishi-aihua-group-spz1vm101e08o00raxxx_C122240.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "50m\u03a9@100kHz"
+    },
+    {
+     "name": "Pin Spacing",
+     "value": "2.5mm"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "35V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "8mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.35A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C171434",
+   "mpn": "SPZ1HM101F09O00RAXXX",
+   "brand": "AISHI(Aihua Group)",
+   "description": "-55\u2103~+105\u2103 100uF 2.1A@100kHz 2000hrs@105\u2103 3.5mm 40m\u03a9@100kHz 50V 8mm 9mm Polarized \u00b120% Plugin,D8xL9mm Polymer Aluminum Capacitors ROHS",
+   "package": "Plugin,D8xL9mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 64508,
+   "price": 0.1888,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1888
+    },
+    {
+     "qty": 50,
+     "price": 0.1478
+    },
+    {
+     "qty": 150,
+     "price": 0.1279
+    },
+    {
+     "qty": 500,
+     "price": 0.11
+    },
+    {
+     "qty": 2500,
+     "price": 0.1051
+    },
+    {
+     "qty": 5000,
+     "price": 0.1022
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151432_AISHI-Aihua-Group-SPZ1HM101F09O00RAXXX_C171434.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_aishi-aihua-group-spz1hm101f09o00raxxx_C171434.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "40m\u03a9@100kHz"
+    },
+    {
+     "name": "Pin Spacing",
+     "value": "3.5mm"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "9mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.1A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "8mm"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C320569",
+   "mpn": "SVZ1EM101E06E00RAXXX",
+   "brand": "AISHI(Aihua Group)",
+   "description": "-55\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 6.3mm 6mm \u00b120% SMD,D6.3xL6mm Polymer Aluminum Capacitors ROHS",
+   "package": "SMD,D6.3xL6mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 34785,
+   "price": 0.1814,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1814
+    },
+    {
+     "qty": 50,
+     "price": 0.1462
+    },
+    {
+     "qty": 150,
+     "price": 0.1311
+    },
+    {
+     "qty": 1000,
+     "price": 0.1009
+    },
+    {
+     "qty": 2000,
+     "price": 0.0925
+    },
+    {
+     "qty": 5000,
+     "price": 0.0874
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810261549_AISHI-Aihua-Group-SVZ1EM101E06E00RAXXX_C320569.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_aishi-aihua-group-svz1em101e06e00raxxx_C320569.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "6mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C119026",
+   "mpn": "SPZ1EM101E08O00RAXXX",
+   "brand": "AISHI(Aihua Group)",
+   "description": "-55\u2103~+105\u2103 100uF 2.2A@100kHz 2.5mm 2000hrs@105\u2103 25V 30m\u03a9@100kHz 6.3mm 8mm Polarized \u00b120% Plugin,D6.3xL8mm Polymer Aluminum Capacitors ROHS",
+   "package": "Plugin,D6.3xL8mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 28578,
+   "price": 0.1313,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1313
+    },
+    {
+     "qty": 50,
+     "price": 0.1046
+    },
+    {
+     "qty": 150,
+     "price": 0.0913
+    },
+    {
+     "qty": 1000,
+     "price": 0.0814
+    },
+    {
+     "qty": 2000,
+     "price": 0.0735
+    },
+    {
+     "qty": 5000,
+     "price": 0.0694
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_AISHI-Aihua-Group-SPZ1EM101E08O00RAXXX_C119026.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_aishi-aihua-group-spz1em101e08o00raxxx_C119026.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "30m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Pin Spacing",
+     "value": "2.5mm"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "8mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.2A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C134878",
+   "mpn": "OVZ101M1CTR-0606",
+   "brand": "Lelon",
+   "description": "-55\u2103~+105\u2103 100uF 16V 2.49A@100kHz 2000hrs@105\u2103 5.9mm 6.3mm Polarized \u00b120% SMD,D6.3xL5.9mm Polymer Aluminum Capacitors ROHS",
+   "package": "SMD,D6.3xL5.9mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 21775,
+   "price": 0.1744,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1744
+    },
+    {
+     "qty": 50,
+     "price": 0.1456
+    },
+    {
+     "qty": 150,
+     "price": 0.1311
+    },
+    {
+     "qty": 1000,
+     "price": 0.1063
+    },
+    {
+     "qty": 2000,
+     "price": 0.0976
+    },
+    {
+     "qty": 5000,
+     "price": 0.0933
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Lelon-OVZ101M1CTR-0606_C134878.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_lelon-ovz101m1ctr-0606_C134878.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "16V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "5.9mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.49A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C164071",
+   "mpn": "OVZ101M1ETR-0606",
+   "brand": "Lelon",
+   "description": "-55\u2103~+105\u2103 100uF 2000hrs@105\u2103 25V 5.9mm 6.3mm Polarized \u00b120% SMD,D6.3xL5.9mm Polymer Aluminum Capacitors ROHS",
+   "package": "SMD,D6.3xL5.9mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 18058,
+   "price": 0.2126,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2126
+    },
+    {
+     "qty": 50,
+     "price": 0.1712
+    },
+    {
+     "qty": 150,
+     "price": 0.1535
+    },
+    {
+     "qty": 1000,
+     "price": 0.1186
+    },
+    {
+     "qty": 2000,
+     "price": 0.1089
+    },
+    {
+     "qty": 5000,
+     "price": 0.103
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2212052030_Lelon-OVZ101M1ETR-0606_C164071.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_lelon-ovz101m1etr-0606_C164071.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "25V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "5.9mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C135491",
+   "mpn": "SA11AM101A19R15XXX",
+   "brand": "AISHI(Aihua Group)",
+   "description": "-55\u2103~+105\u2103 100uF 10V 15m\u03a9@100kHz 2.5A@100kHz 2000hrs@105\u2103 4.3mm 7.3mm Polarized \u00b120% SMD,7.3x4.3mm Polymer Aluminum Capacitors ROHS",
+   "package": "SMD,7.3x4.3mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 16650,
+   "price": 0.4872,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.4872
+    },
+    {
+     "qty": 10,
+     "price": 0.3947
+    },
+    {
+     "qty": 30,
+     "price": 0.3557
+    },
+    {
+     "qty": 100,
+     "price": 0.3053
+    },
+    {
+     "qty": 500,
+     "price": 0.2842
+    },
+    {
+     "qty": 1000,
+     "price": 0.2306
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1806121838_AISHI-Aihua-Group-SA11AM101A19R15XXX_C135491.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_aishi-aihua-group-sa11am101a19r15xxx_C135491.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "15m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "10V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.3mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.5A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "4.3mm"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C250083",
+   "mpn": "OVZ101M1CTR-0608",
+   "brand": "Lelon",
+   "description": "-55\u2103~+105\u2103 100uF 16V 2000hrs@105\u2103 6.3mm 7.7mm Polarized \u00b120% SMD,D6.3xL7.7mm Polymer Aluminum Capacitors ROHS",
+   "package": "SMD,D6.3xL7.7mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 15349,
+   "price": 0.2065,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2065
+    },
+    {
+     "qty": 50,
+     "price": 0.1644
+    },
+    {
+     "qty": 150,
+     "price": 0.1464
+    },
+    {
+     "qty": 1000,
+     "price": 0.124
+    },
+    {
+     "qty": 2000,
+     "price": 0.1139
+    },
+    {
+     "qty": 5000,
+     "price": 0.1079
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Lelon-OVZ101M1CTR-0608_C250083.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_lelon-ovz101m1ctr-0608_C250083.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "16V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7.7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C167234",
+   "mpn": "SPV1HM101F11O00RAXXX",
+   "brand": "AISHI(Aihua Group)",
+   "description": "-55\u2103~+125\u2103 1.38A@100kHz 100uF 11mm 2000hrs@125\u2103 3.5mm 42m\u03a9@100kHz 50V 8mm Polarized \u00b120% Plugin,D8xL11mm Polymer Aluminum Capacitors ROHS",
+   "package": "Plugin,D8xL11mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 13735,
+   "price": 0.2165,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2165
+    },
+    {
+     "qty": 50,
+     "price": 0.1733
+    },
+    {
+     "qty": 150,
+     "price": 0.1548
+    },
+    {
+     "qty": 500,
+     "price": 0.1194
+    },
+    {
+     "qty": 2500,
+     "price": 0.1092
+    },
+    {
+     "qty": 5000,
+     "price": 0.103
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810241810_AISHI-Aihua-Group-SPV1HM101F11O00RAXXX_C167234.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_aishi-aihua-group-spv1hm101f11o00raxxx_C167234.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@125\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "42m\u03a9@100kHz"
+    },
+    {
+     "name": "Pin Spacing",
+     "value": "3.5mm"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "11mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "1.38A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "8mm"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C136275",
+   "mpn": "16SVPC100M",
+   "brand": "PANASONIC",
+   "description": "-55\u2103~+105\u2103 100uF 16V 2.49A@100kHz 2000hrs@105\u2103 24m\u03a9@100kHz 5.9mm 6.3mm Polarized Polymer \u00b120% SMD,D6.3xL5.9mm Polymer Aluminum Capacitors ROHS",
+   "package": "SMD,D6.3xL5.9mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 13687,
+   "price": 0.6983,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.6983
+    },
+    {
+     "qty": 10,
+     "price": 0.5376
+    },
+    {
+     "qty": 30,
+     "price": 0.4677
+    },
+    {
+     "qty": 100,
+     "price": 0.3817
+    },
+    {
+     "qty": 500,
+     "price": 0.3427
+    },
+    {
+     "qty": 1000,
+     "price": 0.32
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_PANASONIC-16SVPC100M_C136275.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_panasonic-16svpc100m_C136275.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "Polymer"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "24m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "16V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "5.9mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.49A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 9
+  },
+  {
+   "lcsc": "C122609",
+   "mpn": "SPZ1AM101D07000R",
+   "brand": "AISHI(Aihua Group)",
+   "description": "-55\u2103~+105\u2103 100uF 10V 2.4A@100kHz 2000hrs@105\u2103 2mm 35m\u03a9@100kHz 5mm 7mm Polarized \u00b120% Plugin,D5xL7mm Polymer Aluminum Capacitors ROHS",
+   "package": "Plugin,D5xL7mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 13369,
+   "price": 0.0861,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0861
+    },
+    {
+     "qty": 50,
+     "price": 0.0692
+    },
+    {
+     "qty": 150,
+     "price": 0.0606
+    },
+    {
+     "qty": 1000,
+     "price": 0.0519
+    },
+    {
+     "qty": 2000,
+     "price": 0.0468
+    },
+    {
+     "qty": 5000,
+     "price": 0.0442
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151428_AISHI-Aihua-Group-SPZ1AM101D07000R_C122609.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_aishi-aihua-group-spz1am101d07000r_C122609.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "35m\u03a9@100kHz"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "10V"
+    },
+    {
+     "name": "Pin Spacing",
+     "value": "2mm"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "7mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.4A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "5mm"
+    }
+   ],
+   "rank": 10
+  },
+  {
+   "lcsc": "C190903",
+   "mpn": "PC1C101ME054A00CR0",
+   "brand": "Changzhou Huawei Elec",
+   "description": "-55\u2103~+105\u2103 100uF 16V 2.4A@100kHz 2.5mm 2000hrs@105\u2103 24m\u03a9@100kHz 5.4mm 6.3mm Polarized \u00b120% Plugin,D6.3xL5.4mm Polymer Aluminum Capacitors ROHS",
+   "package": "Plugin,D6.3xL5.4mm",
+   "category": "Polymer Aluminum Capacitors",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8681,
+   "price": 0.1007,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1007
+    },
+    {
+     "qty": 50,
+     "price": 0.0804
+    },
+    {
+     "qty": 150,
+     "price": 0.0704
+    },
+    {
+     "qty": 1000,
+     "price": 0.0627
+    },
+    {
+     "qty": 2000,
+     "price": 0.0567
+    },
+    {
+     "qty": 5000,
+     "price": 0.0536
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Changzhou-Huawei-Elec-PC1C101ME054A00CR0_C190903.pdf",
+   "url": "https://www.lcsc.com/product-detail/polymer-aluminum-capacitors_changzhou-huawei-elec-pc1c101me054a00cr0_C190903.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+105\u2103"
+    },
+    {
+     "name": "Lifetime",
+     "value": "2000hrs@105\u2103"
+    },
+    {
+     "name": "Equivalent Series Resistance(ESR)",
+     "value": "24m\u03a9@100kHz"
+    },
+    {
+     "name": "Pin Spacing",
+     "value": "2.5mm"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "16V"
+    },
+    {
+     "name": "Height - Seated (Max)",
+     "value": "5.4mm"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b120%"
+    },
+    {
+     "name": "Polarity type",
+     "value": "Polarized"
+    },
+    {
+     "name": "Capacitance",
+     "value": "100uF"
+    },
+    {
+     "name": "Ripple Current",
+     "value": "2.4A@100kHz"
+    },
+    {
+     "name": "Diameter",
+     "value": "6.3mm"
+    }
+   ],
+   "rank": 11
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

@@ -1,0 +1,245 @@
+{
+  "_comment": "PCB-0017-A astra-amp P2 merged constraint set (architect). Sources: research/power.json (power + thermal, wins on currents: 4 A in / 3 A out over requirements Q6's provisional 3 A), research/refdesign-amp.json (tie table, decoupling tiers, filter values), component-scout fragments (footprint sizes), state.json decisions (override research: TPA3118D2DAPR pad-down, 2 oz, no snubber, 10 uF in 0805, no protection). Prose in architecture/*.md. Canonical net names per architecture/sheets.md: bare +12V and GND; every other net is a root-sheet local label with a leading '/'.",
+
+  "power": [
+    {
+      "net": "+12V",
+      "current_a": 4.0,
+      "dt_c": 20,
+      "via_amps": 0.5,
+      "_basis": "both channels clipping into 4 ohm at 13.2 V, 10 % THD (power.md table 3); 0.88 mm at 2 oz / dT 20 - draw >= 1.0 mm; >= 8 vias per layer change"
+    },
+    {
+      "net": "GND",
+      "current_a": 4.0,
+      "dt_c": 20,
+      "via_amps": 0.5,
+      "plane_fed": true,
+      "pdn": false,
+      "_basis": "return of the +12V budget on the B.Cu pour (plane_fed: no zone fill on GND = plane_missing error, the one gate that can enforce the heat spreader's existence at P7); pdn false because GND is a return, not a rail"
+    },
+    {"net": "/OUTPL", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false,
+     "_note": "the eight output nets: 3.1 A peak / 2.4 A rms at 13.2 V into 4 ohm (power.md table 3); 0.62 mm at 2 oz / dT 20 - draw >= 0.8 mm; >= 6 vias per layer change; the four /OUT* switch nodes stay on F.Cu, short and symmetric per channel"},
+    {"net": "/OUTNL", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/OUTPR", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/OUTNR", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/SPK_L_P", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/SPK_L_N", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/SPK_R_P", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false},
+    {"net": "/SPK_R_N", "current_a": 3.0, "dt_c": 20, "via_amps": 0.5, "pdn": false}
+  ],
+
+  "diff_pairs": [],
+  "_diff_pairs_why": "EXPLICIT empty list: auto-discovery would pair /SPK_L_P with /SPK_L_N (and _R_) as controlled-impedance differential pairs and demand gap/skew/coupling, which is the wrong frame for a 400 kHz BTL speaker output. What these nets need is per-channel SYMMETRY and minimum loop area (refdesign decision 13), which is a placement/routing rule (placement.groups filter_l / filter_r) not a diff-pair rule.",
+
+  "voltages": [
+    {"net": "+12V", "voltage": 13.2}
+  ],
+  "_voltages_why": "nothing on the board exceeds 13.2 V (BTL outputs swing 0..PVCC); listed so check_creepage has the rail's ceiling on record; no pair is > 30 V apart, so no aiee_hv rule is expected",
+
+  "coating": "soldermask",
+
+  "thermal": [
+    {
+      "ref": "U1",
+      "net": "GND",
+      "power_w": 1.5,
+      "dt_c": 85,
+      "min_vias": 15,
+      "_power_basis": "design point: 8 ohm full power at 13.2 V / 10 % THD = 1.5 W; 4 ohm music 0.8 W. Sustained 4 ohm full-power sine (3.0-4.2 W) is recorded NOT a requirement (state.json P1 decision) and is left to the 150 C thermal shutdown, self-clearing via the FAULTZ-SDZ tie",
+      "_dt_basis": "Ta 40 C, Tj <= 125 C (10 C under the lowest OT trip) -> 85 C rise -> RthJA <= 56.7 C/W. power.md EST ~30 C/W for 44x34 mm two-sided 2 oz with the pad-down DAP; TI measured 22 C/W on its 2-layer EVM copper with no heatsink (SLOS708G 6.4). check_thermal's 2-layer screen floors at 73.8 C/W and will model a 111 C rise: waive at P8 against those two vendor numbers, never by lowering these",
+      "_min_vias_basis": "power.md section 4 (TI SLMA002 practice): 0.3 mm drill / 0.6 mm pad at ~1.1 mm pitch across the exposed pad (3.04 x 3.74 mm max) and the mask-covered thermal land P3 extends it to, plus stitching at GND pins 9/22/25/28; check_thermal counts GND vias within ~6.5 mm of U1's centroid, so the pin-ring vias count. Solid zone connection, no thermal relief. The check's own default would be ceil(hull_area/1.21) capped at 36 - too many for a 3 x 4 mm pad, hence explicit"
+    }
+  ],
+
+  "planes": [
+    {"layer": "B.Cu", "net": "GND", "_why": "the default 2-layer pour, declared so its role is explicit: 4 A return AND the heat spreader; must be uncut by any track within a >= 25 x 25 mm square centred on U1 (the 645 mm2 the thermal screen saturates at)"},
+    {"layer": "F.Cu", "net": "GND", "connect": "solid", "_why": "top GND pour merging the PowerPAD land, GND pins 9/22/25/28, the decoupling and filter-cap returns and TP1; connect solid so the PowerPAD and GND pins get no thermal relief (SLMA002 2.4). Accepted on the small GND pads too, for the thermal benefit"}
+  ],
+
+  "placement": {
+    "edges": [
+      {"ref": "J2", "edge": "left", "pos": 0.5, "_why": "line in faces U1's pin 1-16 side (RINP/RINN pins 4/5 upper, LINP/LINN 10/11 lower); pads ordered R, GND, L top to bottom"},
+      {"ref": "J4", "edge": "right", "pos": 0.25, "_why": "right speaker: OUTNR/OUTPR are pins 27/29, the upper half of the pin 17-32 side"},
+      {"ref": "J3", "edge": "right", "pos": 0.75, "_why": "left speaker: OUTNL/OUTPL are pins 21/23, the lower half"},
+      {"ref": "J1", "edge": "top", "pos": 0.75, "_why": "12 V in lands beside C13 at PVCC 31/32 (top-right of U1 at rot 0); the trunk to PVCC 18/19 runs along the right/bottom edge outside the LC filters, never across the output tracks or the thermal square"},
+      {"ref": "TP1", "edge": "bottom", "pos": 0.15, "_why": "GND probe pad on the quiet input corner, out of the power path"}
+    ],
+    "groups": [
+      {"name": "u1_decouple", "anchor": "U1", "members": ["C5", "C6", "C7", "C8", "C9", "C10", "C11", "C12", "C15", "C16", "C17", "C18"],
+       "_why": "1 nF / 100 nF / 10 uF at each PVCC pair nearest the pins in that order, AVCC 100 nF at pin 17, GVDD 1 uF at pin 7, each bootstrap cap tight to its own BSxx/OUTxx pin pair"},
+      {"name": "u1_bulk", "anchor": "U1", "members": ["C13", "C14"],
+       "_why": "one 100 uF per PVCC pair, between J1 and the pins so the input current passes their pads first (power.md section 8); tallest parts on the board"},
+      {"name": "u1_config", "anchor": "U1", "members": ["R1", "R2", "R3", "C1", "C2", "C3", "C4"],
+       "_why": "gain leg, pull-up/down and the four 2.2 uF input caps live on the pin 1-16 side; the high-Z nodes /LINP /LINN /RINP /RINN stay short"},
+      {"name": "filter_l", "anchor": "L1", "members": ["L2", "C19", "C20", "R4", "R5", "C23", "C24"],
+       "_why": "left-channel LC + damping as one symmetric cluster between pins 21/23 and J3; filter caps return to the GND pour close to U1's GND pins"},
+      {"name": "filter_r", "anchor": "L3", "members": ["L4", "C21", "C22", "R6", "R7", "C25", "C26"],
+       "_why": "right-channel mirror of filter_l between pins 27/29 and J4"},
+      {"name": "j1_tvs", "anchor": "J1", "members": ["D1"],
+       "_why": "SMBJ15A across +12V/GND at the input pads (schematic review W1): the clamp sits before the bulk caps and U1, shortest loop to J1's GND pad"}
+    ],
+    "separation": [
+      {"a": ["C1", "C2", "C3", "C4", "R1"], "b": ["L1", "L2", "L3", "L4"], "min_mm": 10,
+       "reason": "60 kOhm input nodes and the gain-set node away from the four switching inductors' fields"}
+    ],
+    "corridors": [
+      {"a": "U1", "b": "J3", "width_mm": 4.0, "net": "/OUTPL", "reason": "left output path U1 -> L1/L2 -> J3 stays straight and short (the filter parts are its own members and are meant to sit in it)"},
+      {"a": "U1", "b": "J4", "width_mm": 4.0, "net": "/OUTPR", "reason": "right output path, mirror"}
+    ],
+    "sides": [
+      {"ref": "U1", "side": "front", "reason": "single-sided JLC PCBA (Q11); PowerPAD lands on the F.Cu GND pour and the via array drops to B.Cu"},
+      {"ref": "L1", "side": "front", "reason": "single-sided top assembly; B.Cu is kept part-free as heat spreader"},
+      {"ref": "L2", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "L3", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "L4", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C13", "side": "front", "reason": "single-sided top assembly; 6 mm tall bulk cap"},
+      {"ref": "C14", "side": "front", "reason": "single-sided top assembly; 5.4 mm tall bulk cap"},
+      {"ref": "C1", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C2", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C3", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C4", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C5", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C6", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C7", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C8", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C9", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C10", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C11", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C12", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C15", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C16", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C17", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C18", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C19", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C20", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C21", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C22", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C23", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C24", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C25", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "C26", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "R1", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "R2", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "R3", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "R4", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "R5", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "R6", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "R7", "side": "front", "reason": "single-sided top assembly"},
+      {"ref": "J1", "side": "front", "reason": "wire pads soldered from the top"},
+      {"ref": "J2", "side": "front", "reason": "wire pads soldered from the top"},
+      {"ref": "J3", "side": "front", "reason": "wire pads soldered from the top"},
+      {"ref": "J4", "side": "front", "reason": "wire pads soldered from the top"},
+      {"ref": "TP1", "side": "front", "reason": "probe pad on the component side"}
+    ]
+  },
+
+  "blocks": [
+    {
+      "topology": "dc-input",
+      "block": "B1",
+      "name": "J1 wire-pad 12 V input, 2 x 100 uF bulk (polymer + electrolytic), no protection",
+      "operating_point": {
+        "vin_v": 12,
+        "vin_min_v": 10.8,
+        "vin_max_v": 13.2,
+        "iin_a": 4.0,
+        "cbulk_uf": 200,
+        "esr_bulk_mohm": 30,
+        "hotplug_ring_v_max": 26,
+        "vabs_max_v": 30,
+        "board_layers": 2,
+        "copper_oz": 2,
+        "source_kind": "dc-input",
+        "connector_kind": "wire-pad",
+        "protection_kind": "none",
+        "bulk_kind": "polymer-plus-electrolytic"
+      },
+      "_dims_why": "vin corners bound the cap ratings and the OV trip margin; iin_a sizes the trunk and J1 pads; cbulk/esr and hotplug ring are what a future inrush/ringing record would test; protection_kind none is the recorded Q7 risk"
+    },
+    {
+      "topology": "audio-line-in",
+      "block": "B2",
+      "name": "J2 stereo single-ended line input, 2.2 uF X7R AC coupling into 60 kOhm",
+      "operating_point": {
+        "vin_vrms": 1.0,
+        "zin_kohm": 60,
+        "cin_uf": 2.2,
+        "f_corner_hz": 1.2,
+        "vbias_v": 3.0,
+        "board_layers": 2,
+        "input_kind": "single-ended",
+        "coupling_kind": "ac-ceramic",
+        "source_kind": "line-level"
+      },
+      "_dims_why": "corner and bias set the coupling-cap value/rating and the start-up DC-detect behaviour; single-ended with the inverting input capacitively grounded is the datasheet's own arrangement"
+    },
+    {
+      "topology": "class-d-amp",
+      "block": "B3",
+      "name": "U1 TPA3118D2DAPR stereo BTL class-D, BD mode 400 kHz, 20 dB master, PowerPAD down",
+      "operating_point": {
+        "vin_v": 12,
+        "vin_min_v": 10.8,
+        "vin_max_v": 13.2,
+        "iin_a": 4.0,
+        "iout_a": 3.0,
+        "pout_w_per_ch_4ohm": 15.6,
+        "pout_w_per_ch_8ohm": 8.4,
+        "rload_ohm_min": 4,
+        "rload_ohm_typ": 8,
+        "fsw_khz": 400,
+        "edge_ns": 15,
+        "gain_db": 20,
+        "pdiss_w": 1.5,
+        "pdiss_max_w": 4.2,
+        "ta_c": 40,
+        "tj_max_c": 125,
+        "rth_ja_target_cw": 56.7,
+        "rds_on_mohm": 120,
+        "channels": 2,
+        "board_layers": 2,
+        "copper_oz": 2,
+        "switching_kind": "hard",
+        "integration_kind": "integrated-fet",
+        "output_kind": "btl",
+        "modulation_kind": "bd",
+        "package_kind": "powerpad-down",
+        "cooling_kind": "natural-convection",
+        "source_kind": "dc-input",
+        "limit_kind": "none",
+        "fault_kind": "self-clearing"
+      },
+      "_dims_why": "vin corners + rload set output power, current and dissipation; fsw/edge set the switch-node loop and bootstrap/decoupling rules; pdiss/ta/tj/rth/board_layers/copper_oz are what every thermal rule is stated against; package_kind powerpad-down is the recorded deviation that makes copper cooling possible; modulation bd and channels 2 bound the ripple and the two-PVCC-pair decoupling scheme; limit_kind none = PLIMIT tied to GVDD; fault_kind self-clearing = FAULTZ tied to SDZ"
+    },
+    {
+      "topology": "lc-output-filter",
+      "block": "B4",
+      "name": "L1-L4 10 uH + 680 nF second-order output filters with 3.3R + 10 nF damping, one per BTL leg",
+      "operating_point": {
+        "l_uh": 10,
+        "c_nf": 680,
+        "f0_khz": 61,
+        "fsw_khz": 400,
+        "rload_ohm_min": 4,
+        "rload_ohm_typ": 8,
+        "iout_a": 3.0,
+        "il_pk_a": 3.5,
+        "isat_min_a": 4.0,
+        "ioc_trip_a": 7.5,
+        "l_min_at_trip_uh": 1.0,
+        "dcr_mohm": 66,
+        "damping_r_ohm": 3.3,
+        "damping_c_nf": 10,
+        "inductor_body_mm": 7.3,
+        "board_layers": 2,
+        "copper_oz": 2,
+        "filter_kind": "lc-second-order",
+        "damping_kind": "zobel-rc",
+        "inductor_kind": "shielded-power",
+        "output_kind": "btl"
+      },
+      "_dims_why": "l/c/f0 vs fsw is the ripple-attenuation rule; il_pk/isat/ioc trip/l_min are the inductor selection rule (must keep >= 1 uH at the 7.5 A overcurrent trip); rload range is why the damping branch exists; inductor_body_mm is the board's size driver"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+ "script": "place_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 7,
+ "verified": true,
+ "results": [
+  {
+   "ref": "L1",
+   "x": 40.5,
+   "y": 36.4,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "L2",
+   "x": 50.1,
+   "y": 36.4,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C19",
+   "x": 40.5,
+   "y": 41.4,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "R4",
+   "x": 43.9,
+   "y": 41.4,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C23",
+   "x": 46.3,
+   "y": 41.4,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "R5",
+   "x": 50.5,
+   "y": 40.7,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  },
+  {
+   "ref": "C24",
+   "x": 50.5,
+   "y": 42.3,
+   "deg": 0.0,
+   "side": "front",
+   "locked": false
+  }
+ ],
+ "routed_board": true,
+ "warnings": [
+  "footprint ops applied on a routed board (--allow-routed): re-run the drc_routed gate"
+ ]
+}

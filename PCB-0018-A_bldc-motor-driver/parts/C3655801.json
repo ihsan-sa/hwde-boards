@@ -1,0 +1,288 @@
+{
+ "mpn": "DRV8300DRGER",
+ "lcsc": "C3655801",
+ "package": "VQFN-24 (RGE0024B, 4x4mm, exposed thermal pad)",
+ "description": "100-V three-phase BLDC gate driver, DRV8300D variant with integrated bootstrap diodes, VQFN-24 with adjustable deadtime (DT pin) and MODE pin.",
+ "pinout": [
+  {
+   "pin": "1",
+   "name": "INLA",
+   "type": "input",
+   "notes": "Low-side gate driver control input for phase A."
+  },
+  {
+   "pin": "2",
+   "name": "INLB",
+   "type": "input",
+   "notes": "Low-side gate driver control input for phase B."
+  },
+  {
+   "pin": "3",
+   "name": "INLC",
+   "type": "input",
+   "notes": "Low-side gate driver control input for phase C."
+  },
+  {
+   "pin": "4",
+   "name": "GVDD",
+   "type": "power_in",
+   "notes": "Gate driver power supply input. Connect an X5R or X7R, GVDD-rated ceramic >=10uF local capacitance between GVDD and GND."
+  },
+  {
+   "pin": "5",
+   "name": "MODE",
+   "type": "input",
+   "notes": "Controls GLx polarity vs INLx: floating = non-inverted, tied to GVDD = inverted."
+  },
+  {
+   "pin": "6",
+   "name": "GND",
+   "type": "ground",
+   "notes": "Device ground."
+  },
+  {
+   "pin": "7",
+   "name": "NC",
+   "type": "nc",
+   "notes": "No internal connection; can float or tie to system ground."
+  },
+  {
+   "pin": "8",
+   "name": "NC",
+   "type": "nc",
+   "notes": "No internal connection; can float or tie to system ground."
+  },
+  {
+   "pin": "9",
+   "name": "GLC",
+   "type": "output",
+   "notes": "Low-side gate driver output, phase C. Connect to low-side MOSFET gate."
+  },
+  {
+   "pin": "10",
+   "name": "GLB",
+   "type": "output",
+   "notes": "Low-side gate driver output, phase B. Connect to low-side MOSFET gate."
+  },
+  {
+   "pin": "11",
+   "name": "GLA",
+   "type": "output",
+   "notes": "Low-side gate driver output, phase A. Connect to low-side MOSFET gate."
+  },
+  {
+   "pin": "12",
+   "name": "SHC",
+   "type": "input",
+   "notes": "High-side source sense input, phase C. Connect to high-side MOSFET source."
+  },
+  {
+   "pin": "13",
+   "name": "GHC",
+   "type": "output",
+   "notes": "High-side gate driver output, phase C. Connect to high-side MOSFET gate."
+  },
+  {
+   "pin": "14",
+   "name": "BSTC",
+   "type": "output",
+   "notes": "Bootstrap output, phase C. Connect capacitor between BSTC and SHC."
+  },
+  {
+   "pin": "15",
+   "name": "SHB",
+   "type": "input",
+   "notes": "High-side source sense input, phase B. Connect to high-side MOSFET source."
+  },
+  {
+   "pin": "16",
+   "name": "GHB",
+   "type": "output",
+   "notes": "High-side gate driver output, phase B. Connect to high-side MOSFET gate."
+  },
+  {
+   "pin": "17",
+   "name": "BSTB",
+   "type": "output",
+   "notes": "Bootstrap output, phase B. Connect capacitor between BSTB and SHB."
+  },
+  {
+   "pin": "18",
+   "name": "SHA",
+   "type": "input",
+   "notes": "High-side source sense input, phase A. Connect to high-side MOSFET source."
+  },
+  {
+   "pin": "19",
+   "name": "GHA",
+   "type": "output",
+   "notes": "High-side gate driver output, phase A. Connect to high-side MOSFET gate."
+  },
+  {
+   "pin": "20",
+   "name": "BSTA",
+   "type": "output",
+   "notes": "Bootstrap output, phase A. Connect capacitor between BSTA and SHA."
+  },
+  {
+   "pin": "21",
+   "name": "DT",
+   "type": "input",
+   "notes": "Deadtime input. Resistor to GND sets variable deadtime; floating gives fixed deadtime (QFN variant only)."
+  },
+  {
+   "pin": "22",
+   "name": "INHA",
+   "type": "input",
+   "notes": "High-side gate driver control input, phase A."
+  },
+  {
+   "pin": "23",
+   "name": "INHB",
+   "type": "input",
+   "notes": "High-side gate driver control input, phase B."
+  },
+  {
+   "pin": "24",
+   "name": "INHC",
+   "type": "input",
+   "notes": "High-side gate driver control input, phase C."
+  },
+  {
+   "pin": "25",
+   "name": "PowerPAD",
+   "type": "passive",
+   "notes": "Exposed thermal pad. Datasheet states it must be soldered to the PCB for thermal and mechanical performance; net connection (e.g. to GND) is not stated in the text extracted here."
+  }
+ ],
+ "decoupling": [
+  {
+   "pins": [
+    "GVDD",
+    "GND"
+   ],
+   "value": ">=10uF, X5R or X7R ceramic, GVDD-rated",
+   "placement": "local, close to the device",
+   "notes": "Low ESR/ESL capacitor required to support high peak currents drawn from GVDD during external MOSFET turn-on."
+  },
+  {
+   "pins": [
+    "BSTA",
+    "SHA"
+   ],
+   "value": "CBOOT >= 1uF (DRV8300D/DRV8300DI)",
+   "placement": "close to device, per-phase",
+   "notes": "Bootstrap capacitor between BSTx and SHx; low ESR/ESL, sized to support high peak turn-on currents. Repeat per phase (BSTB-SHB, BSTC-SHC)."
+  },
+  {
+   "pins": [
+    "BSTB",
+    "SHB"
+   ],
+   "value": "CBOOT >= 1uF (DRV8300D/DRV8300DI)",
+   "placement": "close to device, per-phase",
+   "notes": "Same bootstrap capacitor requirement as BSTA-SHA."
+  },
+  {
+   "pins": [
+    "BSTC",
+    "SHC"
+   ],
+   "value": "CBOOT >= 1uF (DRV8300D/DRV8300DI)",
+   "placement": "close to device, per-phase",
+   "notes": "Same bootstrap capacitor requirement as BSTA-SHA."
+  }
+ ],
+ "land_pattern": {
+  "package": "RGE0024B, VQFN 24-pin, 1mm max height, 4.0mm x 4.0mm body",
+  "pad_count": 25,
+  "pitch_mm": 0.5,
+  "pad_size_mm": [
+   0.25,
+   0.6
+  ],
+  "pin1": "1",
+  "notes": "Perimeter pads 24x(0.25 x 0.6mm) at 0.5mm pitch on a 3.8mm x 3.8mm span (IPC land pattern, non-solder-mask-defined preferred). Exposed thermal pad is pad 25, nominal 2.45mm square (package outline), with an optional 20x via array (0.5mm pitch) under the pad per TI's example board layout; TI recommends vias under paste be filled, plugged, or tented. pad_count counts the exposed pad (pad 25), as the footprint does."
+ },
+ "exposed_pad": {
+  "present": true,
+  "thermal_vias": 20
+ },
+ "layout_notes": [
+  "Low ESR/ESL capacitors must be connected close to the device between GVDD/GND and between each BSTx/SHx pair to support high peak currents during external MOSFET turn-on.",
+  "A low ESR electrolytic capacitor plus a good-quality ceramic capacitor should be connected between the high-side MOSFET drain and ground to limit voltage transients.",
+  "Minimize parasitic inductance between high-side and low-side MOSFET sources to avoid large negative SHx transients.",
+  "Minimize trace length and via count on GHx, SHx, GLx connections; minimum 10 mil, typical 15 mil trace width recommended.",
+  "Place the DT resistor to GND as close as possible to the device.",
+  "Place the gate driver as close to the MOSFETs as possible to confine high peak gate charge/discharge currents to a minimal area, reducing loop inductance and gate-terminal noise.",
+  "On QFN package variants, NC pins (7, 8) can be tied to GND to increase the ground connection between the thermal pad and the external ground plane.",
+  "The exposed thermal pad must be soldered to the PCB for thermal and mechanical performance (package outline note); vias under the pad are optional per application."
+ ],
+ "abs_max": [
+  {
+   "param": "GVDD",
+   "value": "-0.3 to 21.5",
+   "unit": "V"
+  },
+  {
+   "param": "BSTx",
+   "value": "-0.3 to 125",
+   "unit": "V"
+  },
+  {
+   "param": "BSTx with respect to SHx",
+   "value": "-0.3 to 21.5",
+   "unit": "V"
+  },
+  {
+   "param": "INHx, INLx, MODE, DT",
+   "value": "-0.3 to VGVDD+0.3",
+   "unit": "V"
+  },
+  {
+   "param": "GHx",
+   "value": "-22 to 125",
+   "unit": "V"
+  },
+  {
+   "param": "GHx with respect to SHx",
+   "value": "-0.3 to 22",
+   "unit": "V"
+  },
+  {
+   "param": "GHx with respect to SHx (500ns transient)",
+   "value": "-5 to 22",
+   "unit": "V"
+  },
+  {
+   "param": "GLx",
+   "value": "-0.3 to VGVDD+0.3",
+   "unit": "V"
+  },
+  {
+   "param": "GLx (500ns transient)",
+   "value": "-5 to VGVDD+0.3",
+   "unit": "V"
+  },
+  {
+   "param": "SHx",
+   "value": "-22 to 110",
+   "unit": "V"
+  },
+  {
+   "param": "TA (ambient)",
+   "value": "-40 to 125",
+   "unit": "C"
+  },
+  {
+   "param": "TJ (junction)",
+   "value": "-40 to 150",
+   "unit": "C"
+  },
+  {
+   "param": "Tstg (storage)",
+   "value": "-65 to 150",
+   "unit": "C"
+  }
+ ]
+}

@@ -1,0 +1,532 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "INA240",
+ "total": 30,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C2060769",
+   "mpn": "INA240A1DR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 -4V~80V 1 1.8mA 132dB 2.7V~5.5V 20V/V 250nV/\u2103 2V/us 400kHz 40nV/\u221aHz@1kHz 5uV 90uA Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface \u00b180V SOIC-8 Current Sense Amplifiers ROHS",
+   "package": "SOIC-8",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 27297,
+   "price": 0.9013,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.9013
+    },
+    {
+     "qty": 10,
+     "price": 0.7877
+    },
+    {
+     "qty": 30,
+     "price": 0.6821
+    },
+    {
+     "qty": 100,
+     "price": 0.6042
+    },
+    {
+     "qty": 500,
+     "price": 0.5717
+    },
+    {
+     "qty": 1000,
+     "price": 0.5554
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309191425_Texas-Instruments-INA240A1DR_C2060769.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina240a1dr_C2060769.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "5uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "250nV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "132dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b180V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-4V~80V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "400kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "1.8mA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "90uA"
+    },
+    {
+     "name": "Gain",
+     "value": "20V/V"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C129949",
+   "mpn": "INA240A2PWR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 -4V~80V 1 1.8mA 132dB 2.7V~5.5V 250nV/\u2103 2V/us 400kHz 40nV/\u221aHz@1kHz 50V/V 5uV 90uA Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface \u00b180V TSSOP-8 Current Sense Amplifiers ROHS",
+   "package": "TSSOP-8",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10459,
+   "price": 2.4863,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.4863
+    },
+    {
+     "qty": 10,
+     "price": 2.0673
+    },
+    {
+     "qty": 30,
+     "price": 1.7101
+    },
+    {
+     "qty": 100,
+     "price": 1.4421
+    },
+    {
+     "qty": 500,
+     "price": 1.3203
+    },
+    {
+     "qty": 1000,
+     "price": 1.2683
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809301212_Texas-Instruments-INA240A2PWR_C129949.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina240a2pwr_C129949.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "5uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "250nV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "132dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b180V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-4V~80V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "400kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "1.8mA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "90uA"
+    },
+    {
+     "name": "Gain",
+     "value": "50V/V"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C93965",
+   "mpn": "INA240A1PWR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 -4V~80V 1 1.8mA 132dB 2.7V~5.5V 20V/V 250nV/\u2103 2V/us 400kHz 40nV/\u221aHz@1kHz 5uV 90uA Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface \u00b180V TSSOP-8 Current Sense Amplifiers ROHS",
+   "package": "TSSOP-8",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7617,
+   "price": 2.4798,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.4798
+    },
+    {
+     "qty": 10,
+     "price": 2.2589
+    },
+    {
+     "qty": 30,
+     "price": 2.103
+    },
+    {
+     "qty": 100,
+     "price": 1.9601
+    },
+    {
+     "qty": 500,
+     "price": 1.8952
+    },
+    {
+     "qty": 1000,
+     "price": 1.8676
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811151432_Texas-Instruments-INA240A1PWR_C93965.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina240a1pwr_C93965.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "5uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "250nV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "132dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b180V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-4V~80V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "400kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "1.8mA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "90uA"
+    },
+    {
+     "name": "Gain",
+     "value": "20V/V"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2060768",
+   "mpn": "INA240A2DR",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 -4V~80V 1 1.8mA 132dB 2.7V~5.5V 250nV/\u2103 2V/us 400kHz 40nV/\u221aHz@1kHz 50V/V 5uV 90uA Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface \u00b180V SOIC-8 Current Sense Amplifiers ROHS",
+   "package": "SOIC-8",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6989,
+   "price": 1.7425,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.7425
+    },
+    {
+     "qty": 10,
+     "price": 1.4502
+    },
+    {
+     "qty": 30,
+     "price": 1.2895
+    },
+    {
+     "qty": 100,
+     "price": 1.1076
+    },
+    {
+     "qty": 500,
+     "price": 1.028
+    },
+    {
+     "qty": 1000,
+     "price": 0.9906
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Texas-Instruments-INA240A2DR_C2060768.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina240a2dr_C2060768.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "5uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "250nV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "132dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b180V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-4V~80V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "400kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "1.8mA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "90uA"
+    },
+    {
+     "name": "Gain",
+     "value": "50V/V"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C1346458",
+   "mpn": "INA240A1D",
+   "brand": "Texas Instruments",
+   "description": "-40\u2103~+125\u2103 -4V~80V 1 1.8mA 132dB 2.7V~5.5V 20V/V 250nV/\u2103 2V/us 400kHz 40nV/\u221aHz@1kHz 5uV 90uA Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface\u3001External shunt \u00b180V SOIC-8 Current Sense Amplifiers ROHS",
+   "package": "SOIC-8",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2049,
+   "price": 1.7604,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.7604
+    },
+    {
+     "qty": 10,
+     "price": 1.4859
+    },
+    {
+     "qty": 30,
+     "price": 1.3349
+    },
+    {
+     "qty": 75,
+     "price": 1.1644
+    },
+    {
+     "qty": 525,
+     "price": 1.0881
+    },
+    {
+     "qty": 975,
+     "price": 1.054
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309180905_Texas-Instruments-INA240A1D_C1346458.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina240a1d_C1346458.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "5uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "250nV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "2.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "2V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "132dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b180V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-4V~80V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "400kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "40nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "1.8mA"
+    },
+    {
+     "name": "Features",
+     "value": "Bidirectional detection\u3001Zero drift / auto-zero\u3001Programmable output reference level\u3001Analog output interface\u3001External shunt"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "90uA"
+    },
+    {
+     "name": "Gain",
+     "value": "20V/V"
+    }
+   ],
+   "rank": 4
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

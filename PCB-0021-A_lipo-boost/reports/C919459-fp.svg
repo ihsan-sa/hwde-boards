@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="118" viewBox="0 0 104 118">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10.0" y="16" font-family="monospace" font-size="12" fill="black">SOT-563_L1.6-W1.2-P0.50-LS1.6-BR: 6 pads (datasheet 6), pitch/size from datasheet 0.5mm</text>
+<text x="10.0" y="32" font-family="monospace" font-size="11" fill="#080">all pads within tolerance</text>
+<polygon points="34.0,76.0 34.0,88.0 10.0,88.0 10.0,76.0" fill="#cfe0f8" stroke="#20509a" stroke-width="1"/>
+<text x="22.0" y="82.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="22.0" y="93.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.3x0.6</text>
+<polygon points="94.0,76.0 94.0,88.0 70.0,88.0 70.0,76.0" fill="#cfe0f8" stroke="#20509a" stroke-width="1"/>
+<text x="82.0" y="82.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="82.0" y="93.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.3x0.6</text>
+<polygon points="94.0,56.0 94.0,68.0 70.0,68.0 70.0,56.0" fill="#cfe0f8" stroke="#20509a" stroke-width="1"/>
+<text x="82.0" y="62.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="82.0" y="73.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.3x0.6</text>
+<polygon points="94.0,96.0 94.0,108.0 70.0,108.0 70.0,96.0" fill="#cfe0f8" stroke="#20509a" stroke-width="1"/>
+<text x="82.0" y="102.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="82.0" y="113.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.3x0.6</text>
+<polygon points="34.0,56.0 34.0,68.0 10.0,68.0 10.0,56.0" fill="#cfe0f8" stroke="#20509a" stroke-width="1"/>
+<text x="22.0" y="62.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="22.0" y="73.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.3x0.6</text>
+<polygon points="34.0,96.0 34.0,108.0 10.0,108.0 10.0,96.0" fill="#cfe0f8" stroke="#20509a" stroke-width="1"/>
+<text x="22.0" y="102.0" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="22.0" y="113.0" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.3x0.6</text>
+</svg>

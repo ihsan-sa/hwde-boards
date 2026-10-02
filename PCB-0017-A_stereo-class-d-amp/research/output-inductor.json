@@ -1,0 +1,10 @@
+{
+ "block": "output-inductor",
+ "candidates": [
+  {"mpn": "SLO0630H100MTT", "lcsc": "C207842", "package": "SMD 7.3x6.6mm", "basic": false, "stock": 16183, "price": 0.1116, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Sunltech-Tech-SLO0630H100MTT_C207842.pdf", "rank": 1, "fit": "10uH, Isat 5.5A, Irms 4A, DCR 66mOhm; best stock+price at the current-spec size floor"},
+  {"mpn": "MHCI06030-100M-R8A", "lcsc": "C108290", "package": "SMD 7.3x6.6mm", "basic": false, "stock": 9210, "price": 0.1326, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Chilisin-Elec-MHCI06030-100M-R8A_C108290.pdf", "rank": 2, "fit": "Isat 5.5A, Irms 4A, DCR 68mOhm; alt source near-identical to #1"},
+  {"mpn": "CMLO0630H100MTT", "lcsc": "C439002", "package": "SMD 7x6.6mm", "basic": false, "stock": 3747, "price": 0.1116, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207131800_Cybermax-CMLO0630H100MTT_C439002.pdf", "rank": 3, "fit": "Isat 5.5A, Irms 4A, DCR 66mOhm; marginally smaller footprint than #1, lower stock"},
+  {"mpn": "AMRU00060630100MA1", "lcsc": "C2981193", "package": "SMD 7.3x6.8mm", "basic": false, "stock": 7296, "price": 0.2696, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2203252253_Chilisin-Elec-AMRU00060630100MA1_C2981193.pdf", "rank": 4, "fit": "Isat 5A, Irms 4A, DCR 62mOhm (lowest); premium line, 2.4x price of #1"},
+  {"mpn": "MWSA0624S-100MT", "lcsc": "C408435", "package": "SMD 7x6.6mm", "basic": false, "stock": 3498, "price": 0.1191, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2310251550_Sunlord-MWSA0624S-100MT_C408435.pdf", "rank": 5, "fit": "Isat 4A, Irms 3.1A; thinnest margin that still clears spec, higher DCR"}
+ ]
+}

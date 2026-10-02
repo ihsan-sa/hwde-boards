@@ -1,0 +1,181 @@
+{
+"version": 1,
+"ops": [
+{
+"op": "remove",
+"uuid": "39c81251-dd8e-47b9-9696-69165d8f297f"
+},
+{
+"op": "remove",
+"uuid": "911ab399-ce6b-4337-9803-7d116365a48d"
+},
+{
+"op": "remove",
+"uuid": "9227e97e-bbfd-464b-89eb-e64ccf209e51"
+},
+{
+"op": "remove",
+"uuid": "2d981dc7-0d49-4d6f-bdb3-8fd8940bd0e7"
+},
+{
+"op": "remove",
+"uuid": "49ccdffe-a5ab-405c-983b-4f630ab6b93f"
+},
+{
+"op": "remove",
+"uuid": "98385004-a362-4650-b24e-48ad7849e1f3"
+},
+{
+"op": "remove",
+"uuid": "ac5aa048-1668-4239-94da-b56529e0f5ab"
+},
+{
+"op": "remove",
+"uuid": "ae3ec111-d8b7-45b7-82da-108b32b65d06"
+},
+{
+"op": "remove",
+"uuid": "e5955bab-f932-415b-b87c-ccc850121091"
+},
+{
+"op": "remove",
+"uuid": "1d8b337c-22f7-4b52-9698-c4f21effcdb1"
+},
+{
+"op": "remove",
+"uuid": "c05d49bd-cafb-4550-aa36-c390918705fd"
+},
+{
+"op": "remove",
+"uuid": "c6908c3d-8716-4298-bf03-08b298c05c21"
+},
+{
+"op": "remove",
+"uuid": "023ccccb-be87-4491-8d4d-9dff80b34827"
+},
+{
+"op": "remove",
+"uuid": "08417efb-1858-4cb5-a486-f6611f6cef4c"
+},
+{
+"op": "remove",
+"uuid": "561f827f-20a3-4744-976f-eba7b0cee476"
+},
+{
+"op": "remove",
+"uuid": "e927c9e3-20e1-4aa2-bd2e-0346de86398a"
+},
+{
+"op": "remove",
+"uuid": "48b9d066-f9d1-4bc5-b061-5d3ea904b3cb"
+},
+{
+"op": "remove",
+"uuid": "58ec09ef-2eaa-4737-bbf8-e4336e69583c"
+},
+{
+"op": "remove",
+"uuid": "7d362ce7-0e1e-4e32-b529-d781a750aa97"
+},
+{
+"op": "remove",
+"uuid": "e77dbde1-e090-47b9-b76d-8fd0dc8e886a"
+},
+{
+"op": "remove",
+"uuid": "0fffde7b-7e29-4c60-88a2-7e7dac0df64a"
+},
+{
+"op": "remove",
+"uuid": "2c9ef5dc-e63d-4d25-a041-d5f4467df65b"
+},
+{
+"op": "remove",
+"uuid": "736d2ede-3b0a-431e-9dd5-995da420ef74"
+},
+{
+"op": "remove",
+"uuid": "7dfb9f48-66a2-458a-992e-067e21536d5e"
+},
+{
+"op": "remove",
+"uuid": "f939f6b7-6468-42ff-8213-746536220226"
+},
+{
+"op": "remove",
+"uuid": "238d4fd7-41d8-4ba0-9cd1-1eea8eede98e"
+},
+{
+"op": "remove",
+"uuid": "6ae6c953-bf38-4661-adbe-9c1f0ffcdbb4"
+},
+{
+"op": "remove",
+"uuid": "94ac1ee6-20a8-4b21-bf2d-fd0f00b1b9a2"
+},
+{
+"op": "remove",
+"uuid": "6699458d-d927-41cb-9ff5-daed5f787a94"
+},
+{
+"op": "remove",
+"uuid": "ed7f0ea7-94f4-4b9e-8129-573c9b670286"
+},
+{
+"op": "remove",
+"uuid": "1ebd7f9d-0829-4f90-8d2a-0a888690b31c"
+},
+{
+"op": "remove",
+"uuid": "544cbd4f-9de4-46dc-bf64-7cb150b924dd"
+},
+{
+"op": "remove",
+"uuid": "9cefd662-3780-4ec8-b9a3-395111b279e2"
+},
+{
+"op": "remove",
+"uuid": "2324b1dd-ad19-4b85-8034-6f2c2f1d750e"
+},
+{
+"op": "remove",
+"uuid": "56563338-3ce9-431e-84e0-8acb6df4c77c"
+},
+{
+"op": "remove",
+"uuid": "59b29003-f440-48cb-a252-218d86ec7efd"
+},
+{
+"op": "remove",
+"uuid": "5b129031-5bf7-4178-9454-bd8eb48836a1"
+},
+{
+"op": "remove",
+"uuid": "70a635d0-919e-4077-82aa-fd0d1f6e2013"
+},
+{
+"op": "remove",
+"uuid": "85b0058a-e700-454b-9993-1bf6487ebbbf"
+},
+{
+"op": "remove",
+"uuid": "ab7d4806-4c9a-4aec-84a1-9b1e2247c594"
+},
+{
+"op": "remove",
+"uuid": "b0bbeda7-3689-4d05-a9f1-01c7a7c11765"
+},
+{
+"op": "remove",
+"uuid": "ba2ea5af-1882-4497-8e40-15878eae2b12"
+},
+{
+"op": "remove",
+"uuid": "cb57fd1c-1462-40f5-89af-62e5a1a130e8"
+},
+{
+"op": "remove",
+"uuid": "e898918f-e9b6-4e78-b0cd-67f6c96834d0"
+}
+]
+}

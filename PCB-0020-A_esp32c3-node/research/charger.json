@@ -1,0 +1,60 @@
+{
+ "block": "charger",
+ "candidates": [
+  {
+   "mpn": "MCP73831T-2ACI/OT",
+   "lcsc": "C424093",
+   "package": "SOT-23-5",
+   "basic": false,
+   "stock": 9441,
+   "price": 0.782,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Microchip-Tech-MCP73831T-2ACI-OT_C424093.pdf",
+   "rank": 1,
+   "fit": "MCP73831T-2ACI/OT: 4.20 V, 15-500 mA by RPROG (IREG=1000V/RPROG, 5.1k -> ~196 mA), thermal regulation, tri-state STAT; with PMOS+Schottky load sharing per Microchip AN1149 it gives a real power path; SOT-23-5 no exposed pad"
+  },
+  {
+   "mpn": "TP4054-42-SOT25R",
+   "lcsc": "C32574",
+   "package": "SOT-23-5",
+   "basic": false,
+   "stock": 27009,
+   "price": 0.1327,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809261814_TOPPOWER-Nanjing-Extension-Microelectronics-TP4054-42-SOT25R_C32574.pdf",
+   "rank": 2,
+   "fit": "TP4054-42-SOT25R (TOPPOWER): pin-compatible SOT-23-5 (CHRG/GND/BAT/VCC/PROG), same 1000V/RPROG law; cheapest alternate, clone-family quality"
+  },
+  {
+   "mpn": "MCP73871T-2CCI/ML",
+   "lcsc": "C511310",
+   "package": "QFN-20-EP(4x4)",
+   "basic": false,
+   "stock": 1834,
+   "price": 2.1833,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410010132_Microchip-Tech-MCP73871T-2CCI-ML_C511310.pdf",
+   "rank": 3,
+   "fit": "MCP73871 QFN-20: integrated power path, 2.18 USD, 1834 stock, leadless 4x4 - more cost and a QFN for a function two discretes solve"
+  },
+  {
+   "mpn": "BQ24074RGTR",
+   "lcsc": "C54313",
+   "package": "QFN-16-EP(3x3)",
+   "basic": false,
+   "stock": 415,
+   "price": 2.5036,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809192125_Texas-Instruments-BQ24074RGTR_C54313.pdf",
+   "rank": 4,
+   "fit": "BQ24074 QFN-16: integrated power path + DPPM, only 415 in stock and 2.50 USD - rejected on stock"
+  },
+  {
+   "mpn": "ETA6003Q3Q",
+   "lcsc": "C5455585",
+   "package": "QFN3X3-16",
+   "basic": false,
+   "stock": 10320,
+   "price": 0.5186,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304131730_etasolution-ETA6003Q3Q_C5455585.pdf",
+   "rank": 5,
+   "fit": "ETA6003 QFN-16: integrated power path, 0.52 USD, 10320 stock; datasheet access/English uncertain - kept as an option only"
+  }
+ ]
+}

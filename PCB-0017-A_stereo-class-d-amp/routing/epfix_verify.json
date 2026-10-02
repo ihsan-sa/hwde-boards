@@ -1,0 +1,1097 @@
+{
+ "script": "verify_all",
+ "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "status": "violations",
+ "counts": {
+  "total": 31,
+  "by_severity": {
+   "error": 8,
+   "warning": 23
+  },
+  "by_source": {
+   "check_current": 14,
+   "check_decoupling": 7,
+   "check_thermal": 2,
+   "check_silk": 7,
+   "verify_all": 1
+  },
+  "by_check": {
+   "check_return_path": 0,
+   "check_current": 14,
+   "check_decoupling": 7,
+   "check_diffpair": 0,
+   "check_creepage": 0,
+   "check_thermal": 2,
+   "check_silk": 7,
+   "check_pdn": 0,
+   "verify_all": 1
+  }
+ },
+ "checks": {
+  "check_return_path": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "/tmp/epfix_checks/check_return_path.json"
+  },
+  "check_current": {
+   "status": "violations",
+   "counts": {
+    "total": 14,
+    "by_severity": {
+     "error": 7,
+     "warning": 7
+    },
+    "by_source": {
+     "check_current": 14
+    }
+   },
+   "report": "/tmp/epfix_checks/check_current.json"
+  },
+  "check_decoupling": {
+   "status": "violations",
+   "counts": {
+    "total": 7,
+    "by_severity": {
+     "warning": 7
+    },
+    "by_source": {
+     "check_decoupling": 7
+    }
+   },
+   "report": "/tmp/epfix_checks/check_decoupling.json"
+  },
+  "check_diffpair": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "/tmp/epfix_checks/check_diffpair.json"
+  },
+  "check_creepage": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "/tmp/epfix_checks/check_creepage.json"
+  },
+  "check_thermal": {
+   "status": "violations",
+   "counts": {
+    "total": 2,
+    "by_severity": {
+     "error": 1,
+     "warning": 1
+    },
+    "by_source": {
+     "check_thermal": 2
+    }
+   },
+   "report": "/tmp/epfix_checks/check_thermal.json"
+  },
+  "check_silk": {
+   "status": "violations",
+   "counts": {
+    "total": 7,
+    "by_severity": {
+     "warning": 7
+    },
+    "by_source": {
+     "check_silk": 7
+    }
+   },
+   "report": "/tmp/epfix_checks/check_silk.json"
+  },
+  "check_pdn": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "/tmp/epfix_checks/check_pdn.json"
+  }
+ },
+ "coverage": {
+  "strict": false,
+  "required": [
+   "check_return_path",
+   "check_current",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_thermal",
+   "check_silk",
+   "check_pdn"
+  ],
+  "ran": [
+   "check_return_path",
+   "check_current",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_thermal",
+   "check_silk",
+   "check_pdn"
+  ],
+  "passed": [
+   "check_return_path",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_silk",
+   "check_pdn"
+  ],
+  "failed": [
+   "check_current",
+   "check_thermal"
+  ],
+  "waived": [],
+  "not_applicable": {},
+  "skipped_error": {}
+ },
+ "violations": [
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    29.72,
+    30.905
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [],
+   "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+     "pos": [
+      29.72,
+      30.905
+     ]
+    }
+   ],
+   "kind": "undersized_track",
+   "width_mm": 0.3428,
+   "required_mm": 0.882,
+   "current_a": 4.0,
+   "segment": {
+    "start": [
+     29.72,
+     31.23
+    ],
+    "end": [
+     29.72,
+     30.58
+    ]
+   },
+   "bridge": false
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    29.72,
+    22.445
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [],
+   "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+     "pos": [
+      29.72,
+      22.445
+     ]
+    }
+   ],
+   "kind": "undersized_track",
+   "width_mm": 0.3428,
+   "required_mm": 0.882,
+   "current_a": 4.0,
+   "segment": {
+    "start": [
+     29.72,
+     22.77
+    ],
+    "end": [
+     29.72,
+     22.12
+    ]
+   },
+   "bridge": false
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    56.2389,
+    26.6984
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+     "pos": [
+      56.2389,
+      26.6984
+     ]
+    }
+   ],
+   "kind": "pour_neckdown",
+   "neck_mm": 0.0,
+   "required_mm": 0.882,
+   "current_a": 4.0
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    49.8,
+    12.5
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (49.80, 12.50) has 5 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (49.80, 12.50) has 5 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      49.8,
+      12.5
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 5,
+   "required": 8,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    35.9275,
+    41.325
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (35.93, 41.33) has 4 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (35.93, 41.33) has 4 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      35.9275,
+      41.325
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 4,
+   "required": 8,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    34.3,
+    34.9
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (34.30, 34.90) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (34.30, 34.90) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      34.3,
+      34.9
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 8,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    54.8,
+    27.0
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (54.80, 27.00) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (54.80, 27.00) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      54.8,
+      27.0
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 8,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    57.2,
+    27.0
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (57.20, 27.00) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (57.20, 27.00) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      57.2,
+      27.0
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 8,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    37.14,
+    10.9
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (37.14, 10.90) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (37.14, 10.90) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      37.14,
+      10.9
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 8,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    41.0,
+    34.6
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (41.00, 34.60) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (41.00, 34.60) has 1 via(s); 4.00 A needs 8 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      41.0,
+      34.6
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 8,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    30.31,
+    27.98
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPL",
+   "refs": [],
+   "msg": "/OUTPL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "/OUTPL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+     "pos": [
+      30.31,
+      27.98
+     ]
+    }
+   ],
+   "kind": "undersized_track",
+   "width_mm": 0.3,
+   "required_mm": 0.624,
+   "current_a": 3.0,
+   "segment": {
+    "start": [
+     29.72,
+     27.98
+    ],
+    "end": [
+     30.9,
+     27.98
+    ]
+   },
+   "bridge": true
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    30.31,
+    29.28
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTNL",
+   "refs": [],
+   "msg": "/OUTNL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "/OUTNL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+     "pos": [
+      30.31,
+      29.28
+     ]
+    }
+   ],
+   "kind": "undersized_track",
+   "width_mm": 0.3,
+   "required_mm": 0.624,
+   "current_a": 3.0,
+   "segment": {
+    "start": [
+     29.72,
+     29.28
+    ],
+    "end": [
+     30.9,
+     29.28
+    ]
+   },
+   "bridge": true
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    30.31,
+    24.07
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTPR",
+   "refs": [],
+   "msg": "/OUTPR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "/OUTPR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+     "pos": [
+      30.31,
+      24.07
+     ]
+    }
+   ],
+   "kind": "undersized_track",
+   "width_mm": 0.3,
+   "required_mm": 0.624,
+   "current_a": 3.0,
+   "segment": {
+    "start": [
+     29.72,
+     24.07
+    ],
+    "end": [
+     30.9,
+     24.07
+    ]
+   },
+   "bridge": true
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    30.31,
+    25.37
+   ],
+   "layer": "F.Cu",
+   "net": "/OUTNR",
+   "refs": [],
+   "msg": "/OUTNR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "/OUTNR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+     "pos": [
+      30.31,
+      25.37
+     ]
+    }
+   ],
+   "kind": "undersized_track",
+   "width_mm": 0.3,
+   "required_mm": 0.624,
+   "current_a": 3.0,
+   "segment": {
+    "start": [
+     29.72,
+     25.37
+    ],
+    "end": [
+     30.9,
+     25.37
+    ]
+   },
+   "bridge": true
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    18.9,
+    25.6
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C5"
+   ],
+   "msg": "C5 ground pad is 18.0 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C5 ground pad is 18.0 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      18.9,
+      25.6
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 2.4,
+   "euclid_mm": 2.0241,
+   "loop_nh": 15.2732,
+   "vias_in_loop": 1,
+   "pin": "U1.7"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    31.5,
+    21.7
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [
+    "C8",
+    "U1"
+   ],
+   "msg": "C8 decoupling loop ~11.1 nH for U1 pin 31 (hf class limit 6.0 nH: 2.9 mm rail + 11.6 mm gnd + 1 via)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C8 decoupling loop ~11.1 nH for U1 pin 31 (hf class limit 6.0 nH: 2.9 mm rail + 11.6 mm gnd + 1 via)",
+     "pos": [
+      31.5,
+      21.7
+     ]
+    }
+   ],
+   "kind": "decoupler_loop",
+   "cap_class": "hf",
+   "manhattan_mm": 2.85,
+   "euclid_mm": 2.0768,
+   "loop_nh": 11.1167,
+   "vias_in_loop": 1,
+   "pin": "U1.31",
+   "limit_nh": 6.0
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    32.9,
+    21.7
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C8"
+   ],
+   "msg": "C8 ground pad is 11.6 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C8 ground pad is 11.6 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      32.9,
+      21.7
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "hf",
+   "manhattan_mm": 2.85,
+   "euclid_mm": 2.0768,
+   "loop_nh": 11.1167,
+   "vias_in_loop": 1,
+   "pin": "U1.31"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    31.5,
+    20.2
+   ],
+   "layer": "F.Cu",
+   "net": "+12V",
+   "refs": [
+    "C10",
+    "U1"
+   ],
+   "msg": "C10 decoupling loop ~11.2 nH for U1 pin 31 (mid class limit 10.0 nH: 4.4 mm rail + 10.2 mm gnd + 1 via)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C10 decoupling loop ~11.2 nH for U1 pin 31 (mid class limit 10.0 nH: 4.4 mm rail + 10.2 mm gnd + 1 via)",
+     "pos": [
+      31.5,
+      20.2
+     ]
+    }
+   ],
+   "kind": "decoupler_loop",
+   "cap_class": "mid",
+   "manhattan_mm": 4.35,
+   "euclid_mm": 3.1262,
+   "loop_nh": 11.1997,
+   "vias_in_loop": 1,
+   "pin": "U1.31",
+   "limit_nh": 10.0
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    32.9,
+    20.2
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C10"
+   ],
+   "msg": "C10 ground pad is 10.2 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C10 ground pad is 10.2 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      32.9,
+      20.2
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "mid",
+   "manhattan_mm": 4.35,
+   "euclid_mm": 3.1262,
+   "loop_nh": 11.1997,
+   "vias_in_loop": 1,
+   "pin": "U1.31"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    34.65,
+    20.2
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C12"
+   ],
+   "msg": "C12 ground pad is 9.6 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C12 ground pad is 9.6 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      34.65,
+      20.2
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 9.5,
+   "euclid_mm": 6.7223,
+   "loop_nh": 14.3893,
+   "vias_in_loop": 1,
+   "pin": "U1.31"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    29.95,
+    13.9
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C13"
+   ],
+   "msg": "C13 ground pad is 7.8 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C13 ground pad is 7.8 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      29.95,
+      13.9
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 14.2,
+   "euclid_mm": 10.3482,
+   "loop_nh": 16.3935,
+   "vias_in_loop": 1,
+   "pin": "U1.31"
+  },
+  {
+   "check": "check_thermal",
+   "severity": "error",
+   "pos": [
+    26.0,
+    27.0004
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 dissipates 1.50 W into 645 mm2 of GND copper: ~111 C rise (theta_JA ~74 C/W) > 85 C allowed; add thermal vias to an inner/back plane",
+   "source": "check_thermal",
+   "items": [
+    {
+     "msg": "U1 dissipates 1.50 W into 645 mm2 of GND copper: ~111 C rise (theta_JA ~74 C/W) > 85 C allowed; add thermal vias to an inner/back plane",
+     "pos": [
+      26.0,
+      27.0004
+     ]
+    }
+   ],
+   "kind": "thermal_area",
+   "power_w": 1.5,
+   "area_mm2": 645.0,
+   "theta_ja": 73.8454,
+   "rise_c": 110.768,
+   "dt_allowed_c": 85.0
+  },
+  {
+   "check": "check_thermal",
+   "severity": "warning",
+   "pos": [
+    26.0,
+    27.0004
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 (1.50 W) needs a thermal-via array to GND (copper alone tops out ~74 C/W); found 0 via(s), want >= 15",
+   "source": "check_thermal",
+   "items": [
+    {
+     "msg": "U1 (1.50 W) needs a thermal-via array to GND (copper alone tops out ~74 C/W); found 0 via(s), want >= 15",
+     "pos": [
+      26.0,
+      27.0004
+     ]
+    }
+   ],
+   "kind": "thermal_vias",
+   "vias": 0,
+   "required": 15,
+   "power_w": 1.5
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    42.4,
+    14.043
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R6"
+   ],
+   "msg": "refdes \"R6\" sits 2.05 mm beyond its own pads and 0.23 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R6\" sits 2.05 mm beyond its own pads and 0.23 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      42.4,
+      14.043
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R6",
+   "offset_mm": 2.05,
+   "nearest_ref": "J1",
+   "nearest_mm": 0.225
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    24.375,
+    23.6
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C5"
+   ],
+   "msg": "refdes \"C5\" sits 2.84 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C5\" sits 2.84 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      24.375,
+      23.6
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C5",
+   "offset_mm": 2.84,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    16.2,
+    21.05
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C4"
+   ],
+   "msg": "refdes \"C4\" sits 2.30 mm beyond its own pads and 0.40 mm from C3 - reads as C3's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C4\" sits 2.30 mm beyond its own pads and 0.40 mm from C3 - reads as C3's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      16.2,
+      21.05
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C4",
+   "offset_mm": 2.3,
+   "nearest_ref": "C3",
+   "nearest_mm": 0.4
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    19.6,
+    31.207
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R1"
+   ],
+   "msg": "refdes \"R1\" sits 2.80 mm beyond its own pads and 0.50 mm from R3 - reads as R3's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R1\" sits 2.80 mm beyond its own pads and 0.50 mm from R3 - reads as R3's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      19.6,
+      31.207
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R1",
+   "offset_mm": 2.8,
+   "nearest_ref": "R3",
+   "nearest_mm": 0.5
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    50.0,
+    24.655
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C26"
+   ],
+   "msg": "refdes \"C26\" sits 1.81 mm beyond its own pads and 0.00 mm from L4 - reads as L4's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C26\" sits 1.81 mm beyond its own pads and 0.00 mm from L4 - reads as L4's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      50.0,
+      24.655
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C26",
+   "offset_mm": 1.8067,
+   "nearest_ref": "L4",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    16.2,
+    31.45
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C1"
+   ],
+   "msg": "refdes \"C1\" sits 2.30 mm beyond its own pads and 0.40 mm from C2 - reads as C2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C1\" sits 2.30 mm beyond its own pads and 0.40 mm from C2 - reads as C2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      16.2,
+      31.45
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C1",
+   "offset_mm": 2.3,
+   "nearest_ref": "C2",
+   "nearest_mm": 0.4
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    19.6,
+    32.757
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R3"
+   ],
+   "msg": "refdes \"R3\" sits 2.05 mm beyond its own pads and 0.74 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R3\" sits 2.05 mm beyond its own pads and 0.74 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      19.6,
+      32.757
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R3",
+   "offset_mm": 2.05,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.7395
+  },
+  {
+   "check": "verify_all",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [],
+   "msg": "architecture/constraints.json diverges from constraints.json in kicad/; checks ran against the latter - reconcile or delete the stale twin",
+   "source": "verify_all",
+   "kind": "constraints_drift",
+   "twin": "PCB-0017-A_astra-amp/architecture/constraints.json",
+   "items": [
+    {
+     "msg": "constraints twin drift",
+     "pos": null
+    }
+   ]
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T11:54:43+00:00",
+ "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:8942e2da832c9da7abab9ca781b7e3c63079aaad3372bddf22264bebd6baea3b"
+}

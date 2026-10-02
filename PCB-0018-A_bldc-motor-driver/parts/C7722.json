@@ -1,0 +1,47 @@
+{
+  "mpn": "TPS61040DBVR",
+  "lcsc": "C7722",
+  "package": "DBV0005A, SOT-23-5, 1.45mm max height",
+  "description": "TPS61040 60V (switch) boost converter, adjustable output, PFM control, low IQ",
+  "pinout": [
+    {"pin": "1", "name": "SW", "type": "power_out", "notes": "Connect the inductor and Schottky diode to this pin. Switch pin, connected to drain of internal power MOSFET."},
+    {"pin": "2", "name": "GND", "type": "ground", "notes": "Ground"},
+    {"pin": "3", "name": "FB", "type": "input", "notes": "Feedback pin; connect to external voltage divider to program the output voltage."},
+    {"pin": "4", "name": "EN", "type": "input", "notes": "Enable pin. Pulling to ground forces shutdown (<1uA supply current). Must not be left floating; needs to be terminated."},
+    {"pin": "5", "name": "VIN", "type": "power_in", "notes": "Supply voltage pin"}
+  ],
+  "decoupling": [
+    {"pins": ["VIN"], "value": "4.7uF (CIN)", "placement": "as close as possible to the input pin", "notes": "Recommended operating condition value; needed for good input voltage filtering."},
+    {"pins": ["SW"], "value": "L 2.2uH-10uH inductor + Schottky diode", "placement": "as close as possible to the SW pin", "notes": "Placed close to SW to minimize noise coupling into other circuits."},
+    {"pins": ["output (FB divider node)"], "value": "1uF (COUT)", "placement": "output capacitor per recommended operating conditions", "notes": "Recommended operating condition value."}
+  ],
+  "land_pattern": {
+    "package": "DBV0005A SOT-23-5",
+    "pad_count": 5,
+    "pitch_mm": 0.95,
+    "pad_size_mm": [1.1, 0.6],
+    "row_spacing_mm": 2.6,
+    "pin1": "1",
+    "notes": "From TI DBV0005A example board layout, 4214839/K 08/2024. Body outline approx 2.6mm x 1.9mm (per package outline drawing, mold body 3.0/2.6 x 1.75/1.45mm range)."
+  },
+  "exposed_pad": {
+    "present": false
+  },
+  "layout_notes": [
+    "The input capacitor must be placed as close as possible to the input (VIN) pin for good input voltage filtering.",
+    "The inductor and diode must be placed as close as possible to the SW pin to minimize noise coupling into other circuits.",
+    "The feedback (FB) pin and network is high-impedance; route it away from the inductor and shield with a ground plane or trace to minimize noise coupling.",
+    "Use wide traces for the bolded high-current connections (VIN, SW loop, GND) per the datasheet's layout diagram (Figure 7-12).",
+    "Use a star ground connection or ground plane to minimize ground shifts and noise."
+  ],
+  "abs_max": [
+    {"param": "Supply voltage on VIN", "value": "-0.3 to 7", "unit": "V"},
+    {"param": "Voltage on EN, FB", "value": "-0.3 to VIN+0.3", "unit": "V"},
+    {"param": "Switch voltage on SW", "value": "-0.3 to 30", "unit": "V"},
+    {"param": "Operating junction temperature TJ", "value": "-40 to 150", "unit": "C"},
+    {"param": "Storage temperature Tstg", "value": "-65 to 150", "unit": "C"},
+    {"param": "ESD HBM", "value": 2000, "unit": "V"},
+    {"param": "ESD CDM", "value": 750, "unit": "V"}
+  ],
+  "source_pdf": "parts/C7722.pdf"
+}

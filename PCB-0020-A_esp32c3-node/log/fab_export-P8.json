@@ -1,0 +1,84 @@
+{
+ "script": "fab_export",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "name": "PCB-0020-A_esp32c3-node",
+ "layer_count": 2,
+ "copper_layers": [
+  "F.Cu",
+  "B.Cu"
+ ],
+ "layers_exported": [
+  "F.Cu",
+  "B.Cu",
+  "F.Silkscreen",
+  "B.Silkscreen",
+  "F.Mask",
+  "B.Mask",
+  "F.Paste",
+  "B.Paste",
+  "Edge.Cuts"
+ ],
+ "out_dir": "fab",
+ "gerber_dir": "fab/gerbers",
+ "pos_file": "fab/PCB-0020-A_esp32c3-node-pos.csv",
+ "files": [
+  {
+   "name": "PCB-0020-A_esp32c3-node-B_Cu.gbl",
+   "sha256": "12eeaafda759dd72c1dd55931690ad34ff56dfc00e76dde5e0f495759e43ce2f",
+   "bytes": 63505
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-B_Mask.gbs",
+   "sha256": "11e5a0cffe154731d6f869fba5254f441bff142fb2cd5a18c6338694f936ad58",
+   "bytes": 1160
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-B_Paste.gbp",
+   "sha256": "32ee77d8c0fc03e658cdfa3a1bfb241a67cb96885016a46d7010909955462b1a",
+   "bytes": 510
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-B_Silkscreen.gbo",
+   "sha256": "23f6918c11c4ef9f0ebef64a0b43c06fcc148b9fd89297ec4a36f38a4e710e3b",
+   "bytes": 12071
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-Edge_Cuts.gm1",
+   "sha256": "7dc2cd7f95d5adc950c4edace14238d3f6c7259904e881206ec9a67c0e7b3962",
+   "bytes": 1018
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-F_Cu.gtl",
+   "sha256": "3471a193536ac459be27d1cc950ebae9544a6335cbc57f5a7bf2060d12901a67",
+   "bytes": 184772
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-F_Mask.gts",
+   "sha256": "2f56fcad88c882f3f6270450cf50cc512d6258494682730ecfbeeb7ffb96a527",
+   "bytes": 7959
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-F_Paste.gtp",
+   "sha256": "e9289693587fc2c48dfa641f3618c36539bb5415f81d76e629436465e7aefcef",
+   "bytes": 7326
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-F_Silkscreen.gto",
+   "sha256": "89a068aa42ff2f2379178ecc4761ade5c54fb7e85448c50e624a4ad25c216264",
+   "bytes": 49294
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node-job.gbrjob",
+   "sha256": "4c7c429a6b0ccee38150fe6ff0b4e5ef48818776c5ac5d08b5171489f71bf1f0",
+   "bytes": 2740
+  },
+  {
+   "name": "PCB-0020-A_esp32c3-node.drl",
+   "sha256": "210f85cb1abb00f47a7e9ac8726903a5899fb9e983ffe4df8883a97a5f3fb7cc",
+   "bytes": 2326
+  }
+ ],
+ "gerber_zip": "fab/PCB-0020-A_esp32c3-node_gerbers.zip",
+ "gerber_zip_sha256": "8175ba8d4565fcad75a74fa452c6ef3ce40bf7fd731db1c18a3071d2581c2442"
+}

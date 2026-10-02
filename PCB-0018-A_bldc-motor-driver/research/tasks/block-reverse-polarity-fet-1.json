@@ -1,0 +1,138 @@
+{
+ "id": "block-reverse-polarity-fet-1",
+ "slot": "block:power_in",
+ "kind": "block",
+ "token": "reverse-polarity-fet",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified",
+ "opened": "2026-09-27T14:31:40",
+ "closed": "2026-09-27T14:55:32",
+ "coverage_report": "log/coverage-P2.json",
+ "gap": {
+  "slot": "block:power_in",
+  "kind": "block",
+  "topology": "reverse-polarity-fet",
+  "operating_point": {
+   "vin_v": 28,
+   "iout_a": 12.2,
+   "pdiss_w": 0.4,
+   "board_layers": 4,
+   "source_kind": "dc-input",
+   "integration_kind": "controller"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'reverse-polarity-fet' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'reverse-polarity-fet': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/ds/symlink/lm74500-q1.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/lm74500-q1.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "LM74500-Q1",
+   "file": "research/sources/lm74500-q1.pdf",
+   "sha256": "9468bb5e0c1fa97ba0bcefaaccf6439ac2e2335f0931259294c3456018148c15",
+   "bytes": 1853066,
+   "content_type": "application/pdf",
+   "pages": 29,
+   "fetched": "2026-09-27T14:38:01",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  },
+  {
+   "n": 2,
+   "url": "https://www.onsemi.com/download/application-notes/pdf/and90146-d.pdf",
+   "final_url": "https://www.onsemi.com/download/application-notes/pdf/and90146-d.pdf",
+   "host": "www.onsemi.com",
+   "domain": "onsemi.com",
+   "domain_kind": "vendor",
+   "tier": "cross-vendor",
+   "declared_tier": "cross-vendor",
+   "about": null,
+   "file": "research/sources/and90146-d.pdf",
+   "sha256": "5dbcd17d1f30b8647deec81607d2fcc653d0f9182abe46bb7cba4679210933e7",
+   "bytes": 968238,
+   "content_type": "application/pdf",
+   "pages": 11,
+   "fetched": "2026-09-27T14:38:32",
+   "via": "http",
+   "note": null,
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "reverse-polarity-fet-conduction-thermal-budget": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p7-9 AND90146 Table3/4 and Fig17/18 match exactly incl the Table3 vs Fig18-caption 47.5C/45.3C discrepancy the record correctly flags; p17 LM74500-Q1 thermal-resistance text matches. 0.6W bound is a modest margin above the stated 500mW design target and measured 504mW max, not an unsupported leap",
+   "ts": "2026-09-27T14:54:18"
+  },
+  "reverse-polarity-fet-constraints-emission": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p20 LM74500-Q1 sec11.1 bullets + Fig11-1 match grouping/short-gate/VCAP-away claims exactly; p6 AND90146 layout figs 9-12 match top/inner1/inner2 current spread with bottom GND plane",
+   "ts": "2026-09-27T14:54:19"
+  },
+  "reverse-polarity-fet-controller-gate-vcap-placement": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p17 LM74500-Q1 sec9.3.1.2.3 VCAP/CIN/COUT values match exactly; p20 sec10 >22nF bypass and sec11.1 bullets plus Fig11-1 pin placement (GATE pin6, VCAP near pins4-5) match",
+   "ts": "2026-09-27T14:54:19"
+  },
+  "reverse-polarity-fet-current-path-copper": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p20 LM74500-Q1 sec11.1 thick-trace bullet and Fig11-1 VIN/VOUT/GND layout match exactly; p6 AND90146 layout text on top/inner1/inner2 current spread and solid bottom GND matches",
+   "ts": "2026-09-27T14:54:19"
+  },
+  "reverse-polarity-fet-nfet-and-tvs-selection": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p16-17 LM74500-Q1 MOSFET selection text (60V/65V SOURCE, 13V drive->15V VGS, body-diode inrush) matches verbatim; p4 AND90146 40V/12V-net, 60V/24V-net, 175C TJmax, logic-level, package bullets match exactly",
+   "ts": "2026-09-27T14:54:20"
+  },
+  "reverse-polarity-fet-no-blocking-for-regen-load": {
+   "verdict": "verified",
+   "by": "second-reader-sonnet",
+   "date": "2026-09-27",
+   "note": "p13-14 LM74500-Q1 Fig9-1/9-2 and overshoot-from-regen text match exactly, incl the 'reverse current blocking is not preferred' annotation; p5 AND90146 Fig6/7 ideal-diode vs RP-mode (drain to GND) and Cbulk-discharge text match",
+   "ts": "2026-09-27T14:54:20"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-reverse-polarity-fet-1",
+ "updated": "2026-09-27T14:55:32",
+ "accepted_drafts": null,
+ "summary": {
+  "verified": 6,
+  "refuted": 0,
+  "checklists": 1,
+  "sources": 2
+ }
+}

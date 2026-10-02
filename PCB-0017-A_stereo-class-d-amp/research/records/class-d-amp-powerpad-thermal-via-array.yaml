@@ -1,0 +1,75 @@
+id: class-d-amp-powerpad-thermal-via-array
+classes:
+- thermal-via
+applies:
+  topologies:
+  - class-d-amp
+  packages:
+  - HTSSOP-32-DAP
+  - PowerPAD-down
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  thermal_via_drill_mm_max: 0.33
+  thermal_via_drill_mm_datasheet: 0.2
+  thermal_via_pitch_mm: 1.2
+  thermal_via_count_min: 6
+  mask_defined_pad_mm: 3.04 x 3.74
+  via_cap: solder mask on component side, >= dia + 0.1 mm
+  thermal_relief: false
+prose: 'A pad-down PowerPAD class-D amp is cooled through a plated via array under the exposed pad into
+  the far-side copper. Rule: solder-mask-defined pad sized to the datasheet''s maximum exposed-pad dimension;
+  drill 0.33 mm (13 mil) or smaller, 1 oz plating, no thermal-relief (wagon-wheel) connections anywhere
+  under the package; if the vias are not plugged, cap them with solder mask on the COMPONENT side, cap
+  dimension at least via dia + 0.1 mm - tenting from the far side raises reflow voiding; component-side
+  tenting also stops solder wicking through the via. Count: 5-9 vias already reach the knee for a small
+  die, more give diminishing returns (SLMA002 Fig 8/9: theta-JC vs via copper cross-section, flat past
+  ~2 % of die area). What was read: SLOS708 p47 DAP0032C land pattern - exposed metal 5.2 x 11 mm under
+  mask, mask-defined pad 3.04 x 3.74 mm, a 4 x 9 grid of 0.2 mm vias on 1.3 mm (x) by 1.2 mm (y) pitch,
+  2 x 3 of them inside the mask opening, the rest under mask on the copper skirt; note 8 says the package
+  is designed to be soldered to a thermal pad. SLMA002 p9 Fig 10 gives the same 0.33 mm array style for
+  the whole PowerPAD family and p7 Fig 7 shows a copper skirt larger than the mask-defined pad with an
+  outer ring of vias. SLOU342A p8 (EVM bottom, 2-layer) shows the via array as a dot grid under U1 feeding
+  a full bottom GND pour. Disagreement: the datasheet drawing uses 0.2 mm vias, SLMA002 0.33 mm; the drawing
+  is the part''s own and wins, either fills at 1 oz plating.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 47
+  note: 'Fig: DAP0032C example board layout - 5.2x11 mm metal, 3.04x3.74 mm mask-defined pad, 4x9 grid
+    of 0.2 mm vias on 1.3x1.2 mm pitch; note 8 solder to thermal pad'
+- file: research/sources/slma002h.pdf
+  page: 8
+  note: '2.4 Thermal Vias text + Fig 8/9: 0.33 mm vias, 1 oz plating, 5-9 vias adequate for small die,
+    diminishing returns curves'
+- file: research/sources/slma002h.pdf
+  page: 9
+  note: 'Fig 10 example land sizes and via patterns; text: 0.33 mm or smaller drill, solder-mask CAP on
+    component side >= via dia + 0.1 mm, far-side tenting increases voiding'
+- file: research/sources/slma002h.pdf
+  page: 7
+  note: 'Fig 7 TQFP thermal land: copper skirt larger than the mask-defined pad with an outer ring of
+    0.33 mm vias'
+- file: research/sources/slma002h.pdf
+  page: 10
+  note: 'text: no thermal-relief (wagon wheel) construction on thermal vias, continuous connection all
+    around the hole'
+- file: research/sources/slou342a.pdf
+  page: 8
+  note: 'Fig 5 EVM bottom side: via dot grid under U1 into a full bottom GND pour, 2-layer board'
+status: active
+origin: research:block-class-d-amp-1
+level: topology
+maturity: verified
+generalizes: []
+envelope:
+  package_kind:
+    in:
+    - powerpad-down
+  board_layers:
+    min: 2
+    max: 4
+envelope_note: 'Scales with pad orientation and layer count: a pad-UP (DAD) part has no pad on the board,
+  so the array does nothing for it; SLMA002''s via curves are given for 2- and 4-layer boards, past that
+  inner planes take over and the count/pitch here is no longer the limiting number.'
+verification: {by: "research-second-reader", date: "2026-09-27", note: "Pass 2: SLMA002 p9 text 'solder mask ... cap the vias on the component side with a dimension equal to the via diameter + 0.1 mm minimum' now read as a cap, matches; p7 Fig 7 added and shows 8.0 copper skirt, 5.19 SMD pad, 25x 0.33 vias with outer ring. Rest unchanged and correct."}

@@ -1,0 +1,903 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "DMG2305UX",
+ "total": 16,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C5261054",
+   "mpn": "DMG2305UX-7",
+   "brand": "HXY MOSFET",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.2nF 1.31W 14.3nC@4.5V 151pF 20V 400mV 45m\u03a9@4.5V 5A SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8820,
+   "price": 0.0391,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0391
+    },
+    {
+     "qty": 200,
+     "price": 0.0313
+    },
+    {
+     "qty": 600,
+     "price": 0.027
+    },
+    {
+     "qty": 3000,
+     "price": 0.0252
+    },
+    {
+     "qty": 9000,
+     "price": 0.023
+    },
+    {
+     "qty": 21000,
+     "price": 0.0217
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2211111800_HXY-MOSFET-DMG2305UX-7_C5261054.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_hxy-mosfet-dmg2305ux-7_C5261054.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "857pF"
+    },
+    {
+     "name": "Configuration",
+     "value": "Standalone"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10.2nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "108pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "5A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "114pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.31W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "35m\u03a9@4.5V"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2940629",
+   "mpn": "DMG2305UX",
+   "brand": "TECH PUBLIC",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.7W 190pF 1V 20V 4.1A 52m\u03a9@4.5V 7.8nC 740pF P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8576,
+   "price": 0.0997,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0997
+    },
+    {
+     "qty": 50,
+     "price": 0.0799
+    },
+    {
+     "qty": 150,
+     "price": 0.07
+    },
+    {
+     "qty": 500,
+     "price": 0.0626
+    },
+    {
+     "qty": 3000,
+     "price": 0.0469
+    },
+    {
+     "qty": 6000,
+     "price": 0.0439
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201241630_TECH-PUBLIC-DMG2305UX_C2940629.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_tech-public-dmg2305ux_C2940629.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b112V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "7.8nC"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "190pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.1A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "290pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "52m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "740pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1V"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.7W"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C150470",
+   "mpn": "DMG2305UX-7",
+   "brand": "Diodes Incorporated",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.4W 10.2nC@4.5V 20V 52m\u03a9@4.5V\u3001100m\u03a9@2.5V 5A 77pF 808pF 85pF 900mV P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7575,
+   "price": 0.8015,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.8015
+    },
+    {
+     "qty": 10,
+     "price": 0.6584
+    },
+    {
+     "qty": 30,
+     "price": 0.5885
+    },
+    {
+     "qty": 100,
+     "price": 0.5186
+    },
+    {
+     "qty": 500,
+     "price": 0.4764
+    },
+    {
+     "qty": 1000,
+     "price": 0.4536
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2412251003_Diodes-Incorporated-DMG2305UX-7_C150470.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_diodes-incorporated-dmg2305ux-7_C150470.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "808pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "900mV"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10.2nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "77pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "5A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "85pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.4W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "52m\u03a9@4.5V\u3001100m\u03a9@2.5V"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C508197",
+   "mpn": "DMG2305UXQ-7",
+   "brand": "Diodes Incorporated",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.4W 10.2nC@4.5V 20V 52m\u03a9@4.5V 5A 77pF 808pF 900mV SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6002,
+   "price": 0.4242,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.4242
+    },
+    {
+     "qty": 50,
+     "price": 0.3422
+    },
+    {
+     "qty": 150,
+     "price": 0.3071
+    },
+    {
+     "qty": 500,
+     "price": 0.2634
+    },
+    {
+     "qty": 3000,
+     "price": 0.2439
+    },
+    {
+     "qty": 6000,
+     "price": 0.2322
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2004082133_Diodes-Incorporated-DMG2305UXQ-7_C508197.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_diodes-incorporated-dmg2305uxq-7_C508197.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b18V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10.2nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "77pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "5A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "85pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "52m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "808pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "900mV"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.4W"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C53100470",
+   "mpn": "DMG2305UX-TP",
+   "brand": "TECH PUBLIC",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.1nF 1.8W 11.5nC 20V 25m\u03a9@4.5V 300pF 390pF 650mV 6A P-Channel Standalone \u00b112V SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3560,
+   "price": 0.0402,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0402
+    },
+    {
+     "qty": 100,
+     "price": 0.0316
+    },
+    {
+     "qty": 300,
+     "price": 0.0274
+    },
+    {
+     "qty": 3000,
+     "price": 0.0241
+    },
+    {
+     "qty": 6000,
+     "price": 0.0215
+    },
+    {
+     "qty": 9000,
+     "price": 0.0202
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b112V"
+    },
+    {
+     "name": "Configuration",
+     "value": "Standalone"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "11.5nC"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "300pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "6A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "390pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "25m\u03a9@4.5V"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "1.1nF"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "650mV"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.8W"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C42401384",
+   "mpn": "HDMG2305UXQ7",
+   "brand": "HXY MOSFET",
+   "description": "-55\u2103~+150\u2103 1 P-Channel 1.7W 190pF 20V 290pF 4.2A 48m\u03a9@4.5V 7.8nC@4.5V 700mV 740pF P-Channel Standalone SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3001,
+   "price": 0.034,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.034
+    },
+    {
+     "qty": 200,
+     "price": 0.0267
+    },
+    {
+     "qty": 600,
+     "price": 0.0228
+    },
+    {
+     "qty": 3000,
+     "price": 0.0204
+    },
+    {
+     "qty": 9000,
+     "price": 0.0183
+    },
+    {
+     "qty": 21000,
+     "price": 0.0171
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "https://www.lcsc.com/product-detail/mosfets_hxy-mosfet-hdmg2305uxq7_C42401384.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "740pF"
+    },
+    {
+     "name": "Configuration",
+     "value": "Standalone"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "700mV"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "7.8nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "190pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "4.2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "290pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.7W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "48m\u03a9@4.5V"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C22363747",
+   "mpn": "DMG2305UX-ES",
+   "brand": "ElecSuper",
+   "description": "1 P-Channel 20V 3.3A 36m\u03a9@4.5V 4.3nC@4.5V 430pF 52pF 620mV 65pF 900mW P-Channel SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2730,
+   "price": 0.0287,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0287
+    },
+    {
+     "qty": 200,
+     "price": 0.0218
+    },
+    {
+     "qty": 600,
+     "price": 0.0181
+    },
+    {
+     "qty": 3000,
+     "price": 0.0158
+    },
+    {
+     "qty": 9000,
+     "price": 0.0138
+    },
+    {
+     "qty": 21000,
+     "price": 0.0127
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403191131_ElecSuper-DMG2305UX-ES_C22363747.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_elecsuper-dmg2305ux-es_C22363747.html",
+   "attributes": [
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "430pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "620mV"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "4.3nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "52pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "3.3A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "65pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "900mW"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "36m\u03a9@4.5V"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C54582699",
+   "mpn": "DMG2305UX-13-HXY",
+   "brand": "HXY MOSFET",
+   "description": "SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1812,
+   "price": 0.0714,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0714
+    },
+    {
+     "qty": 100,
+     "price": 0.0576
+    },
+    {
+     "qty": 300,
+     "price": 0.0506
+    },
+    {
+     "qty": 3000,
+     "price": 0.041
+    },
+    {
+     "qty": 6000,
+     "price": 0.037
+    },
+    {
+     "qty": 9000,
+     "price": 0.0348
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "857pF"
+    },
+    {
+     "name": "Configuration",
+     "value": "Standalone"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "1V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10.2nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "108pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "5A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "114pF"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "1.31W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "35m\u03a9@4.5V"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C53199116",
+   "mpn": "DMG2305UX-13(ES)",
+   "brand": "ElecSuper",
+   "description": "SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 757,
+   "price": 0.0384,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0384
+    },
+    {
+     "qty": 200,
+     "price": 0.0306
+    },
+    {
+     "qty": 600,
+     "price": 0.0267
+    },
+    {
+     "qty": 3000,
+     "price": 0.0238
+    },
+    {
+     "qty": 9000,
+     "price": 0.0215
+    },
+    {
+     "qty": 21000,
+     "price": 0.0202
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Vgs",
+     "value": "\u00b112V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "2.2nC"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "25pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "2A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "35pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "82m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "185pF"
+    },
+    {
+     "name": "Type",
+     "value": "P-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "620mV"
+    },
+    {
+     "name": "Number",
+     "value": "1 P-Channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "800mW"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C54582700",
+   "mpn": "DMG2305UXQ-13-HXY",
+   "brand": "HXY MOSFET",
+   "description": "SOT-23 MOSFETs ROHS",
+   "package": "SOT-23",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 90,
+   "price": 0.0963,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0963
+    },
+    {
+     "qty": 50,
+     "price": 0.0776
+    },
+    {
+     "qty": 150,
+     "price": 0.0682
+    },
+    {
+     "qty": 500,
+     "price": 0.0612
+    },
+    {
+     "qty": 3000,
+     "price": 0.0496
+    },
+    {
+     "qty": 6000,
+     "price": 0.0469
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

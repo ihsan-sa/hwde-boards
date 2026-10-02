@@ -1,0 +1,868 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "SRV05-4",
+ "total": 102,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C2836319",
+   "mpn": "SRV05-4",
+   "brand": "MSKSEMI",
+   "description": "-40\u2103~+125\u2103 0.6pF 12V 1uA 4.5A@8/20us 5V 60W@8/20us 9V ESD Four channels SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 435685,
+   "price": 0.0288,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0288
+    },
+    {
+     "qty": 200,
+     "price": 0.0233
+    },
+    {
+     "qty": 600,
+     "price": 0.0202
+    },
+    {
+     "qty": 3000,
+     "price": 0.0153
+    },
+    {
+     "qty": 9000,
+     "price": 0.0137
+    },
+    {
+     "qty": 21000,
+     "price": 0.0128
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405081538_MSKSEMI-SRV05-4_C2836319.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_msksemi-srv05-4_C2836319.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.3pF"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "60W@8/20us"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "Four channels"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "15V"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "4.5A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "9V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "1uA"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C558418",
+   "mpn": "SRV05-4",
+   "brand": "TECH PUBLIC",
+   "description": "-55\u2103~+125\u2103 0.3pF\u30010.8pF 20V 3A 500nA 5V 60W 6V ESD Four channels IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4 Unidirectional SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 285865,
+   "price": 0.0265,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0265
+    },
+    {
+     "qty": 200,
+     "price": 0.02
+    },
+    {
+     "qty": 600,
+     "price": 0.0171
+    },
+    {
+     "qty": 3000,
+     "price": 0.0149
+    },
+    {
+     "qty": 9000,
+     "price": 0.014
+    },
+    {
+     "qty": 21000,
+     "price": 0.0134
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306151011_TECH-PUBLIC-SRV05-4_C558418.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_tech-public-srv05-4_C558418.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.3pF\u30010.8pF"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "Four channels"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "60W"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Polarity",
+     "value": "Unidirectional"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "3A"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "500nA"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C2687126",
+   "mpn": "SRV05-4.TCT",
+   "brand": "UMW(Youtai Semiconductor Co., Ltd.)",
+   "description": "0.3pF 20V 500nA 5V 6V ESD Four channels IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4 SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 64545,
+   "price": 0.0373,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0373
+    },
+    {
+     "qty": 200,
+     "price": 0.0287
+    },
+    {
+     "qty": 600,
+     "price": 0.0238
+    },
+    {
+     "qty": 3000,
+     "price": 0.0209
+    },
+    {
+     "qty": 9000,
+     "price": 0.0183
+    },
+    {
+     "qty": 21000,
+     "price": 0.017
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311091738_UMW-Youtai-Semiconductor-Co---Ltd--SRV05-4-TCT_C2687126.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_umw-youtai-semiconductor-co-ltd-srv05-4-tct_C2687126.html",
+   "attributes": [
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.3pF"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "Four channels"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "300W@8/20us"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "20V"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "4.7A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "500nA"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C5180248",
+   "mpn": "SRV05-4-ES",
+   "brand": "ElecSuper",
+   "description": "0.6pF 12V 1uA 4.5A 5V 60W 6V ESD Four channels IEC 61000-4-2 Unidirectional SOT-23-6L ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6L",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 55875,
+   "price": 0.0352,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0352
+    },
+    {
+     "qty": 200,
+     "price": 0.0256
+    },
+    {
+     "qty": 600,
+     "price": 0.0202
+    },
+    {
+     "qty": 3000,
+     "price": 0.017
+    },
+    {
+     "qty": 9000,
+     "price": 0.0142
+    },
+    {
+     "qty": 21000,
+     "price": 0.0127
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2209201730_ElecSuper-SRV05-4-ES_C5180248.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_elecsuper-srv05-4-es_C5180248.html",
+   "attributes": [
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.6pF"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "Four channels"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "60W"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "12V"
+    },
+    {
+     "name": "Polarity",
+     "value": "Unidirectional"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "4.5A"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "1uA"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C13612",
+   "mpn": "SRV05-4.TCT",
+   "brand": "SEMTECH",
+   "description": "-55\u2103~+125\u2103 12A@8/20us 17.5V 300W@8/20us 3pF 5V 5uA 6V Four channels IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4 TVS Unidirectional SOT-23-6L ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6L",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 48579,
+   "price": 0.1621,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1621
+    },
+    {
+     "qty": 50,
+     "price": 0.1291
+    },
+    {
+     "qty": 150,
+     "price": 0.115
+    },
+    {
+     "qty": 500,
+     "price": 0.0973
+    },
+    {
+     "qty": 3000,
+     "price": 0.0893
+    },
+    {
+     "qty": 6000,
+     "price": 0.0846
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809212114_SEMTECH-SRV05-4-TCT_C13612.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_semtech-srv05-4-tct_C13612.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "TVS"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "3pF"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "Four channels"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "300W@8/20us"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "17.5V"
+    },
+    {
+     "name": "Polarity",
+     "value": "Unidirectional"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "12A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "5uA"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C1975211",
+   "mpn": "SRV05-4HTG-D",
+   "brand": "Littelfuse",
+   "description": "10A@8/20us 150W@8/20us 15V 1pF 500nA 6V 8.5V ESD Four channels IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4 SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 33600,
+   "price": 0.1781,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.1781
+    },
+    {
+     "qty": 50,
+     "price": 0.1415
+    },
+    {
+     "qty": 150,
+     "price": 0.1259
+    },
+    {
+     "qty": 500,
+     "price": 0.1062
+    },
+    {
+     "qty": 3000,
+     "price": 0.0947
+    },
+    {
+     "qty": 6000,
+     "price": 0.0895
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401230948_Littelfuse-SRV05-4HTG-D_C1975211.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_littelfuse-srv05-4htg-d_C1975211.html",
+   "attributes": [
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "1pF"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "150W@8/20us"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "Four channels"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "15V"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "10A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "500nA"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C151305",
+   "mpn": "SRV05-4HTG",
+   "brand": "Littelfuse",
+   "description": "10A@8/20us 150W 15V 3pF 500nA 6V IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4 TVS SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 32457,
+   "price": 0.9413,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.9413
+    },
+    {
+     "qty": 10,
+     "price": 0.8259
+    },
+    {
+     "qty": 30,
+     "price": 0.7462
+    },
+    {
+     "qty": 100,
+     "price": 0.6796
+    },
+    {
+     "qty": 500,
+     "price": 0.6584
+    },
+    {
+     "qty": 1000,
+     "price": 0.5853
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Littelfuse-SRV05-4HTG_C151305.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_littelfuse-srv05-4htg_C151305.html",
+   "attributes": [
+    {
+     "name": "Type",
+     "value": "TVS"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "3pF"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "150W@8/20us"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "15V"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "10A@8/20us"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "500nA"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C2985619",
+   "mpn": "SRV05-4",
+   "brand": "KUU",
+   "description": "-55\u2103~+125\u2103 0.2pF 15V 1uA 5V 60W 8A@8/20us 9V ESD Four channels IEC 61000-4-2 Unidirectional SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 12580,
+   "price": 0.0283,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0283
+    },
+    {
+     "qty": 200,
+     "price": 0.0222
+    },
+    {
+     "qty": 600,
+     "price": 0.0187
+    },
+    {
+     "qty": 3000,
+     "price": 0.0168
+    },
+    {
+     "qty": 9000,
+     "price": 0.015
+    },
+    {
+     "qty": 21000,
+     "price": 0.014
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2203281730_KUU-SRV05-4_C2985619.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_kuu-srv05-4_C2985619.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.2pF"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "Four channels"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "60W"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "15V"
+    },
+    {
+     "name": "Polarity",
+     "value": "Unidirectional"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "8A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "9V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "1uA"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C2905630",
+   "mpn": "SRV05-4.TCT",
+   "brand": "TECH PUBLIC",
+   "description": "-55\u2103~+125\u2103 0.3pF\u30010.8pF 18V 300W@8/20us 4.7A@8/20us 5V 6V 80nA ESD IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4 SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 9647,
+   "price": 0.0454,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0454
+    },
+    {
+     "qty": 100,
+     "price": 0.0365
+    },
+    {
+     "qty": 300,
+     "price": 0.0319
+    },
+    {
+     "qty": 3000,
+     "price": 0.0285
+    },
+    {
+     "qty": 6000,
+     "price": 0.0259
+    },
+    {
+     "qty": 9000,
+     "price": 0.0244
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2110191530_TECH-PUBLIC-SRV05-4-TCT_C2905630.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_tech-public-srv05-4-tct_C2905630.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.3pF\u30010.8pF"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "300W@8/20us"
+    },
+    {
+     "name": "level of protection",
+     "value": "IEC 61000-4-2\u3001IEC 61000-4-5\u3001IEC 61000-4-4"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "18V"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "4.7A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "6V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "80nA"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C5240367",
+   "mpn": "SRV05-4",
+   "brand": "TWGMC",
+   "description": "-40\u2103~+125\u2103 0.4pF\u30010.8pF\u3001250pF 100nA 18V\u300119V 4A@8/20us\u300117A@8/20us 56W@8/20us\u3001306W@8/20us 5V 8V\u30018.5V\u30019.5V ESD SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS",
+   "package": "SOT-23-6",
+   "category": "ESD and Surge Protection (TVS/ESD)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8480,
+   "price": 0.0376,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0376
+    },
+    {
+     "qty": 200,
+     "price": 0.0298
+    },
+    {
+     "qty": 600,
+     "price": 0.0259
+    },
+    {
+     "qty": 3000,
+     "price": 0.0215
+    },
+    {
+     "qty": 9000,
+     "price": 0.0192
+    },
+    {
+     "qty": 21000,
+     "price": 0.0181
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312121450_TWGMC-SRV05-4_C5240367.pdf",
+   "url": "https://www.lcsc.com/product-detail/esd-and-surge-protection-tvs-esd_twgmc-srv05-4_C5240367.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Type",
+     "value": "ESD"
+    },
+    {
+     "name": "Junction Capacitance",
+     "value": "0.4pF\u30010.8pF\u3001250pF"
+    },
+    {
+     "name": "Peak Pulse Power Dissipation (Ppp)",
+     "value": "56W@8/20us\u3001306W@8/20us"
+    },
+    {
+     "name": "Clamping Voltage",
+     "value": "18V\u300119V"
+    },
+    {
+     "name": "Peak Pulse Current (Ipp)",
+     "value": "4A@8/20us\u300117A@8/20us"
+    },
+    {
+     "name": "Voltage - Breakdown",
+     "value": "8V\u30018.5V\u30019.5V"
+    },
+    {
+     "name": "Reverse Stand-Off Voltage (Vrwm)",
+     "value": "5V"
+    },
+    {
+     "name": "Reverse Leakage Current (Ir)",
+     "value": "100nA"
+    }
+   ],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

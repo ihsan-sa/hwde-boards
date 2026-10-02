@@ -1,0 +1,794 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "ESP32-C3-MINI-1",
+ "total": 20,
+ "count": 10,
+ "results": [
+  {
+   "lcsc": "C2838502",
+   "mpn": "ESP32-C3-MINI-1-N4",
+   "brand": "Espressif Systems",
+   "description": "-40\u2103~+85\u2103 -98dBm 20.5dBm 350mA 3V~3.6V 84mA Integrated temperature sensor\u3001Integrated antenna\u3001Built-in watchdog On-board PCB Antenna SPI\u3001UART\u3001I2C\u3001I2S\u3001USB Transceiver SMD,16.6x13.2mm RF Modules ROHS",
+   "package": "SMD,16.6x13.2mm",
+   "category": "RF Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 13531,
+   "price": 3.0303,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.0303
+    },
+    {
+     "qty": 10,
+     "price": 2.6677
+    },
+    {
+     "qty": 30,
+     "price": 2.4824
+    },
+    {
+     "qty": 100,
+     "price": 2.1183
+    },
+    {
+     "qty": 650,
+     "price": 2.0289
+    },
+    {
+     "qty": 1300,
+     "price": 1.9898
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2108141930_Espressif-Systems-ESP32-C3-MINI-1-N4_C2838502.pdf",
+   "url": "https://www.lcsc.com/product-detail/rf-modules_espressif-systems-esp32-c3-mini-1-n4_C2838502.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Antenna Type",
+     "value": "On-board PCB Antenna"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-98dBm"
+    },
+    {
+     "name": "Output Power(Max)",
+     "value": "20.5dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3V~3.6V"
+    },
+    {
+     "name": "Model",
+     "value": "Transceiver"
+    },
+    {
+     "name": "Features",
+     "value": "Integrated temperature sensor\u3001Integrated antenna\u3001Built-in watchdog"
+    },
+    {
+     "name": "Interface Type",
+     "value": "SPI\u3001UART\u3001I2C\u3001I2S\u3001USB"
+    },
+    {
+     "name": "Send  Current",
+     "value": "350mA"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "84mA"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2911374",
+   "mpn": "ESP32-C3-MINI-1U-N4",
+   "brand": "Espressif Systems",
+   "description": "-104dBm -40\u2103~+85\u2103 2.4GHz 20.5dBm 350mA 3V~3.6V 82mA Bluetooth5.0 ESP32-C3FN4 UART\u3001SPI\u3001I2C\u3001I2S\u3001USB SMD,13.2x12.5mm WiFi Modules ROHS",
+   "package": "SMD,13.2x12.5mm",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2117,
+   "price": 3.1311,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.1311
+    },
+    {
+     "qty": 10,
+     "price": 2.7945
+    },
+    {
+     "qty": 30,
+     "price": 2.593
+    },
+    {
+     "qty": 100,
+     "price": 2.4271
+    },
+    {
+     "qty": 650,
+     "price": 2.315
+    },
+    {
+     "qty": 1300,
+     "price": 2.2646
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206021800_Espressif-Systems-ESP32-C3-MINI-1U-N4_C2911374.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-c3-mini-1u-n4_C2911374.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-104dBm"
+    },
+    {
+     "name": "Output Power",
+     "value": "20.5dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3V~3.6V"
+    },
+    {
+     "name": "Frequency",
+     "value": "2.4GHz"
+    },
+    {
+     "name": "Utilized IC / Part",
+     "value": "ESP32-C3FN4"
+    },
+    {
+     "name": "Interface Type",
+     "value": "UART\u3001SPI\u3001I2C\u3001I2S\u3001USB"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "82mA"
+    },
+    {
+     "name": "Wireless Standard",
+     "value": "Bluetooth5.0"
+    },
+    {
+     "name": "Send  Current",
+     "value": "350mA"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C41349510",
+   "mpn": "ESP32-C3-MINI-1-H4X",
+   "brand": "Espressif Systems",
+   "description": "-104dBm -40\u2103~+105\u2103 2.4GHz 20.5dBm 350mA 3V~3.6V 82mA ESP32-C3FH4 On-board PCB Antenna UART\u3001SPI\u3001I2C\u3001GPIO\u3001I2S\u3001USB SMD,16.6x13.2mm WiFi Modules ROHS",
+   "package": "SMD,16.6x13.2mm",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1348,
+   "price": 2.9474,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.9474
+    },
+    {
+     "qty": 10,
+     "price": 2.6206
+    },
+    {
+     "qty": 30,
+     "price": 2.4271
+    },
+    {
+     "qty": 100,
+     "price": 2.2662
+    },
+    {
+     "qty": 650,
+     "price": 2.1573
+    },
+    {
+     "qty": 1300,
+     "price": 2.1069
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2412051119_Espressif-Systems-ESP32-C3-MINI-1-H4X_C41349510.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-c3-mini-1-h4x_C41349510.html",
+   "attributes": [
+    {
+     "name": "Antenna Type",
+     "value": "On-board PCB Antenna"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-104dBm"
+    },
+    {
+     "name": "Output Power",
+     "value": "20.5dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3V~3.6V"
+    },
+    {
+     "name": "Frequency",
+     "value": "2.4GHz"
+    },
+    {
+     "name": "Features",
+     "value": "Integrated Bluetooth function"
+    },
+    {
+     "name": "Utilized IC / Part",
+     "value": "ESP32-C3FH4"
+    },
+    {
+     "name": "Interface Type",
+     "value": "UART\u3001SPI\u3001I2C\u3001GPIO\u3001I2S\u3001USB"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "82mA"
+    },
+    {
+     "name": "Send  Current",
+     "value": "350mA"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C2934569",
+   "mpn": "ESP32-C3-MINI-1-H4",
+   "brand": "Espressif Systems",
+   "description": "-40\u2103~+105\u2103 -96dBm 2.4GHz 20.5dBm 3.3V On-board PCB Antenna SPI SMD,16.6x13.2mm WiFi Modules ROHS",
+   "package": "SMD,16.6x13.2mm",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 986,
+   "price": 3.0481,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.0481
+    },
+    {
+     "qty": 10,
+     "price": 2.7214
+    },
+    {
+     "qty": 30,
+     "price": 2.5279
+    },
+    {
+     "qty": 100,
+     "price": 2.367
+    },
+    {
+     "qty": 650,
+     "price": 2.2581
+    },
+    {
+     "qty": 1300,
+     "price": 2.2093
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121630_Espressif-Systems-ESP32-C3-MINI-1-H4_C2934569.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-c3-mini-1-h4_C2934569.html",
+   "attributes": [
+    {
+     "name": "Antenna Type",
+     "value": "On-board PCB Antenna"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-96dBm"
+    },
+    {
+     "name": "Output Power",
+     "value": "20.5dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3.3V"
+    },
+    {
+     "name": "Frequency",
+     "value": "2.4GHz"
+    },
+    {
+     "name": "Utilized IC / Part",
+     "value": "ESP32-C3FH4"
+    },
+    {
+     "name": "Interface Type",
+     "value": "SPI"
+    },
+    {
+     "name": "Wireless Standard",
+     "value": "IEEE802.11b/g/n\u3001Bluetooth5"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "82mA\u300184mA"
+    },
+    {
+     "name": "Send  Current",
+     "value": "290mA\u3001295mA\u3001350mA"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C3013922",
+   "mpn": "ESP32-C3-MINI-1U-H4",
+   "brand": "Espressif Systems",
+   "description": "-104dBm -40\u2103~+105\u2103 2.4GHz 20.5dBm 350mA 3V~3.6V 82mA Bluetooth5.0 ESP32-C3FH4 UART\u3001SPI\u3001I2C\u3001I2S\u3001JTAG\u3001USB SMD,13.2x12.5mm WiFi Modules ROHS",
+   "package": "SMD,13.2x12.5mm",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 909,
+   "price": 3.4952,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.4952
+    },
+    {
+     "qty": 10,
+     "price": 3.1343
+    },
+    {
+     "qty": 30,
+     "price": 2.9197
+    },
+    {
+     "qty": 100,
+     "price": 2.7409
+    },
+    {
+     "qty": 650,
+     "price": 2.6206
+    },
+    {
+     "qty": 1300,
+     "price": 2.567
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206021745_Espressif-Systems-ESP32-C3-MINI-1U-H4_C3013922.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-c3-mini-1u-h4_C3013922.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-104dBm"
+    },
+    {
+     "name": "Output Power",
+     "value": "20.5dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3V~3.6V"
+    },
+    {
+     "name": "Frequency",
+     "value": "2.4GHz"
+    },
+    {
+     "name": "Features",
+     "value": "Integrated Bluetooth function\u3001Support USB interface"
+    },
+    {
+     "name": "Utilized IC / Part",
+     "value": "ESP32-C3FH4"
+    },
+    {
+     "name": "Interface Type",
+     "value": "UART\u3001SPI\u3001I2C\u3001I2S\u3001JTAG\u3001USB"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "82mA"
+    },
+    {
+     "name": "Wireless Standard",
+     "value": "Bluetooth5.0"
+    },
+    {
+     "name": "Send  Current",
+     "value": "350mA"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C2934561",
+   "mpn": "ESP32-C3-MINI-1-N4(4MB)",
+   "brand": "Espressif Systems",
+   "description": "SMD,13.2x16.6mm WiFi Modules ROHS",
+   "package": "SMD,13.2x16.6mm",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 2.7263,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.7263
+    },
+    {
+     "qty": 10,
+     "price": 2.3963
+    },
+    {
+     "qty": 30,
+     "price": 2.1898
+    },
+    {
+     "qty": 130,
+     "price": 2.0159
+    },
+    {
+     "qty": 520,
+     "price": 1.9021
+    },
+    {
+     "qty": 1040,
+     "price": 1.8517
+    }
+   ],
+   "min_qty": 4,
+   "datasheet": "https://datasheet.lcsc.com/lcsc/2202081100_Espressif-Systems-ESP32-C3-MINI-1-N4-4MB_C2934561.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi modules_espressif systems_esp32-c3-mini-1-n4(4mb)_C2934561.html",
+   "attributes": [],
+   "rank": 5
+  },
+  {
+   "lcsc": "C2935306",
+   "mpn": "ESP32-C3-MINI-1-H4",
+   "brand": "Espressif Systems",
+   "description": "-104dBm -40\u2103~+105\u2103 2.4GHz 20.5dBm 350mA 3V~3.6V 82mA Bluetooth5.0 ESP32-C3FH4 On-board PCB Antenna UART\u3001SPI\u3001I2C\u3001GPIO\u3001I2S\u3001USB SMD,16.6x13.2mm WiFi Modules ROHS",
+   "package": "SMD,16.6x13.2mm",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 2.736,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 2.736
+    },
+    {
+     "qty": 10,
+     "price": 2.406
+    },
+    {
+     "qty": 30,
+     "price": 2.1979
+    },
+    {
+     "qty": 100,
+     "price": 2.024
+    },
+    {
+     "qty": 500,
+     "price": 1.9086
+    },
+    {
+     "qty": 1000,
+     "price": 1.8598
+    }
+   ],
+   "min_qty": 4,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2411121101_Espressif-Systems-ESP32-C3-MINI-1-H4_C2935306.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-c3-mini-1-h4_C2935306.html",
+   "attributes": [
+    {
+     "name": "Antenna Type",
+     "value": "On-board PCB Antenna"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-104dBm"
+    },
+    {
+     "name": "Output Power",
+     "value": "20.5dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3V~3.6V"
+    },
+    {
+     "name": "Frequency",
+     "value": "2.4GHz"
+    },
+    {
+     "name": "Utilized IC / Part",
+     "value": "ESP32-C3FH4"
+    },
+    {
+     "name": "Interface Type",
+     "value": "UART\u3001SPI\u3001I2C\u3001GPIO\u3001I2S\u3001USB"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "82mA"
+    },
+    {
+     "name": "Wireless Standard",
+     "value": "Bluetooth5.0"
+    },
+    {
+     "name": "Send  Current",
+     "value": "350mA"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C5290152",
+   "mpn": "ESP32-C3-MINI-1",
+   "brand": "RF Crazy",
+   "description": "-40\u2103~+81\u2103 -89dBm 2.4GHz 350mA 3V~3.6V 82mA ESP32-C3 Chip On-board PCB Antenna UART - WiFi Modules ROHS",
+   "package": "-",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 3.3473,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 3.3473
+    },
+    {
+     "qty": 10,
+     "price": 2.8677
+    },
+    {
+     "qty": 30,
+     "price": 2.5832
+    },
+    {
+     "qty": 100,
+     "price": 2.1882
+    },
+    {
+     "qty": 650,
+     "price": 2.0549
+    },
+    {
+     "qty": 1300,
+     "price": 1.9947
+    }
+   ],
+   "min_qty": 3,
+   "datasheet": "https://datasheet.lcsc.com/lcsc/2304071130_RF-Crazy-ESP32-C3-MINI-1_C5290152.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi modules_rf crazy_esp32-c3-mini-1_C5290152.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+81\u2103"
+    },
+    {
+     "name": "Antenna Type",
+     "value": "On-board PCB Antenna"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-89dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3V~3.6V"
+    },
+    {
+     "name": "Frequency",
+     "value": "2.4GHz"
+    },
+    {
+     "name": "Features",
+     "value": "Integrated Bluetooth function"
+    },
+    {
+     "name": "Utilized IC / Part",
+     "value": "ESP32-C3 Chip"
+    },
+    {
+     "name": "Interface Type",
+     "value": "UART"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "82mA"
+    },
+    {
+     "name": "Send  Current",
+     "value": "350mA"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C5224444",
+   "mpn": "ESP32-C3-MINI-1-N4-A",
+   "brand": "Espressif Systems",
+   "description": "-104dBm -40\u2103~+105\u2103 2.4GHz 21dBm 350mA 3V~3.6V 82mA Bluetooth5.0 ESP32-C3FN4 Integrated Bluetooth function On-board PCB Antenna UART\u3001SPI\u3001I2C\u3001GPIO\u3001PWM\u3001ADC\u3001I2S SMD-53P,16.6x13.2mm WiFi Modules ROHS",
+   "package": "SMD-53P,16.6x13.2mm",
+   "category": "WiFi Modules",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 5.5419,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 5.5419
+    },
+    {
+     "qty": 10,
+     "price": 5.5419
+    },
+    {
+     "qty": 30,
+     "price": 5.5419
+    },
+    {
+     "qty": 200,
+     "price": 2.1459
+    },
+    {
+     "qty": 500,
+     "price": 2.0695
+    },
+    {
+     "qty": 1000,
+     "price": 2.0321
+    }
+   ],
+   "min_qty": 2,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2411192340_Espressif-Systems-ESP32-C3-MINI-1-N4-A_C5224444.pdf",
+   "url": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-c3-mini-1-n4-a_C5224444.html",
+   "attributes": [
+    {
+     "name": "Antenna Type",
+     "value": "On-board PCB Antenna"
+    },
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+105\u2103"
+    },
+    {
+     "name": "Sensitivity",
+     "value": "-104dBm"
+    },
+    {
+     "name": "Output Power",
+     "value": "21dBm"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "3V~3.6V"
+    },
+    {
+     "name": "Frequency",
+     "value": "2.4GHz"
+    },
+    {
+     "name": "Features",
+     "value": "Integrated Bluetooth function"
+    },
+    {
+     "name": "Utilized IC / Part",
+     "value": "ESP32-C3FN4"
+    },
+    {
+     "name": "Interface Type",
+     "value": "UART\u3001SPI\u3001I2C\u3001GPIO\u3001PWM\u3001ADC\u3001I2S"
+    },
+    {
+     "name": "Receive  Current",
+     "value": "82mA"
+    },
+    {
+     "name": "Wireless Standard",
+     "value": "Bluetooth5.0"
+    },
+    {
+     "name": "Send  Current",
+     "value": "350mA"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C50390200",
+   "mpn": "ESP32-C3-MINI-1-N4X",
+   "brand": "Espressif Systems",
+   "description": "- HWDG ROHS",
+   "package": "-",
+   "category": "HWDG",
+   "type": "Extended",
+   "basic": false,
+   "stock": 0,
+   "price": 6.5531,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 6.5531
+    },
+    {
+     "qty": 10,
+     "price": 6.5531
+    },
+    {
+     "qty": 30,
+     "price": 6.5531
+    },
+    {
+     "qty": 200,
+     "price": 2.6157
+    },
+    {
+     "qty": 500,
+     "price": 2.5279
+    },
+    {
+     "qty": 1000,
+     "price": 2.484
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [],
+   "rank": 9
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 8
+}

@@ -1,0 +1,43 @@
+id: half-bridge-inverter-switch-node-damping
+classes: [emi]
+applies:
+  topologies: [half-bridge-inverter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  switch_node: "HS source to LS drain: shortest, widest copper; low-inductance FET package"
+  snubber_provision: "footprint for RC across each FET, C ~ several x Coss, R tuned on the bench"
+  cgs_provision: "optional footprint gate-source per FET against gate pick-up"
+  gate_resistor_ohm: 10
+prose: >
+  SLVA959B p26 Fig 6-8/6-9: the half-bridge switch node carries L_DRAIN/L_SOURCE
+  PCB and package parasitics plus C_MOSFET, which ring as an LC. p27: that
+  ringing causes EMI and over/undershoot that can exceed FET VDS and gate-driver
+  pin ratings; slew reduction and snubbers help but layout fixes the root cause.
+  Fig 6-10 shows the side-by-side SON-8 layout where the HS source and LS drain
+  share one short, wide SWITCH-NODE pour; minimise that length, maximise its width
+  and prefer low-inductance packages. TIDA-010251 p5 Section 3.1 + Fig 3-1 (six
+  CSD18510Q5B, 18 V bus): provision an RC snubber across every FET (3900 pF, 1.5
+  ohm fitted; C picked as several times Coss, 832 pF there; R tuned on the
+  bench), an optional 1000 pF Cgs per FET against gate pick-up, and 10 ohm gate
+  resistors; p17 Fig 4-6/4-7 show high- and low-side VGS/VDS captured with 10 ohm
+  Rg and the text reports clean waveforms without overvoltage ringing.
+sources:
+  - {file: research/sources/slva959b.pdf, page: 26, note: "Section 6.3/6.3.1 + Fig 6-8 half-bridge with switch node, Fig 6-9 parasitics L_DRAIN/L_SOURCE/C_MOSFET"}
+  - {file: research/sources/slva959b.pdf, page: 27, note: "ringing consequences text + Fig 6-10 switch-node layout example (HS S + LS D on one pour)"}
+  - {file: research/sources/tiduf36a.pdf, page: 5, note: "Section 3.1 text + Fig 3-1: RC snubber 3900 pF/1.5 ohm across each FET, C ~ several x Coss (832 pF), 1000 pF Cgs option, 10 ohm Rg"}
+  - {file: research/sources/tiduf36a.pdf, page: 17, note: "Fig 4-6/4-7 HS and LS VGS/VDS with 10 ohm gate resistor, text: clean, no overvoltage ringing"}
+status: draft
+origin: research:block-half-bridge-inverter-1
+level: topology
+envelope:
+  vin_v: {min: 10, max: 48}
+maturity: draft
+generalizes: []
+envelope_note: >
+  Scales with ringing overshoot against FET VDS margin: overshoot grows with
+  loop L x di/dt while the margin shrinks as vin approaches the FET rating. The
+  evidence is an 18 V bus on 40 V FETs; for a 60 V FET class the provisional
+  snubber stays optional to ~48 V, above that treat it as fitted by default.

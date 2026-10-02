@@ -1,0 +1,468 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "STM32G431",
+ "total": 47,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C529358",
+   "mpn": "STM32G431KBU6",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+85\u2103 1.71V~3.6V 128KB 12bit 12bit 170MHz 26 32 Bit 32KB ARM Cortex-M4F Built-in FLASH UFQFPN-32(5x5) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "UFQFPN-32(5x5)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3643,
+   "price": 8.956,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 8.956
+    },
+    {
+     "qty": 10,
+     "price": 7.6813
+    },
+    {
+     "qty": 30,
+     "price": 6.905
+    },
+    {
+     "qty": 100,
+     "price": 6.2522
+    },
+    {
+     "qty": 102,
+     "price": 6.2522
+    },
+    {
+     "qty": 104,
+     "price": 6.2522
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G431KBU6_C529358.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g431kbu6_C529358.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "128KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "32KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "26"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C529355",
+   "mpn": "STM32G431CBT6",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+85\u2103 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 32KB 38 ARM Cortex-M4F Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-48(7x7)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2043,
+   "price": 5.3818,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 5.3818
+    },
+    {
+     "qty": 10,
+     "price": 4.69
+    },
+    {
+     "qty": 30,
+     "price": 4.3376
+    },
+    {
+     "qty": 250,
+     "price": 3.8082
+    },
+    {
+     "qty": 500,
+     "price": 3.6377
+    },
+    {
+     "qty": 1000,
+     "price": 3.5662
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G431CBT6_C529355.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g431cbt6_C529355.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "128KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "32KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "38"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C730096",
+   "mpn": "STM32G431C8T6",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+85\u2103 1.71V~3.6V 12bit 12bit 170MHz 32 Bit 32KB 38 64KB ARM Cortex-M4F Built-in FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-48(7x7)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1176,
+   "price": 7.4604,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 7.4604
+    },
+    {
+     "qty": 10,
+     "price": 6.525
+    },
+    {
+     "qty": 30,
+     "price": 5.9534
+    },
+    {
+     "qty": 100,
+     "price": 5.476
+    },
+    {
+     "qty": 102,
+     "price": 5.476
+    },
+    {
+     "qty": 104,
+     "price": 5.476
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G431C8T6_C730096.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g431c8t6_C730096.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "64KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "32KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "38"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C529356",
+   "mpn": "STM32G431CBU6",
+   "brand": "STMicroelectronics",
+   "description": "-40\u2103~+85\u2103 1.71V~3.6V 128KB 12bit 12bit 170MHz 32 Bit 32KB 42 ARM Cortex-M4F Built-in FLASH UFQFPN-48(7x7) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "UFQFPN-48(7x7)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 1169,
+   "price": 8.1083,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 8.1083
+    },
+    {
+     "qty": 10,
+     "price": 7.2379
+    },
+    {
+     "qty": 30,
+     "price": 6.6825
+    },
+    {
+     "qty": 100,
+     "price": 6.145
+    },
+    {
+     "qty": 102,
+     "price": 6.145
+    },
+    {
+     "qty": 104,
+     "price": 6.145
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G431CBU6_C529356.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g431cbu6_C529356.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+85\u2103"
+    },
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "128KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "32KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4F"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "42"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C730098",
+   "mpn": "STM32G431K8T6",
+   "brand": "STMicroelectronics",
+   "description": "1.71V~3.6V 12bit 12bit 170MHz 26 64KB ARM Cortex-M Series FLASH LQFP-32(7x7) Microcontrollers (MCU/MPU/SOC) ROHS",
+   "package": "LQFP-32(7x7)",
+   "category": "Microcontrollers (MCU/MPU/SOC)",
+   "type": "Extended",
+   "basic": false,
+   "stock": 778,
+   "price": 6.5364,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 6.5364
+    },
+    {
+     "qty": 10,
+     "price": 5.5571
+    },
+    {
+     "qty": 30,
+     "price": 4.9595
+    },
+    {
+     "qty": 100,
+     "price": 4.4594
+    },
+    {
+     "qty": 102,
+     "price": 4.4594
+    },
+    {
+     "qty": 104,
+     "price": 4.4594
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_STMicroelectronics-STM32G431K8T6_C730098.pdf",
+   "url": "https://www.lcsc.com/product-detail/microcontrollers-mcu-mpu-soc_stmicroelectronics-stm32g431k8t6_C730098.html",
+   "attributes": [
+    {
+     "name": "CPU Maximum Speed",
+     "value": "170MHz"
+    },
+    {
+     "name": "DAC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Program Memory Type",
+     "value": "FLASH"
+    },
+    {
+     "name": "Program Storage Size",
+     "value": "64KB"
+    },
+    {
+     "name": "Voltage - Supply",
+     "value": "1.71V~3.6V"
+    },
+    {
+     "name": "Core Size",
+     "value": "32 Bit"
+    },
+    {
+     "name": "RAM Size",
+     "value": "8KB"
+    },
+    {
+     "name": "CPU Core",
+     "value": "ARM Cortex-M4"
+    },
+    {
+     "name": "Number of I/O",
+     "value": "26"
+    },
+    {
+     "name": "ADC (Bit)",
+     "value": "12bit"
+    },
+    {
+     "name": "Oscillator Type",
+     "value": "Built-in+External"
+    }
+   ],
+   "rank": 4
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 1
+}

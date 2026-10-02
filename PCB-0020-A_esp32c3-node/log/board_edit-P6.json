@@ -1,0 +1,333 @@
+{
+ "script": "board_edit",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "mode": "fixed",
+ "applied": true,
+ "outline": {
+  "before": {
+   "bbox": [
+    9.0,
+    9.0,
+    88.385,
+    110.526
+   ],
+   "w": 79.385,
+   "h": 101.526,
+   "corner_radius": 2.0,
+   "faces": 1,
+   "arcs": 4,
+   "items": {
+    "gr_line": 4,
+    "gr_arc": 4
+   },
+   "area_mm2": 8056.188,
+   "ideal": true,
+   "deviation_mm": 0.0024
+  },
+  "after": {
+   "bbox": [
+    9.0,
+    9.0,
+    35.0,
+    47.0
+   ],
+   "w": 26.0,
+   "h": 38.0,
+   "corner_radius": 1.0,
+   "cutouts": [],
+   "area_mm2": 987.14,
+   "anchor": "topleft"
+  }
+ },
+ "fab_floors": {
+  "profile": "2layer_1oz",
+  "layers": 2,
+  "copper_oz": 1.0,
+  "copper_oz_source": "stackup",
+  "min_copper_to_edge_mm": 0.3,
+  "min_hole_to_edge_mm": 0.5
+ },
+ "blocking": [],
+ "preexisting": [
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.36",
+   "msg": "pad U1.36 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    26.8,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.37",
+   "msg": "pad U1.37 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    26.0,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.38",
+   "msg": "pad U1.38 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    25.2,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.39",
+   "msg": "pad U1.39 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    24.4,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.40",
+   "msg": "pad U1.40 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    23.6,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.41",
+   "msg": "pad U1.41 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    22.8,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.42",
+   "msg": "pad U1.42 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    22.0,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.43",
+   "msg": "pad U1.43 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    21.2,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.44",
+   "msg": "pad U1.44 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    20.4,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.45",
+   "msg": "pad U1.45 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    19.6,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.46",
+   "msg": "pad U1.46 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    18.8,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.47",
+   "msg": "pad U1.47 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    18.0,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.48",
+   "msg": "pad U1.48 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    17.2,
+    9.7
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.50",
+   "msg": "pad U1.50 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    27.95,
+    9.65
+   ]
+  },
+  {
+   "kind": "copper_to_edge",
+   "key": "pad:U1.53",
+   "msg": "pad U1.53 (GND) is 0.300 mm from the board edge, floor 0.3 mm",
+   "metric": 0.3,
+   "worse_when": "lower",
+   "refs": [
+    "U1"
+   ],
+   "pos": [
+    16.05,
+    9.65
+   ]
+  }
+ ],
+ "warnings": [],
+ "edit_class": "outline_change",
+ "gates_to_rerun": [
+  "dfm",
+  "drc",
+  "drc_routed",
+  "place",
+  "verify"
+ ],
+ "human_hold": 2,
+ "worker": {
+  "removed_edge_items": 8,
+  "bbox": [
+   9.0,
+   9.0,
+   35.0,
+   47.0
+  ],
+  "corner_radius": 1.0,
+  "cutouts": [],
+  "notes": []
+ },
+ "refilled": false,
+ "drc": {
+  "before": {
+   "total": 465,
+   "by_severity": {
+    "error": 167,
+    "warning": 298
+   },
+   "by_source": {
+    "drc": 324,
+    "unconnected": 141
+   }
+  },
+  "after": {
+   "total": 509,
+   "by_severity": {
+    "error": 167,
+    "warning": 342
+   },
+   "by_source": {
+    "drc": 368,
+    "unconnected": 141
+   }
+  },
+  "errors_before": 26,
+  "errors_after": 26
+ },
+ "record": {
+  "ok": true,
+  "recorded": true,
+  "workspace": "PCB-0020-A_esp32c3-node",
+  "class": "outline_change",
+  "human_hold": 2,
+  "gates": [
+   "place",
+   "drc",
+   "drc_routed",
+   "verify",
+   "dfm"
+  ],
+  "gates_marked": [
+   "place"
+  ],
+  "stale_artifacts": [
+   "gerbers"
+  ]
+ }
+}

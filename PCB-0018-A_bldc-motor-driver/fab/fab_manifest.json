@@ -1,0 +1,98 @@
+{
+ "script": "fab_export",
+ "status": "pass",
+ "board": "PCB-0018-A_bldc-motor-driver.kicad_pcb",
+ "name": "PCB-0018-A_bldc-motor-driver",
+ "layer_count": 4,
+ "copper_layers": [
+  "F.Cu",
+  "In1.Cu",
+  "In2.Cu",
+  "B.Cu"
+ ],
+ "layers_exported": [
+  "F.Cu",
+  "In1.Cu",
+  "In2.Cu",
+  "B.Cu",
+  "F.Silkscreen",
+  "B.Silkscreen",
+  "F.Mask",
+  "B.Mask",
+  "F.Paste",
+  "B.Paste",
+  "Edge.Cuts"
+ ],
+ "out_dir": "fab",
+ "gerber_dir": "fab/gerbers",
+ "pos_file": "fab/PCB-0018-A_bldc-motor-driver-pos.csv",
+ "files": [
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-B_Cu.gbl",
+   "sha256": "3bf397502d8d86e82ef5b3c67827058999ecb9a672bd91deba939b3c12bddbe8",
+   "bytes": 415365
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-B_Mask.gbs",
+   "sha256": "b33e384907699cdc98122340fb339429af152bd1e95957a9868799d6dcdc1d21",
+   "bytes": 1239
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-B_Paste.gbp",
+   "sha256": "22bbbbcd218e843b90da09b23384d7cb8b73f82c8c2d30cecc9b257af6f835ec",
+   "bytes": 615
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-B_Silkscreen.gbo",
+   "sha256": "3fd2cc327f9e36c578612df5e874140c7de76042b804b0eb065bd8977a8ffaee",
+   "bytes": 4449
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-Edge_Cuts.gm1",
+   "sha256": "dfd5cdc609063412fc8cc560478c446ab03609570f4dcc0b00d2d6c15895286b",
+   "bytes": 1023
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-F_Cu.gtl",
+   "sha256": "9d029cbaa3c181a944d7154c16dfaf75dbc90de4b5fbee261b8f831d7fc74066",
+   "bytes": 294286
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-F_Mask.gts",
+   "sha256": "59e15f0ef646286203b47fbb24cc346f527d3c49efadf9de9e8b40beae93f1c6",
+   "bytes": 17840
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-F_Paste.gtp",
+   "sha256": "b1bb9c29a8a6694d0e1645aac0826d59ec1db97489633b32abe3be352df8ac3f",
+   "bytes": 17196
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-F_Silkscreen.gto",
+   "sha256": "3aba16cd1e0f61778b5ab3c2199356ab4a0d28d396e8aa957a0ab0c1054802e6",
+   "bytes": 447410
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-In1_Cu.g1",
+   "sha256": "4477a484bdcb6c7546782643e43758264a8402138b3d1e6e5f271d44409b35f9",
+   "bytes": 532698
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-In2_Cu.g2",
+   "sha256": "eae0007c28084a11e3a37ef07ac972b90ebf12b345951402f72fcef07f914dcf",
+   "bytes": 1054219
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver-job.gbrjob",
+   "sha256": "e5e4bdc00efbd17b3f9144101f84728b22ff3300e62bc0eb93d207398122d414",
+   "bytes": 3978
+  },
+  {
+   "name": "PCB-0018-A_bldc-motor-driver.drl",
+   "sha256": "f5b9fc876c47d5ef3dc7bcc2c37b85a81052a52454e2049dd98209c2f2b0ca75",
+   "bytes": 10541
+  }
+ ],
+ "gerber_zip": "fab/PCB-0018-A_bldc-motor-driver_gerbers.zip",
+ "gerber_zip_sha256": "9be5f919f139d10c1b7a2203b011b7a78514ff49e4d9bb69c09fd66da7fb0484"
+}

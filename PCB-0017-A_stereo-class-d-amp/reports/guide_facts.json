@@ -1,0 +1,551 @@
+{
+ "script": "guide_facts",
+ "status": "pass",
+ "board": "stereo-class-d-amp",
+ "workspace": "PCB-0017-A_stereo-class-d-amp",
+ "part_number": {
+  "pn": "PCB-0017-A",
+  "product": "PCB-0017",
+  "rev": "A",
+  "title": "TPA3118D2 stereo class-D amplifier, 12 V",
+  "register": "register.yaml"
+ },
+ "part_number_reason": null,
+ "phase": "P7",
+ "mode": null,
+ "gates": {
+  "erc": "pass",
+  "place": "pass",
+  "drc_routed": "pass",
+  "verify": "fail",
+  "dfm": "pass"
+ },
+ "guide_pdf": "fab/stereo-class-d-amp-guide.pdf",
+ "paths": {
+  "gerber_zip": "fab/PCB-0017-A_stereo-class-d-amp_gerbers.zip",
+  "bom": "fab/BOM.csv",
+  "bom_full": "fab/BOM-full.csv",
+  "cpl": "fab/CPL.csv",
+  "schematic_pdf": "reports/schematic.pdf",
+  "quote": "fab/quote.json",
+  "cost": "reports/cost.json",
+  "design_doc": "reports/design_doc/stereo-class-d-amp-design-doc.pdf",
+  "renders": [
+   "reports/PCB-0017-A_stereo-class-d-amp_bottom.png",
+   "reports/PCB-0017-A_stereo-class-d-amp_top.png"
+  ],
+  "prose": [
+   "requirements.md",
+   "architecture/blocks.md",
+   "architecture/power_tree.md",
+   "architecture/sheets.md",
+   "architecture/stackup.md",
+   "brief/brief.md"
+  ],
+  "top_render": "reports/PCB-0017-A_stereo-class-d-amp_top.png"
+ },
+ "bom": [
+  {
+   "designators": "C1,C2,C3,C4",
+   "value": "1uF 50V X7R",
+   "footprint": "C0805",
+   "qty_per_board": 4,
+   "lcsc": "C28323",
+   "mpn": "CL21B105KBFNNNE",
+   "assembly_class": "smt_placed",
+   "jlc_status": "basic",
+   "unit_price": 0.0397
+  },
+  {
+   "designators": "C5",
+   "value": "1uF 25V X7R",
+   "footprint": "C0603",
+   "qty_per_board": 1,
+   "lcsc": "C106858",
+   "mpn": "CC0603KRX7R8BB105",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.0294
+  },
+  {
+   "designators": "C6,C9,C10",
+   "value": "100nF 50V X7R",
+   "footprint": "C0603",
+   "qty_per_board": 3,
+   "lcsc": "C14663",
+   "mpn": "CC0603KRX7R9BB104",
+   "assembly_class": "smt_placed",
+   "jlc_status": "basic",
+   "unit_price": 0.0122
+  },
+  {
+   "designators": "C7,C8",
+   "value": "1nF 50V NP0",
+   "footprint": "C0603",
+   "qty_per_board": 2,
+   "lcsc": "C106246",
+   "mpn": "CC0603JRNPO9BN102",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.0053
+  },
+  {
+   "designators": "C11,C12",
+   "value": "10uF 25V X5R",
+   "footprint": "C0805",
+   "qty_per_board": 2,
+   "lcsc": "C15850",
+   "mpn": "CL21A106KAYNNNE",
+   "assembly_class": "smt_placed",
+   "jlc_status": "basic",
+   "unit_price": 0.0788
+  },
+  {
+   "designators": "C13",
+   "value": "100uF 35V polymer",
+   "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+   "qty_per_board": 1,
+   "lcsc": "C46550467",
+   "mpn": "MA35V100M6X8",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.2116
+  },
+  {
+   "designators": "C14",
+   "value": "100uF 35V elec",
+   "footprint": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
+   "qty_per_board": 1,
+   "lcsc": "C2992596",
+   "mpn": "FZ100UF35V90RV0064",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.0525
+  },
+  {
+   "designators": "C15,C16,C17,C18",
+   "value": "220nF 50V X7R",
+   "footprint": "C0805",
+   "qty_per_board": 4,
+   "lcsc": "C5378",
+   "mpn": "CL21B224KBFNNNE",
+   "assembly_class": "smt_placed",
+   "jlc_status": "basic",
+   "unit_price": 0.0187
+  },
+  {
+   "designators": "C19,C20,C21,C22",
+   "value": "680nF 50V X7R",
+   "footprint": "C0805",
+   "qty_per_board": 4,
+   "lcsc": "C107133",
+   "mpn": "CC0805KKX7R9BB684",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.0389
+  },
+  {
+   "designators": "C23,C24,C25,C26",
+   "value": "10nF 50V X7R",
+   "footprint": "C0402",
+   "qty_per_board": 4,
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "assembly_class": "smt_placed",
+   "jlc_status": "basic",
+   "unit_price": 0.005
+  },
+  {
+   "designators": "D1",
+   "value": "SMBJ15A",
+   "footprint": "SMB_L4.6-W3.6-LS5.3-RD",
+   "qty_per_board": 1,
+   "lcsc": "C113988",
+   "mpn": "SMBJ15A",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.0582
+  },
+  {
+   "designators": "L1,L2,L3,L4",
+   "value": "10uH 5.5A",
+   "footprint": "IND-SMD_L7.3-W6.6_MHCI06030",
+   "qty_per_board": 4,
+   "lcsc": "C207842",
+   "mpn": "SLO0630H100MTT",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.1116
+  },
+  {
+   "designators": "R1",
+   "value": "5.6k 1%",
+   "footprint": "R0603",
+   "qty_per_board": 1,
+   "lcsc": "C23189",
+   "mpn": "0603WAF5601T5E",
+   "assembly_class": "smt_placed",
+   "jlc_status": "basic",
+   "unit_price": 0.0032
+  },
+  {
+   "designators": "R2,R3",
+   "value": "100k 1%",
+   "footprint": "R0603",
+   "qty_per_board": 2,
+   "lcsc": "C25803",
+   "mpn": "0603WAF1003T5E",
+   "assembly_class": "smt_placed",
+   "jlc_status": "basic",
+   "unit_price": 0.0031
+  },
+  {
+   "designators": "R4,R5,R6,R7",
+   "value": "3.3R 1%",
+   "footprint": "R0603",
+   "qty_per_board": 4,
+   "lcsc": "C137725",
+   "mpn": "RC0603FR-073R3L",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 0.0072
+  },
+  {
+   "designators": "U1",
+   "value": "TPA3118D2DAPR",
+   "footprint": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+   "qty_per_board": 1,
+   "lcsc": "C46497",
+   "mpn": "TPA3118D2DAPR",
+   "assembly_class": "smt_placed",
+   "jlc_status": "extended",
+   "unit_price": 1.0751
+  },
+  {
+   "designators": "J1",
+   "value": "Bare SMD wire-pad pair, +12V / GND",
+   "footprint": "2x SMD pad, approx 3.0x6.0mm each, >=1.5mm apart, no connector body",
+   "qty_per_board": 1,
+   "lcsc": null,
+   "mpn": null,
+   "assembly_class": "board_feature",
+   "jlc_status": "not_lcsc",
+   "unit_price": null
+  },
+  {
+   "designators": "J2",
+   "value": "Bare SMD wire-pad trio, R / GND / L stereo line input",
+   "footprint": "3x SMD pad, no connector body",
+   "qty_per_board": 1,
+   "lcsc": null,
+   "mpn": null,
+   "assembly_class": "board_feature",
+   "jlc_status": "not_lcsc",
+   "unit_price": null
+  },
+  {
+   "designators": "J3",
+   "value": "Bare SMD wire-pad pair, left speaker +/- (BTL, neither terminal is ground)",
+   "footprint": "2x SMD pad, no connector body",
+   "qty_per_board": 1,
+   "lcsc": null,
+   "mpn": null,
+   "assembly_class": "board_feature",
+   "jlc_status": "not_lcsc",
+   "unit_price": null
+  },
+  {
+   "designators": "J4",
+   "value": "Bare SMD wire-pad pair, right speaker +/- (BTL, neither terminal is ground)",
+   "footprint": "2x SMD pad, no connector body",
+   "qty_per_board": 1,
+   "lcsc": null,
+   "mpn": null,
+   "assembly_class": "board_feature",
+   "jlc_status": "not_lcsc",
+   "unit_price": null
+  },
+  {
+   "designators": "TP1",
+   "value": "Bare SMD test-point pad, GND probe",
+   "footprint": "1x SMD pad, no connector body",
+   "qty_per_board": 1,
+   "lcsc": null,
+   "mpn": null,
+   "assembly_class": "board_feature",
+   "jlc_status": "not_lcsc",
+   "unit_price": null
+  }
+ ],
+ "bom_counts": {
+  "lines": 21,
+  "placed_lines": 16,
+  "unique_parts": {
+   "basic": 7,
+   "extended": 9,
+   "unknown": 0,
+   "not_lcsc": 0
+  }
+ },
+ "parts_cost_per_board": 2.53,
+ "rotation_corrections": [],
+ "render": {
+  "status": "pass",
+  "views": {
+   "top": "reports/PCB-0017-A_stereo-class-d-amp_top.png",
+   "bottom": "reports/PCB-0017-A_stereo-class-d-amp_bottom.png"
+  },
+  "models_missing": [],
+  "models_relinked": []
+ },
+ "prebuy": {
+  "path": "fab/prebuy.csv",
+  "build_qty": 5,
+  "note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly.",
+  "rows": [
+   {
+    "LCSC": "C106858",
+    "MPN": "CC0603KRX7R8BB105",
+    "Comment": "1uF 25V X7R",
+    "Designator": "C5",
+    "Qty Per Board": "1",
+    "Qty To Buy": "5"
+   },
+   {
+    "LCSC": "C106246",
+    "MPN": "CC0603JRNPO9BN102",
+    "Comment": "1nF 50V NP0",
+    "Designator": "C7,C8",
+    "Qty Per Board": "2",
+    "Qty To Buy": "10"
+   },
+   {
+    "LCSC": "C46550467",
+    "MPN": "MA35V100M6X8",
+    "Comment": "100uF 35V polymer",
+    "Designator": "C13",
+    "Qty Per Board": "1",
+    "Qty To Buy": "5"
+   },
+   {
+    "LCSC": "C2992596",
+    "MPN": "FZ100UF35V90RV0064",
+    "Comment": "100uF 35V elec",
+    "Designator": "C14",
+    "Qty Per Board": "1",
+    "Qty To Buy": "5"
+   },
+   {
+    "LCSC": "C107133",
+    "MPN": "CC0805KKX7R9BB684",
+    "Comment": "680nF 50V X7R",
+    "Designator": "C19,C20,C21,C22",
+    "Qty Per Board": "4",
+    "Qty To Buy": "20"
+   },
+   {
+    "LCSC": "C113988",
+    "MPN": "SMBJ15A",
+    "Comment": "SMBJ15A",
+    "Designator": "D1",
+    "Qty Per Board": "1",
+    "Qty To Buy": "5"
+   },
+   {
+    "LCSC": "C207842",
+    "MPN": "SLO0630H100MTT",
+    "Comment": "10uH 5.5A",
+    "Designator": "L1,L2,L3,L4",
+    "Qty Per Board": "4",
+    "Qty To Buy": "20"
+   },
+   {
+    "LCSC": "C137725",
+    "MPN": "RC0603FR-073R3L",
+    "Comment": "3.3R 1%",
+    "Designator": "R4,R5,R6,R7",
+    "Qty Per Board": "4",
+    "Qty To Buy": "20"
+   },
+   {
+    "LCSC": "C46497",
+    "MPN": "TPA3118D2DAPR",
+    "Comment": "TPA3118D2DAPR",
+    "Designator": "U1",
+    "Qty Per Board": "1",
+    "Qty To Buy": "5"
+   }
+  ]
+ },
+ "quote": {
+  "estimated": true,
+  "currency": "USD",
+  "disclaimer": "Estimates from reference/jlc_pricing.yaml - NOT a quote. Confirm at the authoritative quote URL before ordering. Measured live API prices ran 1.9-3.1x HIGHER than this table - treat these figures as a LOWER BOUND.",
+  "authoritative_quote_url": "https://cart.jlcpcb.com/quote",
+  "spec": {
+   "layers": 2,
+   "width_mm": 53.55,
+   "height_mm": 36.8,
+   "area_dm2": 0.1971,
+   "thickness_mm": 1.6,
+   "assembly": true,
+   "n_parts": 44,
+   "n_joints": 128,
+   "n_extended_parts": 14,
+   "n_extended_source": "per_distinct_entries"
+  },
+  "lead_time": {
+   "pcb_days": {
+    "standard": 2,
+    "expedited": 1
+   },
+   "assembly_additional_days": 4,
+   "note": "Build time only - shipping is separate and region-dependent."
+  },
+  "cheapest": {
+   "qty": 5,
+   "surface_finish": "HASL",
+   "solder_mask_color": "green",
+   "pcb": {
+    "base": 2.0,
+    "base_at_qty": 5,
+    "oversize": 0.0,
+    "options": 0.0,
+    "total": 2.0
+   },
+   "total": 61.09,
+   "assembly": {
+    "setup": 8.0,
+    "feeders": 42.0,
+    "joints": 1.09,
+    "stencil": 8.0,
+    "n_parts": 44,
+    "n_joints": 128,
+    "n_extended_parts": 14,
+    "total": 59.09
+   },
+   "unit_cost": 12.22
+  },
+  "matrix": [
+   {
+    "qty": 5,
+    "surface_finish": "HASL",
+    "total": 61.09,
+    "unit_cost": 12.22,
+    "assembly_total": 59.09
+   },
+   {
+    "qty": 5,
+    "surface_finish": "ENIG",
+    "total": 61.09,
+    "unit_cost": 12.22,
+    "assembly_total": 59.09
+   },
+   {
+    "qty": 10,
+    "surface_finish": "HASL",
+    "total": 62.18,
+    "unit_cost": 6.22,
+    "assembly_total": 60.18
+   },
+   {
+    "qty": 10,
+    "surface_finish": "ENIG",
+    "total": 62.18,
+    "unit_cost": 6.22,
+    "assembly_total": 60.18
+   },
+   {
+    "qty": 30,
+    "surface_finish": "HASL",
+    "total": 73.43,
+    "unit_cost": 2.45,
+    "assembly_total": 64.53
+   },
+   {
+    "qty": 30,
+    "surface_finish": "ENIG",
+    "total": 73.43,
+    "unit_cost": 2.45,
+    "assembly_total": 64.53
+   }
+  ]
+ },
+ "generation_cost": {
+  "currency": "USD",
+  "total_usd": 97.5735,
+  "recorded_usd": null,
+  "loop_logged_usd": null,
+  "breakdown": "full",
+  "breakdown_reason": null,
+  "by_step": [
+   {
+    "step": "setup",
+    "label": "Before the workspace (brief and skill read)",
+    "usd": 0.5006
+   },
+   {
+    "step": "P0",
+    "label": "Brief and intake",
+    "usd": 1.162
+   },
+   {
+    "step": "P1",
+    "label": "Research",
+    "usd": 3.843
+   },
+   {
+    "step": "P2",
+    "label": "Architecture",
+    "usd": 14.2175
+   },
+   {
+    "step": "P4",
+    "label": "Schematic",
+    "usd": 3.0959
+   },
+   {
+    "step": "P6",
+    "label": "Placement",
+    "usd": 4.8808
+   },
+   {
+    "step": "P7",
+    "label": "Routing",
+    "usd": 0.425
+   },
+   {
+    "step": "P8",
+    "label": "Verification",
+    "usd": 0.5097
+   },
+   {
+    "step": "P9",
+    "label": "DFM, order files and guide",
+    "usd": 0.108
+   },
+   {
+    "step": "unattributed",
+    "label": "Not in the transcript (side calls)",
+    "usd": 68.8308
+   }
+  ],
+  "shared": [],
+  "incomplete_sessions": [
+   "811c9ae8-91c8-4b8a-8be5-0ce9b22bae49"
+  ],
+  "unpriced_tokens": {
+   "claude-fable-5-1": 29140185
+  },
+  "notes": [],
+  "prices": {
+   "source": "fitted to Claude Code cost-state session totals, 2026-09-24",
+   "verified": "2026-09-24",
+   "table": "reference/model_prices.yaml"
+  },
+  "timed_out_iterations": 0
+ },
+ "decisions": [],
+ "missing": [],
+ "todo": []
+}

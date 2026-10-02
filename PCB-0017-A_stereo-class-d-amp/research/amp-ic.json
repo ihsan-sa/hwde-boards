@@ -1,0 +1,8 @@
+{
+ "block": "amp-ic",
+ "candidates": [
+  {"mpn": "TPA3118D2DAPR", "lcsc": "C46497", "package": "HTSSOP-32-EP-6.1mm (DAP, pad-down)", "basic": false, "stock": 38915, "price": 1.0751, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810271112_Texas-Instruments-TPA3118D2DAPR_C46497.pdf", "rank": 1, "fit": "lead: DAP=pad-down confirmed, only pad-down option in this power tier on JLC, good stock"},
+  {"mpn": "TPA3116D2DADR", "lcsc": "C50144", "package": "HTSSOP-32-6.1mm (DAD, pad-up)", "basic": false, "stock": 26775, "price": 1.0442, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810182022_Texas-Instruments-TPA3116D2DADR_C50144.pdf", "rank": 2, "fit": "rejected: best stock/price of the TPA3116D2 family, but DAD=pad-up needs a top clip heatsink; whole family has no pad-down listing on JLC"},
+  {"mpn": "TPA3116D2DAD", "lcsc": "C2865736", "package": "HTSSOP-32-EP-6.1mm (DAD, pad-up)", "basic": false, "stock": 507, "price": 1.3187, "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220730_Texas-Instruments-TPA3116D2DAD_C2865736.pdf", "rank": 3, "fit": "rejected: same pad-up issue as above, lower stock too"}
+ ]
+}

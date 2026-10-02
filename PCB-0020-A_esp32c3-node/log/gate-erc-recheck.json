@@ -1,0 +1,404 @@
+{
+  "script": "gate",
+  "gate": "erc",
+  "phase": "P4",
+  "tool": "erc",
+  "input": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_sch",
+  "input_digest": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+  "status": "fail",
+  "criteria": {
+    "fail_severities": [
+      "error",
+      "warning"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 14,
+    "by_severity": {
+      "warning": 14
+    },
+    "by_source": {
+      "erc": 14
+    }
+  },
+  "failing_count": 14,
+  "failing": [
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.27,
+        2.286
+      ],
+      "layer": null,
+      "net": "VBUS",
+      "refs": [
+        "PWR100"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR100 [VBUS]",
+          "pos": [
+            1.27,
+            2.286
+          ],
+          "uuid": "ccd36ee0-90a5-4c58-9983-4d6ab851dbaa"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.27,
+        2.413
+      ],
+      "layer": null,
+      "net": "VBUS",
+      "refs": [
+        "PWR101"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR101 [VBUS]",
+          "pos": [
+            1.27,
+            2.413
+          ],
+          "uuid": "8cb9c030-6e5c-41e9-9925-661aacb285be"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.27,
+        2.54
+      ],
+      "layer": null,
+      "net": "GND",
+      "refs": [
+        "PWR102"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR102 [GND]",
+          "pos": [
+            1.27,
+            2.54
+          ],
+          "uuid": "e558d167-0081-45aa-b9db-d80ad28a5cbe"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.3208,
+        2.286
+      ],
+      "layer": null,
+      "net": "PWR_FLAG",
+      "refs": [
+        "FLG100"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #FLG100 [PWR_FLAG]",
+          "pos": [
+            1.3208,
+            2.286
+          ],
+          "uuid": "05a203f9-e442-46eb-a1b2-124612b19f1d"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.3208,
+        2.413
+      ],
+      "layer": null,
+      "net": "PWR_FLAG",
+      "refs": [
+        "FLG101"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #FLG101 [PWR_FLAG]",
+          "pos": [
+            1.3208,
+            2.413
+          ],
+          "uuid": "0107de0d-ff41-4399-879e-85897f651f78"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.3208,
+        2.54
+      ],
+      "layer": null,
+      "net": "PWR_FLAG",
+      "refs": [
+        "FLG102"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #FLG102 [PWR_FLAG]",
+          "pos": [
+            1.3208,
+            2.54
+          ],
+          "uuid": "1e7df941-1b8e-4964-b388-1ea23ce061ba"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.905,
+        2.286
+      ],
+      "layer": null,
+      "net": "VBUS",
+      "refs": [
+        "PWR103"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR103 [VBUS]",
+          "pos": [
+            1.905,
+            2.286
+          ],
+          "uuid": "cb4e9662-a840-4eb7-864a-8e23ca1647a4"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.905,
+        2.413
+      ],
+      "layer": null,
+      "net": "+3V3",
+      "refs": [
+        "PWR104"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR104 [+3V3]",
+          "pos": [
+            1.905,
+            2.413
+          ],
+          "uuid": "7cdc9ddf-e137-4711-85f8-08a79dd76bf6"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.651,
+        2.54
+      ],
+      "layer": null,
+      "net": "+3V3",
+      "refs": [
+        "PWR200"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR200 [+3V3]",
+          "pos": [
+            1.651,
+            2.54
+          ],
+          "uuid": "ec25ee2e-924c-46f0-bb00-649452a8ac63"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        1.651,
+        2.667
+      ],
+      "layer": null,
+      "net": "GND",
+      "refs": [
+        "PWR201"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR201 [GND]",
+          "pos": [
+            1.651,
+            2.667
+          ],
+          "uuid": "b0de623c-0f92-48b1-8ced-bee27b390967"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        2.286,
+        2.54
+      ],
+      "layer": null,
+      "net": "VBUS",
+      "refs": [
+        "PWR202"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR202 [VBUS]",
+          "pos": [
+            2.286,
+            2.54
+          ],
+          "uuid": "a8dc138a-b4b0-4f0c-a8a2-d88dc0aab1d2"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        2.286,
+        2.667
+      ],
+      "layer": null,
+      "net": "VBUS",
+      "refs": [
+        "PWR203"
+      ],
+      "msg": "The current configuration does not include the symbol library 'power'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol #PWR203 [VBUS]",
+          "pos": [
+            2.286,
+            2.667
+          ],
+          "uuid": "7f1a31ed-fd09-40c9-9525-fd29fbb496c1"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        3.683,
+        2.159
+      ],
+      "layer": null,
+      "net": "Conn_01x08",
+      "refs": [
+        "J4"
+      ],
+      "msg": "The current configuration does not include the symbol library 'Connector_Generic'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol J4 [Conn_01x08]",
+          "pos": [
+            3.683,
+            2.159
+          ],
+          "uuid": "4c6cadd2-cdcd-479d-a8ce-afed1662d300"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    },
+    {
+      "check": "lib_symbol_issues",
+      "severity": "warning",
+      "pos": [
+        3.683,
+        2.54
+      ],
+      "layer": null,
+      "net": "Conn_01x04",
+      "refs": [
+        "J5"
+      ],
+      "msg": "The current configuration does not include the symbol library 'Connector_Generic'",
+      "source": "erc",
+      "items": [
+        {
+          "msg": "Symbol J5 [Conn_01x04]",
+          "pos": [
+            3.683,
+            2.54
+          ],
+          "uuid": "4339f6b0-2501-422f-b255-463b59022326"
+        }
+      ],
+      "sheet": "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+    }
+  ],
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0020-A_esp32c3-node",
+    "gate": "erc",
+    "status": "fail",
+    "attempts": 2,
+    "inputs": {
+      "sch": "sexpr_no_uuid:57ea073511fa852a76ed409fe86bde8c84c574034f515af22e6076a8122b3275",
+      "pro": "json_canonical:4e76339dd599218de050be61178d61147db2a061d7271ffefd350f4dcabb4d00"
+    }
+  }
+}

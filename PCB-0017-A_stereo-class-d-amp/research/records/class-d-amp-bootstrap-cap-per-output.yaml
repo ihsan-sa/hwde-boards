@@ -1,0 +1,62 @@
+id: class-d-amp-bootstrap-cap-per-output
+classes:
+- feedback
+- decoupling
+applies:
+  topologies:
+  - class-d-amp
+  packages: []
+  interfaces: []
+  parts:
+  - TPA3116D2
+  - TPA3118D2
+  - TPA3130D2
+rule:
+  enforced_by: null
+  bst_cap_nf: 220
+  bst_cap_v_min: 25
+  dielectric: X5R or better
+  one_per_output: true
+prose: 'An integrated class-D bridge with NMOS high-side FETs needs one bootstrap capacitor per output,
+  connected from the BSxx pin to ITS OWN OUTxx pin and never shared or returned elsewhere. SLOS708 p16
+  (7.3.6): the full H-bridge uses only NMOS transistors, so a 220 nF X5R-or-better ceramic rated at least
+  16 V must go from each output to its bootstrap input; during the high-side switching cycle it holds
+  the gate-source voltage. p27 (8.2.2.5) specifies 0.22 uF 25 V X5R or better for its design (8.2.1: PVCC
+  4.5-26 V). p4 pin table: BSNL (20) to OUTNL (21), BSPL (24) to OUTPL (23), BSNR (26) to OUTNR (27),
+  BSPR (30) to OUTPR (29) - each pair is adjacent, so the cap sits across two neighbouring pins with a
+  loop of one pad pitch. p26 Fig 37 draws all four (C16-C19, 220 nF) directly between the paired pins.
+  SLOU342A p10 BOM: C10/C12/C14/C16 0.22 uF 25 V X5R; p7 Fig 4 shows them in the pin row beside the outputs.
+  Rule: 220 nF, X5R or better, >= 16 V by p16 and 25 V as p27''s design value for the 4.5-26 V range,
+  one per output, footprint spanning the BS/OUT pin pair, no via in the loop.'
+sources:
+- file: research/sources/tpa3116d2.pdf
+  page: 16
+  note: '7.3.6 BSPx and BSNx capacitors: NMOS high side, 220 nF X5R+ >= 16 V from each output to its bootstrap
+    input'
+- file: research/sources/tpa3116d2.pdf
+  page: 27
+  note: '8.2.1 PVCC 4.5-26 V; 8.2.2.5 select bootstrap capacitors: 0.22 uF 25 V X5R or better for this
+    design'
+- file: research/sources/tpa3116d2.pdf
+  page: 4
+  note: 'Pin functions table: BSNL/OUTNL 20/21, OUTPL/BSPL 23/24, BSNR/OUTNR 26/27, OUTPR/BSPR 29/30 adjacent
+    pairs'
+- file: research/sources/tpa3116d2.pdf
+  page: 26
+  note: 'Fig 37: C16-C19 220 nF each between BSxx and OUTxx'
+- file: research/sources/slou342a.pdf
+  page: 10
+  note: 'BOM: C10/C12/C14/C16 0.22 uF 25 V X5R 0603'
+status: active
+origin: research:block-class-d-amp-1
+level: family
+maturity: verified
+generalizes: []
+envelope:
+  vin_v:
+    min: 4.5
+    max: 26
+envelope_note: 'Bounded to the family''s PVCC range 4.5-26 V (p27 8.2.1): p16 states >= 16 V without condition
+  and p27''s design uses 25 V inside that range. The 220 nF value is this family''s figure, not a general
+  class-D constant, hence family level.'
+verification: {by: "research-second-reader", date: "2026-09-27", note: "Pass 2: p16 7.3.6 >=16 V unconditional and p27 8.2.1 PVCC 4.5-26 V / 8.2.2.5 0.22 uF 25 V X5R 'for this design' now cited as stated; 24 V claim and PVCC-plus-gate-drive rationale removed. p4/p26/SLOU342A p10 unchanged and correct."}

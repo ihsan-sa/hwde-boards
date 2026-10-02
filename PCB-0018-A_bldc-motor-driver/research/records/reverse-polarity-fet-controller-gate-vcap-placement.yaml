@@ -1,0 +1,43 @@
+id: reverse-polarity-fet-controller-gate-vcap-placement
+classes:
+- decoupling
+applies:
+  topologies:
+  - reverse-polarity-fet
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  gate_source: controller GATE/SOURCE close to FET gate/source, short gate trace
+  vcap: '>= 0.1 uF and >= 10 x Ciss(FET); placed away from the FET (heat)'
+  cin: 0.1 uF; > 22 nF ceramic at the controller if the supply is inches away
+prose: 'LM74500-class controller placement (sec 11.1, Fig 11-1): connect the controller''s SOURCE and
+  GATE pins close to the FET''s source and gate, and route GATE with a short trace - no thin, long gate
+  runs. Keep the charge-pump capacitor (VCAP to SOURCE) AWAY from the FET, because the FET''s heat shifts
+  the capacitance value. Size VCAP >= 0.1 uF and >= 10 x the FET''s Ciss (sec 9.3.1.2.3), C_IN 0.1 uF
+  typical, C_OUT 220 uF typical in TI''s example, and if the source is more than a few inches away add
+  a ceramic bypass > 22 nF at the input (sec 10). In Fig 11-1 the SOT package sits between the FET source
+  pads and the GND plane, GATE (pin 6) runs by a signal via to the FET''s G pad, C_VCAP hangs off pins
+  4-5 on the side away from the FET, and C_IN plus the TVS sit on the VIN pour.'
+sources:
+- file: research/sources/lm74500-q1.pdf
+  page: 17
+  note: 'sec 9.3.1.2.3: VCAP min 0.1 uF, >= 10 x Ciss; CIN 0.1 uF; COUT 220 uF'
+- file: research/sources/lm74500-q1.pdf
+  page: 20
+  note: 'sec 10: >22 nF input bypass if supply is inches away; sec 11.1 bullets on GATE/SOURCE, VCAP away
+    from FET, short gate trace; Fig 11-1 layout example'
+status: active
+origin: research:block-reverse-polarity-fet-1
+level: family
+envelope:
+  vin_v:
+    min: 3.2
+    max: 65
+envelope_note: Holds for charge-pump controllers of the LM74500 class over their supply range, 3.2-65
+  V on SOURCE. It scales with FET input capacitance (VCAP >= 10 x Ciss), not with current; another controller
+  family has its own VCAP and gate-drive values.
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p17 LM74500-Q1 sec9.3.1.2.3 VCAP/CIN/COUT values match exactly; p20 sec10 >22nF bypass and sec11.1 bullets plus Fig11-1 pin placement (GATE pin6, VCAP near pins4-5) match"}

@@ -1,0 +1,31 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "applied": 4,
+ "verified": true,
+ "by_status": {
+  "removed": 2,
+  "added": 2
+ },
+ "results": [
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "remove",
+   "status": "removed"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "8ec16d04-0a69-4e7c-8d8b-8bf4bc0e4293"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "a87b27a0-3103-4d43-a5cd-8d44a2da9bf4"
+  }
+ ]
+}

@@ -1,0 +1,284 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "fe0e6734-f484-45aa-8b79-ab88af4ccbdc")
+	(paper "A4")
+	(title_block
+		(title "PCB-0020-A esp32c3-node: ESP32-C3 LiPo sensor node")
+		(date "2026-10-01")
+		(rev "1")
+		(company "ai-ee")
+	)
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 68.58 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc265113-0be5-4166-b1d2-c6b6126130c1")
+	)
+	(wire
+		(pts
+			(xy 76.2 55.88) (xy 68.58 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeb7a224-182b-447b-ad10-d471dc0bd620")
+	)
+	(wire
+		(pts
+			(xy 76.2 58.42) (xy 68.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d24c474-583e-414d-aaed-42339d92a5bf")
+	)
+	(wire
+		(pts
+			(xy 76.2 116.84) (xy 68.58 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8ff9c36-ffba-439e-b660-ba4e4fe57ae7")
+	)
+	(wire
+		(pts
+			(xy 76.2 119.38) (xy 68.58 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e6958cf-fd61-4655-ae7a-7e1163f7b8d7")
+	)
+	(wire
+		(pts
+			(xy 76.2 121.92) (xy 68.58 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b145fcfa-2e62-4e66-a81f-a7bb939c19d9")
+	)
+	(label "USB_DP"
+		(at 68.58 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b828c9c-709e-43c7-b755-bc32ceb47776")
+	)
+	(label "USB_DM"
+		(at 68.58 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b73c9c8-1612-40a6-962b-d226526ca586")
+	)
+	(label "VBAT_SENSE"
+		(at 68.58 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e448e125-d232-48fb-b0fb-fafdc4066c4e")
+	)
+	(label "USB_DP"
+		(at 68.58 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d03ed1ca-197f-4b06-bc00-bd5f991266c2")
+	)
+	(label "USB_DM"
+		(at 68.58 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fed8caf9-0ec6-4f7c-944d-a9782ef4cbe6")
+	)
+	(label "VBAT_SENSE"
+		(at 68.58 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fc134a8-c1b1-4153-b918-894274ce45d4")
+	)
+	(sheet
+		(at 76.2 50.8)
+		(size 50.8 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ae6bbc7c-0126-48d4-ab97-d5f7087a9dbe")
+		(property "Sheetname" "power"
+			(at 76.2 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 76.2 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_DP" bidirectional
+			(at 76.2 53.34 180)
+			(uuid "ce64a0ad-bda5-440d-8b0d-54adc895a65d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_DM" bidirectional
+			(at 76.2 55.88 180)
+			(uuid "648bdbf8-11df-4076-b81e-bfeea4da6040")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBAT_SENSE" output
+			(at 76.2 58.42 180)
+			(uuid "87fa2953-659c-4537-b8e5-e32c117b0594")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project None
+				(path "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 114.3)
+		(size 50.8 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5c6512cf-76e5-4936-9521-e156b55a9fe7")
+		(property "Sheetname" "main"
+			(at 76.2 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "main.kicad_sch"
+			(at 76.2 152.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_DP" bidirectional
+			(at 76.2 116.84 180)
+			(uuid "39f28774-a301-4fc8-ae9e-4ecb804c2a36")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_DM" bidirectional
+			(at 76.2 119.38 180)
+			(uuid "d4600440-8efc-4c59-ae66-32720614d1e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBAT_SENSE" input
+			(at 76.2 121.92 180)
+			(uuid "112c09cd-6c8b-4dc0-92bd-60e813e6c070")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project None
+				(path "/fe0e6734-f484-45aa-8b79-ab88af4ccbdc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

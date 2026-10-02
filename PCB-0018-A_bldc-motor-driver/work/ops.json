@@ -1,0 +1,10 @@
+{"version":1,"ops":[
+ {"op":"lock","ref":"J701","locked":false},
+ {"op":"lock","ref":"J702","locked":false},
+ {"op":"rotate","ref":"J701","deg":180},
+ {"op":"move","ref":"J701","x":28.5,"y":12.3},
+ {"op":"rotate","ref":"J702","deg":180},
+ {"op":"move","ref":"J702","x":59.7,"y":12.2},
+ {"op":"lock","ref":"J701","locked":true},
+ {"op":"lock","ref":"J702","locked":true}
+]}

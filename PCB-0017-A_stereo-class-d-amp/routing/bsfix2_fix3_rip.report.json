@@ -1,0 +1,16 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 1,
+ "verified": true,
+ "by_status": {
+  "removed": 1
+ },
+ "results": [
+  {
+   "op": "remove",
+   "status": "removed"
+  }
+ ]
+}

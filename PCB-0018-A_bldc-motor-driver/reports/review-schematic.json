@@ -1,0 +1,144 @@
+{
+ "violations": [
+  {
+   "check": "schematic-review",
+   "severity": "error",
+   "pos": null,
+   "layer": null,
+   "net": "/regulators/FB5V",
+   "refs": [
+    "U201",
+    "R202",
+    "R203",
+    "C202",
+    "C205"
+   ],
+   "msg": "LM5164 is constant-on-time and its datasheet (sec 6.3.1, Table 6-1) requires >=20 mV of in-phase ripple at FB, but FB5V is a bare 33.2k/10k divider off an all-ceramic output (22uF+10uF+1uF, ~1-2 mV at FB) with no Type-1 RESR, Type-2 CFF or Type-3 RA/CA/CB network, so the +5V rail that feeds every other rail will switch erratically/jitter and may not regulate.",
+   "source": "review.schematic",
+   "kind": "buck-cot-no-ripple-injection"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "error",
+   "pos": null,
+   "layer": null,
+   "net": "/power_in/VM_IN",
+   "refs": [
+    "TP101",
+    "TP102"
+   ],
+   "msg": "The only VM and GND supply entries are TestPoint_THTPad 2.0x2.0 mm / 1.0 mm drill pads, while they carry the whole bus current (constraints.json: 13 A continuous on VM_IN, ~25 A at 20 A peak) and the phase pads that each carry less are 4.0 mm / 2.0 mm; a 1.0 mm hole takes at most ~20 AWG wire and the joint will overheat at rated current.",
+   "source": "review.schematic",
+   "kind": "power-input-pad-undersized"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "+12V",
+   "refs": [
+    "U301",
+    "C304",
+    "C305"
+   ],
+   "msg": "DRV8300 requires >=10 uF effective GVDD capacitance local to pin 4, but the only bulk is C304 10uF 25V X5R 0805, which keeps roughly 3-5 uF at 12 V bias (+1 uF C305), feeding three 1 uF bootstrap caps from a PFM boost that can only source ~85 mA; expect GVDD droop toward GVDDUV/BSTUV on simultaneous turn-ons - use >=2x 10 uF 25-50 V 1206/1210.",
+   "source": "review.schematic",
+   "kind": "gvdd-cap-below-datasheet"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "/regulators/FB12V",
+   "refs": [
+    "U202",
+    "R204"
+   ],
+   "msg": "TPS61040 datasheet (feedback divider section) says a feed-forward capacitor across the upper feedback resistor R1 (here R204 86.6k) is required for comparator overdrive; without it the part double-pulses/bursts and GVDD ripple rises, eating the bootstrap/GVDD margin above.",
+   "source": "review.schematic",
+   "kind": "boost-missing-feedforward-cap"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "GND",
+   "refs": [
+    "NT402",
+    "NT404",
+    "NT406",
+    "NT401",
+    "NT403",
+    "NT405",
+    "R401",
+    "R402",
+    "R403"
+   ],
+   "msg": "The N-side Kelvin net ties NT402/404/406 hang on the global GND net and none of NT401-406 is a member of the leg_a/b/c placement groups in constraints.json, so placement/routing can legally tie ISNS_x_N to any GND copper instead of R40x pad 2; with a 3 mOhm shunt, 1 mOhm of plane in the tap gives a 33 % current error - add the ties to the leg groups with a must-be-at-pad constraint.",
+   "source": "review.schematic",
+   "kind": "kelvin-tie-unconstrained"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "/VSENSE_A",
+   "refs": [
+    "R510",
+    "R511",
+    "C521",
+    "R512",
+    "R513",
+    "C522",
+    "R514",
+    "R515",
+    "C523"
+   ],
+   "msg": "Phase-voltage dividers 150k/10k with 100 nF put the corner at ~170 Hz (tau 0.94 ms), which attenuates and phase-shifts BEMF at normal electrical speeds and makes the sensorless option in requirements unusable; ~1-2.2 nF (corner ~8-17 kHz) is typical if these nets are meant for BEMF/observer use.",
+   "source": "review.schematic",
+   "kind": "phase-sense-bandwidth"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "VM",
+   "refs": [
+    "C101",
+    "C401",
+    "C402",
+    "C403",
+    "C405",
+    "C406",
+    "C407",
+    "C409",
+    "C410",
+    "C411"
+   ],
+   "msg": "At 10 A RMS/phase the inverter's DC-link ripple is ~5-6 A RMS and, at 25-50 kHz, the 470 uF electrolytic (ESR tens of mOhm) takes most of it versus the derated ~30 uF MLCC bank; a 13 mm AISHI ERS 63 V part is typically rated ~1-2 A, so its ripple rating must be checked or the MLCC bank enlarged.",
+   "source": "review.schematic",
+   "kind": "bulk-cap-ripple-rating"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "/ENC_A",
+   "refs": [
+    "R709",
+    "R710",
+    "R711",
+    "U601"
+   ],
+   "msg": "ENC_A/B/Z have ESD, 100 R and 2.2 nF to GND but no pull-up (Halls get 4.7k to +3V3), so an open-collector encoder - the common kind on this connector - reads permanently low unless firmware enables the ~40k internal pull-up, which against 2.2 nF gives a ~90 us edge.",
+   "source": "review.schematic",
+   "kind": "encoder-no-pullup"
+  }
+ ]
+}

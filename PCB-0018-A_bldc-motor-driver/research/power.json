@@ -1,0 +1,34 @@
+{
+  "rails": [
+    {"net": "VM", "vin": "VM pads 10-28 V via reverse-polarity N-FET", "topology": "direct",
+     "current_a": 12.2, "peak_a": 25,
+     "consumers": ["3x half-bridge (I_dc = 3*(VM/sqrt6)*10 A RMS)", "buck +5V input", "gate driver HV pins"],
+     "dissipation_w": 0.22, "notes": "RP FET <=1.5 mOhm, controller keeps FET on both ways (regen); TVS 28 V standoff; all VM parts >=60 V (50 V caps min)"},
+    {"net": "+5V", "vin": "VM", "topology": "buck", "current_a": 0.64,
+     "consumers": ["Hall/encoder 5V 0.10 A", "control JST 5V out 0.15 A (limited)", "+3V3 LDO 0.10 A", "+12V boost input 0.141 A"],
+     "dissipation_w": 0.44},
+    {"net": "+12V", "vin": "+5V", "topology": "boost", "current_a": 0.05,
+     "consumers": ["6 FET gates 10.8 mA (Qg 60 nC x 30 kHz)", "driver GVDD Iq 2 mA", "gate pull-downs 3.6 mA"],
+     "dissipation_w": 0.1, "notes": "gate-drive rail: LS VGS 12 V, HS ~11 V via bootstrap at any VM"},
+    {"net": "+3V3", "vin": "+5V", "topology": "ldo", "current_a": 0.1,
+     "consumers": ["STM32G4 60 mA", "LEDs 6 mA", "sensor pull-ups 4.2 mA", "CSAs 1.5 mA"],
+     "dissipation_w": 0.17}
+  ],
+  "power_constraints": [
+    {"net": "/VM_IN", "current_a": 25, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "VM", "current_a": 25, "dt_c": 20, "via_amps": 1.0, "plane_fed": true},
+    {"net": "GND", "current_a": 25, "dt_c": 20, "via_amps": 1.0, "plane_fed": true},
+    {"net": "/PHASE_A", "current_a": 20, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "/PHASE_B", "current_a": 20, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "/PHASE_C", "current_a": 20, "dt_c": 20, "via_amps": 1.0, "pdn": false},
+    {"net": "+5V", "current_a": 0.64, "dt_c": 10, "via_amps": 0.5},
+    {"net": "+12V", "current_a": 0.05, "dt_c": 10, "via_amps": 0.5},
+    {"net": "+3V3", "current_a": 0.1, "dt_c": 10, "via_amps": 0.5}
+  ],
+  "thermal_constraints": [
+    {"ref": "POWER_STAGE_FETS", "power_w": 2.0, "net": "VM", "dt_c": 40, "min_vias": 12,
+     "note": "~0.33 W per FET avg; refs assigned at P3; exposed drain/source pads to pours on all layers"},
+    {"ref": "BUCK_5V", "power_w": 0.44, "net": "GND", "dt_c": 40, "min_vias": 4},
+    {"ref": "RP_FET", "power_w": 0.9, "net": "VM", "dt_c": 40, "min_vias": 8, "note": "0.9 W only at 25 A peak; 0.22 W cont"}
+  ]
+}

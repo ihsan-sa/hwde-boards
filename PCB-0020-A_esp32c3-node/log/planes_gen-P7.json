@@ -1,0 +1,55 @@
+{
+ "script": "planes_gen",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "facts": {
+  "plan_source": "constraints",
+  "zones_added": 2,
+  "zones": [
+   {
+    "net": "GND",
+    "layer": "B.Cu",
+    "region": [
+     9.5,
+     9.5,
+     34.5,
+     46.5
+    ],
+    "priority": 0,
+    "status": "added",
+    "area_mm2": 582.5,
+    "islands": 4
+   },
+   {
+    "net": "GND",
+    "layer": "F.Cu",
+    "region": [
+     9.5,
+     9.5,
+     34.5,
+     46.5
+    ],
+    "priority": 0,
+    "status": "added",
+    "area_mm2": 425.417,
+    "islands": 10
+   }
+  ],
+  "thermal_vias": 0,
+  "thermal_pads": [],
+  "layer_types": {},
+  "added_for_reference": [],
+  "notes": []
+ },
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T11:18:11+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:b60e3643dbeee91ffa1ef15a9570fcb169f0a1dd2b2ed69f9f786675cecef8ca"
+}

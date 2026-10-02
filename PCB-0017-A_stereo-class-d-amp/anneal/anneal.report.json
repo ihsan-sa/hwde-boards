@@ -1,0 +1,111 @@
+{
+ "script": "place_anneal",
+ "status": "pass",
+ "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "candidates": [
+  {
+   "rank": 1,
+   "cost": 2270.634,
+   "score": 2270.634,
+   "hpwl_mm": 810.1245,
+   "terms": {
+    "hpwl_raw_mm": 810.1245,
+    "hpwl_weighted": 573.4183,
+    "overlap_mm2": 0.0,
+    "cong_overflow": 15,
+    "crossings_weighted": 45.5,
+    "rule": 1576.2155,
+    "corridor_mm2": 0.0236,
+    "assembly_mm": 0.0,
+    "back_parts": 0
+   },
+   "legal": true,
+   "repaired": false,
+   "completion": null,
+   "sides": {
+    "front": 44,
+    "back": 0
+   },
+   "corridors": [
+    {
+     "a": "U1",
+     "b": "J3",
+     "width_mm": 4.0,
+     "intrusion_mm2": 0.0236,
+     "intruders": [
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "L1",
+      "L2",
+      "R4",
+      "R5"
+     ]
+    },
+    {
+     "a": "U1",
+     "b": "J4",
+     "width_mm": 4.0,
+     "intrusion_mm2": 0.0,
+     "intruders": []
+    }
+   ],
+   "ops_file": "kicad/anneal/cand1.ops.json",
+   "n_violations": 0
+  }
+ ],
+ "seed": 7,
+ "separation_unknown_refs": [],
+ "corridor_unknown_refs": [],
+ "side_unknown_refs": [],
+ "side_conflicts": [],
+ "clusters": 8,
+ "movable_clusters": 3,
+ "flippable_clusters": 0,
+ "back_parts_fixed": 0,
+ "sides_input": {
+  "front": 44,
+  "back": 0
+ },
+ "sides_best": {
+  "front": 44,
+  "back": 0
+ },
+ "satellites_reslotted": [],
+ "hpwl_input_mm": 855.6613,
+ "hpwl_start_mm": 855.6613,
+ "hpwl_best_mm": 810.1245,
+ "improvement_pct": 5.32,
+ "start_terms": {
+  "hpwl_raw_mm": 855.6613,
+  "hpwl_weighted": 581.4285,
+  "overlap_mm2": 0.5258,
+  "cong_overflow": 17,
+  "crossings_weighted": 50.25,
+  "rule": 2616.7592,
+  "corridor_mm2": 24.5356,
+  "assembly_mm": 0.0,
+  "back_parts": 0
+ },
+ "epochs": 140,
+ "moves": 33720,
+ "accepted": 13999,
+ "t0": 40373.6523,
+ "t_end": 3.439294,
+ "feedback_used": false,
+ "last_completion": null,
+ "runtime_s": 1103.38,
+ "warnings": [],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T08:12:06+00:00",
+ "input": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:da2501cd8830cbb7431e5467ed6ddc3865a5068c762b40371125252b51a28ff8"
+}

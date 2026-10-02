@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="231" viewBox="0 0 202 231">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10.0" y="16" font-family="monospace" font-size="12" fill="black">DFN-5_L4.9-W5.9-P1.27-LS6.2-BL: 5 pads (datasheet 5), pitch/size from datasheet 1.27mm</text>
+<text x="10.0" y="32" font-family="monospace" font-size="11" fill="#b00">red = geometry mismatch</text>
+<polygon points="10.0,180.9 40.0,180.9 40.0,220.9 10.0,220.9" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="25.0" y="200.9" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="25.0" y="211.9" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.75x1</text>
+<polygon points="60.8,180.9 90.8,180.9 90.8,220.9 60.8,220.9" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="75.8" y="200.9" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="75.8" y="211.9" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.75x1</text>
+<polygon points="111.2,180.9 141.2,180.9 141.2,220.9 111.2,220.9" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="126.2" y="200.9" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="126.2" y="211.9" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.75x1</text>
+<polygon points="162.4,180.9 192.4,180.9 192.4,220.9 162.4,220.9" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="177.4" y="200.9" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="177.4" y="211.9" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.75x1</text>
+<polygon points="100.9,56.0 101.1,56.0 101.1,56.2 100.9,56.2" fill="#f8caca" stroke="#b00000" stroke-width="1"/>
+<text x="101.0" y="56.1" font-family="monospace" font-size="10" fill="black" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="101.0" y="67.1" font-family="monospace" font-size="7" fill="#555" text-anchor="middle">0.005x0.005</text>
+</svg>

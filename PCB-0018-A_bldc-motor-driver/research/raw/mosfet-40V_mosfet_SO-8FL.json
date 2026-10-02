@@ -1,0 +1,576 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "40V mosfet SO-8FL",
+ "total": 5317,
+ "count": 6,
+ "results": [
+  {
+   "lcsc": "C380232",
+   "mpn": "TDM3436",
+   "brand": "Techcode Semicon",
+   "description": "-55\u2103~+150\u2103 1 N-channel 100A 17nC@4.5V 2.5V 2.65nF 2.7W 4.1m\u03a9@4.5V 40V 88pF DFN-8(5x6) MOSFETs ROHS",
+   "package": "DFN-8(5x6)",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 11034,
+   "price": 0.5684,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.5684
+    },
+    {
+     "qty": 50,
+     "price": 0.4629
+    },
+    {
+     "qty": 150,
+     "price": 0.4109
+    },
+    {
+     "qty": 500,
+     "price": 0.3508
+    },
+    {
+     "qty": 3000,
+     "price": 0.32
+    },
+    {
+     "qty": 6000,
+     "price": 0.3037
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Techcode-Semicon-TDM3436_C380232.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_techcode-semicon-tdm3436_C380232.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "17nC@4.5V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "88pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "100A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "750pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "4.1m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "2.65nF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2.5V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "2.7W"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C126988",
+   "mpn": "SI7288DP-T1-GE3",
+   "brand": "Vishay Intertech",
+   "description": "100pF 10nC@10V 15.6W 2 N-Channel 2.8V 20A 22m\u03a9@4.5V 40V 42pF 565pF N-Channel PowerPAKSO-8 MOSFETs ROHS",
+   "package": "PowerPAKSO-8",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6305,
+   "price": 1.0036,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.0036
+    },
+    {
+     "qty": 10,
+     "price": 0.8234
+    },
+    {
+     "qty": 30,
+     "price": 0.7324
+    },
+    {
+     "qty": 100,
+     "price": 0.6431
+    },
+    {
+     "qty": 500,
+     "price": 0.4953
+    },
+    {
+     "qty": 1000,
+     "price": 0.4677
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1809191821_Vishay-Intertech-SI7288DP-T1-GE3_C126988.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_vishay-intertech-si7288dp-t1-ge3_C126988.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "10nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "42pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "20A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "100pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "22m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "565pF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2.8V"
+    },
+    {
+     "name": "Number",
+     "value": "2 N-Channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "15.6W"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C358116",
+   "mpn": "HY1904C2",
+   "brand": "HUAYI",
+   "description": "-55\u2103~+150\u2103 1 N-channel 195pF 2.391nF 3V 40V 48W 65A 7m\u03a9@4.5V N-Channel PPAK-8L(5x6) MOSFETs ROHS",
+   "package": "PPAK-8L(5x6)",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6208,
+   "price": 0.2602,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.2602
+    },
+    {
+     "qty": 50,
+     "price": 0.2061
+    },
+    {
+     "qty": 150,
+     "price": 0.1829
+    },
+    {
+     "qty": 500,
+     "price": 0.154
+    },
+    {
+     "qty": 2500,
+     "price": 0.1288
+    },
+    {
+     "qty": 5000,
+     "price": 0.1212
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404031758_HUAYI-HY1904C2_C358116.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_huayi-hy1904c2_C358116.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "2.391nF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "3V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "195pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "65A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "48W"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "7m\u03a9@4.5V"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C377871",
+   "mpn": "WSD4062DN56",
+   "brand": "Winsok Semicon",
+   "description": "-55\u2103~+150\u2103 1 N-channel 1.15nF 13.5m\u03a9@4.5V 140pF 2.1W 2.5V 40V 62A 90pF 91nC@10V N-Channel DFN5x6-8L MOSFETs ROHS",
+   "package": "DFN5x6-8L",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 4998,
+   "price": 0.3542,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.3542
+    },
+    {
+     "qty": 10,
+     "price": 0.2807
+    },
+    {
+     "qty": 30,
+     "price": 0.2492
+    },
+    {
+     "qty": 100,
+     "price": 0.2097
+    },
+    {
+     "qty": 500,
+     "price": 0.1922
+    },
+    {
+     "qty": 1000,
+     "price": 0.1724
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Winsok-Semicon-WSD4062DN56_C377871.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_winsok-semicon-wsd4062dn56_C377871.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "91nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "90pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "62A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "140pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "13.5m\u03a9@4.5V"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "1.15nF"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2.5V"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "2.1W"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C348540",
+   "mpn": "NTMFS5C410NLT1G",
+   "brand": "onsemi",
+   "description": "-55\u2103~+175\u2103 1 N-channel 1.2m\u03a9@4.5V 139W 143nC@10V 2V 3.328nF 330A 40V 77pF 8.862nF N-Channel SO-8FL MOSFETs ROHS",
+   "package": "SO-8FL",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 4004,
+   "price": 1.0767,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.0767
+    },
+    {
+     "qty": 10,
+     "price": 0.8916
+    },
+    {
+     "qty": 30,
+     "price": 0.7909
+    },
+    {
+     "qty": 100,
+     "price": 0.6188
+    },
+    {
+     "qty": 500,
+     "price": 0.5684
+    },
+    {
+     "qty": 1500,
+     "price": 0.5457
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_onsemi-NTMFS5C410NLT1G_C348540.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_onsemi-ntmfs5c410nlt1g_C348540.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+175\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "143nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "77pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "330A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "3.328nF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "1.2m\u03a9@4.5V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "8.862nF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "139W"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C131413",
+   "mpn": "AON6236",
+   "brand": "Alpha & Omega Semicon",
+   "description": "1 N-channel 1.225nF 10.5m\u03a9@10V 120A 2.4V 26.5pF 26nC@10V 318pF 40V N-Channel DFN-8(5x6) MOSFETs ROHS",
+   "package": "DFN-8(5x6)",
+   "category": "MOSFETs",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2916,
+   "price": 0.4759,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.4759
+    },
+    {
+     "qty": 10,
+     "price": 0.3703
+    },
+    {
+     "qty": 30,
+     "price": 0.3248
+    },
+    {
+     "qty": 100,
+     "price": 0.268
+    },
+    {
+     "qty": 500,
+     "price": 0.242
+    },
+    {
+     "qty": 1000,
+     "price": 0.2274
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1804171730_Alpha---Omega-Semicon-AON6236_C131413.pdf",
+   "url": "https://www.lcsc.com/product-detail/mosfets_alpha-omega-semicon-aon6236_C131413.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+150\u2103"
+    },
+    {
+     "name": "Vgs",
+     "value": "\u00b120V"
+    },
+    {
+     "name": "Gate Charge(Qg)",
+     "value": "26nC@10V"
+    },
+    {
+     "name": "Reverse Transfer Capacitance (Crss@Vds)",
+     "value": "26.5pF"
+    },
+    {
+     "name": "Current - Continuous Drain(Id)",
+     "value": "30A"
+    },
+    {
+     "name": "Drain to Source Voltage",
+     "value": "40V"
+    },
+    {
+     "name": "Output Capacitance(Coss)",
+     "value": "318pF"
+    },
+    {
+     "name": "RDS(on)",
+     "value": "10.5m\u03a9@10V"
+    },
+    {
+     "name": "Input Capacitance(Ciss)",
+     "value": "1.225nF"
+    },
+    {
+     "name": "Type",
+     "value": "N-Channel"
+    },
+    {
+     "name": "Gate Threshold Voltage (Vgs(th))",
+     "value": "2.4V"
+    },
+    {
+     "name": "Number",
+     "value": "1 N-channel"
+    },
+    {
+     "name": "Pd - Power Dissipation",
+     "value": "39W"
+    }
+   ],
+   "rank": 5
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

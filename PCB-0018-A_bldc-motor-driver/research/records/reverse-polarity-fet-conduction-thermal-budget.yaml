@@ -1,0 +1,55 @@
+id: reverse-polarity-fet-conduction-thermal-budget
+classes:
+- thermal
+applies:
+  topologies:
+  - reverse-polarity-fet
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  pd: I^2 x RDS(on) at hot RDS, sized to ~0.5 W
+  tj: TA + PD x R_thetaJA
+  package: 5x6 exposed pad preferred over 3x3 as current rises
+prose: 'The RP FET is always on, so its loss is I^2 x RDS(on); onsemi sized each FET so losses stay near
+  500 mW and measured them on a 4-layer board at 24 C ambient (AND90146 Table 3/4, Fig 13-18 thermal images):
+  6 A through 14 mOhm (504 mW) -> 47.3 C case; 10 A through 4.8 mOhm LFPAK8 (480 mW) -> 52.8 C, through
+  4.5 mOhm LFPAK4 (450 mW) -> 47.5 C in Table 3 (Fig 18''s caption table says 45.3 C; the note keeps the
+  Table 3 value). Junction estimate TJ = TCASE + PD x R_thetaJT (R_thetaJT ~1 C/W assumed for 3x3/5x6)
+  matched the datasheet route TJ = TA + PD x R_thetaJA within ~5 C, so the datasheet R_thetaJA is usable
+  for sizing on a well-spread 4-layer board. At equal loss the 5x6 package runs cooler and leaves more
+  headroom than 3x3 (Table 4 bullets). TI adds: consider the FET''s thermal resistance against its maximum
+  dissipation (LM74500-Q1 p17).'
+sources:
+- file: research/sources/and90146-d.pdf
+  page: 7
+  note: 'Table 3: MOSFETs at 6/8/10 A, RDS(on), losses ~450-504 mW, R_thetaJA, TCASE; Fig 13-16 thermal
+    images'
+- file: research/sources/and90146-d.pdf
+  page: 8
+  note: Fig 17/18 10 A LFPAK8 52.8 C, LFPAK4 45.3 C max; eq 1 TJ = TCASE + PD x R_thetaJT; Fig 19 thermal
+    path mostly through PCB
+- file: research/sources/and90146-d.pdf
+  page: 9
+  note: 'eq 2-4 worked example; Table 4 calculated TJ vs load; bullets: 5x6 more headroom, datasheet R_thetaJA
+    matches 4-layer board'
+- file: research/sources/lm74500-q1.pdf
+  page: 17
+  note: 'text: consider MOSFET thermal resistance against expected maximum power dissipation'
+status: active
+origin: research:block-reverse-polarity-fet-1
+level: topology
+envelope:
+  pdiss_w:
+    min: 0
+    max: 0.6
+  board_layers:
+    min: 4
+    max: 6
+envelope_note: 'Scales with dissipated power and copper spreading: evidence is ~0.45-0.5 W per FET on
+  a 4-layer board with current spread over three layers. Above ~0.6 W, or on 2 layers, the measured case
+  temperatures no longer apply - re-derive with a thermal estimate.'
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p7-9 AND90146 Table3/4 and Fig17/18 match exactly incl the Table3 vs Fig18-caption 47.5C/45.3C discrepancy the record correctly flags; p17 LM74500-Q1 thermal-resistance text matches. 0.6W bound is a modest margin above the stated 500mW design target and measured 504mW max, not an unsupported leap"}

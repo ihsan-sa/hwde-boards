@@ -1,0 +1,520 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "INA186",
+ "total": 37,
+ "count": 5,
+ "results": [
+  {
+   "lcsc": "C2869854",
+   "mpn": "INA186A2IDDFR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~40V -40\u2103~+125\u2103 0.3V/us 0.5uV/\u2103 1 1.7V~5.5V 150dB 37kHz 48uA 500pA 50V/V 50uV High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Input filter\u3001Enable/shutdown function \u00b142V TSOT-23-8 Current Sense Amplifiers ROHS",
+   "package": "TSOT-23-8",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 17023,
+   "price": 0.8218,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.8218
+    },
+    {
+     "qty": 10,
+     "price": 0.7259
+    },
+    {
+     "qty": 30,
+     "price": 0.6366
+    },
+    {
+     "qty": 100,
+     "price": 0.5701
+    },
+    {
+     "qty": 500,
+     "price": 0.5424
+    },
+    {
+     "qty": 1000,
+     "price": 0.5278
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010330_Texas-Instruments-INA186A2IDDFR_C2869854.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina186a2iddfr_C2869854.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "50uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "0.5uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "1.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "0.3V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "150dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b142V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~40V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "37kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "48uA"
+    },
+    {
+     "name": "Features",
+     "value": "High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Input filter\u3001Enable/shutdown function"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "500pA"
+    },
+    {
+     "name": "Gain",
+     "value": "50V/V"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C2058238",
+   "mpn": "INA186A2IDCKR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~40V -40\u2103~+125\u2103 0.3V/us 0.5uV/\u2103 1 1.7V~5.5V 150dB 37kHz 48uA 500pA 50V/V 50uV High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Input filter\u3001Enable/shutdown function \u00b142V SC-70-6 Current Sense Amplifiers ROHS",
+   "package": "SC-70-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10244,
+   "price": 0.8965,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.8965
+    },
+    {
+     "qty": 10,
+     "price": 0.7146
+    },
+    {
+     "qty": 30,
+     "price": 0.6236
+    },
+    {
+     "qty": 100,
+     "price": 0.5327
+    },
+    {
+     "qty": 500,
+     "price": 0.4791
+    },
+    {
+     "qty": 1000,
+     "price": 0.4499
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303012230_Texas-Instruments-INA186A2IDCKR_C2058238.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina186a2idckr_C2058238.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "50uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "0.5uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "1.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "0.3V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "150dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b142V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~40V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "37kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "48uA"
+    },
+    {
+     "name": "Features",
+     "value": "High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Input filter\u3001Enable/shutdown function"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "500pA"
+    },
+    {
+     "name": "Gain",
+     "value": "50V/V"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C2058245",
+   "mpn": "INA186A3IDCKR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~40V -40\u2103~+125\u2103 0.3V/us 0.5uV/\u2103 1 1.7V~5.5V 100V/V 150dB 35kHz 3uV 48uA 500pA 75nV/\u221aHz@1kHz High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Analog output interface\u3001Input filter\u3001Enable/shutdown function \u00b142V SC-70-6 Current Sense Amplifiers ROHS",
+   "package": "SC-70-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 6229,
+   "price": 1.0118,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.0118
+    },
+    {
+     "qty": 10,
+     "price": 0.8364
+    },
+    {
+     "qty": 30,
+     "price": 0.7487
+    },
+    {
+     "qty": 100,
+     "price": 0.661
+    },
+    {
+     "qty": 500,
+     "price": 0.609
+    },
+    {
+     "qty": 1000,
+     "price": 0.583
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303012230_Texas-Instruments-INA186A3IDCKR_C2058245.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina186a3idckr_C2058245.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "3uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "0.5uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "1.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "0.3V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "150dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b142V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~40V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "35kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "75nV/\u221aHz@1kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "48uA"
+    },
+    {
+     "name": "Features",
+     "value": "High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Analog output interface\u3001Input filter\u3001Enable/shutdown function"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "500pA"
+    },
+    {
+     "name": "Gain",
+     "value": "100V/V"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C1852082",
+   "mpn": "INA186A1IDDFR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~40V -40\u2103~+125\u2103 0.3V/us 0.5uV/\u2103 1 1.7V~5.5V 150dB 25V/V 45kHz 48uA 500pA 50uV High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Input filter\u3001Enable/shutdown function \u00b142V TSOT-23-8 Current Sense Amplifiers ROHS",
+   "package": "TSOT-23-8",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5644,
+   "price": 1.0183,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 1.0183
+    },
+    {
+     "qty": 10,
+     "price": 0.8136
+    },
+    {
+     "qty": 30,
+     "price": 0.713
+    },
+    {
+     "qty": 100,
+     "price": 0.6123
+    },
+    {
+     "qty": 500,
+     "price": 0.5522
+    },
+    {
+     "qty": 1000,
+     "price": 0.5197
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303020106_Texas-Instruments-INA186A1IDDFR_C1852082.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina186a1iddfr_C1852082.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "50uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "0.5uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "1.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "0.3V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "150dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b142V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~40V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "45kHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "48uA"
+    },
+    {
+     "name": "Features",
+     "value": "High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Input filter\u3001Enable/shutdown function"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "500pA"
+    },
+    {
+     "name": "Gain",
+     "value": "25V/V"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C2058311",
+   "mpn": "INA186A1IDCKR",
+   "brand": "Texas Instruments",
+   "description": "-200mV~40V -40\u2103~+125\u2103 0.3V/us 0.5uV/\u2103 1 1.7V~5.5V 150dB 25V/V 45kHz 48uA 500pA 50uV 75nV/\u221aHz High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Analog output interface\u3001Input filter\u3001Enable/shutdown function \u00b142V SC-70-6 Current Sense Amplifiers ROHS",
+   "package": "SC-70-6",
+   "category": "Current Sense Amplifiers",
+   "type": "Extended",
+   "basic": false,
+   "stock": 4850,
+   "price": 0.7016,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.7016
+    },
+    {
+     "qty": 10,
+     "price": 0.5944
+    },
+    {
+     "qty": 30,
+     "price": 0.5181
+    },
+    {
+     "qty": 100,
+     "price": 0.4548
+    },
+    {
+     "qty": 500,
+     "price": 0.4353
+    },
+    {
+     "qty": 1000,
+     "price": 0.4223
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302221330_Texas-Instruments-INA186A1IDCKR_C2058311.pdf",
+   "url": "https://www.lcsc.com/product-detail/current-sense-amplifiers_texas-instruments-ina186a1idckr_C2058311.html",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-40\u2103~+125\u2103"
+    },
+    {
+     "name": "Vos - Input Offset Voltage",
+     "value": "50uV"
+    },
+    {
+     "name": "Input Offset Voltage Drift(Vos TC)",
+     "value": "0.5uV/\u2103"
+    },
+    {
+     "name": "Single Supply",
+     "value": "1.7V~5.5V"
+    },
+    {
+     "name": "Slew Rate",
+     "value": "0.3V/us"
+    },
+    {
+     "name": "Common Mode Rejection Ratio (CMRR)",
+     "value": "150dB"
+    },
+    {
+     "name": "Differential Voltage",
+     "value": "\u00b142V"
+    },
+    {
+     "name": "Number of Channels",
+     "value": "1"
+    },
+    {
+     "name": "Vcm - Common Mode Voltage",
+     "value": "-200mV~40V"
+    },
+    {
+     "name": "Bandwidth",
+     "value": "45kHz"
+    },
+    {
+     "name": "Noise density(eN)",
+     "value": "75nV/\u221aHz"
+    },
+    {
+     "name": "Quiescent Current",
+     "value": "48uA"
+    },
+    {
+     "name": "Features",
+     "value": "High-side detection\u3001Low-side detection\u3001Bidirectional detection\u3001Zero drift / auto-zero\u3001Analog output interface\u3001Input filter\u3001Enable/shutdown function"
+    },
+    {
+     "name": "Ib - Input Bias Current",
+     "value": "500pA"
+    },
+    {
+     "name": "Gain",
+     "value": "25V/V"
+    }
+   ],
+   "rank": 4
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

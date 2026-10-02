@@ -1,0 +1,179 @@
+{
+ "type": "flowchart",
+ "canvas": 553,
+ "alt": "How the stereo-class-d-amp run went",
+ "nodes": [
+  {
+   "id": "P0",
+   "title": "P0 Intake",
+   "col": 0,
+   "row": 0,
+   "sub": [
+    "12 decisions"
+   ]
+  },
+  {
+   "id": "P1",
+   "title": "P1 Research",
+   "col": 0,
+   "row": 1,
+   "sub": [
+    "9 decisions"
+   ]
+  },
+  {
+   "id": "P2",
+   "title": "P2 Architecture",
+   "col": 0,
+   "row": 2,
+   "sub": [
+    "3 decisions"
+   ]
+  },
+  {
+   "id": "P3",
+   "title": "P3 Parts and library",
+   "col": 0,
+   "row": 3,
+   "sub": [
+    "4 decisions"
+   ]
+  },
+  {
+   "id": "P4",
+   "title": "P4 Schematic",
+   "col": 0,
+   "row": 4,
+   "sub": [
+    "4 decisions",
+    "gate: 2 attempts"
+   ]
+  },
+  {
+   "id": "P5",
+   "title": "P5 Board setup",
+   "col": 0,
+   "row": 5,
+   "sub": [
+    "2 decisions"
+   ]
+  },
+  {
+   "id": "P6",
+   "title": "P6 Placement",
+   "col": 0,
+   "row": 6,
+   "sub": [
+    "2 decisions",
+    "gate: 31 attempts"
+   ]
+  },
+  {
+   "id": "P7",
+   "title": "P7 Routing",
+   "col": 0,
+   "row": 7,
+   "sub": [
+    "1 decision",
+    "gate: 14 attempts"
+   ],
+   "mark": true
+  },
+  {
+   "id": "back0",
+   "title": "Back to P2",
+   "role": "gate",
+   "col": 1,
+   "row": 3,
+   "sub": [
+    "R4-R7+C23-C26 (3.3R+10nF) s...",
+    "1 decision, 02:06"
+   ]
+  },
+  {
+   "id": "back1",
+   "title": "Back to P4",
+   "role": "gate",
+   "col": 1,
+   "row": 5,
+   "sub": [
+    "review W1/W2: swap C13 to a...",
+    "4 decisions, 03:36"
+   ]
+  },
+  {
+   "id": "back2",
+   "title": "Back to P6",
+   "role": "gate",
+   "col": 1,
+   "row": 7,
+   "sub": [
+    "spread L3/L4 up and L1/L2 d...",
+    "1 decision, 05:25"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "P0",
+   "to": "P1"
+  },
+  {
+   "from": "P1",
+   "to": "P2"
+  },
+  {
+   "from": "P2",
+   "to": "P3"
+  },
+  {
+   "from": "P3",
+   "to": "P4"
+  },
+  {
+   "from": "P4",
+   "to": "P5"
+  },
+  {
+   "from": "P5",
+   "to": "P6"
+  },
+  {
+   "from": "P6",
+   "to": "P7"
+  },
+  {
+   "from": "P3",
+   "to": "back0",
+   "kind": "fail"
+  },
+  {
+   "from": "back0",
+   "to": "P2",
+   "kind": "dash",
+   "route": "vh"
+  },
+  {
+   "from": "P5",
+   "to": "back1",
+   "kind": "fail"
+  },
+  {
+   "from": "back1",
+   "to": "P4",
+   "kind": "dash",
+   "route": "vh"
+  },
+  {
+   "from": "P7",
+   "to": "back2",
+   "kind": "fail"
+  },
+  {
+   "from": "back2",
+   "to": "P6",
+   "kind": "dash",
+   "route": "vh"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "script": "netlist_audit",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.net",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "mode": "audit",
+ "nets": 48,
+ "components": 41,
+ "unconnected_pins": 21,
+ "constraint_nets_checked": 7,
+ "constraint_refs_checked": 30,
+ "pins_expected": 182,
+ "pins_connected": 182,
+ "decoupling_associations": 8,
+ "power": [
+  {
+   "net": "VBUS",
+   "nodes": 11,
+   "power_in": 1,
+   "power_out": 0
+  },
+  {
+   "net": "VSYS",
+   "nodes": 5,
+   "power_in": 1,
+   "power_out": 0
+  },
+  {
+   "net": "VBAT",
+   "nodes": 6,
+   "power_in": 0,
+   "power_out": 1,
+   "passive_fed_via": [
+    "R6"
+   ]
+  },
+  {
+   "net": "+3V3",
+   "nodes": 18,
+   "power_in": 3,
+   "power_out": 1
+  },
+  {
+   "net": "GND",
+   "nodes": 58,
+   "power_in": 27,
+   "power_out": 0
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:16:52+00:00",
+ "input": "PCB-0020-A_esp32c3-node.net",
+ "input_digest": "netlist_canonical:2ebce1ddd24825321d9cf907e542ebacc4de89e94f5aee59e94e6c9003c9eb55"
+}

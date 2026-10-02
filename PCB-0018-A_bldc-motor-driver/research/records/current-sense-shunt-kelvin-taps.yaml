@@ -1,0 +1,38 @@
+id: current-sense-shunt-kelvin-taps
+classes:
+- return-path
+applies:
+  topologies:
+  - current-sense-shunt
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  sense_taps: from the shunt pads themselves (inner edge), never from the power copper or pour
+  in_path: only R_shunt between IN+ and IN-
+prose: 'Connect the CSA inputs to the shunt with a Kelvin (4-wire) connection: two dedicated sense traces
+  leave the shunt''s own pads and carry no load current, so the only impedance between IN+ and IN- is
+  the shunt. Any high-current copper inside the sense path adds its IR drop to a signal that is only tens
+  of mV across a milliohm resistor, a large error. INA240 Fig 9-7 shows the DO case (two thin traces leaving
+  the shunt pads straight to IN+/IN-) and the crossed-out DON''T case (sense traces tapped off the wide
+  power copper beyond the pads). Fig 11-1/11-2 show the same taps on both packages. SLVA959B lists Kelvin
+  connections first in its motor-driver do''s.'
+sources:
+- file: research/sources/ina240.pdf
+  page: 23
+  note: 'sec 9.3.2 + Fig 9-7: DO Kelvin taps from the shunt pads vs DONT non-Kelvin taps from the power
+    copper (crossed out)'
+- file: research/sources/ina240.pdf
+  page: 24
+  note: 'sec 11.1.1: poor routing adds high-current impedance between the inputs; use Kelvin/4-wire so
+    only the shunt impedance is sensed'
+- file: research/sources/slva959b.pdf
+  page: 34
+  note: 'sec 7.9 do''s: use Kelvin connections, symmetrical layout, net ties + differential routing'
+status: active
+origin: research:block-current-sense-shunt-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p23-24 INA240 Fig 9-7 DO/DONT Kelvin taps and sec 11.1.1 match; p34 SLVA959B do's list Kelvin connections"}

@@ -1,0 +1,42 @@
+id: reverse-polarity-fet-no-blocking-for-regen-load
+classes:
+- selection
+applies:
+  topologies:
+  - reverse-polarity-fet
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  regenerating_or_inductive_load: reverse polarity protection only - do NOT block reverse current (LM74500-class)
+  logic_or_holdup_path: ideal diode with reverse-current blocking (LM74700-class)
+prose: 'Choose the controller by what the load does, not only by the input. A protection device that blocks
+  reverse current is wrong for loads that push energy back - inductive kickback at turn-off or a motor''s
+  regenerative action: with the return path blocked, that energy has nowhere to go and the protected rail
+  overshoots, damaging other loads on it. LM74500-Q1 Fig 9-1 splits an automotive body-control supply
+  into a load-driving path (wiper, relays, horn: reverse polarity protection required, reverse current
+  blocking NOT required, LM74500) and a logic path (regulators, DC/DC, supervisors: both required, LM74700).
+  Fig 9-2 marks the output side ''reverse current blocking is not preferred''. The same N-FET in the reverse-polarity-only
+  mode (AND90146 Fig 7: controller drain pin to GND) lets the bulk discharge back into a falling input,
+  while the ideal-diode mode (Fig 6) holds the bulk up and blocks reverse current.'
+sources:
+- file: research/sources/lm74500-q1.pdf
+  page: 13
+  note: 'Fig 9-1 block diagram: load-driving path (reverse blocking not required, LM74500) vs logic path
+    (required, LM74700); text: blocking reverse current causes overshoot from inductive kickback or motor
+    regenerative action'
+- file: research/sources/lm74500-q1.pdf
+  page: 14
+  note: 'Fig 9-2 BCM load-path circuit: input TVS, CIN, LM74500 driving Q1, COUT; annotation ''reverse
+    current blocking is not preferred'''
+- file: research/sources/and90146-d.pdf
+  page: 5
+  note: 'Fig 6 ideal-diode mode vs Fig 7 reverse-polarity mode (drain pin to GND); text: in RP mode Cbulk
+    is discharged by a falling input'
+status: active
+origin: research:block-reverse-polarity-fet-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p13-14 LM74500-Q1 Fig9-1/9-2 and overshoot-from-regen text match exactly, incl the 'reverse current blocking is not preferred' annotation; p5 AND90146 Fig6/7 ideal-diode vs RP-mode (drain to GND) and Cbulk-discharge text match"}

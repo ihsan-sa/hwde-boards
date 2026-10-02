@@ -1,0 +1,78 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL.kicad_mod",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL"
+   ],
+   "msg": "pad size(s) [[0.49, 1.157], [0.49, 1.175]] mm != datasheet [0.6, 1.1] mm (tol 0.1; min/max of 2 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.49, 1.157], [0.49, 1.175]] mm != datasheet [0.6, 1.1] mm (tol 0.1; min/max of 2 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.6,
+    1.1
+   ],
+   "measured_mm": [
+    [
+     0.49,
+     1.157
+    ],
+    [
+     0.49,
+     1.175
+    ]
+   ]
+  }
+ ],
+ "footprint": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL",
+ "footprint_file": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL.kicad_mod",
+ "copper_pads": 5,
+ "total_pads": 5,
+ "measured_pitch_mm": 0.95,
+ "measured_pad_size_mm": [
+  0.49,
+  1.157
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "5-Lead SOT-23 (OT), Microchip drawing C04-2091A recommended land pattern (p.23); package outline C04-091B (p.22)",
+  "pad_count": 5,
+  "pitch_mm": 0.95,
+  "pad_size_mm": [
+   0.6,
+   1.1
+  ],
+  "row_spacing_mm": 2.8,
+  "pin1": "1",
+  "notes": "Recommended land pattern (p.23): contact pitch E 0.95 BSC; contact pad spacing C 2.80 (pad-centre row spacing); contact pad width X max 0.60; contact pad length Y max 1.10; distance between pad rows G min 1.70; distance between adjacent pads GX min 0.35; overall width Z max 3.90. Pins 1,2,3 on one side (pitch 0.95), pins 4 and 5 on the other side at the outer positions (middle position empty). Package outline: body length D 2.70-3.10, body width E1 1.30-1.80, overall width E 2.20-3.20, outside lead pitch e1 1.90 BSC, height A 0.90-1.45. No courtyard stated; no exposed pad on the SOT-23-5."
+ },
+ "svg": "PCB-0020-A_esp32c3-node/log/fp_verify/C424093.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:10:09+00:00",
+ "input": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL.kicad_mod",
+ "input_digest": "sexpr_no_uuid:4005f5f9ac4b730fe92f62fc05c538eb0aece7609c7b5a6bb0ac70da44258de7"
+}

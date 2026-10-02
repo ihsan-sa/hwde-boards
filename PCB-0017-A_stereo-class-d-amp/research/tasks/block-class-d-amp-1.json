@@ -1,0 +1,210 @@
+{
+ "id": "block-class-d-amp-1",
+ "slot": "block:B3",
+ "kind": "block",
+ "token": "class-d-amp",
+ "phase": "P2",
+ "status": "closed",
+ "outcome": "verified",
+ "opened": "2026-09-27T01:37:11",
+ "closed": "2026-09-27T03:04:31",
+ "coverage_report": "PCB-0017-A_stereo-class-d-amp/log/coverage-P2.json",
+ "gap": {
+  "slot": "block:B3",
+  "kind": "block",
+  "topology": "class-d-amp",
+  "operating_point": {
+   "vin_v": 12,
+   "vin_min_v": 10.8,
+   "vin_max_v": 13.2,
+   "iin_a": 4.0,
+   "iout_a": 3.0,
+   "pout_w_per_ch_4ohm": 15.6,
+   "pout_w_per_ch_8ohm": 8.4,
+   "rload_ohm_min": 4,
+   "rload_ohm_typ": 8,
+   "fsw_khz": 400,
+   "edge_ns": 15,
+   "gain_db": 20,
+   "pdiss_w": 1.5,
+   "pdiss_max_w": 4.2,
+   "ta_c": 40,
+   "tj_max_c": 125,
+   "rth_ja_target_cw": 56.7,
+   "rds_on_mohm": 120,
+   "channels": 2,
+   "board_layers": 2,
+   "copper_oz": 2,
+   "switching_kind": "hard",
+   "integration_kind": "integrated-fet",
+   "output_kind": "btl",
+   "modulation_kind": "bd",
+   "package_kind": "powerpad-down",
+   "cooling_kind": "natural-convection",
+   "source_kind": "dc-input",
+   "limit_kind": "none",
+   "fault_kind": "self-clearing"
+  },
+  "missing": [
+   {
+    "class": "coverage-checklist",
+    "min_level": null
+   }
+  ],
+  "reasons": [
+   "no coverage checklist for block 'class-d-amp' - the first research pass on a new topology/interface produces one (reference/knowledge/checklists/)"
+  ],
+  "related_records": [],
+  "principle_parents": [],
+  "task": "research block 'class-d-amp': produce its coverage checklist, then populate it"
+ },
+ "checklist_needed": true,
+ "caps": {
+  "depth_per_gap": 4,
+  "attempt_factor": 3
+ },
+ "sources": [
+  {
+   "n": 1,
+   "url": "https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf",
+   "final_url": "https://www.ti.com/lit/ds/symlink/tpa3116d2.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "TPA3118D2DAPR",
+   "file": "research/sources/tpa3116d2.pdf",
+   "sha256": "4339471f438d786c444b4776925e75cf3a4ceafb8d6fad5de709d080670271a0",
+   "bytes": 2662209,
+   "content_type": "application/pdf",
+   "pages": 49,
+   "fetched": "2026-09-27T01:42:02",
+   "via": "http",
+   "note": "SLOS708 TPA311xD2 datasheet: layout section, thermal table, decoupling, bootstrap",
+   "deduplicated": false
+  },
+  {
+   "n": 2,
+   "url": "https://www.ti.com/lit/an/slma002h/slma002h.pdf",
+   "final_url": "https://www.ti.com/lit/an/slma002h/slma002h.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-appnote",
+   "declared_tier": "vendor-appnote",
+   "about": "TPA3118D2DAPR",
+   "file": "research/sources/slma002h.pdf",
+   "sha256": "cdab5db916315b40c6b445a30ccff90de3d391d39231c3f519533113a8cb1f22",
+   "bytes": 1006906,
+   "content_type": "application/pdf",
+   "pages": 31,
+   "fetched": "2026-09-27T01:42:27",
+   "via": "http",
+   "note": "SLMA002 PowerPAD thermally enhanced package: thermal land, via drill/count, tenting, 2-layer guidance",
+   "deduplicated": false
+  },
+  {
+   "n": 3,
+   "url": "https://www.ti.com/lit/ug/slou342a/slou342a.pdf",
+   "final_url": "https://www.ti.com/lit/ug/slou342a/slou342a.pdf",
+   "host": "www.ti.com",
+   "domain": "ti.com",
+   "domain_kind": "vendor",
+   "tier": "vendor-layout",
+   "declared_tier": "vendor-layout",
+   "about": "TPA3118D2DAPR",
+   "file": "research/sources/slou342a.pdf",
+   "sha256": "f811b6fcdf1c60991cc83d6b3761bc6aabf0a2d38117d900cc238e0e2a9271ff",
+   "bytes": 2680647,
+   "content_type": "application/pdf",
+   "pages": 16,
+   "fetched": "2026-09-27T01:47:01",
+   "via": "http",
+   "note": "SLOU342A TPA3118D2EVM user guide: 2-layer no-heatsink EVM layout plots, BOM",
+   "deduplicated": false
+  }
+ ],
+ "attempts": [],
+ "verdicts": {
+  "class-d-amp-2layer-pour-heat-spreader": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p6 Table 6.4 (DAP 22/36 C/W, psiJB 4.7, psiJT 0.3, fn4 DAD with 14x50x25 mm sink), p29 Fig 40, p30 Fig 41 annotations; SLOU342A p7 2-layer pour. Nit stands: fn3 names the EVM layout, not that 22 C/W was measured on it.",
+   "ts": "2026-09-27T03:03:05"
+  },
+  "class-d-amp-constraints-emission": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p28 10.1 bullets and p6 Table 6.4 per-package RthJA with fn4; p27 inputs as pass 1. Contract record, no envelope.",
+   "ts": "2026-09-27T03:03:05"
+  },
+  "class-d-amp-emi-filter-and-snubber": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p28 output-filter bullet and SLOU342A p7 Fig 4 (C11..C17 by U1, Zobel parts at posts); p26 Fig 37, p18, SLOU342A p6/p10 as pass 1.",
+   "ts": "2026-09-27T03:03:07"
+  },
+  "class-d-amp-family-pad-orientation-selection": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "Content byte-identical to the pass-1 verified text (git diff 74354438..9c44b583 shows only status/maturity/verification reset); citations unchanged. Re-read SLOS708 p6 Table 6.4 (3130 DAP 36, 3118 DAP 22, 3116 DAD 14 with sink per fn4) and p4 shared pin table; p1, p3, p27 as pass 1.",
+   "ts": "2026-09-27T03:03:07"
+  },
+  "class-d-amp-bootstrap-cap-per-output": {
+   "verdict": "verified",
+   "by": "research-second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: p16 7.3.6 >=16 V unconditional and p27 8.2.1 PVCC 4.5-26 V / 8.2.2.5 0.22 uF 25 V X5R 'for this design' now cited as stated; 24 V claim and PVCC-plus-gate-drive rationale removed. p4/p26/SLOU342A p10 unchanged and correct.",
+   "ts": "2026-09-27T02:30:39"
+  },
+  "class-d-amp-fault-latch-self-clear": {
+   "verdict": "verified",
+   "by": "research-second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: p26 Fig 37 SDZ pull-up is R13 100k with FAULTZ on the node (R11 = GAIN/SLV divider) - correct. p17 added: Table 4 OC/OT/DC latched, UV/OV self-clearing; 7.3.10 short latch cleared by SDZ low, FAULTZ-SDZ tie auto-recovers - matches page.",
+   "ts": "2026-09-27T02:30:41"
+  },
+  "class-d-amp-output-loop-star-ground": {
+   "verdict": "verified",
+   "by": "research-second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: SLOU342A p9 Fig 6 / p8 Fig 5 bottom = PVCC-only feed plus short jumpers, none inside the U1-L-C output loops - load-bearing claim holds. Nit: 8 jumpers are left of U1; 2 more are crossovers at the R+ and L- test-point runs by the output posts, outside the loops.",
+   "ts": "2026-09-27T02:30:43"
+  },
+  "class-d-amp-powerpad-thermal-via-array": {
+   "verdict": "verified",
+   "by": "research-second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: SLMA002 p9 text 'solder mask ... cap the vias on the component side with a dimension equal to the via diameter + 0.1 mm minimum' now read as a cap, matches; p7 Fig 7 added and shows 8.0 copper skirt, 5.19 SMD pad, 25x 0.33 vias with outer ring. Rest unchanged and correct.",
+   "ts": "2026-09-27T02:30:44"
+  },
+  "class-d-amp-pvcc-three-tier-decoupling": {
+   "verdict": "verified",
+   "by": "research-second-reader",
+   "date": "2026-09-27",
+   "note": "Pass 2: p26 Fig 37 re-read at 500 dpi - AVCC pin 17 joins the 18/19 node and shares C23/C24/C25; C57 10 nF PVCC-GND at the input; C58 100 nF in series with R10 3.3R across PVCC. Note and prose now match.",
+   "ts": "2026-09-27T02:30:44"
+  },
+  "class-d-amp-single-gnd-two-layer-pour": {
+   "verdict": "verified",
+   "by": "second-reader",
+   "date": "2026-09-27",
+   "note": "re-read tpa3116d2 p4 (no AGND, pad to GND), p28 10.1 star ground, p30 Fig41 solid GND plane; slou342a p7 Fig4 small-signal on pin-1 side, p8 Fig5 GND pour + PVCC feed, 8 input-side + 2 output-side (R+/L-) bottom jumpers as stated. Minor: prose cites p29 Fig40 with no sources entry; p29 checked and supports it.",
+   "ts": "2026-09-27T02:58:22"
+  }
+ },
+ "queue_entry": "2026-09-27-research-task-block-class-d-amp-1",
+ "updated": "2026-09-27T03:04:31",
+ "accepted_drafts": null,
+ "summary": {
+  "verified": 10,
+  "refuted": 0,
+  "checklists": 1,
+  "sources": 3
+ }
+}

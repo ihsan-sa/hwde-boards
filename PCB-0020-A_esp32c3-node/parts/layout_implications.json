@@ -1,0 +1,451 @@
+{
+ "workspace": "PCB-0020-A_esp32c3-node",
+ "cap_class": "2layer_1oz",
+ "parts": [
+  {
+   "mpn": "ESP32-C3-MINI-1-N4",
+   "package": "SMD,16.6x13.2mm",
+   "gaps": [],
+   "thermal_vias": {
+    "ep_mm": [
+     5.4,
+     5.4
+    ],
+    "drill_mm": 0.3,
+    "land_mm": 0.6,
+    "pitch_floor_mm": 0.8,
+    "nx": 7,
+    "ny": 7,
+    "max_vias": 49,
+    "max_square": "7x7",
+    "square_4x4_fits": true
+   },
+   "courtyard": {
+    "w_mm": 13.2,
+    "h_mm": 16.6,
+    "area_mm2": 219.12,
+    "source": "extraction"
+   },
+   "lcsc": "C2838502",
+   "refs": [
+    "U1"
+   ],
+   "qty": 1,
+   "extraction": "C2838502.json"
+  },
+  {
+   "mpn": "TYPE-C-31-M-12",
+   "package": "SMD",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C165948",
+   "refs": [
+    "J1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF5101T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C23186",
+   "refs": [
+    "R1",
+    "R2"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "SMF5.0A",
+   "package": "SOD-123",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 4.3,
+    "h_mm": 2.0,
+    "area_mm2": 8.6,
+    "source": "table"
+   },
+   "lcsc": "C284108",
+   "refs": [
+    "D1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "USBLC6-2SC6",
+   "package": "SOT-23-6L",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "routing": {
+    "pitch_mm": 0.95,
+    "pad_w_mm": 0.6,
+    "gap_mm": 0.35,
+    "track_between_pads": false,
+    "max_stub_width_mm": 0.6,
+    "note": "a netclass width floor above max_stub_width_mm makes every stub into this pad illegal - pour that net as a zone (LEARNINGS 2026-08-09 netclass-floor vs stubs)"
+   },
+   "lcsc": "C7519",
+   "refs": [
+    "U4"
+   ],
+   "qty": 1,
+   "extraction": "C7519.json"
+  },
+  {
+   "mpn": "MCP73831T-2ACI/OT",
+   "package": "SOT-23-5",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "routing": {
+    "pitch_mm": 0.95,
+    "pad_w_mm": 0.6,
+    "gap_mm": 0.35,
+    "track_between_pads": false,
+    "max_stub_width_mm": 0.6,
+    "note": "a netclass width floor above max_stub_width_mm makes every stub into this pad illegal - pour that net as a zone (LEARNINGS 2026-08-09 netclass-floor vs stubs)"
+   },
+   "lcsc": "C424093",
+   "refs": [
+    "U2"
+   ],
+   "qty": 1,
+   "extraction": "C424093.json"
+  },
+  {
+   "mpn": "CL10A475KO8NNNC",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C19666",
+   "refs": [
+    "C1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "KT-0603R",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C2286",
+   "refs": [
+    "D2"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1001T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C21190",
+   "refs": [
+    "R4"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+   "package": "SMD,P=2mm,Surface Mount\uff0cRight Angle",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C295747",
+   "refs": [
+    "J2"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "AO3401A",
+   "package": "SOT-23",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.4,
+    "h_mm": 3.0,
+    "area_mm2": 10.2,
+    "source": "table"
+   },
+   "lcsc": "C15127",
+   "refs": [
+    "Q1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1003T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C25803",
+   "refs": [
+    "R5"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "B5819W SL",
+   "package": "SOD-123",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 4.3,
+    "h_mm": 2.0,
+    "area_mm2": 8.6,
+    "source": "table"
+   },
+   "lcsc": "C8598",
+   "refs": [
+    "D3"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "RT9080-33GJ5",
+   "package": "TSOT-23-5",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C841192",
+   "refs": [
+    "U3"
+   ],
+   "qty": 1,
+   "extraction": "C841192.json"
+  },
+  {
+   "mpn": "CL10A105KB8NNNC",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C15849",
+   "refs": [
+    "C3"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1004T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C22935",
+   "refs": [
+    "R6",
+    "R7"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "CC0603KRX7R9BB104",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C14663",
+   "refs": [
+    "C5"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "CL21A106KAYNNNE",
+   "package": "0805",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.4,
+    "h_mm": 1.9,
+    "area_mm2": 6.46,
+    "source": "table"
+   },
+   "lcsc": "C15850",
+   "refs": [
+    "C10"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "0603WAF1002T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C25804",
+   "refs": [
+    "R10"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "TS-1187A-B-A-B",
+   "package": "SMD-4P,5.1x5.1mm",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C318884",
+   "refs": [
+    "SW1"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "KT-0805G",
+   "package": "0805",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.4,
+    "h_mm": 1.9,
+    "area_mm2": 6.46,
+    "source": "table"
+   },
+   "lcsc": "C2297",
+   "refs": [
+    "D10"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "BME280",
+   "package": "LGA-8(2.5x2.5)",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "routing": {
+    "pitch_mm": 0.65,
+    "pad_w_mm": 0.35,
+    "gap_mm": 0.3,
+    "track_between_pads": false,
+    "max_stub_width_mm": 0.35,
+    "note": "a netclass width floor above max_stub_width_mm makes every stub into this pad illegal - pour that net as a zone (LEARNINGS 2026-08-09 netclass-floor vs stubs)"
+   },
+   "lcsc": "C92489",
+   "refs": [
+    "U5"
+   ],
+   "qty": 1,
+   "extraction": "C92489.json"
+  },
+  {
+   "mpn": "0603WAF4701T5E",
+   "package": "0603",
+   "gaps": [],
+   "courtyard": {
+    "w_mm": 3.0,
+    "h_mm": 1.5,
+    "area_mm2": 4.5,
+    "source": "table"
+   },
+   "lcsc": "C23162",
+   "refs": [
+    "R14",
+    "R15"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "SM04B-SRSS-TB(LF)(SN)",
+   "package": "SMD,P=1mm,Surface Mount\uff0cRight Angle",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "C160404",
+   "refs": [
+    "J3"
+   ],
+   "qty": 1,
+   "extraction": null
+  },
+  {
+   "mpn": "edge pads 1x8 / 1x4",
+   "package": "PinHeader_1x08_P2.54mm / 1x04 (pads only, DNP)",
+   "gaps": [
+    "courtyard unknown (no land_pattern.courtyard_mm and package not in CHIP_COURTYARD)"
+   ],
+   "lcsc": "",
+   "refs": [
+    "J4"
+   ],
+   "qty": 1,
+   "extraction": null
+  }
+ ],
+ "board_budget": {
+  "courtyard_sum_mm2": 304.4,
+  "unknown_parts": [
+   "TYPE-C-31-M-12",
+   "USBLC6-2SC6",
+   "MCP73831T-2ACI/OT",
+   "S2B-PH-SM4-TB(LF)(SN)",
+   "RT9080-33GJ5",
+   "TS-1187A-B-A-B",
+   "BME280",
+   "SM04B-SRSS-TB(LF)(SN)",
+   "edge pads 1x8 / 1x4"
+  ]
+ },
+ "conflicts": []
+}

@@ -1,0 +1,71 @@
+{
+ "block": "sensor-io",
+ "candidates": [
+  {
+   "mpn": "BME280",
+   "lcsc": "C92489",
+   "package": "LGA-8(2.5x2.5)",
+   "basic": false,
+   "stock": 4847,
+   "price": 7.0538,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121920_Bosch-Sensortec-BME280_C92489.pdf",
+   "rank": 1,
+   "fit": "BME280 LGA-8 2.5x2.5: T/RH/P, I2C at 0x76/0x77, Bosch only (BMP280 out of stock, no pin-compatible alternate)"
+  },
+  {
+   "mpn": "USBLC6-2SC6",
+   "lcsc": "C7519",
+   "package": "SOT-23-6L",
+   "basic": false,
+   "stock": 37351,
+   "price": 0.1767,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf",
+   "rank": 1,
+   "fit": "USBLC6-2SC6 (ST): 2-line USB ESD + VBUS clamp, matched low-C lines; clones C2827654 cheaper"
+  },
+  {
+   "mpn": "TYPE-C-31-M-12",
+   "lcsc": "C165948",
+   "package": "SMD",
+   "basic": false,
+   "stock": 449864,
+   "price": 0.1857,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf",
+   "rank": 1,
+   "fit": "TYPE-C-31-M-12 16P USB-C receptacle with D+/D- (A6/A7/B6/B7), proven on PCB-0015"
+  },
+  {
+   "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+   "lcsc": "C295747",
+   "package": "SMD,P=2mm,Surface Mount\uff0cRight Angle",
+   "basic": false,
+   "stock": 21059,
+   "price": 0.2364,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2102031704_JST-S2B-PH-SM4-TB-LF-SN_C295747.pdf",
+   "rank": 1,
+   "fit": "JST S2B-PH-SM4-TB SMD right-angle 2-pin battery connector"
+  },
+  {
+   "mpn": "SM04B-SRSS-TB(LF)(SN)",
+   "lcsc": "C160404",
+   "package": "SMD,P=1mm,Surface Mount\uff0cRight Angle",
+   "basic": false,
+   "stock": 35535,
+   "price": 0.261,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_JST-SM04B-SRSS-TB-LF-SN_C160404.pdf",
+   "rank": 1,
+   "fit": "JST SM04B-SRSS-TB Qwiic/STEMMA QT SMD right-angle, proven on PCB-0015"
+  },
+  {
+   "mpn": "TS-1187A-B-A-B",
+   "lcsc": "C318884",
+   "package": "SMD-4P,5.1x5.1mm",
+   "basic": true,
+   "stock": 477817,
+   "price": 0.0205,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf",
+   "rank": 1,
+   "fit": "TS-1187A-B-A-B 5.1x5.1 SMD tact switch, JLC Basic, proven on PCB-0015"
+  }
+ ]
+}

@@ -1,0 +1,376 @@
+{
+ "script": "datasheet_extract",
+ "status": "extracted",
+ "source_pdf": "PCB-0020-A_esp32c3-node/parts/U3_RT9080-33GJ5_C841192.pdf",
+ "lcsc": "",
+ "n_pages": 14,
+ "text_chars": 23373,
+ "pages_trimmed": 5,
+ "text_by_page": [
+  {
+   "page": 0,
+   "text": "RT9080\n\u00ae\nDS9080-05   June  2017 www.richtek.com\n1\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\n2\u03bc\u03bc\u03bc\u03bc\u03bcA IQ, 600mA Low-Dropout Linear Regulator\nApplications\n\uf06c Portable, Battery Powered Equipment\n\uf06c Ultra Low Power Microcontrollers\n\uf06c Notebook Computers\nGeneral Description\nThe RT9080 is a low-dropout (LDO) voltage regulators with\nenable function that operates from 1.2V to 5.5V. It provides\nup to 600mA of output current and offers low-power\noperation in miniaturized packaging.\nThe features of low quiescent current as low as 2\u03bcA and\nalmost zero disable current is ideal for powering the battery\nequipment to a longer service life. The RT9080 is stable\nwith the ceramic output capacitor over its wide input range\nfrom 1.2V to 5.5V and the entire range of output load\ncurrent (0mA to 600mA).\nFeatures\n\uf06c\uf06c\uf06c\uf06c\uf06c 2\u03bc\u03bc\u03bc\u03bc\u03bcA Ground Current at no Load\n\uf06c\uf06c\uf06c\uf06c\uf06c PSRR = 75dB at 1kHz\n\uf06c\uf06c\uf06c\uf06c\uf06c Adjustable Output Voltage Available by Specific\nApplication\n\uf06c\uf06c\uf06c\uf06c\uf06c \u00b1\u00b1\u00b1\u00b1\u00b12% Output Accuracy\n\uf06c\uf06c\uf06c\uf06c\uf06c 600mA (VIN \u2265\u2265\u2265\u2265\u2265 2.3V) Output Current with EN\n\uf06c\uf06c\uf06c\uf06c\uf06c Low (0.1\u03bc\u03bc\u03bc\u03bc\u03bcA) Disable Current\n\uf06c\uf06c\uf06c\uf06c\uf06c 1.2V  to 5.5V Operating Input Voltage\n\uf06c\uf06c\uf06c\uf06c\uf06c Dropout Voltage : 0.31V at 600mA when VOUT \u2265\u2265\u2265\u2265\u2265 3V\n\uf06c\uf06c\uf06c\uf06c\uf06c Support Fixed Output Voltage 0.8V to 3.3V\n\uf06c\uf06c\uf06c\uf06c\uf06c Stable with Ceramic or Tantalum Capacitor\n\uf06c\uf06c\uf06c\uf06c\uf06c Current-Limit Protection\n\uf06c\uf06c\uf06c\uf06c\uf06c Over-Temperature Protection\n\uf06c\uf06c\uf06c\uf06c\uf06c TSOT-23-5 and ZQFN-4L 1x1 (ZDFN-4L 1x1)  Packages\nAvailable\nMarking Information\nFor marking information, contact our sales representative\ndirectly or through a Richtek distributor located in your\narea.\nOrdering Information\nNote :\nRichtek products are :\n\uf07d RoHS compliant and compatible with the current require-\n      ments of IPC/JEDEC J-STD-020.\n\uf07d Suitable for use in SnPb or Pb-free soldering processes.\nPackage Type\nJ5 : TSOT-23-5\nQZ : ZQFN-4L 1x1 (Z-Type)\n        (ZDFN-4L 1x1)\nRT9080/N-\nLead Plating System\nG : Green (Halogen Free and Pb Free)\nOutput Voltage\n08 : 0.8V\n     : \n33 : 3.3V\nSpecial Request : Any voltage between \n0.8V and 3.3V under specific business \nagreement\nPin Function\nRT9080 : Without SNS Pin\nRT9080N : With SNS Pin"
+  },
+  {
+   "page": 1,
+   "text": "RT9080\n2\nDS9080-05   June  2017www.richtek.com\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\nFunctional Pin Description\nPin Configuration\n(TOP VIEW)\nTSOT-23-5\nVIN GND EN\nVOUT SNS/NC\n4\n23\n5\nZQFN-4L 1x1 (ZDFN-4L 1x1)\nVOUT VIN\nGND EN\n1\n2 3\n4\nSGND\n5\nPin No. \nPin Name Pin Function \nTSOT-23-5 ZQFN-4L 1x1 (ZDFN-4L 1x1) \n1 4 VIN Supply voltage input. \n2 2 GND Ground. \n3 3 EN Enable control input. \n4 -- \nSNS Output voltage sense. (RT9080N only) \nNC No internal connection.  \n5 1 VOUT Output of the regulator.  \n-- 5 (Exposed Pad) SGND Substrate of chip. Leave floating or tie to GND.  \n "
+  },
+  {
+   "page": 2,
+   "text": "RT9080\n3\nDS9080-05   June  2017 www.richtek.com\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\nFunctional Block Diagram\nOperation\nBasic Operation\nThe RT9080 is a low quiescent current linear regulator\ndesigned especially for low external components system.\nThe input voltage range is from 1.2V to 5.5V.\nThe minimum required output capacitance for stable\noperation is 1\u03bcF effective capacitance after consideration\nof the temperature and voltage coefficient of the capacitor.\nOutput Transistor\nThe RT9080 builds in a P-MOSFET output transistor which\nprovides a low switch-on resistance for low dropout voltage\napplications.\nError Amplifier\nThe Error Amplifier compares the internal reference voltage\nwith the output feedback voltage from the internal divider,\nand controls the Gate voltage of P-MOSFET to support\ngood line regulation and load regulation at output voltage.\nEnable\nThe RT9080 delivers the output power when it is set to\nenable state. When it works in disable state, there is no\noutput power and the operation quiescent current is almost\nzero.\nCurrent-Limit Protection\nThe RT9080 provides current limit function to prevent the\ndevice from damages during over-load or shorted-circuit\ncondition. This current is detected by an internal sensing\ntransistor.\nOver-Temperature Protection\nThe over-temperature protection function will turn off the\nP-MOSFET when the junction temperature exceeds 150\u00b0C\n(typ.), and the output current exceeds 80mA. Once the\njunction temperature cools down by approximately 20\u00b0C,\nthe regulator will automatically resume operation.\nVIN\nGND\nEN\nVOUT\nR1\nR2\nCurrent/Thermal \nSense\nBandgap\nReference\nSNS \n+\n-\n(without sense  \nfunction)\n(with sense  \nfunction)\nEN"
+  },
+  {
+   "page": 3,
+   "text": "RT9080\n4\nDS9080-05   June  2017www.richtek.com\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\nElectrical Characteristics\nRecommended Operating Conditions   (Note 4)\n\uf06c Input Voltage, VIN --------------------------------------------------------------------------------------------------------- 1.2V to 5.5V\n\uf06c Junction Temperature Range-------------------------------------------------------------------------------------------- \u221240\u00b0C to 125\u00b0C\n\uf06c Ambient Temperature Range-------------------------------------------------------------------------------------------- \u221240\u00b0C to 85\u00b0C\nAbsolute Maximum Ratings   (Note 1)\n\uf06c VIN, VOUT, SNS, EN to GND ------------------------------------------------------------------------------------------- \u22120.3V to 6.5V\n\uf06c VOUT to VIN---------------------------------------------------------------------------------------------------------------- \u22126.5V to 0.3V\n\uf06c Power Dissipation, PD @ TA = 25\u00b0C\nTSOT-23-5-------------------------------------------------------------------------------------------------------------------0.43W\nZQFN-4L 1x1 (ZDFN-4L 1x1)--------------------------------------------------------------------------------------------0.44W\n\uf06c Package Thermal Resistance   (Note 2)\nTSOT-23-5, \u03b8JA -------------------------------------------------------------------------------------------------------------230.6\u00b0C/W\nTSOT-23-5, \u03b8JC -------------------------------------------------------------------------------------------------------------21.8\u00b0C/W\nZQFN-4L 1x1 (ZDFN-4L 1x1), \u03b8JA -------------------------------------------------------------------------------------- 226\u00b0C/W\nZQFN-4L 1x1 (ZDFN-4L 1x1), \u03b8JC ------------------------------------------------------------------------------------- 43\u00b0C/W\n\uf06c Lead Temperature (Soldering, 10 sec.) ------------------------------------------------------------------------------- 260\u00b0C\n\uf06c Junction Temperature----------------------------------------------------------------------------------------------------- 150\u00b0C\n\uf06c Storage Temperature Range-------------------------------------------------------------------------------------------- \u221265\u00b0C to 150\u00b0C\n\uf06c ESD Susceptibility   (Note 3)\nHBM (Human Body Model)---------------------------------------------------------------------------------------------- 2kV\nMM (Machine Model) ------------------------------------------------------------------------------------------------------150V\n(VOUT + 1 < VIN < 5.5V, TA = 25\u00b0C, unless otherwise specified)\nParameter Symbol Test Conditions Min  Typ  Max  Unit \nOutput Voltage Range V OUT  0.8 -- 3.3 V \nDC Output Accuracy  I LOAD = 1mA \uf02d2 -- 2 % \nDropout Voltage \n(ILOAD = 600mA)   (Note 5) VDROP \n0.8V \uf0a3 VOUT \uf03c 1.05V (TSOT-23-5) -- 1.05 1.33 \nV \n0.8V \uf0a3 VOUT \uf03c 1.05V (ZQFN-4L 1x1) -- 1.05 1.63 \n1.05V \uf0a3 VOUT \uf03c 1.2V -- 0.8 1.13 \n1.2V \uf0a3 VOUT \uf03c 1.5V -- 0.71 1.03 \n1.5V \uf0a3 VOUT \uf03c 1.8V -- 0.57 0.93 \n1.8V \uf0a3 VOUT \uf03c 2.1V -- 0.57 0.83 \n2.1V \uf0a3 VOUT \uf03c 2.5V -- 0.41 0.73 \n2.5V \uf0a3 VOUT \uf03c 3V -- 0.36 0.63 \n3V \uf0a3 VOUT -- 0.31 0.53 \nVCC Consumption Current I Q ILOAD = 0mA, VOUT \uf0a3 5.5V \nVIN \uf0b3 VOUT + VDROP -- 2 4 \uf06dA \nShutdown GND Current   \n(Note 6) \n VEN = 0V -- 0.1 0.5 \uf06dA \nShutdown Leakage Current   \n(Note 6)  V EN = 0V, VOUT = 0V -- 0.1 0.5 \uf06dA "
+  },
+  {
+   "page": 4,
+   "text": "RT9080\n5\nDS9080-05   June  2017 www.richtek.com\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\nNote 1. Stresses beyond those listed \u201cAbsolute Maximum Ratings \u201d may cause permanent damage to the device. These are\nstress ratings only, and functional operation of the device at these or any other conditions beyond those indicated in\nthe operational sections of the specifications is not implied. Exposure to absolute maximum rating conditions may\naffect device reliability.\nNote 2. \u03b8\nJA is measured in the natural convection at TA = 25\u00b0C on a two-layer Richtek Evaluation Board for ZQFN-4L 1x1 (ZDFN-\n4L1x1) Package.\n  \u03b8JA is measured at TA = 25\u00b0C on a high effective thermal conductivity four-layer test board per JEDEC 51-7 for TSOT-23-\n5 Package.\nNote 3. Devices are ESD sensitive. Handling precaution is recommended.\nNote 4. The device is not guaranteed to function outside its operating conditions.\nNote 5. The dropout voltage is defined as V IN \u2212 VOUT, when VOUT is 98% of the normal value of V OUT.\nNote 6. The specification is tested at wafer stage and guarantee by design after assembly.\nParameter Symbol Test Conditions Min  Typ  Max  Unit \nEN Input Current I EN V EN = 5.5V -- -- 0.1 \uf06dA \nLine Regulation \uf044LINE I LOAD = 1mA \n1.2V \uf0a3 VIN \uf03c 1.5V -- 0.3 0.6 \n% 1.5V \uf0a3 VIN \uf03c 1.8V -- 0.15 0.3 \n1.8V \uf0a3 VIN \uf03c 5.5V -- 0.13 0.35 \nLoad Regulation \uf044LOAD 1mA < I LOAD < 600mA -- 0.5 1 % \nPower Supply Rejection \nRatio PSRR VIN = 3V, ILOAD = 50mA, \nCOUT = 1\uf06dF, VOUT = 2.5V, f = 1kHz -- 75 -- dB \nOutput Voltage Noise  \nCOUT = 1\uf06dF,  \nILOAD = 150mA, \nBW = 10Hz to \n100kHz, \nV\nIN = VOUT + 1V \nVOUT = 0.8V -- 26 -- \n\uf06dVRMS \nVOUT = 1.2V -- 37 -- \nVOUT = 1.8V -- 39 -- \nVOUT = 3.3V -- 42 -- \nOutput Current Limit I LIM V OUT = 90%VOUT(Normal) 610 1100 -- mA \nEnable Input \nVoltage \nLogic-High V IH V IN = 5V 0.9 -- -- V \nLogic-Low V IL V IN = 5V -- -- 0.4 \nThermal Shutdown \nTemperature TSD I LOAD = 30mA, VIN \uf0b3 1.5V -- 150 -- \uf0b0C \nThermal Shutdown \nHysteresis \uf044TSD  -- 20 -- \uf0b0C \nDischarge Resistance  EN = 0V, V OUT = 0.1V -- 80 -- \uf057 "
+  },
+  {
+   "page": 5,
+   "text": "RT9080\n6\nDS9080-05   June  2017www.richtek.com\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\nTypical Application Circuit\nFigure 1. Application with Sense Function\nFigure 2. Application without Sense Function\nFigure 3. Adjustable Output Voltage Application Circuit\nVIN\nEN\nVOUT\nGND\nCOUTCIN\nVOUT\nRT9080N\nVIN\nEN\n1\u00b5F SNS (Effective Capacitance     1\u00b5F)\uf0b3\nVIN\nEN\nVOUT\nGND\nCOUTCIN\nVOUT\nRT9080\nVIN\nEN\n1\u00b5F (Effective Capacitance     1\u00b5F)\uf0b3\nVIN\nEN\nVOUT\nGND\nRT9080N\n1\u00b5F\nSNS\nR1\nR2\nNC COUT\nVOUTCIN\nVIN\nEN\n(Effective Capacitance     1\u00b5F)\uf0b3"
+  },
+  {
+   "page": 6,
+   "first_line": "RT9080",
+   "chars": 1394
+  },
+  {
+   "page": 7,
+   "first_line": "RT9080",
+   "chars": 1274
+  },
+  {
+   "page": 8,
+   "first_line": "RT9080",
+   "chars": 999
+  },
+  {
+   "page": 9,
+   "first_line": "RT9080",
+   "chars": 916
+  },
+  {
+   "page": 10,
+   "text": "RT9080\n11\nDS9080-05   June  2017 www.richtek.com\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\nApplication Information\nLike any low dropout linear regulator, the RT9080's external\ninput and output capacitors must be properly selected for\nstability and performance. Use a 1 \u03bcF or larger input\ncapacitor and place it close to the IC's VIN and GND pins.\nAny output capacitor meeting the minimum 1m \u03a9 ESR\n(Equivalent Series Resistance) and effective capacitance\nlarger than 1\u03bcF requirement may be used. Place the output\ncapacitor close to the IC's VOUT and GND pins. Increasing\ncapacitance and decreasing ESR can improve the circuit's\nPSRR and line transient response.\nEnable\nThe RT9080 has an EN pin to turn on or turn off the\nregulator, When the EN pin is in logic high, the regulator\nwill be turned on. The shutdown current is almost 0 \u03bcA\ntypical. The EN pin may be directly tied to V\nIN to keep the\npart on. The Enable input is CMOS logic and cannot be\nleft floating.\nAdjustable Output Voltage Setting\nBecause of the small input current at the SNS pin, the\nRT9080N with SNS pin also can work as an adjustable\noutput voltage LDO. Figure 3 gives the connections for\nthe adjustable output voltage application. The resistor\ndivider from VOUT to SNS sets the output voltage when\nin regulation.\nThe voltage on the SNS pin sets the output voltage and is\ndetermined by the values of R1 and R2.  In order to keep\na good temperature coefficient of output voltage, the values\nof R1 and R2 should be\n selected carefully to ignore the\ntemperature coefficient of input current at the SNS pin. A\ncurrent greater than 50 \u03bcA in the resistor divider is\nrecommended to meet the above requirem\nent. The\nadjustable output voltage can be calculated using the\nformula given in equation 1 :\nOUT SNSR1 + R2V V                                             (1) R2\uf03d\uf0b4\nwhere VSNS is determined by the output voltage selections\nin the ordering information of RT9080N. The maximum\nadjustable output voltage can be as high as input voltage\ndeducted by the dropout voltage.\nWhen we choose 51k \u03a9 and 16k \u03a9 as R1 and R2\nrespectively, and select a 0.8V output at SNS pin, the\nadjustable output voltage will be set to around 3.35V. Its\ntemperature coefficient in Figure 4 is still perfect in such\nkind of application.\nFigure 4. Temperature Coefficient of Adjustable Output\nVoltage\nThe minimum recommended 50\u03bcA in the resistor divider\nmakes the application no longer an ultra low quiescent\nLDO. Figure 5 is another fine adjustable output voltage\napplication can keep the LDO still operating in low power\nconsumption. The fine tune range is recommended to be\nless than 50mV (R1 \u2264 91k\u03a9) in order to keep a good\ntemperature coefficient of the output voltage.\nFigure 5. Fine Adjustable Output Voltage Application\nCircuit\nThere isn't extra current consumption in the above\napplication. But the temperature coefficient of output\nvoltage will be degraded by the input current at SNS pin.\nIf the tuning range is larger than 50mV, a compensation\ncapacitor (56pF) is required to keep the stability of output\nvoltage. The fine adjustable output voltage is calculated\nusing the formula given in equation2 :\nOUT SNS SNSV V  + I R1                                          (2)\uf03d\uf0b4\nVIN\nEN\nVOUT\nGND\nRT9080N\n1\u00b5F\n1\u00b5F\nSNS\nR1\n56pF/NC\nOutput Voltage vs. Temperature\n3.28\n3.29\n3.30\n3.31\n3.32\n3.33\n3.34\n3.35\n-50 -25 0 25 50 75 100 125\nTemperature (\u00b0C)\nOutput Voltage (V)\nILOAD = 1mA"
+  },
+  {
+   "page": 11,
+   "text": "RT9080\n12\nDS9080-05   June  2017www.richtek.com\n\u00a9Copyright   2017 Richtek Technology Corporation. All rights reserved.                          is a registered trademark of Ric htek Technology Corporation.\nFigure 6. Derating Curve of Maximum Power Dissipation\nwhere ISNS is the input Current at SNS pin (typical 550nA\nat room temperature) and VSNS is determined by the\noutput voltage selections in the ordering information of\nthe RT9080N.\nCurrent Limit\nThe RT9080 contains an independent current limiter, which\nmonitors and controls the pass transistor's gate voltage,\nlimiting the output current to 1.1A (typ.). The current\nlimiting level is reduced to around 0.6A named fold-back\ncurrent limit when the output voltage is further decreased.\nThe output can be shorted to ground indefinitely without\ndamaging the part.\nThermal Considerations\nFor continuous operation, do not exceed absolute\nmaximum junction temperature. The maximum power\ndissipation depends on the thermal resistance of the IC\npackage, PCB layout, rate of surrounding airflow, and\ndifference between junction and ambient temperature. The\nmaximum power dissipation can be calculated by the\nfollowing formula :\nP\nD(MAX) = (TJ(MAX) \u2212 TA) / \u03b8JA\nwhere TJ(MAX) is the maximum junction temperature, TA  is\nthe ambient temperature, and \u03b8JA is the junction to ambient\nthermal resistance.\nFor recommended operating condition specifications the\nmaximum junction temperature is 125 \u00b0C and TA is the\nambient temperature. The junction to ambient thermal\nresistance, \u03b8\nJA, is layout dependent. For TSOT-23-5\npackage, the thermal resistance, \u03b8JA, is 230.6\u00b0C/W on a\nstandard JEDEC 51-7 four-layer thermal test board. For\nZQFN-4L 1x1 ( ZDFN-4L 1x1) package, the thermal\nresistance, \u03b8JA, is 226 \u00b0C/W on a two-layer Richtek\nevaluation board. The maximum power dissipation at TA  =\n25\u00b0C can be calculated by the following formula :\nPD(MAX) = (125 \u00b0C \u2212 25 \u00b0C) / (230.6 \u00b0C/W) = 0.43W for\nTSOT-23-5 package\nPD(MAX) = (125 \u00b0C \u2212 25 \u00b0C) / (226 \u00b0C/W) = 0.44W for\nZQFN-4L 1x1 (ZDFN-4L 1x1) package\nThe maximum power dissipation depends on the operating\nambient temperature for fixed T J(MAX)  and thermal\nresistance, \u03b8JA. The derating curve in Figure 6 allows the\ndesigner to see the effect of rising ambient temperature\non the maximum power dissipation.\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0 25 50 75 100 125\nAmbient Temperature (\u00b0C)\nMaximum Power Dissipation (W) 1\nZQFN-4L 1x1 (ZDFN-4L 1x1)\nTSOT-23-5\nFour-Layer PCB for TSOT-23-5 package\nTwo-Layer Richtek EVB for ZQFN (ZDFN)-4L 1x1\npackage"
+  },
+  {
+   "page": 12,
+   "first_line": "RT9080",
+   "chars": 592
+  },
+  {
+   "page": 13,
+   "text": "RT9080\n14\nDS9080-05   June  2017www.richtek.com\nRichtek Technology Corporation\n14F, No. 8, Tai Yuen 1st Street, Chupei City\nHsinchu, Taiwan, R.O.C.\nTel: (8863)5526789\nRichtek products are sold by description only. Customers should obtain the latest relevant information and data sheets before p lacing orders and should verify\nthat such information is current and complete. Richtek cannot assume responsibility for use of any circuitry other than circuit ry entirely embodied in a Richtek\nproduct. Information furnished by Richtek is believed to be accurate and reliable. However, no responsibility is assumed by Ric htek or its subsidiaries for its use;\nnor for any infringements of patents or other rights of third parties which may result from its use. No license is granted by i mplication or otherwise under any patent\nor patent rights of Richtek or its subsidiaries.\nNote : The configuration of the Pin #1 identifier is optional,\nbut must be located within the zone indicated.\nDETAIL A\nPin #1 ID and Tie Bar Mark Options\n11\n2 2\nMin. Max. Min. Max.\nA 0.300 0.400 0.012 0.016\nA1 0.000 0.050 0.000 0.002\nA3 0.117 0.162 0.005 0.006\nb 0.175 0.275 0.007 0.011\nD 0.900 1.100 0.035 0.043\nD2 0.450 0.550 0.018 0.022\nE 0.900 1.100 0.035 0.043\nE2 0.450 0.550 0.018 0.022\ne\nL 0.200 0.300 0.008 0.012\nH\nH1\n0.039 0.002\n0.064 0.003\nSymbol\nDimensions In Millimeters Dimensions In Inches\n0.625 0.025\nZ-Type 4L QFN 1x1 Package"
+  }
+ ],
+ "schema": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hwde datasheet extraction",
+  "type": "object",
+  "required": [
+   "mpn",
+   "pinout"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "mpn": {
+    "type": "string",
+    "minLength": 1
+   },
+   "lcsc": {
+    "type": "string"
+   },
+   "package": {
+    "type": "string"
+   },
+   "description": {
+    "type": "string"
+   },
+   "pinout": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pin",
+      "name",
+      "type"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pin": {
+       "type": "string",
+       "minLength": 1
+      },
+      "name": {
+       "type": "string",
+       "minLength": 1
+      },
+      "type": {
+       "type": "string",
+       "enum": [
+        "power_in",
+        "power_out",
+        "ground",
+        "input",
+        "output",
+        "bidirectional",
+        "passive",
+        "analog",
+        "clock",
+        "nc",
+        "open_collector",
+        "tristate",
+        "unspecified"
+       ]
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "decoupling": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "value": {
+       "type": "string",
+       "minLength": 1
+      },
+      "placement": {
+       "type": "string"
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "land_pattern": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "pad_count"
+    ],
+    "properties": {
+     "package": {
+      "type": "string"
+     },
+     "pad_count": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "pitch_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "pad_size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "row_spacing_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "drill_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "annulus_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "courtyard_excess_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "courtyard_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "wire_entry_local": {
+      "type": "string",
+      "enum": [
+       "+X",
+       "-X",
+       "+Y",
+       "-Y"
+      ],
+      "description": "connector wire/cable entry direction in footprint-local coords (KiCad y down)"
+     },
+     "pin1": {
+      "type": "string",
+      "description": "pad number that is pin 1 (default '1')"
+     },
+     "notes": {
+      "type": "string"
+     }
+    }
+   },
+   "exposed_pad": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "present": {
+      "type": "boolean"
+     },
+     "connect_to": {
+      "type": "string"
+     },
+     "thermal_vias": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "present"
+    ]
+   },
+   "layout_notes": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "abs_max": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "param",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "param": {
+       "type": "string"
+      },
+      "value": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "unit": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "pin_ratings": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "kind": {
+       "type": "string",
+       "enum": [
+        "voltage",
+        "current"
+       ]
+      },
+      "level": {
+       "type": "string",
+       "enum": [
+        "abs_max",
+        "recommended"
+       ]
+      },
+      "min": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "max": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "ref": {
+       "type": "string"
+      },
+      "source": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "source_pdf": {
+    "type": "string"
+   },
+   "layout_implications": {
+    "type": "object"
+   }
+  }
+ },
+ "template": {
+  "mpn": "",
+  "lcsc": "",
+  "package": "",
+  "pinout": [
+   {
+    "pin": "1",
+    "name": "",
+    "type": "unspecified"
+   }
+  ],
+  "decoupling": [],
+  "land_pattern": {
+   "pad_count": 0
+  },
+  "layout_notes": [],
+  "abs_max": []
+ },
+ "note": "Fill the template from text_by_page and the PDF pages, then re-run with --validate. Pages without schema-relevant keywords are stubs {page, first_line, chars} - read those PDF pages directly if needed, or re-run with --full-text. If text_chars is ~0 the PDF is image-only; read the rendered pages directly."
+}

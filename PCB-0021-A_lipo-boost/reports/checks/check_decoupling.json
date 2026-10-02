@@ -1,0 +1,250 @@
+{
+ "script": "check_decoupling",
+ "status": "violations",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 4,
+  "by_severity": {
+   "warning": 4
+  },
+  "by_source": {
+   "check_decoupling": 4
+  }
+ },
+ "violations": [
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    52.7,
+    40.7
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C11"
+   ],
+   "msg": "C11 ground pad is 6.6 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C11 ground pad is 6.6 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      52.7,
+      40.7
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 2.75,
+   "euclid_mm": 2.1077,
+   "loop_nh": 7.5453,
+   "vias_in_loop": 1,
+   "pin": "U2.6"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    54.8,
+    40.7
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C12"
+   ],
+   "msg": "C12 ground pad is 7.6 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C12 ground pad is 7.6 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      54.8,
+      40.7
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 4.85,
+   "euclid_mm": 4.1283,
+   "loop_nh": 9.686,
+   "vias_in_loop": 1,
+   "pin": "U2.6"
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    56.7,
+    42.7
+   ],
+   "layer": "F.Cu",
+   "net": "+5V",
+   "refs": [
+    "C13",
+    "U2"
+   ],
+   "msg": "C13 decoupling loop ~11.4 nH for U2 pin 6 (mid class limit 10.0 nH: 6.8 mm rail + 8.2 mm gnd + 1 via)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C13 decoupling loop ~11.4 nH for U2 pin 6 (mid class limit 10.0 nH: 6.8 mm rail + 8.2 mm gnd + 1 via)",
+     "pos": [
+      56.7,
+      42.7
+     ]
+    }
+   ],
+   "kind": "decoupler_loop",
+   "cap_class": "mid",
+   "manhattan_mm": 6.75,
+   "euclid_mm": 6.0035,
+   "loop_nh": 11.4387,
+   "vias_in_loop": 1,
+   "pin": "U2.6",
+   "limit_nh": 10.0
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    56.7,
+    41.3
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C13"
+   ],
+   "msg": "C13 ground pad is 8.2 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C13 ground pad is 8.2 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      56.7,
+      41.3
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "mid",
+   "manhattan_mm": 6.75,
+   "euclid_mm": 6.0035,
+   "loop_nh": 11.4387,
+   "vias_in_loop": 1,
+   "pin": "U2.6"
+  }
+ ],
+ "checked": [
+  {
+   "cap": "C1",
+   "pin": "U1.13",
+   "rail": "VBUS",
+   "class": "bulk",
+   "manhattan_mm": 2.624,
+   "euclid_mm": 2.0054,
+   "gnd_leg_mm": 3.0647,
+   "vias_in_loop": 1,
+   "loop_nh": 4.9821
+  },
+  {
+   "cap": "C4",
+   "pin": "U1.13",
+   "rail": "VBUS",
+   "class": "mid",
+   "manhattan_mm": 4.424,
+   "euclid_mm": 3.7312,
+   "gnd_leg_mm": 4.7088,
+   "vias_in_loop": 1,
+   "loop_nh": 7.3929
+  },
+  {
+   "cap": "C2",
+   "pin": "U1.10",
+   "rail": "+SYS",
+   "class": "bulk",
+   "manhattan_mm": 6.724,
+   "euclid_mm": 4.7821,
+   "gnd_leg_mm": 2.5,
+   "vias_in_loop": 1,
+   "loop_nh": 7.4568
+  },
+  {
+   "cap": "C3",
+   "pin": "U1.2",
+   "rail": "VBAT",
+   "class": "bulk",
+   "manhattan_mm": 2.476,
+   "euclid_mm": 1.9696,
+   "gnd_leg_mm": 3.5613,
+   "vias_in_loop": 1,
+   "loop_nh": 5.2261
+  },
+  {
+   "cap": "C10",
+   "pin": "U2.3",
+   "rail": "+SYS",
+   "class": "bulk",
+   "manhattan_mm": 1.85,
+   "euclid_mm": 1.6194,
+   "gnd_leg_mm": 0.9588,
+   "vias_in_loop": 1,
+   "loop_nh": 2.9662,
+   "role": "reg_input"
+  },
+  {
+   "cap": "C14",
+   "pin": "U2.3",
+   "rail": "+SYS",
+   "class": "mid",
+   "manhattan_mm": 3.4,
+   "euclid_mm": 3.3504,
+   "gnd_leg_mm": 0.197,
+   "vias_in_loop": 1,
+   "loop_nh": 3.5179,
+   "role": "reg_input"
+  },
+  {
+   "cap": "C11",
+   "pin": "U2.6",
+   "rail": "+5V",
+   "class": "bulk",
+   "manhattan_mm": 2.75,
+   "euclid_mm": 2.1077,
+   "gnd_leg_mm": 6.6004,
+   "vias_in_loop": 1,
+   "loop_nh": 7.5453
+  },
+  {
+   "cap": "C12",
+   "pin": "U2.6",
+   "rail": "+5V",
+   "class": "bulk",
+   "manhattan_mm": 4.85,
+   "euclid_mm": 4.1283,
+   "gnd_leg_mm": 7.5585,
+   "vias_in_loop": 1,
+   "loop_nh": 9.686
+  },
+  {
+   "cap": "C13",
+   "pin": "U2.6",
+   "rail": "+5V",
+   "class": "mid",
+   "manhattan_mm": 6.75,
+   "euclid_mm": 6.0035,
+   "gnd_leg_mm": 8.1624,
+   "vias_in_loop": 1,
+   "loop_nh": 11.4387
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T13:31:30+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f"
+}

@@ -1,0 +1,49 @@
+{
+ "block": "ldo",
+ "candidates": [
+  {
+   "mpn": "RT9080-33GJ5",
+   "lcsc": "C841192",
+   "package": "TSOT-23-5",
+   "basic": false,
+   "stock": 40252,
+   "price": 0.12,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2009192305_Richtek-Tech-RT9080-33GJ5_C841192.pdf",
+   "rank": 1,
+   "fit": "RT9080-33GJ5: 600 mA, 0.31 V dropout at 600 mA, 2 uA Iq (battery life), Vin 1.2-5.5 V, ceramic stable; TSOT-23-5 theta-JA 230.6 C/W is the cost (see power.md)"
+  },
+  {
+   "mpn": "AP2112K-3.3TRG1",
+   "lcsc": "C51118",
+   "package": "SOT-25-5",
+   "basic": false,
+   "stock": 39133,
+   "price": 0.171,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Diodes-Incorporated-AP2112K-3-3TRG1_C51118.pdf",
+   "rank": 2,
+   "fit": "AP2112K-3.3: pin-compatible (VIN/GND/EN/NC/VOUT), 600 mA, 55 uA Iq - alternate"
+  },
+  {
+   "mpn": "ME6211C33M5G-N",
+   "lcsc": "C82942",
+   "package": "SOT-23-5",
+   "basic": false,
+   "stock": 165213,
+   "price": 0.0607,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811131510_MICRONE-Nanjing-Micro-One-Elec-ME6211C33M5G-N_C82942.pdf",
+   "rank": 3,
+   "fit": "ME6211C33M5G-N: pin-compatible, cheapest, 500 mA; higher dropout at 500 mA"
+  },
+  {
+   "mpn": "XC6206P332MR-G",
+   "lcsc": "C5446",
+   "package": "SOT-23-3L",
+   "basic": true,
+   "stock": 474665,
+   "price": 0.1426,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Torex-Semicon-XC6206P332MR-G_C5446.pdf",
+   "rank": 4,
+   "fit": "XC6206P332MR-G is the only Basic SOT-23 3.3 V LDO but 200 mA - fails the 450 mA peak, rejected"
+  }
+ ]
+}

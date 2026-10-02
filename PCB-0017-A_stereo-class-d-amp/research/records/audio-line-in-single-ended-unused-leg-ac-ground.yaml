@@ -1,0 +1,53 @@
+id: audio-line-in-single-ended-unused-leg-ac-ground
+classes: [diff-pair]
+applies:
+  topologies: [audio-line-in]
+  packages: []
+  interfaces: []
+  parts: [TPA3116D2, TPA3118D2, TPA3130D2]
+rule:
+  enforced_by: null
+  signal_leg: "source -> Ci -> INP (or INN), same coupling cap value/type as the other leg"
+  unused_leg: "AC-ground the unused input through its OWN coupling cap of equal value, not a direct tie to ground and not left floating"
+  impedance_match: "the impedance seen at both differential inputs should be the same for good transient (pop) performance"
+prose: >
+  The amp's input stage is truly differential and cancels common-mode noise
+  between its two input pins; a single-ended source only drives one of them.
+  The datasheet's own single-ended recipe (SLOS708 sec 7.3.7) is: apply the
+  source to either input, and AC-ground the OTHER input through a capacitor
+  EQUAL IN VALUE to the signal-leg coupling cap - not a direct short to
+  ground, which would create a large impedance mismatch between the two legs
+  the differential stage compares. Best noise performance comes from AC-
+  grounding at the audio source rather than at the device input pin (shorter
+  return for the unused leg's own local noise). The two-cap arrangement
+  (the reference design's C1/C3 to INP, C2/C4 from INN to GND) matches this exactly.
+  Mismatch between the two legs' impedance is not just a DC-offset issue - it
+  degrades transient/pop performance, so a value/tolerance mismatch between
+  the two caps reads as an audible symptom, not just a bench-meter one.
+sources:
+  - file: research/sources/tpa3116d2.pdf
+    page: 16
+    section: "7.3.7 Differential Inputs"
+    note: >
+      Text: "To use the TPA31xxD2 family with a single-ended source, ac
+      ground the negative input through a capacitor equal in value to the
+      input coupling capacitor on positive and apply the audio source to
+      either input. In a single-ended input application, the unused input
+      should be ac grounded at the audio source instead of at the device
+      input for best noise performance. For good transient performance, the
+      impedance seen at each of the two differential inputs should be the
+      same."
+status: active
+origin: research:block-audio-line-in-1
+level: topology
+maturity: verified
+generalizes: []
+envelope:
+  input_kind: {in: [single-ended]}
+envelope_note: >
+  Bounded by input_kind=single-ended: a truly differential source drives both
+  input pins directly and needs no unused-leg AC-ground trick. Independent of
+  Zin, Cin value, source Vrms, or board layer count - the mechanism is
+  impedance symmetry between the two differential pins, not a voltage or
+  frequency effect.
+verification: {by: "second-reader", date: "2026-09-27", note: "p16 sec7.3.7 quote checked verbatim: AC-ground unused input via equal-value cap, ground at source for noise, matched impedance for transient perf - matches exactly."}

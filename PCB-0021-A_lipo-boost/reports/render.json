@@ -1,0 +1,27 @@
+{
+  "script": "render",
+  "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+  "status": "pass",
+  "outputs": [
+    {
+      "view": "top",
+      "path": "PCB-0021-A_lipo-boost/render/PCB-0021-A_lipo-boost_top.png",
+      "status": "pass",
+      "stderr_tail": ""
+    },
+    {
+      "view": "bottom",
+      "path": "PCB-0021-A_lipo-boost/render/PCB-0021-A_lipo-boost_bottom.png",
+      "status": "pass",
+      "stderr_tail": ""
+    },
+    {
+      "view": "iso",
+      "path": "PCB-0021-A_lipo-boost/render/PCB-0021-A_lipo-boost_iso.png",
+      "status": "pass",
+      "stderr_tail": ""
+    }
+  ],
+  "models_missing": [],
+  "models_relinked": []
+}

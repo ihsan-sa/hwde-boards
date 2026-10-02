@@ -1,0 +1,313 @@
+{
+  "script": "rules_gen",
+  "status": "pass",
+  "capability_class": "4layer_2oz",
+  "stackup": "JLC04162H-7628A",
+  "copper_oz": 2.0,
+  "rule_count": 43,
+  "rule_names": [
+    "aiee_track_width_floor",
+    "aiee_clearance_floor",
+    "aiee_via_drill_floor",
+    "aiee_via_diameter_floor",
+    "aiee_annular_floor",
+    "aiee_edge_clearance_floor",
+    "aiee_hole_to_hole_floor",
+    "aiee_silk_width_floor",
+    "aiee_pwr_width_power_in_VM_IN",
+    "aiee_pwr_width_VM",
+    "aiee_pwr_width_GND",
+    "aiee_pwr_width_PHASE_A",
+    "aiee_pwr_width_PHASE_B",
+    "aiee_pwr_width_PHASE_C",
+    "aiee_pwr_width_power_stage_LS_SRC_A",
+    "aiee_pwr_width_power_stage_LS_SRC_B",
+    "aiee_pwr_width_power_stage_LS_SRC_C",
+    "aiee_pwr_width_5V",
+    "aiee_pwr_width_regulators_BUCK_SW",
+    "aiee_pwr_width_12V",
+    "aiee_pwr_width_regulators_BOOST_SW",
+    "aiee_pwr_width_3V3",
+    "aiee_pwr_width_io_CTL_5V",
+    "aiee_pwr_width_io_SEN_5V",
+    "aiee_diff_gap_ISNS_A",
+    "aiee_diff_outer_only_ISNS_A",
+    "aiee_diff_gap_ISNS_B",
+    "aiee_diff_outer_only_ISNS_B",
+    "aiee_diff_gap_ISNS_C",
+    "aiee_diff_outer_only_ISNS_C",
+    "aiee_hv_45v_PHASE_A",
+    "aiee_hv_45v_PHASE_B",
+    "aiee_hv_45v_PHASE_C",
+    "aiee_hv_45v_VM",
+    "aiee_hv_45v_power_in_VM_IN",
+    "aiee_hv_45v_regulators_BUCK_SW",
+    "aiee_hv_50v_regulators_BST5V",
+    "aiee_hv_57v_GHA",
+    "aiee_hv_57v_GHB",
+    "aiee_hv_57v_GHC",
+    "aiee_hv_57v_gate_driver_BSTA",
+    "aiee_hv_57v_gate_driver_BSTB",
+    "aiee_hv_57v_gate_driver_BSTC"
+  ],
+  "power": [
+    {
+      "net": "/power_in/VM_IN",
+      "current_a": 13.0,
+      "dt_c": 20.0,
+      "min_width_mm": 4.2566,
+      "netclass": "Pwr_4p2566mm",
+      "class_width_mm": 4.2566
+    },
+    {
+      "net": "VM",
+      "current_a": 13.0,
+      "dt_c": 20.0,
+      "min_width_mm": 4.2566,
+      "netclass": "Pwr_4p2566mm",
+      "class_width_mm": 4.2566
+    },
+    {
+      "net": "GND",
+      "current_a": 13.0,
+      "dt_c": 20.0,
+      "min_width_mm": 4.2566,
+      "netclass": "Pwr_4p2566mm",
+      "class_width_mm": 4.2566
+    },
+    {
+      "net": "/PHASE_A",
+      "current_a": 10.0,
+      "dt_c": 20.0,
+      "min_width_mm": 2.9666,
+      "netclass": "Pwr_2p9666mm",
+      "class_width_mm": 2.9666
+    },
+    {
+      "net": "/PHASE_B",
+      "current_a": 10.0,
+      "dt_c": 20.0,
+      "min_width_mm": 2.9666,
+      "netclass": "Pwr_2p9666mm",
+      "class_width_mm": 2.9666
+    },
+    {
+      "net": "/PHASE_C",
+      "current_a": 10.0,
+      "dt_c": 20.0,
+      "min_width_mm": 2.9666,
+      "netclass": "Pwr_2p9666mm",
+      "class_width_mm": 2.9666
+    },
+    {
+      "net": "/power_stage/LS_SRC_A",
+      "current_a": 10.0,
+      "dt_c": 20.0,
+      "min_width_mm": 2.9666,
+      "netclass": "Pwr_2p9666mm",
+      "class_width_mm": 2.9666
+    },
+    {
+      "net": "/power_stage/LS_SRC_B",
+      "current_a": 10.0,
+      "dt_c": 20.0,
+      "min_width_mm": 2.9666,
+      "netclass": "Pwr_2p9666mm",
+      "class_width_mm": 2.9666
+    },
+    {
+      "net": "/power_stage/LS_SRC_C",
+      "current_a": 10.0,
+      "dt_c": 20.0,
+      "min_width_mm": 2.9666,
+      "netclass": "Pwr_2p9666mm",
+      "class_width_mm": 2.9666
+    },
+    {
+      "net": "+5V",
+      "current_a": 0.65,
+      "dt_c": 10.0,
+      "min_width_mm": 0.1625,
+      "netclass": "Default",
+      "class_width_mm": 0.2
+    },
+    {
+      "net": "/regulators/BUCK_SW",
+      "current_a": 0.9,
+      "dt_c": 10.0,
+      "min_width_mm": 0.225,
+      "netclass": "Pwr_0p225mm",
+      "class_width_mm": 0.225
+    },
+    {
+      "net": "+12V",
+      "current_a": 0.1,
+      "dt_c": 10.0,
+      "min_width_mm": 0.025,
+      "netclass": "Default",
+      "class_width_mm": 0.2
+    },
+    {
+      "net": "/regulators/BOOST_SW",
+      "current_a": 0.4,
+      "dt_c": 10.0,
+      "min_width_mm": 0.1,
+      "netclass": "Default",
+      "class_width_mm": 0.2
+    },
+    {
+      "net": "+3V3",
+      "current_a": 0.2,
+      "dt_c": 10.0,
+      "min_width_mm": 0.05,
+      "netclass": "Default",
+      "class_width_mm": 0.2
+    },
+    {
+      "net": "/io/CTL_5V",
+      "current_a": 0.2,
+      "dt_c": 10.0,
+      "min_width_mm": 0.05,
+      "netclass": "Default",
+      "class_width_mm": 0.2
+    },
+    {
+      "net": "/io/SEN_5V",
+      "current_a": 0.2,
+      "dt_c": 10.0,
+      "min_width_mm": 0.05,
+      "netclass": "Default",
+      "class_width_mm": 0.2
+    }
+  ],
+  "diff_pairs": [
+    {
+      "pair": [
+        "/ISNS_A_P",
+        "/ISNS_A_N"
+      ],
+      "impedance_ohm": 90,
+      "width_mm": 0.5584,
+      "gap_mm": 0.3
+    },
+    {
+      "pair": [
+        "/ISNS_B_P",
+        "/ISNS_B_N"
+      ],
+      "impedance_ohm": 90,
+      "width_mm": 0.5584,
+      "gap_mm": 0.3
+    },
+    {
+      "pair": [
+        "/ISNS_C_P",
+        "/ISNS_C_N"
+      ],
+      "impedance_ohm": 90,
+      "width_mm": 0.5584,
+      "gap_mm": 0.3
+    }
+  ],
+  "hv_rules": [
+    {
+      "net": "/PHASE_A",
+      "voltage": 45.0,
+      "clearance_mm": 0.4,
+      "coating": "soldermask",
+      "rule": "aiee_hv_45v_PHASE_A"
+    },
+    {
+      "net": "/PHASE_B",
+      "voltage": 45.0,
+      "clearance_mm": 0.4,
+      "coating": "soldermask",
+      "rule": "aiee_hv_45v_PHASE_B"
+    },
+    {
+      "net": "/PHASE_C",
+      "voltage": 45.0,
+      "clearance_mm": 0.4,
+      "coating": "soldermask",
+      "rule": "aiee_hv_45v_PHASE_C"
+    },
+    {
+      "net": "VM",
+      "voltage": 45.0,
+      "clearance_mm": 0.4,
+      "coating": "soldermask",
+      "rule": "aiee_hv_45v_VM"
+    },
+    {
+      "net": "/power_in/VM_IN",
+      "voltage": 45.0,
+      "clearance_mm": 0.4,
+      "coating": "soldermask",
+      "rule": "aiee_hv_45v_power_in_VM_IN"
+    },
+    {
+      "net": "/regulators/BUCK_SW",
+      "voltage": 45.0,
+      "clearance_mm": 0.4,
+      "coating": "soldermask",
+      "rule": "aiee_hv_45v_regulators_BUCK_SW"
+    },
+    {
+      "net": "/regulators/BST5V",
+      "voltage": 50.0,
+      "clearance_mm": 0.4,
+      "coating": "soldermask",
+      "rule": "aiee_hv_50v_regulators_BST5V"
+    },
+    {
+      "net": "/GHA",
+      "voltage": 57.0,
+      "clearance_mm": 0.5,
+      "coating": "soldermask",
+      "rule": "aiee_hv_57v_GHA"
+    },
+    {
+      "net": "/GHB",
+      "voltage": 57.0,
+      "clearance_mm": 0.5,
+      "coating": "soldermask",
+      "rule": "aiee_hv_57v_GHB"
+    },
+    {
+      "net": "/GHC",
+      "voltage": 57.0,
+      "clearance_mm": 0.5,
+      "coating": "soldermask",
+      "rule": "aiee_hv_57v_GHC"
+    },
+    {
+      "net": "/gate_driver/BSTA",
+      "voltage": 57.0,
+      "clearance_mm": 0.5,
+      "coating": "soldermask",
+      "rule": "aiee_hv_57v_gate_driver_BSTA"
+    },
+    {
+      "net": "/gate_driver/BSTB",
+      "voltage": 57.0,
+      "clearance_mm": 0.5,
+      "coating": "soldermask",
+      "rule": "aiee_hv_57v_gate_driver_BSTB"
+    },
+    {
+      "net": "/gate_driver/BSTC",
+      "voltage": 57.0,
+      "clearance_mm": 0.5,
+      "coating": "soldermask",
+      "rule": "aiee_hv_57v_gate_driver_BSTC"
+    }
+  ],
+  "classes": [
+    "Pwr_0p225mm",
+    "Pwr_2p9666mm",
+    "Pwr_4p2566mm",
+    "Diff90"
+  ],
+  "out_dru": "kicad/PCB-0018-A_bldc-motor-driver.kicad_dru",
+  "pro": "kicad/PCB-0018-A_bldc-motor-driver.kicad_pro"
+}

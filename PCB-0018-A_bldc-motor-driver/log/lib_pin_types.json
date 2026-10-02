@@ -1,0 +1,1245 @@
+{
+ "script": "lib_pin_types",
+ "status": "pass",
+ "lib": "lib/aiee.kicad_sym",
+ "dry_run": false,
+ "symbols": 42,
+ "extracts_matched": [
+  "C145537",
+  "C2060769",
+  "C3655801",
+  "C477928",
+  "C485517",
+  "C5219210",
+  "C529355",
+  "C7722"
+ ],
+ "extracts_unmatched": [],
+ "changed": 204,
+ "changes": [
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "7",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "20",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "8",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "9",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "10",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "11",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "12",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "13",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "14",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "15",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "30",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "31",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "32",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "33",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "34",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "37",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "38",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "39",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "29",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "28",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "27",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "26",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "25",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "22",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "46",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "45",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "44",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "43",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "42",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "41",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "40",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "18",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "17",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "16",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "23",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "35",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "47",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "19",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "21",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "48",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "36",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "STM32G431CBT6",
+   "pin": "24",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "25",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "24",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "23",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "22",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "21",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "20",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "19",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "18",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "17",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "16",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "15",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "14",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "13",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "12",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "11",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "10",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "9",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "8",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "7",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "DRV8300DRGER_C3655801",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "NTMFS5C628NLT1G",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "7",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "INA240A1DR",
+   "pin": "8",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "7",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM74500QDDFRQ1",
+   "pin": "8",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SMCJ28A_C2943858",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SMCJ28A_C2943858",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "7",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "8",
+   "from": "unspecified",
+   "to": "power_out"
+  },
+  {
+   "symbol": "LM5164DDAR",
+   "pin": "9",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "TPS61040DBVR",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "power_out"
+  },
+  {
+   "symbol": "TPS61040DBVR",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "TPS61040DBVR",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "TPS61040DBVR",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "TPS61040DBVR",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "TLV75733PDBVR",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "TLV75733PDBVR",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "power_in"
+  },
+  {
+   "symbol": "TLV75733PDBVR",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "TLV75733PDBVR",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "TLV75733PDBVR",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "power_out"
+  },
+  {
+   "symbol": "HOYLR2512-3W-3MR-1%",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "HOYLR2512-3W-3MR-1%",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "ERS1JM471K20OT",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "ERS1JM471K20OT",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CS3225X7R106K500NRL",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "CS3225X7R106K500NRL",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "1210B104K500NT",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "1210B104K500NT",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21B105KBFNNNE",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21B105KBFNNNE",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21A106KAYNNNE",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21A106KAYNNNE",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF100JT5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF100JT5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1002T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1002T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1503T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1503T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF4701T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF4701T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1000T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1000T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CC0603KRX7R9BB104",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "CC0603KRX7R9BB104",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "GZ1608D601TF",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "GZ1608D601TF",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603Green509-620mcd",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603Green509-620mcd",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603YYellowlight90-110",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603YYellowlight90-110",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "KT-0603R",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "KT-0603R",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "TS-1088-AR02016",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "TS-1088-AR02016",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SM04B-GHS-TB",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SM04B-GHS-TB",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SM04B-GHS-TB",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SM04B-GHS-TB",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SM04B-GHS-TB",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SM04B-GHS-TB",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "10",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "9",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "8",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "7",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SH-SM08B-GHS-TB",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "10",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "3",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "8",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "5",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "6",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "7",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "4",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "9",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PZ127VS-12-10-H10-A38",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PNLS6045-220M22UH",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PNLS6045-220M22UH",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF3162T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF3162T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF3322T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF3322T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603B222K500NT",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603B222K500NT",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21A226MAQNNNE",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21A226MAQNNNE",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SMNR4020-22UH",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "SMNR4020-22UH",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "MBR0520L_C5563735",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "MBR0520L_C5563735",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF8662T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF8662T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "nSMD020-30V",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "nSMD020-30V",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PESD5V0S1BA-ES",
+   "pin": "2",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "PESD5V0S1BA-ES",
+   "pin": "1",
+   "from": "unspecified",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF4022T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF4022T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1001T5E",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "0603WAF1001T5E",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21A475KAQNNNE",
+   "pin": "1",
+   "from": "input",
+   "to": "passive"
+  },
+  {
+   "symbol": "CL21A475KAQNNNE",
+   "pin": "2",
+   "from": "input",
+   "to": "passive"
+  }
+ ]
+}

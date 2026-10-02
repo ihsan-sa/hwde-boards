@@ -1,0 +1,18 @@
+{
+ "rails": [
+  {"net": "VBUS", "vin": "USB-C 4.75-5.25 V", "topology": "direct", "current_a": 0.5, "consumers": ["MCP73831 VDD (0.20 A charge)", "B5819W -> VSYS (0.25 A avg, 0.45 A peak)", "USBLC6 VBUS ref"], "dissipation_w": 0.0},
+  {"net": "VBAT", "vin": "1S LiPo 3.0-4.2 V", "topology": "direct", "current_a": 0.45, "consumers": ["MCP73831 VBAT (charge 0.20 A)", "AO3401A -> VSYS (discharge, 0.45 A peak)", "1M/1M divider 2.1 uA"], "dissipation_w": 0.014},
+  {"net": "VSYS", "vin": "VBUS - 0.45 V (Schottky) or VBAT (PMOS)", "topology": "direct", "current_a": 0.45, "consumers": ["RT9080 VIN"], "dissipation_w": 0.11},
+  {"net": "+3V3", "vin": "VSYS 3.0-4.9 V", "topology": "ldo", "current_a": 0.45, "consumers": ["ESP32-C3-MINI-1 350 mA TX peak", "BME280 <1 mA", "LEDs 2.6 mA", "Qwiic reserve 100 mA"], "dissipation_w": 0.32}
+ ],
+ "power_constraints": [
+  {"net": "VBUS", "current_a": 0.5, "dt_c": 10},
+  {"net": "VSYS", "current_a": 0.5, "dt_c": 10},
+  {"net": "VBAT", "current_a": 0.5, "dt_c": 10},
+  {"net": "+3V3", "current_a": 0.5, "dt_c": 10},
+  {"net": "GND", "current_a": 0.7, "dt_c": 10}
+ ],
+ "thermal_constraints": [
+  {"ref": "U3", "power_w": 0.32, "net": "GND", "dt_c": 75, "min_vias": 2}
+ ]
+}

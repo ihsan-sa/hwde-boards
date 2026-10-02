@@ -1,0 +1,89 @@
+{
+ "violations": [
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "VBUS",
+   "refs": [
+    "U2",
+    "U3",
+    "U1"
+   ],
+   "msg": "Charger (196 mA from R3 5.1k) starts at plug-in with no enumeration gate, and system peak (~450 mA WiFi TX) adds to it, so VBUS draw can reach ~650 mA against the 100 mA pre-enumeration / 500 mA default-USB entitlement; a weak host or hub can brown out VBUS and reset the module mid-flash (firmware should cap TX power or charge current, or R3 go to ~10k).",
+   "source": "review.schematic",
+   "kind": "usb-budget"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "VBUS",
+   "refs": [
+    "D1",
+    "U2"
+   ],
+   "msg": "SMF5.0A clamps up to 9.2 V at rated surge and breaks down at 6.4-7.0 V, above the MCP73831 VDD abs max of 7.0 V and next to 16 V X5R C1, so a hot-plug spike can stress U2 before the TVS clamps; low risk for a 5 V bench source but not margin for a product.",
+   "source": "review.schematic",
+   "kind": "tvs-clamp-vs-absmax"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "VBAT",
+   "refs": [
+    "J2"
+   ],
+   "msg": "J2 has no reverse-insertion protection and cheap LiPo packs often use the opposite JST-PH polarity, so a reversed cell drives VBAT negative into U2/Q1/the divider and destroys U2; accepted default (requirements 1e) but only safe if silk marks pin 1 = + visibly after assembly and the BOM states the pack polarity.",
+   "source": "review.schematic",
+   "kind": "battery-reverse-polarity"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "+3V3",
+   "refs": [
+    "U3"
+   ],
+   "msg": "U3 dissipates ~0.32 W at 4.9 V VSYS with 450 mA peak (theta-JA 230 C/W gives Tj ~114 C at 40 C ambient, 125 C max); fine for duty-cycled WiFi, but sustained TX on USB leaves almost no margin, so layout needs the planned GND pour and vias.",
+   "source": "review.schematic",
+   "kind": "ldo-thermal"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "/main/IO2",
+   "refs": [
+    "J4",
+    "R13",
+    "R12",
+    "SW2"
+   ],
+   "msg": "IO2, IO8 (and IO9 via none) strapping pins are routed to the J4 edge pads; anything a user attaches that pulls IO2/IO8 low at reset changes boot mode, and the 10k pull-ups are the only defence; J4 is DNP so this is a documentation risk only.",
+   "source": "review.schematic",
+   "kind": "strap-pins-on-edge-pads"
+  },
+  {
+   "check": "schematic-review",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": "/main/EN",
+   "refs": [
+    "SW1",
+    "SW2"
+   ],
+   "msg": "Cannot confirm from the schematic that TS-1187A-B-A-B internally shorts pins 1-2 and 3-4 (as the symbol assumes); if the real pairing is 1-3/2-4 the switch is permanently closed, pulling EN (SW1) and IO9 (SW2) to GND and the module never boots; verify against the switch datasheet and footprint before ordering (no switch datasheet is in parts/).",
+   "source": "review.schematic",
+   "kind": "tactile-switch-pairing"
+  }
+ ]
+}

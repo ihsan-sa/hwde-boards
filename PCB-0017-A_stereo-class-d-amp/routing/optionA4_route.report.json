@@ -1,0 +1,337 @@
+{
+ "script": "route_edit",
+ "status": "pass",
+ "board": "kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "applied": 65,
+ "verified": true,
+ "by_status": {
+  "added": 65
+ },
+ "results": [
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "c4f7d0e3-7b66-4cb1-b0f8-5ca42a311d39"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "60a4ce3c-50af-4e4e-943d-6008131887f2"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "2ed77fa3-a993-4316-88c7-64be4c976ee3"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "2f747d84-89b0-4e0b-8834-f36141c9e630"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "32ca5c60-0afa-4385-a939-3bdd96952005"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "f3ad3aab-0cf6-428b-801a-f44b21d79b57"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "4924db66-7318-44cb-a072-2e2ea21ef01d"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "5b86d908-6c20-4a12-be4a-7fde7bc2d5c4"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "6d5279ed-244e-4fec-9e25-740b899e9db6"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "6070bb7a-32f0-4d2e-ab63-9a279fb04701"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "fd6f7cd1-6ce5-4faa-9b98-f1f489833cf1"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "627d5f59-0233-42da-89da-5b0bd0d47260"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "d67fb857-97fc-47b6-aa33-afc2a4afc804"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "e51cad3b-deb7-48b5-be71-4abb109b584b"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "4098b9b5-77d7-451e-a913-117073436063"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "594002b2-38d6-4eae-ba6a-e92edcd6d60b"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "d12ec22f-19a4-436b-b948-ca729565ac6c"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "d702969d-a2a7-4e41-81e0-42167ae736fc"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "722f1417-659b-4371-97e3-de699a4572e5"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "b21216de-abef-49fe-9ecd-d72045ea2bef"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "f5f1bf48-3aa0-467a-af5d-4b28ffa235a4"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "fc66c467-2184-45a2-a96f-688d58124e23"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "fbf7b82d-2f51-49a2-9779-0043b8c361a4"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "46d09a84-8b83-4310-9dc5-3eefc06595fe"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "1f6d1afc-26b6-4966-8bae-9a8d99d95bd0"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "7f9852b1-d280-4d63-9e43-7f0ffc608f51"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "7196cd96-6fc1-48b9-9471-4ed441317dbe"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "6d0c1d4c-653b-411f-9f88-2fb2e444bc8a"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "eb7a0337-aac3-4c29-97ab-88354e75b09a"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "f4851f25-6367-430b-95cc-f7204ecdfbb8"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "6353d726-cf2d-46c8-bdae-966dd1b26575"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "0898692e-2e69-4551-977e-3282f8bea46b"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "a571485e-7e13-4efc-9ad5-9fcabbb7f16c"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "fa77d018-0482-4a88-82fb-a3a65f4421f1"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "5434fa73-6764-49b4-bc3d-e45bdb3cb8fa"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "26e5cf05-d9d3-4a6d-8b0c-5e2e28374f50"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "26643384-28ac-4500-99cc-17eacbfb4039"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "52605944-4277-4235-b6d2-dba1b6227500"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "fb549154-cea3-4d70-8021-6de0bc1b997c"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "bff75047-ec2f-446d-8b2b-3ad7b401a575"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "e5b1ee1e-8625-43f8-bbfe-fd2317d57456"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "cc60e616-530e-4ca4-83a0-a08c21247a64"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "91755bf1-a114-436a-8c05-48c4b8bc3d70"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "96c04986-a755-49cd-85ca-2320ebd684a2"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "72f58fdb-e449-4d80-9ee9-3d5f66147bac"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "216dfd70-ff13-4805-b3ec-25a2a893b7ad"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "1c1e56a9-37f4-41a9-b442-3e5a4e5060bd"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "15e1b1ea-8b2c-434b-8751-e1753e32b075"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "0e62f290-f276-4cbb-b8e4-f005765774b2"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "4395a87c-e6fd-4b82-a6a5-be7d81ca7252"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "040cd33b-d681-4383-bd2f-c25ce19f9048"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "59e87ea9-7b91-4955-8662-d1f0ec72465e"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "5696de75-a377-4493-9047-fc7a760e0f91"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "7daea7e0-5fd4-4415-8833-16210b96661a"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "41eec92b-f15f-4ddb-9867-5143a84aff6e"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "d936933e-acbf-4717-a187-ed983518f529"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "072f53b1-79e7-4476-ab3b-f2224229655e"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "91c28748-f38f-4036-8d8c-076ea173804f"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "6a83d25e-7971-41d0-b076-12ed25fcc48b"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "38d6cfaa-03be-4508-9671-1b39a96b6887"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "58dd12d6-a303-40ad-8633-b98e199243b4"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "0c908cc1-8ba8-4d16-8fcc-7ec0293dc6ba"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "40aad9b2-b8fc-42bf-baba-a6434f7508a7"
+  },
+  {
+   "op": "add_track",
+   "status": "added",
+   "uuid": "d81156ac-f5a2-4da4-a63b-384b50e393ed"
+  },
+  {
+   "op": "add_via",
+   "status": "added",
+   "uuid": "cee1db7c-4c50-423e-9650-c5ed529514e2"
+  }
+ ]
+}

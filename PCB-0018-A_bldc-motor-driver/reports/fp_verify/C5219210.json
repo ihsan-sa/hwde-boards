@@ -1,0 +1,74 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "SOT-23-8_L3.0-W1.7-P0.65-LS2.8-BR.kicad_mod",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "SOT-23-8_L3.0-W1.7-P0.65-LS2.8-BR"
+   ],
+   "msg": "pad size(s) [[0.364, 1.252]] mm != datasheet [0.45, 1.05] mm (tol 0.1; min/max of 1 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.364, 1.252]] mm != datasheet [0.45, 1.05] mm (tol 0.1; min/max of 1 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.45,
+    1.05
+   ],
+   "measured_mm": [
+    [
+     0.364,
+     1.252
+    ]
+   ]
+  }
+ ],
+ "footprint": "SOT-23-8_L3.0-W1.7-P0.65-LS2.8-BR",
+ "footprint_file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/SOT-23-8_L3.0-W1.7-P0.65-LS2.8-BR.kicad_mod",
+ "copper_pads": 8,
+ "total_pads": 8,
+ "measured_pitch_mm": 0.65,
+ "measured_pad_size_mm": [
+  0.364,
+  1.252
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "DDF0008A, SOT-23-THIN 8-pin, 1.1mm max height",
+  "pad_count": 8,
+  "pitch_mm": 0.65,
+  "pad_size_mm": [
+   0.45,
+   1.05
+  ],
+  "row_spacing_mm": 2.6,
+  "pin1": "1",
+  "notes": "IPC land pattern from TI's example board layout: 8x pads 0.45mm x 1.05mm at 0.65mm pitch, non-solder-mask-defined preferred. No exposed pad on this package."
+ },
+ "svg": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/SOT-23-8_L3.0-W1.7-P0.65-LS2.8-BR.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T19:24:23+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/SOT-23-8_L3.0-W1.7-P0.65-LS2.8-BR.kicad_mod",
+ "input_digest": "sexpr_no_uuid:b94a77419eebb512e94d1f41b940a1d023809de7d803cd812689fa527f1df9fc"
+}

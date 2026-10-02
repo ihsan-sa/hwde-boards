@@ -1,0 +1,74 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL.kicad_mod",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL"
+   ],
+   "msg": "pad size(s) [[0.532, 1.072]] mm != datasheet [0.6, 1.2] mm (tol 0.1; min/max of 1 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.532, 1.072]] mm != datasheet [0.6, 1.2] mm (tol 0.1; min/max of 1 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.6,
+    1.2
+   ],
+   "measured_mm": [
+    [
+     0.532,
+     1.072
+    ]
+   ]
+  }
+ ],
+ "footprint": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL",
+ "footprint_file": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL.kicad_mod",
+ "copper_pads": 6,
+ "total_pads": 6,
+ "measured_pitch_mm": 0.95,
+ "measured_pad_size_mm": [
+  0.532,
+  1.072
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "SOT23-6L recommended footprint (Fig. 22, p.12); body D 2.80-3.05 x E 1.50-1.75 mm, H 2.60-3.00 mm incl. leads, pitch e 0.95 mm (Table 4)",
+  "pad_count": 6,
+  "pitch_mm": 0.95,
+  "pad_size_mm": [
+   0.6,
+   1.2
+  ],
+  "row_spacing_mm": 2.3,
+  "pin1": "1",
+  "notes": "Fig. 22 'footprint dimensions in mm': pad width 0.60, pitch 0.95, pad length 1.20 (upper row dimension line) and 1.10 (lower row dimension line - drawing shows both rows the same size, so 1.2 used for both), overall outer span 3.50, 2.30 labelled between pad rows (taken as pad-centre row spacing, consistent with 3.50-1.20). No courtyard given."
+ },
+ "svg": "PCB-0020-A_esp32c3-node/log/fp_verify/C7519.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:10:09+00:00",
+ "input": "PCB-0020-A_esp32c3-node/lib/aiee.pretty/SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL.kicad_mod",
+ "input_digest": "sexpr_no_uuid:ac59d743957d1744a5baa1ca0c71abe1cc34b06d42891db2bfbfd4e32c50d532"
+}

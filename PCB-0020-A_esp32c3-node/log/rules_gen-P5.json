@@ -1,0 +1,86 @@
+{
+  "script": "rules_gen",
+  "status": "pass",
+  "capability_class": "2layer_1oz",
+  "stackup": "JLC2313_1.6",
+  "copper_oz": 1.0,
+  "rule_count": 15,
+  "rule_names": [
+    "aiee_track_width_floor",
+    "aiee_clearance_floor",
+    "aiee_via_drill_floor",
+    "aiee_via_diameter_floor",
+    "aiee_annular_floor",
+    "aiee_edge_clearance_floor",
+    "aiee_hole_to_hole_floor",
+    "aiee_silk_width_floor",
+    "aiee_pwr_width_VBUS",
+    "aiee_pwr_width_VSYS",
+    "aiee_pwr_width_VBAT",
+    "aiee_pwr_width_3V3",
+    "aiee_pwr_width_GND",
+    "aiee_diff_gap_USB",
+    "aiee_diff_outer_only_USB"
+  ],
+  "power": [
+    {
+      "net": "VBUS",
+      "current_a": 0.5,
+      "dt_c": 10.0,
+      "min_width_mm": 0.25,
+      "netclass": "Pwr_0p25mm",
+      "class_width_mm": 0.25
+    },
+    {
+      "net": "VSYS",
+      "current_a": 0.5,
+      "dt_c": 10.0,
+      "min_width_mm": 0.25,
+      "netclass": "Pwr_0p25mm",
+      "class_width_mm": 0.25
+    },
+    {
+      "net": "VBAT",
+      "current_a": 0.5,
+      "dt_c": 10.0,
+      "min_width_mm": 0.25,
+      "netclass": "Pwr_0p25mm",
+      "class_width_mm": 0.25
+    },
+    {
+      "net": "+3V3",
+      "current_a": 0.5,
+      "dt_c": 10.0,
+      "min_width_mm": 0.25,
+      "netclass": "Pwr_0p25mm",
+      "class_width_mm": 0.25
+    },
+    {
+      "net": "GND",
+      "current_a": 0.7,
+      "dt_c": 10.0,
+      "min_width_mm": 0.35,
+      "netclass": "Pwr_0p35mm",
+      "class_width_mm": 0.35
+    }
+  ],
+  "diff_pairs": [
+    {
+      "pair": [
+        "/USB_DP",
+        "/USB_DM"
+      ],
+      "impedance_ohm": 140,
+      "width_mm": 0.2004,
+      "gap_mm": 0.3
+    }
+  ],
+  "hv_rules": [],
+  "classes": [
+    "Pwr_0p25mm",
+    "Pwr_0p35mm",
+    "Diff140"
+  ],
+  "out_dru": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_dru",
+  "pro": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_pro"
+}

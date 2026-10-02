@@ -1,0 +1,70 @@
+id: audio-line-in-2layer-switch-node-keepaway
+classes: [emi]
+applies:
+  topologies: [audio-line-in]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  aggressor: "class-D switch node / output copper / LC (or ferrite) filter - continuously switching, and per the amp's own layout section the output-to-filter loop is explicitly an antenna"
+  victim: "the line-in net - high impedance (tens of kOhm) and unbuffered before the amp's input pin"
+  layer_rule: "a switching net must not share a layer boundary with another signal unless a ground layer sits between them; on 2 layers no inner ground layer exists, so PHYSICAL SEPARATION on the shared layer is the only defense"
+prose: >
+  Two sources combine into one 2-layer-specific rule. The amp's own layout
+  section calls the output/filter current loop an aggressor in EMI terms
+  ("the size of this current loop determines its effectiveness as an
+  antenna", SLOS708 10.1) and tells the designer to keep it small. Separately,
+  a TI class-D layout note states the general coupling rule for any
+  continuously-switching net: it "must not be routed in the adjacent layer
+  with any other signal without ground shielding in between layers" (SLAA896
+  sec 2.4), illustrating a switching net with a ground-shield layer between
+  it and a victim signal as the valid case (Fig 5) and the same two nets
+  stacked with NO shield layer between them as invalid (Fig 6). A 2-layer
+  board has no inner layer to put between the switch-node/filter copper and
+  the line-in net - the ground-shield option in Fig 5 does not exist here, so
+  the only tool left is physical distance on the shared routing layer (plus
+  keeping the bottom-layer GND pour intact and unslotted under both regions,
+  the same pour that provides the loop's own return path).
+sources:
+  - file: research/sources/tpa3116d2.pdf
+    page: 28
+    section: "10.1 Layout Guidelines"
+    note: >
+      "Keep the current loop from each of the outputs through the ferrite
+      bead and the small filter cap and back to GND as small and tight as
+      possible. The size of this current loop determines its effectiveness
+      as an antenna." Establishes the output/filter loop as the EMI
+      aggressor on this exact part.
+  - file: research/sources/slaa896.pdf
+    page: 5
+    section: "2.4 Switching Signals, Fig 4/5"
+    note: >
+      Text: switching signals "must not be routed in the adjacent layer with
+      any other signal without ground shielding in between layers." Fig 4
+      shows a switching net crossing perpendicular to another signal on an
+      adjacent layer (small coupling area, acceptable); Fig 5 shows a
+      switching net and another signal on non-adjacent layers separated by a
+      dedicated GND shield layer (also acceptable).
+  - file: research/sources/slaa896.pdf
+    page: 6
+    section: "2.4 Switching Signals, Fig 6"
+    note: >
+      Fig 6 shows the invalid case: a switching net routed parallel to
+      another signal on the immediately adjacent layer with no ground layer
+      between them - the geometry a 2-layer board is stuck with unless the
+      two nets are kept apart in-plane instead.
+status: active
+origin: research:block-audio-line-in-1
+level: topology
+maturity: verified
+generalizes: []
+envelope:
+  board_layers: {min: 2, max: 2}
+envelope_note: >
+  Scales with board_layers: the rule's justification is the ABSENCE of an
+  inner ground-shield layer between the switch node and the victim signal
+  (SLAA896 Fig 5 vs Fig 6). Once a board has an inner layer available, the
+  shield-layer option applies instead and largely supersedes pure physical
+  separation as the primary defense - this record does not cover that case.
+verification: {by: "second-reader", date: "2026-09-27", note: "p28 current-loop-antenna quote verbatim; slaa896 p5 Fig4/Fig5 and p6 Fig6 captions and shield-layer text match the note's characterization of valid vs invalid layer stacking exactly."}

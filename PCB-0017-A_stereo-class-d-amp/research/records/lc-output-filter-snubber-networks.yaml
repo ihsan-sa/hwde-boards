@@ -1,0 +1,53 @@
+id: lc-output-filter-snubber-networks
+classes: [emi]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: [TPA3116D2, TPA3118D2, TPA3130D2]
+rule:
+  enforced_by: null
+  switch_node_snubber: "R + C from each OUTxx pin to GND: datasheet suggests 18 ohm + 330 pF, EVM fits 10 ohm 1/4 W + 330 pF C0G"
+  post_filter_network: "3.3 ohm + 10 nF (100 V X7R) and 1 nF from each speaker leg to GND - labelled EMI C-RC SNUBBER"
+  ferrite_alternative: "ferrite bead + ~1 nF per leg, bead/cap resonance < 10 MHz, bead impedance held at peak current"
+prose: >
+  The TPA31xxD2 family carries two distinct RC networks per output and a
+  third option. (1) At the switch node: "adding snubber networks from each
+  of the class-D outputs to ground ... 18 ohm in series with a 330 pF
+  capacitor", application-specific, stress to be evaluated at high PVCC,
+  layout tight and returning directly to the IC GND pins (7.3.14, p21).
+  The EVM fits 10 ohm 1/4 W 0805 (R11-R14) with 330 pF 50 V C0G (C11, C13,
+  C15, C17) instead (BOM items 17 and 8, p9), sitting between the pins and
+  the inductors (Fig 3, p6). (2) After the LC: Fig 37 (p26) draws a block
+  named EMI C-RC SNUBBER on each speaker leg - 3.3 ohm in series with 10 nF,
+  plus a separate 1 nF cap - to GND; the EVM fits R15-R18 3.3 ohm with
+  C25-C28 0.01 uF 100 V X7R 0805 (items 18, 10, p9). Its corner is about
+  4.8 MHz, so it is an HF termination for the speaker cable, not filter
+  damping (see lc-output-filter-q-tracks-load). (3) Ferrite bead + ~1000 pF
+  per leg in place of the LC: bead material effective 10-100 MHz, bead/cap
+  resonance below 10 MHz, bead impedance must hold at the amplifier's peak
+  current, low-ESR cap with good voltage/temperature behaviour (7.3.14,
+  p21); the EVM passes FCC class B with beads and twisted wires up to
+  125 cm, and the full LC is for noise-sensitive neighbours or
+  line-conducted-interference limits (7.3.15, p22). Fit (1) tight to the
+  pins, (2) at the connector end of the filter.
+sources:
+  - {file: research/sources/tpa3116d2.pdf, page: 21, note: "7.3.14 ferrite bead filter: material 10-100 MHz, ~1000 pF cap, resonance < 10 MHz, bead impedance at peak current; snubber 18 ohm + 330 pF from each output to GND, tight, returned to IC GND pins"}
+  - {file: research/sources/tpa3116d2.pdf, page: 22, note: "7.3.15 when to use an output filter: bead filter passes FCC class B with 125 cm twisted wires; full LC Butterworth for noise-sensitive circuits or LCI limits"}
+  - {file: research/sources/tpa3116d2.pdf, page: 7, note: "6.6 fOSC table: AM2..0 settings give 376-424, 470-530, 564-636, 940-1060 and 1128-1278 kHz - the 376-1278 kHz envelope"}
+  - {file: research/sources/tpa3116d2.pdf, page: 26, note: "Fig 37 schematic: per leg OUTPUT LC FILTER 10 uH + 680 nF, then EMI C-RC SNUBBER block 3.3R + 10 nF and 1 nF to GND"}
+  - {file: research/sources/slou336b.pdf, page: 9, note: "Table 2 BOM: item 17 R11-R14 10 ohm 1/4 W 0805; item 8 C11/C13/C15/C17 330 pF 50 V C0G; item 18 R15-R18 3.3 ohm; item 10 C25-C28 0.01 uF 100 V X7R"}
+  - {file: research/sources/slou336b.pdf, page: 6, note: "Fig 3 EVM top: R11-R14 / C11-C17 snubber parts between the OUTxx pins and L1-L4; R15-R18 / C25-C28 at the binding-post end"}
+status: active
+origin: research:block-lc-output-filter-1
+level: family
+envelope:
+  fsw_khz: {min: 376, max: 1278}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with the switching frequency and edge of this family: the values
+  (18R/330pF, 3.3R/10nF + 1nF, bead < 10 MHz) are TI's numbers for the
+  TPA31xxD2 stages over their programmable 376-1278 kHz range; the two-
+  network pattern generalizes, the values do not.
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: new citation tpa3116 p7 6.6 fOSC (376-424 ... 1128-1278 kHz by AM2..0) matches the page and now sources the fsw 376-1278 kHz envelope. Rest unchanged from pass 1."}

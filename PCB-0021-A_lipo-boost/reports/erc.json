@@ -1,0 +1,35 @@
+{
+  "script": "gate",
+  "gate": "erc",
+  "phase": "P4",
+  "tool": "erc",
+  "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_sch",
+  "input_digest": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error",
+      "warning"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0021-A_lipo-boost",
+    "gate": "erc",
+    "status": "pass",
+    "attempts": 1,
+    "inputs": {
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:a2c4eb22bb67addf45a7f08fdaab98b7cf519ca90b26e90a102bc5b6bcde8ad2"
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+ "script": "datasheet_extract",
+ "status": "extracted",
+ "source_pdf": "PCB-0021-A_lipo-boost/parts/C45367187.pdf",
+ "lcsc": "C45367187",
+ "n_pages": 11,
+ "text_chars": 7403,
+ "pages_trimmed": 10,
+ "text_by_page": [
+  {
+   "page": 0,
+   "first_line": "Product specification",
+   "chars": 31
+  },
+  {
+   "page": 1,
+   "first_line": "MSXC61Cxx",
+   "chars": 524
+  },
+  {
+   "page": 2,
+   "first_line": "MSXC61Cxx",
+   "chars": 633
+  },
+  {
+   "page": 3,
+   "first_line": "MSXC61Cxx",
+   "chars": 513
+  },
+  {
+   "page": 4,
+   "first_line": "MSXC61Cxx",
+   "chars": 449
+  },
+  {
+   "page": 5,
+   "first_line": "MSXC61Cxx",
+   "chars": 587
+  },
+  {
+   "page": 6,
+   "first_line": "MSXC61Cxx",
+   "chars": 253
+  },
+  {
+   "page": 7,
+   "first_line": "MSXC61Cxx",
+   "chars": 87
+  },
+  {
+   "page": 8,
+   "first_line": "MSXC61Cxx",
+   "chars": 482
+  },
+  {
+   "page": 9,
+   "first_line": "MSXC61Cxx",
+   "chars": 518
+  },
+  {
+   "page": 10,
+   "text": "MSXC61Cxx\nCopyright\u00a9 Msksemi Incorporated www.msksemi.com\nAttention\n\u25a0 Any and all MSKSEMI Semiconductor products described or contained herein do not have specifications that can\nhandle applications that require extremely high levels of reliability, such as life-support systems, aircraft's control systems, or\nother applications whose failure can be reasonably expected to result in serious physical and/or material damage. Consult with\nyour MSKSEMI Semiconductor representative nearest you before using any MSKSEMI Semiconductor products described\nor contained herein in such applications.\n\u25a0 MSKSEMI Semiconductor assumes no responsibility for equipment failures that result from using products at values that\nexceed, even momentarily, rated values (such as maximum ratings, operating condition ranges, or other parameters) listed in\nproducts specificationsof any andall MSKSEMI Semiconductor products described orcontained herein.\n\u25a0 Specifications of any and all MSKSEMI Semiconductor products described or contained herein stipulate the\nperformance, characteristics, and functions of the described products in the independent state, and are not guarantees of the\nperformance, characteristics, and functions of the described products as mounted in the customer\u2019s products or equipment. To\nverify symptoms and states that cannot be evaluated in an independent device, the customer should always evaluate and test\ndevices mounted in the customer\u2019sproducts orequipment.\n\u25a0 MSKSEMI Semiconductor. strives to supply high-quality high-reliability products. However, any and all semiconductor\nproducts fail with someprobability. It is possiblethat these probabilistic failures could give rise to accidents or events that could\nendanger human lives, that could give rise to smoke or fire, or that could cause damage to other property. When designing\nequipment, adopt safety measures so that these kinds of accidents or events cannot occur. Such measures include but are\nnot limited to protective circuits anderror prevention circuitsfor safedesign, redundant design, and structural design.\n\u25a0 In the event that any or all MSKSEMI Semiconductor products(including technical data, services) described or contained\nherein are controlled under any of applicable local export control laws and regulations, such products must not be exported\nwithout obtaining the export license from theauthorities concerned in accordance with the above law.\n\u25a0 No part of this publication may be reproduced or transmitted in any form or by any means, electronic or\nmechanical, including photocopying and recording, or any information storage or retrieval system, or otherwise, without the prior\nwritten permission of MSKSEMI Semiconductor.\n\u25a0 Information (including circuit diagrams and circuit parameters) herein is for example only ; it is not guaranteed for volume\nproduction. MSKSEMI Semiconductor believes information herein is accurate and reliable, but no guarantees are made or\nimplied regarding its use or any infringementsof intellectual property rights or other rightsof third parties.\n\u25a0 Any and all information described or contained herein are subject to change without notice due to\nproduct/technology improvement, etc. Whendesigning equipment, referto the \"Delivery Specification\" for the MSKSEMI\nSemiconductor productthat you intend to use."
+  }
+ ],
+ "schema": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hwde datasheet extraction",
+  "type": "object",
+  "required": [
+   "mpn",
+   "pinout"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "mpn": {
+    "type": "string",
+    "minLength": 1
+   },
+   "lcsc": {
+    "type": "string"
+   },
+   "package": {
+    "type": "string"
+   },
+   "description": {
+    "type": "string"
+   },
+   "pinout": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pin",
+      "name",
+      "type"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pin": {
+       "type": "string",
+       "minLength": 1
+      },
+      "name": {
+       "type": "string",
+       "minLength": 1
+      },
+      "type": {
+       "type": "string",
+       "enum": [
+        "power_in",
+        "power_out",
+        "ground",
+        "input",
+        "output",
+        "bidirectional",
+        "passive",
+        "analog",
+        "clock",
+        "nc",
+        "open_collector",
+        "tristate",
+        "unspecified"
+       ]
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "decoupling": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "value": {
+       "type": "string",
+       "minLength": 1
+      },
+      "placement": {
+       "type": "string"
+      },
+      "notes": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "land_pattern": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "pad_count"
+    ],
+    "properties": {
+     "package": {
+      "type": "string"
+     },
+     "pad_count": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "pitch_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "pad_size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "row_spacing_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "drill_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "annulus_mm": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "courtyard_excess_mm": {
+      "type": "number",
+      "minimum": 0
+     },
+     "courtyard_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     },
+     "wire_entry_local": {
+      "type": "string",
+      "enum": [
+       "+X",
+       "-X",
+       "+Y",
+       "-Y"
+      ],
+      "description": "connector wire/cable entry direction in footprint-local coords (KiCad y down)"
+     },
+     "pin1": {
+      "type": "string",
+      "description": "pad number that is pin 1 (default '1')"
+     },
+     "notes": {
+      "type": "string"
+     }
+    }
+   },
+   "exposed_pad": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "present": {
+      "type": "boolean"
+     },
+     "connect_to": {
+      "type": "string"
+     },
+     "thermal_vias": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "size_mm": {
+      "type": "array",
+      "items": {
+       "type": "number",
+       "exclusiveMinimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+     }
+    },
+    "required": [
+     "present"
+    ]
+   },
+   "layout_notes": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "abs_max": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "param",
+      "value"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "param": {
+       "type": "string"
+      },
+      "value": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "unit": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "pin_ratings": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "pins"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "pins": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "kind": {
+       "type": "string",
+       "enum": [
+        "voltage",
+        "current"
+       ]
+      },
+      "level": {
+       "type": "string",
+       "enum": [
+        "abs_max",
+        "recommended"
+       ]
+      },
+      "min": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "max": {
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "ref": {
+       "type": "string"
+      },
+      "source": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "source_pdf": {
+    "type": "string"
+   },
+   "layout_implications": {
+    "type": "object"
+   }
+  }
+ },
+ "template": {
+  "mpn": "",
+  "lcsc": "",
+  "package": "",
+  "pinout": [
+   {
+    "pin": "1",
+    "name": "",
+    "type": "unspecified"
+   }
+  ],
+  "decoupling": [],
+  "land_pattern": {
+   "pad_count": 0
+  },
+  "layout_notes": [],
+  "abs_max": []
+ },
+ "note": "Fill the template from text_by_page and the PDF pages, then re-run with --validate. Pages without schema-relevant keywords are stubs {page, first_line, chars} - read those PDF pages directly if needed, or re-run with --full-text. If text_chars is ~0 the PDF is image-only; read the rendered pages directly."
+}

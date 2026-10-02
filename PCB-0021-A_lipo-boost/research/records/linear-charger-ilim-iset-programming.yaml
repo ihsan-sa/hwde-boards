@@ -1,0 +1,55 @@
+id: linear-charger-ilim-iset-programming
+classes:
+- selection
+applies:
+  topologies:
+  - linear-charger-power-path
+  packages: []
+  interfaces: []
+  parts:
+  - BQ24074
+rule:
+  enforced_by: null
+  iinmax: KILIM/RILIM
+  kilim_aohm_typ: 1610
+  iset: KISET/RISET
+  kiset_aohm_typ: 890
+  rilim_range_kohm: 1.1-8
+  ilim_max_a: 1.5
+prose: 'Input limit IIN-MAX=KILIM/RILIM (EN2=1, EN1=0), valid RILIM 1.1-8 kohm, up to 1.5 A; KILIM is
+  1610 A*ohm typ (1500-1720) for 500 mA-1.5 A. Fast charge ICHG=KISET/RISET, KISET 890 A*ohm typ (797-975).
+  Termination (BQ24074): RITERM=ITERM*RISET/0.030 (TI example). TI''s own worked example uses KILIM=1550
+  against the table''s 1610, so the two TI numbers disagree: size with the tolerance band (min 1500) so
+  the actual limit never exceeds the source. Both resistors go to VSS; ILIM or ISET shorted is detected
+  as a fault. Use 1% resistors; the +/-7% K spread is the real accuracy. Load sharing: system load has
+  priority; DPPM then reduces charge current, and battery supplement takes over once charge current is
+  zero.'
+sources:
+- file: research/sources/bq24074.pdf
+  page: 21
+  note: Eq 1 IIN-MAX=KILIM/RILIM, 1.5 A max, 1.1-8 kohm range (text read)
+- file: research/sources/bq24074.pdf
+  page: 12
+  note: EC table KILIM 1500/1610/1720 and KISET 797/890/975 (text read)
+- file: research/sources/bq24074.pdf
+  page: 34
+  note: '10.2.2.2 worked example: RISET, RILIM (KILIM 1550 used), RITERM, RTMR equations'
+- file: research/sources/bq24074.pdf
+  page: 22
+  note: 9.3.4 DPPM, battery supplement and short-circuit behaviour
+status: draft
+origin: research:block-linear-charger-power-path-1
+level: part
+maturity: draft
+envelope:
+  vin_v:
+    min: 4.35
+    max: 6.4
+  iout_a:
+    max: 1.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: 'Scales with input current: ILIM tops out at 1.5 A and dissipation grows with (VIN-VOUT)*I;
+  VIN window is VIN-DPM 4.35 V to VOVP; read for BQ24074 (OUT 4.4 V), not other family members whose OUT
+  differs.'

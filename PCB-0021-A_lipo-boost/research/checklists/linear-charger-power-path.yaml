@@ -1,0 +1,34 @@
+id: linear-charger-power-path
+kind: coverage-checklist
+applies:
+  topologies:
+  - linear-charger-power-path
+requires:
+- class: selection
+  min_level: part
+  note: ILIM/ISET/ITERM programming with K-factor tolerance
+- class: decoupling
+  min_level: part
+  note: IN/OUT/BAT caps, TS and LED passives
+- class: thermal
+  min_level: part
+  note: dissipation equation at VBAT 3.4 V
+- class: thermal-via
+  min_level: part
+  note: pad vias and pours
+- class: return-path
+  min_level: part
+  note: single-point ground, current path sizing
+- class: sequencing
+  min_level: principle
+  note: DPPM, VIN-DPM, supplement and startup states
+maturity: draft
+sources:
+- file: research/sources/bq24074.pdf
+  page: 40
+  note: layout guidelines
+prose: 'Before designing a USB-in 1S charger with load-sharing power path, a designer must hold: how ILIM/ISET
+  resistors set the limits and their K tolerance, the pin-cap and TS/LED parts list, the dissipation equation
+  and its worst case, the pad via strategy, the ground-separation rule and the DPPM and supplement states.
+  Sourced from the BQ2407x datasheet only; no second tier read.'
+origin: research:block-linear-charger-power-path-1

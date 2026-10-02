@@ -1,0 +1,37 @@
+{
+  "script": "gate",
+  "gate": "drc_routed",
+  "phase": "P7",
+  "tool": "drc",
+  "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error",
+      "warning"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0021-A_lipo-boost",
+    "gate": "drc_routed",
+    "status": "pass",
+    "attempts": 7,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:3609cac6b7eb279a33b9906176d338350fbc4b9edece3070911d6461d65d7196",
+      "sch": "sexpr_no_uuid:f9fdcd208c57a5f6973b2295c852567da7cb063c2732a413e150bc10c6755c2e",
+      "pro": "json_canonical:7680b92c4c20b256e6832c772573cfc81ca2b3cbe02f84cf1215388b637e8855",
+      "dru": "text_eol:b790b65e704bc5eb14b063474295dd16edad26b604360712caa58f33af3621d6"
+    }
+  }
+}

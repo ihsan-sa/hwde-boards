@@ -1,0 +1,5929 @@
+{
+ "script": "verify_all",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "status": "violations",
+ "counts": {
+  "total": 116,
+  "by_severity": {
+   "error": 20,
+   "warning": 96
+  },
+  "by_source": {
+   "check_return_path": 26,
+   "check_current": 47,
+   "check_decoupling": 1,
+   "check_diffpair": 2,
+   "check_silk": 20,
+   "check_route_style": 8,
+   "check_ratings": 11,
+   "verify_all": 1
+  },
+  "by_check": {
+   "check_return_path": 26,
+   "check_current": 47,
+   "check_decoupling": 1,
+   "check_diffpair": 2,
+   "check_creepage": 0,
+   "check_thermal": 0,
+   "check_silk": 20,
+   "check_route_style": 8,
+   "check_pdn": 0,
+   "check_ratings": 11,
+   "verify_all": 1
+  }
+ },
+ "checks": {
+  "check_return_path": {
+   "status": "violations",
+   "counts": {
+    "total": 26,
+    "by_severity": {
+     "error": 18,
+     "warning": 8
+    },
+    "by_source": {
+     "check_return_path": 26
+    }
+   },
+   "report": "reports/checks/check_return_path.json"
+  },
+  "check_current": {
+   "status": "violations",
+   "counts": {
+    "total": 47,
+    "by_severity": {
+     "error": 2,
+     "warning": 45
+    },
+    "by_source": {
+     "check_current": 47
+    }
+   },
+   "report": "reports/checks/check_current.json"
+  },
+  "check_decoupling": {
+   "status": "violations",
+   "counts": {
+    "total": 1,
+    "by_severity": {
+     "warning": 1
+    },
+    "by_source": {
+     "check_decoupling": 1
+    }
+   },
+   "report": "reports/checks/check_decoupling.json"
+  },
+  "check_diffpair": {
+   "status": "violations",
+   "counts": {
+    "total": 2,
+    "by_severity": {
+     "warning": 2
+    },
+    "by_source": {
+     "check_diffpair": 2
+    }
+   },
+   "report": "reports/checks/check_diffpair.json"
+  },
+  "check_creepage": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "reports/checks/check_creepage.json"
+  },
+  "check_thermal": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "reports/checks/check_thermal.json"
+  },
+  "check_silk": {
+   "status": "violations",
+   "counts": {
+    "total": 20,
+    "by_severity": {
+     "warning": 20
+    },
+    "by_source": {
+     "check_silk": 20
+    }
+   },
+   "report": "reports/checks/check_silk.json"
+  },
+  "check_route_style": {
+   "status": "violations",
+   "counts": {
+    "total": 8,
+    "by_severity": {
+     "warning": 8
+    },
+    "by_source": {
+     "check_route_style": 8
+    }
+   },
+   "report": "reports/checks/check_route_style.json"
+  },
+  "check_pdn": {
+   "status": "pass",
+   "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+   },
+   "report": "reports/checks/check_pdn.json"
+  },
+  "check_ratings": {
+   "status": "violations",
+   "counts": {
+    "total": 11,
+    "by_severity": {
+     "warning": 11
+    },
+    "by_source": {
+     "check_ratings": 11
+    }
+   },
+   "report": "reports/checks/check_ratings.json"
+  }
+ },
+ "coverage": {
+  "strict": false,
+  "required": [
+   "check_return_path",
+   "check_current",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_thermal",
+   "check_silk",
+   "check_route_style",
+   "check_pdn",
+   "check_ratings"
+  ],
+  "ran": [
+   "check_return_path",
+   "check_current",
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_thermal",
+   "check_silk",
+   "check_route_style",
+   "check_pdn",
+   "check_ratings"
+  ],
+  "passed": [
+   "check_decoupling",
+   "check_diffpair",
+   "check_creepage",
+   "check_thermal",
+   "check_silk",
+   "check_route_style",
+   "check_pdn",
+   "check_ratings"
+  ],
+  "failed": [
+   "check_return_path",
+   "check_current"
+  ],
+  "waived": [],
+  "not_applicable": {},
+  "skipped_error": {}
+ },
+ "violations": [
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    27.5026,
+    16.9731
+   ],
+   "layer": "B.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (F.Cu) leaves continuous GND copper on B.Cu: 0.53 mm2 deficit, 0.78 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (F.Cu) leaves continuous GND copper on B.Cu: 0.53 mm2 deficit, 0.78 mm of trace crossing",
+     "pos": [
+      27.5026,
+      16.9731
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "F.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.7765,
+   "area_mm2": 0.5345,
+   "polygon": [
+    [
+     27.9,
+     16.399
+    ],
+    [
+     27.468,
+     16.399
+    ],
+    [
+     27.424,
+     16.354
+    ],
+    [
+     27.422,
+     16.385
+    ],
+    [
+     27.397,
+     16.507
+    ],
+    [
+     27.357,
+     16.624
+    ],
+    [
+     27.302,
+     16.736
+    ],
+    [
+     27.233,
+     16.839
+    ],
+    [
+     27.151,
+     16.933
+    ],
+    [
+     27.059,
+     17.014
+    ],
+    [
+     27.09,
+     17.061
+    ],
+    [
+     27.186,
+     17.067
+    ],
+    [
+     27.308,
+     17.091
+    ],
+    [
+     27.426,
+     17.131
+    ],
+    [
+     27.537,
+     17.186
+    ],
+    [
+     27.641,
+     17.255
+    ],
+    [
+     27.734,
+     17.337
+    ],
+    [
+     27.816,
+     17.43
+    ],
+    [
+     27.885,
+     17.534
+    ],
+    [
+     27.9,
+     17.564
+    ],
+    [
+     27.9,
+     16.399
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    23.0547,
+    22.4293
+   ],
+   "layer": "B.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (F.Cu) leaves continuous GND copper on B.Cu: 0.74 mm2 deficit, 0.25 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (F.Cu) leaves continuous GND copper on B.Cu: 0.74 mm2 deficit, 0.25 mm of trace crossing",
+     "pos": [
+      23.0547,
+      22.4293
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "F.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.252,
+   "area_mm2": 0.7365,
+   "polygon": [
+    [
+     22.795,
+     22.039
+    ],
+    [
+     22.775,
+     22.094
+    ],
+    [
+     22.76,
+     22.152
+    ],
+    [
+     22.752,
+     22.21
+    ],
+    [
+     22.749,
+     22.269
+    ],
+    [
+     22.749,
+     23.318
+    ],
+    [
+     22.772,
+     23.298
+    ],
+    [
+     22.875,
+     23.229
+    ],
+    [
+     22.987,
+     23.174
+    ],
+    [
+     23.104,
+     23.134
+    ],
+    [
+     23.226,
+     23.11
+    ],
+    [
+     23.297,
+     23.105
+    ],
+    [
+     23.293,
+     23.094
+    ],
+    [
+     23.269,
+     22.973
+    ],
+    [
+     23.261,
+     22.849
+    ],
+    [
+     23.269,
+     22.725
+    ],
+    [
+     23.293,
+     22.603
+    ],
+    [
+     23.333,
+     22.485
+    ],
+    [
+     23.388,
+     22.374
+    ],
+    [
+     23.457,
+     22.27
+    ],
+    [
+     23.458,
+     22.27
+    ],
+    [
+     23.4,
+     22.219
+    ],
+    [
+     23.318,
+     22.126
+    ],
+    [
+     23.249,
+     22.023
+    ],
+    [
+     23.194,
+     21.911
+    ],
+    [
+     23.154,
+     21.793
+    ],
+    [
+     23.13,
+     21.671
+    ],
+    [
+     23.128,
+     21.641
+    ],
+    [
+     22.925,
+     21.844
+    ],
+    [
+     22.885,
+     21.888
+    ],
+    [
+     22.85,
+     21.935
+    ],
+    [
+     22.82,
+     21.986
+    ],
+    [
+     22.795,
+     22.039
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    23.5776,
+    39.5342
+   ],
+   "layer": "B.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (F.Cu) leaves continuous GND copper on B.Cu: 0.34 mm2 deficit, 0.06 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (F.Cu) leaves continuous GND copper on B.Cu: 0.34 mm2 deficit, 0.06 mm of trace crossing",
+     "pos": [
+      23.5776,
+      39.5342
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "F.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0644,
+   "area_mm2": 0.3429,
+   "polygon": [
+    [
+     24.044,
+     39.39
+    ],
+    [
+     23.751,
+     39.39
+    ],
+    [
+     23.751,
+     39.039
+    ],
+    [
+     23.111,
+     39.678
+    ],
+    [
+     23.199,
+     39.737
+    ],
+    [
+     23.293,
+     39.819
+    ],
+    [
+     23.375,
+     39.912
+    ],
+    [
+     23.428,
+     39.993
+    ],
+    [
+     23.44,
+     39.993
+    ],
+    [
+     24.044,
+     39.39
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    22.5162,
+    19.9508
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 2.50 mm2 deficit, 1.89 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 2.50 mm2 deficit, 1.89 mm of trace crossing",
+     "pos": [
+      22.5162,
+      19.9508
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 1.8927,
+   "area_mm2": 2.4957,
+   "polygon": [
+    [
+     21.871,
+     18.451
+    ],
+    [
+     21.871,
+     18.451
+    ],
+    [
+     21.807,
+     18.515
+    ],
+    [
+     21.807,
+     18.515
+    ],
+    [
+     21.807,
+     18.515
+    ],
+    [
+     21.786,
+     18.567
+    ],
+    [
+     21.773,
+     18.599
+    ],
+    [
+     21.773,
+     18.912
+    ],
+    [
+     21.754,
+     18.97
+    ],
+    [
+     21.729,
+     18.994
+    ],
+    [
+     21.708,
+     19.008
+    ],
+    [
+     21.708,
+     19.008
+    ],
+    [
+     21.682,
+     19.047
+    ],
+    [
+     21.671,
+     19.055
+    ],
+    [
+     21.671,
+     19.748
+    ],
+    [
+     21.674,
+     19.807
+    ],
+    [
+     21.683,
+     19.866
+    ],
+    [
+     21.697,
+     19.923
+    ],
+    [
+     21.717,
+     19.979
+    ],
+    [
+     21.742,
+     20.032
+    ],
+    [
+     21.773,
+     20.083
+    ],
+    [
+     21.808,
+     20.13
+    ],
+    [
+     21.847,
+     20.174
+    ],
+    [
+     23.128,
+     21.454
+    ],
+    [
+     23.13,
+     21.424
+    ],
+    [
+     23.154,
+     21.302
+    ],
+    [
+     23.194,
+     21.184
+    ],
+    [
+     23.249,
+     21.072
+    ],
+    [
+     23.318,
+     20.969
+    ],
+    [
+     23.4,
+     20.876
+    ],
+    [
+     23.493,
+     20.794
+    ],
+    [
+     23.597,
+     20.725
+    ],
+    [
+     23.708,
+     20.67
+    ],
+    [
+     23.826,
+     20.63
+    ],
+    [
+     23.948,
+     20.606
+    ],
+    [
+     23.978,
+     20.604
+    ],
+    [
+     22.971,
+     19.596
+    ],
+    [
+     22.926,
+     19.605
+    ],
+    [
+     22.802,
+     19.613
+    ],
+    [
+     22.678,
+     19.605
+    ],
+    [
+     22.556,
+     19.581
+    ],
+    [
+     22.438,
+     19.541
+    ],
+    [
+     22.327,
+     19.486
+    ],
+    [
+     22.223,
+     19.417
+    ],
+    [
+     22.13,
+     19.335
+    ],
+    [
+     22.048,
+     19.242
+    ],
+    [
+     21.979,
+     19.138
+    ],
+    [
+     21.924,
+     19.027
+    ],
+    [
+     21.884,
+     18.909
+    ],
+    [
+     21.86,
+     18.787
+    ],
+    [
+     21.852,
+     18.663
+    ],
+    [
+     21.86,
+     18.539
+    ],
+    [
+     21.879,
+     18.443
+    ],
+    [
+     21.871,
+     18.451
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    24.845,
+    16.1175
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.31 mm2 deficit, 0.30 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.31 mm2 deficit, 0.30 mm of trace crossing",
+     "pos": [
+      24.845,
+      16.1175
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.3,
+   "area_mm2": 0.3068,
+   "polygon": [
+    [
+     24.343,
+     15.662
+    ],
+    [
+     24.285,
+     15.671
+    ],
+    [
+     24.228,
+     15.685
+    ],
+    [
+     24.197,
+     15.697
+    ],
+    [
+     24.2,
+     15.75
+    ],
+    [
+     24.193,
+     15.855
+    ],
+    [
+     24.695,
+     15.855
+    ],
+    [
+     24.695,
+     16.38
+    ],
+    [
+     24.995,
+     16.38
+    ],
+    [
+     24.995,
+     16.38
+    ],
+    [
+     24.995,
+     15.81
+    ],
+    [
+     24.995,
+     15.81
+    ],
+    [
+     24.992,
+     15.785
+    ],
+    [
+     24.947,
+     15.683
+    ],
+    [
+     24.924,
+     15.66
+    ],
+    [
+     24.924,
+     15.66
+    ],
+    [
+     24.402,
+     15.66
+    ],
+    [
+     24.343,
+     15.662
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    22.985,
+    17.1963
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.63 mm2 deficit, 0.37 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.63 mm2 deficit, 0.37 mm of trace crossing",
+     "pos": [
+      22.985,
+      17.1963
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.3706,
+   "area_mm2": 0.6305,
+   "polygon": [
+    [
+     22.725,
+     17.305
+    ],
+    [
+     22.508,
+     17.305
+    ],
+    [
+     22.208,
+     17.605
+    ],
+    [
+     22.77,
+     17.605
+    ],
+    [
+     22.77,
+     17.605
+    ],
+    [
+     22.795,
+     17.602
+    ],
+    [
+     22.897,
+     17.557
+    ],
+    [
+     22.915,
+     17.539
+    ],
+    [
+     22.97,
+     17.511
+    ],
+    [
+     23.03,
+     17.521
+    ],
+    [
+     23.055,
+     17.539
+    ],
+    [
+     23.073,
+     17.557
+    ],
+    [
+     23.175,
+     17.602
+    ],
+    [
+     23.2,
+     17.605
+    ],
+    [
+     23.77,
+     17.605
+    ],
+    [
+     23.77,
+     17.605
+    ],
+    [
+     23.77,
+     17.305
+    ],
+    [
+     23.245,
+     17.305
+    ],
+    [
+     23.245,
+     16.78
+    ],
+    [
+     23.033,
+     16.78
+    ],
+    [
+     22.725,
+     17.088
+    ],
+    [
+     22.725,
+     17.305
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    23.5256,
+    26.85
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 3.22 mm2 deficit, 2.67 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 3.22 mm2 deficit, 2.67 mm of trace crossing",
+     "pos": [
+      23.5256,
+      26.85
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 2.673,
+   "area_mm2": 3.221,
+   "polygon": [
+    [
+     23.932,
+     24.977
+    ],
+    [
+     23.904,
+     24.922
+    ],
+    [
+     23.913,
+     24.862
+    ],
+    [
+     23.951,
+     24.824
+    ],
+    [
+     23.951,
+     24.785
+    ],
+    [
+     23.928,
+     24.805
+    ],
+    [
+     23.825,
+     24.874
+    ],
+    [
+     23.714,
+     24.929
+    ],
+    [
+     23.596,
+     24.969
+    ],
+    [
+     23.476,
+     24.993
+    ],
+    [
+     23.497,
+     25.036
+    ],
+    [
+     23.537,
+     25.154
+    ],
+    [
+     23.561,
+     25.276
+    ],
+    [
+     23.569,
+     25.4
+    ],
+    [
+     23.561,
+     25.524
+    ],
+    [
+     23.537,
+     25.646
+    ],
+    [
+     23.497,
+     25.763
+    ],
+    [
+     23.442,
+     25.875
+    ],
+    [
+     23.373,
+     25.978
+    ],
+    [
+     23.291,
+     26.072
+    ],
+    [
+     23.198,
+     26.154
+    ],
+    [
+     23.094,
+     26.223
+    ],
+    [
+     22.983,
+     26.278
+    ],
+    [
+     22.865,
+     26.318
+    ],
+    [
+     22.8,
+     26.331
+    ],
+    [
+     22.8,
+     26.475
+    ],
+    [
+     23.1,
+     26.475
+    ],
+    [
+     23.1,
+     27.225
+    ],
+    [
+     22.8,
+     27.225
+    ],
+    [
+     22.8,
+     27.525
+    ],
+    [
+     22.8,
+     27.525
+    ],
+    [
+     23.089,
+     27.525
+    ],
+    [
+     23.147,
+     27.544
+    ],
+    [
+     23.183,
+     27.593
+    ],
+    [
+     23.188,
+     27.624
+    ],
+    [
+     23.188,
+     27.849
+    ],
+    [
+     23.169,
+     27.907
+    ],
+    [
+     23.119,
+     27.943
+    ],
+    [
+     23.089,
+     27.948
+    ],
+    [
+     22.749,
+     27.948
+    ],
+    [
+     22.749,
+     28.953
+    ],
+    [
+     23.113,
+     28.953
+    ],
+    [
+     23.113,
+     28.953
+    ],
+    [
+     23.15,
+     28.945
+    ],
+    [
+     23.192,
+     28.917
+    ],
+    [
+     23.22,
+     28.875
+    ],
+    [
+     23.227,
+     28.838
+    ],
+    [
+     23.227,
+     28.776
+    ],
+    [
+     23.246,
+     28.718
+    ],
+    [
+     23.296,
+     28.682
+    ],
+    [
+     23.326,
+     28.677
+    ],
+    [
+     23.37,
+     28.677
+    ],
+    [
+     23.951,
+     28.677
+    ],
+    [
+     23.951,
+     24.996
+    ],
+    [
+     23.932,
+     24.977
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    23.0993,
+    31.7177
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.21 mm2 deficit, 0.35 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.21 mm2 deficit, 0.35 mm of trace crossing",
+     "pos": [
+      23.0993,
+      31.7177
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.3493,
+   "area_mm2": 0.2141,
+   "polygon": [
+    [
+     23.4,
+     31.95
+    ],
+    [
+     23.4,
+     31.73
+    ],
+    [
+     23.4,
+     31.73
+    ],
+    [
+     23.397,
+     31.705
+    ],
+    [
+     23.352,
+     31.603
+    ],
+    [
+     23.272,
+     31.523
+    ],
+    [
+     23.17,
+     31.478
+    ],
+    [
+     23.145,
+     31.475
+    ],
+    [
+     22.8,
+     31.475
+    ],
+    [
+     22.8,
+     31.475
+    ],
+    [
+     22.8,
+     31.775
+    ],
+    [
+     23.1,
+     31.775
+    ],
+    [
+     23.1,
+     31.95
+    ],
+    [
+     23.4,
+     31.95
+    ],
+    [
+     23.4,
+     31.95
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    23.0993,
+    32.5823
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.21 mm2 deficit, 0.35 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DP (B.Cu) leaves continuous GND copper on F.Cu: 0.21 mm2 deficit, 0.35 mm of trace crossing",
+     "pos": [
+      23.0993,
+      32.5823
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.3493,
+   "area_mm2": 0.2141,
+   "polygon": [
+    [
+     23.17,
+     32.822
+    ],
+    [
+     23.272,
+     32.777
+    ],
+    [
+     23.352,
+     32.697
+    ],
+    [
+     23.397,
+     32.595
+    ],
+    [
+     23.4,
+     32.57
+    ],
+    [
+     23.4,
+     32.57
+    ],
+    [
+     23.4,
+     32.35
+    ],
+    [
+     23.4,
+     32.35
+    ],
+    [
+     23.1,
+     32.35
+    ],
+    [
+     23.1,
+     32.525
+    ],
+    [
+     22.8,
+     32.525
+    ],
+    [
+     22.8,
+     32.825
+    ],
+    [
+     22.8,
+     32.825
+    ],
+    [
+     23.145,
+     32.825
+    ],
+    [
+     23.145,
+     32.825
+    ],
+    [
+     23.17,
+     32.822
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    27.8376,
+    17.3837
+   ],
+   "layer": "B.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (F.Cu) leaves continuous GND copper on B.Cu: 0.05 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (F.Cu) leaves continuous GND copper on B.Cu: 0.05 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      27.8376,
+      17.3837
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "F.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.0514,
+   "polygon": [
+    [
+     27.9,
+     17.199
+    ],
+    [
+     27.557,
+     17.199
+    ],
+    [
+     27.641,
+     17.255
+    ],
+    [
+     27.734,
+     17.337
+    ],
+    [
+     27.816,
+     17.43
+    ],
+    [
+     27.885,
+     17.534
+    ],
+    [
+     27.9,
+     17.564
+    ],
+    [
+     27.9,
+     17.199
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    23.9409,
+    35.5023
+   ],
+   "layer": "B.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (F.Cu) leaves continuous GND copper on B.Cu: 0.33 mm2 deficit, 0.21 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (F.Cu) leaves continuous GND copper on B.Cu: 0.33 mm2 deficit, 0.21 mm of trace crossing",
+     "pos": [
+      23.9409,
+      35.5023
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "F.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.2058,
+   "area_mm2": 0.3302,
+   "polygon": [
+    [
+     24.951,
+     35.25
+    ],
+    [
+     23.749,
+     35.25
+    ],
+    [
+     23.749,
+     35.748
+    ],
+    [
+     23.766,
+     35.728
+    ],
+    [
+     23.859,
+     35.646
+    ],
+    [
+     23.963,
+     35.577
+    ],
+    [
+     24.074,
+     35.522
+    ],
+    [
+     24.192,
+     35.482
+    ],
+    [
+     24.314,
+     35.458
+    ],
+    [
+     24.438,
+     35.45
+    ],
+    [
+     24.562,
+     35.458
+    ],
+    [
+     24.684,
+     35.482
+    ],
+    [
+     24.801,
+     35.522
+    ],
+    [
+     24.913,
+     35.577
+    ],
+    [
+     24.951,
+     35.603
+    ],
+    [
+     24.951,
+     35.25
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    24.3143,
+    38.7975
+   ],
+   "layer": "B.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (F.Cu) leaves continuous GND copper on B.Cu: 0.78 mm2 deficit, 0.25 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (F.Cu) leaves continuous GND copper on B.Cu: 0.78 mm2 deficit, 0.25 mm of trace crossing",
+     "pos": [
+      24.3143,
+      38.7975
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "F.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.2502,
+   "area_mm2": 0.7759,
+   "polygon": [
+    [
+     24.251,
+     39.183
+    ],
+    [
+     24.251,
+     39.104
+    ],
+    [
+     24.271,
+     39.101
+    ],
+    [
+     24.328,
+     39.086
+    ],
+    [
+     24.358,
+     39.076
+    ],
+    [
+     24.915,
+     38.519
+    ],
+    [
+     24.925,
+     38.489
+    ],
+    [
+     24.94,
+     38.432
+    ],
+    [
+     24.948,
+     38.374
+    ],
+    [
+     24.951,
+     38.315
+    ],
+    [
+     24.951,
+     37.998
+    ],
+    [
+     24.917,
+     37.992
+    ],
+    [
+     24.828,
+     37.962
+    ],
+    [
+     23.4,
+     39.39
+    ],
+    [
+     24.044,
+     39.39
+    ],
+    [
+     24.251,
+     39.183
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    34.6542,
+    23.7712
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 11.39 mm2 deficit, 5.63 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 11.39 mm2 deficit, 5.63 mm of trace crossing",
+     "pos": [
+      34.6542,
+      23.7712
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 5.6347,
+   "area_mm2": 11.3949,
+   "polygon": [
+    [
+     33.606,
+     18.517
+    ],
+    [
+     33.723,
+     18.439
+    ],
+    [
+     33.859,
+     18.303
+    ],
+    [
+     33.966,
+     18.143
+    ],
+    [
+     34.04,
+     17.965
+    ],
+    [
+     34.078,
+     17.776
+    ],
+    [
+     34.078,
+     17.584
+    ],
+    [
+     34.04,
+     17.395
+    ],
+    [
+     34.01,
+     17.322
+    ],
+    [
+     33.968,
+     17.22
+    ],
+    [
+     33.963,
+     17.159
+    ],
+    [
+     33.989,
+     17.113
+    ],
+    [
+     34.331,
+     16.771
+    ],
+    [
+     34.386,
+     16.743
+    ],
+    [
+     34.446,
+     16.753
+    ],
+    [
+     34.489,
+     16.796
+    ],
+    [
+     34.5,
+     16.841
+    ],
+    [
+     34.5,
+     29.133
+    ],
+    [
+     34.481,
+     29.191
+    ],
+    [
+     34.432,
+     29.227
+    ],
+    [
+     34.37,
+     29.227
+    ],
+    [
+     34.331,
+     29.203
+    ],
+    [
+     34.188,
+     29.06
+    ],
+    [
+     34.188,
+     29.06
+    ],
+    [
+     34.104,
+     29.025
+    ],
+    [
+     34.104,
+     29.025
+    ],
+    [
+     33.606,
+     29.025
+    ],
+    [
+     33.606,
+     30.863
+    ],
+    [
+     29.958,
+     30.863
+    ],
+    [
+     29.958,
+     31.508
+    ],
+    [
+     30.075,
+     31.469
+    ],
+    [
+     30.197,
+     31.444
+    ],
+    [
+     30.321,
+     31.436
+    ],
+    [
+     30.445,
+     31.444
+    ],
+    [
+     30.567,
+     31.469
+    ],
+    [
+     30.685,
+     31.509
+    ],
+    [
+     30.796,
+     31.564
+    ],
+    [
+     30.9,
+     31.633
+    ],
+    [
+     30.993,
+     31.715
+    ],
+    [
+     31.075,
+     31.808
+    ],
+    [
+     31.144,
+     31.911
+    ],
+    [
+     31.199,
+     32.023
+    ],
+    [
+     31.213,
+     32.065
+    ],
+    [
+     33.374,
+     32.065
+    ],
+    [
+     33.372,
+     32.037
+    ],
+    [
+     33.381,
+     31.913
+    ],
+    [
+     33.405,
+     31.791
+    ],
+    [
+     33.445,
+     31.674
+    ],
+    [
+     33.5,
+     31.562
+    ],
+    [
+     33.569,
+     31.459
+    ],
+    [
+     33.651,
+     31.365
+    ],
+    [
+     33.744,
+     31.283
+    ],
+    [
+     33.847,
+     31.214
+    ],
+    [
+     33.959,
+     31.159
+    ],
+    [
+     34.077,
+     31.119
+    ],
+    [
+     34.199,
+     31.095
+    ],
+    [
+     34.322,
+     31.087
+    ],
+    [
+     34.446,
+     31.095
+    ],
+    [
+     34.568,
+     31.119
+    ],
+    [
+     34.686,
+     31.159
+    ],
+    [
+     34.797,
+     31.214
+    ],
+    [
+     34.808,
+     31.222
+    ],
+    [
+     34.808,
+     17.257
+    ],
+    [
+     34.806,
+     17.198
+    ],
+    [
+     34.797,
+     17.14
+    ],
+    [
+     34.783,
+     17.083
+    ],
+    [
+     34.763,
+     17.027
+    ],
+    [
+     34.738,
+     16.974
+    ],
+    [
+     34.707,
+     16.923
+    ],
+    [
+     34.672,
+     16.876
+    ],
+    [
+     34.632,
+     16.832
+    ],
+    [
+     33.996,
+     16.196
+    ],
+    [
+     33.996,
+     16.421
+    ],
+    [
+     33.977,
+     16.479
+    ],
+    [
+     33.967,
+     16.491
+    ],
+    [
+     33.667,
+     16.791
+    ],
+    [
+     33.613,
+     16.819
+    ],
+    [
+     33.56,
+     16.812
+    ],
+    [
+     33.385,
+     16.74
+    ],
+    [
+     33.196,
+     16.703
+    ],
+    [
+     33.196,
+     16.703
+    ],
+    [
+     33.004,
+     16.703
+    ],
+    [
+     33.004,
+     16.703
+    ],
+    [
+     32.815,
+     16.74
+    ],
+    [
+     32.815,
+     16.74
+    ],
+    [
+     32.637,
+     16.814
+    ],
+    [
+     32.637,
+     16.814
+    ],
+    [
+     32.477,
+     16.921
+    ],
+    [
+     32.341,
+     17.057
+    ],
+    [
+     32.262,
+     17.174
+    ],
+    [
+     33.274,
+     17.174
+    ],
+    [
+     33.606,
+     17.506
+    ],
+    [
+     33.606,
+     18.517
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    29.2855,
+    31.967
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.69 mm2 deficit, 0.71 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.69 mm2 deficit, 0.71 mm of trace crossing",
+     "pos": [
+      29.2855,
+      31.967
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.7125,
+   "area_mm2": 0.6885,
+   "polygon": [
+    [
+     29.333,
+     31.207
+    ],
+    [
+     28.8,
+     31.74
+    ],
+    [
+     28.8,
+     31.775
+    ],
+    [
+     29.1,
+     31.775
+    ],
+    [
+     29.1,
+     32.525
+    ],
+    [
+     28.8,
+     32.525
+    ],
+    [
+     28.8,
+     32.727
+    ],
+    [
+     28.881,
+     32.727
+    ],
+    [
+     28.893,
+     32.727
+    ],
+    [
+     28.904,
+     32.728
+    ],
+    [
+     28.916,
+     32.73
+    ],
+    [
+     28.927,
+     32.733
+    ],
+    [
+     28.938,
+     32.736
+    ],
+    [
+     28.948,
+     32.74
+    ],
+    [
+     28.959,
+     32.745
+    ],
+    [
+     28.969,
+     32.75
+    ],
+    [
+     28.979,
+     32.756
+    ],
+    [
+     28.988,
+     32.763
+    ],
+    [
+     28.997,
+     32.77
+    ],
+    [
+     29.005,
+     32.778
+    ],
+    [
+     29.052,
+     32.825
+    ],
+    [
+     29.145,
+     32.825
+    ],
+    [
+     29.145,
+     32.825
+    ],
+    [
+     29.17,
+     32.822
+    ],
+    [
+     29.272,
+     32.777
+    ],
+    [
+     29.352,
+     32.697
+    ],
+    [
+     29.379,
+     32.636
+    ],
+    [
+     29.4,
+     32.613
+    ],
+    [
+     29.379,
+     32.51
+    ],
+    [
+     29.371,
+     32.386
+    ],
+    [
+     29.379,
+     32.262
+    ],
+    [
+     29.404,
+     32.14
+    ],
+    [
+     29.444,
+     32.023
+    ],
+    [
+     29.499,
+     31.911
+    ],
+    [
+     29.568,
+     31.808
+    ],
+    [
+     29.65,
+     31.715
+    ],
+    [
+     29.743,
+     31.633
+    ],
+    [
+     29.752,
+     31.626
+    ],
+    [
+     29.333,
+     31.207
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    33.8418,
+    20.22
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      33.8418,
+      20.22
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.5607,
+   "polygon": [
+    [
+     33.723,
+     20.979
+    ],
+    [
+     33.859,
+     20.843
+    ],
+    [
+     33.966,
+     20.683
+    ],
+    [
+     34.04,
+     20.505
+    ],
+    [
+     34.078,
+     20.316
+    ],
+    [
+     34.078,
+     20.124
+    ],
+    [
+     34.04,
+     19.935
+    ],
+    [
+     33.966,
+     19.757
+    ],
+    [
+     33.966,
+     19.757
+    ],
+    [
+     33.859,
+     19.597
+    ],
+    [
+     33.723,
+     19.461
+    ],
+    [
+     33.606,
+     19.383
+    ],
+    [
+     33.606,
+     21.057
+    ],
+    [
+     33.723,
+     20.979
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    33.8418,
+    22.76
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      33.8418,
+      22.76
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.5607,
+   "polygon": [
+    [
+     33.723,
+     23.519
+    ],
+    [
+     33.859,
+     23.383
+    ],
+    [
+     33.966,
+     23.223
+    ],
+    [
+     34.04,
+     23.045
+    ],
+    [
+     34.078,
+     22.856
+    ],
+    [
+     34.078,
+     22.664
+    ],
+    [
+     34.04,
+     22.475
+    ],
+    [
+     33.974,
+     22.315
+    ],
+    [
+     33.966,
+     22.297
+    ],
+    [
+     33.966,
+     22.297
+    ],
+    [
+     33.859,
+     22.137
+    ],
+    [
+     33.723,
+     22.001
+    ],
+    [
+     33.606,
+     21.923
+    ],
+    [
+     33.606,
+     23.597
+    ],
+    [
+     33.723,
+     23.519
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    33.8418,
+    25.3
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      33.8418,
+      25.3
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.5607,
+   "polygon": [
+    [
+     33.723,
+     26.059
+    ],
+    [
+     33.859,
+     25.923
+    ],
+    [
+     33.966,
+     25.763
+    ],
+    [
+     34.04,
+     25.585
+    ],
+    [
+     34.078,
+     25.396
+    ],
+    [
+     34.078,
+     25.204
+    ],
+    [
+     34.04,
+     25.015
+    ],
+    [
+     33.966,
+     24.837
+    ],
+    [
+     33.966,
+     24.837
+    ],
+    [
+     33.859,
+     24.677
+    ],
+    [
+     33.723,
+     24.541
+    ],
+    [
+     33.606,
+     24.463
+    ],
+    [
+     33.606,
+     26.137
+    ],
+    [
+     33.723,
+     26.059
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    33.8418,
+    27.84
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.56 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      33.8418,
+      27.84
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.5607,
+   "polygon": [
+    [
+     33.723,
+     28.599
+    ],
+    [
+     33.859,
+     28.463
+    ],
+    [
+     33.966,
+     28.303
+    ],
+    [
+     34.04,
+     28.125
+    ],
+    [
+     34.078,
+     27.936
+    ],
+    [
+     34.078,
+     27.744
+    ],
+    [
+     34.04,
+     27.555
+    ],
+    [
+     33.986,
+     27.426
+    ],
+    [
+     33.966,
+     27.377
+    ],
+    [
+     33.966,
+     27.377
+    ],
+    [
+     33.859,
+     27.217
+    ],
+    [
+     33.723,
+     27.081
+    ],
+    [
+     33.606,
+     27.003
+    ],
+    [
+     33.606,
+     28.677
+    ],
+    [
+     33.723,
+     28.599
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    28.1652,
+    32.6091
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.15 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.15 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      28.1652,
+      32.6091
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.1457,
+   "polygon": [
+    [
+     27.848,
+     32.697
+    ],
+    [
+     27.928,
+     32.777
+    ],
+    [
+     28.03,
+     32.822
+    ],
+    [
+     28.055,
+     32.825
+    ],
+    [
+     28.4,
+     32.825
+    ],
+    [
+     28.4,
+     32.825
+    ],
+    [
+     28.4,
+     32.525
+    ],
+    [
+     28.1,
+     32.525
+    ],
+    [
+     28.1,
+     32.44
+    ],
+    [
+     27.846,
+     32.693
+    ],
+    [
+     27.848,
+     32.697
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    27.0934,
+    33.9251
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.34 mm2 deficit, 0.16 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.34 mm2 deficit, 0.16 mm of trace crossing",
+     "pos": [
+      27.0934,
+      33.9251
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.1627,
+   "area_mm2": 0.3372,
+   "polygon": [
+    [
+     26.866,
+     34.205
+    ],
+    [
+     26.969,
+     34.185
+    ],
+    [
+     27.093,
+     34.177
+    ],
+    [
+     27.217,
+     34.185
+    ],
+    [
+     27.321,
+     34.205
+    ],
+    [
+     27.321,
+     33.219
+    ],
+    [
+     26.866,
+     33.674
+    ],
+    [
+     26.866,
+     34.205
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    24.3263,
+    38.7855
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 3.45 mm2 deficit, 2.54 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 3.45 mm2 deficit, 2.54 mm of trace crossing",
+     "pos": [
+      24.3263,
+      38.7855
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 2.545,
+   "area_mm2": 3.4509,
+   "polygon": [
+    [
+     22.715,
+     39.547
+    ],
+    [
+     22.745,
+     39.549
+    ],
+    [
+     22.867,
+     39.573
+    ],
+    [
+     22.985,
+     39.613
+    ],
+    [
+     23.096,
+     39.668
+    ],
+    [
+     23.199,
+     39.737
+    ],
+    [
+     23.293,
+     39.819
+    ],
+    [
+     23.375,
+     39.912
+    ],
+    [
+     23.428,
+     39.993
+    ],
+    [
+     23.524,
+     39.999
+    ],
+    [
+     23.646,
+     40.023
+    ],
+    [
+     23.764,
+     40.063
+    ],
+    [
+     23.854,
+     40.108
+    ],
+    [
+     26.19,
+     37.772
+    ],
+    [
+     26.23,
+     37.728
+    ],
+    [
+     26.265,
+     37.681
+    ],
+    [
+     26.295,
+     37.63
+    ],
+    [
+     26.321,
+     37.577
+    ],
+    [
+     26.34,
+     37.521
+    ],
+    [
+     26.355,
+     37.464
+    ],
+    [
+     26.363,
+     37.406
+    ],
+    [
+     26.366,
+     37.347
+    ],
+    [
+     26.366,
+     37.12
+    ],
+    [
+     26.11,
+     37.12
+    ],
+    [
+     26.105,
+     37.198
+    ],
+    [
+     26.081,
+     37.32
+    ],
+    [
+     26.041,
+     37.438
+    ],
+    [
+     25.986,
+     37.549
+    ],
+    [
+     25.917,
+     37.652
+    ],
+    [
+     25.84,
+     37.739
+    ],
+    [
+     25.84,
+     37.858
+    ],
+    [
+     25.822,
+     37.916
+    ],
+    [
+     25.772,
+     37.952
+    ],
+    [
+     25.711,
+     37.952
+    ],
+    [
+     25.671,
+     37.928
+    ],
+    [
+     25.64,
+     37.896
+    ],
+    [
+     25.638,
+     37.897
+    ],
+    [
+     25.527,
+     37.952
+    ],
+    [
+     25.409,
+     37.992
+    ],
+    [
+     25.287,
+     38.016
+    ],
+    [
+     25.163,
+     38.024
+    ],
+    [
+     25.039,
+     38.016
+    ],
+    [
+     24.917,
+     37.992
+    ],
+    [
+     24.8,
+     37.952
+    ],
+    [
+     24.688,
+     37.897
+    ],
+    [
+     24.585,
+     37.828
+    ],
+    [
+     24.504,
+     37.757
+    ],
+    [
+     22.715,
+     39.547
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    33.1,
+    16.0505
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.10 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.10 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      33.1,
+      16.0505
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.1029,
+   "polygon": [
+    [
+     33.523,
+     15.972
+    ],
+    [
+     32.585,
+     15.972
+    ],
+    [
+     32.637,
+     16.006
+    ],
+    [
+     32.637,
+     16.006
+    ],
+    [
+     32.637,
+     16.006
+    ],
+    [
+     32.673,
+     16.021
+    ],
+    [
+     32.815,
+     16.08
+    ],
+    [
+     33.004,
+     16.117
+    ],
+    [
+     33.004,
+     16.117
+    ],
+    [
+     33.196,
+     16.117
+    ],
+    [
+     33.196,
+     16.117
+    ],
+    [
+     33.385,
+     16.08
+    ],
+    [
+     33.563,
+     16.006
+    ],
+    [
+     33.605,
+     15.978
+    ],
+    [
+     33.582,
+     15.975
+    ],
+    [
+     33.523,
+     15.972
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    30.8461,
+    16.573
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.61 mm2 deficit, 0.51 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.61 mm2 deficit, 0.51 mm of trace crossing",
+     "pos": [
+      30.8461,
+      16.573
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.505,
+   "area_mm2": 0.6072,
+   "polygon": [
+    [
+     30.594,
+     17.174
+    ],
+    [
+     31.099,
+     17.174
+    ],
+    [
+     31.099,
+     15.972
+    ],
+    [
+     30.594,
+     15.972
+    ],
+    [
+     30.594,
+     17.174
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    27.8611,
+    16.9261
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 1.20 mm2 deficit, 0.91 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 1.20 mm2 deficit, 0.91 mm of trace crossing",
+     "pos": [
+      27.8611,
+      16.9261
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.9057,
+   "area_mm2": 1.1964,
+   "polygon": [
+    [
+     28.324,
+     15.998
+    ],
+    [
+     28.268,
+     16.018
+    ],
+    [
+     28.215,
+     16.043
+    ],
+    [
+     28.164,
+     16.073
+    ],
+    [
+     28.117,
+     16.108
+    ],
+    [
+     28.073,
+     16.148
+    ],
+    [
+     27.156,
+     17.065
+    ],
+    [
+     27.186,
+     17.067
+    ],
+    [
+     27.308,
+     17.091
+    ],
+    [
+     27.426,
+     17.131
+    ],
+    [
+     27.537,
+     17.186
+    ],
+    [
+     27.641,
+     17.255
+    ],
+    [
+     27.734,
+     17.337
+    ],
+    [
+     27.816,
+     17.43
+    ],
+    [
+     27.885,
+     17.534
+    ],
+    [
+     27.94,
+     17.645
+    ],
+    [
+     27.98,
+     17.763
+    ],
+    [
+     28.004,
+     17.885
+    ],
+    [
+     28.006,
+     17.915
+    ],
+    [
+     28.4,
+     17.521
+    ],
+    [
+     28.392,
+     17.508
+    ],
+    [
+     28.353,
+     17.482
+    ],
+    [
+     28.315,
+     17.434
+    ],
+    [
+     28.313,
+     17.373
+    ],
+    [
+     28.347,
+     17.322
+    ],
+    [
+     28.353,
+     17.318
+    ],
+    [
+     28.392,
+     17.292
+    ],
+    [
+     28.42,
+     17.25
+    ],
+    [
+     28.427,
+     17.213
+    ],
+    [
+     28.427,
+     16.787
+    ],
+    [
+     28.42,
+     16.75
+    ],
+    [
+     28.414,
+     16.741
+    ],
+    [
+     28.406,
+     16.729
+    ],
+    [
+     28.392,
+     16.708
+    ],
+    [
+     28.353,
+     16.682
+    ],
+    [
+     28.315,
+     16.634
+    ],
+    [
+     28.313,
+     16.573
+    ],
+    [
+     28.347,
+     16.522
+    ],
+    [
+     28.353,
+     16.518
+    ],
+    [
+     28.392,
+     16.492
+    ],
+    [
+     28.42,
+     16.45
+    ],
+    [
+     28.427,
+     16.413
+    ],
+    [
+     28.427,
+     15.987
+    ],
+    [
+     28.425,
+     15.977
+    ],
+    [
+     28.381,
+     15.983
+    ],
+    [
+     28.324,
+     15.998
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "error",
+   "pos": [
+    25.9832,
+    35.6357
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.17 mm2 deficit, 0.25 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.17 mm2 deficit, 0.25 mm of trace crossing",
+     "pos": [
+      25.9832,
+      35.6357
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.2496,
+   "area_mm2": 0.1666,
+   "polygon": [
+    [
+     25.968,
+     35.95
+    ],
+    [
+     25.968,
+     35.747
+    ],
+    [
+     26.2,
+     35.747
+    ],
+    [
+     26.2,
+     35.447
+    ],
+    [
+     26.2,
+     35.447
+    ],
+    [
+     25.923,
+     35.447
+    ],
+    [
+     25.923,
+     35.447
+    ],
+    [
+     25.898,
+     35.45
+    ],
+    [
+     25.796,
+     35.495
+    ],
+    [
+     25.766,
+     35.524
+    ],
+    [
+     25.766,
+     35.95
+    ],
+    [
+     25.968,
+     35.95
+    ]
+   ]
+  },
+  {
+   "check": "check_return_path",
+   "severity": "warning",
+   "pos": [
+    26.1067,
+    36.6548
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DM",
+   "refs": [],
+   "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.07 mm2 deficit, 0.00 mm of trace crossing",
+   "source": "check_return_path",
+   "items": [
+    {
+     "msg": "return corridor of /USB_DM (B.Cu) leaves continuous GND copper on F.Cu: 0.07 mm2 deficit, 0.00 mm of trace crossing",
+     "pos": [
+      26.1067,
+      36.6548
+     ]
+    }
+   ],
+   "kind": "corridor_void",
+   "signal_layer": "B.Cu",
+   "reference_net": "GND",
+   "crossing_len_mm": 0.0,
+   "area_mm2": 0.0697,
+   "polygon": [
+    [
+     26.2,
+     36.853
+    ],
+    [
+     26.2,
+     36.853
+    ],
+    [
+     26.2,
+     36.553
+    ],
+    [
+     25.968,
+     36.553
+    ],
+    [
+     25.968,
+     36.35
+    ],
+    [
+     25.775,
+     36.35
+    ],
+    [
+     25.835,
+     36.402
+    ],
+    [
+     25.917,
+     36.496
+    ],
+    [
+     25.986,
+     36.599
+    ],
+    [
+     26.041,
+     36.711
+    ],
+    [
+     26.081,
+     36.828
+    ],
+    [
+     26.086,
+     36.853
+    ],
+    [
+     26.2,
+     36.853
+    ]
+   ]
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    17.5489,
+    38.252
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+     "pos": [
+      17.5489,
+      38.252
+     ]
+    }
+   ],
+   "kind": "pour_neckdown",
+   "neck_mm": 0.0,
+   "required_mm": 0.35,
+   "current_a": 0.7
+  },
+  {
+   "check": "check_current",
+   "severity": "error",
+   "pos": [
+    11.8878,
+    33.4506
+   ],
+   "layer": "B.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "GND pour on B.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND pour on B.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.350 mm for 0.70 A at dT=10C",
+     "pos": [
+      11.8878,
+      33.4506
+     ]
+    }
+   ],
+   "kind": "pour_neckdown",
+   "neck_mm": 0.0,
+   "required_mm": 0.35,
+   "current_a": 0.7
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.054,
+    36.5038
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.05, 36.50) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.05, 36.50) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.054,
+      36.5038
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    33.25,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (33.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (33.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      33.25,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    35.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      35.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    30.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (30.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (30.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      30.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    15.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      15.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    28.25,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (28.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (28.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      28.25,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    16.0,
+    26.6608
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (16.00, 26.66) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (16.00, 26.66) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      16.0,
+      26.6608
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.75,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.75,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    21.5647,
+    24.7013
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (21.56, 24.70) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (21.56, 24.70) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      21.5647,
+      24.7013
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    25.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 25.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 25.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      25.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    18.25,
+    35.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (18.25, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (18.25, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      18.25,
+      35.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    40.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      40.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    15.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 15.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      15.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    43.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 43.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      43.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    18.25,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (18.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (18.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      18.25,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    40.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      40.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.25,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.25,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    33.25,
+    40.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (33.25, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (33.25, 40.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      33.25,
+      40.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    23.4004,
+    40.9408
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (23.40, 40.94) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (23.40, 40.94) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      23.4004,
+      40.9408
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    20.75,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (20.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (20.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      20.75,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    38.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      38.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    18.25,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (18.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (18.25, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      18.25,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    33.25,
+    38.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (33.25, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (33.25, 38.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      33.25,
+      38.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    26.283,
+    17.5587
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (26.28, 17.56) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (26.28, 17.56) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      26.283,
+      17.5587
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    33.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      33.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    26.6836,
+    10.9691
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (26.68, 10.97) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (26.68, 10.97) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      26.6836,
+      10.9691
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    13.25,
+    45.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (13.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (13.25, 45.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      13.25,
+      45.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    14.6,
+    13.5299
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (14.60, 13.53) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (14.60, 13.53) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      14.6,
+      13.5299
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    26.0297,
+    15.4814
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (26.03, 15.48) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (26.03, 15.48) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      26.0297,
+      15.4814
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    10.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 10.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      10.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    10.75,
+    35.75
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (10.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (10.75, 35.75) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      10.75,
+      35.75
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    15.75,
+    33.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (15.75, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (15.75, 33.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      15.75,
+      33.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.75,
+    13.25
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.75, 13.25) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.75,
+      13.25
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_current",
+   "severity": "warning",
+   "pos": [
+    25.0675,
+    20.7119
+   ],
+   "layer": null,
+   "net": "GND",
+   "refs": [],
+   "msg": "GND layer transition at (25.07, 20.71) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+   "source": "check_current",
+   "items": [
+    {
+     "msg": "GND layer transition at (25.07, 20.71) has 1 via(s); 0.70 A needs 2 (>= 1 via per 0.5 A); advisory: plane-fed rail, per-cluster current unattributed (each via is a leaf tap off the plane)",
+     "pos": [
+      25.0675,
+      20.7119
+     ]
+    }
+   ],
+   "kind": "insufficient_transition_vias",
+   "vias": 1,
+   "required": 2,
+   "advisory": true
+  },
+  {
+   "check": "check_decoupling",
+   "severity": "warning",
+   "pos": [
+    17.4,
+    21.7
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [
+    "C4"
+   ],
+   "msg": "C4 ground pad is 5.1 mm from the nearest GND via (> 5.0 mm return stub)",
+   "source": "check_decoupling",
+   "items": [
+    {
+     "msg": "C4 ground pad is 5.1 mm from the nearest GND via (> 5.0 mm return stub)",
+     "pos": [
+      17.4,
+      21.7
+     ]
+    }
+   ],
+   "kind": "gnd_stub_long",
+   "cap_class": "bulk",
+   "manhattan_mm": 5.2,
+   "euclid_mm": 3.8269,
+   "loop_nh": 8.2334,
+   "vias_in_loop": 1,
+   "pin": "U3.5"
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    22.45,
+    37.9325
+   ],
+   "layer": null,
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "diff pair /USB_DP//USB_DM length skew 5.95 mm (~42 ps, eps_r 4.5); limit 5.0 mm",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /USB_DP//USB_DM length skew 5.95 mm (~42 ps, eps_r 4.5); limit 5.0 mm",
+     "pos": [
+      22.45,
+      37.9325
+     ]
+    }
+   ],
+   "kind": "diffpair_skew",
+   "pair": [
+    "/USB_DP",
+    "/USB_DM"
+   ],
+   "length_p_mm": 32.601,
+   "length_n_mm": 38.5559,
+   "branch_free": true,
+   "skew_mm": 5.9549,
+   "skew_ps": 42.1369,
+   "limit_mm": 5.0
+  },
+  {
+   "check": "check_diffpair",
+   "severity": "warning",
+   "pos": [
+    22.45,
+    37.9325
+   ],
+   "layer": null,
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "diff pair /USB_DP//USB_DM via count asymmetric: /USB_DP has 4, /USB_DM has 3",
+   "source": "check_diffpair",
+   "items": [
+    {
+     "msg": "diff pair /USB_DP//USB_DM via count asymmetric: /USB_DP has 4, /USB_DM has 3",
+     "pos": [
+      22.45,
+      37.9325
+     ]
+    }
+   ],
+   "kind": "diffpair_via_asymmetry",
+   "pair": [
+    "/USB_DP",
+    "/USB_DM"
+   ],
+   "length_p_mm": 32.601,
+   "length_n_mm": 38.5559,
+   "branch_free": true,
+   "vias_p": 4,
+   "vias_n": 3
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    20.525,
+    42.33
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "J2"
+   ],
+   "msg": "refdes \"J2\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"J2\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      20.525,
+      42.33
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "J2",
+   "offset_mm": 1.8,
+   "nearest_ref": "J1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    19.4,
+    18.125
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C4"
+   ],
+   "msg": "refdes \"C4\" sits 2.35 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C4\" sits 2.35 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      19.4,
+      18.125
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C4",
+   "offset_mm": 2.3485,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    20.8,
+    23.325
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C2"
+   ],
+   "msg": "refdes \"C2\" sits 1.30 mm beyond its own pads and 0.23 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C2\" sits 1.30 mm beyond its own pads and 0.23 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      20.8,
+      23.325
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C2",
+   "offset_mm": 1.3,
+   "nearest_ref": "SW2",
+   "nearest_mm": 0.225
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    17.25,
+    11.6
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C10"
+   ],
+   "msg": "refdes \"C10\" sits 2.80 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C10\" sits 2.80 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      17.25,
+      11.6
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C10",
+   "offset_mm": 2.8,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    26.543,
+    12.0
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R12"
+   ],
+   "msg": "refdes \"R12\" sits 2.05 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R12\" sits 2.05 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      26.543,
+      12.0
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R12",
+   "offset_mm": 2.05,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    32.0,
+    41.275
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C14"
+   ],
+   "msg": "refdes \"C14\" sits 2.05 mm beyond its own pads and 0.00 mm from J3 - reads as J3's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C14\" sits 2.05 mm beyond its own pads and 0.00 mm from J3 - reads as J3's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      32.0,
+      41.275
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C14",
+   "offset_mm": 2.05,
+   "nearest_ref": "J3",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    10.5,
+    36.828
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R16"
+   ],
+   "msg": "refdes \"R16\" sits 1.80 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R16\" sits 1.80 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      10.5,
+      36.828
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R16",
+   "offset_mm": 1.8,
+   "nearest_ref": "J2",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    26.21,
+    42.5
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "refdes \"J3\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"J3\" sits 1.80 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      26.21,
+      42.5
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "J3",
+   "offset_mm": 1.8,
+   "nearest_ref": "J1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    17.457,
+    17.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R10"
+   ],
+   "msg": "refdes \"R10\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R10\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      17.457,
+      17.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R10",
+   "offset_mm": 1.55,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    21.975,
+    25.1
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C1"
+   ],
+   "msg": "refdes \"C1\" sits 2.05 mm beyond its own pads and 0.00 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C1\" sits 2.05 mm beyond its own pads and 0.00 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      21.975,
+      25.1
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C1",
+   "offset_mm": 2.05,
+   "nearest_ref": "SW2",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    22.2,
+    33.578
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R4"
+   ],
+   "msg": "refdes \"R4\" sits 1.63 mm beyond its own pads and 0.18 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R4\" sits 1.63 mm beyond its own pads and 0.18 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      22.2,
+      33.578
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R4",
+   "offset_mm": 1.6265,
+   "nearest_ref": "SW1",
+   "nearest_mm": 0.178
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    10.5,
+    12.175
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C5"
+   ],
+   "msg": "refdes \"C5\" sits 1.05 mm beyond its own pads and 0.65 mm from C10 - reads as C10's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C5\" sits 1.05 mm beyond its own pads and 0.65 mm from C10 - reads as C10's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      10.5,
+      12.175
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C5",
+   "offset_mm": 1.05,
+   "nearest_ref": "C10",
+   "nearest_mm": 0.65
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    9.643,
+    14.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R6"
+   ],
+   "msg": "refdes \"R6\" sits 2.05 mm beyond its own pads and 0.53 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R6\" sits 2.05 mm beyond its own pads and 0.53 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      9.643,
+      14.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R6",
+   "offset_mm": 2.05,
+   "nearest_ref": "C5",
+   "nearest_mm": 0.532
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    29.828,
+    21.1
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R11"
+   ],
+   "msg": "refdes \"R11\" sits 1.80 mm beyond its own pads and 0.10 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R11\" sits 1.80 mm beyond its own pads and 0.10 mm from SW2 - reads as SW2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      29.828,
+      21.1
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R11",
+   "offset_mm": 1.8,
+   "nearest_ref": "SW2",
+   "nearest_mm": 0.1
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    21.925,
+    30.5
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "D3"
+   ],
+   "msg": "refdes \"D3\" sits 2.38 mm beyond its own pads and 0.00 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"D3\" sits 2.38 mm beyond its own pads and 0.00 mm from SW1 - reads as SW1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      21.925,
+      30.5
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "D3",
+   "offset_mm": 2.375,
+   "nearest_ref": "SW1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    18.759,
+    37.4
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "U4"
+   ],
+   "msg": "refdes \"U4\" sits 2.55 mm beyond its own pads and 0.03 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"U4\" sits 2.55 mm beyond its own pads and 0.03 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      18.759,
+      37.4
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "U4",
+   "offset_mm": 2.55,
+   "nearest_ref": "J2",
+   "nearest_mm": 0.034
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    17.457,
+    14.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R7"
+   ],
+   "msg": "refdes \"R7\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R7\" sits 1.55 mm beyond its own pads and 0.00 mm from U1 - reads as U1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      17.457,
+      14.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R7",
+   "offset_mm": 1.55,
+   "nearest_ref": "U1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    9.625,
+    17.2
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "C12"
+   ],
+   "msg": "refdes \"C12\" sits 2.05 mm beyond its own pads and 0.55 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"C12\" sits 2.05 mm beyond its own pads and 0.55 mm from C5 - reads as C5's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      9.625,
+      17.2
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "C12",
+   "offset_mm": 2.05,
+   "nearest_ref": "C5",
+   "nearest_mm": 0.55
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    22.6,
+    40.978
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "R1"
+   ],
+   "msg": "refdes \"R1\" sits 2.11 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"R1\" sits 2.11 mm beyond its own pads and 0.00 mm from J1 - reads as J1's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      22.6,
+      40.978
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "R1",
+   "offset_mm": 2.1084,
+   "nearest_ref": "J1",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_silk",
+   "severity": "warning",
+   "pos": [
+    16.545,
+    41.72
+   ],
+   "layer": "F.SilkS",
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "refdes \"J1\" sits 1.05 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+   "source": "check_silk",
+   "items": [
+    {
+     "msg": "refdes \"J1\" sits 1.05 mm beyond its own pads and 0.00 mm from J2 - reads as J2's label; scripted fix: place_edit.py move_text",
+     "pos": [
+      16.545,
+      41.72
+     ]
+    }
+   ],
+   "kind": "silk_misattributed",
+   "ref": "J1",
+   "offset_mm": 1.05,
+   "nearest_ref": "J2",
+   "nearest_mm": 0.0
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    13.7733,
+    12.55
+   ],
+   "layer": "F.Cu",
+   "net": "+3V3",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on +3V3 F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.100 mm",
+     "pos": [
+      13.7733,
+      12.55
+     ],
+     "uuid": "14068175-e86a-41c2-a9b6-41dbddec854c"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    22.4344,
+    34.4695
+   ],
+   "layer": "F.Cu",
+   "net": "/USB_DP",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on /USB_DP F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.031 mm",
+     "pos": [
+      22.4344,
+      34.4695
+     ],
+     "uuid": "c50407c8-70cc-48b7-9eba-cea8a8a85ae8"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    12.2235,
+    15.1765
+   ],
+   "layer": "F.Cu",
+   "net": "/VBAT_SENSE",
+   "refs": [],
+   "msg": "2 needless jog(s): a sidestep smaller than the track clears nothing on /VBAT_SENSE F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.190 mm",
+     "pos": [
+      12.2235,
+      15.1765
+     ],
+     "uuid": "444df1f5-e3b8-456c-92f6-061ecb464dc4"
+    },
+    {
+     "msg": "sidestep 0.237 mm",
+     "pos": [
+      13.75,
+      15.2
+     ],
+     "uuid": "66319c63-870c-43d6-a321-4b7cda216415"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    18.0647,
+    18.8067
+   ],
+   "layer": "F.Cu",
+   "net": "/main/IO1",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on /main/IO1 F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.129 mm",
+     "pos": [
+      18.0647,
+      18.8067
+     ],
+     "uuid": "0cc37831-b652-4ff2-97c9-f09697a2d4c1"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    24.8125,
+    22.6795
+   ],
+   "layer": "B.Cu",
+   "net": "/main/IO2",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on /main/IO2 B.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.113 mm",
+     "pos": [
+      24.8125,
+      22.6795
+     ],
+     "uuid": "b2e52efc-1a7e-45dc-ba1d-0cde8ee6d52f"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    22.1638,
+    23.8228
+   ],
+   "layer": "F.Cu",
+   "net": "/main/SCL",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on /main/SCL F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.150 mm",
+     "pos": [
+      22.1638,
+      23.8228
+     ],
+     "uuid": "eae0d674-5b77-4d83-9413-a48a5d7aa581"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    22.0277,
+    24.1515
+   ],
+   "layer": "F.Cu",
+   "net": "/main/SDA",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on /main/SDA F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.150 mm",
+     "pos": [
+      22.0277,
+      24.1515
+     ],
+     "uuid": "8b895bb9-47fc-4c8d-8afb-af59eed12ee0"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    16.8017,
+    9.675
+   ],
+   "layer": "F.Cu",
+   "net": "GND",
+   "refs": [],
+   "msg": "2 needless jog(s): a sidestep smaller than the track clears nothing on GND F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      16.8017,
+      9.675
+     ],
+     "uuid": "4c56d1ea-cca1-408a-8282-6f73016049f4"
+    },
+    {
+     "msg": "sidestep 0.198 mm",
+     "pos": [
+      21.2259,
+      25.9992
+     ],
+     "uuid": "4f715ff0-abd5-4c82-a743-cd07de3edfa8"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J1"
+   ],
+   "msg": "J1 (C165948): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J1 (C165948): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J3"
+   ],
+   "msg": "J3 (C160404): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J3 (C160404): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J4"
+   ],
+   "msg": "J4 (no LCSC): no LCSC part on the footprint and no extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J4 (no LCSC): no LCSC part on the footprint and no extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no LCSC part on the footprint and no extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "J5"
+   ],
+   "msg": "J5 (no LCSC): no LCSC part on the footprint and no extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "J5 (no LCSC): no LCSC part on the footprint and no extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no LCSC part on the footprint and no extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "Q1"
+   ],
+   "msg": "Q1 (C15127): no datasheet extraction",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "Q1 (C15127): no datasheet extraction",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "no datasheet extraction"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U1"
+   ],
+   "msg": "U1 (ESP32-C3-MINI-1-N4): 16 connected pin(s) could not be checked - 12 IO0: no rating names it; 13 IO1: no rating names it; 16 IO10: no rating names it; 18 IO4: no rating names it; 19 IO5: no rating names it; 20 IO6: no rating names it ...",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U1 (ESP32-C3-MINI-1-N4): 16 connected pin(s) could not be checked - 12 IO0: no rating names it; 13 IO1: no rating names it; 16 IO10: no rating names it; 18 IO4: no rating names it; 19 IO5: no rating names it; 20 IO6: no rating names it ...",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "12 IO0: no rating names it",
+    "13 IO1: no rating names it",
+    "16 IO10: no rating names it",
+    "18 IO4: no rating names it",
+    "19 IO5: no rating names it",
+    "20 IO6: no rating names it",
+    "21 IO7: no rating names it",
+    "22 IO8: no rating names it",
+    "23 IO9: no rating names it",
+    "26 IO18: no rating names it",
+    "27 IO19: no rating names it",
+    "30 RXD0: no rating names it",
+    "31 TXD0: no rating names it",
+    "5 IO2: no rating names it",
+    "6 IO3: no rating names it",
+    "8 EN: no rating names it"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U2"
+   ],
+   "msg": "U2 (MCP73831T-2ACI/OT): 3 connected pin(s) could not be checked - 3 VBAT: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U2 (MCP73831T-2ACI/OT): 3 connected pin(s) could not be checked - 3 VBAT: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage; 4 VDD: rated against 2, whose net has no known voltage",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "3 VBAT: rated against 2, whose net has no known voltage",
+    "4 VDD: rated against 2, whose net has no known voltage",
+    "4 VDD: rated against 2, whose net has no known voltage"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U3"
+   ],
+   "msg": "U3 (RT9080-33GJ5): 2 connected pin(s) could not be checked - 1 VIN: rated against 2, whose net has no known voltage; 3 EN: rated against 2, whose net has no known voltage",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U3 (RT9080-33GJ5): 2 connected pin(s) could not be checked - 1 VIN: rated against 2, whose net has no known voltage; 3 EN: rated against 2, whose net has no known voltage",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "1 VIN: rated against 2, whose net has no known voltage",
+    "3 EN: rated against 2, whose net has no known voltage"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U4"
+   ],
+   "msg": "U4 (USBLC6-2SC6): 5 connected pin(s) could not be checked - 1 I/O1: no rating names it; 3 I/O2: no rating names it; 4 I/O2: no rating names it; 5 VBUS: no rating names it; 6 I/O1: no rating names it",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U4 (USBLC6-2SC6): 5 connected pin(s) could not be checked - 1 I/O1: no rating names it; 3 I/O2: no rating names it; 4 I/O2: no rating names it; 5 VBUS: no rating names it; 6 I/O1: no rating names it",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "1 I/O1: no rating names it",
+    "3 I/O2: no rating names it",
+    "4 I/O2: no rating names it",
+    "5 VBUS: no rating names it",
+    "6 I/O1: no rating names it"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "U5"
+   ],
+   "msg": "U5 (BME280): 8 connected pin(s) could not be checked - 2 CSB: rated against 1, whose net has no known voltage; 3 SDI: rated against 1, whose net has no known voltage; 4 SCK: rated against 1, whose net has no known voltage; 5 SDO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage ...",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "U5 (BME280): 8 connected pin(s) could not be checked - 2 CSB: rated against 1, whose net has no known voltage; 3 SDI: rated against 1, whose net has no known voltage; 4 SCK: rated against 1, whose net has no known voltage; 5 SDO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage; 6 VDDIO: rated against 1, whose net has no known voltage ...",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "2 CSB: rated against 1, whose net has no known voltage",
+    "3 SDI: rated against 1, whose net has no known voltage",
+    "4 SCK: rated against 1, whose net has no known voltage",
+    "5 SDO: rated against 1, whose net has no known voltage",
+    "6 VDDIO: rated against 1, whose net has no known voltage",
+    "6 VDDIO: rated against 1, whose net has no known voltage",
+    "8 VDD: rated against 1, whose net has no known voltage",
+    "8 VDD: rated against 1, whose net has no known voltage"
+   ]
+  },
+  {
+   "check": "check_ratings",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [
+    "D1",
+    "D10",
+    "D2",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+   ],
+   "msg": "17 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D10, D2, R1, R10, R11, R12, R13, R14, R15, R16, R2, R3, R4, R5, R6, R7",
+   "source": "check_ratings",
+   "items": [
+    {
+     "msg": "17 two-terminal part(s) have no extraction and no voltage-rated attribute in parts.json: D1, D10, D2, R1, R10, R11, R12, R13, R14, R15, R16, R2, R3, R4, R5, R6, R7",
+     "pos": null
+    }
+   ],
+   "kind": "rating_unrated",
+   "pins": [
+    "D1",
+    "D10",
+    "D2",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+   ]
+  },
+  {
+   "check": "verify_all",
+   "severity": "warning",
+   "pos": null,
+   "layer": null,
+   "net": null,
+   "refs": [],
+   "msg": "architecture/constraints.json diverges from constraints.json in kicad/; checks ran against the latter - reconcile or delete the stale twin",
+   "source": "verify_all",
+   "kind": "constraints_drift",
+   "twin": "PCB-0020-A_esp32c3-node/architecture/constraints.json",
+   "items": [
+    {
+     "msg": "constraints twin drift",
+     "pos": null
+    }
+   ]
+  }
+ ],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T12:52:44+00:00",
+ "input": "kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:fffcce1d8c2a2b9b44df74cc8eccfb04fc31f492043ed41a1c01ed564dcf4695"
+}

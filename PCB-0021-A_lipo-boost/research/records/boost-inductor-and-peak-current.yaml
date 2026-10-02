@@ -1,0 +1,50 @@
+id: boost-inductor-and-peak-current
+classes:
+- selection
+applies:
+  topologies:
+  - boost
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  l_min_uh: 0.37
+  l_max_uh: 2.9
+  ripple_pct_of_idc_max: 40
+  isat_gt: peak I_L = Idc + dI/2 at min Vin, max Iout, -30% L, eta 90% or lower
+prose: 'Stay inside the part inductance window (TPS61023 0.37-2.9 uH, 1 uH nominal) and set Isat above
+  the peak: IL(DC)=Vout*Iout/(Vin*eta), dI(pp)=Vin*D/(L*fsw), IL(P)=IL(DC)+dI/2, evaluated at minimum
+  Vin, maximum Iout, L at -30% tolerance and low efficiency. Keep ripple below 40% of average inductor
+  current for max output current. Generic TI note SLVA372D agrees: take L from the data sheet range, Isat
+  above Isw(max)=dI/2+Iout/(1-D), ripple 20-40% of Iout*Vout/Vin; higher L raises usable Iout. Check Imaxout=(ILIM(min)-dI/2)*(1-D)
+  against the load; the TPS61023 valley limit is 2.7 A min (3.7 typ) at 3.6 V in, 5 V out, so a 1 A /
+  3.0 V case needs this check. TI Table 8-2 lists 1 uH parts 4x4 mm, Isat 7-9.6 A, DCR 9.8-13.5 mohm.'
+sources:
+- file: research/sources/tps61023.pdf
+  page: 13
+  note: '8.2.2.2 Eq 5-7: IL(DC), ripple, peak; worst-case and -30% tolerance advice; 90% eta'
+- file: research/sources/tps61023.pdf
+  page: 14
+  note: Table 8-2 recommended 1 uH inductors, <40% ripple advice
+- file: research/sources/slva372d.pdf
+  page: 3
+  note: Eq 3-4 max Iout vs ILIM(min) and Isw(max)
+- file: research/sources/slva372d.pdf
+  page: 4
+  note: Sec 3 inductor selection Eq 5-6, 20-40% ripple; viewed page image
+status: active
+origin: research:block-boost-1
+level: topology
+maturity: verified
+envelope:
+  vout_v:
+    min: 2.2
+    max: 5.5
+  integration_kind:
+    in:
+    - integrated-fet
+envelope_note: Scales with integration (hot loop is inside the IC only when both FETs are integrated)
+  and with the part Vout range 2.2-5.5 V read from TPS61023 sec 6.3; discrete-FET boosts have a bigger
+  external loop. Not verified for other integrated boosts.
+verification: {by: "second-reader", date: "2026-10-01", note: "p13-14 text and Table 8-2: L 0.37-2.9 uH, Eq5-7, -30% L, 90% eta, ripple <40%, Table 8-2 1 uH Isat 7.0-9.6 A DCR 9.78-13.5 mohm, ILIM 2.7 min at 3.6V/5V; SLVA372D p3-4 Imaxout/Isw(max)/20-40% match."}

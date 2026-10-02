@@ -1,0 +1,132 @@
+{
+ "script": "place_seed",
+ "status": "pass",
+ "board": "PCB-0020-A_esp32c3-node.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "clusters": [
+  {
+   "anchor": "D10",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "J1",
+   "satellites": [
+    "D1",
+    "R1",
+    "R2",
+    "U4"
+   ],
+   "edge": "bottom"
+  },
+  {
+   "anchor": "J2",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "J3",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "J4",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "J5",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R14",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R15",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "R16",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "SW1",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "SW2",
+   "satellites": [],
+   "edge": null
+  },
+  {
+   "anchor": "U1",
+   "satellites": [
+    "C10",
+    "C11",
+    "C12",
+    "R10",
+    "R11",
+    "R12",
+    "R13"
+   ],
+   "edge": "top"
+  },
+  {
+   "anchor": "U2",
+   "satellites": [
+    "C1",
+    "C2",
+    "D2",
+    "D3",
+    "Q1",
+    "R3",
+    "R4",
+    "R5"
+   ],
+   "edge": null
+  },
+  {
+   "anchor": "U3",
+   "satellites": [
+    "C3",
+    "C4",
+    "C5",
+    "R6",
+    "R7"
+   ],
+   "edge": null
+  },
+  {
+   "anchor": "U5",
+   "satellites": [
+    "C13",
+    "C14"
+   ],
+   "edge": null
+  }
+ ],
+ "warnings": [
+  "group usb_in: C1 already satellite of U2 - keeping first association"
+ ],
+ "hpwl_before_mm": 2199.8341,
+ "hpwl_seed_mm": 1074.3271,
+ "ops_out": "PCB-0020-A_esp32c3-node/place/seed.ops.json",
+ "applied": true,
+ "hpwl_applied_mm": 1074.3271,
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T10:25:19+00:00",
+ "input": "PCB-0020-A_esp32c3-node/kicad/PCB-0020-A_esp32c3-node.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:19da0e33c735d72e108ee804fb39ca7de5a2a18a4e1bc50d341d1e3b419805ce"
+}

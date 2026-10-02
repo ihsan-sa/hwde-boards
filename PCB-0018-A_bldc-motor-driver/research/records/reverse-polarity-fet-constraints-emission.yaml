@@ -1,0 +1,32 @@
+id: reverse-polarity-fet-constraints-emission
+classes:
+- constraints-emission
+applies:
+  topologies:
+  - reverse-polarity-fet
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  emit: placement group {RP FET, controller, VCAP, CIN, input TVS} at the VIN entry; VIN/VOUT as wide
+    power nets with via arrays on >= 3 layers; gate net short, keep VCAP out of the FET heat zone
+prose: 'What the block must hand to constraints: a placement group anchored on the RP FET with the controller,
+  its VCAP and C_IN, and the input TVS as members, next to the input connector (LM74500-Q1 Fig 11-1 has
+  them all within the FET''s footprint area); VIN and VOUT marked as high-current nets needing wide pours
+  and via arrays on several layers (AND90146 layout); a short-route requirement on the GATE net; and a
+  keep-away between VCAP and the FET''s hot copper (sec 11.1).'
+sources:
+- file: research/sources/lm74500-q1.pdf
+  page: 20
+  note: 'sec 11.1 bullets + Fig 11-1: FET, controller, CVCAP, CIN, TVS grouped; gate short; VCAP away
+    from FET'
+- file: research/sources/and90146-d.pdf
+  page: 6
+  note: 'Fig 9-12: input/output current spread over top/inner1/inner2 with via arrays'
+status: active
+origin: research:block-reverse-polarity-fet-1
+level: principle
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p20 LM74500-Q1 sec11.1 bullets + Fig11-1 match grouping/short-gate/VCAP-away claims exactly; p6 AND90146 layout figs 9-12 match top/inner1/inner2 current spread with bottom GND plane"}

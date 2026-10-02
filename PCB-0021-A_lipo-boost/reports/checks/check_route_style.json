@@ -1,0 +1,167 @@
+{
+ "script": "check_route_style",
+ "status": "violations",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "counts": {
+  "total": 2,
+  "by_severity": {
+   "warning": 2
+  },
+  "by_source": {
+   "check_route_style": 2
+  }
+ },
+ "violations": [
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    57.5,
+    35.3
+   ],
+   "layer": "F.Cu",
+   "net": "+5V",
+   "refs": [],
+   "msg": "1 needless jog(s): a sidestep smaller than the track clears nothing on +5V F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.600 mm",
+     "pos": [
+      57.5,
+      35.3
+     ],
+     "uuid": "3847725b-fabb-483c-a5cf-79ed4afbd221"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  },
+  {
+   "check": "check_route_style",
+   "severity": "warning",
+   "pos": [
+    36.9,
+    42.0
+   ],
+   "layer": "F.Cu",
+   "net": "/LBO",
+   "refs": [],
+   "msg": "12 needless jog(s): a sidestep smaller than the track clears nothing on /LBO F.Cu",
+   "source": "check_route_style",
+   "items": [
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      36.9,
+      42.0
+     ],
+     "uuid": "f83fde52-6746-43f5-9da5-49cfae585492"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      36.925,
+      42.075
+     ],
+     "uuid": "a5ad8ef7-5d4f-4c61-943e-0e5c11a82d47"
+    },
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      52.95,
+      37.25
+     ],
+     "uuid": "bc399645-7e99-4354-9dbc-9eb1dd212824"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      52.975,
+      37.175
+     ],
+     "uuid": "6b24610f-83d2-4094-b12d-65b3f98e8078"
+    },
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      53.25,
+      34.5
+     ],
+     "uuid": "c95bbade-2bc8-49db-9b02-a12ca915d8d9"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      53.275,
+      34.425
+     ],
+     "uuid": "32cfd1c3-2860-4990-8f45-9d0f7a6d4d94"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      61.125,
+      32.475
+     ],
+     "uuid": "ad348f86-ea2d-4ed1-bb23-ef381b8cbb97"
+    },
+    {
+     "msg": "sidestep 0.106 mm",
+     "pos": [
+      61.225,
+      32.5
+     ],
+     "uuid": "d2dbff27-0268-430b-8f6c-8bc3fe6c0d00"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      62.525,
+      32.925
+     ],
+     "uuid": "b3dd3b3a-c872-4302-ba2f-8b2a4af8ea06"
+    },
+    {
+     "msg": "sidestep 0.071 mm",
+     "pos": [
+      62.6,
+      32.95
+     ],
+     "uuid": "7871057a-921e-4126-a5ea-bc6a3ba89d70"
+    },
+    {
+     "msg": "sidestep 0.050 mm",
+     "pos": [
+      62.675,
+      32.975
+     ],
+     "uuid": "56a79736-7b22-496c-989c-6c563f489e83"
+    },
+    {
+     "msg": "sidestep 0.106 mm",
+     "pos": [
+      62.775,
+      33.0
+     ],
+     "uuid": "d36b643c-f425-467e-9838-5b3ef86ca4ab"
+    }
+   ],
+   "kind": "route_style",
+   "style": "jog"
+  }
+ ],
+ "style": {
+  "segments": 108,
+  "arcs": 0,
+  "off_angle": 0,
+  "jogs": 13,
+  "flagged": 13,
+  "score": 0.88
+ },
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-10-01T13:31:30+00:00",
+ "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:16fc68bbdea3bbefc7725dc4f92cfdd66ffe4cf46e38d1cf6a5ed945812e7f5f"
+}

@@ -1,0 +1,373 @@
+{
+  "script": "gate",
+  "gate": "verify",
+  "phase": "P8",
+  "tool": "verify",
+  "input": "PCB-0017-A_astra-amp/kicad/PCB-0017-A_astra-amp.kicad_pcb",
+  "input_digest": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+  "status": "fail",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 32,
+    "by_severity": {
+      "error": 8,
+      "warning": 24
+    },
+    "by_source": {
+      "check_current": 14,
+      "check_decoupling": 8,
+      "check_thermal": 2,
+      "check_silk": 7,
+      "verify_all": 1
+    },
+    "by_check": {
+      "check_return_path": 0,
+      "check_current": 14,
+      "check_decoupling": 8,
+      "check_diffpair": 0,
+      "check_creepage": 0,
+      "check_thermal": 2,
+      "check_silk": 7,
+      "check_pdn": 0,
+      "verify_all": 1
+    }
+  },
+  "failing_count": 8,
+  "failing": [
+    {
+      "check": "check_current",
+      "severity": "error",
+      "pos": [
+        29.72,
+        30.905
+      ],
+      "layer": "F.Cu",
+      "net": "+12V",
+      "refs": [],
+      "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+      "source": "check_current",
+      "items": [
+        {
+          "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+          "pos": [
+            29.72,
+            30.905
+          ]
+        }
+      ],
+      "kind": "undersized_track",
+      "width_mm": 0.3428,
+      "required_mm": 0.882,
+      "current_a": 4.0,
+      "segment": {
+        "start": [
+          29.72,
+          31.23
+        ],
+        "end": [
+          29.72,
+          30.58
+        ]
+      },
+      "bridge": false
+    },
+    {
+      "check": "check_current",
+      "severity": "error",
+      "pos": [
+        29.72,
+        22.445
+      ],
+      "layer": "F.Cu",
+      "net": "+12V",
+      "refs": [],
+      "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+      "source": "check_current",
+      "items": [
+        {
+          "msg": "+12V track 0.343 mm wide on F.Cu; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+          "pos": [
+            29.72,
+            22.445
+          ]
+        }
+      ],
+      "kind": "undersized_track",
+      "width_mm": 0.3428,
+      "required_mm": 0.882,
+      "current_a": 4.0,
+      "segment": {
+        "start": [
+          29.72,
+          22.77
+        ],
+        "end": [
+          29.72,
+          22.12
+        ]
+      },
+      "bridge": false
+    },
+    {
+      "check": "check_current",
+      "severity": "error",
+      "pos": [
+        56.2389,
+        26.701
+      ],
+      "layer": "F.Cu",
+      "net": "GND",
+      "refs": [],
+      "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+      "source": "check_current",
+      "items": [
+        {
+          "msg": "GND pour on F.Cu necks to ~0.00 mm between via attachments; IPC-2152 needs 0.882 mm for 4.00 A at dT=20C",
+          "pos": [
+            56.2389,
+            26.701
+          ]
+        }
+      ],
+      "kind": "pour_neckdown",
+      "neck_mm": 0.0,
+      "required_mm": 0.882,
+      "current_a": 4.0
+    },
+    {
+      "check": "check_current",
+      "severity": "error",
+      "pos": [
+        30.31,
+        27.98
+      ],
+      "layer": "F.Cu",
+      "net": "/OUTPL",
+      "refs": [],
+      "msg": "/OUTPL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+      "source": "check_current",
+      "items": [
+        {
+          "msg": "/OUTPL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+          "pos": [
+            30.31,
+            27.98
+          ]
+        }
+      ],
+      "kind": "undersized_track",
+      "width_mm": 0.3,
+      "required_mm": 0.624,
+      "current_a": 3.0,
+      "segment": {
+        "start": [
+          29.72,
+          27.98
+        ],
+        "end": [
+          30.9,
+          27.98
+        ]
+      },
+      "bridge": true
+    },
+    {
+      "check": "check_current",
+      "severity": "error",
+      "pos": [
+        30.31,
+        29.28
+      ],
+      "layer": "F.Cu",
+      "net": "/OUTNL",
+      "refs": [],
+      "msg": "/OUTNL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+      "source": "check_current",
+      "items": [
+        {
+          "msg": "/OUTNL track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+          "pos": [
+            30.31,
+            29.28
+          ]
+        }
+      ],
+      "kind": "undersized_track",
+      "width_mm": 0.3,
+      "required_mm": 0.624,
+      "current_a": 3.0,
+      "segment": {
+        "start": [
+          29.72,
+          29.28
+        ],
+        "end": [
+          30.9,
+          29.28
+        ]
+      },
+      "bridge": true
+    },
+    {
+      "check": "check_current",
+      "severity": "error",
+      "pos": [
+        30.31,
+        24.07
+      ],
+      "layer": "F.Cu",
+      "net": "/OUTPR",
+      "refs": [],
+      "msg": "/OUTPR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+      "source": "check_current",
+      "items": [
+        {
+          "msg": "/OUTPR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+          "pos": [
+            30.31,
+            24.07
+          ]
+        }
+      ],
+      "kind": "undersized_track",
+      "width_mm": 0.3,
+      "required_mm": 0.624,
+      "current_a": 3.0,
+      "segment": {
+        "start": [
+          29.72,
+          24.07
+        ],
+        "end": [
+          30.9,
+          24.07
+        ]
+      },
+      "bridge": true
+    },
+    {
+      "check": "check_current",
+      "severity": "error",
+      "pos": [
+        30.31,
+        25.37
+      ],
+      "layer": "F.Cu",
+      "net": "/OUTNR",
+      "refs": [],
+      "msg": "/OUTNR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+      "source": "check_current",
+      "items": [
+        {
+          "msg": "/OUTNR track 0.300 mm wide on F.Cu; IPC-2152 needs 0.624 mm for 3.00 A at dT=20C",
+          "pos": [
+            30.31,
+            25.37
+          ]
+        }
+      ],
+      "kind": "undersized_track",
+      "width_mm": 0.3,
+      "required_mm": 0.624,
+      "current_a": 3.0,
+      "segment": {
+        "start": [
+          29.72,
+          25.37
+        ],
+        "end": [
+          30.9,
+          25.37
+        ]
+      },
+      "bridge": true
+    },
+    {
+      "check": "check_thermal",
+      "severity": "error",
+      "pos": [
+        26.0,
+        27.0004
+      ],
+      "layer": "F.Cu",
+      "net": "GND",
+      "refs": [
+        "U1"
+      ],
+      "msg": "U1 dissipates 1.50 W into 645 mm2 of GND copper: ~111 C rise (theta_JA ~74 C/W) > 85 C allowed; add thermal vias to an inner/back plane",
+      "source": "check_thermal",
+      "items": [
+        {
+          "msg": "U1 dissipates 1.50 W into 645 mm2 of GND copper: ~111 C rise (theta_JA ~74 C/W) > 85 C allowed; add thermal vias to an inner/back plane",
+          "pos": [
+            26.0,
+            27.0004
+          ]
+        }
+      ],
+      "kind": "thermal_area",
+      "power_w": 1.5,
+      "area_mm2": 645.0,
+      "theta_ja": 73.8454,
+      "rise_c": 110.768,
+      "dt_allowed_c": 85.0
+    }
+  ],
+  "coverage": {
+    "strict": false,
+    "required": [
+      "check_return_path",
+      "check_current",
+      "check_decoupling",
+      "check_diffpair",
+      "check_creepage",
+      "check_thermal",
+      "check_silk",
+      "check_pdn"
+    ],
+    "ran": [
+      "check_return_path",
+      "check_current",
+      "check_decoupling",
+      "check_diffpair",
+      "check_creepage",
+      "check_thermal",
+      "check_silk",
+      "check_pdn"
+    ],
+    "passed": [
+      "check_return_path",
+      "check_decoupling",
+      "check_diffpair",
+      "check_creepage",
+      "check_silk",
+      "check_pdn"
+    ],
+    "failed": [
+      "check_current",
+      "check_thermal"
+    ],
+    "waived": [],
+    "not_applicable": {},
+    "skipped_error": {}
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "PCB-0017-A_astra-amp",
+    "gate": "verify",
+    "status": "fail",
+    "attempts": 5,
+    "inputs": {
+      "pcb": "sexpr_no_uuid:87aaee00ef59a8cfbcb057f740a0a5e40a594c620bc1e5408eb22f7b139ededb",
+      "constraints": "json_canonical:1790e58937177c11ea0813769eede5c1404b6edf33b584744d3c6099c16b2e04",
+      "decoupling": "json_canonical:aca94291a3791b958b2be40d518c04b5903398300f1e8824edf99426099dcada",
+      "waivers": null
+    }
+  }
+}

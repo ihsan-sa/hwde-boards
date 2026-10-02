@@ -1,0 +1,37 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "remove",
+   "uuid": "0cb07e71-9e0e-446e-8eef-93e80d86310d"
+  },
+  {
+   "op": "remove",
+   "uuid": "0f6458f7-8041-4387-ba25-d4ec68605b83"
+  },
+  {
+   "op": "remove",
+   "uuid": "2bd100ea-361b-4aaa-ab30-4d76c2e76258"
+  },
+  {
+   "op": "remove",
+   "uuid": "b19b1638-48f8-45a1-90b7-756fae1396dd"
+  },
+  {
+   "op": "remove",
+   "uuid": "f62048bf-08f7-4f21-9e71-932b347dc705"
+  },
+  {
+   "op": "remove",
+   "uuid": "05852c93-7c23-4ee8-81aa-16cc8ae1b9fe"
+  },
+  {
+   "op": "remove",
+   "uuid": "915b47c1-e2e4-4cce-b120-8cc33a27366a"
+  },
+  {
+   "op": "remove",
+   "uuid": "956d9ba6-ebd3-4670-95c6-ba74f4676e90"
+  }
+ ]
+}

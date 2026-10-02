@@ -1,0 +1,912 @@
+{
+ "script": "parts_search",
+ "status": "pass",
+ "source": "live",
+ "query": "0.68uF 50V",
+ "total": 864,
+ "count": 15,
+ "results": [
+  {
+   "lcsc": "C694504",
+   "mpn": "CGA3E3X5R1H684KT0Y0N",
+   "brand": "TDK",
+   "description": "50V 680nF X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0603",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 43839,
+   "price": 0.0713,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0713
+    },
+    {
+     "qty": 100,
+     "price": 0.0567
+    },
+    {
+     "qty": 300,
+     "price": 0.0494
+    },
+    {
+     "qty": 1000,
+     "price": 0.0441
+    },
+    {
+     "qty": 4000,
+     "price": 0.0382
+    },
+    {
+     "qty": 8000,
+     "price": 0.0359
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_TDK-CGA3E3X5R1H684KT0Y0N_C694504.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_tdk-cga3e3x5r1h684kt0y0n_C694504.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X5R"
+    }
+   ],
+   "rank": 0
+  },
+  {
+   "lcsc": "C1881",
+   "mpn": "1206B684K500NT",
+   "brand": "FH (Guangdong Fenghua Advanced Tech)",
+   "description": "50V 680nF X7R \u00b110% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "1206",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 32921,
+   "price": 0.064,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.064
+    },
+    {
+     "qty": 100,
+     "price": 0.0523
+    },
+    {
+     "qty": 300,
+     "price": 0.0465
+    },
+    {
+     "qty": 3000,
+     "price": 0.0387
+    },
+    {
+     "qty": 6000,
+     "price": 0.0351
+    },
+    {
+     "qty": 9000,
+     "price": 0.0335
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-1206B684K500NT_C1881.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_fh-guangdong-fenghua-advanced-tech-1206b684k500nt_C1881.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "lcsc": "C145012",
+   "mpn": "CC1206KKX7R9BB684",
+   "brand": "YAGEO",
+   "description": "50V 680nF X7R \u00b110% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "1206",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 18619,
+   "price": 0.0618,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0618
+    },
+    {
+     "qty": 100,
+     "price": 0.0493
+    },
+    {
+     "qty": 300,
+     "price": 0.0431
+    },
+    {
+     "qty": 2000,
+     "price": 0.0384
+    },
+    {
+     "qty": 4000,
+     "price": 0.0346
+    },
+    {
+     "qty": 10000,
+     "price": 0.0327
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2007151105_YAGEO-CC1206KKX7R9BB684_C145012.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_yageo-cc1206kkx7r9bb684_C145012.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "lcsc": "C107133",
+   "mpn": "CC0805KKX7R9BB684",
+   "brand": "YAGEO",
+   "description": "50V 680nF X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 15895,
+   "price": 0.0389,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0389
+    },
+    {
+     "qty": 200,
+     "price": 0.0324
+    },
+    {
+     "qty": 600,
+     "price": 0.0288
+    },
+    {
+     "qty": 3000,
+     "price": 0.0265
+    },
+    {
+     "qty": 9000,
+     "price": 0.0247
+    },
+    {
+     "qty": 21000,
+     "price": 0.0236
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-CC0805KKX7R9BB684_C107133.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_yageo-cc0805kkx7r9bb684_C107133.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "lcsc": "C22440595",
+   "mpn": "CGA1206X7R684K500MT",
+   "brand": "HRE",
+   "description": "50V 680nF X7R \u00b110% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "1206",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 14988,
+   "price": 0.0329,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0329
+    },
+    {
+     "qty": 100,
+     "price": 0.0294
+    },
+    {
+     "qty": 300,
+     "price": 0.0277
+    },
+    {
+     "qty": 3000,
+     "price": 0.0228
+    },
+    {
+     "qty": 6000,
+     "price": 0.0218
+    },
+    {
+     "qty": 9000,
+     "price": 0.0213
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405281634_HRE-CGA1206X7R684K500MT_C22440595.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_hre-cga1206x7r684k500mt_C22440595.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "lcsc": "C377117",
+   "mpn": "TCC1206X7R684K500FT",
+   "brand": "CCTC",
+   "description": "50V 680nF X7R \u00b110% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "1206",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 14648,
+   "price": 0.0363,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0363
+    },
+    {
+     "qty": 200,
+     "price": 0.0288
+    },
+    {
+     "qty": 600,
+     "price": 0.0246
+    },
+    {
+     "qty": 3000,
+     "price": 0.021
+    },
+    {
+     "qty": 9000,
+     "price": 0.0187
+    },
+    {
+     "qty": 21000,
+     "price": 0.0176
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_CCTC-TCC1206X7R684K500FT_C377117.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_cctc-tcc1206x7r684k500ft_C377117.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "lcsc": "C282780",
+   "mpn": "TCC0805X7R684K500DT",
+   "brand": "CCTC",
+   "description": "50V 680nF X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 10944,
+   "price": 0.0174,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0174
+    },
+    {
+     "qty": 500,
+     "price": 0.0137
+    },
+    {
+     "qty": 1500,
+     "price": 0.0116
+    },
+    {
+     "qty": 4000,
+     "price": 0.0104
+    },
+    {
+     "qty": 24000,
+     "price": 0.0093
+    },
+    {
+     "qty": 48000,
+     "price": 0.0087
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_CCTC-TCC0805X7R684K500DT_C282780.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_cctc-tcc0805x7r684k500dt_C282780.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "lcsc": "C5360852",
+   "mpn": "TCC0603X7R684K500CT",
+   "brand": "CCTC",
+   "description": "50V 680nF X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0603",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 8922,
+   "price": 0.0189,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0189
+    },
+    {
+     "qty": 500,
+     "price": 0.0145
+    },
+    {
+     "qty": 1500,
+     "price": 0.0121
+    },
+    {
+     "qty": 4000,
+     "price": 0.0106
+    },
+    {
+     "qty": 24000,
+     "price": 0.0094
+    },
+    {
+     "qty": 48000,
+     "price": 0.0087
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302141837_CCTC-TCC0603X7R684K500CT_C5360852.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_cctc-tcc0603x7r684k500ct_C5360852.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "lcsc": "C22399652",
+   "mpn": "CGA0805X7R684K500KT",
+   "brand": "HRE",
+   "description": "50V 680nF X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7957,
+   "price": 0.0236,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0236
+    },
+    {
+     "qty": 200,
+     "price": 0.0189
+    },
+    {
+     "qty": 600,
+     "price": 0.0162
+    },
+    {
+     "qty": 2000,
+     "price": 0.0146
+    },
+    {
+     "qty": 10000,
+     "price": 0.0115
+    },
+    {
+     "qty": 20000,
+     "price": 0.0108
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405231412_HRE-CGA0805X7R684K500KT_C22399652.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_hre-cga0805x7r684k500kt_C22399652.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "lcsc": "C2859297",
+   "mpn": "0805B684K500CT",
+   "brand": "Walsin Tech Corp",
+   "description": "50V 680nF X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 7805,
+   "price": 0.0351,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0351
+    },
+    {
+     "qty": 200,
+     "price": 0.0277
+    },
+    {
+     "qty": 600,
+     "price": 0.0236
+    },
+    {
+     "qty": 3000,
+     "price": 0.0179
+    },
+    {
+     "qty": 9000,
+     "price": 0.0158
+    },
+    {
+     "qty": 21000,
+     "price": 0.0146
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2108150330_Walsin-Tech-Corp-0805B684K500CT_C2859297.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_walsin-tech-corp-0805b684k500ct_C2859297.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 9
+  },
+  {
+   "lcsc": "C3842660",
+   "mpn": "CC0805JKX7R9BB684",
+   "brand": "YAGEO",
+   "description": "50V 680nF X7R \u00b15% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 5537,
+   "price": 0.0452,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0452
+    },
+    {
+     "qty": 200,
+     "price": 0.0381
+    },
+    {
+     "qty": 600,
+     "price": 0.0342
+    },
+    {
+     "qty": 3000,
+     "price": 0.0311
+    },
+    {
+     "qty": 9000,
+     "price": 0.029
+    },
+    {
+     "qty": 21000,
+     "price": 0.0278
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2311211121_YAGEO-CC0805JKX7R9BB684_C3842660.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_yageo-cc0805jkx7r9bb684_C3842660.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b15%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 10
+  },
+  {
+   "lcsc": "C967581",
+   "mpn": "0805B684K500NT",
+   "brand": "FH (Guangdong Fenghua Advanced Tech)",
+   "description": "50V 680nF X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3656,
+   "price": 0.0377,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0377
+    },
+    {
+     "qty": 200,
+     "price": 0.0306
+    },
+    {
+     "qty": 600,
+     "price": 0.0267
+    },
+    {
+     "qty": 3000,
+     "price": 0.0218
+    },
+    {
+     "qty": 9000,
+     "price": 0.0199
+    },
+    {
+     "qty": 21000,
+     "price": 0.0187
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0805B684K500NT_C967581.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_fh-guangdong-fenghua-advanced-tech-0805b684k500nt_C967581.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 11
+  },
+  {
+   "lcsc": "C472832",
+   "mpn": "CL21B684KBFVPNE",
+   "brand": "Samsung Electro-Mechanics",
+   "description": "50V 680nF X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 3619,
+   "price": 0.0705,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0705
+    },
+    {
+     "qty": 50,
+     "price": 0.0593
+    },
+    {
+     "qty": 150,
+     "price": 0.0538
+    },
+    {
+     "qty": 500,
+     "price": 0.0496
+    },
+    {
+     "qty": 2000,
+     "price": 0.0403
+    },
+    {
+     "qty": 4000,
+     "price": 0.0387
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Samsung-Electro-Mechanics-CL21B684KBFVPNE_C472832.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_samsung-electro-mechanics-cl21b684kbfvpne_C472832.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 12
+  },
+  {
+   "lcsc": "C152854",
+   "mpn": "0805F684Z500CT",
+   "brand": "Walsin Tech Corp",
+   "description": "-20%~+80% 50V 680nF Y5V 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "0805",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2882,
+   "price": 0.0419,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0419
+    },
+    {
+     "qty": 200,
+     "price": 0.0337
+    },
+    {
+     "qty": 600,
+     "price": 0.0291
+    },
+    {
+     "qty": 3000,
+     "price": 0.0265
+    },
+    {
+     "qty": 9000,
+     "price": 0.0241
+    },
+    {
+     "qty": 21000,
+     "price": 0.0228
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Walsin-Tech-Corp-0805F684Z500CT_C152854.pdf",
+   "url": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_walsin-tech-corp-0805f684z500ct_C152854.html",
+   "attributes": [
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "-20%~+80%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "Y5V"
+    }
+   ],
+   "rank": 13
+  },
+  {
+   "lcsc": "C54916839",
+   "mpn": "CC1206X7R50V684KN",
+   "brand": "TORCH",
+   "description": "1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+   "package": "1206",
+   "category": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+   "type": "Extended",
+   "basic": false,
+   "stock": 2646,
+   "price": 0.0436,
+   "price_breaks": [
+    {
+     "qty": 1,
+     "price": 0.0436
+    },
+    {
+     "qty": 100,
+     "price": 0.0351
+    },
+    {
+     "qty": 300,
+     "price": 0.0307
+    },
+    {
+     "qty": 3000,
+     "price": 0.0275
+    },
+    {
+     "qty": 6000,
+     "price": 0.0251
+    },
+    {
+     "qty": 9000,
+     "price": 0.0238
+    }
+   ],
+   "min_qty": 1,
+   "datasheet": "",
+   "url": "",
+   "attributes": [
+    {
+     "name": "Operating Temperature",
+     "value": "-55\u2103~+125\u2103"
+    },
+    {
+     "name": "Voltage Rating",
+     "value": "50V"
+    },
+    {
+     "name": "Tolerance",
+     "value": "\u00b110%"
+    },
+    {
+     "name": "Capacitance",
+     "value": "680nF"
+    },
+    {
+     "name": "Temperature Coefficient",
+     "value": "X7R"
+    }
+   ],
+   "rank": 14
+  }
+ ],
+ "filters": {},
+ "placeholders_filtered": 0
+}

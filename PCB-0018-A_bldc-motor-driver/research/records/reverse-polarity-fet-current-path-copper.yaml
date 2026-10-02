@@ -1,0 +1,48 @@
+id: reverse-polarity-fet-current-path-copper
+classes:
+- power-loop
+- thermal
+applies:
+  topologies:
+  - reverse-polarity-fet
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  source_drain: thick/wide copper, the full load current path
+  multilayer: spread VIN/VOUT across several layers with via arrays
+  gnd: solid plane layer
+prose: All load current passes through the RP FET, so its source and drain copper must be thick to cut
+  resistive loss (LM74500-Q1 sec 11.1). Fig 11-1 shows the FET drain pad as a large top-layer VOUT pour
+  with a grid of power vias, the source pads on a wide VIN pour, C_IN and the input TVS straddling VIN
+  to the GND plane next to the FET, and C_OUT from VOUT to GND. onsemi's 4-layer test board (AND90146
+  Fig 9-12) carries input and output currents on top, inner1 and inner2 together, stitched by dense via
+  arrays at the connectors and FET, with inner2 also carrying the gate/enable traces and the bottom layer
+  a solid GND plane - spreading current over several layers is what lowered loss and temperature in its
+  measurements.
+sources:
+- file: research/sources/lm74500-q1.pdf
+  page: 20
+  note: 'sec 11.1: thick traces for source and drain; Fig 11-1 layout: VIN/VOUT pours, drain power vias,
+    CIN + TVS at VIN, COUT at VOUT, GND plane'
+- file: research/sources/and90146-d.pdf
+  page: 6
+  note: 'Layout text + Fig 9-12: 4-layer board, current on top/inner1/inner2, gate traces on inner2, bottom
+    solid GND; via arrays at FETs and terminals'
+status: active
+origin: research:block-reverse-polarity-fet-1
+level: topology
+envelope:
+  pdiss_w:
+    min: 0
+    max: 0.6
+  board_layers:
+    min: 4
+    max: 6
+envelope_note: Scales with load current squared times copper resistance, expressed here via the FET's
+  dissipation budget (the same boards/currents as the thermal record, ~0.5 W). Needs >= 4 layers to spread
+  current over three layers with a GND plane; on 2 layers the rule changes to wider/heavier copper.
+maturity: verified
+generalizes: []
+verification: {by: "second-reader-sonnet", date: "2026-09-27", note: "p20 LM74500-Q1 sec11.1 thick-trace bullet and Fig11-1 VIN/VOUT/GND layout match exactly; p6 AND90146 layout text on top/inner1/inner2 current spread and solid bottom GND matches"}

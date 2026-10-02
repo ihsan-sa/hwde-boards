@@ -1,0 +1,300 @@
+{
+  "associations": [
+    {
+      "cap": "C102",
+      "ic": "U101",
+      "pin": "4",
+      "rail": "/power_in/VCAP",
+      "value": "100nF 50V X7R",
+      "gnd": "/power_in/VM_IN"
+    },
+    {
+      "cap": "C203",
+      "ic": "U201",
+      "pin": "2",
+      "rail": "VM",
+      "value": "100nF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C204",
+      "ic": "U201",
+      "pin": "2",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C205",
+      "ic": "U202",
+      "pin": "5",
+      "rail": "+5V",
+      "value": "10uF 25V X5R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C213",
+      "ic": "U202",
+      "pin": "5",
+      "rail": "+5V",
+      "value": "100nF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C207",
+      "ic": "U203",
+      "pin": "1",
+      "rail": "+5V",
+      "value": "1uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C304",
+      "ic": "U301",
+      "pin": "4",
+      "rail": "+12V",
+      "value": "10uF 50V X7R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C305",
+      "ic": "U301",
+      "pin": "4",
+      "rail": "+12V",
+      "value": "1uF 50V X7R",
+      "max_dist_mm": 5.0,
+      "gnd": "GND"
+    },
+    {
+      "cap": "C301",
+      "ic": "U301",
+      "pin": "20",
+      "rail": "/gate_driver/BSTA",
+      "value": "1uF 50V X7R",
+      "gnd": "/PHASE_A",
+      "max_dist_mm": 5.0
+    },
+    {
+      "cap": "C302",
+      "ic": "U301",
+      "pin": "17",
+      "rail": "/gate_driver/BSTB",
+      "value": "1uF 50V X7R",
+      "gnd": "/PHASE_B",
+      "max_dist_mm": 5.0
+    },
+    {
+      "cap": "C303",
+      "ic": "U301",
+      "pin": "14",
+      "rail": "/gate_driver/BSTC",
+      "value": "1uF 50V X7R",
+      "gnd": "/PHASE_C",
+      "max_dist_mm": 5.0
+    },
+    {
+      "cap": "C401",
+      "ic": "Q401",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C402",
+      "ic": "Q401",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C403",
+      "ic": "Q401",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C404",
+      "ic": "Q401",
+      "pin": "5",
+      "rail": "VM",
+      "value": "100nF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C405",
+      "ic": "Q403",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C406",
+      "ic": "Q403",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C407",
+      "ic": "Q403",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C408",
+      "ic": "Q403",
+      "pin": "5",
+      "rail": "VM",
+      "value": "100nF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C409",
+      "ic": "Q405",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C410",
+      "ic": "Q405",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C411",
+      "ic": "Q405",
+      "pin": "5",
+      "rail": "VM",
+      "value": "10uF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C412",
+      "ic": "Q405",
+      "pin": "5",
+      "rail": "VM",
+      "value": "100nF 50V X7R",
+      "role": "reg_input",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C511",
+      "ic": "U501",
+      "pin": "6",
+      "rail": "+3V3",
+      "value": "100nF 50V X7R",
+      "max_dist_mm": 5.0,
+      "gnd": "GND"
+    },
+    {
+      "cap": "C512",
+      "ic": "U502",
+      "pin": "6",
+      "rail": "+3V3",
+      "value": "100nF 50V X7R",
+      "max_dist_mm": 5.0,
+      "gnd": "GND"
+    },
+    {
+      "cap": "C513",
+      "ic": "U503",
+      "pin": "6",
+      "rail": "+3V3",
+      "value": "100nF 50V X7R",
+      "max_dist_mm": 5.0,
+      "gnd": "GND"
+    },
+    {
+      "cap": "C601",
+      "ic": "U601",
+      "pin": "24",
+      "rail": "+3V3",
+      "value": "100nF 50V X7R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C602",
+      "ic": "U601",
+      "pin": "36",
+      "rail": "+3V3",
+      "value": "100nF 50V X7R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C603",
+      "ic": "U601",
+      "pin": "48",
+      "rail": "+3V3",
+      "value": "100nF 50V X7R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C604",
+      "ic": "U601",
+      "pin": "24",
+      "rail": "+3V3",
+      "value": "4.7uF 25V X5R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C605",
+      "ic": "U601",
+      "pin": "21",
+      "rail": "/VDDA",
+      "value": "1uF 50V X7R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C606",
+      "ic": "U601",
+      "pin": "21",
+      "rail": "/VDDA",
+      "value": "10nF 50V X7R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C607",
+      "ic": "U601",
+      "pin": "20",
+      "rail": "/VDDA",
+      "value": "1uF 50V X7R",
+      "gnd": "GND"
+    },
+    {
+      "cap": "C608",
+      "ic": "U601",
+      "pin": "20",
+      "rail": "/VDDA",
+      "value": "100nF 50V X7R",
+      "gnd": "GND"
+    }
+  ]
+}

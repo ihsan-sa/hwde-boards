@@ -1,0 +1,227 @@
+\input{preamble-template.tex}
+\hsslug{PCB-0018-A bldc-motor-driver}
+\fancyfoot[L]{\hsrunlabel{PCB-0018-A bldc-motor-driver}}
+\setlength{\tabcolsep}{4pt}
+\begin{document}
+
+\hstitleblock{PCB-0018 Rev A \textperiodcentered\ bldc-motor-driver \textperiodcentered\ September 2026}%
+{Owner's guide: 3-phase BLDC motor driver}%
+{What the board does, why its gate drive, current sensing, power loop and
+copper are built the way they are, how to wire it up, what is on it, and what
+still has to happen before anyone orders it.}
+
+PCB-0018-A is a 4-layer, 78 x 78 mm driver for a three-phase brushless
+(BLDC or PMSM) motor. It runs from a 10--28 V bus (12--24 V nominal) and is
+meant for 10 A RMS per phase continuous and 20 A peak, without a heatsink. Six
+60 V N-channel FETs form three half-bridges, a DRV8300D gate driver switches
+them, three 3 mOhm shunts with INA240 amplifiers measure the phase currents, and
+an STM32G431 runs the control loop (sensored or sensorless field-oriented
+control). It is a 3-phase BLDC driver designed from a general spec. The only
+reference was a published demo board seen in one frame of a short video, and
+nobody published that board's spec or parts, so the spec here is ours.
+
+All five build gates pass: ERC, placement, routed DRC, the design checks and
+DFM. The design checks pass with 390 waivers, explained below. Nothing has been
+built or measured, and nothing has been ordered. The 10 A RMS rating is a design
+target, not a proven one.
+
+\begin{hsplate}{top.png}{Top side, as routed}{78 x 78 mm, 4 layers, 2 oz outer}{render}%
+{The three half-bridges and their shunts sit in a row with the phase pads
+(TP401--TP403) on one edge and the power pads (TP101 VM, TP102 GND) beside them.
+The gate driver U301 sits just above the FET row, and the MCU, regulators and
+connectors fill the rest of the board.}
+\end{hsplate}
+
+\section{Schematic}
+\hslead{Eight sheets: power in, regulators, gate driver, power stage, sensing,
+MCU and I/O. The power stage is shown here.}
+
+\begin{hsfigure}{Figure 1 / power stage sheet}%
+{Three legs, each a high-side and a low-side NTMFS5C628NL, a 3 mOhm shunt
+from the low-side source to ground, per-leg ceramics and gate resistors. The
+other seven sheets are in \texttt{reports/schematic.pdf}.}
+\hsdiagram[page=5]{../schematic.pdf}
+\end{hsfigure}
+
+Power comes in on TP101 (VM) and TP102 (GND) and passes a reverse-polarity FET
+(Q101, controlled by U101, an LM74500) before it reaches the bus, the SMCJ28A
+TVS and two 470 uF electrolytics. An LM5164 buck makes +5 V from the bus; a
+TPS61040 boost makes the +12 V gate supply from +5 V, and a TLV75733 LDO makes
++3.3 V for the MCU and the current-sense amplifiers. The MCU drives the gate
+driver with six PWM lines. Phase and bus voltages come back to the MCU through
+150 k / 10 k dividers (1:16), so the 45 V clamp reads 2.8 V at the ADC.
+
+\section{How it works, and why it is built this way}
+\hslead{Correctness came first, then size. These are the parts of the design
+that decide whether the board works.}
+
+\input{design-notes.tex}
+
+\section{Using it}
+\label{sec:using}
+\hslead{Five wire pads for power and motor, two connectors, SWD, two buttons,
+three LEDs.}
+
+\begin{hsblock}
+\hslabel{Table 1 / connections}\par\vspace{8pt}
+{\small
+\begin{tabular}{L{0.16\linewidth} L{0.30\linewidth} L{0.44\linewidth}}
+\hstoprule
+\hshead{Ref} & \hshead{Carries} & \hsaccenthead{Notes} \\
+\hline
+TP101, TP102 & VM, GND & 10--28 V DC. Fit an external 20 A slow fuse: the board has none. Reverse polarity is blocked by Q101. \\
+TP401--TP403 & Phase A, B, C & Motor windings, wire soldered or screw lug. \\
+J701 & GND, +5 V, UART TX, RX & JST-GH 4-pin. 3.3 V logic; +5 V out through a 0.2 A PTC. \\
+J702 & +5 V, GND, HA, HB, HC, ENC A/B/Z & 8-pin sensor connector for Hall sensors or an ABZ encoder, 4.7 k pull-ups, +5 V through a 0.2 A PTC. \\
+J601 & SWD & 2x5, 1.27 mm, the standard ST-Link / J-Link cable. \\
+SW601, SW602 & reset, user & \\
+D601--D603 & power, status, fault LEDs & \\
+\hline
+\end{tabular}}
+\end{hsblock}
+
+The board ships with no firmware. First power-up should be from a
+current-limited bench supply at 12 V with no motor connected: check +5 V,
++12 V and +3.3 V, then program the MCU over SWD. The firmware must hold all six
+driver inputs low until +12 V is up, cap the PWM duty near 95\% so the bootstrap
+capacitors recharge, and pulse the low sides before the first high-side turn-on.
+Set the comparator trip on the current-sense outputs before a motor is ever
+connected, since that is the only overcurrent protection. Then connect the motor
+and raise the current limit in steps while watching the FET and capacitor
+temperatures.
+
+\section{What's on it}
+\hslead{148 machine-placed parts on 45 BOM lines: 17 Basic and 28 Extended
+unique parts. The power and phase pads and the four M3 holes are bare board
+features.}
+
+\begin{hsblock}
+\hslabel{Table 2 / bill of materials}\par\vspace{8pt}
+{\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{L{0.26\linewidth} L{0.28\linewidth} L{0.14\linewidth} L{0.12\linewidth} L{0.06\linewidth}}
+\hstoprule
+\hshead{Designators} & \hshead{Value} & \hshead{LCSC} & \hsaccenthead{Class} & \hshead{Qty} \\
+\hline
+C101,C104 & 470uF 63V & C106675 & Extended & 2 \\
+C102, \ldots, C610 & 100nF 50V X7R & C14663 & Basic & 16 \\
+C201, \ldots, C706 & 2.2nF 50V X7R & C1604 & Basic & 14 \\
+C202 & 22uF 25V X5R & C45783 & Basic & 1 \\
+C204, \ldots, C411 & 10uF 50V X7R & C2918502 & Extended & 11 \\
+C205 & 10uF 25V X5R & C15850 & Basic & 1 \\
+C206, \ldots, C607 & 1uF 50V X7R & C28323 & Basic & 9 \\
+C212 & 1nF 50V X7R & C1588 & Basic & 1 \\
+C404,C408,C412 & 100nF 50V X7R & C76567 & Extended & 3 \\
+C604 & 4.7uF 25V X5R & C1779 & Basic & 1 \\
+C606 & 10nF 50V X7R & C57112 & Basic & 1 \\
+D101 & SMCJ28A & C2943858 & Extended & 1 \\
+D201 & MBR0520L & C5563735 & Extended & 1 \\
+D601 & LED green (power) & C12624 & Extended & 1 \\
+D602 & LED yellow (status) & C2287 & Extended & 1 \\
+D603 & LED red (fault) & C2286 & Basic & 1 \\
+D701, \ldots, D711 & PESD5V0S1BA-ES & C5180216 & Extended & 8 \\
+F701,F702 & PTC 0.2A hold 30V & C69680 & Extended & 2 \\
+FB201 & 600ohm@100MHz ferrite & C1002 & Basic & 1 \\
+J601 & SWD 2x5 1.27mm & C2935458 & Extended & 1 \\
+J701 & JST-GH 4p SMD & C189895 & Extended & 1 \\
+J702 & JST-GH 8p SMD & C42376901 & Extended & 1 \\
+L201 & 22uH shielded & C2849539 & Extended & 1 \\
+L202 & 22uH shielded & C135264 & Extended & 1 \\
+Q101, \ldots, Q406 & NTMFS5C628NL & C145537 & Extended & 7 \\
+R201 & 31.6k 1\% & C25967 & Extended & 1 \\
+R202 & 33.2k 1\% & C23003 & Extended & 1 \\
+R203, \ldots, R601 & 10k & C25804 & Basic & 14 \\
+R204 & 86.6k 1\% & C23121 & Extended & 1 \\
+R206 & 100k & C25803 & Basic & 1 \\
+R301 & 40.2k 1\% & C12447 & Extended & 1 \\
+R401,R402,R403 & 3mR 2512 3W 1\% & C5375459 & Extended & 3 \\
+R411, \ldots, R416 & 10R & C22859 & Basic & 6 \\
+R501, \ldots, R711 & 100 ohm & C22775 & Basic & 11 \\
+R510,R512,R514,R516 & 150k & C22807 & Basic & 4 \\
+R602,R603,R604 & 1k 1\% & C21190 & Basic & 3 \\
+R706,R707,R708 & 4.7k & C23162 & Basic & 3 \\
+SW601,SW602 & Reset switch SMD & C720477 & Extended & 2 \\
+U101 & LM74500-Q1 & C5219210 & Extended & 1 \\
+U201 & LM5164 & C477928 & Extended & 1 \\
+U202 & TPS61040 & C7722 & Extended & 1 \\
+U203 & TLV75733 & C485517 & Extended & 1 \\
+U301 & DRV8300DRGER & C3655801 & Extended & 1 \\
+U501,U502,U503 & INA240A1 & C2060769 & Extended & 3 \\
+U601 & STM32G431CBT6 & C529355 & Extended & 1 \\
+\hline
+\end{tabular}}
+\end{hsblock}
+
+Class here follows the pre-buy list: every part on it is an Extended part and
+the rest are Basic. The full BOM, with MPNs and the do-not-place snubber
+footprints, is \texttt{fab/BOM-full.csv}.
+
+\section{What it costs}
+\hslead{Not estimated yet.}
+
+No cost estimate was made for this board: the quote step was not run, so
+there is no \texttt{fab/quote.json}. With 28 unique Extended parts, JLC's
+per-part feeder fees will be a large share of a 5-board assembly order. Get the
+real number in JLC's own cart (\hsurl{https://cart.jlcpcb.com/quote}) before
+ordering, or run \texttt{order\_quote.py} first. The model spend of generating
+the board was not recorded either.
+
+\section{Ordering at JLCPCB}
+\hslead{Written for a later day. Nothing here has been done, and nothing is
+ordered.}
+
+Before uploading anything, buy the Extended parts into JLC's inventory for 5
+boards. JLC's BOM review can otherwise show one as idle stock, unselected at
+qty 0, until it has been bought in and the review re-run.
+
+\begin{hsblock}
+\hslabel{Table 3 / pre-buy list, 5 boards}\par\vspace{8pt}
+{\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{L{0.14\linewidth} L{0.30\linewidth} L{0.24\linewidth} L{0.08\linewidth} L{0.08\linewidth}}
+\hstoprule
+\hshead{LCSC} & \hshead{Part} & \hsaccenthead{Designators} & \hshead{Per bd} & \hshead{Buy} \\
+\hline
+C106675 & 470uF 63V & C101,C104 & 2 & 10 \\
+C2918502 & 10uF 50V X7R & C204, \ldots, C411 & 11 & 55 \\
+C76567 & 100nF 50V X7R & C404,C408,C412 & 3 & 15 \\
+C2943858 & SMCJ28A & D101 & 1 & 5 \\
+C5563735 & MBR0520L & D201 & 1 & 5 \\
+C12624 & LED green (power) & D601 & 1 & 5 \\
+C2287 & LED yellow (status) & D602 & 1 & 5 \\
+C5180216 & PESD5V0S1BA-ES & D701, \ldots, D711 & 8 & 40 \\
+C69680 & PTC 0.2A hold 30V & F701,F702 & 2 & 10 \\
+C2935458 & SWD 2x5 1.27mm & J601 & 1 & 5 \\
+C189895 & JST-GH 4p SMD & J701 & 1 & 5 \\
+C42376901 & JST-GH 8p SMD & J702 & 1 & 5 \\
+C2849539 & 22uH shielded & L201 & 1 & 5 \\
+C135264 & 22uH shielded & L202 & 1 & 5 \\
+C145537 & NTMFS5C628NL & Q101, \ldots, Q406 & 7 & 35 \\
+C25967 & 31.6k 1\% & R201 & 1 & 5 \\
+C23003 & 33.2k 1\% & R202 & 1 & 5 \\
+C23121 & 86.6k 1\% & R204 & 1 & 5 \\
+C12447 & 40.2k 1\% & R301 & 1 & 5 \\
+C5375459 & 3mR 2512 3W 1\% & R401,R402,R403 & 3 & 15 \\
+C720477 & Reset switch SMD & SW601,SW602 & 2 & 10 \\
+C5219210 & LM74500-Q1 & U101 & 1 & 5 \\
+C477928 & LM5164 & U201 & 1 & 5 \\
+C7722 & TPS61040 & U202 & 1 & 5 \\
+C485517 & TLV75733 & U203 & 1 & 5 \\
+C3655801 & DRV8300DRGER & U301 & 1 & 5 \\
+C2060769 & INA240A1 & U501,U502,U503 & 3 & 15 \\
+C529355 & STM32G431CBT6 & U601 & 1 & 5 \\
+\hline
+\end{tabular}}
+\end{hsblock}
+
+Then, in order: (1) upload \texttt{PCB-0018-A\_bldc-motor-driver\_gerbers.zip};
+(2) check the quote shows 4 layers, 78 x 78 mm, 1.6 mm and the
+JLC04162H-7628A stack-up with 2 oz outer copper; (3) enable PCB Assembly, top
+side; (4) upload \texttt{BOM.csv} and \texttt{CPL.csv}; (5) confirm every part
+matched its LCSC number, especially the Extended ones just bought in; (6) in the
+placement preview check by eye: the TVS D101 and the Schottky D201, the three
+LEDs, the two electrolytics C101 and C104, pin 1 of every IC, and the tab
+orientation of all seven FETs; (7) run JLCDFM as a second opinion; (8) pay.
+Payment is the owner's step, not a session's.
+
+\end{document}

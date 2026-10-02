@@ -1,0 +1,39 @@
+{
+ "script": "route_cleanup",
+ "status": "pass",
+ "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "counts": {
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
+ },
+ "violations": [],
+ "dry_run": true,
+ "ops_applied": 0,
+ "refilled": false,
+ "drc_before": null,
+ "drc_after": null,
+ "ops": [
+  {
+   "op": "remove",
+   "uuid": "c095e0ee-7f3b-492e-af34-24912206b351"
+  },
+  {
+   "op": "remove",
+   "uuid": "f8bce0f4-d889-4fa3-9c94-ce5f4b8e29fd"
+  }
+ ],
+ "dangling_removed": 0,
+ "dangling_segments": 0,
+ "dangling_vias": 0,
+ "loops_broken": 2,
+ "loop_bridge_vetoed": 0,
+ "orphaned_after_loops": 0,
+ "corners_smoothed": 0,
+ "corners": [],
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T09:18:42+00:00",
+ "input": "PCB-0017-A_astra-amp/kicad/PCB-0017-A_astra-amp.kicad_pcb",
+ "input_digest": "sexpr_no_uuid:25b536a668ae8391812dee2607241d8434545162d18d811c53c8733a80bcef0b"
+}

@@ -1,0 +1,268 @@
+{
+ "script": "gen_cost",
+ "board": "astra-amp",
+ "workspace": "PCB-0017-A_astra-amp",
+ "currency": "USD",
+ "prices": {
+  "source": "fitted to Claude Code cost-state session totals, 2026-09-24",
+  "verified": "2026-09-24",
+  "table": "reference/model_prices.yaml"
+ },
+ "rounds": [
+  {
+   "label": "design run",
+   "sessions": [
+    {
+     "id": "565250fb-4c1e-46fe-9cd0-32cc28321e4a",
+     "transcript": "(session transcript, not published)",
+     "usd": 0.6147,
+     "start": "2026-09-27T04:24:04Z",
+     "end": "2026-09-27T04:26:00Z",
+     "messages": 17,
+     "priced_usd": 0.6147,
+     "recorded_usd": 0.6147,
+     "complete": true,
+     "by_step": {
+      "setup": 0.5006,
+      "P0": 0.1141
+     },
+     "unpriced_tokens": {}
+    },
+    {
+     "id": "03d946a7-98da-426d-b976-8afdf4388014",
+     "transcript": "(session transcript, not published)",
+     "usd": 12.6711,
+     "start": "2026-09-27T04:28:55Z",
+     "end": "2026-09-27T05:28:49Z",
+     "messages": 202,
+     "priced_usd": 4.9454,
+     "recorded_usd": 12.6711,
+     "complete": true,
+     "by_step": {
+      "P0": 1.0479,
+      "P1": 3.843,
+      "P2": 0.0545
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 2430316
+     }
+    },
+    {
+     "id": "1fb1c10e-3f39-4009-8fe6-c79ce8a8a90e",
+     "transcript": "(session transcript, not published)",
+     "usd": 29.6178,
+     "start": "2026-09-27T05:32:25Z",
+     "end": "2026-09-27T06:32:06Z",
+     "messages": 383,
+     "priced_usd": 12.0544,
+     "recorded_usd": 29.6178,
+     "complete": true,
+     "by_step": {
+      "P2": 12.0544
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 6773281
+     }
+    },
+    {
+     "id": "f6c82900-67f3-4b26-a17b-22c16a0ca448",
+     "transcript": "(session transcript, not published)",
+     "usd": 13.7539,
+     "start": "2026-09-27T06:48:45Z",
+     "end": "2026-09-27T07:37:05Z",
+     "messages": 126,
+     "priced_usd": 3.2692,
+     "recorded_usd": 13.7539,
+     "complete": true,
+     "by_step": {
+      "P2": 2.1086,
+      "P4": 1.1606
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 4734610
+     }
+    },
+    {
+     "id": "a3b9afe9-1afa-48de-ae06-466ddb9e085a",
+     "transcript": "(session transcript, not published)",
+     "usd": 9.28,
+     "start": "2026-09-27T07:39:52Z",
+     "end": "2026-09-27T08:20:34Z",
+     "messages": 87,
+     "priced_usd": 2.2875,
+     "recorded_usd": 9.28,
+     "complete": true,
+     "by_step": {
+      "P4": 1.9353,
+      "P6": 0.3521
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 2550361
+     }
+    },
+    {
+     "id": "0f96026a-c8d1-4de6-8127-5de4509d22ea",
+     "transcript": "(session transcript, not published)",
+     "usd": 3.7575,
+     "start": "2026-09-27T08:23:40Z",
+     "end": "2026-09-27T08:55:24Z",
+     "messages": 78,
+     "priced_usd": 1.6092,
+     "recorded_usd": 3.7575,
+     "complete": true,
+     "by_step": {
+      "P6": 1.1842,
+      "P7": 0.425
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 1587403
+     }
+    },
+    {
+     "id": "b9a89463-6bfa-4ec3-b733-85293807a83e",
+     "transcript": "(session transcript, not published)",
+     "usd": 8.5254,
+     "start": "2026-09-27T09:02:38Z",
+     "end": "2026-09-27T09:32:28Z",
+     "messages": 64,
+     "priced_usd": 1.1631,
+     "recorded_usd": 8.5254,
+     "complete": true,
+     "by_step": {
+      "P6": 1.1631
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 3092010
+     }
+    },
+    {
+     "id": "a85b975c-49d3-4a10-86c6-3dae4f9508c3",
+     "transcript": "(session transcript, not published)",
+     "usd": 8.784,
+     "start": "2026-09-27T09:35:00Z",
+     "end": "2026-09-27T10:03:22Z",
+     "messages": 60,
+     "priced_usd": 1.2432,
+     "recorded_usd": 8.784,
+     "complete": true,
+     "by_step": {
+      "P6": 1.2432
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 2791914
+     }
+    },
+    {
+     "id": "9484c1d8-229b-49d5-95bf-d853a088ff99",
+     "transcript": "(session transcript, not published)",
+     "usd": 10.2318,
+     "start": "2026-09-27T10:05:35Z",
+     "end": "2026-09-27T10:44:11Z",
+     "messages": 85,
+     "priced_usd": 1.2187,
+     "recorded_usd": 10.2318,
+     "complete": true,
+     "by_step": {
+      "P6": 0.9382,
+      "P8": 0.1724,
+      "P9": 0.108
+     },
+     "unpriced_tokens": {
+      "claude-fable-5-1": 5180290
+     }
+    },
+    {
+     "id": "811c9ae8-91c8-4b8a-8be5-0ce9b22bae49",
+     "transcript": "(session transcript, not published)",
+     "usd": 0.3373,
+     "start": "2026-09-27T10:46:50Z",
+     "end": "2026-09-27T10:55:11Z",
+     "messages": 9,
+     "priced_usd": 0.3373,
+     "recorded_usd": null,
+     "complete": false,
+     "by_step": {
+      "P8": 0.3373
+     },
+     "unpriced_tokens": {}
+    }
+   ],
+   "start": "2026-09-27T04:24:04Z",
+   "end": "2026-09-27T10:55:11Z",
+   "usd": 97.5735,
+   "priced_usd": 28.7427,
+   "recorded_usd": null,
+   "hwde_records_inside": 49,
+   "breakdown": true,
+   "breakdown_reason": null
+  }
+ ],
+ "notes": [],
+ "total_usd": 97.5735,
+ "recorded_usd": null,
+ "loop_logged_usd": null,
+ "by_step": [
+  {
+   "step": "setup",
+   "label": "Before the workspace (brief and skill read)",
+   "usd": 0.5006
+  },
+  {
+   "step": "P0",
+   "label": "Brief and intake",
+   "usd": 1.162
+  },
+  {
+   "step": "P1",
+   "label": "Research",
+   "usd": 3.843
+  },
+  {
+   "step": "P2",
+   "label": "Architecture",
+   "usd": 14.2175
+  },
+  {
+   "step": "P4",
+   "label": "Schematic",
+   "usd": 3.0959
+  },
+  {
+   "step": "P6",
+   "label": "Placement",
+   "usd": 4.8808
+  },
+  {
+   "step": "P7",
+   "label": "Routing",
+   "usd": 0.425
+  },
+  {
+   "step": "P8",
+   "label": "Verification",
+   "usd": 0.5097
+  },
+  {
+   "step": "P9",
+   "label": "DFM, order files and guide",
+   "usd": 0.108
+  },
+  {
+   "step": "unattributed",
+   "label": "Not in the transcript (side calls)",
+   "usd": 68.8308
+  }
+ ],
+ "breakdown": "full",
+ "breakdown_reason": null,
+ "shared": [],
+ "unpriced_tokens": {
+  "claude-fable-5-1": 29140185
+ },
+ "incomplete_sessions": [
+  "811c9ae8-91c8-4b8a-8be5-0ce9b22bae49"
+ ],
+ "missing": [],
+ "status": "pass",
+ "generated": "2026-09-27T10:55:49Z"
+}

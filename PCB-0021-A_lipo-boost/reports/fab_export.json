@@ -1,0 +1,84 @@
+{
+ "script": "fab_export",
+ "status": "pass",
+ "board": "PCB-0021-A_lipo-boost.kicad_pcb",
+ "name": "PCB-0021-A_lipo-boost",
+ "layer_count": 2,
+ "copper_layers": [
+  "F.Cu",
+  "B.Cu"
+ ],
+ "layers_exported": [
+  "F.Cu",
+  "B.Cu",
+  "F.Silkscreen",
+  "B.Silkscreen",
+  "F.Mask",
+  "B.Mask",
+  "F.Paste",
+  "B.Paste",
+  "Edge.Cuts"
+ ],
+ "out_dir": "PCB-0021-A_lipo-boost/fab",
+ "gerber_dir": "PCB-0021-A_lipo-boost/fab/gerbers",
+ "pos_file": "PCB-0021-A_lipo-boost/fab/PCB-0021-A_lipo-boost-pos.csv",
+ "files": [
+  {
+   "name": "PCB-0021-A_lipo-boost-B_Cu.gbl",
+   "sha256": "79ccd85538c189eb10aa384260c435f26e76cd538d96dec43fd5e59254ad58f0",
+   "bytes": 69164
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-B_Mask.gbs",
+   "sha256": "50400675c1a633d54e33a8d9eb546e66a07bcae8302fac2e6df6cc3fd58c3bd3",
+   "bytes": 1220
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-B_Paste.gbp",
+   "sha256": "3eb0f96a302489a1c5f5b5c43293f038d91734b6d160c6933581ededd1d9c8bb",
+   "bytes": 508
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-B_Silkscreen.gbo",
+   "sha256": "4203b5e2ac41407a5bf5b873412b25359d1efeee6dac555aa8aaca5f237e3fb4",
+   "bytes": 509
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-Edge_Cuts.gm1",
+   "sha256": "e7e6a010962bf3351563bc91f259942b320616f0347bc62b58c86e1a86688b98",
+   "bytes": 1024
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-F_Cu.gtl",
+   "sha256": "fc8ff43f4bd78ac9f1d93b3bc9e914a6f037c48ee731a74849dc1660e9ef7ef0",
+   "bytes": 113731
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-F_Mask.gts",
+   "sha256": "ba9f8929c44a33bbc1791d6ed8db707df6cc6f138a8b94abc24a0f1057993d07",
+   "bytes": 4861
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-F_Paste.gtp",
+   "sha256": "f5e8f4cfe20ab29069df98ec2f3f9d8de3a2033ed458943d4ff908a0c53fe7d2",
+   "bytes": 4161
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-F_Silkscreen.gto",
+   "sha256": "975714f4bf80a68dbd37081be388bb225468174a60f3157afd639785a30b4f50",
+   "bytes": 56501
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost-job.gbrjob",
+   "sha256": "450d578080534746ff42fe3a23f0d4d433a8bd1726f314a65e5f6d1aa6074ae8",
+   "bytes": 2727
+  },
+  {
+   "name": "PCB-0021-A_lipo-boost.drl",
+   "sha256": "03789357ca94d231c8c334fc725634cc08d952fd84afca7b22be5279f5eaff94",
+   "bytes": 1225
+  }
+ ],
+ "gerber_zip": "PCB-0021-A_lipo-boost/fab/PCB-0021-A_lipo-boost_gerbers.zip",
+ "gerber_zip_sha256": "7dfc13e6bfca19b4501fe2d2bf74a8e6b3319b063927bff5556b23c9745461ce"
+}

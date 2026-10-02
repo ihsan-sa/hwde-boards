@@ -1,0 +1,35 @@
+{
+  "script": "layer_views",
+  "status": "pass",
+  "input": "PCB-0021-A_lipo-boost/kicad/PCB-0021-A_lipo-boost.kicad_pcb",
+  "layers": [
+    {
+      "layer": "F.Cu",
+      "path": "PCB-0021-A_lipo-boost/reports/layers/PCB-0021-A_lipo-boost_F_Cu.pdf",
+      "labels": 138
+    },
+    {
+      "layer": "B.Cu",
+      "path": "PCB-0021-A_lipo-boost/reports/layers/PCB-0021-A_lipo-boost_B_Cu.pdf",
+      "labels": 28
+    }
+  ],
+  "views": [
+    {
+      "view": "top",
+      "path": "PCB-0021-A_lipo-boost/reports/layers/PCB-0021-A_lipo-boost_top.png",
+      "status": "pass"
+    },
+    {
+      "view": "bottom",
+      "path": "PCB-0021-A_lipo-boost/reports/layers/PCB-0021-A_lipo-boost_bottom.png",
+      "status": "pass"
+    },
+    {
+      "view": "iso",
+      "path": "PCB-0021-A_lipo-boost/reports/layers/PCB-0021-A_lipo-boost_iso.png",
+      "status": "pass"
+    }
+  ],
+  "warnings": []
+}

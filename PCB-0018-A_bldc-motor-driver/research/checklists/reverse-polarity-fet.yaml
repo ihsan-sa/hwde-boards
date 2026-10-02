@@ -1,0 +1,26 @@
+id: reverse-polarity-fet
+kind: coverage-checklist
+applies:
+  topologies: [reverse-polarity-fet]
+requires:
+  - {class: selection, min_level: topology, note: "controller type (reverse-current blocking or not, set by whether the load regenerates) and the N-FET ratings: VDS, VGS vs the charge-pump drive, RDS(on), body diode; TVS breakdown window"}
+  - {class: inrush, min_level: topology, note: "at start-up the bulk charges through the FET body diode before the charge pump enhances it"}
+  - {class: thermal, min_level: topology, note: "I^2 x RDS(on) budget (~0.5 W class), package, junction estimate from R_thetaJA"}
+  - {class: power-loop, min_level: topology, note: "the full load current runs through source and drain copper: wide, spread across layers"}
+  - {class: decoupling, min_level: topology, note: "controller gate/source Kelvin to the FET, charge-pump cap placement and sizing, input cap"}
+  - {class: constraints-emission, min_level: principle, note: "placement group and wide-copper nets the block must emit; an emission contract, not physics"}
+maturity: draft
+sources:
+  - {file: research/sources/lm74500-q1.pdf, page: 16, note: "sec 9.3.1.2.2 MOSFET selection: ID, VDS(max), body-diode source current, RDS(on); 60 V FET with 65 V SOURCE pin; VGS rating vs 13 V drive"}
+  - {file: research/sources/lm74500-q1.pdf, page: 20, note: "sec 11.1 layout guidelines + Fig 11-1 layout example"}
+  - {file: research/sources/and90146-d.pdf, page: 4, note: "MOSFET selection list: VDS by board net, TJ max, logic level, 3x3/5x6 packages, Qg, RDS(on) sized for ~500 mW"}
+prose: >
+  What a designer must hold before laying out a high-side N-FET reverse
+  polarity stage driven by a charge-pump controller: whether reverse current
+  must be blocked (not for a regenerating motor load), the FET ratings and
+  the TVS window, that start-up inrush flows through the body diode, the
+  conduction-loss thermal budget, how the full load current is carried in
+  copper, the controller's gate/VCAP/CIN placement, and what the block emits
+  into constraints. Drawn from the TI LM74500-Q1 datasheet (sec 9-11) and
+  onsemi AND90146 (MOSFET selection and a 4-layer thermal test board).
+origin: research:block-reverse-polarity-fet-1

@@ -1,0 +1,149 @@
+{
+ "version": 1,
+ "ops": [
+  {
+   "op": "remove",
+   "uuid": "bbc3dba0-24c6-4b9d-b711-b714240f7542"
+  },
+  {
+   "op": "remove",
+   "uuid": "6019d057-d285-4532-8d58-d3be09312acd"
+  },
+  {
+   "op": "remove",
+   "uuid": "fa643a26-fa64-4cf0-bae4-4fe59b2592f3"
+  },
+  {
+   "op": "remove",
+   "uuid": "47846ca5-c8c1-40b7-bf24-0c30c746457c"
+  },
+  {
+   "op": "remove",
+   "uuid": "6ed51ced-5771-4e2f-9aea-d2c1d843e2d7"
+  },
+  {
+   "op": "remove",
+   "uuid": "07adba1d-0844-43c0-ac38-07b2032d004a"
+  },
+  {
+   "op": "remove",
+   "uuid": "3aa892f8-663e-437b-a5c9-4b8df7cc3263"
+  },
+  {
+   "op": "remove",
+   "uuid": "8658636c-9f34-4b77-859f-822111cc0880"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    59.6,
+    55.5
+   ],
+   "end": [
+    56.65,
+    55.5
+   ],
+   "width": 0.8,
+   "layer": "F.Cu",
+   "net": "+5V"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    52.65,
+    55.5
+   ],
+   "end": [
+    52.65,
+    60.35
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DP"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    52.65,
+    60.35
+   ],
+   "end": [
+    52.9,
+    60.6
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DP"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    54.65,
+    55.5
+   ],
+   "end": [
+    54.65,
+    60.35
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    54.65,
+    60.35
+   ],
+   "end": [
+    54.4,
+    60.6
+   ],
+   "width": 0.2,
+   "layer": "F.Cu",
+   "net": "/USB_DM"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    47.85,
+    56.1
+   ],
+   "end": [
+    48.915,
+    56.1
+   ],
+   "width": 0.15,
+   "layer": "F.Cu",
+   "net": "/CHG_A"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.915,
+    56.1
+   ],
+   "end": [
+    48.915,
+    61.6
+   ],
+   "width": 0.15,
+   "layer": "F.Cu",
+   "net": "/CHG_A"
+  },
+  {
+   "op": "add_track",
+   "start": [
+    48.915,
+    61.6
+   ],
+   "end": [
+    61.25,
+    61.6
+   ],
+   "width": 0.15,
+   "layer": "F.Cu",
+   "net": "/CHG_A"
+  }
+ ]
+}

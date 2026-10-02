@@ -1,0 +1,73 @@
+{
+ "script": "fp_verify",
+ "status": "pass",
+ "board": "LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL.kicad_mod",
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 1
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL"
+   ],
+   "msg": "pad size(s) [[0.27, 1.5]] mm != datasheet [0.3, 1.2] mm (tol 0.1; min/max of 1 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.27, 1.5]] mm != datasheet [0.3, 1.2] mm (tol 0.1; min/max of 1 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.3,
+    1.2
+   ],
+   "measured_mm": [
+    [
+     0.27,
+     1.5
+    ]
+   ]
+  }
+ ],
+ "footprint": "LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL",
+ "footprint_file": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL.kicad_mod",
+ "copper_pads": 48,
+ "total_pads": 48,
+ "measured_pitch_mm": 0.5,
+ "measured_pad_size_mm": [
+  0.27,
+  1.5
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "LQFP48, 7x7mm body (D1=E1=7.0mm typ, overall D=E=9.0mm typ with leads), 0.5mm pitch",
+  "pad_count": 48,
+  "pitch_mm": 0.5,
+  "pad_size_mm": [
+   0.3,
+   1.2
+  ],
+  "pin1": "1",
+  "notes": "From datasheet Table 94 (LQFP48 mechanical data) and Figure 50 (LQFP48 recommended footprint): 48 perimeter gull-wing leads, lead width b=0.22mm typ (0.17-0.27mm range), recommended land pad 0.30mm x 1.20mm at 0.50mm pitch. Footprint span (pad outer edge to pad outer edge) 9.70mm x 9.70mm, inner span 7.30mm x 7.30mm between pad inner edges, 5.80mm between pad centers on opposite sides (per Figure 50 dimensions 9.70/7.30/5.80/1.20/0.30/0.50). No exposed pad on this package; pad_count=48 covers only the 48 perimeter leads."
+ },
+ "svg": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T19:40:16+00:00",
+ "input": "PCB-0018-A_bldc-motor-driver/lib/aiee.pretty/LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL.kicad_mod",
+ "input_digest": "sexpr_no_uuid:f93d5f733dbdb973984b6d9e711f5c4a94889d29a821f3e7fdcf1d2025217d2e"
+}

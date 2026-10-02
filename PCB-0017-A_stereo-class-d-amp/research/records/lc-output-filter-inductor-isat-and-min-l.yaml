@@ -1,0 +1,56 @@
+id: lc-output-filter-inductor-isat-and-min-l
+classes: [selection]
+applies:
+  topologies: [lc-output-filter]
+  packages: []
+  interfaces: []
+  parts: []
+rule:
+  enforced_by: null
+  peak_current: "audio peak at the minimum load + idle ripple peak PVDD/(8 L fpwm)"
+  isat_use: "read the L-vs-I curve at that peak; never run to the Isat rating"
+  min_l_at_oc_trip: "L(I_oc_trip) >= the IC's minimum output-filter inductance"
+  tpa31xxd2_min_l_uh: 1
+  tpa3116_3118_oc_trip_a: 7.5
+prose: >
+  Three current checks on the filter inductor. (1) Peak current is the audio
+  peak into the lowest load plus the switching ripple; at idle the ripple
+  peak is PVDD/(8 L fpwm) (eq 12, p22, from Fig 1-25's triangle at 50 %
+  duty), which is 0.38 A for 12 V / 10 uH / 400 kHz. (2) Isat is a vendor
+  definition, not a ceiling: some vendors rate Isat at a 30 % inductance drop
+  and "use of this inductor all the way to the Isat rating results in very
+  poor audio performance" (1.4.1, Fig 1-20, p19). Coilcraft's class-D table
+  (doc 1404, p1) prints Isat at 10 / 20 / 30 % drop side by side (e.g.
+  UA8014 10 uH: 8.7 / 9.1 / 9.4 A), which is the form to compare against.
+  Judge the part on its L-vs-I curve at the peak, not on the headline. THD
+  at mid power tracks inductor linearity (Table 1-6, Fig 1-21/1-22, p19-20).
+  (3) Minimum inductance at the overcurrent trip: with a shorted output the
+  inductor sees the full PVDD and di/dt = PVDD/L until the OC protection
+  responds (1.4.3, eq 13, p22-23); the TPA31xxD2 datasheet requires
+  Lo >= 1 uH "under short-circuit condition" (6.3, p5) and trips at 7.5 A
+  for TPA3116D2/TPA3118D2, 4.5 A for TPA3130D2 (6.6, p7). So the inductor's
+  curve must still show >= 1 uH at 7.5 A; a 10 uH part rated 5.5 A Isat
+  passes only if its curve, not its rating, says so. TI's own EVM uses a
+  10 uH 5.8 A part (Toko 931BS-100M, BOM item 20, p9).
+sources:
+  - {file: research/sources/slaa701b.pdf, page: 19, note: "1.4.1 inductor linearity: Fig 1-20 saturation curve, Isat defined at up to 30% drop by some vendors, running to Isat gives very poor audio; Table 1-6 measured L change 1-20 A"}
+  - {file: research/sources/slaa701b.pdf, page: 20, note: "Fig 1-21 THD+N vs output power and Fig 1-22 THD+N vs frequency at 20 W/4 ohm for the four Table 1-6 inductors: the more linear parts sit lower, especially 1-6 kHz"}
+  - {file: research/sources/slaa701b.pdf, page: 22, note: "Fig 1-25 inductor V/I triangles; eq 12 I_ripple_peak = PVDD/(8 L fpwm); 1.4.3 minimum inductance keeps OC protection ahead of a shorted output"}
+  - {file: research/sources/slaa701b.pdf, page: 23, note: "eq 13 di = PVDD/L x OC response time; TPA3251 example 5 uH min, 150 ns, 36 V -> 1.08 A rise"}
+  - {file: research/sources/tpa3116d2.pdf, page: 5, note: "6.3 table row Lo: minimum output filter inductance under short-circuit condition 1 uH"}
+  - {file: research/sources/tpa3116d2.pdf, page: 7, note: "6.6 AC characteristics: over current trip point 7.5 A (TPA3118D2, TPA3116D2), 4.5 A (TPA3130D2); fOSC 400 kHz nominal at AM=000"}
+  - {file: research/sources/slou336b.pdf, page: 9, note: "Table 2 BOM item 20: L1-L4 Toko 931BS-100M inductor 10 uH 5.8 A type D128C"}
+  - {file: research/sources/doc1404_classd.pdf, page: 1, note: "Coilcraft table: Isat quoted at 10%, 20% and 30% inductance drop (UA8014 10 uH: 8.7/9.1/9.4 A) and Irms at 20/40 C rise; linearity called out as the THD+N lever"}
+status: active
+origin: research:block-lc-output-filter-1
+level: topology
+envelope:
+  ioc_trip_a: {min: 4.5, max: 7.5}
+maturity: verified
+generalizes: []
+envelope_note: >
+  Scales with the IC's overcurrent trip: the minimum-L check is evaluated at
+  that current, and the sourced trips are 4.5 A (TPA3130D2) and 7.5 A
+  (TPA3116D2/TPA3118D2, datasheet p7) with the 1 uH floor (p5). Other
+  stages carry their own floor and response time and must be re-sourced.
+verification: {by: "second-reader", date: "2026-09-27", note: "Pass 2: new citation slaa701b p20 (Fig 1-21 THD+N vs power, Fig 1-22 THD+N vs frequency at 20 W/4 ohm, four Table 1-6 inductors, linear parts lower esp. 1-6 kHz) matches the page; envelope narrowed to ioc_trip_a 4.5-7.5 A = tpa3116 p7 trip points with the p5 1 uH floor. Rest unchanged from pass 1."}

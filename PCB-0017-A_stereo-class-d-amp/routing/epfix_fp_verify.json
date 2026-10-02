@@ -1,0 +1,101 @@
+{
+ "script": "fp_verify",
+ "status": "violations",
+ "board": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
+ "counts": {
+  "total": 2,
+  "by_severity": {
+   "error": 1,
+   "warning": 1
+  },
+  "by_source": {
+   "check.fp_verify": 2
+  }
+ },
+ "violations": [
+  {
+   "check": "fp_verify",
+   "severity": "error",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP"
+   ],
+   "msg": "copper pad count 49 != datasheet 32",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "copper pad count 49 != datasheet 32",
+     "pos": null
+    }
+   ],
+   "kind": "pad_count",
+   "expected": 32,
+   "measured": 49
+  },
+  {
+   "check": "fp_verify",
+   "severity": "warning",
+   "pos": null,
+   "layer": "F.Cu",
+   "net": null,
+   "refs": [
+    "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP"
+   ],
+   "msg": "pad size(s) [[0.343, 1.731], [3.71, 3.81]] mm != datasheet [0.45, 1.5] mm (tol 0.1; min/max of 3 distinct sizes)",
+   "source": "check.fp_verify",
+   "items": [
+    {
+     "msg": "pad size(s) [[0.343, 1.731], [3.71, 3.81]] mm != datasheet [0.45, 1.5] mm (tol 0.1; min/max of 3 distinct sizes)",
+     "pos": null
+    }
+   ],
+   "kind": "pad_size",
+   "expected_mm": [
+    0.45,
+    1.5
+   ],
+   "measured_mm": [
+    [
+     0.343,
+     1.731
+    ],
+    [
+     3.71,
+     3.81
+    ]
+   ]
+  }
+ ],
+ "footprint": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+ "footprint_file": "lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
+ "copper_pads": 49,
+ "total_pads": 49,
+ "measured_pitch_mm": 0.6364,
+ "measured_pad_size_mm": [
+  0.343,
+  1.731
+ ],
+ "has_courtyard": true,
+ "has_silk": true,
+ "land_pattern": {
+  "package": "HTSSOP-32 PowerPAD pad-down, TI drawing DAP0032C (4223691/A, 05/2017)",
+  "pad_count": 32,
+  "pitch_mm": 0.65,
+  "pad_size_mm": [
+   1.5,
+   0.45
+  ],
+  "row_spacing_mm": 7.5,
+  "drill_mm": 0.2,
+  "pin1": "1",
+  "notes": "From the DAP0032C recommended land pattern (package outline pages, TI lit 4223691/A + 4225303/A generic view): body 11.1/10.9mm x 6.2/6.0mm, 1.2mm max height, 30x 0.65mm lead pitch, 32x lead pads (1.5 x 0.45mm each), overall pad-row span (7.5mm) per the board-layout drawing. Exposed thermal pad land: nominal 3.04 x 3.74mm (min/max range 2.46-3.04mm x 3.16-3.74mm per the package outline); note 9 on the land-pattern drawing: 'size of metal pad may vary due to creepage requirement'. Thermal vias in the pad shown at (0.2mm TYP) diameter on a (1.2mm TYP)/(1.3mm TYP) grid - grid pitch is stated but an explicit via count is not; datasheet points to TI app notes SLMA002 and SLMA004 for the thermal-pad/via design itself. Stencil (EXAMPLE STENCIL DESIGN, note 8: 'package is designed to be soldered to a thermal pad on the board'): exposed-pad aperture options by stencil thickness - 0.175mm->2.57x3.16mm, 0.15mm->2.78x3.41mm, 0.125mm->3.04x3.74mm (shown/nominal), 0.1mm->3.40x4.18mm; 100% printed solder coverage by area recommended over the exposed pad. Signal-pad solder mask is non-solder-mask-defined per the package drawing's solder mask detail."
+ },
+ "svg": "lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.overlay.svg",
+ "report_schema": 1,
+ "checker_version": 1,
+ "generated_at": "2026-09-27T11:54:21+00:00",
+ "input": "lib/aiee.pretty/HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP.kicad_mod",
+ "input_digest": "sexpr_no_uuid:35ee2e7d8bb5e39c15c15b107456eac2d1316fea71e30bc06293871c201ba885"
+}

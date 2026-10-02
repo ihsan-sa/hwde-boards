@@ -1,0 +1,31 @@
+id: linear-charger-input-dpm-and-startup-behaviour
+classes:
+- sequencing
+applies:
+  topologies:
+  - linear-charger-power-path
+  packages: []
+  interfaces: []
+  parts: []
+rule: null
+prose: 'Power-path states to design around: valid input needs UVLO < VIN < VOVP and VIN > VBAT + VIN(DT);
+  OUT then regulates (4.4 V for BQ24074) with system priority. VIN-DPM (4.5 V typ, 4.35-4.63) reduces
+  input current in USB100/USB500 modes when a weak source sags; DPPM reduces charge current when load
+  + charge exceed the limit; below VBSUP1 the battery supplements the load with the FET fully on, and
+  a short on OUT in supplement mode turns OUT off after a deglitch and retries on a recovery timer. Startup
+  begins at 100 mA before the programmed limit applies; a shorted ILIM/ISET or OUT is detected at startup.
+  Fast-charge termination is disabled in DPPM and supplement modes, so a heavy load can stretch charge
+  time to the safety timer.'
+sources:
+- file: research/sources/bq24074.pdf
+  page: 22
+  note: 9.3.4.1 VIN-DPM, DPPM, battery supplement and short protection text
+- file: research/sources/bq24074.pdf
+  page: 20
+  note: 'startup flow chart: PGOOD, ILIM/ISET short check, 100 mA start (text read of the chart nodes)'
+status: active
+origin: research:block-linear-charger-power-path-1
+level: principle
+maturity: verified
+envelope: null
+verification: {by: "second-reader", date: "2026-10-01", note: "p22 text: VIN-DPM 4.35/4.5/4.63 (EN2=LO), DPPM, supplement, 250 us deglitch/60 ms recovery, termination disabled in DPPM/supplement; p20 startup 100 mA after ILIM/ISET short check and VOUT>VO(SC1). Principle, no envelope."}

@@ -1,0 +1,1108 @@
+{
+ "script": "bom_cpl",
+ "status": "pass",
+ "board": "PCB-0017-A_astra-amp.kicad_pcb",
+ "n_parts": 39,
+ "n_placed": 39,
+ "bom": "PCB-0017-A_astra-amp/fab/BOM.csv",
+ "bom_full": "PCB-0017-A_astra-amp/fab/BOM-full.csv",
+ "cpl": "PCB-0017-A_astra-amp/fab/CPL.csv",
+ "prebuy": "PCB-0017-A_astra-amp/fab/prebuy.csv",
+ "build_qty": 5,
+ "bom_rows": [
+  {
+   "Comment": "1uF 50V X7R",
+   "Designator": "C1,C2,C3,C4",
+   "Footprint": "C0805",
+   "LCSC": "C28323"
+  },
+  {
+   "Comment": "1uF 25V X7R",
+   "Designator": "C5",
+   "Footprint": "C0603",
+   "LCSC": "C106858"
+  },
+  {
+   "Comment": "100nF 50V X7R",
+   "Designator": "C6,C9,C10",
+   "Footprint": "C0603",
+   "LCSC": "C14663"
+  },
+  {
+   "Comment": "1nF 50V NP0",
+   "Designator": "C7,C8",
+   "Footprint": "C0603",
+   "LCSC": "C106246"
+  },
+  {
+   "Comment": "10uF 25V X5R",
+   "Designator": "C11,C12",
+   "Footprint": "C0805",
+   "LCSC": "C15850"
+  },
+  {
+   "Comment": "100uF 35V polymer",
+   "Designator": "C13",
+   "Footprint": "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+   "LCSC": "C46550467"
+  },
+  {
+   "Comment": "100uF 35V elec",
+   "Designator": "C14",
+   "Footprint": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
+   "LCSC": "C2992596"
+  },
+  {
+   "Comment": "220nF 50V X7R",
+   "Designator": "C15,C16,C17,C18",
+   "Footprint": "C0805",
+   "LCSC": "C5378"
+  },
+  {
+   "Comment": "680nF 50V X7R",
+   "Designator": "C19,C20,C21,C22",
+   "Footprint": "C0805",
+   "LCSC": "C107133"
+  },
+  {
+   "Comment": "10nF 50V X7R",
+   "Designator": "C23,C24,C25,C26",
+   "Footprint": "C0402",
+   "LCSC": "C15195"
+  },
+  {
+   "Comment": "SMBJ15A",
+   "Designator": "D1",
+   "Footprint": "SMB_L4.6-W3.6-LS5.3-RD",
+   "LCSC": "C113988"
+  },
+  {
+   "Comment": "10uH 5.5A",
+   "Designator": "L1,L2,L3,L4",
+   "Footprint": "IND-SMD_L7.3-W6.6_MHCI06030",
+   "LCSC": "C207842"
+  },
+  {
+   "Comment": "5.6k 1%",
+   "Designator": "R1",
+   "Footprint": "R0603",
+   "LCSC": "C23189"
+  },
+  {
+   "Comment": "100k 1%",
+   "Designator": "R2,R3",
+   "Footprint": "R0603",
+   "LCSC": "C25803"
+  },
+  {
+   "Comment": "3.3R 1%",
+   "Designator": "R4,R5,R6,R7",
+   "Footprint": "R0603",
+   "LCSC": "C137725"
+  },
+  {
+   "Comment": "TPA3118D2DAPR",
+   "Designator": "U1",
+   "Footprint": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+   "LCSC": "C46497"
+  }
+ ],
+ "prebuy_rows": [
+  {
+   "LCSC": "C106858",
+   "MPN": "CC0603KRX7R8BB105",
+   "Comment": "1uF 25V X7R",
+   "Designator": "C5",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C106246",
+   "MPN": "CC0603JRNPO9BN102",
+   "Comment": "1nF 50V NP0",
+   "Designator": "C7,C8",
+   "Qty Per Board": "2",
+   "Boards": "5",
+   "Qty To Buy": "10",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C46550467",
+   "MPN": "MA35V100M6X8",
+   "Comment": "100uF 35V polymer",
+   "Designator": "C13",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C2992596",
+   "MPN": "FZ100UF35V90RV0064",
+   "Comment": "100uF 35V elec",
+   "Designator": "C14",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C107133",
+   "MPN": "CC0805KKX7R9BB684",
+   "Comment": "680nF 50V X7R",
+   "Designator": "C19,C20,C21,C22",
+   "Qty Per Board": "4",
+   "Boards": "5",
+   "Qty To Buy": "20",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C113988",
+   "MPN": "SMBJ15A",
+   "Comment": "SMBJ15A",
+   "Designator": "D1",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C207842",
+   "MPN": "SLO0630H100MTT",
+   "Comment": "10uH 5.5A",
+   "Designator": "L1,L2,L3,L4",
+   "Qty Per Board": "4",
+   "Boards": "5",
+   "Qty To Buy": "20",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C137725",
+   "MPN": "RC0603FR-073R3L",
+   "Comment": "3.3R 1%",
+   "Designator": "R4,R5,R6,R7",
+   "Qty Per Board": "4",
+   "Boards": "5",
+   "Qty To Buy": "20",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  },
+  {
+   "LCSC": "C46497",
+   "MPN": "TPA3118D2DAPR",
+   "Comment": "TPA3118D2DAPR",
+   "Designator": "U1",
+   "Qty Per Board": "1",
+   "Boards": "5",
+   "Qty To Buy": "5",
+   "Note": "Extended part: JLC's BOM review may show it as idle stock (unselected, qty 0) that has to be bought into your parts inventory before assembly."
+  }
+ ],
+ "bom_full_rows": [
+  {
+   "Comment": "1uF 50V X7R",
+   "Designator": "C1,C2,C3,C4",
+   "Qty Per Board": "4",
+   "Footprint": "C0805",
+   "MPN": "CL21B105KBFNNNE",
+   "LCSC": "C28323",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "1uF 25V X7R",
+   "Designator": "C5",
+   "Qty Per Board": "1",
+   "Footprint": "C0603",
+   "MPN": "CC0603KRX7R8BB105",
+   "LCSC": "C106858",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "100nF 50V X7R",
+   "Designator": "C6,C9,C10",
+   "Qty Per Board": "3",
+   "Footprint": "C0603",
+   "MPN": "CC0603KRX7R9BB104",
+   "LCSC": "C14663",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "1nF 50V NP0",
+   "Designator": "C7,C8",
+   "Qty Per Board": "2",
+   "Footprint": "C0603",
+   "MPN": "CC0603JRNPO9BN102",
+   "LCSC": "C106246",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "10uF 25V X5R",
+   "Designator": "C11,C12",
+   "Qty Per Board": "2",
+   "Footprint": "C0805",
+   "MPN": "CL21A106KAYNNNE",
+   "LCSC": "C15850",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "100uF 35V polymer",
+   "Designator": "C13",
+   "Qty Per Board": "1",
+   "Footprint": "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+   "MPN": "MA35V100M6X8",
+   "LCSC": "C46550467",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "100uF 35V elec",
+   "Designator": "C14",
+   "Qty Per Board": "1",
+   "Footprint": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
+   "MPN": "FZ100UF35V90RV0064",
+   "LCSC": "C2992596",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "220nF 50V X7R",
+   "Designator": "C15,C16,C17,C18",
+   "Qty Per Board": "4",
+   "Footprint": "C0805",
+   "MPN": "CL21B224KBFNNNE",
+   "LCSC": "C5378",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "680nF 50V X7R",
+   "Designator": "C19,C20,C21,C22",
+   "Qty Per Board": "4",
+   "Footprint": "C0805",
+   "MPN": "CC0805KKX7R9BB684",
+   "LCSC": "C107133",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "10nF 50V X7R",
+   "Designator": "C23,C24,C25,C26",
+   "Qty Per Board": "4",
+   "Footprint": "C0402",
+   "MPN": "CL05B103KB5NNNC",
+   "LCSC": "C15195",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "SMBJ15A",
+   "Designator": "D1",
+   "Qty Per Board": "1",
+   "Footprint": "SMB_L4.6-W3.6-LS5.3-RD",
+   "MPN": "SMBJ15A",
+   "LCSC": "C113988",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "10uH 5.5A",
+   "Designator": "L1,L2,L3,L4",
+   "Qty Per Board": "4",
+   "Footprint": "IND-SMD_L7.3-W6.6_MHCI06030",
+   "MPN": "SLO0630H100MTT",
+   "LCSC": "C207842",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "5.6k 1%",
+   "Designator": "R1",
+   "Qty Per Board": "1",
+   "Footprint": "R0603",
+   "MPN": "0603WAF5601T5E",
+   "LCSC": "C23189",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "100k 1%",
+   "Designator": "R2,R3",
+   "Qty Per Board": "2",
+   "Footprint": "R0603",
+   "MPN": "0603WAF1003T5E",
+   "LCSC": "C25803",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "3.3R 1%",
+   "Designator": "R4,R5,R6,R7",
+   "Qty Per Board": "4",
+   "Footprint": "R0603",
+   "MPN": "RC0603FR-073R3L",
+   "LCSC": "C137725",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "TPA3118D2DAPR",
+   "Designator": "U1",
+   "Qty Per Board": "1",
+   "Footprint": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+   "MPN": "TPA3118D2DAPR",
+   "LCSC": "C46497",
+   "Assembly Class": "smt_placed",
+   "Instructions": ""
+  },
+  {
+   "Comment": "Bare SMD wire-pad pair, +12V / GND",
+   "Designator": "J1",
+   "Qty Per Board": "1",
+   "Footprint": "2x SMD pad, approx 3.0x6.0mm each, >=1.5mm apart, no connector body",
+   "MPN": "",
+   "LCSC": "",
+   "Assembly Class": "board_feature",
+   "Instructions": "Realised in copper - nothing to buy or place."
+  },
+  {
+   "Comment": "Bare SMD wire-pad trio, R / GND / L stereo line input",
+   "Designator": "J2",
+   "Qty Per Board": "1",
+   "Footprint": "3x SMD pad, no connector body",
+   "MPN": "",
+   "LCSC": "",
+   "Assembly Class": "board_feature",
+   "Instructions": "Realised in copper - nothing to buy or place."
+  },
+  {
+   "Comment": "Bare SMD wire-pad pair, left speaker +/- (BTL, neither terminal is ground)",
+   "Designator": "J3",
+   "Qty Per Board": "1",
+   "Footprint": "2x SMD pad, no connector body",
+   "MPN": "",
+   "LCSC": "",
+   "Assembly Class": "board_feature",
+   "Instructions": "Realised in copper - nothing to buy or place."
+  },
+  {
+   "Comment": "Bare SMD wire-pad pair, right speaker +/- (BTL, neither terminal is ground)",
+   "Designator": "J4",
+   "Qty Per Board": "1",
+   "Footprint": "2x SMD pad, no connector body",
+   "MPN": "",
+   "LCSC": "",
+   "Assembly Class": "board_feature",
+   "Instructions": "Realised in copper - nothing to buy or place."
+  },
+  {
+   "Comment": "Bare SMD test-point pad, GND probe",
+   "Designator": "TP1",
+   "Qty Per Board": "1",
+   "Footprint": "1x SMD pad, no connector body",
+   "MPN": "",
+   "LCSC": "",
+   "Assembly Class": "board_feature",
+   "Instructions": "Realised in copper - nothing to buy or place."
+  }
+ ],
+ "cpl_rows": [
+  {
+   "Designator": "C1",
+   "Mid X": "16.2000",
+   "Mid Y": "-27.6000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C2",
+   "Mid X": "16.2000",
+   "Mid Y": "-29.5000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "C3",
+   "Mid X": "16.2000",
+   "Mid Y": "-23.0000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C4",
+   "Mid X": "16.2000",
+   "Mid Y": "-24.9000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "C5",
+   "Mid X": "19.6000",
+   "Mid Y": "-25.6000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "C6",
+   "Mid X": "30.6000",
+   "Mid Y": "-36.2000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C7",
+   "Mid X": "28.2000",
+   "Mid Y": "-33.9500",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C8",
+   "Mid X": "32.2000",
+   "Mid Y": "-21.7000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C9",
+   "Mid X": "27.8500",
+   "Mid Y": "-35.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C10",
+   "Mid X": "32.2000",
+   "Mid Y": "-20.2000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C11",
+   "Mid X": "34.1500",
+   "Mid Y": "-37.3000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C12",
+   "Mid X": "34.6500",
+   "Mid Y": "-19.2000",
+   "Layer": "Top",
+   "Rotation": "270.0000"
+  },
+  {
+   "Designator": "C13",
+   "Mid X": "32.5000",
+   "Mid Y": "-13.9000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C14",
+   "Mid X": "29.8000",
+   "Mid Y": "-41.0000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C15",
+   "Mid X": "32.4000",
+   "Mid Y": "-34.1500",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C16",
+   "Mid X": "33.7000",
+   "Mid Y": "-30.8000",
+   "Layer": "Top",
+   "Rotation": "270.0000"
+  },
+  {
+   "Designator": "C17",
+   "Mid X": "33.9000",
+   "Mid Y": "-26.8500",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C18",
+   "Mid X": "33.8000",
+   "Mid Y": "-23.3600",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C19",
+   "Mid X": "40.5000",
+   "Mid Y": "-41.7500",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C20",
+   "Mid X": "56.0000",
+   "Mid Y": "-28.0000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "C21",
+   "Mid X": "40.5000",
+   "Mid Y": "-17.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C22",
+   "Mid X": "49.5000",
+   "Mid Y": "-28.0000",
+   "Layer": "Top",
+   "Rotation": "270.0000"
+  },
+  {
+   "Designator": "C23",
+   "Mid X": "46.3000",
+   "Mid Y": "-41.7500",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C24",
+   "Mid X": "50.5000",
+   "Mid Y": "-43.0000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "C25",
+   "Mid X": "46.3000",
+   "Mid Y": "-17.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "C26",
+   "Mid X": "48.0000",
+   "Mid Y": "-28.0000",
+   "Layer": "Top",
+   "Rotation": "90.0000"
+  },
+  {
+   "Designator": "D1",
+   "Mid X": "39.5000",
+   "Mid Y": "-10.9000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "L1",
+   "Mid X": "40.5000",
+   "Mid Y": "-37.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "L2",
+   "Mid X": "50.1000",
+   "Mid Y": "-37.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "L3",
+   "Mid X": "40.5000",
+   "Mid Y": "-22.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "L4",
+   "Mid X": "50.1000",
+   "Mid Y": "-22.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R1",
+   "Mid X": "19.6000",
+   "Mid Y": "-27.1000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "R2",
+   "Mid X": "19.6000",
+   "Mid Y": "-22.6000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "R3",
+   "Mid X": "19.6000",
+   "Mid Y": "-29.4000",
+   "Layer": "Top",
+   "Rotation": "180.0000"
+  },
+  {
+   "Designator": "R4",
+   "Mid X": "43.9000",
+   "Mid Y": "-41.7500",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R5",
+   "Mid X": "50.5000",
+   "Mid Y": "-41.4500",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R6",
+   "Mid X": "43.9000",
+   "Mid Y": "-17.4000",
+   "Layer": "Top",
+   "Rotation": "0.0000"
+  },
+  {
+   "Designator": "R7",
+   "Mid X": "46.6000",
+   "Mid Y": "-28.0000",
+   "Layer": "Top",
+   "Rotation": "270.0000"
+  },
+  {
+   "Designator": "U1",
+   "Mid X": "26.0000",
+   "Mid Y": "-27.0000",
+   "Layer": "Top",
+   "Rotation": "270.0000"
+  }
+ ],
+ "assembly_classes": {
+  "C1": "smt_placed",
+  "C2": "smt_placed",
+  "C3": "smt_placed",
+  "C4": "smt_placed",
+  "C5": "smt_placed",
+  "C6": "smt_placed",
+  "C7": "smt_placed",
+  "C8": "smt_placed",
+  "C9": "smt_placed",
+  "C10": "smt_placed",
+  "C11": "smt_placed",
+  "C12": "smt_placed",
+  "C13": "smt_placed",
+  "C14": "smt_placed",
+  "C15": "smt_placed",
+  "C16": "smt_placed",
+  "C17": "smt_placed",
+  "C18": "smt_placed",
+  "C19": "smt_placed",
+  "C20": "smt_placed",
+  "C21": "smt_placed",
+  "C22": "smt_placed",
+  "C23": "smt_placed",
+  "C24": "smt_placed",
+  "C25": "smt_placed",
+  "C26": "smt_placed",
+  "D1": "smt_placed",
+  "J1": "board_feature",
+  "J2": "board_feature",
+  "J3": "board_feature",
+  "J4": "board_feature",
+  "L1": "smt_placed",
+  "L2": "smt_placed",
+  "L3": "smt_placed",
+  "L4": "smt_placed",
+  "R1": "smt_placed",
+  "R2": "smt_placed",
+  "R3": "smt_placed",
+  "R4": "smt_placed",
+  "R5": "smt_placed",
+  "R6": "smt_placed",
+  "R7": "smt_placed",
+  "TP1": "board_feature",
+  "U1": "smt_placed"
+ },
+ "class_counts": {
+  "smt_placed": 39,
+  "board_feature": 5
+ },
+ "not_placed": [],
+ "rotation_audit": [
+  {
+   "ref": "C1",
+   "package": "C0805",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C2",
+   "package": "C0805",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C3",
+   "package": "C0805",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C4",
+   "package": "C0805",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C5",
+   "package": "C0603",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C6",
+   "package": "C0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C7",
+   "package": "C0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C8",
+   "package": "C0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C9",
+   "package": "C0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C10",
+   "package": "C0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C11",
+   "package": "C0805",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C12",
+   "package": "C0805",
+   "base_rot": -90.0,
+   "correction": 0.0,
+   "final_rot": 270.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C13",
+   "package": "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C14",
+   "package": "CAP-SMD_BD6.3-L6.6-W6.6-LS7.3-FD",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C15",
+   "package": "C0805",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C16",
+   "package": "C0805",
+   "base_rot": -90.0,
+   "correction": 0.0,
+   "final_rot": 270.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C17",
+   "package": "C0805",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C18",
+   "package": "C0805",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C19",
+   "package": "C0805",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C20",
+   "package": "C0805",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C21",
+   "package": "C0805",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C22",
+   "package": "C0805",
+   "base_rot": -90.0,
+   "correction": 0.0,
+   "final_rot": 270.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C23",
+   "package": "C0402",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C24",
+   "package": "C0402",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C25",
+   "package": "C0402",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "C26",
+   "package": "C0402",
+   "base_rot": 90.0,
+   "correction": 0.0,
+   "final_rot": 90.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "D1",
+   "package": "SMB_L4.6-W3.6-LS5.3-RD",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "L1",
+   "package": "IND-SMD_L7.3-W6.6_MHCI06030",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "L2",
+   "package": "IND-SMD_L7.3-W6.6_MHCI06030",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "L3",
+   "package": "IND-SMD_L7.3-W6.6_MHCI06030",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "L4",
+   "package": "IND-SMD_L7.3-W6.6_MHCI06030",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R1",
+   "package": "R0603",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R2",
+   "package": "R0603",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R3",
+   "package": "R0603",
+   "base_rot": 180.0,
+   "correction": 0.0,
+   "final_rot": 180.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R4",
+   "package": "R0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R5",
+   "package": "R0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R6",
+   "package": "R0603",
+   "base_rot": 0.0,
+   "correction": 0.0,
+   "final_rot": 0.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "R7",
+   "package": "R0603",
+   "base_rot": -90.0,
+   "correction": 0.0,
+   "final_rot": 270.0,
+   "matched": null,
+   "layer": "Top"
+  },
+  {
+   "ref": "U1",
+   "package": "HTSSOP-32_L11.0-W6.1-P0.65-LS8.1-BL-EP",
+   "base_rot": -90.0,
+   "correction": 0.0,
+   "final_rot": 270.0,
+   "matched": null,
+   "layer": "Top"
+  }
+ ],
+ "n_rotation_corrections": 0,
+ "missing_lcsc": [],
+ "missing_lcsc_unplaced": [
+  "J1",
+  "J2",
+  "J3",
+  "J4",
+  "TP1"
+ ],
+ "unsourced": [],
+ "off_lcsc": [],
+ "unplaced_smt": [],
+ "qty_mismatch": [],
+ "violations": [],
+ "bom_complete": true
+}
