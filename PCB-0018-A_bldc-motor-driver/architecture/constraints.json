@@ -129,7 +129,7 @@
      "operating_point": {"vin_v": 28, "vout_v": 12, "fsw_khz": 25, "edge_ns": 50, "pdiss_w": 0.1, "board_layers": 4,
                          "switching_kind": "hard", "source_kind": "dc-input"}},
     {"topology": "half-bridge-inverter", "block": "power_stage", "name": "3 legs NTMFS5C628NL 60 V",
-     "operating_point": {"vin_v": 28, "iout_a": 10, "ipeak_a": 20, "fsw_khz": 25, "edge_ns": 50, "pdiss_w": 2.3,
+     "operating_point": {"bus_net": "VM", "bus_irms_a": 6.5, "bus_irms_source": "research/power.md:91", "vin_v": 28, "iout_a": 10, "ipeak_a": 20, "fsw_khz": 25, "edge_ns": 50, "pdiss_w": 2.3,
                          "board_layers": 4, "switching_kind": "hard", "rectifier_kind": "sync",
                          "integration_kind": "controller", "source_kind": "dc-input"}},
     {"topology": "current-sense-shunt", "block": "sensing", "name": "3 mOhm Kelvin + INA240A1 G=20",
